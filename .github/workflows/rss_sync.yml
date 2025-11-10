@@ -1,0 +1,32 @@
+# ==========================================================
+# Workflow: RSS Sync
+# Purpose:  Fetch latest posts from RSS and append to cache.
+# Trigger:  Manual only (no cron).
+# Secrets:  RSS_URL must be defined in the selected Environment.
+# ==========================================================
+name: RSS Sync
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    environment: prod  # choose your Environment with secrets
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch RSS and append to cache
+        env:
+          RSS_URL: ${{ secrets.RSS_URL }}
+        run: python scripts/rss_fetch.py
