@@ -4,30 +4,24 @@
 #   Run Facebook auto-poster in DEV mode (no publishing)
 #   Validate API connection, show full logs, generate HTML preview,
 #   and publish it to GitHub Pages at /preview/facebook.html
-# Output:
-#   data/out/facebook_preview.json + docs/preview/facebook.html
 # ============================================================
 
 name: Facebook Auto Poster (DEV)
 
 on:
-  workflow_dispatch:        # ручной запуск из GitHub Actions
-  # schedule:
-  #   - cron: '0 14 * * *'    # ежедневно в 14:00 UTC (~08:00 CST)
+  workflow_dispatch:
 
 permissions:
-  contents: write            # нужно для коммита в Pages
+  contents: write
 
 jobs:
   facebook_dev:
     runs-on: ubuntu-latest
 
     steps:
-      # === 1. Клонируем репозиторий ===
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # === 2. Проверяем токен Facebook API ===
       - name: Check Facebook API connection
         env:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
@@ -45,28 +39,23 @@ jobs:
             exit 1
           fi
 
-      # === 3. Настраиваем Python ===
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      # === 4. Устанавливаем зависимости ===
       - name: Install dependencies
         run: |
           set -x
           echo "📦 Installing dependencies at $(date)"
           pip install -r requirements.txt --quiet
-          echo "✅ Installed packages:"
           pip list
 
-      # === 5. Проверяем структуру ===
       - name: Verify directory structure
         run: |
           echo "📂 Repository contents before run:"
           find . -maxdepth 3 -type f | sort
 
-      # === 6. Запускаем автопостер в DEV ===
       - name: Run Facebook auto poster (DEV mode)
         env:
           MODE: dev
@@ -75,13 +64,10 @@ jobs:
           echo "🚀 Running post_to_facebook.py in DEV mode at $(date)"
           mkdir -p data/out data/logs
           python -m scripts.post_to_facebook 2>&1 | tee data/logs/dev_run.log
-          echo "📄 Finished running script at $(date)"
           tail -n 20 data/logs/dev_run.log || true
 
-      # === 7. Проверяем превью ===
       - name: Check generated preview
         run: |
-          echo "🧾 Checking generated preview file at $(date)"
           if [ -f data/out/facebook_preview.json ]; then
             echo "✅ Preview file exists:"
             cat data/out/facebook_preview.json
@@ -90,7 +76,6 @@ jobs:
             exit 1
           fi
 
-      # === 8. Создаём визуальное HTML-превью ===
       - name: Generate visual Facebook preview (HTML)
         run: |
           echo "🖼 Generating visual preview..."
@@ -100,13 +85,14 @@ import json, html, os
 os.makedirs("docs/preview", exist_ok=True)
 with open("data/out/facebook_preview.json", "r", encoding="utf-8") as f:
     post = json.load(f)
+
 html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Facebook Post Preview – DEV</title>
 <style>
-body {{ background:#f0f2f5; font-family:Arial, sans-serif; display:flex; justify-content:center; }}
+body {{ background:#f0f2f5; font-family:Arial,sans-serif; display:flex; justify-content:center; }}
 .card {{ width:520px; background:#fff; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.1); margin:40px; overflow:hidden; }}
 img {{ width:100%; height:auto; display:block; }}
 .content {{ padding:16px; }}
@@ -129,12 +115,12 @@ footer {{ text-align:center; font-size:13px; color:#777; margin-top:20px; }}
   <footer>Facebook DEV Preview – generated automatically</footer>
 </body>
 </html>"""
+
 with open("docs/preview/facebook.html", "w", encoding="utf-8") as f:
     f.write(html_content)
 print("✅ Visual preview saved to docs/preview/facebook.html")
 PYCODE
 
-      # === 9. Коммитим превью и HTML в Pages ===
       - name: Commit preview to GitHub Pages
         run: |
           set -x
@@ -144,4 +130,3 @@ PYCODE
           git add data/out/facebook_preview.json data/logs/dev_run.log docs/preview/facebook.html
           git commit -m "Auto-update Facebook DEV preview and HTML" || echo "No changes to commit"
           git push
-          echo "✅ Commit completed and published to Pages."
