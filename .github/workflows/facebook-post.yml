@@ -1,8 +1,10 @@
 # ============================================================
 # File: .github/workflows/facebook-post.yml
 # Purpose:
-#   Публикует пост на Facebook Page вручную через Actions
+#   Публикует пост на Facebook Page (PROD)
 #   Скрипт: scripts/post_to_facebook.py
+#   ВАЖНО: после публикации коммитит data/state.json,
+#   чтобы не было повторных постов.
 # ============================================================
 
 name: Facebook Auto Post
@@ -10,10 +12,10 @@ name: Facebook Auto Post
 on:
   workflow_dispatch:       # запуск вручную из вкладки Actions
   schedule:
-   - cron: '0 16 * * 2-4'   # вт-ср-чт в 10:00 CST (16:00 UTC)
+    - cron: '0 16 * * 2-4'   # вт-ср-чт в 10:00 CST (16:00 UTC)
 
 permissions:
-  contents: read
+  contents: write           # нужно для git push state.json
 
 concurrency:
   group: facebook-post
@@ -27,6 +29,9 @@ jobs:
       # === 1. Клонируем репозиторий ===
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
 
       # === 2. Настраиваем Python ===
       - name: Set up Python
@@ -40,10 +45,23 @@ jobs:
         run: |
           pip install -r requirements.txt || true
 
-      # === 4. Запуск публикации на Facebook ===
+      # === 4. Публикуем пост на Facebook (PROD) ===
       - name: Run Facebook post script
         env:
           MODE: prod
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
         run: |
           python -m scripts.post_to_facebook
+
+      # === 5. Коммитим обновлённое состояние (исключаем повторы) ===
+      - name: Commit updated state.json
+        run: |
+          if [ -f "data/state.json" ]; then
+            git config user.name "actions-user"
+            git config user.email "actions@github.com"
+            git add data/state.json
+            git commit -m "Update published_links state (auto)" || echo "No changes"
+            git push
+          else
+            echo "data/state.json not found; nothing to commit."
+          fi
