@@ -1,0 +1,3 @@
+2025-11-11 01:18:07,192 [INFO] Logger initialized (level=INFO, file=/home/runner/work/post.equalle.com/post.equalle.com/data/logs/rss_fetch.log)
+2025-11-11 01:18:07,192 [INFO] Fetching RSS from: https://blog.equalle.com/index.xml
+2025-11-11 01:18:08,003 [INFO] RSS parsed successfully. Added 83 new item(s). Total in cache: 83
