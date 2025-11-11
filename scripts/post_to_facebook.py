@@ -4,17 +4,21 @@
 #   - DEV: сохраняет предпросмотр поста (без публикации)
 #   - PROD: публикует пост на Facebook Page через единый API-слой
 # Data I/O:
-#   - Reads:  data/cache/latest_posts.json
+#   - Reads:  data/cache/latest_posts.json, scripts/config.json
 #   - Writes: data/out/facebook_preview.json (DEV), data/state.json (PROD)
 # Logs:
 #   - data/logs/post_to_facebook.log
 # ENV:
-#   - MODE: "dev" (default) | "prod"
-#   - FB_PAGE_ID, FB_PAGE_TOKEN (required in PROD)
+#   - MODE: "dev" | "prod"  (ENV имеет приоритет над settings.mode из config.json)
+#   - FB_PAGE_TOKEN (required in PROD)
+# Notes:
+#   - FB_PAGE_ID больше НЕ нужен в ENV: берём page_id из scripts/config.json
 # =========================================
 
 from __future__ import annotations
-import os, sys, json
+import os
+import sys
+import json
 from pathlib import Path
 from typing import Dict, Optional
 
@@ -32,6 +36,7 @@ STATE_PATH = ROOT / "data" / "state.json"
 OUT_DIR = ROOT / "data" / "out"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
+CONFIG_PATH = Path(__file__).parent / "config.json"
 PLATFORM = "facebook"
 
 
@@ -92,12 +97,39 @@ def _save_preview(item: Dict, caption: str) -> Path:
     return out
 
 
+def _load_config() -> Dict:
+    if not CONFIG_PATH.exists():
+        raise SystemExit(f"Missing config file: {CONFIG_PATH}")
+    try:
+        return json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+    except Exception as e:
+        raise SystemExit(f"Failed to read config.json: {e}")
+
+
+def _get_page_id(cfg: Dict) -> str:
+    fb = (cfg.get("platforms") or {}).get("facebook") or {}
+    page_id = (fb.get("page_id") or "").strip()
+    if not page_id:
+        raise SystemExit("Facebook page_id not found in scripts/config.json → platforms.facebook.page_id")
+    return page_id
+
+
+def _resolve_mode(cfg: Dict) -> str:
+    # ENV MODE имеет приоритет, иначе берём из config.settings.mode, по умолчанию dev
+    env_mode = (os.getenv("MODE") or "").strip().lower()
+    if env_mode in ("dev", "prod"):
+        return env_mode
+    return ((cfg.get("settings") or {}).get("mode") or "dev").strip().lower()
+
+
 # ---------------------------
 # Main
 # ---------------------------
 def main() -> None:
     logger = get_logger("post_to_facebook", level="info", keep_days=14)
-    mode = (os.getenv("MODE", "dev") or "dev").strip().lower()
+
+    cfg = _load_config()
+    mode = _resolve_mode(cfg)
     is_prod = mode == "prod"
     logger.info("Facebook poster start (mode=%s)", mode)
 
@@ -123,10 +155,10 @@ def main() -> None:
         return
 
     # === PROD publish ===
-    page_id = os.getenv("FB_PAGE_ID", "").strip()
+    page_id = _get_page_id(cfg)  # из config.json, не из ENV
     token = os.getenv("FB_PAGE_TOKEN", "").strip()
-    if not page_id or not token:
-        raise SystemExit("FB_PAGE_ID and FB_PAGE_TOKEN are required in PROD mode.")
+    if not token:
+        raise SystemExit("FB_PAGE_TOKEN is required in PROD mode (GitHub Secret).")
 
     image_url = (item.get("image") or "").strip() or None
     post_id: Optional[str] = None
