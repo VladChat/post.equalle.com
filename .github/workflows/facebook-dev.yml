@@ -31,9 +31,16 @@ jobs:
 
       # === 3. Устанавливаем зависимости ===
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          # на случай отсутствия в requirements:
+          pip install selenium pillow
 
-      # === 4. Запускаем автопостер в DEV режиме ===
+      # === 3.1 Устанавливаем Chrome для Selenium (headless) ===
+      - name: Setup Google Chrome
+        uses: browser-actions/setup-chrome@v1
+
+      # === 4. Запускаем автопостер в DEV режиме (создаст скриншот и превью) ===
       - name: Run Facebook auto poster (DEV mode)
         env:
           MODE: dev
@@ -47,11 +54,12 @@ jobs:
           echo "🧾 Generated preview file:"
           cat data/out/facebook_preview.json || echo "No preview file found"
 
-      # === 6. Коммитим превью в репозиторий ===
-      - name: Commit preview to repo
+      # === 6. (Опционально) Коммитим превью и скриншоты в репозиторий ===
+      - name: Commit preview (and screenshots) to repo
         run: |
           git config user.name "actions-user"
           git config user.email "actions@github.com"
-          git add data/out/facebook_preview.json
+          git add data/out/facebook_preview.json || true
+          git add data/screens/*.webp || true
           git commit -m "Auto-update Facebook preview (DEV)" || echo "No changes to commit"
           git push
