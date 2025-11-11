@@ -2,13 +2,17 @@
 # RSS Sync Workflow
 # Purpose:
 #   - Fetch blog RSS and update local cache/state in repository
-#   - Keep persistent data between runs
+#   - Commit updated data and logs back to GitHub
 # ============================================================
 
 name: RSS Sync
 
 on:
-  workflow_dispatch: {}   # запуск вручную
+  workflow_dispatch: {}     # ручной запуск
+
+permissions:
+  contents: write           # ✅ нужно для git push
+  actions: read
 
 jobs:
   fetch:
@@ -19,6 +23,9 @@ jobs:
       # === 1️⃣ Checkout repository ===
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true   # ✅ сохраняем токен для пуша
+          fetch-depth: 0
 
       # === 2️⃣ Set up Python ===
       - name: Set up Python
@@ -37,10 +44,16 @@ jobs:
       # === 5️⃣ Commit updated files ===
       - name: Commit updated cache/config/logs
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
+          echo "🧾 Checking for changes..."
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
 
-          # добавляем только если есть изменения
           git add scripts/config.json data/cache/latest_posts.json data/state.json data/logs/rss_fetch.log || true
-          git diff --cached --quiet && echo "No changes to commit." || git commit -m "Auto-update RSS cache and logs"
-          git push
+
+          if git diff --cached --quiet; then
+            echo "✅ No changes to commit."
+          else
+            echo "📦 Changes detected — committing..."
+            git commit -m "Auto-update RSS cache and logs"
+            git push origin main
+          fi
