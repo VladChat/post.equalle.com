@@ -10,7 +10,7 @@ name: RSS Sync
 on:
   workflow_dispatch: {}     # ручной запуск
   schedule:
-   - cron: '0 22 * * *'    # ежедневно в 16:00 America/Chicago (22:00 UTC). В CDT это будет 17:00 по Чикаго.
+   - cron: '0 17 * * *'    # ежедневно в 16:00 America/Chicago (22:00 UTC). В CDT это будет 17:00 по Чикаго.
 
 permissions:
   contents: write           # ✅ нужно для git push
@@ -59,3 +59,4 @@ jobs:
             git commit -m "Auto-update RSS cache and logs"
             git push origin main
           fi
+
