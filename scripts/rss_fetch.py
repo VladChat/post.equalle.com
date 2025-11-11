@@ -3,7 +3,9 @@
 # Purpose:
 #   - Parse blog RSS and append unseen items into shared cache
 #   - Use config.json for all adjustable settings (no secrets)
+#   - Provide rich diagnostics and resilient parsing
 # =========================================
+
 import os
 import re
 import sys
@@ -17,7 +19,6 @@ if __package__ in (None, ""):
     sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 from scripts.utils.cache_manager import append_new_posts
-
 
 # -----------------------------------------
 # Configuration handling
@@ -54,7 +55,6 @@ def load_config() -> dict:
 
     try:
         data = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
-        # Merge defaults for any missing keys
         merged = DEFAULT_CONFIG | data
         merged["platforms"] = DEFAULT_CONFIG["platforms"] | data.get("platforms", {})
         merged["settings"] = DEFAULT_CONFIG["settings"] | data.get("settings", {})
@@ -68,7 +68,8 @@ def load_config() -> dict:
 # Helpers for parsing RSS content
 # -----------------------------------------
 def _extract_image(entry) -> Optional[str]:
-    """Best-effort image extraction from various RSS tags."""
+    """Try multiple RSS fields to find the first valid image URL."""
+    # media_content / media_thumbnail / content
     for attr in ("media_content", "media_thumbnail", "content"):
         value = getattr(entry, attr, None)
         if isinstance(value, list):
@@ -76,9 +77,11 @@ def _extract_image(entry) -> Optional[str]:
                 html = v.get("url") or v.get("value", "")
                 if not html:
                     continue
+                # Check for <img src=...> inside HTML fragments
                 m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', html, flags=re.I)
                 if m:
                     return m.group(1)
+                # Direct URL field
                 if v.get("url"):
                     return v["url"]
     # summary <img src=...>
@@ -90,7 +93,7 @@ def _extract_image(entry) -> Optional[str]:
 
 
 def _extract_hashtags(entry) -> List[str]:
-    """Build a lightweight hashtag list from entry.tags."""
+    """Convert category/tags to normalized hashtags."""
     tags = []
     for t in getattr(entry, "tags", []) or []:
         term = ""
@@ -98,11 +101,20 @@ def _extract_hashtags(entry) -> List[str]:
             term = t.get("term", "") or ""
         else:
             term = getattr(t, "term", "") or ""
-        term = re.sub(r"\s+", "", term).lower()
-        term = re.sub(r"[^a-z0-9_]", "", term)
-        if term and len(term) <= 25:
-            tags.append(term)
+        term = re.sub(r"[^a-zA-Z0-9 ]+", "", term).strip().lower()
+        if term:
+            parts = term.split()
+            joined = "".join(parts)
+            if len(joined) <= 25:
+                tags.append(joined)
     return tags[:8]
+
+
+def _clean_summary(html: str, limit: int = 400) -> str:
+    """Remove HTML tags and trim summary length."""
+    text = re.sub(r"<[^>]+>", "", html)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text[:limit] + ("..." if len(text) > limit else "")
 
 
 # -----------------------------------------
@@ -111,29 +123,54 @@ def _extract_hashtags(entry) -> List[str]:
 def main() -> None:
     config = load_config()
     rss_url = config.get("rss_url", "").strip()
-
     if not rss_url:
         raise SystemExit("❌ RSS URL is missing in config.json")
 
+    print(f"🔍 Fetching RSS from: {rss_url}")
     feed = feedparser.parse(rss_url)
+
     if getattr(feed, "bozo", 0):
-        print(f"⚠️ Feed parse warning: {getattr(feed, 'bozo_exception', '')}")
+        print(f"⚠️ Warning: malformed RSS or parse issue → {getattr(feed, 'bozo_exception', '')}")
+
+    if not getattr(feed, "entries", []):
+        print("⚠️ No entries found in RSS feed.")
+        return
 
     new_posts = []
     for e in feed.entries:
+        title = getattr(e, "title", "").strip()
+        link = getattr(e, "link", "").strip()
+        summary = getattr(e, "summary", "").strip()
+        if not (title and link):
+            continue
+
         item: Dict = {
-            "title": getattr(e, "title", "").strip(),
-            "summary": getattr(e, "summary", "").strip(),
-            "link": getattr(e, "link", "").strip(),
+            "title": title,
+            "summary": _clean_summary(summary),
+            "link": link,
             "image": _extract_image(e),
             "hashtags": _extract_hashtags(e),
             "published": getattr(e, "published", "") or getattr(e, "updated", ""),
         }
-        if item["link"]:
-            new_posts.append(item)
+        new_posts.append(item)
+
+    if not new_posts:
+        print("⚠️ No valid posts parsed from feed entries.")
+        return
 
     added, total = append_new_posts(new_posts)
-    print(f"✅ RSS parsed. Added {added} new item(s). Total in cache: {total}")
+    print(f"✅ RSS parsed successfully. Added {added} new item(s). Total in cache: {total}")
+
+    # Optional verbose output for debugging
+    if config["settings"].get("log_level") == "debug":
+        preview = new_posts[:2]
+        print("\n--- Preview of first parsed items ---")
+        for i, p in enumerate(preview, start=1):
+            print(f"{i}. {p['title']} → {p['link']}")
+            print(f"   Tags: {', '.join(p['hashtags'])}")
+            print(f"   Image: {p['image']}")
+            print(f"   Summary: {p['summary'][:150]}...")
+        print("-----------------------------------")
 
 
 if __name__ == "__main__":
