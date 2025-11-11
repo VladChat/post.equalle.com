@@ -1,37 +1,96 @@
+# =========================================
+# rss_fetch.py
+# Purpose:
+#   - Parse blog RSS and append unseen items into shared cache
+#   - Use config.json for all adjustable settings (no secrets)
+# =========================================
 import os
 import re
 import sys
+import json
 from pathlib import Path
-import feedparser
 from typing import Dict, List, Optional
+import feedparser
 
-# Support running as `python scripts/rss_fetch.py`
+# Allow running directly: python scripts/rss_fetch.py
 if __package__ in (None, ""):
     sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 from scripts.utils.cache_manager import append_new_posts
 
+
+# -----------------------------------------
+# Configuration handling
+# -----------------------------------------
+CONFIG_PATH = Path(__file__).parent / "config.json"
+DEFAULT_CONFIG = {
+    "rss_url": "https://blog.equalle.com/index.xml",
+    "platforms": {
+        "facebook": {
+            "enabled": True,
+            "page_id": "325670187920349",
+            "token_env": "FB_PAGE_TOKEN"
+        },
+        "instagram": {"enabled": False, "token_env": "IG_TOKEN"},
+        "pinterest": {"enabled": False, "token_env": "PINTEREST_TOKEN"},
+        "twitter": {"enabled": False, "token_env": "TWITTER_TOKEN"},
+        "youtube": {"enabled": False, "token_env": "YT_TOKEN"}
+    },
+    "settings": {
+        "max_cache_items": 200,
+        "max_published_history": 300,
+        "mode": "dev",
+        "log_level": "info"
+    }
+}
+
+
+def load_config() -> dict:
+    """Load config.json or create it with defaults if missing."""
+    if not CONFIG_PATH.exists():
+        CONFIG_PATH.write_text(json.dumps(DEFAULT_CONFIG, indent=2), encoding="utf-8")
+        print(f"🆕 Created default config at {CONFIG_PATH}")
+        return DEFAULT_CONFIG
+
+    try:
+        data = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+        # Merge defaults for any missing keys
+        merged = DEFAULT_CONFIG | data
+        merged["platforms"] = DEFAULT_CONFIG["platforms"] | data.get("platforms", {})
+        merged["settings"] = DEFAULT_CONFIG["settings"] | data.get("settings", {})
+        return merged
+    except Exception as e:
+        print(f"⚠️ Failed to read config.json: {e}")
+        return DEFAULT_CONFIG
+
+
+# -----------------------------------------
+# Helpers for parsing RSS content
+# -----------------------------------------
 def _extract_image(entry) -> Optional[str]:
-    media = getattr(entry, "media_content", None)
-    if media and isinstance(media, list) and media and "url" in media[0]:
-        return media[0]["url"]
-    thumb = getattr(entry, "media_thumbnail", None)
-    if thumb and isinstance(thumb, list) and thumb and "url" in thumb[0]:
-        return thumb[0]["url"]
+    """Best-effort image extraction from various RSS tags."""
+    for attr in ("media_content", "media_thumbnail", "content"):
+        value = getattr(entry, attr, None)
+        if isinstance(value, list):
+            for v in value:
+                html = v.get("url") or v.get("value", "")
+                if not html:
+                    continue
+                m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', html, flags=re.I)
+                if m:
+                    return m.group(1)
+                if v.get("url"):
+                    return v["url"]
+    # summary <img src=...>
     summary = getattr(entry, "summary", "") or ""
-    m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', summary, flags=re.IGNORECASE)
+    m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', summary, flags=re.I)
     if m:
         return m.group(1)
-    content = getattr(entry, "content", None)
-    if content and isinstance(content, list):
-        for c in content:
-            html = c.get("value", "") or ""
-            m2 = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', html, flags=re.IGNORECASE)
-            if m2:
-                return m2.group(1)
     return None
 
+
 def _extract_hashtags(entry) -> List[str]:
+    """Build a lightweight hashtag list from entry.tags."""
     tags = []
     for t in getattr(entry, "tags", []) or []:
         term = ""
@@ -45,10 +104,16 @@ def _extract_hashtags(entry) -> List[str]:
             tags.append(term)
     return tags[:8]
 
+
+# -----------------------------------------
+# Main logic
+# -----------------------------------------
 def main() -> None:
-    rss_url = os.getenv("RSS_URL", "").strip()
+    config = load_config()
+    rss_url = config.get("rss_url", "").strip()
+
     if not rss_url:
-        raise SystemExit("❌ RSS_URL is not set (environment).")
+        raise SystemExit("❌ RSS URL is missing in config.json")
 
     feed = feedparser.parse(rss_url)
     if getattr(feed, "bozo", 0):
@@ -69,6 +134,7 @@ def main() -> None:
 
     added, total = append_new_posts(new_posts)
     print(f"✅ RSS parsed. Added {added} new item(s). Total in cache: {total}")
+
 
 if __name__ == "__main__":
     main()
