@@ -30,7 +30,7 @@ if __package__ in (None, ""):
 from scripts.utils.logger import get_logger
 from scripts.utils.social_api import publish_photo, publish_feed
 from scripts.utils.fb_post_formatter import format_facebook  # форматер только для Facebook
-from scripts.media.screenshot import capture_screenshot  # ⬅️ добавлено
+from scripts.media.fb_screenshot_manager import make_screenshot_if_needed  # ✅ заменили прямой вызов
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE_PATH = ROOT / "data" / "cache" / "latest_posts.json"
@@ -76,7 +76,6 @@ def _pick_next_item(items: list[Dict], published_links: set[str]) -> Optional[Di
 
 
 def _build_caption(item: Dict) -> str:
-    # централизованный форматер + ограничение длины
     caption = format_facebook(item)
     return caption[:2000] + ("…" if len(caption) > 2000 else "")
 
@@ -117,7 +116,6 @@ def _get_page_id(cfg: Dict) -> str:
 
 
 def _resolve_mode(cfg: Dict) -> str:
-    # ENV MODE имеет приоритет, иначе берём из config.settings.mode, по умолчанию dev
     env_mode = (os.getenv("MODE") or "").strip().lower()
     if env_mode in ("dev", "prod"):
         return env_mode
@@ -131,7 +129,6 @@ def _derive_screenshot_path(link: str) -> Path:
     """
     p = urlparse(link or "")
     slug = Path(p.path.rstrip("/")).name or "home"
-    # На случай очень длинных хвостов или пустоты
     slug = slug[:80] or "post"
     out = ROOT / "data" / "screens" / f"{slug}.webp"
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -162,24 +159,14 @@ def main() -> None:
         logger.info("No unpublished items.")
         return
 
-    # === DEV: делаем скриншот страницы поста и прописываем его в item["image"]
-    # (В PROD не трогаем — там ожидается image_url, пригодный для публикации через API)
+    # === DEV: создаём скриншот страницы поста (если нужно)
     if not is_prod:
         link = (item.get("link") or "").strip()
         if link:
-            try:
-                shot_path = _derive_screenshot_path(link)
-                saved = capture_screenshot(
-                    link,
-                    out_path=str(shot_path),
-                    width=1920,
-                    height=1080,
-                    full_page=True
-                )
-                item["image"] = saved  # локальный путь попадёт в preview.json
-                logger.info("Screenshot created: %s", saved)
-            except Exception as e:
-                logger.warning("Screenshot failed: %s", e)
+            shot_path = _derive_screenshot_path(link)
+            saved = make_screenshot_if_needed(link, shot_path, logger)
+            if saved:
+                item["image"] = saved
 
     caption = _build_caption(item)
     logger.info("Caption prepared (%d chars)", len(caption))
@@ -190,7 +177,7 @@ def main() -> None:
         return
 
     # === PROD publish ===
-    page_id = _get_page_id(cfg)  # из config.json, не из ENV
+    page_id = _get_page_id(cfg)
     token = os.getenv("FB_PAGE_TOKEN", "").strip()
     if not token:
         raise SystemExit("FB_PAGE_TOKEN is required in PROD mode (GitHub Secret).")
@@ -201,7 +188,6 @@ def main() -> None:
     if image_url:
         logger.info("Publishing photo via API layer…")
         post_id = publish_photo(PLATFORM, page_id, token, caption, image_url, logger=logger)
-        # fallback на feed, если картинка не прошла
         if not post_id:
             logger.warning("Photo publish failed. Fallback to /feed with link.")
             post_id = publish_feed(PLATFORM, page_id, token, caption, item.get("link"), logger=logger)
@@ -215,7 +201,6 @@ def main() -> None:
 
     logger.info("Published: %s", post_id)
 
-    # отметим как опубликованный
     link = (item.get("link") or "").strip()
     if link:
         published.add(link)
