@@ -21,6 +21,7 @@ import sys
 import json
 from pathlib import Path
 from typing import Dict, Optional
+from urllib.parse import urlparse
 
 # allow running directly
 if __package__ in (None, ""):
@@ -29,6 +30,7 @@ if __package__ in (None, ""):
 from scripts.utils.logger import get_logger
 from scripts.utils.social_api import publish_photo, publish_feed
 from scripts.utils.fb_post_formatter import format_facebook  # форматер только для Facebook
+from scripts.media.screenshot import capture_screenshot  # ⬅️ добавлено
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE_PATH = ROOT / "data" / "cache" / "latest_posts.json"
@@ -122,6 +124,20 @@ def _resolve_mode(cfg: Dict) -> str:
     return ((cfg.get("settings") or {}).get("mode") or "dev").strip().lower()
 
 
+def _derive_screenshot_path(link: str) -> Path:
+    """
+    Строит путь для скриншота на основе URL поста:
+    data/screens/{slug}.webp, где slug — последний сегмент пути.
+    """
+    p = urlparse(link or "")
+    slug = Path(p.path.rstrip("/")).name or "home"
+    # На случай очень длинных хвостов или пустоты
+    slug = slug[:80] or "post"
+    out = ROOT / "data" / "screens" / f"{slug}.webp"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    return out
+
+
 # ---------------------------
 # Main
 # ---------------------------
@@ -145,6 +161,25 @@ def main() -> None:
     if not item:
         logger.info("No unpublished items.")
         return
+
+    # === DEV: делаем скриншот страницы поста и прописываем его в item["image"]
+    # (В PROD не трогаем — там ожидается image_url, пригодный для публикации через API)
+    if not is_prod:
+        link = (item.get("link") or "").strip()
+        if link:
+            try:
+                shot_path = _derive_screenshot_path(link)
+                saved = capture_screenshot(
+                    link,
+                    out_path=str(shot_path),
+                    width=1920,
+                    height=1080,
+                    full_page=True
+                )
+                item["image"] = saved  # локальный путь попадёт в preview.json
+                logger.info("Screenshot created: %s", saved)
+            except Exception as e:
+                logger.warning("Screenshot failed: %s", e)
 
     caption = _build_caption(item)
     logger.info("Caption prepared (%d chars)", len(caption))
