@@ -1,0 +1,41 @@
+# ============================================================
+# File: .github/workflows/facebook-auto-dev.yml
+# Purpose: Run Facebook auto-poster in DEV mode (no publishing)
+# Output: data/out/facebook_preview.json
+# ============================================================
+
+name: Auto Post (Facebook DEV)
+
+on:
+  workflow_dispatch:        # ручной запуск из GitHub Actions
+  # schedule:
+  #   - cron: '0 14 * * *'    # каждый день в 14:00 UTC (~08:00 CST)
+
+permissions:
+  contents: write
+
+jobs:
+  facebook_dev:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Facebook auto poster (DEV mode)
+        env:
+          MODE: dev
+        run: python -m scripts.post_to_facebook
+
+      - name: Show generated preview
+        run: |
+          echo "🧾 Generated preview file:"
+          cat data/out/facebook_preview.json || echo "No preview file found"
