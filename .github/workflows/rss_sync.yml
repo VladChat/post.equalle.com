@@ -1,18 +1,46 @@
+# ============================================================
+# RSS Sync Workflow
+# Purpose:
+#   - Fetch blog RSS and update local cache/state in repository
+#   - Keep persistent data between runs
+# ============================================================
+
 name: RSS Sync
+
 on:
-  workflow_dispatch: {}
+  workflow_dispatch: {}   # запуск вручную
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
     environment: prod
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      # === 1️⃣ Checkout repository ===
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # === 2️⃣ Set up Python ===
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
+      # === 3️⃣ Install dependencies ===
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Fetch RSS and append to cache
-        env:
-          RSS_URL: ${{ secrets.RSS_URL }}
+
+      # === 4️⃣ Run RSS Fetch ===
+      - name: Fetch and cache RSS posts
         run: python -m scripts.rss_fetch
+
+      # === 5️⃣ Commit updated files ===
+      - name: Commit updated cache/config/logs
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+          # добавляем только если есть изменения
+          git add scripts/config.json data/cache/latest_posts.json data/state.json data/logs/rss_fetch.log || true
+          git diff --cached --quiet && echo "No changes to commit." || git commit -m "Auto-update RSS cache and logs"
+          git push
