@@ -13,3 +13,6 @@
 2025-11-11 17:17:36,589 [INFO] Logger initialized (level=INFO, file=/home/runner/work/post.equalle.com/post.equalle.com/data/logs/rss_fetch.log)
 2025-11-11 17:17:36,589 [INFO] Fetching RSS from: https://blog.equalle.com/index.xml
 2025-11-11 17:17:37,037 [INFO] RSS parsed successfully. Added 0 new item(s). Total in cache: 87
+2025-11-11 23:05:55,565 [INFO] Logger initialized (level=INFO, file=/home/runner/work/post.equalle.com/post.equalle.com/data/logs/rss_fetch.log)
+2025-11-11 23:05:55,565 [INFO] Fetching RSS from: https://blog.equalle.com/index.xml
+2025-11-11 23:05:55,758 [INFO] RSS parsed successfully. Added 0 new item(s). Total in cache: 87
