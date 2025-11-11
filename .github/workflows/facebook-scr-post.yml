@@ -55,7 +55,7 @@ jobs:
           MODE: prod
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
         run: |
-          python -m scripts.post_to_facebook
+          python -m scripts.post_to_facebook_scr
 
       # === 6️⃣ Коммитим обновлённый state.json (чтобы исключить повторы) ===
       - name: Commit updated state.json
