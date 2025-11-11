@@ -10,7 +10,7 @@ name: Facebook Auto Post
 on:
   workflow_dispatch:       # запуск вручную из вкладки Actions
   schedule:
-   - cron: '0 23 * * *'   # ежедневно в 01:00 UTC 
+   - cron: '0 16 * * 2-4'   # вт-ср-чт в 10:00 CST (16:00 UTC)
 
 permissions:
   contents: read
