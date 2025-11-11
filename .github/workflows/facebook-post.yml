@@ -3,16 +3,16 @@
 # Purpose:
 #   Публикует пост на Facebook Page (PROD)
 #   Скрипт: scripts/post_to_facebook.py
-#   ВАЖНО: после публикации коммитит data/state.json,
-#   чтобы не было повторных постов.
+#   После публикации коммитит data/state.json,
+#   чтобы избежать повторных постов.
 # ============================================================
 
 name: Facebook Auto Post
 
 on:
-  workflow_dispatch:       # запуск вручную из вкладки Actions
+  workflow_dispatch:       # запуск вручную
   schedule:
-    - cron: '0 16 * * 2-4'   # вт-ср-чт в 10:00 CST (16:00 UTC)
+    - cron: '0 16 * * 2-4'   # вт, ср, чт в 10:00 CST (16:00 UTC)
 
 permissions:
   contents: write           # нужно для git push state.json
@@ -26,26 +26,31 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # === 1. Клонируем репозиторий ===
+      # === 1️⃣ Клонируем репозиторий ===
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           persist-credentials: true
           fetch-depth: 0
 
-      # === 2. Настраиваем Python ===
+      # === 2️⃣ Настраиваем Python ===
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
 
-      # === 3. Устанавливаем зависимости ===
+      # === 3️⃣ Устанавливаем зависимости ===
       - name: Install dependencies
         run: |
           pip install -r requirements.txt || true
+          pip install selenium pillow
 
-      # === 4. Публикуем пост на Facebook (PROD) ===
+      # === 3.1 Устанавливаем Chrome (для headless Selenium) ===
+      - name: Setup Google Chrome
+        uses: browser-actions/setup-chrome@v1
+
+      # === 4️⃣ Запускаем постинг в PROD ===
       - name: Run Facebook post script
         env:
           MODE: prod
@@ -53,7 +58,7 @@ jobs:
         run: |
           python -m scripts.post_to_facebook
 
-      # === 5. Коммитим обновлённое состояние (исключаем повторы) ===
+      # === 5️⃣ Коммитим обновлённое состояние (исключаем повторы) ===
       - name: Commit updated state.json
         run: |
           if [ -f "data/state.json" ]; then
