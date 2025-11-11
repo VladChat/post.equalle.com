@@ -2,6 +2,7 @@
 # File: .github/workflows/facebook-dev.yml
 # Purpose: Run Facebook auto-poster in DEV mode (no publishing)
 # Output: data/out/facebook_preview.json (committed to repo)
+#         docs/preview/facebook.html (visual preview on Pages)
 # ============================================================
 
 name: Auto Post (Facebook DEV)
@@ -12,7 +13,7 @@ on:
   #   - cron: '0 14 * * *'    # каждый день в 14:00 UTC (~08:00 CST)
 
 permissions:
-  contents: write            # разрешает коммитить файл превью в repo
+  contents: write            # разрешает коммитить файлы в repo
 
 jobs:
   facebook_dev:
@@ -23,35 +24,103 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # === 2. Настраиваем Python ===
+      # === 2. Проверяем токен Facebook API ===
+      - name: Check Facebook API connection
+        env:
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+        run: |
+          set -x
+          echo "🔎 Checking Facebook API token at $(date)"
+          curl -s -w "\nHTTP_STATUS:%{http_code}\n" -o /tmp/fb_check.json \
+            "https://graph.facebook.com/v21.0/me?access_token=$FB_PAGE_TOKEN" | tee /tmp/fb_check_raw.log
+          echo "📄 Raw response:"; cat /tmp/fb_check.json
+          if grep -q '"id"' /tmp/fb_check.json; then
+            echo "✅ Token valid and API reachable."
+          else
+            echo "❌ Token invalid or expired!"; exit 1
+          fi
+
+      # === 3. Настраиваем Python ===
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      # === 3. Устанавливаем зависимости ===
+      # === 4. Устанавливаем зависимости ===
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          set -x
+          pip install -r requirements.txt --quiet
+          pip list
 
-      # === 4. Запускаем автопостер в DEV режиме ===
+      # === 5. Запускаем автопостер в DEV режиме ===
       - name: Run Facebook auto poster (DEV mode)
         env:
           MODE: dev
         run: |
-          mkdir -p data/out
-          python -m scripts.post_to_facebook
+          set -x
+          mkdir -p data/out data/logs
+          python -m scripts.post_to_facebook 2>&1 | tee data/logs/dev_run.log
+          echo "🪵 Tail dev_run.log:"; tail -n 30 data/logs/dev_run.log || true
 
-      # === 5. Показываем превью в логах ===
+      # === 6. Показываем превью в логах ===
       - name: Show generated preview
         run: |
           echo "🧾 Generated preview file:"
-          cat data/out/facebook_preview.json || echo "No preview file found"
+          if [ -f data/out/facebook_preview.json ]; then
+            cat data/out/facebook_preview.json
+          else
+            echo "❌ No preview file found"; exit 1
+          fi
 
-      # === 6. Коммитим превью в репозиторий ===
+      # === 7. Генерируем HTML-превью для GitHub Pages ===
+      - name: Generate visual Facebook preview (HTML)
+        run: |
+          echo "🖼 Generating visual preview..."
+          mkdir -p docs/preview
+          python - <<'PYCODE'
+import json, html, os
+os.makedirs("docs/preview", exist_ok=True)
+with open("data/out/facebook_preview.json", "r", encoding="utf-8") as f:
+    post = json.load(f)
+html_content = f"""<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<title>Facebook Post Preview – DEV</title>
+<style>
+body {{ background:#f0f2f5; font-family:Arial, sans-serif; display:flex; justify-content:center; padding:40px; }}
+.card {{ width:520px; background:#fff; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden; }}
+.header {{ display:flex; align-items:center; padding:12px 16px; }}
+.avatar {{ width:40px; height:40px; border-radius:50%; background:#ddd; margin-right:10px; }}
+.title {{ font-weight:700; font-size:15px; color:#050505; }}
+.time {{ font-size:13px; color:#65676b; }}
+.content {{ padding:16px; white-space:pre-wrap; color:#050505; font-size:15px; line-height:1.5; }}
+img {{ width:100%; height:auto; display:block; }}
+.link {{ padding:12px 16px; background:#f0f2f5; border-top:1px solid #ddd; }}
+.link a {{ color:#385898; text-decoration:none; font-size:14px; }}
+.link a:hover {{ text-decoration:underline; }}
+</style></head><body>
+  <div class="card">
+    <div class="header"><div class="avatar"></div>
+      <div><div class="title">Abrasive Sanding Paper</div><div class="time">Just now · 🌍</div></div>
+    </div>
+    <div class="content"><strong>{html.escape(post.get('title',''))}</strong>
+
+{html.escape(post.get('caption',''))}</div>
+    <img src="{html.escape(post.get('image',''))}" alt="preview">
+    <div class="link"><a href="{html.escape(post.get('link',''))}" target="_blank">blog.equalle.com · Article</a></div>
+  </div>
+</body></html>"""
+with open("docs/preview/facebook.html", "w", encoding="utf-8") as f:
+    f.write(html_content)
+print("✅ Visual preview saved to docs/preview/facebook.html")
+PYCODE
+
+      # === 8. Коммитим превью и логи в репозиторий ===
       - name: Commit preview to repo
         run: |
+          set -x
           git config user.name "actions-user"
           git config user.email "actions@github.com"
-          git add data/out/facebook_preview.json
-          git commit -m "Auto-update Facebook preview (DEV)" || echo "No changes to commit"
+          git add data/out/facebook_preview.json data/logs/dev_run.log docs/preview/facebook.html
+          git commit -m "Auto-update Facebook preview (DEV) + HTML" || echo "No changes to commit"
           git push
