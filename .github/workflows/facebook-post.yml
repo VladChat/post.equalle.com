@@ -1,0 +1,49 @@
+# ============================================================
+# File: .github/workflows/facebook-post.yml
+# Purpose:
+#   Публикует пост на Facebook Page вручную через Actions
+#   Скрипт: scripts/post_to_facebook.py
+# ============================================================
+
+name: Facebook Auto Post
+
+on:
+  workflow_dispatch:       # запуск вручную из вкладки Actions
+  # schedule:
+  #   - cron: '0 15 * * *'   # ежедневно в 15:00 UTC (~09:00 CST)
+
+permissions:
+  contents: read
+
+concurrency:
+  group: facebook-post
+  cancel-in-progress: true
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+
+    steps:
+      # === 1. Клонируем репозиторий ===
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # === 2. Настраиваем Python ===
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      # === 3. Устанавливаем зависимости ===
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt || true
+
+      # === 4. Запуск публикации на Facebook ===
+      - name: Run Facebook post script
+        env:
+          MODE: prod
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+        run: |
+          python -m scripts.post_to_facebook
