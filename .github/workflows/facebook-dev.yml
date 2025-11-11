@@ -2,9 +2,10 @@
 # File: .github/workflows/facebook-dev.yml
 # Purpose:
 #   Run Facebook auto-poster in DEV mode (no publishing)
-#   Validate API connection, show full logs, and commit preview JSON
+#   Validate API connection, show full logs, generate HTML preview,
+#   and publish it to GitHub Pages at /preview/facebook.html
 # Output:
-#   data/out/facebook_preview.json (committed to repo)
+#   data/out/facebook_preview.json + docs/preview/facebook.html
 # ============================================================
 
 name: Facebook Auto Poster (DEV)
@@ -15,7 +16,7 @@ on:
   #   - cron: '0 14 * * *'    # ежедневно в 14:00 UTC (~08:00 CST)
 
 permissions:
-  contents: write            # нужно для коммита превью и логов в repo
+  contents: write            # нужно для коммита в Pages
 
 jobs:
   facebook_dev:
@@ -59,13 +60,13 @@ jobs:
           echo "✅ Installed packages:"
           pip list
 
-      # === 5. Проверяем структуру директорий ===
+      # === 5. Проверяем структуру ===
       - name: Verify directory structure
         run: |
-          echo "📂 Listing repository contents before running script:"
+          echo "📂 Repository contents before run:"
           find . -maxdepth 3 -type f | sort
 
-      # === 6. Запускаем автопостер в DEV режиме ===
+      # === 6. Запускаем автопостер в DEV ===
       - name: Run Facebook auto poster (DEV mode)
         env:
           MODE: dev
@@ -75,37 +76,72 @@ jobs:
           mkdir -p data/out data/logs
           python -m scripts.post_to_facebook 2>&1 | tee data/logs/dev_run.log
           echo "📄 Finished running script at $(date)"
-          echo "🪵 Partial log preview:"
-          tail -n 20 data/logs/dev_run.log || echo "No log file found"
+          tail -n 20 data/logs/dev_run.log || true
 
-      # === 7. Проверяем результат работы скрипта ===
+      # === 7. Проверяем превью ===
       - name: Check generated preview
         run: |
           echo "🧾 Checking generated preview file at $(date)"
           if [ -f data/out/facebook_preview.json ]; then
             echo "✅ Preview file exists:"
-            ls -lh data/out/facebook_preview.json
-            echo "📜 Preview content:"
             cat data/out/facebook_preview.json
           else
             echo "❌ Preview file not found!"
             exit 1
           fi
 
-      # === 8. Показываем состояние папок после выполнения ===
-      - name: List directory contents after script
+      # === 8. Создаём визуальное HTML-превью ===
+      - name: Generate visual Facebook preview (HTML)
         run: |
-          echo "📂 Listing repository contents after script run:"
-          find data -type f | sort || echo "No files in data/"
+          echo "🖼 Generating visual preview..."
+          mkdir -p docs/preview
+          python - <<'PYCODE'
+import json, html, os
+os.makedirs("docs/preview", exist_ok=True)
+with open("data/out/facebook_preview.json", "r", encoding="utf-8") as f:
+    post = json.load(f)
+html_content = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Facebook Post Preview – DEV</title>
+<style>
+body {{ background:#f0f2f5; font-family:Arial, sans-serif; display:flex; justify-content:center; }}
+.card {{ width:520px; background:#fff; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.1); margin:40px; overflow:hidden; }}
+img {{ width:100%; height:auto; display:block; }}
+.content {{ padding:16px; }}
+h3 {{ font-size:18px; margin:0 0 10px; color:#1c1e21; }}
+p {{ white-space:pre-wrap; font-size:15px; color:#050505; line-height:1.5; }}
+a {{ display:block; margin-top:10px; font-size:14px; color:#385898; text-decoration:none; }}
+a:hover {{ text-decoration:underline; }}
+footer {{ text-align:center; font-size:13px; color:#777; margin-top:20px; }}
+</style>
+</head>
+<body>
+  <div class="card">
+    <img src="{html.escape(post['image'])}" alt="preview">
+    <div class="content">
+      <h3>{html.escape(post['title'])}</h3>
+      <p>{html.escape(post['caption'])}</p>
+      <a href="{html.escape(post['link'])}" target="_blank">Read more →</a>
+    </div>
+  </div>
+  <footer>Facebook DEV Preview – generated automatically</footer>
+</body>
+</html>"""
+with open("docs/preview/facebook.html", "w", encoding="utf-8") as f:
+    f.write(html_content)
+print("✅ Visual preview saved to docs/preview/facebook.html")
+PYCODE
 
-      # === 9. Коммитим превью и логи в репозиторий ===
-      - name: Commit preview and logs to repo
+      # === 9. Коммитим превью и HTML в Pages ===
+      - name: Commit preview to GitHub Pages
         run: |
           set -x
-          echo "💾 Committing preview file and logs at $(date)"
+          echo "💾 Committing preview to Pages at $(date)"
           git config user.name "actions-user"
           git config user.email "actions@github.com"
-          git add data/out/facebook_preview.json data/logs/dev_run.log || true
-          git commit -m "Auto-update Facebook preview (DEV)" || echo "No changes to commit"
+          git add data/out/facebook_preview.json data/logs/dev_run.log docs/preview/facebook.html
+          git commit -m "Auto-update Facebook DEV preview and HTML" || echo "No changes to commit"
           git push
-          echo "✅ Commit process completed at $(date)"
+          echo "✅ Commit completed and published to Pages."
