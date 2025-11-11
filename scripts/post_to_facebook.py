@@ -28,7 +28,7 @@ if __package__ in (None, ""):
 
 from scripts.utils.logger import get_logger
 from scripts.utils.social_api import publish_photo, publish_feed
-from scripts.utils.post_formatter import format_facebook  # общая разметка подписи
+from scripts.utils.fb_post_formatter import format_facebook  # форматер только для Facebook
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE_PATH = ROOT / "data" / "cache" / "latest_posts.json"
