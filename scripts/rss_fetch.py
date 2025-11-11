@@ -1,37 +1,27 @@
-# =========================================
-# rss_fetch.py
-# Purpose:
-#   - Parse blog RSS and append unseen items into shared cache
-#   - Produce a normalized item structure for all platforms
-# Input:
-#   - RSS_URL (env) — e.g., https://blog.equalle.com/index.xml
-# Output:
-#   - data/cache/latest_posts.json (array of posts, newest first)
-# Notes:
-#   - Safe to run repeatedly; deduplicates by link
-# =========================================
 import os
 import re
+import sys
+from pathlib import Path
 import feedparser
 from typing import Dict, List, Optional
+
+# Support running as `python scripts/rss_fetch.py`
+if __package__ in (None, ""):
+    sys.path.append(str(Path(__file__).resolve().parents[1]))
+
 from scripts.utils.cache_manager import append_new_posts
 
 def _extract_image(entry) -> Optional[str]:
-    """Best-effort image extraction from RSS entry."""
-    # media_content
     media = getattr(entry, "media_content", None)
     if media and isinstance(media, list) and media and "url" in media[0]:
         return media[0]["url"]
-    # media_thumbnail
     thumb = getattr(entry, "media_thumbnail", None)
     if thumb and isinstance(thumb, list) and thumb and "url" in thumb[0]:
         return thumb[0]["url"]
-    # summary <img src=...>
     summary = getattr(entry, "summary", "") or ""
     m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', summary, flags=re.IGNORECASE)
     if m:
         return m.group(1)
-    # content[]
     content = getattr(entry, "content", None)
     if content and isinstance(content, list):
         for c in content:
@@ -42,7 +32,6 @@ def _extract_image(entry) -> Optional[str]:
     return None
 
 def _extract_hashtags(entry) -> List[str]:
-    """Build light-weight hashtags from entry.tags if available."""
     tags = []
     for t in getattr(entry, "tags", []) or []:
         term = ""
@@ -62,6 +51,9 @@ def main() -> None:
         raise SystemExit("❌ RSS_URL is not set (environment).")
 
     feed = feedparser.parse(rss_url)
+    if getattr(feed, "bozo", 0):
+        print(f"⚠️ Feed parse warning: {getattr(feed, 'bozo_exception', '')}")
+
     new_posts = []
     for e in feed.entries:
         item: Dict = {

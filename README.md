@@ -1,41 +1,5 @@
-# post.equalle.com — Social Post Automation (Starter)
+# post.equalle.com — Social Post Automation (Fixed)
 
-Modular, future‑proof structure to fetch blog RSS and publish to social networks.
-**Facebook is fully implemented**; other posters are preview stubs you can extend later.
-
-## Structure
-```
-scripts/
-├── rss_fetch.py               # parses blog RSS and appends new items into a shared cache
-├── utils/
-│   ├── cache_manager.py       # cache/state helpers (shared across all posters)
-│   ├── post_formatter.py      # platform-specific caption builders
-│   └── social_api.py          # API adapters (Facebook implemented)
-├── post_to_facebook.py        # real poster (dev/preview or prod/publish)
-├── post_to_instagram.py       # stub (preview only)
-├── post_to_pinterest.py       # stub (preview only)
-├── post_to_twitter.py         # stub (preview only)
-└── post_to_youtube.py         # stub (preview only)
-
-data/
-├── cache/latest_posts.json    # shared "content hub" used by all posters
-├── logs/                      # optional logs
-└── state.json                 # remembers what was posted per platform
-
-.github/workflows/
-├── rss_sync.yml               # manual: fetch RSS only
-└── auto_post.yml              # manual: post next Facebook item (dev or prod mode)
-```
-
-## Secrets (GitHub → Settings → Environments → `prod`)
-- `RSS_URL` — e.g. `https://blog.equalle.com/index.xml`
-- `FB_PAGE_ID` — your Page ID
-- `FB_PAGE_TOKEN` — permanent Page token with `pages_manage_posts`
-
-## Run (manually)
-1. **RSS Sync** workflow → builds/updates `data/cache/latest_posts.json`.
-2. **Auto Post** workflow → selects next unpublished item and either:
-   - shows **preview** (`MODE=dev`), or
-   - **publishes** (`MODE=prod`).
-
-No cron is configured.
+- Python package layout fixed (`scripts/__init__.py`).
+- Robust imports (works with `python -m scripts.rss_fetch` and `python scripts/rss_fetch.py`).
+- Workflows call modules via `-m`.

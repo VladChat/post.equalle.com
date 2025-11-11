@@ -1,9 +1,8 @@
-# =========================================
-# post_to_instagram.py (stub / preview)
-# Purpose:
-#   - Demonstrate how a poster would read from shared cache
-#   - Build an Instagram caption (preview only)
-# =========================================
+import sys
+from pathlib import Path
+if __package__ in (None, ""):
+    sys.path.append(str(Path(__file__).resolve().parents[1]))
+
 from scripts.utils.cache_manager import next_unpublished
 from scripts.utils.post_formatter import format_instagram
 from scripts.utils.social_api import preview
