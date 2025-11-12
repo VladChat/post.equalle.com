@@ -1,6 +1,6 @@
 # ============================================================
 # File: make_instagram_card.py
-# Purpose: Generate branded IG card with full title and glass-white panel
+# Purpose: Render IG card using ready-made template with built-in panel
 # Author: eQualle Automation
 # ============================================================
 
@@ -16,26 +16,26 @@ ROOT = Path(__file__).resolve().parents[2]
 # --- Inputs / Paths ---
 CACHE_JSON = ROOT / "data" / "cache" / "latest_posts.json"
 RSS_PATH   = ROOT / "data" / "cache" / "rss_feed.xml"   # optional fallback
-TEMPLATE   = ROOT / "images" / "IG-1080-1350.jpg"
+TEMPLATE   = ROOT / "images" / "IG-p-1080-1350.jpg"     # ⬅️ новый шаблон
 OUTPUT_DIR = ROOT / "images" / "ig"
 FONT_PATH  = ROOT / "images" / "fonts" / "BungeeSpice-Regular.ttf"
 
-# --- Visual configuration ---
-PANEL_W_RATIO   = 0.85
-PANEL_H_RATIO   = 0.35
-PANEL_RADIUS    = 60
-PANEL_FILL      = (255, 255, 255, 255)     # fully white, not transparent
-PANEL_SHADOW    = (0, 0, 0, 45)
-PANEL_SHADOW_BLUR = 18
-TEXT_SPACING    = 5
-FONT_SIZE_RATIO = 0.065
-SAFE_PAD_X      = 60
-MAX_LINES       = 4
-VERTICAL_BIAS   = 2.6  # position control
+# --- Panel geometry inside the template (absolute px) ---
+# Template size: 1080 × 1350
+# Panel box: centered, width 1060, height 472, placed slightly above middle
+PANEL_BOX = (10, 440, 1070, 912)   # (x0, y0, x1, y1) => 1060×472
 
+# --- Text layout ---
+MAX_LINES        = 4
+SAFE_PAD_X       = 60          # inner horizontal padding from panel edge
+SAFE_PAD_Y       = 36          # inner vertical padding from panel edge
+TEXT_SPACING     = 5
+FONT_SIZE_RATIO  = 0.065       # base font size relative to image width
+
+# --- Visual style ---
 USE_GRADIENT_TEXT = True
-GRAD_TOP = (255, 140, 64)   # orange top
-GRAD_BOT = (245, 210, 180)  # peach bottom
+GRAD_TOP   = (255, 140, 64)    # orange top
+GRAD_BOT   = (245, 210, 180)   # peach bottom
 TEXT_COLOR = (46, 46, 46, 255)
 TEXT_SHADOW = (0, 0, 0, 60)
 
@@ -105,7 +105,7 @@ def _wrap_text(words, font, max_width, max_lines):
     return lines[:max_lines]
 
 def _draw_gradient_text(dest_img, text, xy, font, spacing):
-    """Render gradient text using mask."""
+    """Render vertical gradient text using mask."""
     W, H = dest_img.size
     mask_layer = Image.new("L", (W, H), 0)
     mdraw = ImageDraw.Draw(mask_layer)
@@ -133,37 +133,13 @@ def main():
 
     base = Image.open(TEMPLATE).convert("RGBA")
     W, H = base.size
+    assert (W, H) == (1080, 1350), f"Unexpected template size: {(W, H)}"
 
-    # --- White glass panel ---
-    overlay = Image.new("RGBA", base.size, (255, 255, 255, 0))
-    odraw = ImageDraw.Draw(overlay)
+    # Panel area (absolute coords)
+    x0, y0, x1, y1 = PANEL_BOX
+    pw, ph = (x1 - x0), (y1 - y0)
 
-    pw, ph = int(W * PANEL_W_RATIO), int(H * PANEL_H_RATIO)
-    x0, y0 = (W - pw) // 2, (H - ph) // 2
-    x1, y1 = x0 + pw, y0 + ph
-
-    # Shadow behind panel
-    shadow = Image.new("RGBA", base.size, (0, 0, 0, 0))
-    sdraw = ImageDraw.Draw(shadow)
-    sdraw.rounded_rectangle([(x0 + 5, y0 + 8), (x1 + 5, y1 + 8)], radius=PANEL_RADIUS, fill=PANEL_SHADOW)
-    shadow = shadow.filter(ImageFilter.GaussianBlur(PANEL_SHADOW_BLUR))
-    overlay = Image.alpha_composite(shadow, overlay)
-
-    # Solid white panel
-    odraw.rounded_rectangle([(x0, y0), (x1, y1)], radius=PANEL_RADIUS, fill=PANEL_FILL)
-
-    # Glass-like gloss
-    gloss = Image.new("RGBA", base.size, (255, 255, 255, 0))
-    gdraw = ImageDraw.Draw(gloss)
-    for y in range(y0, y0 + int(ph * 0.5)):
-        alpha = int(40 * (1 - (y - y0) / max(ph * 0.5, 1)))  # softer highlight
-        gdraw.line([(x0, y), (x1, y)], fill=(255, 255, 255, alpha))
-    overlay = Image.alpha_composite(overlay, gloss)
-
-    # Inner glow
-    odraw.line([(x0 + 4, y0 + 4), (x1 - 4, y0 + 4)], fill=(255, 255, 255, 160), width=3)
-
-    # --- Text ---
+    # --- Text setup ---
     try:
         font = ImageFont.truetype(str(FONT_PATH), int(W * FONT_SIZE_RATIO))
     except Exception as e:
@@ -175,28 +151,29 @@ def main():
     lines = _wrap_text(words, font, max_text_width, MAX_LINES)
     text_block = "\n".join(lines)
 
-    combined = Image.alpha_composite(base, overlay)
-
     # Text layer
-    text_layer = Image.new("RGBA", combined.size, (0, 0, 0, 0))
+    text_layer = Image.new("RGBA", base.size, (0, 0, 0, 0))
     tdraw = ImageDraw.Draw(text_layer)
     tw, th = _measure(tdraw, text_block, font, TEXT_SPACING)
 
-    tx = (W - tw) / 2
-    ty = y0 + (ph - th) / VERTICAL_BIAS
+    # Center the text block inside panel with vertical padding
+    tx = x0 + (pw - tw) / 2
+    ty = y0 + max((ph - th) / 2, SAFE_PAD_Y / 2)
 
     # Shadow
-    tdraw.multiline_text((tx + 2, ty + 2), text_block, font=font, fill=TEXT_SHADOW, spacing=TEXT_SPACING, align="center")
+    tdraw.multiline_text((tx + 2, ty + 2), text_block, font=font,
+                         fill=TEXT_SHADOW, spacing=TEXT_SPACING, align="center")
 
-    # Gradient text
+    # Gradient (or solid) text
     if USE_GRADIENT_TEXT:
         _draw_gradient_text(text_layer, text_block, (tx, ty), font, TEXT_SPACING)
     else:
-        tdraw.multiline_text((tx, ty), text_block, font=font, fill=TEXT_COLOR, spacing=TEXT_SPACING, align="center")
+        tdraw.multiline_text((tx, ty), text_block, font=font,
+                             fill=TEXT_COLOR, spacing=TEXT_SPACING, align="center")
 
-    combined = Image.alpha_composite(combined, text_layer)
+    combined = Image.alpha_composite(base, text_layer)
 
-    # Rounded corners + drop shadow
+    # Optional: subtle overall rounding & shadow (kept from previous style)
     mask = Image.new("L", (W, H), 0)
     ImageDraw.Draw(mask).rounded_rectangle([(0, 0), (W, H)], radius=40, fill=255)
     rounded = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -217,6 +194,7 @@ def main():
 
     print(f"✅ Saved: {out_path}")
     print(f"🌐 Public URL: https://post.equalle.com/images/ig/{out_name}")
+    print(f"📐 Panel box used: {PANEL_BOX}")
 
 if __name__ == "__main__":
     main()
