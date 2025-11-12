@@ -8,6 +8,9 @@ name: Instagram Card Builder
 on:
   workflow_dispatch: {}   # ручной запуск
 
+permissions:
+  contents: write          # ✅ позволяет Actions пушить новые файлы
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -35,5 +38,5 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add images/ig/*.jpg
-          git commit -m "Add new Instagram card"
+          git commit -m "Add new Instagram card" || echo "No changes to commit"
           git push
