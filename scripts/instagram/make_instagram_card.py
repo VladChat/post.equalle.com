@@ -4,39 +4,59 @@
 # Author: eQualle Automation
 # ============================================================
 
-import os
 from pathlib import Path
 from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
-from .utils_instagram import parse_latest_from_rss, shorten_title
+from .utils_instagram import parse_latest_from_cache, parse_latest_from_rss, shorten_title
 
+# --- Resolve repo root robustly ---
+# scripts/instagram/make_instagram_card.py -> parents[2] == repo root
 ROOT = Path(__file__).resolve().parents[2]
-RSS_PATH = ROOT / "data" / "cache" / "rss_feed.xml"
-TEMPLATE = ROOT / "images" / "IG-1080-1350.jpg"
+
+# --- Inputs ---
+CACHE_JSON = ROOT / "data" / "cache" / "latest_posts.json"
+RSS_PATH   = ROOT / "data" / "cache" / "rss_feed.xml"   # optional fallback
+TEMPLATE   = ROOT / "images" / "IG-1080-1350.jpg"
 OUTPUT_DIR = ROOT / "images" / "ig"
-FONT_PATH = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+FONT_PATH  = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+
+def _load_latest():
+    data = parse_latest_from_cache(CACHE_JSON)
+    if data and data.get("title"):
+        print(f"ℹ️ Source: latest_posts.json")
+        return data
+    if RSS_PATH.exists():
+        print(f"ℹ️ Source: rss_feed.xml")
+        return parse_latest_from_rss(RSS_PATH)
+    raise FileNotFoundError("Neither data/cache/latest_posts.json nor data/cache/rss_feed.xml found. Ensure RSS Sync runs first.")
 
 def main():
-    data = parse_latest_from_rss(RSS_PATH)
-    title = shorten_title(data["title"])
+    latest = _load_latest()
+    title = shorten_title(latest["title"])
     print(f"📰 Title: {title}")
-    print(f"🔗 Source: {data['link']}")
+    print(f"🔗 Link: {latest.get('link','')}")
 
     im = Image.open(TEMPLATE).convert("RGBA")
     W, H = im.size
 
+    # ===== Glassy bottom panel with gradient =====
     overlay = Image.new("RGBA", im.size, (255,255,255,0))
     draw = ImageDraw.Draw(overlay)
     panel_height = int(H * 0.22)
     panel_y0 = H - panel_height
     for y in range(panel_height):
-        alpha = int(200 * (y / panel_height))
+        # fade from transparent (top of panel) to 78% white at bottom
+        alpha = int(200 * (y / max(panel_height,1)))
         draw.line([(0, panel_y0 + y), (W, panel_y0 + y)], fill=(255,255,255,alpha))
 
-    font_size = int(H * 0.05)
-    font = ImageFont.truetype(FONT_PATH, font_size)
-    text_color = (27, 53, 94, 255)
+    # ===== Title text =====
+    try:
+        font_size = int(H * 0.05)
+        font = ImageFont.truetype(FONT_PATH, font_size)
+    except Exception:
+        font = ImageFont.load_default()
+    text_color = (27, 53, 94, 255)   # #1B355E
     shadow_color = (0, 0, 0, 64)
 
     lines = title.split("\n")
@@ -50,10 +70,10 @@ def main():
 
     combined = Image.alpha_composite(im, overlay)
 
+    # ===== Rounded corners + soft drop shadow =====
     radius = 40
     mask = Image.new("L", (W, H), 0)
-    draw_mask = ImageDraw.Draw(mask)
-    draw_mask.rounded_rectangle([(0,0),(W,H)], radius=radius, fill=255)
+    ImageDraw.Draw(mask).rounded_rectangle([(0,0),(W,H)], radius=radius, fill=255)
     rounded = Image.new("RGBA", (W, H), (0,0,0,0))
     rounded.paste(combined, mask=mask)
 
@@ -62,6 +82,7 @@ def main():
     bg.paste(shadow, (5,5))
     bg.paste(rounded, (0,0), rounded)
 
+    # ===== Save =====
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     date_tag = datetime.now().strftime("%Y-%m-%d")
     safe_title = "-".join(title.lower().split())
