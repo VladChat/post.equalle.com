@@ -96,7 +96,11 @@ def main():
     current_line = ""
     for word in words:
         test_line = f"{current_line} {word}".strip()
-        w, _ = font.getsize(test_line)
+        try:
+            bbox = font.getbbox(test_line)
+            w = bbox[2] - bbox[0]
+        except AttributeError:
+            w, _ = font.getsize(test_line)
         if w < panel_width - 200:  # 100px padding each side
             current_line = test_line
         else:
