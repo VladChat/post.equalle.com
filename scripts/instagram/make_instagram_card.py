@@ -1,6 +1,7 @@
 # ============================================================
 # File: make_instagram_card.py
 # Purpose: Generate branded Instagram card with centered glass-white title panel
+# Font: BungeeSpice-Regular.ttf (located at /images/fonts/)
 # Author: eQualle Automation
 # ============================================================
 
@@ -18,7 +19,7 @@ CACHE_JSON = ROOT / "data" / "cache" / "latest_posts.json"
 RSS_PATH   = ROOT / "data" / "cache" / "rss_feed.xml"   # optional fallback
 TEMPLATE   = ROOT / "images" / "IG-1080-1350.jpg"
 OUTPUT_DIR = ROOT / "images" / "ig"
-FONT_PATH  = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+FONT_PATH  = ROOT / "images" / "fonts" / "BungeeSpice-Regular.ttf"
 
 def _load_latest():
     data = parse_latest_from_cache(CACHE_JSON)
@@ -82,15 +83,16 @@ def main():
 
     # === Text settings ===
     try:
-        font_size = int(W * 0.07)
-        font = ImageFont.truetype(FONT_PATH, font_size)
-    except Exception:
+        font_size = int(W * 0.065)
+        font = ImageFont.truetype(str(FONT_PATH), font_size)
+    except Exception as e:
+        print(f"⚠️ Font load failed: {e}")
         font = ImageFont.load_default()
 
-    text_color = (27, 53, 94, 255)  # brand navy
-    shadow_color = (0, 0, 0, 80)
+    text_color = (46, 46, 46, 255)   # graphite gray
+    shadow_color = (0, 0, 0, 60)
 
-    # Text wrapping into max 3 lines
+    # Text wrapping into up to 4 lines, tighter margins
     words = title.split()
     lines = []
     current_line = ""
@@ -101,14 +103,14 @@ def main():
             w = bbox[2] - bbox[0]
         except AttributeError:
             w, _ = font.getsize(test_line)
-        if w < panel_width - 200:  # 100px padding each side
+        if w < panel_width - 120:  # 60px padding each side
             current_line = test_line
         else:
             lines.append(current_line)
             current_line = word
-        if len(lines) >= 3:
+        if len(lines) >= 4:
             break
-    if current_line and len(lines) < 3:
+    if current_line and len(lines) < 4:
         lines.append(current_line)
 
     text_block = "\n".join(lines)
@@ -122,24 +124,24 @@ def main():
 
     # Compute text size (modern API)
     try:
-        bbox = tdraw.multiline_textbbox((0, 0), text_block, font=font, spacing=8)
+        bbox = tdraw.multiline_textbbox((0, 0), text_block, font=font, spacing=5)
         tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
     except AttributeError:
         tw, th = tdraw.textsize(text_block, font=font)
 
     text_x = (W - tw) / 2
-    text_y = (H - th) / 2  # centered vertically (inside white panel)
+    text_y = panel_y0 + (panel_height - th) / 2.6  # slightly above center
 
     # Draw text shadow
     tdraw.multiline_text(
         (text_x + 2, text_y + 2), text_block,
-        font=font, fill=shadow_color, align="center", spacing=8
+        font=font, fill=shadow_color, align="center", spacing=5
     )
 
     # Draw main text (on top of panel)
     tdraw.multiline_text(
         (text_x, text_y), text_block,
-        font=font, fill=text_color, align="center", spacing=8
+        font=font, fill=text_color, align="center", spacing=5
     )
 
     # Merge text layer on top of glass panel
