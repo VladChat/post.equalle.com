@@ -20,30 +20,30 @@ TEMPLATE   = ROOT / "images" / "IG-p-1080-1350.jpg"     # шаблон с пла
 OUTPUT_DIR = ROOT / "images" / "ig"
 FONT_PATH  = ROOT / "images" / "fonts" / "BungeeSpice-Regular.ttf"
 
-# --- Panel geometry inside the template (точные координаты) ---
-# Размер шаблона: 1080 × 1350
-# Реальные границы белой панели:
+# --- Panel geometry (точные координаты белой плашки) ---
+# Шаблон 1080×1350. Белая панель:
 #   x0=79, y0=440, x1=1011, y1=807  → width=932, height=367
 PANEL_BOX = (79, 440, 1011, 807)
 
-# Дополнительный внутренний отступ от краёв панели,
-# чтобы не наезжать на скругления/тени
-INSET        = 24
+# --- Поля внутри самой плашки (отступ от белого края) ---
+MARGIN_X = 36
+MARGIN_Y = 22
 
 # --- Text layout ---
 MAX_LINES        = 4
-SAFE_PAD_X       = 28          # внутренние поля внутри рабочей зоны
-SAFE_PAD_Y       = 18
 TEXT_SPACING     = 5
-FONT_SIZE_RATIO  = 0.072       # стартовый размер шрифта от ширины изображения
-MIN_FONT_SIZE    = 26          # нижняя граница авто-уменьшения
+FONT_SIZE_RATIO  = 0.072   # стартовый размер шрифта от ширины изображения
+MIN_FONT_SIZE    = 26      # нижняя граница авто-уменьшения
 
 # --- Visual style ---
 USE_GRADIENT_TEXT = True
-GRAD_TOP   = (220, 90, 20)     # более тёмный оранжевый (верх)
+GRAD_TOP   = (220, 90, 20)     # тёмный оранжевый (верх)
 GRAD_BOT   = (160, 60, 15)     # коричневато-оранжевый (низ)
-TEXT_COLOR = (70, 40, 25, 255) # fallback цвет (если градиент выключен)
-TEXT_SHADOW = (0, 0, 0, 80)    # тень под текстом
+TEXT_COLOR = (70, 40, 25, 255) # fallback, если градиент выключен
+
+# Тень текста (чисто визуально, на расчёт центра не влияет)
+TEXT_SHADOW = (0, 0, 0, 80)
+SHADOW_DX, SHADOW_DY = 2, 2
 
 # ============================================================
 # Helpers
@@ -143,7 +143,6 @@ def _fit_text_to_box(draw, title, font_path, start_size, min_size,
             return font, block, tw, th, size
         last = (font, block, tw, th, size)
         size -= 2
-    # если даже на мин. размере не влезло, возвращаем последний вариант
     return last if last else (ImageFont.load_default(), title, box_w, box_h, min_size)
 
 # ============================================================
@@ -160,19 +159,19 @@ def main():
     W, H = base.size
     assert (W, H) == (1080, 1350), f"Unexpected template size: {(W, H)}"
 
-    # --- Panel geometry & working area ---
+    # --- Panel geometry & exact inner box from panel edges ---
     x0, y0, x1, y1 = PANEL_BOX
     pw, ph = (x1 - x0), (y1 - y0)
 
-    # Рабочая область с учётом скруглений и внутренних полей
-    wx0 = x0 + INSET + SAFE_PAD_X
-    wy0 = y0 + INSET + SAFE_PAD_Y
-    wx1 = x1 - INSET - SAFE_PAD_X
-    wy1 = y1 - INSET - SAFE_PAD_Y
+    # Рабочая зона равна панели минус симметричные поля.
+    wx0 = x0 + MARGIN_X
+    wy0 = y0 + MARGIN_Y
+    wx1 = x1 - MARGIN_X
+    wy1 = y1 - MARGIN_Y
     w_w = max(1, wx1 - wx0)
     w_h = max(1, wy1 - wy0)
 
-    # --- Text fitting ---
+    # --- Fit text into the working zone ---
     start_font_size = int(W * FONT_SIZE_RATIO)
     text_layer = Image.new("RGBA", base.size, (0, 0, 0, 0))
     tdraw = ImageDraw.Draw(text_layer)
@@ -182,15 +181,15 @@ def main():
         MAX_LINES, TEXT_SPACING, w_w, w_h
     )
 
-    # Центрирование внутри рабочей области панели
+    # Геометрическое центрирование внутри плашки (равные отступы сверху/снизу)
     tx = wx0 + (w_w - tw) / 2
     ty = wy0 + (w_h - th) / 2
 
-    # Тень
-    tdraw.multiline_text((tx + 2, ty + 2), text_block, font=font,
+    # Рисуем тень (не влияет на вычисление ty)
+    tdraw.multiline_text((tx + SHADOW_DX, ty + SHADOW_DY), text_block, font=font,
                          fill=TEXT_SHADOW, spacing=TEXT_SPACING, align="center")
 
-    # Градиент / сплошной
+    # Основной текст/градиент
     if USE_GRADIENT_TEXT:
         _draw_gradient_text(text_layer, text_block, (tx, ty), font, TEXT_SPACING)
     else:
@@ -199,7 +198,7 @@ def main():
 
     combined = Image.alpha_composite(base, text_layer)
 
-    # Округление и мягкая внешняя тень (как раньше)
+    # Сохранение с тем же оформлением (скругление и лёгкая внешняя тень)
     mask = Image.new("L", (W, H), 0)
     ImageDraw.Draw(mask).rounded_rectangle([(0, 0), (W, H)], radius=40, fill=255)
     rounded = Image.new("RGBA", (W, H), (0, 0, 0, 0))
