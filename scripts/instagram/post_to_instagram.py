@@ -24,8 +24,9 @@ import os
 import json
 import time
 from pathlib import Path
-from typing import Dict
+from typing import Dict, Any, List, Optional
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 
 import requests
 
@@ -87,32 +88,87 @@ def write_state(state: Dict) -> None:
 
 
 # === Data loaders ===
-def load_latest_post() -> Dict:
+def _pick_latest_from_list(items: List[Dict[str, Any]]) -> Dict[str, Any]:
     """
-    Ожидается структура:
-    {
-      "latest": {
-        "title": "...",
-        "url": "https://blog.equalle.com/posts/....",
-        "description": "...",
-        "category": "...",
-        "date": "2025-11-11T12:00:00Z"
-      }
+    Ожидаемый элемент списка:
+      { "title": str, "summary": str, "link": str, "published": RFC2822, ... }
+    Выбираем самый свежий по полю 'published'. Если парсинг даты не удался — берём items[0].
+    """
+    if not items:
+        raise ValueError("latest_posts.json list is empty.")
+
+    def _dt(it: Dict[str, Any]) -> Optional[datetime]:
+        pub = it.get("published")
+        if not pub:
+            return None
+        try:
+            return parsedate_to_datetime(pub)
+        except Exception:
+            return None
+
+    # ищем max по дате; если дат нет — берём первый
+    with_dates = [(it, _dt(it)) for it in items]
+    dated = [pair for pair in with_dates if pair[1] is not None]
+    if dated:
+        latest_it = max(dated, key=lambda p: p[1])[0]
+    else:
+        latest_it = items[0]
+
+    # маппинг к ожидаемым полям
+    return {
+        "title": latest_it.get("title", "").strip(),
+        "url": (latest_it.get("url") or latest_it.get("link") or "").strip(),
+        "description": (latest_it.get("description") or latest_it.get("summary") or "").strip(),
+        "category": latest_it.get("category", ""),
+        "date": latest_it.get("published", ""),
     }
-    Поддерживается и плоский вариант, где корневой объект уже содержит поля поста.
+
+def load_latest_post() -> Dict[str, Any]:
+    """
+    Поддерживает форматы:
+      1) {"latest": {...}}  где внутри есть title/url/description/...
+      2) Плоский dict с полями title/url/description/...
+      3) Список объектов [{title, summary, link, published, ...}, ...]  ← Твой текущий формат
+    Возвращает dict с ключами: title, url, description, category, date
     """
     if not CACHE_JSON.exists():
         raise FileNotFoundError(f"Cache not found: {CACHE_JSON}")
-    data = json.loads(CACHE_JSON.read_text(encoding="utf-8"))
+
+    raw = CACHE_JSON.read_text(encoding="utf-8")
+    data = json.loads(raw)
+
+    # вариант 3: список объектов (факт в твоём репозитории)
+    if isinstance(data, list):
+        return _pick_latest_from_list(data)
+
+    # вариант 1: {"latest": {...}}
     if isinstance(data, dict) and "latest" in data and isinstance(data["latest"], dict):
-        return data["latest"]
-    if isinstance(data, dict) and "title" in data and "url" in data:
-        return data
-    raise ValueError("Unexpected latest_posts.json structure — no usable 'latest' item.")
+        latest = data["latest"]
+        # sanity map на случай ссылок/описаний
+        return {
+            "title": (latest.get("title") or "").strip(),
+            "url": (latest.get("url") or latest.get("link") or "").strip(),
+            "description": (latest.get("description") or latest.get("summary") or "").strip(),
+            "category": latest.get("category", ""),
+            "date": latest.get("date") or latest.get("published") or "",
+        }
+
+    # вариант 2: плоский dict
+    if isinstance(data, dict) and ("title" in data) and ("url" in data or "link" in data):
+        return {
+            "title": (data.get("title") or "").strip(),
+            "url": (data.get("url") or data.get("link") or "").strip(),
+            "description": (data.get("description") or data.get("summary") or "").strip(),
+            "category": data.get("category", ""),
+            "date": data.get("date") or data.get("published") or "",
+        }
+
+    raise ValueError("Unexpected latest_posts.json structure — cannot derive latest post.")
+
 
 def pick_latest_image() -> Path:
     """
-    Берёт последний изменённый JPEG в /images/ig/.
+    Берём последний изменённый JPEG в /images/ig/.
     Формат — .jpg (вертикальный 1080×1350).
     """
     if not IMAGES_DIR.exists():
