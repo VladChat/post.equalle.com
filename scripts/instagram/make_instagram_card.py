@@ -22,8 +22,8 @@ FONT_PATH  = ROOT / "images" / "fonts" / "BungeeSpice-Regular.ttf"
 
 # --- Panel geometry inside the template (точные координаты) ---
 # Размер шаблона: 1080 × 1350
-# Измеренные границы панели: (x0=35, y0=460, x1=1045, y1=910)
-PANEL_BOX = (35, 460, 1045, 910)
+# Измеренные границы панели: (x0=40, y0=490, x1=1040, y1=900)
+PANEL_BOX = (40, 490, 1040, 900)
 
 # --- Text layout ---
 MAX_LINES        = 4
@@ -149,11 +149,11 @@ def main():
     tdraw = ImageDraw.Draw(text_layer)
     tw, th = _measure(tdraw, text_block, font, TEXT_SPACING)
 
-    # Центрирование текста внутри панели
+    # Центрирование текста относительно белой панели
     tx = x0 + (pw - tw) / 2
     ty = y0 + (ph - th) / 2
 
-    # Тень
+    # Тень под текстом
     tdraw.multiline_text((tx + 2, ty + 2), text_block, font=font,
                          fill=TEXT_SHADOW, spacing=TEXT_SPACING, align="center")
 
