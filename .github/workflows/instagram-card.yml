@@ -28,7 +28,7 @@ jobs:
         run: pip install pillow
 
       - name: Generate Instagram Card
-        run: python scripts/instagram/make_instagram_card.py
+        run: python -m scripts.instagram.make_instagram_card
 
       - name: Commit and push results
         run: |
