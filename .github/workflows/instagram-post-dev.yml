@@ -14,6 +14,10 @@ on:
 permissions:
   contents: write           # нужно, чтобы обновлять state и писать логи
 
+concurrency:
+  group: instagram-post-dev
+  cancel-in-progress: true
+
 jobs:
   post-dev:
     runs-on: ubuntu-latest
@@ -31,7 +35,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: 'pip'
+          cache: "pip"
 
       # === 3️⃣ Устанавливаем зависимости ===
       - name: Install dependencies
@@ -41,11 +45,11 @@ jobs:
       - name: Generate Instagram Post Preview
         env:
           MODE: "dev"                               # безопасный режим
-          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
-          IG_IMAGES_BASE_URL: "https://raw.githubusercontent.com/AllyExporter/post.equalle.com/main/images/ig"
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }} # токен общий для FB/IG
+          IG_IMAGES_BASE_URL: "https://post.equalle.com/images/ig"
         run: python -m scripts.instagram.post_to_instagram
 
-      # === 5️⃣ Вывод предпросмотра в лог ===
+      # === 5️⃣ Показываем предпросмотр в логе ===
       - name: Show preview
         if: success()
         run: cat data/out/instagram_preview.json || echo "Preview not found"
