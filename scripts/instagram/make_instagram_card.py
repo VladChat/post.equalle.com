@@ -22,22 +22,28 @@ FONT_PATH  = ROOT / "images" / "fonts" / "BungeeSpice-Regular.ttf"
 
 # --- Panel geometry inside the template (точные координаты) ---
 # Размер шаблона: 1080 × 1350
-# Измеренные границы панели: (x0=40, y0=490, x1=1040, y1=900)
-PANEL_BOX = (40, 490, 1040, 900)
+# Реальные границы белой панели:
+#   x0=79, y0=440, x1=1011, y1=807  → width=932, height=367
+PANEL_BOX = (79, 440, 1011, 807)
+
+# Дополнительный внутренний отступ от краёв панели,
+# чтобы не наезжать на скругления/тени
+INSET        = 24
 
 # --- Text layout ---
 MAX_LINES        = 4
-SAFE_PAD_X       = 60          # внутренние отступы по горизонтали
-SAFE_PAD_Y       = 36          # внутренние отступы по вертикали
+SAFE_PAD_X       = 28          # внутренние поля внутри рабочей зоны
+SAFE_PAD_Y       = 18
 TEXT_SPACING     = 5
-FONT_SIZE_RATIO  = 0.065       # базовый размер шрифта
+FONT_SIZE_RATIO  = 0.072       # стартовый размер шрифта от ширины изображения
+MIN_FONT_SIZE    = 26          # нижняя граница авто-уменьшения
 
 # --- Visual style ---
 USE_GRADIENT_TEXT = True
 GRAD_TOP   = (220, 90, 20)     # более тёмный оранжевый (верх)
 GRAD_BOT   = (160, 60, 15)     # коричневато-оранжевый (низ)
-TEXT_COLOR = (70, 40, 25, 255) # fallback цвет
-TEXT_SHADOW = (0, 0, 0, 80)    # немного усилена тень
+TEXT_COLOR = (70, 40, 25, 255) # fallback цвет (если градиент выключен)
+TEXT_SHADOW = (0, 0, 0, 80)    # тень под текстом
 
 # ============================================================
 # Helpers
@@ -69,6 +75,7 @@ def _text_width(font, text):
         return d.textlength(text, font=font)
 
 def _wrap_text(words, font, max_width, max_lines):
+    """Word wrap into max_lines, truncating last line with ellipsis if needed."""
     lines, current = [], ""
     i = 0
     while i < len(words):
@@ -102,6 +109,7 @@ def _wrap_text(words, font, max_width, max_lines):
     return lines[:max_lines]
 
 def _draw_gradient_text(dest_img, text, xy, font, spacing):
+    """Render vertical gradient text using a mask."""
     W, H = dest_img.size
     mask_layer = Image.new("L", (W, H), 0)
     mdraw = ImageDraw.Draw(mask_layer)
@@ -117,6 +125,27 @@ def _draw_gradient_text(dest_img, text, xy, font, spacing):
         gdraw.line([(0, y), (W, y)], fill=(r, g, b, 255))
     dest_img.paste(gradient, (0, 0), mask_layer)
 
+def _fit_text_to_box(draw, title, font_path, start_size, min_size,
+                     max_lines, spacing, box_w, box_h):
+    """Pick the largest font size so text fits in (box_w x box_h)."""
+    words = title.split()
+    size = int(start_size)
+    last = None
+    while size >= min_size:
+        try:
+            font = ImageFont.truetype(str(font_path), size)
+        except Exception:
+            font = ImageFont.load_default()
+        lines = _wrap_text(words, font, box_w, max_lines)
+        block = "\n".join(lines)
+        tw, th = _measure(draw, block, font, spacing)
+        if tw <= box_w and th <= box_h:
+            return font, block, tw, th, size
+        last = (font, block, tw, th, size)
+        size -= 2
+    # если даже на мин. размере не влезло, возвращаем последний вариант
+    return last if last else (ImageFont.load_default(), title, box_w, box_h, min_size)
+
 # ============================================================
 # Main
 # ============================================================
@@ -131,33 +160,37 @@ def main():
     W, H = base.size
     assert (W, H) == (1080, 1350), f"Unexpected template size: {(W, H)}"
 
+    # --- Panel geometry & working area ---
     x0, y0, x1, y1 = PANEL_BOX
     pw, ph = (x1 - x0), (y1 - y0)
 
-    try:
-        font = ImageFont.truetype(str(FONT_PATH), int(W * FONT_SIZE_RATIO))
-    except Exception as e:
-        print(f"⚠️ Font load failed: {e}")
-        font = ImageFont.load_default()
+    # Рабочая область с учётом скруглений и внутренних полей
+    wx0 = x0 + INSET + SAFE_PAD_X
+    wy0 = y0 + INSET + SAFE_PAD_Y
+    wx1 = x1 - INSET - SAFE_PAD_X
+    wy1 = y1 - INSET - SAFE_PAD_Y
+    w_w = max(1, wx1 - wx0)
+    w_h = max(1, wy1 - wy0)
 
-    max_text_width = pw - SAFE_PAD_X * 2
-    words = title.split()
-    lines = _wrap_text(words, font, max_text_width, MAX_LINES)
-    text_block = "\n".join(lines)
-
+    # --- Text fitting ---
+    start_font_size = int(W * FONT_SIZE_RATIO)
     text_layer = Image.new("RGBA", base.size, (0, 0, 0, 0))
     tdraw = ImageDraw.Draw(text_layer)
-    tw, th = _measure(tdraw, text_block, font, TEXT_SPACING)
 
-    # Центрирование текста относительно белой панели
-    tx = x0 + (pw - tw) / 2
-    ty = y0 + (ph - th) / 2
+    font, text_block, tw, th, used_size = _fit_text_to_box(
+        tdraw, title, FONT_PATH, start_font_size, MIN_FONT_SIZE,
+        MAX_LINES, TEXT_SPACING, w_w, w_h
+    )
 
-    # Тень под текстом
+    # Центрирование внутри рабочей области панели
+    tx = wx0 + (w_w - tw) / 2
+    ty = wy0 + (w_h - th) / 2
+
+    # Тень
     tdraw.multiline_text((tx + 2, ty + 2), text_block, font=font,
                          fill=TEXT_SHADOW, spacing=TEXT_SPACING, align="center")
 
-    # Градиентный или сплошной текст
+    # Градиент / сплошной
     if USE_GRADIENT_TEXT:
         _draw_gradient_text(text_layer, text_block, (tx, ty), font, TEXT_SPACING)
     else:
@@ -166,7 +199,7 @@ def main():
 
     combined = Image.alpha_composite(base, text_layer)
 
-    # Округление и мягкая тень
+    # Округление и мягкая внешняя тень (как раньше)
     mask = Image.new("L", (W, H), 0)
     ImageDraw.Draw(mask).rounded_rectangle([(0, 0), (W, H)], radius=40, fill=255)
     rounded = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -177,6 +210,7 @@ def main():
     bg.paste(shadow2, (5, 5))
     bg.paste(rounded, (0, 0), rounded)
 
+    # Save
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     date_tag = datetime.now().strftime("%Y-%m-%d")
     safe_title = "-".join(title.lower().split())
@@ -186,7 +220,7 @@ def main():
 
     print(f"✅ Saved: {out_path}")
     print(f"🌐 Public URL: https://post.equalle.com/images/ig/{out_name}")
-    print(f"📐 Panel box used: {PANEL_BOX}")
+    print(f"📐 Panel box: {PANEL_BOX}, working box: {(wx0, wy0, wx1, wy1)}, font: {used_size}px")
 
 if __name__ == "__main__":
     main()
