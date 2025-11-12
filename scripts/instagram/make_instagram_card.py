@@ -113,31 +113,37 @@ def main():
 
     text_block = "\n".join(lines)
 
-    # Compute text size (using modern API)
-    temp_draw = ImageDraw.Draw(Image.new("RGBA", im.size))
+    # === Combine panel overlay with base image first ===
+    combined = Image.alpha_composite(im, overlay)
+
+    # === Create separate text layer (so text is drawn above the glass) ===
+    text_layer = Image.new("RGBA", combined.size, (255, 255, 255, 0))
+    tdraw = ImageDraw.Draw(text_layer)
+
+    # Compute text size (modern API)
     try:
-        bbox = temp_draw.multiline_textbbox((0, 0), text_block, font=font, spacing=8)
+        bbox = tdraw.multiline_textbbox((0, 0), text_block, font=font, spacing=8)
         tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
     except AttributeError:
-        tw, th = temp_draw.textsize(text_block, font=font)
+        tw, th = tdraw.textsize(text_block, font=font)
 
     text_x = (W - tw) / 2
-    text_y = (H - th) / 2  # centered vertically on image (aligns with panel center)
+    text_y = (H - th) / 2  # centered vertically (inside white panel)
 
-    # Draw text shadow (slight offset)
-    draw.multiline_text(
+    # Draw text shadow
+    tdraw.multiline_text(
         (text_x + 2, text_y + 2), text_block,
         font=font, fill=shadow_color, align="center", spacing=8
     )
 
-    # Draw main text
-    draw.multiline_text(
+    # Draw main text (on top of panel)
+    tdraw.multiline_text(
         (text_x, text_y), text_block,
         font=font, fill=text_color, align="center", spacing=8
     )
 
-    # Combine with base image
-    combined = Image.alpha_composite(im, overlay)
+    # Merge text layer on top of glass panel
+    combined = Image.alpha_composite(combined, text_layer)
 
     # === Rounded corners for entire image + soft global shadow ===
     radius = 40
