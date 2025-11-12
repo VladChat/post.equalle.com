@@ -1,0 +1,39 @@
+# ============================================================
+# Workflow: Instagram Card Builder
+# Purpose: Automatically create image card from latest RSS item
+# ============================================================
+
+name: Instagram Card Builder
+
+on:
+  workflow_dispatch: {}   # ручной запуск
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pillow
+
+      - name: Generate Instagram Card
+        run: python scripts/instagram/make_instagram_card.py
+
+      - name: Commit and push results
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add images/ig/*.jpg
+          git commit -m "Add new Instagram card"
+          git push
