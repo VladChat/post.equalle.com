@@ -1,17 +1,16 @@
 # ============================================================
 # File: make_instagram_card.py
-# Purpose: Generate branded Instagram card with title overlay
+# Purpose: Generate branded Instagram card with centered glass-white title panel
 # Author: eQualle Automation
 # ============================================================
 
 from pathlib import Path
 from datetime import datetime
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageOps
 
 from .utils_instagram import parse_latest_from_cache, parse_latest_from_rss, shorten_title
 
 # --- Resolve repo root robustly ---
-# scripts/instagram/make_instagram_card.py -> parents[2] == repo root
 ROOT = Path(__file__).resolve().parents[2]
 
 # --- Inputs ---
@@ -37,70 +36,124 @@ def main():
     print(f"📰 Title: {title}")
     print(f"🔗 Link: {latest.get('link','')}")
 
+    # --- Open base image ---
     im = Image.open(TEMPLATE).convert("RGBA")
     W, H = im.size
 
-    # ===== Glassy bottom panel with gradient =====
-    overlay = Image.new("RGBA", im.size, (255,255,255,0))
+    # === Create overlay for the white glass panel ===
+    overlay = Image.new("RGBA", im.size, (255, 255, 255, 0))
     draw = ImageDraw.Draw(overlay)
-    panel_height = int(H * 0.22)
-    panel_y0 = H - panel_height
-    for y in range(panel_height):
-        # fade from transparent (top of panel) to 78% white at bottom
-        alpha = int(200 * (y / max(panel_height,1)))
-        draw.line([(0, panel_y0 + y), (W, panel_y0 + y)], fill=(255,255,255,alpha))
 
-    # ===== Title text =====
+    panel_width = int(W * 0.85)
+    panel_height = int(H * 0.35)
+    panel_x0 = (W - panel_width) // 2
+    panel_y0 = (H - panel_height) // 2
+    panel_x1 = panel_x0 + panel_width
+    panel_y1 = panel_y0 + panel_height
+
+    # White base with transparency
+    draw.rounded_rectangle(
+        [(panel_x0, panel_y0), (panel_x1, panel_y1)],
+        radius=60,
+        fill=(255, 255, 255, 230)
+    )
+
+    # Soft drop shadow below panel
+    shadow = Image.new("RGBA", im.size, (0, 0, 0, 0))
+    sdraw = ImageDraw.Draw(shadow)
+    sdraw.rounded_rectangle(
+        [(panel_x0 + 5, panel_y0 + 8), (panel_x1 + 5, panel_y1 + 8)],
+        radius=60,
+        fill=(0, 0, 0, 45)
+    )
+    shadow = shadow.filter(ImageFilter.GaussianBlur(18))
+    overlay = Image.alpha_composite(shadow, overlay)
+
+    # Glossy highlight (top half gradient)
+    gloss = Image.new("RGBA", im.size, (255, 255, 255, 0))
+    gdraw = ImageDraw.Draw(gloss)
+    for y in range(panel_y0, panel_y0 + int(panel_height * 0.5)):
+        alpha = int(70 * (1 - (y - panel_y0) / (panel_height * 0.5)))
+        gdraw.line([(panel_x0, y), (panel_x1, y)], fill=(255, 255, 255, alpha))
+    overlay = Image.alpha_composite(overlay, gloss)
+
+    # Inner top glow line
+    draw.line([(panel_x0 + 4, panel_y0 + 4), (panel_x1 - 4, panel_y0 + 4)], fill=(255,255,255,160), width=3)
+
+    # === Text settings ===
     try:
-        font_size = int(H * 0.05)
+        font_size = int(W * 0.07)
         font = ImageFont.truetype(FONT_PATH, font_size)
     except Exception:
         font = ImageFont.load_default()
-    text_color = (27, 53, 94, 255)   # #1B355E
-    shadow_color = (0, 0, 0, 64)
 
-    lines = title.split("\n")
+    text_color = (27, 53, 94, 255)  # brand navy
+    shadow_color = (0, 0, 0, 80)
+
+    # Text wrapping into max 3 lines
+    words = title.split()
+    lines = []
+    current_line = ""
+    for word in words:
+        test_line = f"{current_line} {word}".strip()
+        w, _ = font.getsize(test_line)
+        if w < panel_width - 200:  # 100px padding each side
+            current_line = test_line
+        else:
+            lines.append(current_line)
+            current_line = word
+        if len(lines) >= 3:
+            break
+    if current_line and len(lines) < 3:
+        lines.append(current_line)
+
     text_block = "\n".join(lines)
 
-    # --- FIX: use modern method for Pillow >=11 ---
+    # Compute text size (using modern API)
+    temp_draw = ImageDraw.Draw(Image.new("RGBA", im.size))
     try:
-        bbox = draw.multiline_textbbox((0, 0), text_block, font=font, spacing=6)
+        bbox = temp_draw.multiline_textbbox((0, 0), text_block, font=font, spacing=8)
         tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
     except AttributeError:
-        # fallback for older Pillow versions
-        try:
-            tw, th = draw.multiline_textsize(text_block, font=font, spacing=6)
-        except Exception:
-            tw, th = draw.textsize(text_block, font=font)
+        tw, th = temp_draw.textsize(text_block, font=font)
 
     text_x = (W - tw) / 2
-    text_y = H - panel_height + (panel_height - th) / 2
+    text_y = (H - th) / 2  # centered vertically on image (aligns with panel center)
 
-    # --- Draw shadow and text ---
-    draw.multiline_text((text_x+2, text_y+2), text_block, font=font, fill=shadow_color, align="center", spacing=6)
-    draw.multiline_text((text_x, text_y), text_block, font=font, fill=text_color, align="center", spacing=6)
+    # Draw text shadow (slight offset)
+    draw.multiline_text(
+        (text_x + 2, text_y + 2), text_block,
+        font=font, fill=shadow_color, align="center", spacing=8
+    )
 
+    # Draw main text
+    draw.multiline_text(
+        (text_x, text_y), text_block,
+        font=font, fill=text_color, align="center", spacing=8
+    )
+
+    # Combine with base image
     combined = Image.alpha_composite(im, overlay)
 
-    # ===== Rounded corners + soft drop shadow =====
+    # === Rounded corners for entire image + soft global shadow ===
     radius = 40
     mask = Image.new("L", (W, H), 0)
-    ImageDraw.Draw(mask).rounded_rectangle([(0,0),(W,H)], radius=radius, fill=255)
-    rounded = Image.new("RGBA", (W, H), (0,0,0,0))
+    ImageDraw.Draw(mask).rounded_rectangle([(0, 0), (W, H)], radius=radius, fill=255)
+    rounded = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     rounded.paste(combined, mask=mask)
 
-    shadow = rounded.filter(ImageFilter.GaussianBlur(12))
-    bg = Image.new("RGBA", (W+10, H+10), (0,0,0,0))
-    bg.paste(shadow, (5,5))
-    bg.paste(rounded, (0,0), rounded)
+    soft_shadow = rounded.filter(ImageFilter.GaussianBlur(12))
+    bg = Image.new("RGBA", (W + 10, H + 10), (0, 0, 0, 0))
+    bg.paste(soft_shadow, (5, 5))
+    bg.paste(rounded, (0, 0), rounded)
 
-    # ===== Save =====
+    # === Save result ===
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     date_tag = datetime.now().strftime("%Y-%m-%d")
     safe_title = "-".join(title.lower().split())
     out_name = f"{date_tag}-{safe_title}.jpg"
     out_path = OUTPUT_DIR / out_name
-    bg.convert("RGB").save(out_path, "JPEG", quality=90, optimize=True)
+    bg.convert("RGB").save(out_path, "JPEG", quality=92, optimize=True)
 
     public_url = f"https://post.equalle.com/images/ig/{out_name}"
     print(f"✅ Saved: {out_path}")
