@@ -61,10 +61,22 @@ def main():
 
     lines = title.split("\n")
     text_block = "\n".join(lines)
-    tw, th = draw.multiline_textsize(text_block, font=font, spacing=6)
+
+    # --- FIX: use modern method for Pillow >=11 ---
+    try:
+        bbox = draw.multiline_textbbox((0, 0), text_block, font=font, spacing=6)
+        tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
+    except AttributeError:
+        # fallback for older Pillow versions
+        try:
+            tw, th = draw.multiline_textsize(text_block, font=font, spacing=6)
+        except Exception:
+            tw, th = draw.textsize(text_block, font=font)
+
     text_x = (W - tw) / 2
     text_y = H - panel_height + (panel_height - th) / 2
 
+    # --- Draw shadow and text ---
     draw.multiline_text((text_x+2, text_y+2), text_block, font=font, fill=shadow_color, align="center", spacing=6)
     draw.multiline_text((text_x, text_y), text_block, font=font, fill=text_color, align="center", spacing=6)
 
