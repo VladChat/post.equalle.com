@@ -2,7 +2,7 @@
 # File: scripts/instagram/post_to_instagram.py
 # Full path: <repo_root>/scripts/instagram/post_to_instagram.py
 # Purpose:
-#   - Берёт последнюю готовую IG-карточку (1080×1350 JPEG) из /images/ig/
+#   - Берёт IG-карточку (1080×1350 JPEG/PNG) из /images/ig/ по СЛАГУ поста
 #   - Формирует caption из data/cache/latest_posts.json
 #   - Проверяет дубликаты по data/state.json (секция "instagram")
 #   - Публикует в Instagram через Graph API:
@@ -12,10 +12,10 @@
 #   - Пишет лог в data/logs/post_to_instagram.log
 #
 # ENV (секреты/система, НЕ из файлов):
-#   MODE                = "prod" | "dev"   (по умолчанию "dev")
-#   FB_PAGE_TOKEN       = "<page_access_token>" # Page token (общий и для FB, и для IG)
+#   MODE               = "prod" | "dev"   (по умолчанию "dev")
+#   FB_PAGE_TOKEN      = "<page_access_token>"  # общий токен для FB/IG
 #   (резервное имя: PAGE_TOKEN)
-#   IG_IMAGES_BASE_URL  = "https://blog.equalle.com/images/ig/"  # публичная база для .jpg
+#   IG_IMAGES_BASE_URL = "https://blog.equalle.com/images/ig/"  # публичная база
 # ============================================================
 
 from __future__ import annotations
@@ -27,6 +27,7 @@ from pathlib import Path
 from typing import Dict, Any, List, Optional
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
+from urllib.parse import urlparse
 
 import requests
 
@@ -43,6 +44,13 @@ PREVIEW_OUT= ROOT / "data" / "out" / "instagram_preview.json"
 
 GRAPH_BASE = "https://graph.facebook.com/v21.0"
 
+# Шаблоны/болванки, которые НЕ надо публиковать
+TEMPLATE_FILENAMES = {
+    "IG-1080-1350.jpg",
+    "IG-p-1080-1350.jpg",
+    "IG-1080-1350.png",
+    "IG-p-1080-1350.png",
+}
 
 # === Logging helpers ===
 def _ensure_dirs() -> None:
@@ -57,15 +65,12 @@ def log(msg: str) -> None:
         f.write(line)
     print(line, end="")
 
-
 # === ENV & state helpers ===
 def get_mode() -> str:
     return os.getenv("MODE", "dev").strip().lower()
 
 def get_ig_id() -> str:
-    """
-    Возвращает Instagram Business ID (фиксированное значение).
-    """
+    # Фиксированный IG Business ID для eQualle Abrasives
     return "17841422239487755"
 
 def get_page_token() -> str:
@@ -86,13 +91,12 @@ def write_state(state: Dict) -> None:
     STATE_JSON.parent.mkdir(parents=True, exist_ok=True)
     STATE_JSON.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
 
-
 # === Data loaders ===
 def _pick_latest_from_list(items: List[Dict[str, Any]]) -> Dict[str, Any]:
     """
-    Ожидаемый элемент списка:
+    Элемент списка:
       { "title": str, "summary": str, "link": str, "published": RFC2822, ... }
-    Выбираем самый свежий по полю 'published'. Если парсинг даты не удался — берём items[0].
+    Выбираем самый свежий по 'published'. Если дат нет — берём первый.
     """
     if not items:
         raise ValueError("latest_posts.json list is empty.")
@@ -106,7 +110,6 @@ def _pick_latest_from_list(items: List[Dict[str, Any]]) -> Dict[str, Any]:
         except Exception:
             return None
 
-    # ищем max по дате; если дат нет — берём первый
     with_dates = [(it, _dt(it)) for it in items]
     dated = [pair for pair in with_dates if pair[1] is not None]
     if dated:
@@ -114,37 +117,32 @@ def _pick_latest_from_list(items: List[Dict[str, Any]]) -> Dict[str, Any]:
     else:
         latest_it = items[0]
 
-    # маппинг к ожидаемым полям
     return {
-        "title": latest_it.get("title", "").strip(),
+        "title": (latest_it.get("title") or "").strip(),
         "url": (latest_it.get("url") or latest_it.get("link") or "").strip(),
         "description": (latest_it.get("description") or latest_it.get("summary") or "").strip(),
         "category": latest_it.get("category", ""),
-        "date": latest_it.get("published", ""),
+        "date": latest_it.get("published", latest_it.get("date", "")),
     }
 
 def load_latest_post() -> Dict[str, Any]:
     """
     Поддерживает форматы:
-      1) {"latest": {...}}  где внутри есть title/url/description/...
-      2) Плоский dict с полями title/url/description/...
-      3) Список объектов [{title, summary, link, published, ...}, ...]  ← Твой текущий формат
-    Возвращает dict с ключами: title, url, description, category, date
+      1) {"latest": {...}}
+      2) Плоский dict {...}
+      3) Список объектов [{title, summary, link, published, ...}, ...]
+    Возвращает dict: title, url, description, category, date
     """
     if not CACHE_JSON.exists():
         raise FileNotFoundError(f"Cache not found: {CACHE_JSON}")
 
-    raw = CACHE_JSON.read_text(encoding="utf-8")
-    data = json.loads(raw)
+    data = json.loads(CACHE_JSON.read_text(encoding="utf-8"))
 
-    # вариант 3: список объектов (факт в твоём репозитории)
     if isinstance(data, list):
         return _pick_latest_from_list(data)
 
-    # вариант 1: {"latest": {...}}
     if isinstance(data, dict) and "latest" in data and isinstance(data["latest"], dict):
         latest = data["latest"]
-        # sanity map на случай ссылок/описаний
         return {
             "title": (latest.get("title") or "").strip(),
             "url": (latest.get("url") or latest.get("link") or "").strip(),
@@ -153,7 +151,6 @@ def load_latest_post() -> Dict[str, Any]:
             "date": latest.get("date") or latest.get("published") or "",
         }
 
-    # вариант 2: плоский dict
     if isinstance(data, dict) and ("title" in data) and ("url" in data or "link" in data):
         return {
             "title": (data.get("title") or "").strip(),
@@ -165,24 +162,63 @@ def load_latest_post() -> Dict[str, Any]:
 
     raise ValueError("Unexpected latest_posts.json structure — cannot derive latest post.")
 
+# === Image picking ===
+def _slug_from_url(url: str) -> Optional[str]:
+    if not url:
+        return None
+    try:
+        path = urlparse(url).path.strip("/")
+        if not path:
+            return None
+        # берём последний сегмент без расширения
+        last = path.split("/")[-1]
+        if not last:
+            return None
+        # если вдруг есть точка — убираем расширение
+        if "." in last:
+            last = last.rsplit(".", 1)[0]
+        return last.lower()
+    except Exception:
+        return None
 
-def pick_latest_image() -> Path:
-    """
-    Берём последний изменённый JPEG в /images/ig/.
-    Формат — .jpg (вертикальный 1080×1350).
-    """
-    if not IMAGES_DIR.exists():
-        raise FileNotFoundError(f"Images dir not found: {IMAGES_DIR}")
+def _find_image_by_slug(slug: str) -> Optional[Path]:
+    if not slug:
+        return None
+    # пробуем .jpg, .jpeg, .png
+    candidates = [
+        IMAGES_DIR / f"{slug}.jpg",
+        IMAGES_DIR / f"{slug}.jpeg",
+        IMAGES_DIR / f"{slug}.png",
+    ]
+    for p in candidates:
+        if p.exists() and p.is_file():
+            return p
+    return None
 
-    jpgs = sorted(
-        [p for p in IMAGES_DIR.glob("*.jpg") if p.is_file()],
-        key=lambda p: p.stat().st_mtime,
-        reverse=True,
-    )
-    if not jpgs:
-        raise FileNotFoundError(f"No .jpg images in {IMAGES_DIR}")
-    return jpgs[0]
+def _fallback_latest_image() -> Path:
+    # берём последний изменённый файл, исключая шаблоны
+    files = [p for p in IMAGES_DIR.glob("*.*") if p.is_file()]
+    # фильтруем только изображения
+    files = [p for p in files if p.suffix.lower() in {".jpg", ".jpeg", ".png"}]
+    # исключаем шаблоны
+    files = [p for p in files if p.name not in TEMPLATE_FILENAMES]
+    if not files:
+        raise FileNotFoundError(f"No publishable images in {IMAGES_DIR}")
+    files.sort(key=lambda p: p.stat().st_mtime, reverse=True)
+    return files[0]
 
+def pick_image_for_latest(latest_url: str) -> Path:
+    slug = _slug_from_url(latest_url or "")
+    if slug:
+        p = _find_image_by_slug(slug)
+        if p:
+            log(f"Image matched by slug: {p.name}")
+            return p
+        else:
+            log(f"Slug image not found for '{slug}', falling back to most-recent non-template.")
+    p = _fallback_latest_image()
+    log(f"Image picked by fallback: {p.name}")
+    return p
 
 # === Caption builder ===
 def _truncate_caption(text: str, limit: int = 2200) -> str:
@@ -210,7 +246,6 @@ def build_caption(latest: Dict) -> str:
     caption = "\n\n".join(parts).strip()
     return _truncate_caption(caption, 2200)
 
-
 # === Duplicate guard ===
 def is_already_posted(state: Dict, latest_url: str) -> bool:
     ig_state = (state or {}).get("instagram", {})
@@ -226,7 +261,6 @@ def update_state_after_publish(state: Dict, post_id: str, image_name: str, url: 
     state["instagram"]["last_url"]     = url
     write_state(state)
 
-
 # === Graph API calls ===
 def graph_post(path: str, params: Dict) -> Dict:
     url = f"{GRAPH_BASE.rstrip('/')}/{path.lstrip('/')}"
@@ -241,11 +275,7 @@ def graph_post(path: str, params: Dict) -> Dict:
     return data
 
 def create_media_container(ig_id: str, image_url: str, caption: str, token: str) -> str:
-    params = {
-        "image_url": image_url,
-        "caption": caption,
-        "access_token": token,
-    }
+    params = {"image_url": image_url, "caption": caption, "access_token": token}
     data = graph_post(f"{ig_id}/media", params)
     creation_id = data.get("id")
     if not creation_id:
@@ -253,16 +283,12 @@ def create_media_container(ig_id: str, image_url: str, caption: str, token: str)
     return creation_id
 
 def publish_media(ig_id: str, creation_id: str, token: str) -> str:
-    params = {
-        "creation_id": creation_id,
-        "access_token": token,
-    }
+    params = {"creation_id": creation_id, "access_token": token}
     data = graph_post(f"{ig_id}/media_publish", params)
     published_id = data.get("id")
     if not published_id:
         raise RuntimeError(f"No published media id returned: {data}")
     return published_id
-
 
 # === Main ===
 def main():
@@ -281,7 +307,8 @@ def main():
         log(f"Skip: already posted this URL → {latest_url}")
         return
 
-    image_path = pick_latest_image()
+    # Выбираем изображение по слагу, иначе — свежайшее без шаблонов
+    image_path = pick_image_for_latest(latest_url)
     image_name = image_path.name
 
     PUBLIC_BASE = os.getenv("IG_IMAGES_BASE_URL", "https://blog.equalle.com/images/ig/")
@@ -317,7 +344,6 @@ def main():
     update_state_after_publish(state, published_id, image_name, latest_url)
     log("State updated (instagram).")
     log("=== Done ===")
-
 
 if __name__ == "__main__":
     try:
