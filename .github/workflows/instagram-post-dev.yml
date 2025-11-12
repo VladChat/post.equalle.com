@@ -12,7 +12,7 @@ on:
   workflow_dispatch:        # ручной запуск из GitHub Actions
 
 permissions:
-  contents: write            # нужно, чтобы обновлять state и писать логи
+  contents: write           # нужно, чтобы обновлять state и писать логи
 
 jobs:
   post-dev:
@@ -41,9 +41,8 @@ jobs:
       - name: Generate Instagram Post Preview
         env:
           MODE: "dev"                               # безопасный режим
-          IG_BUSINESS_ID: ${{ secrets.IG_BUSINESS_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
-          IG_IMAGES_BASE_URL: "https://blog.equalle.com/images/ig/"
+          IG_IMAGES_BASE_URL: "https://raw.githubusercontent.com/AllyExporter/post.equalle.com/main/images/ig"
         run: python -m scripts.instagram.post_to_instagram
 
       # === 5️⃣ Вывод предпросмотра в лог ===
