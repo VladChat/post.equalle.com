@@ -13,9 +13,8 @@
 #
 # ENV (секреты/система, НЕ из файлов):
 #   MODE                = "prod" | "dev"   (по умолчанию "dev")
-#   IG_BUSINESS_ID      = "17841422239487755"   # твой IG Business ID
 #   FB_PAGE_TOKEN       = "<page_access_token>" # Page token (общий и для FB, и для IG)
-#   (резервные имена: PAGE_TOKEN)
+#   (резервное имя: PAGE_TOKEN)
 #   IG_IMAGES_BASE_URL  = "https://blog.equalle.com/images/ig/"  # публичная база для .jpg
 # ============================================================
 
@@ -63,10 +62,10 @@ def get_mode() -> str:
     return os.getenv("MODE", "dev").strip().lower()
 
 def get_ig_id() -> str:
-    val = os.getenv("IG_BUSINESS_ID", "").strip()
-    if not val:
-        raise RuntimeError("ENV IG_BUSINESS_ID is required but not set.")
-    return val
+    """
+    Возвращает Instagram Business ID (фиксированное значение).
+    """
+    return "17841422239487755"
 
 def get_page_token() -> str:
     token = os.getenv("FB_PAGE_TOKEN") or os.getenv("PAGE_TOKEN")
@@ -107,14 +106,13 @@ def load_latest_post() -> Dict:
     data = json.loads(CACHE_JSON.read_text(encoding="utf-8"))
     if isinstance(data, dict) and "latest" in data and isinstance(data["latest"], dict):
         return data["latest"]
-    # плоский формат
     if isinstance(data, dict) and "title" in data and "url" in data:
         return data
     raise ValueError("Unexpected latest_posts.json structure — no usable 'latest' item.")
 
 def pick_latest_image() -> Path:
     """
-    Берём последний изменённый JPEG в /images/ig/.
+    Берёт последний изменённый JPEG в /images/ig/.
     Формат — .jpg (вертикальный 1080×1350).
     """
     if not IMAGES_DIR.exists():
@@ -134,7 +132,6 @@ def pick_latest_image() -> Path:
 def _truncate_caption(text: str, limit: int = 2200) -> str:
     if len(text) <= limit:
         return text
-    # мягкая обрезка по границе строки/слова
     cut = text[:limit]
     last_nl = cut.rfind("\n")
     last_sp = cut.rfind(" ")
@@ -188,11 +185,6 @@ def graph_post(path: str, params: Dict) -> Dict:
     return data
 
 def create_media_container(ig_id: str, image_url: str, caption: str, token: str) -> str:
-    """
-    POST /{ig_id}/media
-      image_url, caption, access_token
-    Возвращает creation_id (id).
-    """
     params = {
         "image_url": image_url,
         "caption": caption,
@@ -205,11 +197,6 @@ def create_media_container(ig_id: str, image_url: str, caption: str, token: str)
     return creation_id
 
 def publish_media(ig_id: str, creation_id: str, token: str) -> str:
-    """
-    POST /{ig_id}/media_publish
-      creation_id, access_token
-    Возвращает id опубликованного медиа (post id).
-    """
     params = {
         "creation_id": creation_id,
         "access_token": token,
@@ -238,17 +225,14 @@ def main():
         log(f"Skip: already posted this URL → {latest_url}")
         return
 
-    # Берём последнюю готовую картинку
     image_path = pick_latest_image()
     image_name = image_path.name
 
-    # Публичный URL картинки. Можно переопределить через ENV IG_IMAGES_BASE_URL
     PUBLIC_BASE = os.getenv("IG_IMAGES_BASE_URL", "https://blog.equalle.com/images/ig/")
     image_url = (PUBLIC_BASE.rstrip("/") + "/" + image_name).strip()
 
     caption = build_caption(latest)
 
-    # DEV: сохраняем предпросмотр, не публикуем
     if mode != "prod":
         preview = {
             "image_name": image_name,
@@ -264,19 +248,16 @@ def main():
         log(f"[DEV] Preview saved → {PREVIEW_OUT}")
         return
 
-    # PROD: публикация
     log(f"Create media container for {image_name}")
     creation_id = create_media_container(ig_id, image_url, caption, token)
     log(f"Creation ID: {creation_id}")
 
-    # Короткая пауза перед публикацией
     time.sleep(2)
 
     log("Publish media…")
     published_id = publish_media(ig_id, creation_id, token)
     log(f"Published IG media id: {published_id}")
 
-    # Обновляем state.json
     update_state_after_publish(state, published_id, image_name, latest_url)
     log("State updated (instagram).")
     log("=== Done ===")
