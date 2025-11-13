@@ -82,23 +82,6 @@ def write_state(state: Dict) -> None:
     STATE_JSON.parent.mkdir(parents=True, exist_ok=True)
     STATE_JSON.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
 
-# === URL normalization (fix common bad suffixes from RSS) ===
-def _normalize_url(url: str) -> str:
-    """
-    Страховка на случай временных/ошибочных хвостов в слагах RSS.
-    Исправляет известные паттерны, НЕ меняя остальную структуру URL.
-    """
-    if not url:
-        return url
-    fixes = [
-        "-sanding-block/",
-        "-sandpaper/",
-    ]
-    for tail in fixes:
-        if url.endswith(tail):
-            return url[: -len(tail)] + "/"
-    return url
-
 # === Data loaders ===
 def _pick_latest_from_list(items: List[Dict[str, Any]]) -> Dict[str, Any]:
     if not items:
@@ -120,12 +103,9 @@ def _pick_latest_from_list(items: List[Dict[str, Any]]) -> Dict[str, Any]:
     else:
         latest_it = items[0]
 
-    url = (latest_it.get("url") or latest_it.get("link") or "").strip()
-    url = _normalize_url(url)
-
     return {
         "title": (latest_it.get("title") or "").strip(),
-        "url": url,
+        "url": (latest_it.get("url") or latest_it.get("link") or "").strip(),
         "description": (latest_it.get("description") or latest_it.get("summary") or "").strip(),
         "category": latest_it.get("category", ""),
         "date": latest_it.get("published", latest_it.get("date", "")),
@@ -142,22 +122,18 @@ def load_latest_post() -> Dict[str, Any]:
 
     if isinstance(data, dict) and "latest" in data and isinstance(data["latest"], dict):
         latest = data["latest"]
-        url = (latest.get("url") or latest.get("link") or "").strip()
-        url = _normalize_url(url)
         return {
             "title": (latest.get("title") or "").strip(),
-            "url": url,
+            "url": (latest.get("url") or latest.get("link") or "").strip(),
             "description": (latest.get("description") or latest.get("summary") or "").strip(),
             "category": latest.get("category", ""),
             "date": latest.get("date") or latest.get("published") or "",
         }
 
     if isinstance(data, dict) and ("title" in data) and ("url" in data or "link" in data):
-        url = (data.get("url") or data.get("link") or "").strip()
-        url = _normalize_url(url)
         return {
             "title": (data.get("title") or "").strip(),
-            "url": url,
+            "url": (data.get("url") or data.get("link") or "").strip(),
             "description": (data.get("description") or data.get("summary") or "").strip(),
             "category": data.get("category", ""),
             "date": data.get("date") or data.get("published") or "",
@@ -224,11 +200,10 @@ def _match_image_candidates(desired_slugs: List[str]) -> Tuple[Optional[Path], L
     return None, debug
 
 def pick_image_for_latest(latest_title: str, latest_url: str) -> Path:
-    desired: List[str] = []
+    desired = []
     title_slug = slugify(latest_title or "")
     if title_slug:
         desired.append(title_slug)
-    # ВАЖНО: используем уже НОРМАЛИЗОВАННЫЙ URL из load_latest_post()
     url_slug = slug_from_url(latest_url or "")
     if url_slug and url_slug not in desired:
         desired.append(url_slug)
