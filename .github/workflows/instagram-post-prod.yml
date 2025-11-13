@@ -1,0 +1,43 @@
+# ============================================================
+# Workflow: Instagram Post (PROD)
+# Purpose:
+#   - Публикует реальный пост в Instagram (не предпросмотр)
+#   - Использует последнюю созданную карточку
+#   - Работает с MODE=prod
+# ============================================================
+
+name: Instagram Post (PROD)
+
+on:
+  workflow_dispatch: {}      # ручной запуск
+
+permissions:
+  contents: write
+
+jobs:
+  post-prod:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install requests pillow
+
+      - name: Publish Instagram Post
+        env:
+          MODE: "prod"
+          IG_BUSINESS_ID: ${{ secrets.IG_BUSINESS_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          IG_IMAGES_BASE_URL: "https://post.equalle.com/images/ig"
+        run: python -m scripts.instagram.post_to_instagram

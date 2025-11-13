@@ -1,0 +1,76 @@
+# ============================================================
+# File: .github/workflows/instagram-production-chain.yml
+# Full path: <repo_root>/.github/workflows/instagram-production-chain.yml
+# Workflow: Instagram Production Chain (Flag-protected)
+#
+# Purpose:
+#   - Запускается после pages-build-deployment (GitHub Pages)
+#   - Проверяет флаг data/flags/ready_for_instagram.flag
+#   - Если флаг есть → публикует пост в Instagram (MODE=prod)
+#   - После публикации удаляет флаг (с коммитом)
+# ============================================================
+
+name: Instagram Production Chain
+
+on:
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types: [completed]
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      # Проверяем, есть ли флаг "готово публиковать в Instagram"
+      - name: Check Instagram flag
+        id: checkflag
+        run: |
+          if [ -f data/flags/ready_for_instagram.flag ]; then
+            echo "Flag found → will publish"
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Flag not found → skipping publish"
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up Python
+        if: steps.checkflag.outputs.publish == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        if: steps.checkflag.outputs.publish == 'true'
+        run: pip install requests pillow
+
+      - name: Publish Instagram Post (PROD)
+        if: steps.checkflag.outputs.publish == 'true'
+        env:
+          MODE: "prod"
+          IG_BUSINESS_ID: ${{ secrets.IG_BUSINESS_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          IG_IMAGES_BASE_URL: "https://post.equalle.com/images/ig"
+        run: python -m scripts.instagram.post_to_instagram
+
+      - name: Remove flag (commit & push)
+        if: steps.checkflag.outputs.publish == 'true'
+        run: |
+          rm -f data/flags/ready_for_instagram.flag
+          git add -u data/flags/ready_for_instagram.flag || true
+          git commit -m "Remove Instagram publish flag" || true
+          git push || true
+
+      - name: Done
+        run: echo "Instagram Production Chain finished."

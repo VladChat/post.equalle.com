@@ -1,15 +1,19 @@
 # ============================================================
+# File: .github/workflows/instagram-card.yml
 # Workflow: Instagram Card Builder
-# Purpose: Automatically create image card from latest RSS item
+# Purpose:
+#   - Create instagram image card from latest RSS item
+#   - Set a flag for the Instagram Production Chain
 # ============================================================
 
 name: Instagram Card Builder
 
 on:
   workflow_dispatch: {}   # ручной запуск
+  # здесь можно позже добавить CRON, если захочешь
 
 permissions:
-  contents: write          # ✅ позволяет Actions пушить новые файлы
+  contents: write
 
 jobs:
   build:
@@ -33,10 +37,24 @@ jobs:
       - name: Generate Instagram Card
         run: python -m scripts.instagram.make_instagram_card
 
+      # ============================================
+      # 🔥 Create "ready for Instagram" flag
+      # ============================================
+      - name: Create Instagram publish flag
+        run: |
+          mkdir -p data/flags
+          echo "ready" > data/flags/ready_for_instagram.flag
+
+      # ============================================
+      # 🔥 Commit changes (card + flag)
+      # ============================================
       - name: Commit and push results
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
+          
           git add images/ig/*.jpg
-          git commit -m "Add new Instagram card" || echo "No changes to commit"
+          git add data/flags/ready_for_instagram.flag
+          
+          git commit -m "Add new Instagram card + flag" || echo "No changes to commit"
           git push
