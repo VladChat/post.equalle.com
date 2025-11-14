@@ -39,7 +39,7 @@ jobs:
           if [ -f data/flags/ready_for_instagram.flag ]; then
             echo "Flag found → will publish"
             echo "publish=true" >> "$GITHUB_OUTPUT"
-          else
+          else:
             echo "Flag not found → skipping publish"
             echo "publish=false" >> "$GITHUB_OUTPUT"
           fi
@@ -67,6 +67,9 @@ jobs:
       - name: Remove flag (commit & push)
         if: steps.checkflag.outputs.publish == 'true'
         run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
           rm -f data/flags/ready_for_instagram.flag
           git add -u data/flags/ready_for_instagram.flag || true
           git commit -m "Remove Instagram publish flag" || true
