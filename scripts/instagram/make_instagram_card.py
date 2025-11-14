@@ -6,6 +6,8 @@
 
 from pathlib import Path
 from datetime import datetime
+from urllib.parse import urlparse
+
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 from .utils_instagram import parse_latest_from_cache, parse_latest_from_rss
@@ -19,24 +21,27 @@ RSS_PATH   = ROOT / "data" / "cache" / "rss_feed.xml"   # optional fallback
 OUTPUT_DIR = ROOT / "images" / "ig"
 FONT_PATH  = ROOT / "images" / "fonts" / "BungeeSpice-Regular.ttf"
 
-# --- Template rotation ---
-TEMPLATES_DIR = ROOT / "images" / "ig" / "templates"
-STATE_FILE    = ROOT / "data" / "state" / "ig_template_index.txt"
+# --- State & rotation paths ---
+STATE_DIR          = ROOT / "data" / "state"
+TEMPLATES_DIR      = ROOT / "images" / "ig" / "templates"
+TEMPLATE_INDEXFILE = STATE_DIR / "ig_template_index.txt"
+LAST_SLUG_FILE     = STATE_DIR / "instagram_last_slug.txt"
+LAST_CARD_MARKER   = STATE_DIR / "instagram_last_card.txt"
 
 def get_next_template():
     """Return next template path in rotation, cycling through all IG-p templates."""
     TEMPLATES_DIR.mkdir(parents=True, exist_ok=True)
-    STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    STATE_DIR.mkdir(parents=True, exist_ok=True)
 
     tpl_files = sorted(TEMPLATES_DIR.glob("IG-p-1080-1350-*.jpg"))
     if not tpl_files:
         raise FileNotFoundError("❌ No IG templates found in images/ig/templates/")
 
     # load last index
-    if STATE_FILE.exists():
+    if TEMPLATE_INDEXFILE.exists():
         try:
-            idx = int(STATE_FILE.read_text().strip())
-        except:
+            idx = int(TEMPLATE_INDEXFILE.read_text().strip())
+        except Exception:
             idx = 0
     else:
         idx = 0
@@ -45,7 +50,7 @@ def get_next_template():
     idx = (idx + 1) % len(tpl_files)
 
     # save
-    STATE_FILE.write_text(str(idx))
+    TEMPLATE_INDEXFILE.write_text(str(idx))
 
     return tpl_files[idx]
 
@@ -167,6 +172,27 @@ def _fit_text_to_box(draw, title, font_path, start_size, min_size,
         size -= 2
     return last if last else (ImageFont.load_default(), title, box_w, box_h, min_size)
 
+def _get_slug(latest: dict) -> str | None:
+    """Derive a stable slug for RSS entry: prefer link path, fallback to title."""
+    link = (latest.get("link") or "").strip()
+    title = (latest.get("title") or "").strip()
+
+    # 1) Try to extract from URL path
+    if link:
+        try:
+            path = urlparse(link).path
+            parts = [p for p in path.split("/") if p]
+            if parts:
+                return parts[-1].lower()
+        except Exception:
+            pass
+
+    # 2) Fallback: from title
+    if title:
+        return "-".join(title.lower().split())
+
+    return None
+
 # ============================================================
 # Main
 # ============================================================
@@ -177,7 +203,30 @@ def main():
     print(f"📰 Title: {title}")
     print(f"🔗 Link: {latest.get('link','')}")
 
-    # 👉 NEW: rotating template
+    # --- Ensure state dir exists and clear previous marker ---
+    STATE_DIR.mkdir(parents=True, exist_ok=True)
+    try:
+        LAST_CARD_MARKER.unlink()
+    except FileNotFoundError:
+        pass
+
+    # --- NEW: RSS-based de-duplication via slug ---
+    slug = _get_slug(latest)
+    if slug:
+        if LAST_SLUG_FILE.exists():
+            prev_slug = LAST_SLUG_FILE.read_text().strip()
+        else:
+            prev_slug = None
+
+        if prev_slug == slug:
+            print(f"⏭️ Skipping card generation: RSS slug '{slug}' already used.")
+            return
+        else:
+            print(f"🆕 New RSS post detected: {slug}")
+    else:
+        print("⚠️ Could not derive slug, generating card without de-duplication.")
+
+    # 👉 rotating template
     template_path = get_next_template()
     print(f"🖼 Using template: {template_path.name}")
 
@@ -215,14 +264,26 @@ def main():
 
     tx = wx0 + (w_w - tw) / 2
 
-    tdraw.multiline_text((tx + 2, ty + 2), text_block, font=font,
-                         fill=TEXT_SHADOW, spacing=TEXT_SPACING, align="center")
+    tdraw.multiline_text(
+        (tx + 2, ty + 2),
+        text_block,
+        font=font,
+        fill=TEXT_SHADOW,
+        spacing=TEXT_SPACING,
+        align="center",
+    )
 
     if USE_GRADIENT_TEXT:
         _draw_gradient_text(text_layer, text_block, (tx, ty), font, TEXT_SPACING)
     else:
-        tdraw.multiline_text((tx, ty), text_block, font=font,
-                             fill=TEXT_COLOR, spacing=TEXT_SPACING, align="center")
+        tdraw.multiline_text(
+            (tx, ty),
+            text_block,
+            font=font,
+            fill=TEXT_COLOR,
+            spacing=TEXT_SPACING,
+            align="center",
+        )
 
     combined = Image.alpha_composite(base, text_layer)
 
@@ -242,12 +303,27 @@ def main():
     out_name = f"{date_tag}-{safe_title}.jpg"
     out_path = OUTPUT_DIR / out_name
 
-    bg.convert("RGB").save(out_path, "JPEG", quality=92, optimize=True,
-                           comment=f"Build {datetime.now()}".encode())
+    bg.convert("RGB").save(
+        out_path,
+        "JPEG",
+        quality=92,
+        optimize=True,
+        comment=f"Build {datetime.now()}".encode(),
+    )
 
     print(f"✅ Saved: {out_path}")
     print(f"🌐 Public URL: https://post.equalle.com/images/ig/{out_name}")
-    print(f"📐 Panel box: {PANEL_BOX}, working box: {(wx0, wy0, wx1, wy1)}, font: {used_size}px")
+    print(
+        f"📐 Panel box: {PANEL_BOX}, working box: {(wx0, wy0, wx1, wy1)}, "
+        f"font: {used_size}px"
+    )
+
+    # --- NEW: mark that card was generated for this slug ---
+    if slug:
+        LAST_SLUG_FILE.write_text(slug)
+        LAST_CARD_MARKER.write_text(str(out_path))
+        print(f"💾 Saved new last slug: {slug}")
+        print("🏷  Marker file created: instagram_last_card.txt")
 
 if __name__ == "__main__":
     main()
