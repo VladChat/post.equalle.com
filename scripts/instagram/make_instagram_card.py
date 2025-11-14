@@ -7,6 +7,8 @@
 from pathlib import Path
 from datetime import datetime
 from urllib.parse import urlparse
+import json
+import xml.etree.ElementTree as ET
 
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
@@ -25,8 +27,12 @@ FONT_PATH  = ROOT / "images" / "fonts" / "BungeeSpice-Regular.ttf"
 STATE_DIR          = ROOT / "data" / "state"
 TEMPLATES_DIR      = ROOT / "images" / "ig" / "templates"
 TEMPLATE_INDEXFILE = STATE_DIR / "ig_template_index.txt"
-LAST_SLUG_FILE     = STATE_DIR / "instagram_last_slug.txt"
+HISTORY_FILE       = STATE_DIR / "instagram_card_history.json"
 LAST_CARD_MARKER   = STATE_DIR / "instagram_last_card.txt"
+
+HISTORY_LIMIT   = 5   # store last 5 slugs
+FALLBACK_LIMIT  = 5   # look at last 5 RSS items
+
 
 def get_next_template():
     """Return next template path in rotation, cycling through all IG-p templates."""
@@ -54,6 +60,7 @@ def get_next_template():
 
     return tpl_files[idx]
 
+
 # --- Panel geometry inside the template (точные координаты) ---
 # Размер шаблона: 1080 × 1350
 PANEL_BOX = (79, 440, 1011, 807)
@@ -76,18 +83,94 @@ TEXT_COLOR = (70, 40, 25, 255)
 TEXT_SHADOW = (0, 0, 0, 80)
 
 # ============================================================
-# Helpers
+# Helpers: history
 # ============================================================
 
-def _load_latest():
-    data = parse_latest_from_cache(CACHE_JSON)
-    if data and data.get("title"):
-        print("ℹ️ Source: latest_posts.json")
-        return data
+def _load_history():
+    """Load list of previously posted slugs for IG cards."""
+    if not HISTORY_FILE.exists():
+        return []
+    try:
+        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        if isinstance(data, list):
+            return [str(s) for s in data]
+        return []
+    except Exception:
+        return []
+
+
+def _save_history(history):
+    """Persist history list to JSON."""
+    HISTORY_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(history, f, indent=2, ensure_ascii=False)
+
+
+def _add_to_history(slug: str):
+    """Append slug to history, keeping only the most recent HISTORY_LIMIT items."""
+    history = _load_history()
+    # remove if already present, then append to treat as most recent
+    history = [s for s in history if s != slug]
+    history.append(slug)
+    history = history[-HISTORY_LIMIT:]
+    _save_history(history)
+    return history
+
+
+# ============================================================
+# Helpers: content loading
+# ============================================================
+
+def _load_recent_items(max_items: int = FALLBACK_LIMIT):
+    """Load up to max_items recent RSS entries.
+
+    Preference:
+      1) rss_feed.xml (raw RSS, parse <item> nodes)
+      2) latest_posts.json via parse_latest_from_cache (fallback)
+    """
+    items = []
+
+    # 1) Try RSS XML first for proper list of items
     if RSS_PATH.exists():
         print("ℹ️ Source: rss_feed.xml")
-        return parse_latest_from_rss(RSS_PATH)
-    raise FileNotFoundError("Neither latest_posts.json nor rss_feed.xml found.")
+        try:
+            tree = ET.parse(RSS_PATH)
+            root = tree.getroot()
+            for item_el in root.findall(".//item"):
+                title = (item_el.findtext("title") or "").strip()
+                link = (item_el.findtext("link") or "").strip()
+                description = (item_el.findtext("description") or "").strip()
+                pub_date = (item_el.findtext("pubDate") or "").strip()
+                if not title and not link:
+                    continue
+                items.append({
+                    "title": title,
+                    "link": link,
+                    "description": description,
+                    "pubDate": pub_date,
+                })
+                if len(items) >= max_items:
+                    break
+        except Exception as e:
+            print(f"⚠️ Failed to parse RSS XML: {e}")
+
+    # 2) Fallback: latest_posts.json via existing util
+    if not items:
+        data = parse_latest_from_cache(CACHE_JSON)
+        if isinstance(data, list):
+            items = data[:max_items]
+        elif isinstance(data, dict) and data.get("title"):
+            items = [data]
+        if items:
+            print("ℹ️ Source: latest_posts.json")
+
+    if not items:
+        raise FileNotFoundError("Neither latest_posts.json nor rss_feed.xml provided usable items.")
+
+    print(f"🧾 Loaded {len(items)} recent RSS items (limit={max_items})")
+    return items
+
 
 def _measure(draw, text, font, spacing):
     try:
@@ -96,6 +179,7 @@ def _measure(draw, text, font, spacing):
     except AttributeError:
         return draw.textsize(text, font=font)
 
+
 def _text_width(font, text):
     try:
         b = font.getbbox(text)
@@ -103,6 +187,7 @@ def _text_width(font, text):
     except AttributeError:
         d = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
         return d.textlength(text, font=font)
+
 
 def _wrap_text(words, font, max_width, max_lines):
     lines, current = [], ""
@@ -137,6 +222,7 @@ def _wrap_text(words, font, max_width, max_lines):
             lines.append((text + "…") if text else "…")
     return lines[:max_lines]
 
+
 def _draw_gradient_text(dest_img, text, xy, font, spacing):
     W, H = dest_img.size
     mask_layer = Image.new("L", (W, H), 0)
@@ -152,6 +238,7 @@ def _draw_gradient_text(dest_img, text, xy, font, spacing):
         b = int(GRAD_TOP[2] + (GRAD_BOT[2] - GRAD_TOP[2]) * t)
         gdraw.line([(0, y), (W, y)], fill=(r, g, b, 255))
     dest_img.paste(gradient, (0, 0), mask_layer)
+
 
 def _fit_text_to_box(draw, title, font_path, start_size, min_size,
                      max_lines, spacing, box_w, box_h):
@@ -172,10 +259,11 @@ def _fit_text_to_box(draw, title, font_path, start_size, min_size,
         size -= 2
     return last if last else (ImageFont.load_default(), title, box_w, box_h, min_size)
 
-def _get_slug(latest: dict) -> str | None:
-    """Derive a stable slug for RSS entry: prefer link path, fallback to title."""
-    link = (latest.get("link") or "").strip()
-    title = (latest.get("title") or "").strip()
+
+def _get_slug(entry: dict) -> str | None:
+    """Derive a stable slug for RSS/cache entry: prefer link path, fallback to title."""
+    link = (entry.get("link") or "").strip()
+    title = (entry.get("title") or "").strip()
 
     # 1) Try to extract from URL path
     if link:
@@ -193,16 +281,12 @@ def _get_slug(latest: dict) -> str | None:
 
     return None
 
+
 # ============================================================
 # Main
 # ============================================================
 
 def main():
-    latest = _load_latest()
-    title = latest["title"]
-    print(f"📰 Title: {title}")
-    print(f"🔗 Link: {latest.get('link','')}")
-
     # --- Ensure state dir exists and clear previous marker ---
     STATE_DIR.mkdir(parents=True, exist_ok=True)
     try:
@@ -210,21 +294,40 @@ def main():
     except FileNotFoundError:
         pass
 
-    # --- NEW: RSS-based de-duplication via slug ---
-    slug = _get_slug(latest)
-    if slug:
-        if LAST_SLUG_FILE.exists():
-            prev_slug = LAST_SLUG_FILE.read_text().strip()
-        else:
-            prev_slug = None
-
-        if prev_slug == slug:
-            print(f"⏭️ Skipping card generation: RSS slug '{slug}' already used.")
-            return
-        else:
-            print(f"🆕 New RSS post detected: {slug}")
+    # --- Load recent RSS items and existing history ---
+    items = _load_recent_items(max_items=FALLBACK_LIMIT)
+    history = _load_history()
+    if history:
+        print(f"🧠 IG history (last {len(history)}): {history}")
     else:
-        print("⚠️ Could not derive slug, generating card without de-duplication.")
+        print("🧠 IG history is empty (first run or history reset).")
+
+    # --- Fallback selection: first recent slug NOT in history ---
+    chosen = None
+    chosen_slug = None
+    for idx, entry in enumerate(items):
+        slug = _get_slug(entry)
+        if not slug:
+            print(f"⚠️ Item #{idx} has no usable slug, skipping.")
+            continue
+        if slug in history:
+            print(f"⏭️ Slug already in history, skipping: {slug}")
+            continue
+        chosen = entry
+        chosen_slug = slug
+        break
+
+    if not chosen or not chosen_slug:
+        print("⏭️ No suitable RSS item found (all recent slugs are already in IG history) — skipping generation.")
+        return
+
+    title = (chosen.get("title") or "").strip() or "(untitled)"
+    link = (chosen.get("link") or "").strip()
+    print("🆕 Selected RSS item for IG card:")
+    print(f"   • Slug:  {chosen_slug}")
+    print(f"   • Title: {title}")
+    if link:
+        print(f"   • Link:  {link}")
 
     # 👉 rotating template
     template_path = get_next_template()
@@ -264,6 +367,7 @@ def main():
 
     tx = wx0 + (w_w - tw) / 2
 
+    # shadow
     tdraw.multiline_text(
         (tx + 2, ty + 2),
         text_block,
@@ -273,6 +377,7 @@ def main():
         align="center",
     )
 
+    # main text (gradient or flat)
     if USE_GRADIENT_TEXT:
         _draw_gradient_text(text_layer, text_block, (tx, ty), font, TEXT_SPACING)
     else:
@@ -287,6 +392,7 @@ def main():
 
     combined = Image.alpha_composite(base, text_layer)
 
+    # rounded mask + soft drop shadow
     mask = Image.new("L", (W, H), 0)
     ImageDraw.Draw(mask).rounded_rectangle([(0, 0), (W, H)], radius=40, fill=255)
     rounded = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -297,6 +403,7 @@ def main():
     bg.paste(shadow2, (5, 5))
     bg.paste(rounded, (0, 0), rounded)
 
+    # --- Save result ---
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     date_tag = datetime.now().strftime("%Y-%m-%d")
     safe_title = "-".join(title.lower().split())
@@ -318,12 +425,13 @@ def main():
         f"font: {used_size}px"
     )
 
-    # --- NEW: mark that card was generated for this slug ---
-    if slug:
-        LAST_SLUG_FILE.write_text(slug)
-        LAST_CARD_MARKER.write_text(str(out_path))
-        print(f"💾 Saved new last slug: {slug}")
-        print("🏷  Marker file created: instagram_last_card.txt")
+    # --- Update history and marker ---
+    new_history = _add_to_history(chosen_slug)
+    print(f"💾 Updated IG history ({len(new_history)} items): {new_history}")
+
+    LAST_CARD_MARKER.write_text(str(out_path))
+    print("🏷  Marker file created: instagram_last_card.txt")
+
 
 if __name__ == "__main__":
     main()
