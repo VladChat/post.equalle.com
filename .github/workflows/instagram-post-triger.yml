@@ -1,0 +1,60 @@
+# ============================================================
+# File: .github/workflows/instagram-card.yml
+# Workflow: Instagram Card Builder
+# Purpose:
+#   - Create instagram image card from latest RSS item
+#   - Set a flag for the Instagram Production Chain
+# ============================================================
+
+name: Instagram Post (Trigger Chain)
+
+on:
+  workflow_dispatch: {}   # ручной запуск
+  # здесь можно позже добавить CRON, если захочешь
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pillow
+
+      - name: Generate Instagram Card
+        run: python -m scripts.instagram.make_instagram_card
+
+      # ============================================
+      # 🔥 Create "ready for Instagram" flag
+      # ============================================
+      - name: Create Instagram publish flag
+        run: |
+          mkdir -p data/flags
+          echo "ready" > data/flags/ready_for_instagram.flag
+
+      # ============================================
+      # 🔥 Commit changes (card + flag)
+      # ============================================
+      - name: Commit and push results
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          
+          git add images/ig/*.jpg
+          git add data/flags/ready_for_instagram.flag
+          
+          git commit -m "Add new Instagram card + flag" || echo "No changes to commit"
+          git push
