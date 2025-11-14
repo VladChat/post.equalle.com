@@ -10,7 +10,9 @@ name: Instagram Post (Trigger Chain)
 
 on:
   workflow_dispatch: {}   # ручной запуск
-  # здесь можно позже добавить CRON, если захочешь
+
+  schedule:
+    - cron: "0 18 * * 5"   # запускается каждую пятницу в 12:00 по Чикаго (18:00 UTC)
 
 permissions:
   contents: write
