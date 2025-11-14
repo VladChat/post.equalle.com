@@ -1,9 +1,9 @@
 # ============================================================
-# File: .github/workflows/instagram-card.yml
-# Workflow: Instagram Card Builder
+# File: .github/workflows/instagram-post-triger.yml
+# Workflow: Instagram Card Builder (RSS-aware)
 # Purpose:
 #   - Create instagram image card from latest RSS item
-#   - Set a flag for the Instagram Production Chain
+#   - Only set a publish flag if RSS post is NEW
 # ============================================================
 
 name: Instagram Post (Trigger Chain)
@@ -37,26 +37,55 @@ jobs:
         run: pip install pillow
 
       - name: Generate Instagram Card
+        id: make_card
         run: python -m scripts.instagram.make_instagram_card
 
       # ============================================
-      # 🔥 Create "ready for Instagram" flag
+      # 🔎 Check if a NEW card was generated
+      #   (marker file created by make_instagram_card.py)
+      # ============================================
+      - name: Check new Instagram card marker
+        id: check_card
+        run: |
+          if [ -f data/state/instagram_last_card.txt ]; then
+            echo "newcard=true" >> "$GITHUB_OUTPUT"
+            echo "✅ New IG card detected, flag will be created."
+          else
+            echo "newcard=false" >> "$GITHUB_OUTPUT"
+            echo "⏭️ No new IG card (same RSS slug) — skipping flag and commit."
+          fi
+
+      # ============================================
+      # 🔥 Create "ready for Instagram" flag (ONLY if new card)
       # ============================================
       - name: Create Instagram publish flag
+        if: steps.check_card.outputs.newcard == 'true'
         run: |
           mkdir -p data/flags
           echo "ready" > data/flags/ready_for_instagram.flag
+          echo "Flag ready_for_instagram.flag created."
 
       # ============================================
-      # 🔥 Commit changes (card + flag)
+      # 🔥 Commit changes (card + state + flag), then remove marker
       # ============================================
       - name: Commit and push results
+        if: steps.check_card.outputs.newcard == 'true'
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          
-          git add images/ig/*.jpg
-          git add data/flags/ready_for_instagram.flag
-          
+
+          # Добавляем новые картинки (если есть)
+          git add images/ig/*.jpg || true
+
+          # Добавляем состояние (последний slug)
+          git add data/state/instagram_last_slug.txt || true
+
+          # Добавляем флаг публикации
+          git add data/flags/ready_for_instagram.flag || true
+
+          # Удаляем одноразовый маркер и коммитим его удаление
+          rm -f data/state/instagram_last_card.txt || true
+          git add -u data/state/instagram_last_card.txt || true
+
           git commit -m "Add new Instagram card + flag" || echo "No changes to commit"
-          git push
+          git push || true
