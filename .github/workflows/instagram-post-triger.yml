@@ -10,9 +10,8 @@ name: Instagram Post (Trigger Chain)
 
 on:
   workflow_dispatch: {}   # ручной запуск
-
   schedule:
-    - cron: "0 18 * * 5"   # запускается каждую пятницу в 12:00 по Чикаго (18:00 UTC)
+    - cron: "0 18 * * *"   # запускается в 12:00 по Чикаго (18:00 UTC)
 
 permissions:
   contents: write
@@ -92,3 +91,4 @@ jobs:
 
           git commit -m "Add new Instagram card + history + flag" || echo "No changes to commit"
           git push || true
+
