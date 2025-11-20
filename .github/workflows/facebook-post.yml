@@ -11,8 +11,6 @@ name: Facebook Auto Post
 
 on:
   workflow_dispatch:       # запуск вручную
-  schedule:
-    - cron: '0 16 * * 2-4'   # вт, ср, чт в 10:00 CST (16:00 UTC)
 
 permissions:
   contents: write           # нужно для git push state.json
@@ -70,3 +68,4 @@ jobs:
           else
             echo "data/state.json not found; nothing to commit."
           fi
+
