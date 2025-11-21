@@ -1,0 +1,57 @@
+# ============================================================
+# File: blog-equalle/workflows/rss-to-instagram.yml
+# Purpose:
+#   - Read blog RSS
+#   - Post next unpublished article to Instagram Business
+# ============================================================
+
+name: RSS → Instagram Post
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "15 18 * * *"   # 12:15 Chicago (18:15 UTC)
+
+permissions:
+  contents: write
+
+jobs:
+  post-to-instagram:
+    runs-on: ubuntu-latest
+
+    env:
+      BLOG_RSS_URL: https://blog.equalle.com/index.xml
+      IG_BUSINESS_ID: "17841422239487755"
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          pip install -r blog-equalle/requirements.txt
+
+      - name: Run Instagram poster
+        run: |
+          python blog-equalle/main_instagram.py
+
+      - name: Commit updated state.json (if changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git status --porcelain | grep "blog-equalle/state/state.json"; then
+            git add blog-equalle/state/state.json
+            git commit -m "Update Instagram post state [skip ci]" || echo "Nothing to commit"
+            git push
+          else
+            echo "No state changes."
