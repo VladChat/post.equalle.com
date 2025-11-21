@@ -9,9 +9,7 @@
 name: RSS → Facebook Post
 
 on:
-  workflow_dispatch: {}
-  schedule:
-    - cron: "0 18 * * *"   # 12:00 Chicago (18:00 UTC)
+  workflow_dispatch: {}    # ❗ Только ручной запуск
 
 permissions:
   contents: write
@@ -20,11 +18,10 @@ jobs:
   post-to-facebook:
     runs-on: ubuntu-latest
 
-    # === ВАЖНО: здесь пробрасываем токен в ENV ===
     env:
       BLOG_RSS_URL: https://blog.equalle.com/index.xml
       FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
-      PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}   # fallback для старого стиля
+      PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}   # fallback для старых скриптов
 
     steps:
       - name: Checkout repo
@@ -49,11 +46,14 @@ jobs:
 
       - name: Commit updated state.json (if changed)
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git status --porcelain | grep "blog-equalle/state/state.json"; then
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          if git status --porcelain | grep -q "blog-equalle/state/state.json"; then
+            echo "Changes detected — committing..."
             git add blog-equalle/state/state.json
             git commit -m "Update Facebook post state [skip ci]" || echo "Nothing to commit"
             git push
           else
             echo "No state changes."
+          fi
