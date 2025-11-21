@@ -1,16 +1,15 @@
 # ============================================================
-# File: blog-equalle/workflows/rss-to-instagram.yml
+# File: .github/workflows/rss-to-instagram.yml
 # Purpose:
 #   - Read blog RSS
 #   - Post next unpublished article to Instagram Business
+#   - Uses FB_PAGE_TOKEN GitHub Secret (shared token)
 # ============================================================
 
 name: RSS → Instagram Post
 
 on:
-  workflow_dispatch: {}
-  schedule:
-    - cron: "15 18 * * *"   # 12:15 Chicago (18:15 UTC)
+  workflow_dispatch: {}    # только ручной запуск
 
 permissions:
   contents: write
@@ -21,8 +20,8 @@ jobs:
 
     env:
       BLOG_RSS_URL: https://blog.equalle.com/index.xml
-      IG_BUSINESS_ID: "17841422239487755"
-      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+      PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}   # fallback для старой логики
 
     steps:
       - name: Checkout repo
@@ -47,11 +46,14 @@ jobs:
 
       - name: Commit updated state.json (if changed)
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git status --porcelain | grep "blog-equalle/state/state.json"; then
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          if git status --porcelain | grep -q "blog-equalle/state/state.json"; then
+            echo "Changes detected — committing..."
             git add blog-equalle/state/state.json
             git commit -m "Update Instagram post state [skip ci]" || echo "Nothing to commit"
             git push
           else
             echo "No state changes."
+          fi
