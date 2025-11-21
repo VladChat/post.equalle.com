@@ -1,0 +1,36 @@
+{
+  "rss_url": "https://blog.equalle.com/index.xml",
+
+  "platforms": {
+    "facebook": {
+      "enabled": true,
+      "page_id": "325670187920349",
+      "token_env": "FB_PAGE_TOKEN"
+    },
+    "instagram": {
+      "enabled": false,
+      "account_id": "17841422239487755",
+      "token_env": "IG_TOKEN"
+    },
+    "pinterest": {
+      "enabled": false,
+      "board": "equalle-abrasives/posts",
+      "token_env": "PINTEREST_TOKEN"
+    },
+    "twitter": {
+      "enabled": false,
+      "token_env": "TWITTER_TOKEN"
+    },
+    "youtube": {
+      "enabled": false,
+      "token_env": "YT_TOKEN"
+    }
+  },
+
+  "settings": {
+    "max_cache_items": 200,
+    "max_published_history": 300,
+    "mode": "dev",
+    "log_level": "info"
+  }
+}
