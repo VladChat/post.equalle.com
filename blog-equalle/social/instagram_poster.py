@@ -28,6 +28,7 @@ from __future__ import annotations
 
 import json
 import os
+import time
 from pathlib import Path
 from typing import Any, Dict
 
@@ -54,8 +55,6 @@ def _find_config_path() -> Path:
     """
 
     current_file = Path(__file__).resolve()
-    # current_file: .../post.equalle.com/blog-equalle/social/instagram_poster.py
-    # repo_root:   .../post.equalle.com
     repo_root = current_file.parents[2]
 
     candidates = [
@@ -100,7 +99,7 @@ def _get_config() -> tuple[str, str]:
     - business_id берём из config.json → platforms.instagram.business_id
     - имя переменной с токеном берём из config.json → platforms.instagram.token_env
       (по умолчанию 'FB_PAGE_TOKEN')
-    - сам токен читаем из ENV[ token_env ] (GitHub Secret).
+    - сам токен читаем из ENV[token_env] (GitHub Secret).
     """
     cfg = _load_config()
 
@@ -143,10 +142,10 @@ def publish_instagram_image(caption: str, image_url: str) -> str:
 
     Параметры:
       - caption: текст подписи
-      - image_url: публичный URL картинки (jpg/png)
+      - image_url: публичный URL картинки
 
     Возвращает:
-      - media_id опубликованного объекта (строка)
+      - media_id опубликованного объекта
     """
     business_id, access_token = _get_config()
 
@@ -174,7 +173,12 @@ def publish_instagram_image(caption: str, image_url: str) -> str:
             f"[ig][poster] Instagram media response missing id: {data1}"
         )
 
-    # --- Шаг 2: публикуем контейнер ---
+    print(f"[ig][poster] Created container_id={container_id}. Waiting for processing...")
+
+    # 🔥 ВАЖНО: Instagram должен скачать и обработать изображение
+    time.sleep(3)  # best practice: 2–5 seconds
+
+    # --- Шаг 2: публикуем готовый контейнер ---
     url_publish = f"{GRAPH_API_BASE}/{business_id}/media_publish"
     payload_publish = {
         "creation_id": container_id,
