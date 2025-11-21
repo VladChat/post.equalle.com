@@ -1,16 +1,11 @@
 # ============================================
 # File: blog-equalle/social/facebook_poster.py
 # Purpose:
-#   - Публикует фото-пост на Facebook Page через Graph API
-#   - Берёт:
-#       * page_id из config.json (platforms.facebook.page_id)
-#       * имя переменной с токеном из config.json (platforms.facebook.token_env)
-#   - Сам токен хранится в GitHub Secret (например, FB_PAGE_TOKEN)
+#   - Publish photo post to Facebook Page using Graph API
 #
-# Зависимости:
-#   - config.json должен выглядеть примерно так:
+# Data sources:
+#   - config.json:
 #       {
-#         "rss_url": "https://blog.equalle.com/index.xml",
 #         "platforms": {
 #           "facebook": {
 #             "enabled": true,
@@ -18,12 +13,16 @@
 #             "token_env": "FB_PAGE_TOKEN"
 #           },
 #           ...
-#         },
-#         "settings": {
-#           "mode": "dev",
-#           "log_level": "info"
 #         }
 #       }
+#
+# ENV:
+#   - FB_PAGE_TOKEN  (основное имя GitHub Secret с page access token)
+#   - PAGE_TOKEN     (опционально, для совместимости со старыми настройками)
+#
+# Notes:
+#   - FB_PAGE_ID в ENV не нужен: page_id берём из config.json.
+#   - Токен общий для Facebook и Instagram (page access token System User).
 # ============================================
 
 from __future__ import annotations
@@ -45,16 +44,20 @@ class FacebookConfigError(Exception):
     pass
 
 
+# ============ ЗАГРУЗКА CONFIG.JSON ============
+
 def _find_config_path() -> Path:
     """
-    Ищет config.json в типичных местах относительно репозитория:
+    Ищет config.json в типичных местах относительно корня репозитория:
+
       - <repo_root>/blog-equalle/config.json
       - <repo_root>/scripts/config.json
       - <repo_root>/config.json
     """
+
     current_file = Path(__file__).resolve()
-    # .../post.equalle.com/post.equalle.com/blog-equalle/social/facebook_poster.py
-    # repo_root = .../post.equalle.com/post.equalle.com
+    # current_file: .../post.equalle.com/blog-equalle/social/facebook_poster.py
+    # repo_root:   .../post.equalle.com
     repo_root = current_file.parents[2]
 
     candidates = [
@@ -69,14 +72,13 @@ def _find_config_path() -> Path:
             return path
 
     raise FacebookConfigError(
-        "[fb][config] config.json not found. "
-        "Expected one of: "
+        "[fb][config] config.json not found. Expected one of: "
         + ", ".join(str(p) for p in candidates)
     )
 
 
 def _load_config() -> Dict[str, Any]:
-    """Лениво загружает config.json и кэширует его в памяти."""
+    """Лениво загружает config.json и кэширует результат."""
     global _CONFIG_CACHE
     if _CONFIG_CACHE is not None:
         return _CONFIG_CACHE
@@ -86,18 +88,21 @@ def _load_config() -> Dict[str, Any]:
         with config_path.open("r", encoding="utf-8") as f:
             _CONFIG_CACHE = json.load(f)
     except Exception as exc:
-        raise FacebookConfigError(f"[fb][config] Failed to load {config_path}: {exc}") from exc
+        raise FacebookConfigError(
+            f"[fb][config] Failed to load {config_path}: {exc}"
+        ) from exc
 
     return _CONFIG_CACHE or {}
 
 
 def _get_config() -> tuple[str, str]:
     """
-    Достаёт из config.json:
-      - page_id: config["platforms"]["facebook"]["page_id"]
-      - token_env: config["platforms"]["facebook"]["token_env"] (например, 'FB_PAGE_TOKEN')
+    Возвращает (page_id, access_token):
 
-    И затем читает токен из ENV по этому имени (GitHub Secret).
+      - page_id берём из config.json → platforms.facebook.page_id
+      - токен читаем из ENV:
+          FB_PAGE_TOKEN  (основное имя)
+          PAGE_TOKEN     (fallback, как было в старых скриптах)
     """
     cfg = _load_config()
 
@@ -105,28 +110,26 @@ def _get_config() -> tuple[str, str]:
     fb_cfg = platforms.get("facebook") or {}
 
     page_id = str(fb_cfg.get("page_id", "")).strip()
-    token_env_name = str(fb_cfg.get("token_env", "FB_PAGE_TOKEN")).strip()
-
     if not page_id:
         raise FacebookConfigError(
             "[fb][config] Missing platforms.facebook.page_id in config.json"
         )
 
-    if not token_env_name:
+    # Токен: полностью повторяем логику рабочих скриптов
+    token = (os.getenv("FB_PAGE_TOKEN") or os.getenv("PAGE_TOKEN") or "").strip()
+    if not token:
         raise FacebookConfigError(
-            "[fb][config] Missing platforms.facebook.token_env in config.json"
-        )
-
-    access_token = os.getenv(token_env_name, "").strip()
-    if not access_token:
-        raise FacebookConfigError(
-            f"[fb][config] Environment variable '{token_env_name}' is not set. "
+            "[fb][config] ENV FB_PAGE_TOKEN (or PAGE_TOKEN) is required but not set. "
             "Set this GitHub Secret to your Facebook Page token."
         )
 
-    print(f"[fb][config] page_id={page_id}, token_env={token_env_name}")
-    return page_id, access_token
+    print(f"[fb][config] page_id={page_id}, token_source="
+          f"{'FB_PAGE_TOKEN' if os.getenv('FB_PAGE_TOKEN') else 'PAGE_TOKEN'}")
 
+    return page_id, token
+
+
+# ============ ПУБЛИКАЦИЯ В FACEBOOK ============
 
 def publish_facebook_photo(message: str, image_url: str, link: str | None = None) -> str:
     """
@@ -135,8 +138,8 @@ def publish_facebook_photo(message: str, image_url: str, link: str | None = None
     Параметры:
       - message: текст поста (caption)
       - image_url: URL картинки (jpg/png), доступный извне
-      - link: опционально, дополнительная ссылка (сейчас не используется:
-              link можно встраивать прямо в message)
+      - link: сейчас НЕ используется напрямую /photos,
+              ссылку лучше встраивать в message.
 
     Возвращает:
       - post_id опубликованного поста (строка)
