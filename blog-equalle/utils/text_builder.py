@@ -76,15 +76,15 @@ def build_pinterest_payload(post: Post, image_url: str) -> Dict[str, object]:
     }
     return payload
 
+
 def build_facebook_comment(post: Post) -> str:
-    """
-    Короткий follow-up комментарий к Facebook-посту:
+    """Короткий follow-up комментарий к Facebook-посту:
     - без ссылки
     - 1–2 предложения
     - привязан к теме статьи
     """
     title = (post.title or "").strip()
-    desc = _strip_html(post.description or post.summary or "")
+    desc = _strip_html(post.description or post.summary)
     desc = _truncate(desc, 180)
 
     if title:
