@@ -9,7 +9,7 @@
 name: RSS → Facebook Post
 
 on:
-  workflow_dispatch: {}    # ❗ Только ручной запуск
+  workflow_dispatch: {}
   schedule:
   - cron: "0 17 * * 1"   # Пн — 11:00 Chicago
   - cron: "0 18 * * 3"   # Ср — 12:00 Chicago
@@ -27,6 +27,7 @@ jobs:
       BLOG_RSS_URL: https://blog.equalle.com/index.xml
       FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
       PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}   # fallback для старых скриптов
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}   # ← добавлено
 
     steps:
       - name: Checkout repo
