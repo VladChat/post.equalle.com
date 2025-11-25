@@ -4,6 +4,7 @@
 #   - Run product-post/product_post_facebook.py
 #   - Post EXACTLY ONE product link to Facebook per run
 #   - Use GPT-5.1 (OpenAI) to generate caption text
+#   - Then automatically publish follow-up comment
 # ============================================
 
 name: Product Links → Facebook
@@ -46,10 +47,19 @@ jobs:
         run: |
           python product-post/product_post_facebook.py
 
+      # ============================================
+      # NEW STEP → Automatic follow-up comment
+      # Waits 30–180 seconds and posts a short LLM comment
+      # ============================================
+      - name: Add Facebook comment
+        run: |
+          python product-post/comment_after_post.py
+
       - name: Commit updated state
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add product-post/product_state.json || echo "No state file yet"
+          git add product-post/last_post_id.json || echo "No comment file yet"
           git commit -m "Update product post state" || echo "No changes to commit"
           git push || echo "No changes pushed"
