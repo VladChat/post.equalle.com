@@ -1,0 +1,192 @@
+{
+    "products": {
+    "10_pack": {
+      "Grit 60": "https://equalle.com/products/sandpaper-9-x-11-grit-60-10",
+      "Grit 80": "https://equalle.com/products/sandpaper-9-x-11-grit-80-10-sheets",
+      "Grit 100": "https://equalle.com/products/sandpaper-9-x-11-grit-100-10-sheets",
+      "Grit 120": "https://equalle.com/products/sandpaper-9-x-11-grit-120-10-sheets",
+      "Grit 150": "https://equalle.com/products/150-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "Grit 180": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "Grit 220": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
+      "Grit 240": "https://equalle.com/products/240-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "Grit 280": "https://equalle.com/products/280-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "Grit 320": "https://equalle.com/products/sandpaper-10-sheets-grit-320",
+      "Grit 360": "https://equalle.com/products/360-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "Grit 400": "https://equalle.com/products/sandpaper-grit-400-10-sheets",
+      "Grit 500": "https://equalle.com/products/sandpaper-9-x-11-grit-500-10-sheets",
+      "Grit 600": "https://equalle.com/products/600-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "Grit 800": "https://equalle.com/products/800-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "Grit 1000": "https://equalle.com/products/1000-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "Grit 1200": "https://equalle.com/products/1200-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "Grit 1500": "https://equalle.com/products/1500-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "Grit 2000": "https://equalle.com/products/2000-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "Grit 3000": "https://equalle.com/products/sandpaper-9-x-11-grit-3000-10-sheets"
+    },
+    "25_pack": {
+      "Grit 60": "https://equalle.com/products/sandpaper-25-sheets-grit-60",
+      "Grit 80": "https://equalle.com/products/sandpaper-25-sheets-grit-80",
+      "Grit 100": "https://equalle.com/products/sandpaper-25-sheets-grit-100",
+      "Grit 120": "https://equalle.com/products/sandpaper-25-sheets-grit-120",
+      "Grit 150": "https://equalle.com/products/sandpaper-25-sheets-grit-150",
+      "Grit 180": "https://equalle.com/products/sandpaper-25-sheets-grit-180",
+      "Grit 220": "https://equalle.com/products/sandpaper-25-sheets-grit-220",
+      "Grit 240": "https://equalle.com/products/sandpaper-25-sheets-grit-240",
+      "Grit 280": "https://equalle.com/products/sandpaper-25-sheets-grit-280",
+      "Grit 320": "https://equalle.com/products/sandpaper-25-sheets-grit-320",
+      "Grit 360": "https://equalle.com/products/sandpaper-25-sheets-grit-360",
+      "Grit 400": "https://equalle.com/products/sandpaper-25-sheets-grit-400",
+      "Grit 500": "https://equalle.com/products/sandpaper-25-sheets-grit-500",
+      "Grit 600": "https://equalle.com/products/sandpaper-25-sheets-grit-600",
+      "Grit 800": "https://equalle.com/products/sandpaper-25-sheets-grit-800",
+      "Grit 1000": "https://equalle.com/products/sandpaper-25-sheets-grit-1000",
+      "Grit 1200": "https://equalle.com/products/sandpaper-25-sheets-grit-1200",
+      "Grit 1500": "https://equalle.com/products/sandpaper-25-sheets-grit-1500",
+      "Grit 2000": "https://equalle.com/products/sandpaper-25-sheets-grit-2000",
+      "Grit 3000": "https://equalle.com/products/sandpaper-25-sheets-grit-3000"
+    },
+    "50_pack": {
+      "Grit 60": "https://equalle.com/products/sandpaper-50-sheets-grit-60",
+      "Grit 80": "https://equalle.com/products/sandpaper-50-sheets-grit-80",
+      "Grit 100": "https://equalle.com/products/sandpaper-50-sheets-grit-100",
+      "Grit 120": "https://equalle.com/products/sandpaper-50-sheets-grit-120",
+      "Grit 150": "https://equalle.com/products/sandpaper-50-sheets-grit-150",
+      "Grit 180": "https://equalle.com/products/sandpaper-50-sheets-grit-180",
+      "Grit 220": "https://equalle.com/products/sandpaper-50-sheets-grit-220",
+      "Grit 240": "https://equalle.com/products/sandpaper-50-sheets-grit-240",
+      "Grit 280": "https://equalle.com/products/sandpaper-50-sheets-grit-280",
+      "Grit 320": "https://equalle.com/products/sandpaper-50-sheets-grit-320",
+      "Grit 360": "https://equalle.com/products/sandpaper-50-sheets-grit-360",
+      "Grit 400": "https://equalle.com/products/sandpaper-50-sheets-grit-400",
+      "Grit 500": "https://equalle.com/products/sandpaper-50-sheets-grit-500",
+      "Grit 600": "https://equalle.com/products/sandpaper-50-sheets-grit-600",
+      "Grit 800": "https://equalle.com/products/sandpaper-50-sheets-grit-800",
+      "Grit 1000": "https://equalle.com/products/sandpaper-50-sheets-grit-1000",
+      "Grit 1200": "https://equalle.com/products/sandpaper-50-sheets-grit-1200",
+      "Grit 1500": "https://equalle.com/products/sandpaper-50-sheets-grit-1500",
+      "Grit 2000": "https://equalle.com/products/sandpaper-50-sheets-grit-2000",
+      "Grit 3000": "https://equalle.com/products/sandpaper-50-sheets-grit-3000"
+    },
+    "100_pack": {
+      "Grit 80": "https://equalle.com/products/sandpaper-100-sheets-grit-80",
+      "Grit 100": "https://equalle.com/products/sandpaper-100-sheets-grit-100",
+      "Grit 120": "https://equalle.com/products/sandpaper-100-sheets-grit-120",
+      "Grit 150": "https://equalle.com/products/sandpaper-100-sheets-grit-150",
+      "Grit 180": "https://equalle.com/products/sandpaper-100-sheets-grit-180",
+      "Grit 220": "https://equalle.com/products/sandpaper-100-sheets-grit-220",
+      "Grit 240": "https://equalle.com/products/sandpaper-100-sheets-grit-240",
+      "Grit 280": "https://equalle.com/products/sandpaper-100-sheets-grit-280",
+      "Grit 320": "https://equalle.com/products/sandpaper-100-sheets-grit-320",
+      "Grit 360": "https://equalle.com/products/sandpaper-100-sheets-grit-360",
+      "Grit 400": "https://equalle.com/products/sandpaper-100-sheets-grit-400",
+      "Grit 500": "https://equalle.com/products/sandpaper-100-sheets-grit-500",
+      "Grit 600": "https://equalle.com/products/sandpaper-100-sheets-grit-600",
+      "Grit 800": "https://equalle.com/products/sandpaper-100-sheets-grit-800",
+      "Grit 1000": "https://equalle.com/products/sandpaper-100-sheets-grit-1000",
+      "Grit 1200": "https://equalle.com/products/sandpaper-100-sheets-grit-1200",
+      "Grit 1500": "https://equalle.com/products/sandpaper-100-sheets-grit-1500",
+      "Grit 2000": "https://equalle.com/products/sandpaper-100-sheets-grit-2000",
+      "Grit 3000": "https://equalle.com/products/sandpaper-100-sheets-grit-3000"
+    }
+  },
+  "meta": {
+    "packs_order": [25, 50, 100],
+    "grit_clusters": {
+      "coarse": [60, 80, 100, 120],
+      "medium": [150, 180, 220, 240],
+      "fine": [280, 320, 360, 400, 500, 600],
+      "ultrafine": [800, 1000, 1200, 1500, 2000, 3000]
+    },
+   "grit_copy": {
+  "60": {
+    "anchor": "60 Grit (Coarse)",
+    "desc": "Extra-coarse Silicon Carbide abrasive for rapid stock removal and reshaping. Excels at stripping paint, smoothing rough lumber, or eliminating heavy rust on metal surfaces."
+  },
+  "80": {
+    "anchor": "80 Grit (Coarse)",
+    "desc": "Durable coarse abrasive that evens out irregular surfaces and clears old coatings. Ideal for early sanding stages in woodworking, fiberglass, or metal preparation."
+  },
+  "100": {
+    "anchor": "100 Grit (Coarse)",
+    "desc": "Balanced coarse grit combining power and control—perfect for blending rough sanding marks before progressing to finer grades like 150 or 180."
+  },
+  "120": {
+    "anchor": "120 Grit (Coarse)",
+    "desc": "High-cut abrasive for refining rough wood grain, removing scratches, and preparing bare surfaces for priming or staining."
+  },
+  "150": {
+    "anchor": "150 Grit (Medium)",
+    "desc": "Versatile medium grit that transitions from shaping to smoothing. Works well between coats of finish or for preparing even surfaces prior to paint."
+  },
+  "180": {
+    "anchor": "180 Grit (Medium)",
+    "desc": "Reliable grit for producing a uniform texture on wood, metal, or filler layers—often used before varnishing or applying topcoats."
+  },
+  "220": {
+    "anchor": "220 Grit (Medium)",
+    "desc": "Refined medium-fine abrasive for final surface leveling on primed or sealed materials. Great for smooth touch-ups before finishing."
+  },
+  "240": {
+    "anchor": "240 Grit (Medium)",
+    "desc": "Smooth-cut abrasive for soft blending, de-nibbing, and light surface preparation before polishing or coating."
+  },
+  "280": {
+    "anchor": "280 Grit (Fine)",
+    "desc": "Fine finishing grit for delicate work—ideal for flattening varnish layers and creating a pre-polish smoothness on wood or resin."
+  },
+  "320": {
+    "anchor": "320 Grit (Fine)",
+    "desc": "Precision finishing grit that enhances clarity between paint or lacquer coats, ensuring a flawless final layer."
+  },
+  "360": {
+    "anchor": "360 Grit (Fine)",
+    "desc": "Ultra-controlled abrasive for gentle refinement and removing faint imperfections before clear coating or buffing."
+  },
+  "400": {
+    "anchor": "400 Grit (Fine)",
+    "desc": "Fine-cut abrasive delivering consistent, silky-smooth surfaces—used for pre-polish finishing and intermediate layers."
+  },
+  "500": {
+    "anchor": "500 Grit (Fine)",
+    "desc": "Soft-action abrasive for micro-smoothing metal, resin, or primer coatings where precision and uniformity are key."
+  },
+  "600": {
+    "anchor": "600 Grit (Fine)",
+    "desc": "Professional-grade finishing grit tailored for precision work on primer layers, clear coats, or high-detail restoration."
+  },
+  "800": {
+    "anchor": "800 Grit (Ultra-Fine)",
+    "desc": "Smooth-polish abrasive for refining gloss layers on clear coat, resin, or composite surfaces before final buffing."
+  },
+  "1000": {
+    "anchor": "1000 Grit (Ultra-Fine)",
+    "desc": "Gentle polishing grit that removes swirl marks and fine scratches on automotive or resin finishes."
+  },
+  "1200": {
+    "anchor": "1200 Grit (Ultra-Fine)",
+    "desc": "Specialized grit for ultra-smooth surface conditioning prior to final polish, ensuring deep gloss and clarity."
+  },
+  "1500": {
+    "anchor": "1500 Grit (Ultra-Fine)",
+    "desc": "Refining grit that bridges polishing and buffing—perfect for restoring a subtle satin or semi-gloss look on painted finishes."
+  },
+  "2000": {
+    "anchor": "2000 Grit (Ultra-Fine)",
+    "desc": "Precision polishing grit designed to remove haze and restore clarity to clear coats and high-gloss automotive paint."
+  },
+  "3000": {
+    "anchor": "3000 Grit (Ultra-Fine)",
+    "desc": "Final-stage abrasive for mirror-like reflection on paint, metal, or resin—used in professional detailing and fine restoration."
+  }
+},
+
+    "context_map": {
+      "wood": [80, 120, 150, 180, 220, 320],
+      "metal": [60, 80, 120, 220, 400, 600],
+      "auto": [220, 400, 800, 1200, 2000, 3000],
+      "drywall": [120, 150, 180, 220],
+      "finishing": [240, 280, 320, 400, 600, 800],
+      "polishing": [1000, 1200, 1500, 2000, 3000]
+    },
+    "usage_counters": {}
+  }
+}
