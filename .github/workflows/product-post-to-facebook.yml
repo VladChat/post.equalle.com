@@ -1,0 +1,55 @@
+# ============================================
+# File: .github/workflows/product-post-to-facebook.yml
+# Purpose:
+#   - Run product-post/product_post_facebook.py
+#   - Post EXACTLY ONE product link to Facebook per run
+#   - Use GPT-5.1 (OpenAI) to generate caption text
+# ============================================
+
+name: Product Links → Facebook
+
+on:
+  workflow_dispatch: {}
+  # schedule:
+  #   - cron: "0 17 * * 2"   # Tue 11:00 Chicago
+  #   - cron: "0 17 * * 4"   # Thu 11:00 Chicago
+
+permissions:
+  contents: write
+
+jobs:
+  post-product-link:
+    runs-on: ubuntu-latest
+
+    env:
+      FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+      FB_PAGE_ID: "325670187920349"
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Post next product link to Facebook
+        run: |
+          python product-post/product_post_facebook.py
+
+      - name: Commit updated state
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add product-post/product_state.json || echo "No state file yet"
+          git commit -m "Update product post state" || echo "No changes to commit"
+          git push || echo "No changes pushed"
