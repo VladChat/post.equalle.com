@@ -11,9 +11,9 @@ name: Product Links → Facebook
 
 on:
   workflow_dispatch: {}
-  # schedule:
-  #   - cron: "0 17 * * 2"   # Tue 11:00 Chicago
-  #   - cron: "0 17 * * 4"   # Thu 11:00 Chicago
+  schedule:
+  - cron: "0 17 * * 2"   # Tue 11:00 Chicago
+  - cron: "0 15 * * 4"   # Thu 9:00 Chicago
 
 permissions:
   contents: write
