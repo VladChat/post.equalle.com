@@ -18,6 +18,10 @@ from rss.rss_loader import load_posts
 from state.state_manager import load_state, save_state, is_posted, mark_post
 from utils.text_builder import build_facebook_message
 from social.facebook_poster import publish_facebook_photo
+from social.facebook_commenter import publish_facebook_comment
+from utils.text_builder import build_facebook_comment
+import random
+import time
 
 
 PLATFORM = "facebook"
@@ -54,6 +58,22 @@ def main() -> None:
 
     result = publish_facebook_photo(message=message, image_url=image_url, link=post.link)
     print(f"[fb][main] Published Facebook post. id={result}")
+
+    # ===== Автокомментарий после публикации =====
+    if result:
+        pause = random.randint(30, 180)
+        print(f"[fb][main] Waiting {pause} seconds before comment...")
+        time.sleep(pause)
+
+        try:
+            comment_text = build_facebook_comment(post)
+            if comment_text:
+                publish_facebook_comment(result, comment_text)
+                print("[fb][main] Comment published.]")
+            else:
+                print("[fb][main] No comment text generated, skipping.]")
+        except Exception as e:
+            print(f"[fb][main][WARN] Failed to publish comment: {e}")
 
     mark_post(post, PLATFORM, state)
     save_state(state)
