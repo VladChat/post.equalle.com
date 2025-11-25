@@ -195,7 +195,7 @@ def get_page_id() -> str:
     return os.getenv("FB_PAGE_ID", DEFAULT_FB_PAGE_ID)
 
 
-def post_to_facebook(message: str, link: str) -> None:
+def post_to_facebook(message: str, link: str) -> str:
     page_token = get_page_token()
     page_id = get_page_id()
 
@@ -217,8 +217,16 @@ def post_to_facebook(message: str, link: str) -> None:
     if resp.status_code >= 400:
         print(f"[FB][ERROR] {resp.status_code}: {data}")
         raise RuntimeError(f"Facebook API error: {resp.status_code}")
-    else:
-        print(f"[FB][OK] Created post: {data}")
+
+    print(f"[FB][OK] Created post: {data}")
+    # Facebook returns an object with an 'id' like '{page_id}_{post_id}'
+    post_id = None
+    if isinstance(data, dict):
+        post_id = data.get("id")
+    if not post_id:
+        raise RuntimeError(f"Facebook did not return a post id: {data}")
+
+    return post_id
 
 
 # ===== MAIN =====
@@ -265,7 +273,17 @@ def main():
     print(url)
 
     # Post to Facebook
-    post_to_facebook(caption, url)
+    post_id = post_to_facebook(caption, url)
+
+    # Save last post info for comment script
+    try:
+        last_state = {"post_id": post_id, "product": product}
+        state_path = ROOT / "last_post_id.json"
+        with state_path.open("w", encoding="utf-8") as f:
+            json.dump(last_state, f, indent=2)
+        print(f"[MAIN] Saved last_post_id.json at {state_path}")
+    except Exception as e:
+        print(f"[MAIN][WARN] Failed to save last_post_id.json: {e}")
 
     # Advance link index
     link_index += 1
