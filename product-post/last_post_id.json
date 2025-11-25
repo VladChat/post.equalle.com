@@ -1,9 +1,14 @@
 {
-  "post_id": "325670187920349_1285451476929669",
+  "post_id": "325670187920349_1285910510217099",
   "product": {
-    "url": "https://www.amazon.com/dp/B0D51RF4R1",
-    "title": "5-Inch Sanding Discs, 8-Hole Hook & Loop (50-Pack) \u2013 80/120/180/220/320 Grit \u2013 Film-Backed Calcined Alumina (Aluminum Oxide) for Random Orbital/DA Sanders, Wood Metal Auto Body",
-    "description": "50-pack assorted sanding discs (80\u2013320 grit) for wood, metal, fiberglass, and auto work. Film-backed calcined alumina cuts fast and stays cool. Flexible, tear-resistant film maintains even finish. Hook-and-loop backing allows quick changes; 8-hole pattern improves dust extraction.",
-    "source": "extra"
+    "source": "amazon",
+    "url": "https://www.amazon.com/gp/product/B0CZ7RDBQ1",
+    "grit": 60,
+    "pack": 10,
+    "anchor": "60 Grit (Coarse)",
+    "grit_description": "Extremely coarse Silicon Carbide abrasive for rapid material removal and shaping. Ideal for stripping paint, smoothing rough lumber, or cleaning rusted metal. Suitable for wet or dry sanding, it prepares surfaces for smoother grits like 80 or 100.",
+    "contexts": [
+      "metal"
+    ]
   }
 }
