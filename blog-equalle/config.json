@@ -1,22 +1,22 @@
 {
-  "rss_url": "https://blog.equalle.com/index.xml",
+  "rss_url": "https://blog.nailak.com/index.xml",
 
   "platforms": {
     "facebook": {
       "enabled": true,
-      "page_id": "325670187920349",
-      "token_env": "FB_PAGE_TOKEN"
+      "page_id": "105611611805092",
+      "token_env": "FB_PAGE_TOKEN_NAILAK"
     },
 
     "instagram": {
       "enabled": true,
-      "business_id": "17841422239487755",
-      "token_env": "FB_PAGE_TOKEN"
+      "business_id": "17841448974251029",
+      "token_env": "FB_PAGE_TOKEN_NAILAK"
     },
 
     "pinterest": {
       "enabled": false,
-      "board_id": "equalle-abrasives/posts",
+      "board": "nailak/posts",
       "token_env": "PINTEREST_TOKEN"
     },
 
@@ -34,7 +34,7 @@
   "settings": {
     "max_cache_items": 200,
     "max_published_history": 300,
-    "mode": "dev",
+    "mode": "prod",
     "log_level": "info"
   }
 }
