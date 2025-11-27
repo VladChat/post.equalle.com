@@ -1,13 +1,14 @@
 {
-  "post_id": "325670187920349_1285910510217099",
+  "post_id": "325670187920349_1287395070068643",
   "product": {
     "source": "amazon",
-    "url": "https://www.amazon.com/gp/product/B0CZ7RDBQ1",
-    "grit": 60,
+    "url": "https://www.amazon.com/gp/product/B0CZ7RP91J",
+    "grit": 80,
     "pack": 10,
-    "anchor": "60 Grit (Coarse)",
-    "grit_description": "Extremely coarse Silicon Carbide abrasive for rapid material removal and shaping. Ideal for stripping paint, smoothing rough lumber, or cleaning rusted metal. Suitable for wet or dry sanding, it prepares surfaces for smoother grits like 80 or 100.",
+    "anchor": "80 Grit (Coarse)",
+    "grit_description": "Durable coarse sandpaper made with Silicon Carbide for fast stock removal and surface leveling. Excellent for woodworking, metalwork, and fiberglass preparation. Works effectively for both wet and dry sanding before moving to 120 grit.",
     "contexts": [
+      "wood",
       "metal"
     ]
   }
