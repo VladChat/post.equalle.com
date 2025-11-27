@@ -1,6 +1,6 @@
 # ============================================
-# File: blog-equalle/social/facebook_commenter.py
-# Purpose: Publish comments under Facebook posts
+# File: blog-nailak/social/facebook_commenter.py
+# Purpose: Publish comments under Facebook posts (Nailak)
 # ============================================
 
 from __future__ import annotations
@@ -17,28 +17,31 @@ CONFIG_PATH = Path(__file__).resolve().parent.parent / "config.json"
 
 
 def _load_config() -> Dict[str, Any]:
+    """Loads Nailak facebook config block only."""
     data = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
     return data.get("platforms", {}).get("facebook", {})
 
 
 def _get_page_token() -> str:
-    fb_cfg = _load_config()
-    token_env = fb_cfg.get("token_env", "FB_PAGE_TOKEN")
-    token = os.getenv(token_env)
+    """
+    ALWAYS use only FB_PAGE_TOKEN_NAILAK.
+    No fallbacks.
+    No legacy names.
+    """
+    token = os.getenv("FB_PAGE_TOKEN_NAILAK")
+
     if not token:
-        raise RuntimeError(f"[fb][comment] Missing token in env: {token_env}")
+        raise RuntimeError("[fb][comment] Missing token in env: FB_PAGE_TOKEN_NAILAK")
+
     return token
 
 
 def publish_facebook_comment(post_id: str, message: str) -> str:
-    """Publish a comment under an existing Facebook post.
+    """Publish a comment under an existing Facebook post."""
 
-    post_id — id поста, который вернул publish_facebook_photo(...).
-    message — короткий текст комментария БЕЗ ссылок.
-    """
     access_token = _get_page_token()
-
     url = f"https://graph.facebook.com/v21.0/{post_id}/comments"
+
     payload = {
         "message": message,
         "access_token": access_token,
@@ -53,6 +56,6 @@ def publish_facebook_comment(post_id: str, message: str) -> str:
         )
 
     data = response.json()
-    comment_id = str(data.get("id") or "")
     print(f"[fb][comment] Response JSON: {data}")
-    return comment_id
+
+    return str(data.get("id") or "")
