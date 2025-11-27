@@ -1,0 +1,65 @@
+# ============================================================
+# File: .github/workflows/rss-to-facebook-nailak.yml
+# Purpose:
+#   - Read blog RSS from blog.nailak.com
+#   - Post next unpublished article to Nailak Facebook Page
+#   - Uses FB_PAGE_TOKEN_NAILAK GitHub Secret (page access token)
+# ============================================================
+
+name: RSS → Facebook Post (Nailak)
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 17 * * 1"   # Пн — 11:00 Chicago
+    - cron: "0 18 * * 3"   # Ср — 12:00 Chicago
+    - cron: "0 19 * * 5"   # Пт — 13:00 Chicago
+    - cron: "0 20 * * 0"   # Вс — 14:00 Chicago
+
+permissions:
+  contents: write
+
+jobs:
+  post-to-facebook:
+    runs-on: ubuntu-latest
+
+    env:
+      BLOG_RSS_URL: https://blog.nailak.com/index.xml
+      FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN_NAILAK }}
+      PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN_NAILAK }}   # fallback для старой логики
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          pip install -r blog-nailak/requirements.txt
+
+      - name: Run Facebook poster
+        run: |
+          python blog-nailak/main_facebook.py
+
+      - name: Commit updated state.json (if changed)
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          if git status --porcelain | grep -q "blog-nailak/state/state.json"; then
+            echo "Changes detected — committing..."
+            git add blog-nailak/state/state.json
+            git commit -m "Update Facebook post state [skip ci]" || echo "Nothing to commit"
+            git push
+          else
+            echo "No state changes."
+          fi

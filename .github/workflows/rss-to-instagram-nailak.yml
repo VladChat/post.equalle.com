@@ -1,0 +1,61 @@
+# ============================================================
+# File: .github/workflows/rss-to-instagram-nailak.yml
+# Purpose:
+#   - Read blog RSS from blog.nailak.com
+#   - Post next unpublished article to Instagram Business (Nailak)
+#   - Uses FB_PAGE_TOKEN_NAILAK GitHub Secret (shared token)
+# ============================================================
+
+name: RSS → Instagram Post (Nailak)
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "30 17 * * *"   # каждый день в 11:30 Chicago (17:30 UTC)
+
+permissions:
+  contents: write
+
+jobs:
+  post-to-instagram:
+    runs-on: ubuntu-latest
+
+    env:
+      BLOG_RSS_URL: https://blog.nailak.com/index.xml
+      FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN_NAILAK }}
+      PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN_NAILAK }}   # используется instagram_poster
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          pip install -r blog-nailak/requirements.txt
+
+      - name: Run Instagram poster
+        run: |
+          python blog-nailak/main_instagram.py
+
+      - name: Commit updated state.json (if changed)
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          if git status --porcelain | grep -q "blog-nailak/state/state.json"; then
+            echo "Changes detected — committing..."
+            git add blog-nailak/state/state.json
+            git commit -m "Update Instagram post state [skip ci]" || echo "Nothing to commit"
+            git push
+          else
+            echo "No state changes."
+          fi
