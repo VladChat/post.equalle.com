@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
+      FB_PAGE_TOKEN_NAILAK: ${{ secrets.FB_PAGE_TOKEN_NAILAK }}
       BLOG_RSS_URL: https://blog.nailak.com/index.xml
       FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN_NAILAK }}
       PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN_NAILAK }}   # используется instagram_poster
