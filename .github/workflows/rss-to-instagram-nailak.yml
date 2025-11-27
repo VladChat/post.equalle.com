@@ -10,8 +10,6 @@ name: RSS → Instagram Post (Nailak)
 
 on:
   workflow_dispatch: {}
-  schedule:
-    - cron: "30 17 * * *"   # каждый день в 11:30 Chicago (17:30 UTC)
 
 permissions:
   contents: write
