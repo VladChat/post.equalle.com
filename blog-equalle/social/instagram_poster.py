@@ -1,7 +1,7 @@
 # ============================================
-# File: blog-equalle/social/instagram_poster.py
+# File: blog-nailak/social/instagram_poster.py
 # Purpose:
-#   - Publish image to Instagram Business via Graph API
+#   - Publish image to Instagram Business via Graph API (Nailak)
 #
 # Config:
 #   - Берём настройки из config.json:
@@ -9,19 +9,16 @@
 #         "platforms": {
 #           "instagram": {
 #             "enabled": true,
-#             "business_id": "17841422239487755",
-#             "token_env": "FB_PAGE_TOKEN"
+#             "business_id": "REPLACE_WITH_NAILAK_IG_BUSINESS_ID",
+#             "token_env": "FB_PAGE_TOKEN_NAILAK"
 #           }
 #         }
 #       }
 #
 #   - business_id  -> platforms.instagram.business_id
-#   - token_env    -> platforms.instagram.token_env  (обычно "FB_PAGE_TOKEN")
-#   - Сам токен    -> GitHub Secret с таким именем (FB_PAGE_TOKEN)
+#   - token_env    -> platforms.instagram.token_env  (обычно "FB_PAGE_TOKEN_NAILAK")
+#   - сам токен    -> GitHub Secret с таким именем
 #
-# Важно:
-#   - Отдельного "инстаграмного" токена нет.
-#   - Используем тот же PAGE ACCESS TOKEN, что и для Facebook.
 # ============================================
 
 from __future__ import annotations
@@ -39,7 +36,6 @@ _CONFIG_CACHE: Dict[str, Any] | None = None
 
 
 class InstagramConfigError(Exception):
-    """Ошибки конфигурации Instagram-постера."""
     pass
 
 
@@ -49,16 +45,20 @@ def _find_config_path() -> Path:
     """
     Ищет config.json в типичных местах относительно корня репозитория:
 
-      - <repo_root>/blog-equalle/config.json
+      - <repo_root>/blog-nailak/config.json
       - <repo_root>/scripts/config.json
       - <repo_root>/config.json
     """
-
     current_file = Path(__file__).resolve()
-    repo_root = current_file.parents[2]
+    # Структура: <repo_root>/blog-nailak/social/instagram_poster.py
+    # parents[0] = instagram_poster.py
+    # parents[1] = social
+    # parents[2] = blog-nailak
+    # parents[3] = repo_root
+    repo_root = current_file.parents[3]
 
     candidates = [
-        repo_root / "blog-equalle" / "config.json",
+        repo_root / "blog-nailak" / "config.json",
         repo_root / "scripts" / "config.json",
         repo_root / "config.json",
     ]
@@ -75,7 +75,6 @@ def _find_config_path() -> Path:
 
 
 def _load_config() -> Dict[str, Any]:
-    """Лениво загружает config.json и кэширует результат."""
     global _CONFIG_CACHE
     if _CONFIG_CACHE is not None:
         return _CONFIG_CACHE
@@ -94,12 +93,14 @@ def _load_config() -> Dict[str, Any]:
 
 def _get_config() -> tuple[str, str]:
     """
-    Возвращает кортеж (business_id, access_token).
+    Возвращает (business_id, access_token)
 
-    - business_id берём из config.json → platforms.instagram.business_id
-    - имя переменной с токеном берём из config.json → platforms.instagram.token_env
-      (по умолчанию 'FB_PAGE_TOKEN')
-    - сам токен читаем из ENV[token_env] (GitHub Secret).
+    Логика по токену:
+      1) Берём имя переменной из config.json → platforms.instagram.token_env
+      2) Пытаемся прочитать os.getenv(token_env)
+      3) Если пусто — fallback:
+           - PAGE_TOKEN
+           - FB_PAGE_TOKEN
     """
     cfg = _load_config()
 
@@ -107,7 +108,7 @@ def _get_config() -> tuple[str, str]:
     ig_cfg = platforms.get("instagram") or {}
 
     business_id = str(ig_cfg.get("business_id", "")).strip()
-    token_env = str(ig_cfg.get("token_env", "FB_PAGE_TOKEN")).strip()
+    token_env = str(ig_cfg.get("token_env", "FB_PAGE_TOKEN_NAILAK")).strip()
 
     if not business_id:
         raise InstagramConfigError(
@@ -119,10 +120,26 @@ def _get_config() -> tuple[str, str]:
             "[ig][config] Missing platforms.instagram.token_env in config.json"
         )
 
+    # 1) Пытаемся взять токен по имени из config.json
     access_token = os.getenv(token_env, "").strip()
+
+    # 2) Если не нашли — пробуем стандартные Nailak-переменные из workflow
     if not access_token:
+        fallback_candidates = ["PAGE_TOKEN", "FB_PAGE_TOKEN"]
+        for name in fallback_candidates:
+            val = os.getenv(name, "").strip()
+            if val:
+                print(
+                    f"[ig][config] Env '{token_env}' is empty, using fallback '{name}'."
+                )
+                access_token = val
+                break
+
+    if not access_token:
+        checked = [token_env, "PAGE_TOKEN", "FB_PAGE_TOKEN"]
         raise InstagramConfigError(
-            f"[ig][config] GitHub Secret '{token_env}' is not set."
+            "[ig][config] Access token not found. Checked env vars: "
+            + ", ".join(checked)
         )
 
     print(f"[ig][config] business_id={business_id}, token_env={token_env}")
@@ -133,23 +150,13 @@ def _get_config() -> tuple[str, str]:
 
 def publish_instagram_image(caption: str, image_url: str) -> str:
     """
-    Публикует изображение в Instagram Business (два шага):
-
-      1) POST /{business_id}/media
-         - создаём контейнер (media object)
-      2) POST /{business_id}/media_publish
-         - публикуем созданный контейнер
-
-    Параметры:
-      - caption: текст подписи
-      - image_url: публичный URL картинки
-
-    Возвращает:
-      - media_id опубликованного объекта
+    Публикует изображение в Instagram Business (2 шага):
+      1) создаём media container
+      2) публикуем его
     """
     business_id, access_token = _get_config()
 
-    # --- Шаг 1: создаём media container ---
+    # --- Шаг 1: создание media container ---
     url_media = f"{GRAPH_API_BASE}/{business_id}/media"
     payload_media: Dict[str, Any] = {
         "image_url": image_url,
@@ -174,11 +181,9 @@ def publish_instagram_image(caption: str, image_url: str) -> str:
         )
 
     print(f"[ig][poster] Created container_id={container_id}. Waiting for processing...")
+    time.sleep(3)
 
-    # 🔥 ВАЖНО: Instagram должен скачать и обработать изображение
-    time.sleep(3)  # best practice: 2–5 seconds
-
-    # --- Шаг 2: публикуем готовый контейнер ---
+    # --- Шаг 2: публикация контейнера ---
     url_publish = f"{GRAPH_API_BASE}/{business_id}/media_publish"
     payload_publish = {
         "creation_id": container_id,
