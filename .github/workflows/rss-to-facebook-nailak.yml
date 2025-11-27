@@ -10,6 +10,8 @@ name: RSS → Facebook Post (Nailak)
 
 on:
   workflow_dispatch: {}
+  schedule:
+    - cron: "0 17 * * *"   # Каждый день в 11:00 по Чикаго (17:00 UTC)
 
 permissions:
   contents: write
