@@ -10,10 +10,11 @@ name: RSS → Facebook Post
 
 on:
   workflow_dispatch: {}
-  schedule:
+schedule:
   - cron: "0 17 * * 1"   # Пн — 11:00 Chicago
   - cron: "0 18 * * 3"   # Ср — 12:00 Chicago
   - cron: "0 19 * * 5"   # Пт — 13:00 Chicago
+  - cron: "0 22 * * 6"   # Сб — 16:00 Chicago
   - cron: "0 20 * * 0"   # Вс — 14:00 Chicago
 
 permissions:
