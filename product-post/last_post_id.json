@@ -1,15 +1,12 @@
 {
-  "post_id": "325670187920349_1287395070068643",
+  "post_id": "325670187920349_1291147009693449",
   "product": {
     "source": "amazon",
-    "url": "https://www.amazon.com/gp/product/B0CZ7RP91J",
-    "grit": 80,
+    "url": "https://www.amazon.com/gp/product/B0CZ7SX5F4",
+    "grit": 100,
     "pack": 10,
-    "anchor": "80 Grit (Coarse)",
-    "grit_description": "Durable coarse sandpaper made with Silicon Carbide for fast stock removal and surface leveling. Excellent for woodworking, metalwork, and fiberglass preparation. Works effectively for both wet and dry sanding before moving to 120 grit.",
-    "contexts": [
-      "wood",
-      "metal"
-    ]
+    "anchor": "100 Grit (Coarse)",
+    "grit_description": "General-purpose coarse sandpaper for smoothing rough surfaces and removing old coatings. Works well on wood, metal, and resin projects. Designed for wet or dry sanding between aggressive 80 grit and finer 150 grit stages.",
+    "contexts": []
   }
 }
