@@ -5,7 +5,7 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Any, List, Optional
 
@@ -23,6 +23,8 @@ class Post:
     image_instagram: Optional[str]
     image_pinterest: Optional[str]
     image_generic: Optional[str]
+    # Новое поле: список категорий из RSS (первая категория = главная)
+    categories: List[str] = field(default_factory=list)
 
 
 def _parse_datetime(value: Any) -> Optional[datetime]:
@@ -96,6 +98,41 @@ def _extract_cards(entry: Any) -> tuple[Optional[str], Optional[str], Optional[s
     return facebook, instagram, pinterest
 
 
+def _extract_categories(entry: Any) -> List[str]:
+    """
+    Extracts categories/tags from feedparser entry.
+
+    - В первую очередь читаем entry.tags (обычный случай для <category>).
+    - Дополнительно учитываем одиночное поле entry.category, если оно есть.
+    - Возвращаем упорядоченный список строк без дубликатов.
+    """
+    categories: List[str] = []
+
+    # feedparser обычно кладёт <category> в entry.tags
+    tags = getattr(entry, "tags", None) or entry.get("tags", None)
+    if tags:
+        for tag in tags:
+            term = None
+            if isinstance(tag, dict):
+                term = tag.get("term") or tag.get("label")
+            else:
+                term = getattr(tag, "term", None) or getattr(tag, "label", None)
+
+            if term:
+                value = str(term).strip()
+                if value and value not in categories:
+                    categories.append(value)
+
+    # На всякий случай — одиночное поле category
+    single_cat = getattr(entry, "category", None) or entry.get("category", None)
+    if single_cat:
+        value = str(single_cat).strip()
+        if value and value not in categories:
+            categories.append(value)
+
+    return categories
+
+
 def parse_feed(feed: Any, limit: Optional[int] = None) -> List[Post]:
     posts: List[Post] = []
 
@@ -113,6 +150,7 @@ def parse_feed(feed: Any, limit: Optional[int] = None) -> List[Post]:
 
         fb_img, ig_img, pin_img = _extract_cards(entry)
         generic_img = _extract_generic_image(entry)
+        categories = _extract_categories(entry)
 
         post = Post(
             title=title,
@@ -124,6 +162,7 @@ def parse_feed(feed: Any, limit: Optional[int] = None) -> List[Post]:
             image_instagram=ig_img,
             image_pinterest=pin_img,
             image_generic=generic_img,
+            categories=categories,
         )
         posts.append(post)
 
