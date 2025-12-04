@@ -5,7 +5,7 @@
 #   - Post next unpublished article to Pinterest board
 # ============================================================
 
-name: RSS → Pinterest Pin
+name: RSS → Pinterest Pin Nailak
 
 on:
   workflow_dispatch: {}
