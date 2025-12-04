@@ -7,34 +7,66 @@ from __future__ import annotations
 
 import os
 from typing import Any, Dict
+
 import requests
 
 PINTEREST_API_BASE = "https://api.pinterest.com/v5"
 
-# ⭐ Pinterest BOARD ID — НЕ секретная инфа
-PINTEREST_BOARD_ID = "839428886736046036"   # ← твоя доска "Sanding Tips & Guides"
-
 
 class PinterestConfigError(Exception):
+    """Raised when Pinterest configuration (env) is invalid."""
     pass
 
 
-def _get_config() -> tuple[str, str]:
-    # Access token всё ещё должен быть секретом
-    access_token = os.getenv("PINTEREST_ACCESS_TOKEN", "").strip()
+def _get_access_token() -> str:
+    """
+    Read access token from environment.
 
-    if not access_token:
-        raise PinterestConfigError("PINTEREST_ACCESS_TOKEN is not set (use GitHub Secret).")
+    Primary variable:
+      - PINTEREST_ACCESS_TOKEN  (GitHub Secret)
 
-    return access_token, PINTEREST_BOARD_ID
+    Fallback:
+      - PINTEREST_TOKEN         (на всякий случай, для старых настроек)
+    """
+    token = os.getenv("PINTEREST_ACCESS_TOKEN", "").strip()
+    if not token:
+        token = os.getenv("PINTEREST_TOKEN", "").strip()
+
+    if not token:
+        raise PinterestConfigError(
+            "Pinterest access token not found. "
+            "Set PINTEREST_ACCESS_TOKEN as a GitHub Actions secret."
+        )
+
+    return token
 
 
-def publish_pinterest_pin(payload: Dict[str, Any]) -> str:
-    """Creates a pin using prepared payload."""
-    access_token, board_id = _get_config()
+def publish_pinterest_pin(payload: Dict[str, Any], board_id: str) -> str:
+    """
+    Creates a pin using prepared payload and explicit board_id.
 
-    # Вставляем Board ID прямо здесь
-    payload["board_id"] = board_id
+    Expected payload structure (from utils.text_builder.build_pinterest_payload):
+      {
+        "title": "...",
+        "description": "...",
+        "link": "https://blog.equalle.com/....",
+        "media_source": {
+          "source_type": "image_url",
+          "url": "https://blog.equalle.com/..."
+        }
+      }
+
+    We add:
+      - board_id
+    """
+    if not board_id:
+        raise ValueError("publish_pinterest_pin() requires non-empty board_id")
+
+    access_token = _get_access_token()
+
+    # Не мутируем исходный dict на всякий случай
+    body: Dict[str, Any] = dict(payload)
+    body["board_id"] = board_id
 
     headers = {
         "Authorization": f"Bearer {access_token}",
@@ -43,12 +75,16 @@ def publish_pinterest_pin(payload: Dict[str, Any]) -> str:
 
     url = f"{PINTEREST_API_BASE}/pins"
     print(f"[pin][poster] POST {url}")
-    response = requests.post(url, json=payload, headers=headers, timeout=30)
+    print(f"[pin][poster] Payload keys: {list(body.keys())}")
+
+    response = requests.post(url, json=body, headers=headers, timeout=30)
 
     if not response.ok:
-        raise RuntimeError(f"Pinterest API error: {response.status_code} {response.text}")
+        raise RuntimeError(
+            f"[pin][poster] Pinterest API error: {response.status_code} {response.text}"
+        )
 
     data = response.json()
-    pin_id = data.get("id") or ""
+    pin_id = str(data.get("id") or "")
     print(f"[pin][poster] Response: {data}")
-    return str(pin_id)
+    return pin_id
