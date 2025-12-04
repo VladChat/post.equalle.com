@@ -10,8 +10,8 @@ name: RSS → Pinterest Pin
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "0 18 * * *"   # Каждый день в 12:00 Chicago (18:00 UTC)
-    - cron: "0 19 * * *"   # Каждый день в 13:00 Chicago (19:00 UTC)
+    - cron: "0 17 * * *"   # Каждый день в 11:00 Chicago (18:00 UTC)
+    - cron: "0 23 * * *"   # Каждый день в 17:00 Chicago (19:00 UTC)
 
 permissions:
   contents: write
