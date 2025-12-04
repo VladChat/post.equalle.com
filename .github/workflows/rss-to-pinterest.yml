@@ -1,14 +1,17 @@
 # ============================================================
-# File: blog-equalle/workflows/rss-to-pinterest.yml
+# File: .github/workflows/rss-to-pinterest.yml
 # Purpose:
-#   - Read blog RSS
-#   - Post next unpublished article to Pinterest board
+#   - Read blog RSS feed
+#   - Post next unpublished article to a Pinterest board
 # ============================================================
 
 name: RSS → Pinterest Pin
 
 on:
   workflow_dispatch: {}
+  # Если захочешь автопостинг по расписанию — раскомментируй блок ниже
+  # schedule:
+  #   - cron: "0 18 * * *"   # Каждый день в 12:00 Chicago (18:00 UTC)
 
 permissions:
   contents: write
@@ -36,7 +39,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r blog-equalle/requirements.txt
+          python -m pip install --upgrade pip
+          python -m pip install -r blog-equalle/requirements.txt
 
       - name: Run Pinterest poster
         run: |
@@ -46,6 +50,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           if git status --porcelain | grep "blog-equalle/state/state.json"; then
             git add blog-equalle/state/state.json
             git commit -m "Update Pinterest post state [skip ci]" || echo "Nothing to commit"
