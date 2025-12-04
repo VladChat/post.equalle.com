@@ -57,3 +57,4 @@ jobs:
             git push
           else
             echo "No state changes."
+          fi
