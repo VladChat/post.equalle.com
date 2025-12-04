@@ -1,12 +1,16 @@
 {
-  "post_id": "325670187920349_1291147009693449",
+  "post_id": "325670187920349_1292619209546229",
   "product": {
     "source": "amazon",
-    "url": "https://www.amazon.com/gp/product/B0CZ7SX5F4",
-    "grit": 100,
+    "url": "https://www.amazon.com/gp/product/B0CZ7VFK4N",
+    "grit": 120,
     "pack": 10,
-    "anchor": "100 Grit (Coarse)",
-    "grit_description": "General-purpose coarse sandpaper for smoothing rough surfaces and removing old coatings. Works well on wood, metal, and resin projects. Designed for wet or dry sanding between aggressive 80 grit and finer 150 grit stages.",
-    "contexts": []
+    "anchor": "120 Grit (Coarse)",
+    "grit_description": "Refines surfaces after coarse sanding by removing scratches from lower grits. Consistent performance on wood, drywall, and metal. Ideal for wet or dry finishing before applying primer or stain.",
+    "contexts": [
+      "wood",
+      "metal",
+      "drywall"
+    ]
   }
 }
