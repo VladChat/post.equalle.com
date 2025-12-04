@@ -9,9 +9,9 @@ name: RSS → Pinterest Pin
 
 on:
   workflow_dispatch: {}
-  # Если захочешь автопостинг по расписанию — раскомментируй блок ниже
-  # schedule:
-  #   - cron: "0 18 * * *"   # Каждый день в 12:00 Chicago (18:00 UTC)
+  schedule:
+    - cron: "0 18 * * *"   # Каждый день в 12:00 Chicago (18:00 UTC)
+    - cron: "0 19 * * *"   # Каждый день в 13:00 Chicago (19:00 UTC)
 
 permissions:
   contents: write
