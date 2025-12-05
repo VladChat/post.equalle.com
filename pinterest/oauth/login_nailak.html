@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Login with Pinterest (Nailak)</title>
+  <meta charset="UTF-8" />
+  <title>Nailak Pinterest OAuth Login</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    a.button {
+      padding: 12px 20px;
+      background: #e60023;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Login with Pinterest — Nailak</h1>
 
-  <a href="https://www.pinterest.com/oauth/?client_id=1538940&redirect_uri=https://post.equalle.com/pinterest/oauth/nailak&response_type=code&scope=boards:read,pins:read,pins:write,ads:read">
-    <button style="padding:10px 20px;font-size:16px;">Login with Pinterest</button>
-  </a>
+<h2>Nailak Pinterest OAuth Login</h2>
+
+<p>Click the button below to authorize the Nailak automation app.</p>
+
+<a class="button"
+   href="https://www.pinterest.com/oauth/?client_id=1538940
+&redirect_uri=https://post.equalle.com/pinterest/oauth/redirect_nailak.html
+&response_type=code
+&scope=boards:read,pins:read,user_accounts:read,boards:write,pins:write">
+  Authorize Pinterest
+</a>
 
 </body>
 </html>
