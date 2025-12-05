@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Pinterest OAuth Redirect — Nailak</title>
+  <meta charset="UTF-8" />
+  <title>Nailak OAuth Redirect</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    .code-box {
+      padding: 12px;
+      background: #f2f2f2;
+      border-radius: 6px;
+      font-size: 18px;
+      margin-top: 20px;
+      display: inline-block;
+    }
+  </style>
 </head>
 <body>
-  <h1>Pinterest OAuth Redirect (Nailak)</h1>
-  <p>This page receives the Pinterest authorization code.</p>
-  <p id="url"></p>
 
-  <script>
-    document.getElementById("url").innerText =
-      "URL: " + window.location.href;
-  </script>
+<h2>Pinterest OAuth Redirect — Nailak</h2>
+
+<p>Copy the code below and paste it into the Python script.</p>
+
+<div id="code" class="code-box">(no code yet)</div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const code = params.get("code");
+  if (code) {
+    document.getElementById("code").innerText = code;
+    console.log("OAuth code:", code);
+  }
+</script>
+
 </body>
 </html>
