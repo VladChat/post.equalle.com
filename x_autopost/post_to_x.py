@@ -1,3 +1,19 @@
+# ============================================================
+# File: x_autopost/post_to_x.py
+# Path: /x_autopost/post_to_x.py
+# Description:
+#   Script for automated posting to X (Twitter) via Playwright.
+#   Cycles through three product sources (equalle, amazon, extra),
+#   generates tweet text, posts via /intent/tweet, updates state.json.
+#   Uses a single GitHub secret: X_CREDENTIALS (format "username:password").
+#
+# Notes:
+#   - State file: x_autopost/state/state.json
+#   - Auth persistence: x_autopost/state/auth_state.json
+#   - This script is executed from GitHub Actions workflow:
+#       .github/workflows/products-to-x.yml
+# ============================================================
+
 import asyncio
 import json
 import os
@@ -353,11 +369,13 @@ async def post_to_x(tweet_text: str) -> None:
     Открываем /intent/tweet с нашим текстом, при необходимости логинимся,
     жмём Post.
     """
-    username = os.getenv("X_USERNAME")
-    password = os.getenv("X_PASSWORD")
 
-    if not username or not password:
-        raise RuntimeError("X_USERNAME and X_PASSWORD must be set in environment")
+    # Читаем один секрет X_CREDENTIALS в формате "username:password"
+    raw = os.getenv("X_CREDENTIALS", "")
+    if ":" not in raw:
+        raise RuntimeError("X_CREDENTIALS must be in 'username:password' format")
+
+    username, password = raw.split(":", 1)
 
     STATE_DIR.mkdir(parents=True, exist_ok=True)
 
