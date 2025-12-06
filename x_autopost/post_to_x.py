@@ -22,7 +22,12 @@ from pathlib import Path
 from typing import Any, Dict, Tuple, Optional, List
 from urllib.parse import quote
 
-from playwright.async_api import async_playwright, Page, BrowserContext
+from playwright.async_api import (
+    async_playwright,
+    Page,
+    BrowserContext,
+    TimeoutError as PlaywrightTimeoutError,
+)
 
 
 # Пути к файлам
@@ -380,27 +385,67 @@ async def post_to_x(tweet_text: str) -> None:
     STATE_DIR.mkdir(parents=True, exist_ok=True)
 
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
+        browser = await p.chromium.launch(
+            headless=True,
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--disable-web-security",
+                "--disable-features=IsolateOrigins,site-per-process",
+                "--no-sandbox",
+                "--disable-gpu",
+                "--disable-dev-shm-usage",
+            ],
+        )
+
+        context_kwargs = {
+            "user_agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/120.0.0.0 Safari/537.36"
+            ),
+            "viewport": {"width": 1280, "height": 720},
+        }
 
         # Если есть сохранённое состояние авторизации — используем его.
         if AUTH_STATE_FILE.exists():
             context: BrowserContext = await browser.new_context(
-                storage_state=str(AUTH_STATE_FILE)
+                storage_state=str(AUTH_STATE_FILE),
+                **context_kwargs,
             )
         else:
-            context = await browser.new_context()
+            context = await browser.new_context(**context_kwargs)
 
         page = await context.new_page()
 
         encoded_text = quote(tweet_text)
         compose_url = f"https://x.com/intent/tweet?text={encoded_text}"
 
-        await page.goto(compose_url, wait_until="networkidle")
+        try:
+            await page.goto(
+                compose_url,
+                wait_until="domcontentloaded",
+                timeout=60000,
+            )
+        except PlaywrightTimeoutError:
+            # Если по таймауту, но что-то загрузилось — продолжаем,
+            # иначе пробрасываем ошибку.
+            if not page.url.startswith("https://x.com"):
+                await browser.close()
+                raise
 
         # Если нас кинуло на логин — логинимся и снова открываем compose
         if "login" in page.url or "flow" in page.url:
             await ensure_login(page, username, password)
-            await page.goto(compose_url, wait_until="networkidle")
+            try:
+                await page.goto(
+                    compose_url,
+                    wait_until="domcontentloaded",
+                    timeout=60000,
+                )
+            except PlaywrightTimeoutError:
+                if not page.url.startswith("https://x.com"):
+                    await browser.close()
+                    raise
 
         # Нажимаем кнопку Post
         try:
