@@ -1,0 +1,198 @@
+{
+    "products": {
+    "10_pack": {
+      "Grit 60": "https://www.amazon.com/gp/product/B0CZ7RDBQ1",
+      "Grit 80": "https://www.amazon.com/gp/product/B0CZ7RP91J",
+      "Grit 100": "https://www.amazon.com/gp/product/B0CZ7SX5F4",
+      "Grit 120": "https://www.amazon.com/gp/product/B0CZ7VFK4N",
+      "Grit 150": "https://www.amazon.com/gp/product/B0CZ7T4FFL",
+      "Grit 180": "https://www.amazon.com/gp/product/B0CZ8DTGHP",
+      "Grit 220": "https://www.amazon.com/gp/product/B0CZ8DFS6T",
+      "Grit 240": "https://www.amazon.com/gp/product/B0CZ7TQ1F8",
+      "Grit 280": "https://www.amazon.com/gp/product/B0CZ7T9MPL",
+      "Grit 320": "https://www.amazon.com/gp/product/B0CZ7SLBB4",
+      "Grit 360": "https://www.amazon.com/gp/product/B0CZ7VV273",
+      "Grit 400": "https://www.amazon.com/gp/product/B0CZ7W28G1",
+      "Grit 500": "https://www.amazon.com/gp/product/B0CZ7VP623",
+      "Grit 600": "https://www.amazon.com/gp/product/B0CZ7V2FFC",
+      "Grit 800": "https://www.amazon.com/gp/product/B0CZ7TL27F",
+      "Grit 1000": "https://www.amazon.com/gp/product/B0CZ8CPYJS",
+      "Grit 1200": "https://www.amazon.com/gp/product/B0CZ8PWB95",
+      "Grit 1500": "https://www.amazon.com/gp/product/B0CZ7T3663",
+      "Grit 2000": "https://www.amazon.com/gp/product/B0CZ7TX4KC",
+      "Grit 3000": "https://www.amazon.com/gp/product/B0F9VR28HR"
+    },
+    "25_pack": {
+      "Grit 60": "https://www.amazon.com/gp/product/B0CZ7R3MC1",
+      "Grit 80": "https://www.amazon.com/gp/product/B07RHVWCN9",
+      "Grit 100": "https://www.amazon.com/gp/product/B07RFT4SN8",
+      "Grit 120": "https://www.amazon.com/gp/product/B07RHVV8DK",
+      "Grit 150": "https://www.amazon.com/gp/product/B07RJZ3C39",
+      "Grit 180": "https://www.amazon.com/gp/product/B07RGRN3PL",
+      "Grit 220": "https://www.amazon.com/gp/product/B07RL3XSWS",
+      "Grit 240": "https://www.amazon.com/gp/product/B07RLT4VD8",
+      "Grit 280": "https://www.amazon.com/gp/product/B07RJZ4K4W",
+      "Grit 320": "https://www.amazon.com/gp/product/B07RJZ42DT",
+      "Grit 360": "https://www.amazon.com/gp/product/B07RGRNR7F",
+      "Grit 400": "https://www.amazon.com/gp/product/B07RLS2G5T",
+      "Grit 500": "https://www.amazon.com/gp/product/B07RHVSWN9",
+      "Grit 600": "https://www.amazon.com/gp/product/B07RGRNP8M",
+      "Grit 800": "https://www.amazon.com/gp/product/B07RLWGZ85",
+      "Grit 1000": "https://www.amazon.com/gp/product/B07RJZ4MZK",
+      "Grit 1200": "https://www.amazon.com/gp/product/B07RL3VGJF",
+      "Grit 1500": "https://www.amazon.com/gp/product/B07RFT4WDT",
+      "Grit 2000": "https://www.amazon.com/gp/product/B07RFT53W6",
+      "Grit 3000": "https://www.amazon.com/gp/product/B0F9VR1H7L"
+    },
+    "50_pack": {
+      "Grit 60": "https://www.amazon.com/gp/product/B0CZ7L15KV",
+      "Grit 80": "https://www.amazon.com/gp/product/B07Q8BWSHP",
+      "Grit 100": "https://www.amazon.com/gp/product/B07QC47GD5",
+      "Grit 120": "https://www.amazon.com/gp/product/B07QD2GTY4",
+      "Grit 150": "https://www.amazon.com/gp/product/B07QF44CQT",
+      "Grit 180": "https://www.amazon.com/gp/product/B07QG6R8Y1",
+      "Grit 220": "https://www.amazon.com/gp/product/B07QD2RZ63",
+      "Grit 240": "https://www.amazon.com/gp/product/B07QB4GPD1",
+      "Grit 280": "https://www.amazon.com/gp/product/B07QF427BT",
+      "Grit 320": "https://www.amazon.com/gp/product/B07QD1PR32",
+      "Grit 360": "https://www.amazon.com/gp/product/B07QF3PZP4",
+      "Grit 400": "https://www.amazon.com/gp/product/B07QB4GVVD",
+      "Grit 500": "https://www.amazon.com/gp/product/B07QB4GWNR",
+      "Grit 600": "https://www.amazon.com/gp/product/B07QF2B6D7",
+      "Grit 800": "https://www.amazon.com/gp/product/B07QD2GX43",
+      "Grit 1000": "https://www.amazon.com/gp/product/B07QB4HGP1",
+      "Grit 1200": "https://www.amazon.com/gp/product/B07QF5326B",
+      "Grit 1500": "https://www.amazon.com/gp/product/B07QB4DZRK",
+      "Grit 2000": "https://www.amazon.com/gp/product/B07QD2TNNW",
+      "Grit 3000": "https://www.amazon.com/gp/product/B0FHJCF1X6"
+    },
+    "100_pack": {
+      "Grit 80": "https://www.amazon.com/gp/product/B0CZK2LKRX",
+      "Grit 100": "https://www.amazon.com/gp/product/B07RLSCDKT",
+      "Grit 120": "https://www.amazon.com/gp/product/B07RLSHPZV",
+      "Grit 150": "https://www.amazon.com/gp/product/B07RHVW4J5",
+      "Grit 180": "https://www.amazon.com/gp/product/B07RJZ55RL",
+      "Grit 220": "https://www.amazon.com/gp/product/B07RHVX7F6",
+      "Grit 240": "https://www.amazon.com/gp/product/B07RL3WX8X",
+      "Grit 280": "https://www.amazon.com/gp/product/B07RLS6VXV",
+      "Grit 320": "https://www.amazon.com/gp/product/B07RFT5KT4",
+      "Grit 360": "https://www.amazon.com/gp/product/B07RGRPYPM",
+      "Grit 400": "https://www.amazon.com/gp/product/B07RLQ4JWR",
+      "Grit 500": "https://www.amazon.com/gp/product/B07RLVN5MM",
+      "Grit 600": "https://www.amazon.com/gp/product/B07RHVVJD4",
+      "Grit 800": "https://www.amazon.com/gp/product/B07RL3YNMY",
+      "Grit 1000": "https://www.amazon.com/gp/product/B07RFT4ZNB",
+      "Grit 1200": "https://www.amazon.com/gp/product/B07RL3X71F",
+      "Grit 1500": "https://www.amazon.com/gp/product/B07RL3W6VT",
+      "Grit 2000": "https://www.amazon.com/gp/product/B07RGRPZVF",
+      "Grit 3000": "https://www.amazon.com/gp/product/B0F9VN1RV3"
+    }
+  },
+  "meta": {
+    "packs_order": [25, 50, 100],
+    "grit_clusters": {
+      "coarse": [60, 80, 100, 120],
+      "medium": [150, 180, 220, 240],
+      "fine": [280, 320, 360, 400, 500, 600],
+      "ultrafine": [800, 1000, 1200, 1500, 2000, 3000]
+    },
+	
+	
+	
+ "grit_copy": {
+  "60": {
+    "anchor": "60 Grit (Coarse)",
+    "desc": "Extremely coarse Silicon Carbide abrasive for rapid material removal and shaping. Ideal for stripping paint, smoothing rough lumber, or cleaning rusted metal. Suitable for wet or dry sanding, it prepares surfaces for smoother grits like 80 or 100."
+  },
+  "80": {
+    "anchor": "80 Grit (Coarse)",
+    "desc": "Durable coarse sandpaper made with Silicon Carbide for fast stock removal and surface leveling. Excellent for woodworking, metalwork, and fiberglass preparation. Works effectively for both wet and dry sanding before moving to 120 grit."
+  },
+  "100": {
+    "anchor": "100 Grit (Coarse)",
+    "desc": "General-purpose coarse sandpaper for smoothing rough surfaces and removing old coatings. Works well on wood, metal, and resin projects. Designed for wet or dry sanding between aggressive 80 grit and finer 150 grit stages."
+  },
+  "120": {
+    "anchor": "120 Grit (Coarse)",
+    "desc": "Refines surfaces after coarse sanding by removing scratches from lower grits. Consistent performance on wood, drywall, and metal. Ideal for wet or dry finishing before applying primer or stain."
+  },
+  "150": {
+    "anchor": "150 Grit (Medium)",
+    "desc": "Balanced medium grit for surface preparation and between-coat sanding. Smooths minor imperfections in wood, paint, or primer. Works equally well for wet or dry applications in both DIY and professional projects."
+  },
+  "180": {
+    "anchor": "180 Grit (Medium)",
+    "desc": "Medium finishing grit that refines wood, metal, or drywall before painting. Provides even texture and cutting control. Excellent for wet or dry sanding where a uniform surface is needed."
+  },
+  "220": {
+    "anchor": "220 Grit (Medium)",
+    "desc": "Fine finishing grit for final surface preparation before painting or coating. Offers uniform cutting on wood, metal, and plastic. Leaves a smooth, paint-ready finish suitable for wet or dry sanding."
+  },
+  "240": {
+    "anchor": "240 Grit (Medium)",
+    "desc": "Light refinement grit that blends sanding marks and smooths primer layers. Perfect for wood, resin, or plastic before lacquer application. Produces consistent scratch patterns and controlled results when used wet or dry."
+  },
+  "280": {
+    "anchor": "280 Grit (Fine)",
+    "desc": "Fine abrasive for leveling varnish or clear coats with precision. Creates a refined surface before high-gloss finishing. Performs reliably on wood, resin, or painted materials in wet or dry conditions."
+  },
+  "320": {
+    "anchor": "320 Grit (Fine)",
+    "desc": "Fine finishing grit for sanding between coats of paint, primer, or lacquer. Provides smooth, even results for woodworking, automotive, and precision finishing. Works efficiently for wet or dry applications."
+  },
+  "360": {
+    "anchor": "360 Grit (Fine)",
+    "desc": "Precision grit for removing haze and small surface defects. Ensures scratch-free sanding on wood, plastic, or metal. Ideal for both wet and dry use before the polishing stage."
+  },
+  "400": {
+    "anchor": "400 Grit (Fine)",
+    "desc": "Ultra-fine abrasive for refining surfaces before polishing or coating. Commonly used in auto body repair and resin finishing. Produces flawless smoothness with wet or dry sanding."
+  },
+  "500": {
+    "anchor": "500 Grit (Fine)",
+    "desc": "Fine precision sandpaper for detailed primer and surface smoothing. Removes light scratches and prepares for higher-grit polishing. Suitable for plastic, resin, and metal work in wet or dry conditions."
+  },
+  "600": {
+    "anchor": "600 Grit (Fine)",
+    "desc": "High-precision finishing grit that delivers ultra-smooth surfaces. Common in primer sanding, automotive detailing, and fine metal work. Performs excellently in both wet and dry sanding."
+  },
+  "800": {
+    "anchor": "800 Grit (Ultra-Fine)",
+    "desc": "Ultra-fine grit for pre-polish refinement on paint, clear coats, or resin. Smooths imperfections without damaging the base layer. Provides optimal control when used wet or dry before 1000 or 1200 grits."
+  },
+  "1000": {
+    "anchor": "1000 Grit (Ultra-Fine)",
+    "desc": "Light polishing grit for removing swirl marks and fine scratches. Commonly used in automotive finishing, plastic restoration, and resin art. Delivers a consistent semi-gloss surface ready for final polish."
+  },
+  "1200": {
+    "anchor": "1200 Grit (Ultra-Fine)",
+    "desc": "Mirror-smooth grit for precision polishing before final buffing. Excellent for auto clear coats, resin crafts, and metal detailing. Ensures maximum clarity and gloss when used wet or dry."
+  },
+  "1500": {
+    "anchor": "1500 Grit (Ultra-Fine)",
+    "desc": "Professional ultra-fine grit for satin or semi-gloss finishing. Removes micro-scratches from clear coats and paint touch-ups. Produces flawless textures and consistent results before final polishing."
+  },
+  "2000": {
+    "anchor": "2000 Grit (Ultra-Fine)",
+    "desc": "Super-fine grit for restoring deep gloss on automotive paint, resin, or metal. Removes micro-defects and surface haze. Ideal for precision polishing prior to waxing or compounding."
+  },
+  "3000": {
+    "anchor": "3000 Grit (Ultra-Fine)",
+    "desc": "Final polishing grit that produces a mirror-like finish on paint, resin, and metal. Used by professionals for detailing and restoration. Leaves an ultra-clear, high-gloss surface after wet or dry sanding."
+  }
+},
+
+
+
+
+    "context_map": {
+      "wood": [80, 120, 150, 180, 220, 320],
+      "metal": [60, 80, 120, 220, 400, 600],
+      "auto": [220, 400, 800, 1200, 2000, 3000],
+      "drywall": [120, 150, 180, 220],
+      "finishing": [240, 280, 320, 400, 600, 800],
+      "polishing": [1000, 1200, 1500, 2000, 3000]
+    },
+    "usage_counters": {}
+  }
+}
