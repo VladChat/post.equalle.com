@@ -27,8 +27,7 @@ jobs:
 
       - name: Post product to X
         env:
-          X_USERNAME: ${{ secrets.X_USERNAME }}
-          X_PASSWORD: ${{ secrets.X_PASSWORD }}
+          X_CREDENTIALS: ${{ secrets.X_CREDENTIALS }}
         run: |
           python x_autopost/post_to_x.py
 
