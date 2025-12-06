@@ -427,8 +427,6 @@ async def post_to_x(tweet_text: str) -> None:
                 timeout=60000,
             )
         except PlaywrightTimeoutError:
-            # Если по таймауту, но что-то загрузилось — продолжаем,
-            # иначе пробрасываем ошибку.
             if not page.url.startswith("https://x.com"):
                 await browser.close()
                 raise
@@ -447,13 +445,54 @@ async def post_to_x(tweet_text: str) -> None:
                     await browser.close()
                     raise
 
-        # Нажимаем кнопку Post
+        # Немного логов для дебага
+        print("X page URL before posting:", page.url)
+
+        # Нажимаем кнопку Post / отправляем твит
+        clicked = False
+
+        # 1) Пробуем по роли и имени
         try:
             post_btn = page.get_by_role("button", name="Post")
-            await post_btn.click()
+            await post_btn.click(timeout=15000)
+            clicked = True
+            print("Clicked Post button via role/name.")
         except Exception:
-            fallback_btn = page.locator("div[data-testid='tweetButtonInline']")
-            await fallback_btn.click()
+            clicked = False
+
+        # 2) Пробуем по нескольким data-testid
+        if not clicked:
+            selectors = [
+                "div[data-testid='tweetButtonInline']",
+                "div[data-testid='tweetButton']",
+                "button[data-testid='tweetButtonInline']",
+                "button[data-testid='tweetButton']",
+            ]
+            for sel in selectors:
+                try:
+                    loc = page.locator(sel)
+                    count = await loc.count()
+                    if count:
+                        print(f"Found Post control via selector: {sel}")
+                        await loc.first.click(timeout=15000)
+                        clicked = True
+                        break
+                except Exception:
+                    continue
+
+        # 3) Если так и не нашли — пробуем шорткат Ctrl+Enter
+        if not clicked:
+            try:
+                print("Trying keyboard shortcut Ctrl+Enter to send tweet...")
+                await page.keyboard.press("Control+Enter")
+                await page.wait_for_timeout(3000)
+                clicked = True
+            except Exception:
+                clicked = False
+
+        if not clicked:
+            await browser.close()
+            raise RuntimeError("Could not find X 'Post' control to send tweet")
 
         await page.wait_for_timeout(5000)
 
