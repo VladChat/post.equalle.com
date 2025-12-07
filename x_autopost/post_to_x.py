@@ -333,12 +333,11 @@ def build_tweet_text(product: Dict[str, Any]) -> str:
 
 async def ensure_login(page: Page, username: str, password: str) -> None:
     """
-    Логинимся в X, если нас перекинуло на /login или /i/flow/login.
+    Логинимся в X, если мы на /login или /i/flow/login.
     Предполагаем английский интерфейс.
     """
     url = page.url
     if "login" not in url and "flow" not in url:
-        # Скорее всего, уже залогинены.
         print(f"[LOGIN] Not on login flow (url={url}), skipping login.")
         return
 
@@ -377,9 +376,9 @@ async def ensure_login(page: Page, username: str, password: str) -> None:
 
 async def post_to_x(tweet_text: str) -> None:
     """
-    Открываем https://x.com/home, при необходимости логинимся,
-    вставляем текст в композер и отправляем твит.
-    Подробно логируем все шаги и не обновляем state, если не уверены,
+    Открываем https://x.com/home, при необходимости логинимся через
+    https://x.com/i/flow/login, вставляем текст в композер и отправляем твит.
+    Подробно логируем все шаги и НЕ обновляем state, если не уверены,
     что пост реально ушёл.
     """
 
@@ -413,41 +412,65 @@ async def post_to_x(tweet_text: str) -> None:
             context = await browser.new_context()
 
         page = await context.new_page()
-
-        # 1) Открываем домашнюю ленту
         home_url = "https://x.com/home"
-        print(f"[X] Opening home timeline: {home_url}")
-        await page.goto(home_url, wait_until="domcontentloaded", timeout=60000)
-        print(f"[X] URL after first goto: {page.url}")
 
-        # 2) Если нас перекинуло на логин — логинимся и возвращаемся на home
-        if "login" in page.url or "flow" in page.url:
-            print("[X] Detected login flow, calling ensure_login()...")
-            await ensure_login(page, username, password)
-            print("[X] Reloading home after login...")
+        # ======================================================
+        # 1–2. ДВА ПЫТКИ:
+        #   1) просто /home
+        #   2) если композера нет — явный логин /i/flow/login + снова /home
+        # ======================================================
+        logged_in = False
+        composer = None
+
+        for attempt in range(2):
+            print(f"[X] Home/composer attempt #{attempt + 1}")
             await page.goto(home_url, wait_until="domcontentloaded", timeout=60000)
-            print(f"[X] URL after login+home: {page.url}")
+            print(f"[X] URL after goto home: {page.url}")
 
-        # 3) Ищем композер твита
-        composer = page.locator("div[role='textbox'][data-testid='tweetTextarea_0']")
-        try:
-            print("[X] Waiting for tweet composer (tweetTextarea_0)...")
-            await composer.wait_for(state="visible", timeout=15000)
-        except Exception as e:
-            print(f"[X][ERROR] Composer not found or not visible: {e}")
-            html = await page.content()
-            print("[X][DEBUG] Page HTML snippet (composer fail):")
-            print(html[:4000])
-            raise RuntimeError("Cannot find tweet composer on X home page")
+            # Более широкий селектор на всякий случай
+            composer = page.locator(
+                "div[role='textbox'][data-testid='tweetTextarea_0'], "
+                "div[data-testid='tweetTextarea_0']"
+            )
 
-        # 4) Фокусируем композер и заполняем текст
+            try:
+                print("[X] Waiting for tweet composer (tweetTextarea_0)...")
+                await composer.first.wait_for(state="visible", timeout=15000)
+                logged_in = True
+                print("[X] Composer found and visible.")
+                break
+            except Exception as e:
+                print(f"[X][WARN] Composer not found on attempt {attempt + 1}: {e}")
+
+                if attempt == 0:
+                    # Первая попытка: пробуем явный логин
+                    login_url = "https://x.com/i/flow/login"
+                    print(f"[X] Trying explicit login flow at {login_url}")
+                    await page.goto(login_url, wait_until="domcontentloaded", timeout=60000)
+                    print(f"[X] URL before ensure_login: {page.url}")
+                    await ensure_login(page, username, password)
+                    # следующий цикл снова попробует /home
+                else:
+                    # Вторая попытка тоже не увидела композер — дампим HTML и падаем
+                    html = await page.content()
+                    print("[X][DEBUG] Page HTML snippet (composer fail, final):")
+                    print(html[:6000])
+                    raise RuntimeError("Cannot find tweet composer on X home page after login")
+
+        if not logged_in or composer is None:
+            raise RuntimeError("Unable to log in to X or find composer")
+
+        composer = composer.first
+
+        # ======================================================
+        # 3. Фокусируем композер и заполняем текст
+        # ======================================================
         try:
             await composer.click()
-            # Очищаем возможные остатки
+            # Пытаемся очистить
             try:
                 await composer.fill("")
             except Exception:
-                # fill может не сработать для contenteditable — не критично
                 pass
 
             print("[X] Typing tweet into composer...")
@@ -464,7 +487,9 @@ async def post_to_x(tweet_text: str) -> None:
             print(html[:4000])
             raise RuntimeError("Failed to type tweet text into composer")
 
-        # 5) Пытаемся кликнуть кнопку отправки
+        # ======================================================
+        # 4. Пытаемся найти и нажать кнопку отправки
+        # ======================================================
         button_selectors = [
             "div[data-testid='tweetButtonInline']",
             "button[data-testid='tweetButtonInline']",
@@ -524,12 +549,13 @@ async def post_to_x(tweet_text: str) -> None:
             post_clicked = True
             post_click_method = "keyboard:Ctrl+Enter"
 
-        # 6) Ждём подтверждения, что твит реально ушёл
+        # ======================================================
+        # 5. Ждём подтверждения, что твит реально ушёл
+        # ======================================================
         print(f"[X] Waiting for send confirmation (method={post_click_method})...")
         success = False
         reason = "unknown"
 
-        # Локаторы для всплывашек "твит отправлен"
         toast_locator = page.locator(
             "div[data-testid='toast'], div[data-testid='pillLabel']"
         )
@@ -538,7 +564,7 @@ async def post_to_x(tweet_text: str) -> None:
             url_now = page.url
             print(f"[X][POLL] step={i}, url={url_now}")
 
-            # Если внезапно вернули на логин — точно что-то пошло не так
+            # Если внезапно вернули на логин — явно ошибка
             if "login" in url_now or "flow" in url_now:
                 print("[X][POLL] Detected login/flow during confirmation, aborting.")
                 break
@@ -569,7 +595,6 @@ async def post_to_x(tweet_text: str) -> None:
             try:
                 text_now = (await composer.inner_text()).strip()
             except Exception:
-                # Если не можем прочитать — считаем, что композера уже нет/изменился
                 success = True
                 reason = "composer_unreadable"
                 print("[X][POLL] Composer unreadable, treating as success.")
@@ -584,13 +609,12 @@ async def post_to_x(tweet_text: str) -> None:
             await page.wait_for_timeout(500)
 
         if not success:
-            # Подробный дамп для диагностики
             print("[X][ERROR] Failed to confirm that tweet was posted.")
             print(f"[X][ERROR] Last URL: {page.url}")
             html = await page.content()
             print("[X][DEBUG] Page HTML snippet (post fail):")
             print(html[:6000])
-            # Не сохраняем state.json — пусть тот же продукт попробует ещё раз
+            # ВАЖНО: state.json не обновляем — тот же продукт попробует ещё раз
             raise RuntimeError("Failed to confirm tweet was posted on X")
 
         print(f"[X] Tweet appears to be sent successfully (reason={reason}, method={post_click_method})")
