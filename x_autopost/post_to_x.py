@@ -4,7 +4,7 @@
 # Description:
 #   Script for automated posting to X (Twitter) via Playwright.
 #   Cycles through three product sources (equalle, amazon, extra),
-#   generates tweet text, posts via X web UI, updates state.json.
+#   generates tweet text, creates an X Draft via web UI, updates state.json.
 #   Uses a single GitHub secret: X_CREDENTIALS (format "username:password").
 #
 # Notes:
@@ -20,7 +20,7 @@ import os
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, Tuple, List
-from urllib.parse import quote
+from urllib.parse import quote  # сейчас не используется, но пусть остаётся на будущее
 
 from playwright.async_api import async_playwright, Page, BrowserContext
 
@@ -333,11 +333,12 @@ def build_tweet_text(product: Dict[str, Any]) -> str:
 
 async def ensure_login(page: Page, username: str, password: str) -> None:
     """
-    Логинимся в X, если мы на /login или /i/flow/login.
+    Логинимся в X, если нас перекинуло на /login или /i/flow/login.
     Предполагаем английский интерфейс.
     """
     url = page.url
     if "login" not in url and "flow" not in url:
+        # Скорее всего, уже залогинены.
         print(f"[LOGIN] Not on login flow (url={url}), skipping login.")
         return
 
@@ -376,10 +377,13 @@ async def ensure_login(page: Page, username: str, password: str) -> None:
 
 async def post_to_x(tweet_text: str) -> None:
     """
-    Открываем https://x.com/home, при необходимости логинимся через
-    https://x.com/i/flow/login, вставляем текст в композер и отправляем твит.
-    Подробно логируем все шаги и НЕ обновляем state, если не уверены,
-    что пост реально ушёл.
+    Вместо публикации твита создаём ОДИН черновик (Draft) в X.
+    Без отправки, без scheduling.
+    Логика:
+      - открыть /compose/tweet
+      - при необходимости залогиниться
+      - вставить текст
+      - закрыть окно и выбрать Save (сохранить черновик)
     """
 
     # Читаем один секрет X_CREDENTIALS в формате "username:password"
@@ -388,10 +392,11 @@ async def post_to_x(tweet_text: str) -> None:
         raise RuntimeError("X_CREDENTIALS must be in 'username:password' format")
     username, password = raw.split(":", 1)
 
+    # STATE_DIR нам сейчас нужен только для AUTH_STATE_FILE (лежит рядом),
+    # но пусть создаётся, чтобы структура точно была.
     STATE_DIR.mkdir(parents=True, exist_ok=True)
 
     async with async_playwright() as p:
-        # Немного более “человеческий” запуск браузера
         browser = await p.chromium.launch(
             headless=True,
             args=[
@@ -412,68 +417,40 @@ async def post_to_x(tweet_text: str) -> None:
             context = await browser.new_context()
 
         page = await context.new_page()
-        home_url = "https://x.com/home"
 
-        # ======================================================
-        # 1–2. ДВА ПЫТКИ:
-        #   1) просто /home
-        #   2) если композера нет — явный логин /i/flow/login + снова /home
-        # ======================================================
-        logged_in = False
-        composer = None
+        compose_url = "https://x.com/compose/tweet"
+        print(f"[X] Opening tweet composer: {compose_url}")
+        await page.goto(compose_url, wait_until="domcontentloaded", timeout=60000)
+        print(f"[X] URL after goto compose: {page.url}")
 
-        for attempt in range(2):
-            print(f"[X] Home/composer attempt #{attempt + 1}")
-            await page.goto(home_url, wait_until="domcontentloaded", timeout=60000)
-            print(f"[X] URL after goto home: {page.url}")
+        # Если нас кинуло на логин — логинимся и снова открываем composer
+        if "login" in page.url or "flow" in page.url:
+            print("[X] Detected login flow, calling ensure_login()...")
+            await ensure_login(page, username, password)
+            print("[X] Reloading compose after login...")
+            await page.goto(compose_url, wait_until="domcontentloaded", timeout=60000)
+            print(f"[X] URL after login+compose: {page.url}")
 
-            # Более широкий селектор на всякий случай
-            composer = page.locator(
-                "div[role='textbox'][data-testid='tweetTextarea_0'], "
-                "div[data-testid='tweetTextarea_0']"
-            )
-
-            try:
-                print("[X] Waiting for tweet composer (tweetTextarea_0)...")
-                await composer.first.wait_for(state="visible", timeout=15000)
-                logged_in = True
-                print("[X] Composer found and visible.")
-                break
-            except Exception as e:
-                print(f"[X][WARN] Composer not found on attempt {attempt + 1}: {e}")
-
-                if attempt == 0:
-                    # Первая попытка: пробуем явный логин
-                    login_url = "https://x.com/i/flow/login"
-                    print(f"[X] Trying explicit login flow at {login_url}")
-                    await page.goto(login_url, wait_until="domcontentloaded", timeout=60000)
-                    print(f"[X] URL before ensure_login: {page.url}")
-                    await ensure_login(page, username, password)
-                    # следующий цикл снова попробует /home
-                else:
-                    # Вторая попытка тоже не увидела композер — дампим HTML и падаем
-                    html = await page.content()
-                    print("[X][DEBUG] Page HTML snippet (composer fail, final):")
-                    print(html[:6000])
-                    raise RuntimeError("Cannot find tweet composer on X home page after login")
-
-        if not logged_in or composer is None:
-            raise RuntimeError("Unable to log in to X or find composer")
+        # Ищем композер твита: более широкий селектор на всякий случай
+        composer = page.locator(
+            "div[role='textbox'][data-testid='tweetTextarea_0'], div[role='textbox']"
+        )
+        try:
+            print("[X] Waiting for tweet composer on compose page...")
+            await composer.first.wait_for(state="visible", timeout=15000)
+        except Exception as e:
+            print(f"[X][ERROR] Composer not found or not visible on compose page: {e}")
+            html = await page.content()
+            print("[X][DEBUG] Page HTML snippet (composer fail):")
+            print(html[:4000])
+            raise RuntimeError("Cannot find tweet composer on X compose page")
 
         composer = composer.first
 
-        # ======================================================
-        # 3. Фокусируем композер и заполняем текст
-        # ======================================================
+        # Вводим твит
         try:
             await composer.click()
-            # Пытаемся очистить
-            try:
-                await composer.fill("")
-            except Exception:
-                pass
-
-            print("[X] Typing tweet into composer...")
+            print("[X] Typing tweet text into composer (for draft)...")
             await composer.type(tweet_text, delay=20)
             try:
                 current_text = (await composer.inner_text()).strip()
@@ -481,26 +458,22 @@ async def post_to_x(tweet_text: str) -> None:
             except Exception as e:
                 print(f"[X][WARN] Could not read composer text after typing: {e}")
         except Exception as e:
-            print(f"[X][ERROR] Failed to type tweet text: {e}")
+            print(f"[X][ERROR] Failed to type tweet text into composer: {e}")
             html = await page.content()
             print("[X][DEBUG] Page HTML snippet (typing fail):")
             print(html[:4000])
-            raise RuntimeError("Failed to type tweet text into composer")
+            raise RuntimeError("Failed to type tweet text into composer (draft mode)")
 
-        # ======================================================
-        # 4. Пытаемся найти и нажать кнопку отправки
-        # ======================================================
-        button_selectors = [
-            "div[data-testid='tweetButtonInline']",
-            "button[data-testid='tweetButtonInline']",
-            "div[data-testid='tweetButton']",
-            "button[data-testid='tweetButton']",
+        # Пытаемся закрыть composer, чтобы появилось предложение сохранить Draft
+        print("[X] Trying to close composer to trigger Save Draft dialog...")
+        close_selectors = [
+            "button[aria-label='Close']",
+            "div[data-testid='SheetClose']",
+            "div[aria-label='Close']",
         ]
 
-        post_clicked = False
-        post_click_method = "none"
-
-        for sel in button_selectors:
+        closed = False
+        for sel in close_selectors:
             btn = page.locator(sel)
             try:
                 count = await btn.count()
@@ -508,116 +481,50 @@ async def post_to_x(tweet_text: str) -> None:
                 print(f"[X][DEBUG] selector {sel} count failed: {e}")
                 continue
 
-            print(f"[X] selector {sel} count = {count}")
+            print(f"[X] close selector {sel} count = {count}")
             if count:
                 try:
                     await btn.first.click()
-                    post_clicked = True
-                    post_click_method = f"click:{sel}"
-                    print(f"[X] Clicked tweet button via {post_click_method}")
+                    print(f"[X] Clicked close button via {sel}")
+                    closed = True
                     break
                 except Exception as e:
-                    print(f"[X][WARN] Click failed on {sel}: {e}")
+                    print(f"[X][WARN] Click on close {sel} failed: {e}")
 
-        # Фоллбек через get_by_role
-        if not post_clicked:
-            for name in ("Post", "Tweet"):
-                try:
-                    btn = page.get_by_role("button", name=name)
-                    count = await btn.count()
-                    print(f"[X] get_by_role('button', name='{name}') count = {count}")
-                    if count:
-                        try:
-                            await btn.click()
-                            post_clicked = True
-                            post_click_method = f"role:{name}"
-                            print(f"[X] Clicked tweet button via {post_click_method}")
-                            break
-                        except Exception as e:
-                            print(f"[X][WARN] Click via role '{name}' failed: {e}")
-                except Exception as e:
-                    print(f"[X][DEBUG] get_by_role('button', name='{name}') failed: {e}")
-
-        # Фоллбек через Ctrl+Enter
-        if not post_clicked:
-            try:
-                await composer.click()
-            except Exception:
-                pass
-            print("[X] No visible Tweet button found, using Ctrl+Enter fallback...")
-            await page.keyboard.press("Control+Enter")
-            post_clicked = True
-            post_click_method = "keyboard:Ctrl+Enter"
-
-        # ======================================================
-        # 5. Ждём подтверждения, что твит реально ушёл
-        # ======================================================
-        print(f"[X] Waiting for send confirmation (method={post_click_method})...")
-        success = False
-        reason = "unknown"
-
-        toast_locator = page.locator(
-            "div[data-testid='toast'], div[data-testid='pillLabel']"
-        )
-
-        for i in range(30):  # до ~15 секунд (30 * 500ms)
-            url_now = page.url
-            print(f"[X][POLL] step={i}, url={url_now}")
-
-            # Если внезапно вернули на логин — явно ошибка
-            if "login" in url_now or "flow" in url_now:
-                print("[X][POLL] Detected login/flow during confirmation, aborting.")
-                break
-
-            # 1) Всплывашка “твит отправлен”
-            try:
-                toast_count = await toast_locator.count()
-            except Exception:
-                toast_count = 0
-            if toast_count:
-                success = True
-                reason = "toast_or_pill"
-                print(f"[X][POLL] Detected toast/pill, count={toast_count}")
-                break
-
-            # 2) Композер пропал или пустой
-            try:
-                composer_count = await composer.count()
-            except Exception:
-                composer_count = 0
-
-            if composer_count == 0:
-                success = True
-                reason = "composer_detached"
-                print("[X][POLL] Composer detached (no longer in DOM).")
-                break
-
-            try:
-                text_now = (await composer.inner_text()).strip()
-            except Exception:
-                success = True
-                reason = "composer_unreadable"
-                print("[X][POLL] Composer unreadable, treating as success.")
-                break
-
-            if not text_now:
-                success = True
-                reason = "composer_empty"
-                print("[X][POLL] Composer empty after send, treating as success.")
-                break
-
-            await page.wait_for_timeout(500)
-
-        if not success:
-            print("[X][ERROR] Failed to confirm that tweet was posted.")
-            print(f"[X][ERROR] Last URL: {page.url}")
+        if not closed:
             html = await page.content()
-            print("[X][DEBUG] Page HTML snippet (post fail):")
-            print(html[:6000])
-            # ВАЖНО: state.json не обновляем — тот же продукт попробует ещё раз
-            raise RuntimeError("Failed to confirm tweet was posted on X")
+            print("[X][DEBUG] Page HTML snippet (no close button):")
+            print(html[:4000])
+            raise RuntimeError("Cannot find close button to save draft")
 
-        print(f"[X] Tweet appears to be sent successfully (reason={reason}, method={post_click_method})")
+        # Ожидаем диалог “Save / Discard”
+        print("[X] Waiting for Save Draft dialog...")
+        # пробуем разные названия кнопки
+        save_locators = [
+            page.get_by_role("button", name="Save"),
+            page.get_by_role("button", name="Save draft"),
+        ]
+
+        save_clicked = False
+        for sl in save_locators:
+            try:
+                await sl.wait_for(state="visible", timeout=10000)
+                await sl.click()
+                print("[X] Clicked SAVE DRAFT button.")
+                save_clicked = True
+                break
+            except Exception as e:
+                print(f"[X][DEBUG] Save button variant failed: {e}")
+
+        if not save_clicked:
+            html = await page.content()
+            print("[X][DEBUG] Page HTML snippet (no Save dialog):")
+            print(html[:4000])
+            raise RuntimeError("Draft save dialog did not appear or Save button not found")
+
+        # Даём X немного времени сохранить черновик
+        await page.wait_for_timeout(3000)
+        print("[X] Draft should be saved now.")
 
         # Сохраняем auth-state, чтобы в следующий раз не логиниться заново
         try:
@@ -627,6 +534,7 @@ async def post_to_x(tweet_text: str) -> None:
             print(f"[X][WARN] Failed to save auth state: {e}")
 
         await browser.close()
+        print("[X] Draft creation flow completed successfully.")
 
 
 async def main() -> None:
@@ -647,14 +555,14 @@ async def main() -> None:
     # Строим твит
     tweet_text = build_tweet_text(product)
 
-    print("=== Tweet to send ===")
+    print("=== Tweet to draft ===")
     print(tweet_text)
     print("=====================")
 
-    # Отправляем в X
+    # Вместо отправки — создаём черновик
     await post_to_x(tweet_text)
 
-    # Обновляем стейт (какой продукт/линк был опубликован)
+    # Обновляем стейт (какой продукт/линк был использован в черновике)
     save_state(next_state)
 
 
