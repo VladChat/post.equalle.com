@@ -20,7 +20,7 @@ import os
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, Tuple, List
-from urllib.parse import quote  # сейчас не используется, но пусть остаётся на будущее
+from urllib.parse import quote  # оставляем на будущее
 
 from playwright.async_api import async_playwright, Page, BrowserContext
 
@@ -382,6 +382,7 @@ async def post_to_x(tweet_text: str) -> None:
     Логика:
       - открыть /compose/tweet
       - при необходимости залогиниться
+      - найти композер разными селекторами (с опросом до 30 сек)
       - вставить текст
       - закрыть окно и выбрать Save (сохранить черновик)
     """
@@ -392,8 +393,6 @@ async def post_to_x(tweet_text: str) -> None:
         raise RuntimeError("X_CREDENTIALS must be in 'username:password' format")
     username, password = raw.split(":", 1)
 
-    # STATE_DIR нам сейчас нужен только для AUTH_STATE_FILE (лежит рядом),
-    # но пусть создаётся, чтобы структура точно была.
     STATE_DIR.mkdir(parents=True, exist_ok=True)
 
     async with async_playwright() as p:
@@ -406,15 +405,23 @@ async def post_to_x(tweet_text: str) -> None:
             ],
         )
 
+        # Готовим общие аргументы контекста
+        context_kwargs: Dict[str, Any] = {
+            "user_agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/120.0.0.0 Safari/537.36"
+            )
+        }
+
         # Если есть сохранённое состояние авторизации — используем его.
         if AUTH_STATE_FILE.exists():
             print(f"[X] Using existing auth state from {AUTH_STATE_FILE}")
-            context: BrowserContext = await browser.new_context(
-                storage_state=str(AUTH_STATE_FILE)
-            )
+            context_kwargs["storage_state"] = str(AUTH_STATE_FILE)
+            context: BrowserContext = await browser.new_context(**context_kwargs)
         else:
             print("[X] No auth state file yet, starting fresh context.")
-            context = await browser.new_context()
+            context = await browser.new_context(**context_kwargs)
 
         page = await context.new_page()
 
@@ -431,21 +438,57 @@ async def post_to_x(tweet_text: str) -> None:
             await page.goto(compose_url, wait_until="domcontentloaded", timeout=60000)
             print(f"[X] URL after login+compose: {page.url}")
 
-        # Ищем композер твита: более широкий селектор на всякий случай
-        composer = page.locator(
-            "div[role='textbox'][data-testid='tweetTextarea_0'], div[role='textbox']"
-        )
-        try:
-            print("[X] Waiting for tweet composer on compose page...")
-            await composer.first.wait_for(state="visible", timeout=15000)
-        except Exception as e:
-            print(f"[X][ERROR] Composer not found or not visible on compose page: {e}")
-            html = await page.content()
-            print("[X][DEBUG] Page HTML snippet (composer fail):")
-            print(html[:4000])
-            raise RuntimeError("Cannot find tweet composer on X compose page")
+        # Дадим странице немного времени "прожевать" JS
+        await page.wait_for_timeout(5000)
 
-        composer = composer.first
+        # Пытаемся найти композер по нескольким селекторам, с опросом до ~30 секунд
+        composer_selectors = [
+            "div[role='textbox'][data-testid='tweetTextarea_0']",
+            "div[data-testid='tweetTextarea_0'] div[contenteditable='true']",
+            "div[data-testid='tweetTextarea_0']",
+            "div[role='textbox'][contenteditable='true']",
+            "div[role='textbox']",
+            "[data-testid='tweetTextarea_0']",
+        ]
+
+        composer = None
+        for i in range(30):  # до ~30 секунд
+            print(f"[X][COMPOSER] poll iteration {i}")
+            for sel in composer_selectors:
+                loc = page.locator(sel)
+                try:
+                    count = await loc.count()
+                except Exception as e:
+                    print(f"[X][COMPOSER] selector {sel} count() failed: {e}")
+                    continue
+
+                print(f"[X][COMPOSER] selector {sel} count = {count}")
+                if not count:
+                    continue
+
+                candidate = loc.first
+                try:
+                    visible = await candidate.is_visible()
+                except Exception as e:
+                    print(f"[X][COMPOSER] selector {sel} is_visible() failed: {e}")
+                    continue
+
+                if visible:
+                    composer = candidate
+                    print(f"[X][COMPOSER] using selector {sel} as composer")
+                    break
+
+            if composer is not None:
+                break
+
+            await page.wait_for_timeout(1000)
+
+        if composer is None:
+            print("[X][ERROR] Composer not found after polling.")
+            html = await page.content()
+            print("[X][DEBUG] Page HTML snippet (composer not found):")
+            print(html[:6000])
+            raise RuntimeError("Cannot find tweet composer on X compose page")
 
         # Вводим твит
         try:
@@ -461,7 +504,7 @@ async def post_to_x(tweet_text: str) -> None:
             print(f"[X][ERROR] Failed to type tweet text into composer: {e}")
             html = await page.content()
             print("[X][DEBUG] Page HTML snippet (typing fail):")
-            print(html[:4000])
+            print(html[:6000])
             raise RuntimeError("Failed to type tweet text into composer (draft mode)")
 
         # Пытаемся закрыть composer, чтобы появилось предложение сохранить Draft
@@ -478,10 +521,10 @@ async def post_to_x(tweet_text: str) -> None:
             try:
                 count = await btn.count()
             except Exception as e:
-                print(f"[X][DEBUG] selector {sel} count failed: {e}")
+                print(f"[X][CLOSE] selector {sel} count failed: {e}")
                 continue
 
-            print(f"[X] close selector {sel} count = {count}")
+            print(f"[X][CLOSE] selector {sel} count = {count}")
             if count:
                 try:
                     await btn.first.click()
@@ -494,19 +537,18 @@ async def post_to_x(tweet_text: str) -> None:
         if not closed:
             html = await page.content()
             print("[X][DEBUG] Page HTML snippet (no close button):")
-            print(html[:4000])
+            print(html[:6000])
             raise RuntimeError("Cannot find close button to save draft")
 
         # Ожидаем диалог “Save / Discard”
         print("[X] Waiting for Save Draft dialog...")
-        # пробуем разные названия кнопки
-        save_locators = [
+        save_variants = [
             page.get_by_role("button", name="Save"),
             page.get_by_role("button", name="Save draft"),
         ]
 
         save_clicked = False
-        for sl in save_locators:
+        for sl in save_variants:
             try:
                 await sl.wait_for(state="visible", timeout=10000)
                 await sl.click()
@@ -519,7 +561,7 @@ async def post_to_x(tweet_text: str) -> None:
         if not save_clicked:
             html = await page.content()
             print("[X][DEBUG] Page HTML snippet (no Save dialog):")
-            print(html[:4000])
+            print(html[:6000])
             raise RuntimeError("Draft save dialog did not appear or Save button not found")
 
         # Даём X немного времени сохранить черновик
