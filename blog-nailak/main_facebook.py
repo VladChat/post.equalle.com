@@ -7,6 +7,8 @@ from __future__ import annotations
 
 import os
 import sys
+import random
+import time
 from typing import Optional
 
 # Ensure local imports work when run as: python blog-nailak/main_facebook.py
@@ -20,8 +22,6 @@ from utils.text_builder import build_facebook_message, build_facebook_comment
 from social.facebook_poster import publish_facebook_photo
 from social.facebook_commenter import publish_facebook_comment
 from llm.generator import generate_comment_from_llm
-import random
-import time
 
 
 PLATFORM = "facebook"
@@ -35,6 +35,29 @@ def pick_next_post(max_items: int = 20) -> Optional[object]:
         if not is_posted(post, PLATFORM, state):
             return post
     return None
+
+
+def _choose_image_url(post: object) -> Optional[str]:
+    """Выбираем URL картинки для Facebook.
+
+    Приоритет:
+      1) специальная Facebook-карточка (image_facebook)
+      2) Instagram-карточка
+      3) Pinterest-карточка
+      4) generic JPEG/PNG (image_generic) — уже без WebP (фильтруется в rss_parser)
+    """
+    fb = getattr(post, "image_facebook", None)
+    ig = getattr(post, "image_instagram", None)
+    pin = getattr(post, "image_pinterest", None)
+    generic = getattr(post, "image_generic", None)
+
+    print("[fb][main] Image candidates:")
+    print(f"  image_facebook : {fb}")
+    print(f"  image_instagram: {ig}")
+    print(f"  image_pinterest: {pin}")
+    print(f"  image_generic  : {generic}")
+
+    return fb or ig or pin or generic
 
 
 def main() -> None:
@@ -51,9 +74,9 @@ def main() -> None:
     print(f"[fb][main] Selected post: {post.title}")
     message = build_facebook_message(post)
 
-    image_url = post.image_facebook or post.image_generic
+    image_url = _choose_image_url(post)
     if not image_url:
-        print("[fb][main][WARN] No Facebook card found, aborting.")
+        print("[fb][main][WARN] No suitable image found (no JPG/PNG card). Aborting.")
         return
 
     result = publish_facebook_photo(message=message, image_url=image_url, link=post.link)
