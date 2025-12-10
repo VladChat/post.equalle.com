@@ -1,25 +1,28 @@
 # ============================================================
-# File: blog-equalle/workflows/rss-to-pinterest.yml
+# File: .github/workflows/rss-to-pinterest-nailak.yml
 # Purpose:
-#   - Read blog RSS
-#   - Post next unpublished article to Pinterest board
+#   - Read Nailak blog RSS feed
+#   - Post next unpublished article to a Pinterest board (Nailak)
 # ============================================================
 
-name: RSS → Pinterest Pin Nailak
+name: RSS → Pinterest Pin (Nailak)
 
 on:
   workflow_dispatch: {}
+  schedule:
+    - cron: "0 17 * * *"   # Каждый день в 11:00 Chicago (18:00 UTC)
+    - cron: "0 23 * * *"   # Каждый день в 17:00 Chicago (19:00 UTC)
 
 permissions:
   contents: write
 
 jobs:
-  post-to-pinterest:
+  post-to-pinterest-nailak:
     runs-on: ubuntu-latest
 
     env:
-      BLOG_RSS_URL: https://blog.equalle.com/index.xml
-      PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+      BLOG_RSS_URL: https://blog.nailak.com/index.xml
+      PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN_NAILAK }}
 
     steps:
       - name: Checkout repo
@@ -36,19 +39,22 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r blog-equalle/requirements.txt
+          python -m pip install --upgrade pip
+          python -m pip install -r blog-nailak/requirements.txt
 
-      - name: Run Pinterest poster
+      - name: Run Pinterest poster (Nailak)
         run: |
-          python blog-equalle/main_pinterest.py
+          python blog-nailak/main_pinterest.py
 
-      - name: Commit updated state.json (if changed)
+      - name: Commit updated Nailak state.json (if changed)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git status --porcelain | grep "blog-equalle/state/state.json"; then
-            git add blog-equalle/state/state.json
-            git commit -m "Update Pinterest post state [skip ci]" || echo "Nothing to commit"
+
+          if git status --porcelain | grep "blog-nailak/state/state.json"; then
+            git add blog-nailak/state/state.json
+            git commit -m "Update Nailak Pinterest post state [skip ci]" || echo "Nothing to commit"
             git push
           else
             echo "No state changes."
+          fi
