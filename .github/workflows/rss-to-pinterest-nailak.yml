@@ -10,8 +10,8 @@ name: RSS → Pinterest Pin (Nailak)
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "0 15 * * *"   # Каждый день в 11:00 Chicago (18:00 UTC)
-    - cron: "0 21 * * *"   # Каждый день в 17:00 Chicago (19:00 UTC)
+    - cron: "0 15 * * *"   # Каждый день в 09:00 Chicago (15:00 UTC)
+    - cron: "0 21 * * *"   # Каждый день в 15:00 Chicago (21:00 UTC)
 
 permissions:
   contents: write
@@ -48,13 +48,18 @@ jobs:
 
       - name: Commit updated Nailak state.json (if changed)
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          if git status --porcelain | grep "blog-nailak/state/state.json"; then
+          # Avoid "fetch first" error
+          git fetch origin
+          git pull --rebase origin main || true
+
+          if git status --porcelain | grep -q "blog-nailak/state/state.json"; then
+            echo "Changes detected — committing..."
             git add blog-nailak/state/state.json
             git commit -m "Update Nailak Pinterest post state [skip ci]" || echo "Nothing to commit"
-            git push
+            git push || true
           else
             echo "No state changes."
           fi
