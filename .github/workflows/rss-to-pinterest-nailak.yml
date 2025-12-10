@@ -10,8 +10,8 @@ name: RSS → Pinterest Pin (Nailak)
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "0 17 * * *"   # Каждый день в 11:00 Chicago (18:00 UTC)
-    - cron: "0 23 * * *"   # Каждый день в 17:00 Chicago (19:00 UTC)
+    - cron: "0 15 * * *"   # Каждый день в 11:00 Chicago (18:00 UTC)
+    - cron: "0 21 * * *"   # Каждый день в 17:00 Chicago (19:00 UTC)
 
 permissions:
   contents: write
