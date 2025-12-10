@@ -15,14 +15,13 @@ from .rss_parser import parse_feed, Post
 
 def load_posts(limit: Optional[int] = None) -> List[Post]:
     """Loads RSS feed and returns a list of Post objects (sorted by date desc)."""
-
-    # No fallback to equalle — ONLY Nailak RSS is allowed
     rss_url = os.getenv("BLOG_RSS_URL", "https://blog.nailak.com/index.xml")
     print(f"[rss][loader] Loading RSS: {rss_url}")
 
     feed = feedparser.parse(rss_url)
 
     if getattr(feed, "bozo", False):
+        # feed.bozo_exception may contain parsing error
         print(f"[rss][loader][WARN] Problem parsing feed: {getattr(feed, 'bozo_exception', None)!r}")
 
     posts = parse_feed(feed, limit=limit)
