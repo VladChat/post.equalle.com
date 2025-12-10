@@ -51,11 +51,15 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
+          # Подтягиваем свежие изменения, чтобы избежать "fetch first"
+          git fetch origin
+          git pull --rebase origin main || true
+
           if git status --porcelain | grep -q "blog-nailak/state/state.json"; then
             echo "Changes detected — committing..."
             git add blog-nailak/state/state.json
             git commit -m "Update Facebook post state [skip ci]" || echo "Nothing to commit"
-            git push
+            git push || true
           else
             echo "No state changes."
           fi
