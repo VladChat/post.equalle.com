@@ -1,165 +1,100 @@
 # ============================================
 # File: blog-nailak/utils/text_builder.py
-# Purpose: Build platform-specific text with HIGH VARIABILITY
+# Purpose: Build platform-specific text from RSS Post
 # ============================================
 
-import textwrap
-import random
+from __future__ import annotations
+
+import html
+import re
+from typing import Dict
+
+from rss.rss_parser import Post
 
 
-# -------------------------------------------------
-# VARIATION POOLS (large, diverse, rewritten)
-# -------------------------------------------------
-
-FB_INTROS = [
-    "Beautiful nails begin with simple daily care.",
-    "Healthy nails grow when you give them a few minutes of attention every day.",
-    "Your nails can look amazing with just a small routine.",
-    "Strong, glossy nails are the result of gentle, consistent habits.",
-    "Soft cuticles and healthy nails start with tiny daily steps."
-]
-
-FB_MIDDLES = [
-    "Here’s how to make the process effortless.",
-    "This guide explains a routine you can start right now.",
-    "Just a few minutes a day can completely change how your nails feel.",
-    "These steps work even if your schedule is packed.",
-    "Try this method and you’ll notice healthier nails very soon."
-]
-
-FB_CTA = [
-    "Full guide here:",
-    "Read the full routine:",
-    "Step-by-step instructions:",
-    "Learn more in the full article:",
-    "See the complete guide:"
-]
-
-FB_HASHTAGS = [
-    "#nailcare #cuticlecare #nailhealth #NailakCare",
-    "#nailcare #nailtips #healthyhands #NailakCare",
-    "#nailhealth #beautyroutine #cuticlecare #NailakCare",
-]
-
-IG_INTROS = [
-    "Strong, hydrated nails grow from tiny habits you repeat every day.",
-    "Healthy nails start with mindful, consistent care.",
-    "Soft cuticles and beautiful nails come from a simple daily ritual.",
-    "Your hands deserve a moment of attention and gentle care.",
-    "A small routine can help your nails stay strong, smooth, and beautiful."
-]
-
-IG_MIDDLES = [
-    "This guide shows a gentle workflow that keeps your nails protected.",
-    "You'll learn how to nourish your cuticles and prevent dryness and peeling.",
-    "These steps fit into any lifestyle — even a busy one.",
-    "This method helps reduce breakage and keeps your nails flexible.",
-    "Perfect if you want healthier nails without complicated routines."
-]
-
-IG_CTA = [
-    "Full routine on our blog (link in bio).",
-    "Read the full step-by-step guide on the blog.",
-    "More details in the full article — link in bio.",
-    "Full instructions available on our blog.",
-    "Complete breakdown on the blog — link in bio."
-]
-
-IG_HASHTAGS = [
-    "#nailcare #cuticlecare #nailroutine #nailtips #nailhealth #NailakCare #selfcare #beautytips",
-    "#nailcare #nailhealth #nailarttips #cuticlecare #NailakCare #selfcare",
-    "#healthynails #cuticlecare #nailroutine #NailakCare #beautytips",
-]
-
-FB_COMMENTS = [
-    "Thank you for reading! 💅✨ Let us know if this routine helped your nails.",
-    "We’re glad you stopped by! 💛 Tell us if you try this routine.",
-    "Your nails deserve daily care — thanks for checking out the guide! ✨",
-    "If you try these steps, share your results — we’d love to hear! 💅",
-    "Thanks for being here! More nail-care tips are always on our blog. 💛",
-]
-
-EMOJIS = ["💅", "✨", "🌿", "💛", "🌸", "🤍", "🌼"]
+def _strip_html(text: str) -> str:
+    if not text:
+        return ""
+    # Remove HTML tags and unescape entities
+    no_tags = re.sub(r"<[^>]+>", "", text)
+    return html.unescape(no_tags).strip()
 
 
-# -------------------------------------------------
-# FACEBOOK MESSAGE
-# -------------------------------------------------
-
-def build_facebook_message(post):
-    """Creates a highly varied Facebook-friendly message."""
-
-    title = post.title.strip()
-    url = post.link
-
-    intro = random.choice(FB_INTROS)
-    middle = random.choice(FB_MIDDLES)
-    cta = random.choice(FB_CTA)
-    hashtags = random.choice(FB_HASHTAGS)
-    emoji = random.choice(EMOJIS)
-
-    message = (
-        f"{title}\n"
-        f"{intro} {middle} {emoji}\n\n"
-        f"{cta}\n{url}\n\n"
-        f"{hashtags}"
-    )
-
-    return textwrap.dedent(message).strip()
+def _truncate(text: str, limit: int) -> str:
+    if len(text) <= limit:
+        return text
+    return text[: limit - 1].rstrip() + "…"
 
 
-# -------------------------------------------------
-# INSTAGRAM CAPTION
-# -------------------------------------------------
+def build_facebook_message(post: Post) -> str:
+    """Short, readable text for Facebook feed."""
+    desc = _strip_html(post.description or post.summary)
+    desc = _truncate(desc, 400)
 
-def build_instagram_caption(post):
-    """Creates a more expressive, varied Instagram caption."""
-
-    title = post.title.strip()
-    url = post.link
-
-    intro = random.choice(IG_INTROS)
-    middle = random.choice(IG_MIDDLES)
-    cta = random.choice(IG_CTA)
-    hashtags = random.choice(IG_HASHTAGS)
-    emoji = random.choice(EMOJIS)
-
-    caption = (
-        f"{title}\n\n"
-        f"{intro} {middle} {emoji}\n\n"
-        f"{cta}\n{url}\n\n"
-        f"{hashtags}"
-    )
-
-    return textwrap.dedent(caption).strip()
+    lines = [
+        post.title.strip(),
+        "",
+        desc,
+        "",
+        f"Read the full guide: {post.link}",
+        "",
+        "#sandpaper #sanding #eQualle",
+    ]
+    return "\n".join(line for line in lines if line is not None)
 
 
-# -------------------------------------------------
-# PINTEREST PAYLOAD
-# -------------------------------------------------
+def build_instagram_caption(post: Post) -> str:
+    """Caption style for Instagram."""
+    desc = _strip_html(post.description or post.summary)
+    desc = _truncate(desc, 800)
 
-def build_pinterest_payload(post):
-    """Pinterest description stays short, keyword-rich."""
+    lines = [
+        post.title.strip(),
+        "",
+        desc,
+        "",
+        f"Full article on our blog: {post.link}",
+        "",
+        "#sandpaper #sanding #woodworking #autobody #eQualle",
+    ]
+    return "\n".join(line for line in lines if line is not None)
 
-    title = post.title.strip()
 
-    description = (
-        f"{title}. "
-        "A simple, effective routine for healthy nails and nourished cuticles."
-    )
+def build_pinterest_payload(post: Post, image_url: str) -> Dict[str, object]:
+    """Returns JSON payload for /v5/pins endpoint."""
+    desc = _strip_html(post.description or post.summary)
+    desc = _truncate(desc, 500)
 
-    hashtags = "nail care, cuticle care, nail health, beauty routine"
-
-    return {
-        "title": title,
-        "description": f"{description} {hashtags}",
+    payload: Dict[str, object] = {
+        "title": _truncate(post.title.strip(), 100),
+        "description": desc,
+        "link": post.link,
+        "media_source": {
+            "source_type": "image_url",
+            "url": image_url,
+        },
     }
+    return payload
 
 
-# -------------------------------------------------
-# FACEBOOK COMMENT (fallback)
-# -------------------------------------------------
+def build_facebook_comment(post: Post) -> str:
+    """Короткий follow-up комментарий к Facebook-посту:
+    - без ссылки
+    - 1–2 предложения
+    - привязан к теме статьи
+    """
+    title = (post.title or "").strip()
+    desc = _strip_html(post.description or post.summary)
+    desc = _truncate(desc, 180)
 
-def build_facebook_comment(post):
-    """Highly varied fallback comment."""
-    return random.choice(FB_COMMENTS)
+    if title:
+        return (
+            f"If this topic comes up in your next sanding project, "
+            f"save this post so you can revisit the steps from “{title}”."
+        )
+
+    return (
+        "Quick tip: small changes in grit selection and sanding pressure usually give "
+        "bigger improvements than buying new tools. Test on a scrap surface first."
+    )
+
