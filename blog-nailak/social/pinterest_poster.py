@@ -1,117 +1,72 @@
 # ============================================
 # File: blog-nailak/social/pinterest_poster.py
-# Purpose: Publish pin to Pinterest via v5 API (Nailak)
+# Purpose: Publish pin to Pinterest via v5 API
 # ============================================
 
 from __future__ import annotations
 
-import json
 import os
-from pathlib import Path
 from typing import Any, Dict
+
 import requests
 
-
 PINTEREST_API_BASE = "https://api.pinterest.com/v5"
-_CONFIG_CACHE: Dict[str, Any] | None = None
 
 
 class PinterestConfigError(Exception):
+    """Raised when Pinterest configuration (env) is invalid."""
     pass
 
 
-# -------------------------------------------------
-# LOAD CONFIG.JSON FOR PINTEREST SETTINGS
-# -------------------------------------------------
-
-def _find_config_path() -> Path:
+def _get_access_token() -> str:
     """
-    Ищет config.json:
-      - <repo_root>/blog-nailak/config.json
-      - <repo_root>/scripts/config.json
-      - <repo_root>/config.json
+    Read access token from environment.
+
+    Primary variable:
+      - PINTEREST_ACCESS_TOKEN  (GitHub Secret)
+
+    Fallback:
+      - PINTEREST_TOKEN         (на всякий случай, для старых настроек)
     """
-    current_file = Path(__file__).resolve()
-    repo_root = current_file.parents[2]
+    token = os.getenv("PINTEREST_ACCESS_TOKEN", "").strip()
+    if not token:
+        token = os.getenv("PINTEREST_TOKEN", "").strip()
 
-    candidates = [
-        repo_root / "blog-nailak" / "config.json",
-        repo_root / "scripts" / "config.json",
-        repo_root / "config.json",
-    ]
-
-    for path in candidates:
-        if path.exists():
-            print(f"[pin][config] Using config file: {path}")
-            return path
-
-    raise PinterestConfigError(
-        "[pin][config] config.json not found in expected locations."
-    )
-
-
-def _load_config() -> Dict[str, Any]:
-    """Lazy-load config.json."""
-    global _CONFIG_CACHE
-    if _CONFIG_CACHE is not None:
-        return _CONFIG_CACHE
-
-    path = _find_config_path()
-    try:
-        with path.open("r", encoding="utf-8") as f:
-            _CONFIG_CACHE = json.load(f)
-    except Exception as exc:
+    if not token:
         raise PinterestConfigError(
-            f"[pin][config] Failed to load config.json: {exc}"
-        ) from exc
+            "Pinterest access token not found. "
+            "Set PINTEREST_ACCESS_TOKEN as a GitHub Actions secret."
+        )
 
-    return _CONFIG_CACHE or {}
+    return token
 
 
-def _get_config() -> tuple[str, str]:
+def publish_pinterest_pin(payload: Dict[str, Any], board_id: str) -> str:
     """
-    Возвращает (access_token, board_id).
+    Creates a pin using prepared payload and explicit board_id.
 
-    - access_token берётся из ENV[token_env]
-    - board_id берётся из config.json → platforms.pinterest.board
+    Expected payload structure (from utils.text_builder.build_pinterest_payload):
+      {
+        "title": "...",
+        "description": "...",
+        "link": "https://blog.equalle.com/....",
+        "media_source": {
+          "source_type": "image_url",
+          "url": "https://blog.equalle.com/..."
+        }
+      }
+
+    We add:
+      - board_id
     """
-    cfg = _load_config()
-
-    platforms = cfg.get("platforms", {})
-    pin_cfg = platforms.get("pinterest") or {}
-
-    board_id = str(pin_cfg.get("board", "")).strip()
-    token_env = str(pin_cfg.get("token_env", "PINTEREST_TOKEN")).strip()
-
     if not board_id:
-        raise PinterestConfigError(
-            "[pin][config] Missing platforms.pinterest.board in config.json"
-        )
+        raise ValueError("publish_pinterest_pin() requires non-empty board_id")
 
-    if not token_env:
-        raise PinterestConfigError(
-            "[pin][config] Missing platforms.pinterest.token_env in config.json"
-        )
+    access_token = _get_access_token()
 
-    access_token = os.getenv(token_env, "").strip()
-    if not access_token:
-        raise PinterestConfigError(
-            f"[pin][config] GitHub Secret '{token_env}' is not set."
-        )
-
-    print(f"[pin][config] board_id={board_id}, token_env={token_env}")
-    return access_token, board_id
-
-
-# -------------------------------------------------
-# PUBLISH PIN
-# -------------------------------------------------
-
-def publish_pinterest_pin(payload: Dict[str, Any]) -> str:
-    """Creates a Pinterest pin using Pinterest v5 API."""
-    access_token, board_id = _get_config()
-
-    payload["board_id"] = board_id
+    # Не мутируем исходный dict на всякий случай
+    body: Dict[str, Any] = dict(payload)
+    body["board_id"] = board_id
 
     headers = {
         "Authorization": f"Bearer {access_token}",
@@ -120,15 +75,16 @@ def publish_pinterest_pin(payload: Dict[str, Any]) -> str:
 
     url = f"{PINTEREST_API_BASE}/pins"
     print(f"[pin][poster] POST {url}")
+    print(f"[pin][poster] Payload keys: {list(body.keys())}")
 
-    response = requests.post(url, json=payload, headers=headers, timeout=30)
+    response = requests.post(url, json=body, headers=headers, timeout=30)
+
     if not response.ok:
         raise RuntimeError(
             f"[pin][poster] Pinterest API error: {response.status_code} {response.text}"
         )
 
     data = response.json()
-    pin_id = data.get("id") or ""
+    pin_id = str(data.get("id") or "")
     print(f"[pin][poster] Response: {data}")
-
-    return str(pin_id)
+    return pin_id
