@@ -3,3 +3,17 @@ feedparser
 openai
 python-dotenv
 Pillow
+python-dateutil
+beautifulsoup4
+lxml
+urllib3
+certifi
+idna
+charset-normalizer
+markdown
+python-slugify
+tqdm
+tenacity
+PyYAML
+click
+typing_extensions
