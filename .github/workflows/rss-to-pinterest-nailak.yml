@@ -11,7 +11,6 @@ on:
   workflow_dispatch: {}
   schedule:
     - cron: "0 15 * * *"   # Каждый день в 09:00 Chicago (15:00 UTC)
-    - cron: "0 21 * * *"   # Каждый день в 15:00 Chicago (21:00 UTC)
 
 permissions:
   contents: write
