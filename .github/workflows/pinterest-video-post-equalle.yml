@@ -3,8 +3,7 @@ name: Pinterest — Post 1 Video Pin
 on:
   workflow_dispatch:
   schedule:
-    # Runs once per day (GitHub cron is UTC).
-    # 13:00 UTC ≈ 7am Chicago in winter / 8am in summer.
+    # Once per day (UTC). 13:00 UTC ≈ 7am Chicago in winter / 8am in summer.
     - cron: "0 13 * * *"
 
 permissions:
@@ -37,7 +36,7 @@ jobs:
         env:
           PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
         run: |
-          python scripts/pinterest/post_one_video_pin.py
+          python pinterest/post_one_video_pin.py
 
       - name: Commit & push state
         run: |
