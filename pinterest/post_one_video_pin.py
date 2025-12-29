@@ -1,5 +1,5 @@
 # /pinterest/post_one_video_pin.py
-# Purpose: Post exactly 1 video Pin using manifests (round-robin), then persist success/failure to pinterest/state/pinterest_post_state.json.
+# Purpose: Post exactly 1 video Pin using daily rotating manifests, then persist success/failure to pinterest/state/pinterest_post_state.json.
 
 from __future__ import annotations
 
@@ -7,7 +7,6 @@ import json
 import os
 import time
 import tempfile
-import subprocess
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -18,7 +17,7 @@ import requests
 
 API_BASE = "https://api.pinterest.com/v5"
 
-# Stable order (round-robin cursor rotates through these)
+# Stable order (simple + predictable)
 MANIFEST_FILES_ORDER = ["drywall.json", "wood.json", "wet.json", "metal.json", "plastic.json"]
 
 TITLE_MAX = 80
@@ -33,7 +32,7 @@ MEDIA_POLL_INTERVAL_SEC = 3
 @dataclass
 class PinItem:
     manifest_name: str
-    filename: str
+    filename: str  # derived from video_url (for future cleanup scripts)
     video_url: str
     destination_url: str
     board_id: str
@@ -46,17 +45,15 @@ def utc_now_iso() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
 
+def utc_today() -> str:
+    return datetime.now(timezone.utc).date().isoformat()
+
+
 def repo_root_from_this_file() -> Path:
     """
-    Finds repo root robustly no matter where this file lives.
-    We look upwards for markers: requirements.txt and .github directory.
+    Assumes this file is at: <repo_root>/pinterest/post_one_video_pin.py
     """
-    cur = Path(__file__).resolve()
-    for parent in [cur.parent] + list(cur.parents):
-        if (parent / "requirements.txt").exists() and (parent / ".github").exists():
-            return parent
-    # fallback (shouldn't happen)
-    return cur.parents[1]
+    return Path(__file__).resolve().parents[1]
 
 
 def load_json(path: Path) -> Dict[str, Any]:
@@ -77,8 +74,15 @@ def clip(s: str, n: int) -> str:
     return s[:n].rstrip()
 
 
+def filename_from_url(url: str) -> str:
+    name = (url.split("?")[0].split("#")[0].rstrip("/").split("/")[-1] or "").strip()
+    return name or "video.mp4"
+
+
 def ensure_required_fields(pin: Dict[str, Any], manifest_name: str) -> PinItem:
+    # Minimal required fields (per your rules)
     video_url = (pin.get("video_url") or "").strip()
+
     destination_url = (pin.get("destination", {}) or {}).get("url", "")
     destination_url = (destination_url or "").strip()
 
@@ -88,8 +92,6 @@ def ensure_required_fields(pin: Dict[str, Any], manifest_name: str) -> PinItem:
     title = clip(pin.get("title", ""), TITLE_MAX)
     description = clip(pin.get("description", ""), DESC_MAX)
     alt = clip(pin.get("alt", ""), ALT_MAX)
-
-    filename = (pin.get("filename") or "").strip()  # optional; used only for logs if present
 
     missing = []
     if not video_url:
@@ -116,7 +118,7 @@ def ensure_required_fields(pin: Dict[str, Any], manifest_name: str) -> PinItem:
 
     return PinItem(
         manifest_name=manifest_name,
-        filename=filename,
+        filename=filename_from_url(video_url),
         video_url=video_url,
         destination_url=destination_url,
         board_id=board_id,
@@ -126,107 +128,89 @@ def ensure_required_fields(pin: Dict[str, Any], manifest_name: str) -> PinItem:
     )
 
 
-def get_manifest_paths(manifest_dir: Path) -> List[Path]:
-    ordered: List[Path] = []
-    for name in MANIFEST_FILES_ORDER:
-        p = manifest_dir / name
-        if p.exists():
-            ordered.append(p)
-
-    if ordered:
-        return ordered
-
-    return sorted(manifest_dir.glob("*.json"))
-
-
-def load_manifest_items(manifest_path: Path) -> List[PinItem]:
-    manifest_name = manifest_path.name
-    data = load_json(manifest_path)
-
-    pins = data.get("pins")
-    if not isinstance(pins, list):
-        raise ValueError(f"[{manifest_name}] expected top-level 'pins' as array")
-
-    items: List[PinItem] = []
-    for raw in pins:
-        if not isinstance(raw, dict):
-            continue
-        items.append(ensure_required_fields(raw, manifest_name))
-    return items
-
-
 def load_state(state_path: Path) -> Dict[str, Any]:
-    base = {"version": 1, "cursor": {"manifest_index": 0}, "items": {}, "runs": []}
-
     if not state_path.exists():
-        return base
-
+        return {"version": 1, "rotation": {}, "items": {}, "runs": []}
     try:
         data = load_json(state_path)
         if not isinstance(data, dict):
-            return base
-
+            return {"version": 1, "rotation": {}, "items": {}, "runs": []}
         data.setdefault("version", 1)
+        data.setdefault("rotation", {})
         data.setdefault("items", {})
         data.setdefault("runs", [])
-        data.setdefault("cursor", {"manifest_index": 0})
-
+        if not isinstance(data["rotation"], dict):
+            data["rotation"] = {}
         if not isinstance(data["items"], dict):
             data["items"] = {}
         if not isinstance(data["runs"], list):
             data["runs"] = []
-        if not isinstance(data["cursor"], dict):
-            data["cursor"] = {"manifest_index": 0}
-        if "manifest_index" not in data["cursor"] or not isinstance(data["cursor"]["manifest_index"], int):
-            data["cursor"]["manifest_index"] = 0
-
         return data
-
     except Exception:
-        return base
+        # If file corrupted, start fresh (no deletions here)
+        return {"version": 1, "rotation": {}, "items": {}, "runs": []}
 
 
-def is_item_eligible(it: PinItem, state: Dict[str, Any]) -> bool:
+def manifest_cycle_for_today(state: Dict[str, Any]) -> List[str]:
+    """
+    Rotate the *starting* manifest once per UTC day.
+    If run multiple times same day -> same start.
+    """
+    rot = state.setdefault("rotation", {})
+    today = utc_today()
+
+    last_day = (rot.get("last_day") or "").strip()
+    idx_raw = rot.get("manifest_index")
+
+    try:
+        idx = int(idx_raw) if idx_raw is not None else -1
+    except Exception:
+        idx = -1
+
+    if last_day != today:
+        idx = (idx + 1) % len(MANIFEST_FILES_ORDER) if idx >= 0 else 0
+        rot["manifest_index"] = idx
+        rot["last_day"] = today
+
+    start = int(rot.get("manifest_index", 0) or 0) % len(MANIFEST_FILES_ORDER)
+    return MANIFEST_FILES_ORDER[start:] + MANIFEST_FILES_ORDER[:start]
+
+
+def pick_next_item(manifest_dir: Path, state: Dict[str, Any]) -> Optional[PinItem]:
+    """
+    Pick 1 item using today's manifest rotation order.
+    Tries the chosen manifest first; if it has no pending pins, falls through to next manifests.
+    """
     st_items = state.get("items", {}) or {}
-    rec = st_items.get(it.video_url) or {}
-    if rec.get("result") == "success":
-        return False
-    attempts = int(rec.get("attempts", 0) or 0)
-    if attempts >= MAX_ATTEMPTS_PER_VIDEO:
-        return False
-    return True
+    ordered_names = manifest_cycle_for_today(state)
 
+    existing_paths = [manifest_dir / name for name in ordered_names if (manifest_dir / name).exists()]
+    if not existing_paths:
+        raise FileNotFoundError(f"No manifest json files found in: {manifest_dir}")
 
-def pick_next_item_round_robin(manifest_paths: List[Path], state: Dict[str, Any]) -> Tuple[Optional[PinItem], Optional[int]]:
-    if not manifest_paths:
-        return None, None
+    for path in existing_paths:
+        manifest_name = path.name
+        data = load_json(path)
 
-    n = len(manifest_paths)
-    start = int((state.get("cursor", {}) or {}).get("manifest_index", 0) or 0) % n
+        pins = data.get("pins")
+        if not isinstance(pins, list):
+            raise ValueError(f"[{manifest_name}] expected top-level 'pins' as array")
 
-    for offset in range(n):
-        idx = (start + offset) % n
-        items = load_manifest_items(manifest_paths[idx])
-        for it in items:
-            if is_item_eligible(it, state):
-                return it, idx
+        for raw in pins:
+            if not isinstance(raw, dict):
+                continue
+            it = ensure_required_fields(raw, manifest_name)
 
-    return None, None
+            rec = st_items.get(it.video_url) or {}
+            if rec.get("result") == "success":
+                continue
+            attempts = int(rec.get("attempts", 0) or 0)
+            if attempts >= MAX_ATTEMPTS_PER_VIDEO:
+                continue
 
+            return it
 
-def advance_cursor(state: Dict[str, Any], manifest_paths: List[Path], used_manifest_index: Optional[int]) -> None:
-    if not manifest_paths:
-        return
-
-    n = len(manifest_paths)
-    cur = int((state.get("cursor", {}) or {}).get("manifest_index", 0) or 0) % n
-
-    if used_manifest_index is None:
-        nxt = (cur + 1) % n
-    else:
-        nxt = (used_manifest_index + 1) % n
-
-    state.setdefault("cursor", {})["manifest_index"] = nxt
+    return None
 
 
 def pinterest_headers(token: str) -> Dict[str, str]:
@@ -250,7 +234,10 @@ def register_media_upload(token: str) -> Dict[str, Any]:
 
 
 def download_video_to_temp(video_url: str) -> Tuple[str, str]:
-    name_guess = video_url.split("/")[-1] or "video.mp4"
+    """
+    Returns: (temp_file_path, original_filename_guess)
+    """
+    name_guess = filename_from_url(video_url)
     fd, tmp_path = tempfile.mkstemp(suffix=".mp4")
     os.close(fd)
 
@@ -265,6 +252,10 @@ def download_video_to_temp(video_url: str) -> Tuple[str, str]:
 
 
 def upload_video_to_s3(upload_url: str, upload_parameters: Dict[str, Any], temp_path: str, filename: str) -> None:
+    """
+    Pinterest returns S3 form upload fields in upload_parameters.
+    We must POST multipart/form-data to upload_url with those fields + file.
+    """
     fields = {str(k): str(v) for k, v in (upload_parameters or {}).items()}
 
     with open(temp_path, "rb") as f:
@@ -299,6 +290,10 @@ def poll_media_status(token: str, media_id: str) -> str:
 
 def create_video_pin(token: str, item: PinItem, media_id: str) -> Dict[str, Any]:
     url = f"{API_BASE}/pins"
+
+    # IMPORTANT:
+    # Pinterest requires a cover for video pins.
+    # Simplest: provide cover_image_key_frame_time (seconds) so Pinterest generates cover from that frame.
     payload = {
         "board_id": item.board_id,
         "title": item.title,
@@ -308,8 +303,10 @@ def create_video_pin(token: str, item: PinItem, media_id: str) -> Dict[str, Any]
         "media_source": {
             "source_type": "video_id",
             "media_id": str(media_id),
+            "cover_image_key_frame_time": 7,
         },
     }
+
     resp = requests.post(url, headers=pinterest_headers(token), json=payload, timeout=60)
     if resp.status_code not in (200, 201):
         raise RuntimeError(f"pins/create failed: HTTP {resp.status_code}: {resp.text[:800]}")
@@ -368,41 +365,6 @@ def update_state_for_attempt(
     )
 
 
-def try_git_commit_push(repo_root: Path, state_path: Path) -> None:
-    if os.getenv("GITHUB_ACTIONS", "").lower() != "true":
-        return
-
-    rel = state_path.relative_to(repo_root).as_posix()
-
-    def run(cmd: List[str]) -> Tuple[int, str]:
-        p = subprocess.run(cmd, cwd=str(repo_root), capture_output=True, text=True)
-        out = (p.stdout or "") + (p.stderr or "")
-        return p.returncode, out.strip()
-
-    code, out = run(["git", "add", rel])
-    if code != 0:
-        print(f"[git] add failed: {out}")
-        return
-
-    code, out = run(["git", "status", "--porcelain"])
-    if code != 0:
-        print(f"[git] status failed: {out}")
-        return
-    if not out.strip():
-        return
-
-    msg = "Update pinterest post state [skip ci]"
-    code, out = run(["git", "commit", "-m", msg])
-    if code != 0:
-        print(f"[git] commit failed: {out}")
-        return
-
-    code, out = run(["git", "push"])
-    if code != 0:
-        print(f"[git] push failed: {out}")
-        return
-
-
 def main() -> int:
     token = os.getenv("PINTEREST_ACCESS_TOKEN", "").strip()
     if not token:
@@ -414,13 +376,11 @@ def main() -> int:
     state_path = repo_root / "pinterest" / "state" / "pinterest_post_state.json"
 
     state = load_state(state_path)
-    manifest_paths = get_manifest_paths(manifest_dir)
 
-    item, used_manifest_index = pick_next_item_round_robin(manifest_paths, state)
+    # Pick 1 pin using daily rotation (and fallback across manifests if needed)
+    item = pick_next_item(manifest_dir, state)
     if not item:
-        advance_cursor(state, manifest_paths, used_manifest_index=None)
-        save_json_atomic(state_path, state)
-        try_git_commit_push(repo_root, state_path)
+        save_json_atomic(state_path, state)  # persists rotation day/index updates
         print("No pending pins found (all posted or max attempts reached).")
         return 0
 
@@ -428,19 +388,24 @@ def main() -> int:
     temp_path = None
 
     try:
+        # 1) Download video from GitHub Releases URL
         temp_path, name_guess = download_video_to_temp(item.video_url)
 
+        # 2) Register upload
         reg = register_media_upload(token)
         media_id = str(reg["media_id"])
         upload_url = reg["upload_url"]
         upload_params = reg["upload_parameters"]
 
+        # 3) Upload to S3
         upload_video_to_s3(upload_url, upload_params, temp_path, name_guess)
 
+        # 4) Poll until succeeded
         status = poll_media_status(token, media_id)
         if status != "succeeded":
             raise RuntimeError(f"media processing status: {status}")
 
+        # 5) Create pin with media_id
         created = create_video_pin(token, item, media_id)
         pin_id = created.get("id")
 
@@ -460,18 +425,13 @@ def main() -> int:
             cover_image_url=cover,
             error=None,
         )
-
-        advance_cursor(state, manifest_paths, used_manifest_index)
-
         save_json_atomic(state_path, state)
-        try_git_commit_push(repo_root, state_path)
 
         print(f"OK: Posted 1 pin. pin_id={pin_id} media_id={media_id} manifest={item.manifest_name}")
         return 0
 
     except Exception as e:
         err = str(e)
-
         update_state_for_attempt(
             state,
             item,
@@ -481,11 +441,7 @@ def main() -> int:
             cover_image_url=None,
             error=err[:1000],
         )
-
-        advance_cursor(state, manifest_paths, used_manifest_index)
-
         save_json_atomic(state_path, state)
-        try_git_commit_push(repo_root, state_path)
 
         print(f"FAILED: {err}")
         return 1
