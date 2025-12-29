@@ -1,5 +1,5 @@
-# /scripts/pinterest/post_one_video_pin.py
-# Purpose: Post exactly 1 video Pin using manifests (round-robin per day), then persist success/failure to pinterest/state/pinterest_post_state.json.
+# /pinterest/post_one_video_pin.py
+# Purpose: Post exactly 1 video Pin using manifests (round-robin), then persist success/failure to pinterest/state/pinterest_post_state.json.
 
 from __future__ import annotations
 
@@ -48,9 +48,15 @@ def utc_now_iso() -> str:
 
 def repo_root_from_this_file() -> Path:
     """
-    Assumes this file is at: <repo_root>/scripts/pinterest/post_one_video_pin.py
+    Finds repo root robustly no matter where this file lives.
+    We look upwards for markers: requirements.txt and .github directory.
     """
-    return Path(__file__).resolve().parents[2]
+    cur = Path(__file__).resolve()
+    for parent in [cur.parent] + list(cur.parents):
+        if (parent / "requirements.txt").exists() and (parent / ".github").exists():
+            return parent
+    # fallback (shouldn't happen)
+    return cur.parents[1]
 
 
 def load_json(path: Path) -> Dict[str, Any]:
@@ -121,10 +127,6 @@ def ensure_required_fields(pin: Dict[str, Any], manifest_name: str) -> PinItem:
 
 
 def get_manifest_paths(manifest_dir: Path) -> List[Path]:
-    """
-    Returns manifest paths in MANIFEST_FILES_ORDER if present, else falls back to *.json sorted.
-    Only the 5 known manifests are expected.
-    """
     ordered: List[Path] = []
     for name in MANIFEST_FILES_ORDER:
         p = manifest_dir / name
@@ -134,7 +136,6 @@ def get_manifest_paths(manifest_dir: Path) -> List[Path]:
     if ordered:
         return ordered
 
-    # fallback (shouldn't happen in your repo, but keeps script robust)
     return sorted(manifest_dir.glob("*.json"))
 
 
@@ -197,13 +198,6 @@ def is_item_eligible(it: PinItem, state: Dict[str, Any]) -> bool:
 
 
 def pick_next_item_round_robin(manifest_paths: List[Path], state: Dict[str, Any]) -> Tuple[Optional[PinItem], Optional[int]]:
-    """
-    Rotation logic:
-    - Start from cursor.manifest_index
-    - Try to pick the first eligible pin from that manifest
-    - If none eligible in that manifest, try the next, up to N manifests
-    - Returns (item, used_manifest_index) or (None, None)
-    """
     if not manifest_paths:
         return None, None
 
@@ -221,10 +215,6 @@ def pick_next_item_round_robin(manifest_paths: List[Path], state: Dict[str, Any]
 
 
 def advance_cursor(state: Dict[str, Any], manifest_paths: List[Path], used_manifest_index: Optional[int]) -> None:
-    """
-    Always rotate by 1 after a run.
-    If we actually used a manifest index, rotate from that; else rotate from current cursor.
-    """
     if not manifest_paths:
         return
 
@@ -428,11 +418,9 @@ def main() -> int:
 
     item, used_manifest_index = pick_next_item_round_robin(manifest_paths, state)
     if not item:
-        # Still rotate cursor (so "per day" rotation continues even when everything is done)
         advance_cursor(state, manifest_paths, used_manifest_index=None)
         save_json_atomic(state_path, state)
         try_git_commit_push(repo_root, state_path)
-
         print("No pending pins found (all posted or max attempts reached).")
         return 0
 
@@ -473,7 +461,6 @@ def main() -> int:
             error=None,
         )
 
-        # Rotate manifest cursor for next day (round-robin)
         advance_cursor(state, manifest_paths, used_manifest_index)
 
         save_json_atomic(state_path, state)
@@ -495,7 +482,6 @@ def main() -> int:
             error=err[:1000],
         )
 
-        # Rotate manifest cursor even on failure (still "one day = next manifest")
         advance_cursor(state, manifest_paths, used_manifest_index)
 
         save_json_atomic(state_path, state)
