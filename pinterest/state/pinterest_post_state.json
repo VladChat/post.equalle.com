@@ -18,6 +18,20 @@
       "pin_id": "839428818087879243",
       "media_id": "5471501483048504179",
       "cover_image_url": "https://i.pinimg.com/1200x/f9/1a/04/f91a04fe7bc02b82f10b0fb1768f1ad9.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_feels_too_rough-120_grit_to_smooth_drywall_mud-drywall-002.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_feels_too_rough-120_grit_to_smooth_drywall_mud-drywall-002.mp4",
+      "filename": "joint_compound_feels_too_rough-120_grit_to_smooth_drywall_mud-drywall-002.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049941",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7VFK4N",
+      "title": "Joint Compound Feels Too Rough? Smooth Drywall Mud With 120 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2025-12-29T13:35:33+00:00",
+      "pin_id": "839428818087884212",
+      "media_id": "5471553769611272109",
+      "cover_image_url": "https://i.pinimg.com/1200x/a4/dc/da/a4dcdae5204c4bc8fd3c74e3e9d8317e.jpg"
     }
   },
   "runs": [
@@ -29,6 +43,16 @@
       "result": "success",
       "pin_id": "839428818087879243",
       "media_id": "5471501483048504179",
+      "error": null
+    },
+    {
+      "ts_utc": "2025-12-29T13:35:33+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_feels_too_rough-120_grit_to_smooth_drywall_mud-drywall-002.mp4",
+      "filename": "joint_compound_feels_too_rough-120_grit_to_smooth_drywall_mud-drywall-002.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818087884212",
+      "media_id": "5471553769611272109",
       "error": null
     }
   ]
