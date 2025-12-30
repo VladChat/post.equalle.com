@@ -60,6 +60,20 @@
       "pin_id": "839428818087907583",
       "media_id": "5471759406456714305",
       "cover_image_url": "https://i.pinimg.com/1200x/bc/bf/8d/bcbf8d78ee2a6b5163b69122566c26be.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Brush_Marks_Stand_Out_More-220_Grit_for_Paint_Prep_on_Wood-wood-003.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Brush_Marks_Stand_Out_More-220_Grit_for_Paint_Prep_on_Wood-wood-003.mp4",
+      "filename": "Brush_Marks_Stand_Out_More-220_Grit_for_Paint_Prep_on_Wood-wood-003.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
+      "title": "Brush Marks Stand Out More: 220 Grit Paint Prep on Wood",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2025-12-30T17:30:10+00:00",
+      "pin_id": "839428818087908339",
+      "media_id": "5471764552523780392",
+      "cover_image_url": "https://i.pinimg.com/1200x/c4/6e/e8/c46ee8b36b907d8f4f0f9df059c16121.jpg"
     }
   },
   "runs": [
@@ -101,6 +115,16 @@
       "result": "success",
       "pin_id": "839428818087907583",
       "media_id": "5471759406456714305",
+      "error": null
+    },
+    {
+      "ts_utc": "2025-12-30T17:30:10+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Brush_Marks_Stand_Out_More-220_Grit_for_Paint_Prep_on_Wood-wood-003.mp4",
+      "filename": "Brush_Marks_Stand_Out_More-220_Grit_for_Paint_Prep_on_Wood-wood-003.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818087908339",
+      "media_id": "5471764552523780392",
       "error": null
     }
   ]
