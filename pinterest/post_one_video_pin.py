@@ -295,7 +295,7 @@ def create_video_pin(token: str, item: PinItem, media_id: str) -> Dict[str, Any]
     # IMPORTANT:
     # Pinterest requires a cover for video pins.
     # Simplest: provide cover_image_key_frame_time (seconds) so Pinterest generates cover from that frame.
-    cover_time = float(random.randint(1, 7))
+    cover_time = random.randint(1, 7)
 
     payload = {
         "board_id": item.board_id,
