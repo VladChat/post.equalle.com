@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 import requests
+import random
 
 
 API_BASE = "https://api.pinterest.com/v5"
@@ -303,7 +304,7 @@ def create_video_pin(token: str, item: PinItem, media_id: str) -> Dict[str, Any]
         "media_source": {
             "source_type": "video_id",
             "media_id": str(media_id),
-            "cover_image_key_frame_time": 7,
+            "cover_image_key_frame_time": random.randint(1, 7),
         },
     }
 
