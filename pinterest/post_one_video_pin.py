@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 import requests
+import random
 
 
 API_BASE = "https://api.pinterest.com/v5"
@@ -294,6 +295,8 @@ def create_video_pin(token: str, item: PinItem, media_id: str) -> Dict[str, Any]
     # IMPORTANT:
     # Pinterest requires a cover for video pins.
     # Simplest: provide cover_image_key_frame_time (seconds) so Pinterest generates cover from that frame.
+    cover_time = float(random.randint(1, 7))
+
     payload = {
         "board_id": item.board_id,
         "title": item.title,
@@ -303,14 +306,22 @@ def create_video_pin(token: str, item: PinItem, media_id: str) -> Dict[str, Any]
         "media_source": {
             "source_type": "video_id",
             "media_id": str(media_id),
-            "cover_image_key_frame_time": 7,
+            "cover_image_key_frame_time": cover_time,
         },
     }
 
-    resp = requests.post(url, headers=pinterest_headers(token), json=payload, timeout=60)
+    resp = requests.post(
+        url,
+        headers=pinterest_headers(token),
+        json=payload,
+        timeout=60,
+    )
     if resp.status_code not in (200, 201):
-        raise RuntimeError(f"pins/create failed: HTTP {resp.status_code}: {resp.text[:800]}")
+        raise RuntimeError(
+            f"pins/create failed: HTTP {resp.status_code}: {resp.text[:800]}"
+        )
     return resp.json()
+
 
 
 def update_state_for_attempt(
