@@ -46,6 +46,20 @@
       "pin_id": "839428818087904662",
       "media_id": "5471734808411450311",
       "cover_image_url": "https://i.pinimg.com/1200x/ba/89/87/ba8987b701553d1d4b4024a24343a65f.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Rough_Wood_Grain_Showing-120_Grit_for_Smoothing_Raw_Wood-wood-002.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Rough_Wood_Grain_Showing-120_Grit_for_Smoothing_Raw_Wood-wood-002.mp4",
+      "filename": "Rough_Wood_Grain_Showing-120_Grit_for_Smoothing_Raw_Wood-wood-002.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7VFK4N",
+      "title": "Rough Wood Grain Showing: 120 Grit Smoothing Raw Wood",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2025-12-30T16:49:19+00:00",
+      "pin_id": "839428818087907583",
+      "media_id": "5471759406456714305",
+      "cover_image_url": "https://i.pinimg.com/1200x/bc/bf/8d/bcbf8d78ee2a6b5163b69122566c26be.jpg"
     }
   },
   "runs": [
@@ -77,6 +91,16 @@
       "result": "success",
       "pin_id": "839428818087904662",
       "media_id": "5471734808411450311",
+      "error": null
+    },
+    {
+      "ts_utc": "2025-12-30T16:49:19+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Rough_Wood_Grain_Showing-120_Grit_for_Smoothing_Raw_Wood-wood-002.mp4",
+      "filename": "Rough_Wood_Grain_Showing-120_Grit_for_Smoothing_Raw_Wood-wood-002.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818087907583",
+      "media_id": "5471759406456714305",
       "error": null
     }
   ]
