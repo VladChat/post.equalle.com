@@ -38,7 +38,7 @@ def build_facebook_message(post: Post) -> str:
         "",
         f"Read the full guide: {post.link}",
         "",
-        "#sandpaper #sanding #eQualle",
+        "#Nailak #CuticleOil #NailCare #HealthyNails",
     ]
     return "\n".join(line for line in lines if line is not None)
 
@@ -55,7 +55,7 @@ def build_instagram_caption(post: Post) -> str:
         "",
         f"Full article on our blog: {post.link}",
         "",
-        "#sandpaper #sanding #woodworking #autobody #eQualle",
+        "#Nailak #CuticleOil #NailCare #HealthyNails #NaturalNails",
     ]
     return "\n".join(line for line in lines if line is not None)
 
@@ -97,4 +97,3 @@ def build_facebook_comment(post: Post) -> str:
         "Quick tip: small changes in grit selection and sanding pressure usually give "
         "bigger improvements than buying new tools. Test on a scrap surface first."
     )
-
