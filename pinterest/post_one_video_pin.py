@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import os
+import random
 import time
 import tempfile
 from dataclasses import dataclass
@@ -32,7 +33,7 @@ MEDIA_POLL_INTERVAL_SEC = 3
 @dataclass
 class PinItem:
     manifest_name: str
-    filename: str  # derived from video_url (for future cleanup scripts)
+    filename: str
     video_url: str
     destination_url: str
     board_id: str
@@ -147,7 +148,6 @@ def load_state(state_path: Path) -> Dict[str, Any]:
             data["runs"] = []
         return data
     except Exception:
-        # If file corrupted, start fresh (no deletions here)
         return {"version": 1, "rotation": {}, "items": {}, "runs": []}
 
 
@@ -291,9 +291,6 @@ def poll_media_status(token: str, media_id: str) -> str:
 def create_video_pin(token: str, item: PinItem, media_id: str) -> Dict[str, Any]:
     url = f"{API_BASE}/pins"
 
-    # IMPORTANT:
-    # Pinterest requires a cover for video pins.
-    # Simplest: provide cover_image_key_frame_time (seconds) so Pinterest generates cover from that frame.
     payload = {
         "board_id": item.board_id,
         "title": item.title,
@@ -303,7 +300,7 @@ def create_video_pin(token: str, item: PinItem, media_id: str) -> Dict[str, Any]
         "media_source": {
             "source_type": "video_id",
             "media_id": str(media_id),
-            "cover_image_key_frame_time": 7,
+            "cover_image_key_frame_time": random.randint(1, 7),
         },
     }
 
@@ -335,7 +332,7 @@ def update_state_for_attempt(
             "board_id": item.board_id,
             "destination_url": item.destination_url,
             "title": item.title,
-            "result": result,  # "success" | "failed"
+            "result": result,
             "attempts": attempts,
             "last_ts_utc": utc_now_iso(),
         }
@@ -377,10 +374,9 @@ def main() -> int:
 
     state = load_state(state_path)
 
-    # Pick 1 pin using daily rotation (and fallback across manifests if needed)
     item = pick_next_item(manifest_dir, state)
     if not item:
-        save_json_atomic(state_path, state)  # persists rotation day/index updates
+        save_json_atomic(state_path, state)
         print("No pending pins found (all posted or max attempts reached).")
         return 0
 
@@ -388,24 +384,19 @@ def main() -> int:
     temp_path = None
 
     try:
-        # 1) Download video from GitHub Releases URL
         temp_path, name_guess = download_video_to_temp(item.video_url)
 
-        # 2) Register upload
         reg = register_media_upload(token)
         media_id = str(reg["media_id"])
         upload_url = reg["upload_url"]
         upload_params = reg["upload_parameters"]
 
-        # 3) Upload to S3
         upload_video_to_s3(upload_url, upload_params, temp_path, name_guess)
 
-        # 4) Poll until succeeded
         status = poll_media_status(token, media_id)
         if status != "succeeded":
             raise RuntimeError(f"media processing status: {status}")
 
-        # 5) Create pin with media_id
         created = create_video_pin(token, item, media_id)
         pin_id = created.get("id")
 
