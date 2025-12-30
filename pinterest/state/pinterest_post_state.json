@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2025-12-29"
+    "manifest_index": 1,
+    "last_day": "2025-12-30"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -32,6 +32,20 @@
       "pin_id": "839428818087884212",
       "media_id": "5471553769611272109",
       "cover_image_url": "https://i.pinimg.com/1200x/a4/dc/da/a4dcdae5204c4bc8fd3c74e3e9d8317e.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4",
+      "filename": "Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "title": "Paint Peeling on Wood: 180 Grit Wood Paint Prep",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2025-12-30T13:34:55+00:00",
+      "pin_id": "839428818087904662",
+      "media_id": "5471734808411450311",
+      "cover_image_url": "https://i.pinimg.com/1200x/ba/89/87/ba8987b701553d1d4b4024a24343a65f.jpg"
     }
   },
   "runs": [
@@ -53,6 +67,16 @@
       "result": "success",
       "pin_id": "839428818087884212",
       "media_id": "5471553769611272109",
+      "error": null
+    },
+    {
+      "ts_utc": "2025-12-30T13:34:55+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4",
+      "filename": "Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818087904662",
+      "media_id": "5471734808411450311",
       "error": null
     }
   ]
