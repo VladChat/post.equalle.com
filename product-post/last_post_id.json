@@ -1,17 +1,14 @@
 {
-  "post_id": "325670187920349_1307089444765872",
+  "post_id": "325670187920349_1312150404259776",
   "product": {
     "source": "amazon",
-    "url": "https://www.amazon.com/gp/product/B0CZ8DFS6T",
-    "grit": 220,
+    "url": "https://www.amazon.com/gp/product/B0CZ7TQ1F8",
+    "grit": 240,
     "pack": 10,
-    "anchor": "220 Grit (Medium)",
-    "grit_description": "Fine finishing grit for final surface preparation before painting or coating. Offers uniform cutting on wood, metal, and plastic. Leaves a smooth, paint-ready finish suitable for wet or dry sanding.",
+    "anchor": "240 Grit (Medium)",
+    "grit_description": "Light refinement grit that blends sanding marks and smooths primer layers. Perfect for wood, resin, or plastic before lacquer application. Produces consistent scratch patterns and controlled results when used wet or dry.",
     "contexts": [
-      "wood",
-      "metal",
-      "auto",
-      "drywall"
+      "finishing"
     ]
   }
 }
