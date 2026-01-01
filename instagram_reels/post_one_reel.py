@@ -12,12 +12,16 @@
 # Resumable response note:
 # - Meta may return 'uri' instead of 'upload_url'. We support BOTH.
 #   Example: {'id': '...', 'uri': 'https://rupload.facebook.com/ig-api-upload/v24.0/...'}
+#
+# Cover selection:
+# - Random thumb_offset (0..7000 ms) to pick a cover frame from 0 to 7 seconds.
 # ============================================
 
 from __future__ import annotations
 
 import json
 import os
+import random
 import tempfile
 import time
 from dataclasses import dataclass
@@ -294,9 +298,10 @@ def download_to_tempfile(video_url: str, filename_hint: str) -> Tuple[Path, int]
         raise RuntimeError("video_url must be HTTPS for binary download")
 
     safe_name = (filename_hint or "video.mp4").strip() or "video.mp4"
-    headers = {"User-Agent": "ig-reels-binary-uploader/1.0"}
 
+    headers = {"User-Agent": "ig-reels-binary-uploader/1.0"}
     start = time.time()
+
     with requests.get(video_url, stream=True, headers=headers, timeout=HTTP_TIMEOUT_SEC, allow_redirects=True) as r:
         if r.status_code != 200:
             raise RuntimeError(f"download failed: HTTP {r.status_code}: {r.text[:300]}")
@@ -324,6 +329,11 @@ def download_to_tempfile(video_url: str, filename_hint: str) -> Tuple[Path, int]
 # Instagram Graph API calls
 # -------------------------
 
+def _random_thumb_offset_ms() -> int:
+    # Random cover frame from 0..7 seconds (milliseconds)
+    return random.randint(0, 7000)
+
+
 def create_reel_container_url_mode(
     ig_user_id: str,
     token: str,
@@ -333,6 +343,15 @@ def create_reel_container_url_mode(
     *,
     share_to_feed: bool,
 ) -> str:
+    """
+    URL mode: Meta fetches video_url itself.
+    POST /{ig-user-id}/media
+      media_type=REELS
+      video_url=...
+      caption=...
+      share_to_feed=true|false
+      thumb_offset=<ms>  (random 0..7000)
+    """
     url = f"{graph_base(version)}/{ig_user_id}/media"
     data = {
         "access_token": token,
@@ -340,6 +359,7 @@ def create_reel_container_url_mode(
         "video_url": video_url,
         "caption": caption,
         "share_to_feed": "true" if share_to_feed else "false",
+        "thumb_offset": str(_random_thumb_offset_ms()),
     }
     resp = requests.post(url, data=data, timeout=HTTP_TIMEOUT_SEC)
     if resp.status_code not in (200, 201):
@@ -366,6 +386,7 @@ def create_reel_container_resumable(
       caption=...
       share_to_feed=true|false
       upload_type=resumable
+      thumb_offset=<ms>  (random 0..7000)
 
     Meta may return:
       - upload_url
@@ -378,6 +399,7 @@ def create_reel_container_resumable(
         "caption": caption,
         "share_to_feed": "true" if share_to_feed else "false",
         "upload_type": "resumable",
+        "thumb_offset": str(_random_thumb_offset_ms()),
     }
     resp = requests.post(url, data=data, timeout=HTTP_TIMEOUT_SEC)
     if resp.status_code not in (200, 201):
@@ -385,8 +407,6 @@ def create_reel_container_resumable(
     j = resp.json()
 
     cid = (j.get("id") or "").strip()
-
-    # Support both keys
     rupload_url = (j.get("upload_url") or j.get("uri") or "").strip()
 
     if not cid:
@@ -398,9 +418,6 @@ def create_reel_container_resumable(
 
 
 def resumable_upload_bytes(rupload_url: str, token: str, file_path: Path, file_size: int) -> Dict[str, Any]:
-    """
-    Upload entire file in one shot to rupload endpoint.
-    """
     data = file_path.read_bytes()
     if len(data) != int(file_size):
         raise RuntimeError(f"file size mismatch: expected {file_size}, got {len(data)}")
