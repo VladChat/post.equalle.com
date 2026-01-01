@@ -4,7 +4,7 @@
 #          using the shared facebook_reels post state file.
 # Notes:
 # - Separate from posting workflow (best practice): comment is delayed and optional.
-# - Safety: 20% of posts are skipped (no comment), 80% get exactly 1 comment.
+# - Safety: 10% of posts are skipped (no comment), 90% get exactly 1 comment.
 # - No repeats: state records comment_status/comment_id to prevent duplicates.
 # - Jitter: optional random delay (default up to 1 hour) to make timing more natural.
 # ============================================
@@ -27,12 +27,12 @@ DEFAULT_GRAPH_API_VERSION = "v21.0"
 STATE_REL_PATH = Path("facebook_reels/state/facebook_reels_post_state.json")
 
 # Comment policy
-COMMENT_PROBABILITY = 0.90  # 80% comment, 20% skip
+COMMENT_PROBABILITY = 0.90  # 90% comment, 10% skip
 MAX_COMMENT_ATTEMPTS = 2
 
 # Jitter (random delay to look natural)
 # Default: random 0..3600 seconds (1 hour)
-DEFAULT_JITTER_MAX_SEC = 60
+DEFAULT_JITTER_MAX_SEC = 3600
 
 # 5–7 templates (human-like, short, no links)
 TEMPLATES = [
