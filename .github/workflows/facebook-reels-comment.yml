@@ -1,0 +1,51 @@
+name: Facebook Reels – Comment Worker (eQualle)
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs daily a bit after the post workflow (UTC).
+    - cron: "20 13 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: facebook-reels-comment-worker-equalle
+  cancel-in-progress: false
+
+jobs:
+  comment_worker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install requests
+
+      - name: Comment on latest Reel (80% chance)
+        env:
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          GRAPH_API_VERSION: "v21.0"
+        run: |
+          python facebook_reels/comment_worker.py
+
+      - name: Commit state (if changed)
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add facebook_reels/state/facebook_reels_post_state.json
+          if git diff --cached --quiet; then
+            echo "No state changes to commit."
+            exit 0
+          fi
+          git commit -m "facebook_reels: update comment state"
+          git push
