@@ -35,7 +35,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-01T13:41:22Z",
-      "video_id": "1176450381267776"
+      "video_id": "1176450381267776",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 4
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-01T14:21:45Z",
+      "comment_text": "If the paper loads up, rinse/clean it and keep moving. Want a simple grit guide? Comment “GRIT”.",
+      "comment_status": "commented",
+      "comment_id": "1176450381267776_1405966554256851",
+      "commented_ts_utc": "2026-01-01T14:21:49Z"
     }
   },
   "runs": [
@@ -66,6 +76,15 @@
       "manifest": "drywall.json",
       "result": "commented",
       "comment_id": "2058993401569345_875564948290198",
+      "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-01-01T14:21:49Z",
+      "video_id": "1176450381267776",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_feels_too_rough-120_grit_to_smooth_drywall_mud-drywall-002.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1176450381267776_1405966554256851",
       "template_idx": 4
     }
   ]
