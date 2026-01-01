@@ -5,7 +5,7 @@
 # - Instagram Graph API publishing uses container -> status -> publish flow.
 # - To publish a Reel: POST /{ig-user-id}/media with media_type=REELS, video_url, caption,
 #   then poll the container status_code until FINISHED, then POST /{ig-user-id}/media_publish.
-# - Instagram does not have a separate "title" field for Reels; it is part of the caption.
+# - Container status check must use fields=status_code,status (NOT error_message).
 # ============================================
 
 from __future__ import annotations
@@ -179,7 +179,15 @@ def graph_base(version: str) -> str:
     return f"https://graph.facebook.com/{version}"
 
 
-def create_reel_container(ig_user_id: str, token: str, version: str, video_url: str, caption: str, *, share_to_feed: bool) -> str:
+def create_reel_container(
+    ig_user_id: str,
+    token: str,
+    version: str,
+    video_url: str,
+    caption: str,
+    *,
+    share_to_feed: bool,
+) -> str:
     """
     POST /{ig-user-id}/media
       media_type=REELS
@@ -196,9 +204,8 @@ def create_reel_container(ig_user_id: str, token: str, version: str, video_url: 
         "media_type": "REELS",
         "video_url": video_url,
         "caption": caption,
+        "share_to_feed": "true" if share_to_feed else "false",
     }
-    # share_to_feed is optional; keep explicit for predictability
-    data["share_to_feed"] = "true" if share_to_feed else "false"
 
     resp = requests.post(url, data=data, timeout=60)
     if resp.status_code not in (200, 201):
@@ -211,10 +218,13 @@ def create_reel_container(ig_user_id: str, token: str, version: str, video_url: 
 
 
 def get_container_status(container_id: str, token: str, version: str) -> Dict[str, Any]:
-    """GET /{ig-container-id}?fields=status_code,status,error_message"""
+    """
+    GET /{ig-container-id}?fields=status_code,status
+    Note: ShadowIGMediaBuilder does NOT support error_message.
+    """
     url = f"{graph_base(version)}/{container_id}"
     params = {
-        "fields": "status_code,status,error_message",
+        "fields": "status_code,status",
         "access_token": token,
     }
     resp = requests.get(url, params=params, timeout=30)
@@ -233,8 +243,10 @@ def wait_container_finished(container_id: str, token: str, version: str) -> Dict
 
         if status_code == "FINISHED":
             return last
+
         if status_code == "ERROR":
-            detail = last.get("error_message") or last.get("status") or last
+            # Docs: if status_code is ERROR, status may contain an error subcode/value.
+            detail = last.get("status") or last
             raise RuntimeError(f"container ERROR: {detail}")
 
         # IN_PROGRESS, EXPIRED, etc.
@@ -378,7 +390,7 @@ def main() -> int:
 
         print(f"OK: Posted 1 IG Reel. ig_user_id={ig_user_id} media_id={media_id} manifest={item.manifest_name}")
         try:
-            print("container_status:", st.get("status_code"))
+            print("container_status:", st.get("status_code"), "status:", st.get("status"))
         except Exception:
             pass
         return 0
