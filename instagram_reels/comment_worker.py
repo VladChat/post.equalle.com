@@ -32,7 +32,7 @@ MAX_COMMENT_ATTEMPTS = 2
 
 # Jitter (random delay to look natural)
 # Default: random 0..3600 seconds (1 hour)
-DEFAULT_JITTER_MAX_SEC = 60
+DEFAULT_JITTER_MAX_SEC = 3600
 
 # Human-like, short, no links
 TEMPLATES = [
