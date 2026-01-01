@@ -1,10 +1,47 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": ""
+    "manifest_index": 1,
+    "last_day": "2026-01-01"
   },
-  "items": {},
-  "runs": [],
+  "items": {
+    "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4",
+      "filename": "Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4",
+      "manifest": "wood.json",
+      "title": "Paint Peeling on Wood: 180 Grit Wood Paint Prep",
+      "description": "Paint Peeling on Wood? Use 180 grit for wood paint prep. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "caption": "Paint Peeling on Wood: 180 Grit Wood Paint Prep\n\nPaint Peeling on Wood? Use 180 grit for wood paint prep. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-01T21:19:31Z",
+      "mode": "binary",
+      "container_id": "18104775802741317",
+      "media_id": "17903240724182540",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18104775802741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18104775802741317"
+      }
+    }
+  },
+  "runs": [
+    {
+      "ts_utc": "2026-01-01T21:19:31Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wood.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4",
+      "filename": "Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4",
+      "container_id": "18104775802741317",
+      "media_id": "17903240724182540",
+      "error": null
+    }
+  ],
   "comment_runs": []
 }
