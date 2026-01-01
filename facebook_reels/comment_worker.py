@@ -87,8 +87,9 @@ def parse_grit(text: str) -> Optional[str]:
         return None
     t = text.lower()
 
-    # Common patterns
-    m = re.search(r"(\d{2,4})\s*(?:[-_–]\s*(\d{2,4}))?\s*(?:grit|\b)", t)
+    # Prefer explicit 'grit' markers to avoid accidentally capturing the trailing index like '-021'.
+    # Accepts: 180_grit, 180-grit, 180 grit, 180–220_grit, etc.
+    m = re.search(r"(\d{2,4})\s*(?:[-_–]\s*(\d{2,4}))?\s*[_\s-]*grit(?=\b|[_-])", t)
     if m:
         a = m.group(1)
         b = m.group(2)
@@ -96,7 +97,8 @@ def parse_grit(text: str) -> Optional[str]:
             return f"{a}–{b}"
         return a
 
-    m = re.search(r"grit[\s:_-]*(\d{2,4})(?:[\s_-]*(\d{2,4}))?", t)
+    # Also accept: 'grit 180' / 'grit:180'
+    m = re.search(r"grit[\s:_-]*(\d{2,4})(?:\s*[-_–]\s*(\d{2,4}))?(?=\b|[_-]|\s|$)", t)
     if m:
         a = m.group(1)
         b = m.group(2)
