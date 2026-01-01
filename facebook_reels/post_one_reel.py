@@ -209,15 +209,18 @@ def _download_to_tempfile(video_url: str, filename_hint: str) -> Tuple[Path, int
     Download the video from video_url to a temp file on the runner.
     Returns (path, size_bytes).
     """
+    # Ensure extension hint helps some platforms; keep original filename if possible.
     safe_name = (filename_hint or "video.mp4").strip()
     if not safe_name:
         safe_name = "video.mp4"
 
+    # GitHub sometimes requires a UA; also helps avoid 403 from some CDNs.
     headers = {"User-Agent": "facebook-reels-uploader/1.0 (+https://github.com/)"}
 
     with requests.get(video_url, stream=True, headers=headers, timeout=60, allow_redirects=True) as r:
         if r.status_code != 200:
             raise RuntimeError(f"download failed: HTTP {r.status_code}: {r.text[:300]}")
+        # Use a temp dir so the runner's workspace doesn't fill with leftovers.
         tmp_dir = Path(tempfile.mkdtemp(prefix="fb_reels_"))
         out_path = tmp_dir / safe_name
 
@@ -248,6 +251,7 @@ def upload_hosted_video(upload_url: str, page_token: str, video_url: str) -> Non
     resp = requests.post(upload_url, headers=headers, timeout=180)
     if resp.status_code not in (200, 201):
         raise RuntimeError(f"upload_hosted failed: HTTP {resp.status_code}: {resp.text[:800]}")
+    # If response is {"success": true} it's fine. If not JSON, still treat 2xx as ok.
 
 
 def upload_binary_video(upload_url: str, page_token: str, file_path: Path, file_size: int, *, chunk_size: int) -> None:
@@ -255,9 +259,15 @@ def upload_binary_video(upload_url: str, page_token: str, file_path: Path, file_
     Binary upload using Resumable Upload API to the given upload_url.
     This avoids Meta having to fetch your video from a URL (fixes robots.txt 403 on hosted URLs).
     """
+    # Per Meta/Postman reference for Reels local upload:
+    # - Authorization: OAuth <page_access_token>
+    # - offset: starting byte offset ("0" for first chunk; if resumable, use the offset returned by status)
+    # - file_size: total video size in bytes
+    # - Content-Type: application/octet-stream
     headers_base = {
         "Authorization": f"OAuth {page_token}",
         "Content-Type": "application/octet-stream",
+        "file_size": str(int(file_size)),
     }
 
     offset = 0
@@ -269,17 +279,20 @@ def upload_binary_video(upload_url: str, page_token: str, file_path: Path, file_
                 break
 
             headers = dict(headers_base)
-            headers["file_offset"] = str(offset)
+            # IMPORTANT: Meta expects header name "offset" (not "file_offset").
+            headers["offset"] = str(int(offset))
 
             resp = requests.post(upload_url, headers=headers, data=data, timeout=180)
             if resp.status_code not in (200, 201):
                 raise RuntimeError(f"upload_binary failed: HTTP {resp.status_code}: {resp.text[:800]}")
 
+            # Some implementations return start_offset/end_offset as strings.
             try:
                 j = resp.json()
                 so = j.get("start_offset")
                 eo = j.get("end_offset")
                 if so is not None and eo is not None:
+                    # Meta expects the next POST at end_offset.
                     offset = int(eo)
                 else:
                     offset += len(data)
@@ -429,7 +442,7 @@ def main() -> int:
 
     item = pick_next_item(manifest_dir, state)
     if not item:
-        save_json_atomic(state_path, state)
+        save_json_atomic(state_path, state)  # persists rotation day/index updates
         print("No pending reels found (all posted or max attempts reached).")
         return 0
 
@@ -448,18 +461,23 @@ def main() -> int:
     tmp_file: Optional[Path] = None
 
     try:
+        # 1) Create upload session
         created = create_reel_upload_session(page_id, page_token, version)
         video_id = str(created["video_id"])
         upload_url = str(created["upload_url"])
 
+        # 2) Upload
         if upload_mode == "hosted":
             upload_hosted_video(upload_url, page_token, item.video_url)
         else:
+            # Download + binary upload (fix for robots.txt / 403 on hosted fetch)
             tmp_file, size = _download_to_tempfile(item.video_url, item.filename)
             upload_binary_video(upload_url, page_token, tmp_file, size, chunk_size=chunk_size)
 
+        # 3) Publish
         publish_reel(page_id, page_token, version, video_id, item.title, item.description)
 
+        # 4) Poll (optional but useful)
         st = wait_until_published(page_token, version, video_id)
 
         update_state_for_attempt(state, item, "success", video_id=video_id, error=None)
@@ -474,6 +492,7 @@ def main() -> int:
 
     except Exception as e:
         err = str(e)[:1500]
+        # Improve the most common hosted-url failure message for faster debugging
         if "robots.txt" in err.lower() or "fileurlprocessingerror" in err.lower():
             err += " | TIP: set FB_REELS_UPLOAD_MODE=binary (default) to upload bytes instead of file_url hosted fetch."
         update_state_for_attempt(state, item, "failed", video_id=video_id, error=err)
@@ -482,10 +501,12 @@ def main() -> int:
         return 1
 
     finally:
+        # Cleanup temp download
         try:
             if tmp_file and tmp_file.exists():
                 tmp_dir = tmp_file.parent
                 tmp_file.unlink(missing_ok=True)
+                # remove dir if empty
                 try:
                     tmp_dir.rmdir()
                 except Exception:
