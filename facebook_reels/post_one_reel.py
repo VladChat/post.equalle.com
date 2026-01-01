@@ -256,20 +256,46 @@ def upload_hosted_video(upload_url: str, page_token: str, video_url: str) -> Non
 
 def upload_binary_video(upload_url: str, page_token: str, file_path: Path, file_size: int, *, chunk_size: int) -> None:
     """
-    Binary upload using Resumable Upload API to the given upload_url.
-    This avoids Meta having to fetch your video from a URL (fixes robots.txt 403 on hosted URLs).
+    Binary upload to the given upload_url.
+
+    IMPORTANT (practical reality for Page Reels):
+    - Many upload_url endpoints returned by /video_reels?upload_phase=start behave like *rupload* and
+      will reject chunked uploads unless the request length matches the expected remaining bytes.
+    - Your GitHub-hosted videos are small (~8–10MB), so the most reliable path is SINGLE-SHOT upload:
+      send the entire file in one POST with headers:
+        Authorization: OAuth <token>
+        offset: 0
+        file_size: <total bytes>
+      This avoids "PartialRequestError (did not match length of file)".
+
+    If you ever upload larger files, you can force resumable chunking with:
+      FB_REELS_FORCE_RESUMABLE=1
     """
-    # Per Meta/Postman reference for Reels local upload:
-    # - Authorization: OAuth <page_access_token>
-    # - offset: starting byte offset ("0" for first chunk; if resumable, use the offset returned by status)
-    # - file_size: total video size in bytes
-    # - Content-Type: application/octet-stream
+    # Force single-shot by default for reliability.
+    force_resumable = (os.getenv("FB_REELS_FORCE_RESUMABLE") or "").strip().lower() in ("1", "true", "yes")
+
     headers_base = {
         "Authorization": f"OAuth {page_token}",
         "Content-Type": "application/octet-stream",
         "file_size": str(int(file_size)),
     }
 
+    # ---- 1) Single-shot upload (default) ----
+    if not force_resumable:
+        data = file_path.read_bytes()
+        if len(data) != int(file_size):
+            raise RuntimeError(f"downloaded file size mismatch: expected {file_size}, got {len(data)}")
+
+        headers = dict(headers_base)
+        headers["offset"] = "0"
+        headers["Content-Length"] = str(int(file_size))
+
+        resp = requests.post(upload_url, headers=headers, data=data, timeout=300)
+        if resp.status_code not in (200, 201):
+            raise RuntimeError(f"upload_binary failed: HTTP {resp.status_code}: {resp.text[:800]}")
+        return
+
+    # ---- 2) Resumable chunk upload (optional) ----
     offset = 0
     with file_path.open("rb") as f:
         while offset < file_size:
@@ -279,20 +305,17 @@ def upload_binary_video(upload_url: str, page_token: str, file_path: Path, file_
                 break
 
             headers = dict(headers_base)
-            # IMPORTANT: Meta expects header name "offset" (not "file_offset").
             headers["offset"] = str(int(offset))
+            headers["Content-Length"] = str(len(data))
 
-            resp = requests.post(upload_url, headers=headers, data=data, timeout=180)
+            resp = requests.post(upload_url, headers=headers, data=data, timeout=300)
             if resp.status_code not in (200, 201):
                 raise RuntimeError(f"upload_binary failed: HTTP {resp.status_code}: {resp.text[:800]}")
 
-            # Some implementations return start_offset/end_offset as strings.
             try:
                 j = resp.json()
-                so = j.get("start_offset")
                 eo = j.get("end_offset")
-                if so is not None and eo is not None:
-                    # Meta expects the next POST at end_offset.
+                if eo is not None:
                     offset = int(eo)
                 else:
                     offset += len(data)
