@@ -6,6 +6,7 @@
 # - Separate from posting workflow (best practice): comment is delayed and optional.
 # - Safety: 20% of posts are skipped (no comment), 80% get exactly 1 comment.
 # - No repeats: state records comment_status/comment_id to prevent duplicates.
+# - Jitter: optional random delay (default up to 1 hour) to make timing more natural.
 # ============================================
 
 from __future__ import annotations
@@ -26,8 +27,12 @@ DEFAULT_GRAPH_API_VERSION = "v21.0"
 STATE_REL_PATH = Path("facebook_reels/state/facebook_reels_post_state.json")
 
 # Comment policy
-COMMENT_PROBABILITY = 0.80  # 80% comment, 20% skip
+COMMENT_PROBABILITY = 0.90  # 80% comment, 20% skip
 MAX_COMMENT_ATTEMPTS = 2
+
+# Jitter (random delay to look natural)
+# Default: random 0..3600 seconds (1 hour)
+DEFAULT_JITTER_MAX_SEC = 60
 
 # 5–7 templates (human-like, short, no links)
 TEMPLATES = [
@@ -61,6 +66,10 @@ def utc_now_iso() -> str:
     return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
 
 
+def utc_today() -> str:
+    return time.strftime("%Y-%m-%d", time.gmtime())
+
+
 def graph_base(version: str) -> str:
     version = (version or DEFAULT_GRAPH_API_VERSION).strip()
     if not version.startswith("v"):
@@ -70,8 +79,7 @@ def graph_base(version: str) -> str:
 
 def stable_rng(seed_text: str) -> random.Random:
     """
-    Deterministic RNG per video_id (or url). This prevents reruns from changing
-    skip/comment decision and template selection.
+    Deterministic RNG per seed_text. Useful to keep decisions stable across retries.
     """
     h = hashlib.sha256(seed_text.encode("utf-8")).hexdigest()
     seed = int(h[:8], 16)
@@ -146,7 +154,6 @@ def find_latest_success_to_comment(state: Dict[str, Any]) -> Tuple[Optional[Dict
         if comment_status in ("commented", "skipped"):
             continue
 
-        # If previous attempts exceeded, skip
         attempts = int(rec.get("comment_attempts", 0) or 0)
         if attempts >= MAX_COMMENT_ATTEMPTS:
             continue
@@ -168,7 +175,6 @@ def post_comment(video_id: str, token: str, version: str, message: str) -> str:
     data = resp.json()
     cid = (data.get("id") or "").strip()
     if not cid:
-        # Sometimes API returns success without id; still treat as success but log placeholder
         cid = "unknown"
     return cid
 
@@ -204,7 +210,26 @@ def main() -> int:
     video_url = str(run.get("video_url")).strip()
     manifest = str(run.get("manifest") or rec.get("manifest") or "").strip()
 
-    # Determine (or reuse) plan for this video
+    # --------- JITTER (random within an hour by default) ----------
+    # Deterministic per (video_id + UTC day) so retries won't change delay.
+    # You can disable by setting FB_REELS_COMMENT_JITTER_MAX_SEC=0
+    try:
+        jitter_max = int((os.getenv("FB_REELS_COMMENT_JITTER_MAX_SEC") or str(DEFAULT_JITTER_MAX_SEC)).strip())
+    except Exception:
+        jitter_max = DEFAULT_JITTER_MAX_SEC
+    if jitter_max < 0:
+        jitter_max = 0
+
+    if jitter_max > 0:
+        jitter_seed = f"{video_id}|{utc_today()}"
+        jrng = stable_rng(jitter_seed)
+        delay = jrng.randint(0, jitter_max)
+        if delay > 0:
+            print(f"[comment_worker] jitter sleep: {delay}s (max={jitter_max}s) video_id={video_id}")
+            time.sleep(delay)
+    # -------------------------------------------------------------
+
+    # Determine (or reuse) plan for this video (stable across retries)
     plan = rec.get("comment_plan") or {}
     if not isinstance(plan, dict):
         plan = {}
@@ -309,7 +334,6 @@ def main() -> int:
         save_json_atomic(state_path, state)
 
         print(f"FAILED: {e}")
-        # Non-zero so workflow shows failure; retriable if attempts < MAX_COMMENT_ATTEMPTS
         return 1
 
 
