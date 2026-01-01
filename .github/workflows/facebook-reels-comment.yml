@@ -1,4 +1,4 @@
-name: Facebook Reels – Comment Worker (eQualle)
+name: Facebook Reels – Comment (eQualle)
 
 on:
   workflow_dispatch:
