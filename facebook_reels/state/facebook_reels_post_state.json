@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "rotation": {
+    "manifest_index": 0,
+    "last_day": "2026-01-01"
+  },
+  "items": {
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4",
+      "filename": "drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Seams Still Showing? Feather Joint Compound With 120 Grit",
+      "description": "If seams are still visible after drying, lightly sand the joint compound with 120 grit to knock down high spots and feather the edges before the next coat. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-01T00:30:48Z",
+      "video_id": "2058993401569345"
+    }
+  },
+  "runs": [
+    {
+      "ts_utc": "2026-01-01T00:30:48Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4",
+      "filename": "drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "2058993401569345",
+      "error": null
+    }
+  ]
+}
