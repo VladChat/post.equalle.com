@@ -1,44 +1,56 @@
 # ============================================
 # File: instagram_reels/post_one_reel.py
-# Purpose: Post exactly 1 Instagram Reel per run (from local manifests) and persist independent state
-# Notes:
-# - Instagram Graph API publishing uses container -> status -> publish flow.
-# - To publish a Reel: POST /{ig-user-id}/media with media_type=REELS, video_url, caption,
-#   then poll the container status_code until FINISHED, then POST /{ig-user-id}/media_publish.
-# - Container status check must use fields=status_code,status (NOT error_message).
+# Purpose: Post exactly 1 Instagram Reel per run (from local manifests) and persist independent state.
+#
+# Key robustness improvements:
+# - Preflight checks for video_url (200, Content-Type, Content-Length, redirects).
+# - Container retry logic: create new container if status_code=ERROR (including upload failures like 2207076).
+# - URL strategy: try original URL first; if upload fails, try "direct" resolved URL (after redirects).
+# - Better logging + state persistence (preflight, upload_url_used, last container status).
+#
+# Notes (Meta docs):
+# - Publishing requires media hosted on a publicly accessible server; Meta cURLs the media URL.
+# - Container status must be read with fields=status_code,status (no error_message for ShadowIGMediaBuilder).
 # ============================================
 
 from __future__ import annotations
 
 import json
 import os
+import re
 import time
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
+from urllib.parse import urlparse
 
 import requests
 
 
 # ----- Config (safe defaults; override via env) -----
 
-# Default IG Business/Creator User ID: equalleabrasives (can be overridden)
 DEFAULT_IG_USER_ID = "17841422239487755"
-
-# Graph API version (override if you pin a different version)
 DEFAULT_GRAPH_API_VERSION = "v21.0"
 
-# Manifest ordering (daily starting point rotates)
 MANIFEST_FILES_ORDER = ["drywall.json", "wood.json", "wet.json", "metal.json", "plastic.json"]
 
-# Caption limits (Instagram caption max is 2200 chars)
 CAPTION_MAX = 2200
-
 MAX_ATTEMPTS_PER_VIDEO = 3
 
 # Container status polling
-STATUS_POLL_TIMEOUT_SEC = 900
-STATUS_POLL_INTERVAL_SEC = 10
+STATUS_POLL_TIMEOUT_SEC = int(os.getenv("IG_STATUS_POLL_TIMEOUT_SEC", "900"))
+STATUS_POLL_INTERVAL_SEC = int(os.getenv("IG_STATUS_POLL_INTERVAL_SEC", "10"))
+
+# Retry strategy
+MAX_CONTAINER_RETRIES_PER_URL = int(os.getenv("IG_MAX_CONTAINER_RETRIES_PER_URL", "3"))
+SLEEP_BETWEEN_CONTAINER_RETRIES_SEC = int(os.getenv("IG_SLEEP_BETWEEN_CONTAINER_RETRIES_SEC", "20"))
+
+# URL preflight strategy
+PREFLIGHT_RANGE_BYTES = int(os.getenv("IG_PREFLIGHT_RANGE_BYTES", "1"))  # 1 byte is enough to validate content-type
+ALLOW_DIRECT_URL_FALLBACK = (os.getenv("IG_ALLOW_DIRECT_URL_FALLBACK", "true").strip().lower() in ("1", "true", "yes"))
+
+# Networking
+HTTP_TIMEOUT_SEC = int(os.getenv("IG_HTTP_TIMEOUT_SEC", "60"))
 
 
 @dataclass(frozen=True)
@@ -51,7 +63,6 @@ class ReelItem:
 
 
 def repo_root_from_this_file() -> Path:
-    # instagram_reels/post_one_reel.py -> repo root = two levels up
     return Path(__file__).resolve().parents[1]
 
 
@@ -94,7 +105,6 @@ def build_caption(title: str, description: str) -> str:
 
 
 def manifest_cycle_for_today(state: Dict[str, Any]) -> List[str]:
-    """Rotate the *starting* manifest once per UTC day."""
     rot = state.setdefault("rotation", {})
     today = utc_today()
 
@@ -137,7 +147,6 @@ def ensure_required_fields(raw: Dict[str, Any], manifest_name: str) -> ReelItem:
 
 
 def pick_next_item(manifest_dir: Path, state: Dict[str, Any]) -> Optional[ReelItem]:
-    """Pick 1 item using today's manifest rotation order."""
     st_items = state.get("items", {}) or {}
     ordered_names = manifest_cycle_for_today(state)
 
@@ -179,6 +188,120 @@ def graph_base(version: str) -> str:
     return f"https://graph.facebook.com/{version}"
 
 
+# ----------------------------
+# URL PRE-FLIGHT / RESOLUTION
+# ----------------------------
+
+def _is_https_url(url: str) -> bool:
+    try:
+        p = urlparse(url)
+        return p.scheme.lower() == "https"
+    except Exception:
+        return False
+
+
+def preflight_video_url(url: str) -> Dict[str, Any]:
+    """
+    Verify the URL is fetchable as a video by a generic HTTP client:
+    - must be https
+    - should return 200 (after redirects)
+    - content-type should start with video/
+    - content-length should be present (best effort)
+    We do a tiny range GET to avoid downloading the whole file.
+    """
+    out: Dict[str, Any] = {
+        "url": url,
+        "ok": False,
+        "final_url": None,
+        "status_code": None,
+        "content_type": None,
+        "content_length": None,
+        "accept_ranges": None,
+        "redirected": None,
+        "error": None,
+    }
+
+    if not _is_https_url(url):
+        out["error"] = "video_url must be HTTPS"
+        return out
+
+    headers = {
+        "User-Agent": "Mozilla/5.0",
+        "Accept": "*/*",
+    }
+    # Try a tiny range request: bytes=0-0 (1 byte) or configured size
+    # Many CDNs will answer 206; some answer 200.
+    range_end = max(0, PREFLIGHT_RANGE_BYTES - 1)
+    headers["Range"] = f"bytes=0-{range_end}"
+
+    try:
+        resp = requests.get(url, headers=headers, stream=True, allow_redirects=True, timeout=HTTP_TIMEOUT_SEC)
+        out["status_code"] = resp.status_code
+        out["final_url"] = resp.url
+        out["redirected"] = (resp.url != url)
+
+        ct = (resp.headers.get("Content-Type") or "").split(";")[0].strip().lower()
+        cl = resp.headers.get("Content-Length")
+        ar = resp.headers.get("Accept-Ranges")
+
+        out["content_type"] = ct or None
+        out["content_length"] = cl
+        out["accept_ranges"] = ar
+
+        # Important: close stream immediately (do not download)
+        try:
+            resp.close()
+        except Exception:
+            pass
+
+        # Evaluate "ok"
+        # Accept 200 or 206 for range GET
+        if resp.status_code not in (200, 206):
+            out["error"] = f"HTTP {resp.status_code}"
+            return out
+
+        # Must not be HTML (common failure with share links)
+        if ct.startswith("text/") or ct in ("text/html", "application/xhtml+xml"):
+            out["error"] = f"Not a direct video file (Content-Type={ct})"
+            return out
+
+        if not ct.startswith("video/") and ct not in ("application/octet-stream",):
+            # Some servers return octet-stream for mp4; allow it.
+            out["error"] = f"Unexpected Content-Type={ct}"
+            return out
+
+        out["ok"] = True
+        return out
+
+    except Exception as e:
+        out["error"] = str(e)
+        return out
+
+
+def build_url_candidates(original_url: str) -> List[Tuple[str, str]]:
+    """
+    Returns list of (label, url) candidates.
+    Strategy:
+      1) original url (best if it issues fresh redirect signatures)
+      2) direct resolved url (fallback; may help if Meta rejects redirects)
+    """
+    candidates: List[Tuple[str, str]] = [("original", original_url)]
+
+    if not ALLOW_DIRECT_URL_FALLBACK:
+        return candidates
+
+    pf = preflight_video_url(original_url)
+    final_url = (pf.get("final_url") or "").strip()
+    if final_url and final_url != original_url:
+        candidates.append(("direct", final_url))
+
+    return candidates
+
+
+# ----------------------------
+# IG PUBLISH FLOW
+# ----------------------------
+
 def create_reel_container(
     ig_user_id: str,
     token: str,
@@ -194,8 +317,6 @@ def create_reel_container(
       video_url=<url>
       caption=<caption>
       share_to_feed=true|false
-
-    Returns: container_id (creation_id)
     """
     url = f"{graph_base(version)}/{ig_user_id}/media"
 
@@ -207,7 +328,7 @@ def create_reel_container(
         "share_to_feed": "true" if share_to_feed else "false",
     }
 
-    resp = requests.post(url, data=data, timeout=60)
+    resp = requests.post(url, data=data, timeout=HTTP_TIMEOUT_SEC)
     if resp.status_code not in (200, 201):
         raise RuntimeError(f"create_container failed: HTTP {resp.status_code}: {resp.text[:800]}")
     j = resp.json()
@@ -220,17 +341,25 @@ def create_reel_container(
 def get_container_status(container_id: str, token: str, version: str) -> Dict[str, Any]:
     """
     GET /{ig-container-id}?fields=status_code,status
-    Note: ShadowIGMediaBuilder does NOT support error_message.
+    ShadowIGMediaBuilder does NOT support error_message field.
     """
     url = f"{graph_base(version)}/{container_id}"
     params = {
         "fields": "status_code,status",
         "access_token": token,
     }
-    resp = requests.get(url, params=params, timeout=30)
+    resp = requests.get(url, params=params, timeout=HTTP_TIMEOUT_SEC)
     if resp.status_code != 200:
         raise RuntimeError(f"container_status failed: HTTP {resp.status_code}: {resp.text[:800]}")
     return resp.json()
+
+
+def _extract_error_code(text: str) -> Optional[str]:
+    # Finds 7-digit subcodes like 2207076 in error text.
+    if not text:
+        return None
+    m = re.search(r"\b(22\d{5})\b", text)
+    return m.group(1) if m else None
 
 
 def wait_container_finished(container_id: str, token: str, version: str) -> Dict[str, Any]:
@@ -245,20 +374,18 @@ def wait_container_finished(container_id: str, token: str, version: str) -> Dict
             return last
 
         if status_code == "ERROR":
-            # Docs: if status_code is ERROR, status may contain an error subcode/value.
-            detail = last.get("status") or last
-            raise RuntimeError(f"container ERROR: {detail}")
+            detail = str(last.get("status") or last)
+            code = _extract_error_code(detail)
+            raise RuntimeError(f"container ERROR: {detail}" + (f" (subcode={code})" if code else ""))
 
-        # IN_PROGRESS, EXPIRED, etc.
         time.sleep(STATUS_POLL_INTERVAL_SEC)
 
     return last
 
 
 def publish_container(ig_user_id: str, token: str, version: str, creation_id: str) -> str:
-    """POST /{ig-user-id}/media_publish?creation_id=... -> returns IG media id"""
     url = f"{graph_base(version)}/{ig_user_id}/media_publish"
-    resp = requests.post(url, data={"access_token": token, "creation_id": creation_id}, timeout=60)
+    resp = requests.post(url, data={"access_token": token, "creation_id": creation_id}, timeout=HTTP_TIMEOUT_SEC)
     if resp.status_code not in (200, 201):
         raise RuntimeError(f"media_publish failed: HTTP {resp.status_code}: {resp.text[:800]}")
     j = resp.json()
@@ -273,8 +400,12 @@ def update_state_for_attempt(
     item: ReelItem,
     result: str,
     *,
+    upload_url_used: Optional[str] = None,
+    upload_url_label: Optional[str] = None,
+    preflight: Optional[Dict[str, Any]] = None,
     container_id: Optional[str] = None,
     media_id: Optional[str] = None,
+    container_status_last: Optional[Dict[str, Any]] = None,
     error: Optional[str] = None,
 ) -> None:
     st_items = state.setdefault("items", {})
@@ -294,10 +425,19 @@ def update_state_for_attempt(
             "last_ts_utc": utc_now_iso(),
         }
     )
+
+    if upload_url_used:
+        rec["upload_url_used"] = upload_url_used
+    if upload_url_label:
+        rec["upload_url_label"] = upload_url_label
+    if preflight is not None:
+        rec["preflight"] = preflight
     if container_id:
         rec["container_id"] = str(container_id)
     if media_id:
         rec["media_id"] = str(media_id)
+    if container_status_last is not None:
+        rec["container_status_last"] = container_status_last
     if error:
         rec["error"] = error
 
@@ -310,6 +450,8 @@ def update_state_for_attempt(
             "filename": item.filename,
             "manifest": item.manifest_name,
             "result": result,
+            "upload_url_used": upload_url_used,
+            "upload_url_label": upload_url_label,
             "container_id": container_id,
             "media_id": media_id,
             "error": error,
@@ -355,53 +497,9 @@ def main() -> int:
 
     caption = build_caption(item.title, item.description)
 
+    # Preflight original URL (store in state for debugging)
+    pf_original = preflight_video_url(item.video_url)
+    print("[preflight] original:", json.dumps(pf_original, ensure_ascii=False))
+
     if dry_run:
-        save_json_atomic(state_path, state)
-        print("DRY RUN: would post 1 IG Reel:")
-        print(f"  manifest: {item.manifest_name}")
-        print(f"  filename: {item.filename}")
-        print(f"  video_url: {item.video_url}")
-        print(f"  caption: {caption}")
-        print(f"  share_to_feed: {share_to_feed}")
-        return 0
-
-    container_id: Optional[str] = None
-    media_id: Optional[str] = None
-
-    try:
-        # 1) Create container
-        container_id = create_reel_container(
-            ig_user_id=ig_user_id,
-            token=token,
-            version=version,
-            video_url=item.video_url,
-            caption=caption,
-            share_to_feed=share_to_feed,
-        )
-
-        # 2) Wait until container is ready
-        st = wait_container_finished(container_id, token, version)
-
-        # 3) Publish
-        media_id = publish_container(ig_user_id, token, version, container_id)
-
-        update_state_for_attempt(state, item, "success", container_id=container_id, media_id=media_id, error=None)
-        save_json_atomic(state_path, state)
-
-        print(f"OK: Posted 1 IG Reel. ig_user_id={ig_user_id} media_id={media_id} manifest={item.manifest_name}")
-        try:
-            print("container_status:", st.get("status_code"), "status:", st.get("status"))
-        except Exception:
-            pass
-        return 0
-
-    except Exception as e:
-        err = str(e)[:1500]
-        update_state_for_attempt(state, item, "failed", container_id=container_id, media_id=media_id, error=err)
-        save_json_atomic(state_path, state)
-        print(f"FAILED: {err}")
-        return 1
-
-
-if __name__ == "__main__":
-    raise SystemExit(main())
+        update
