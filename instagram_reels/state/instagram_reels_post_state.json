@@ -51,7 +51,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18104776453741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 2
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-01T21:41:40Z",
+      "comment_text": "Keep the block flat so you don’t dig grooves at the edges. Are you using a sanding block or hand-only?",
+      "comment_status": "commented",
+      "comment_id": "18075095570354652",
+      "commented_ts_utc": "2026-01-01T21:41:43Z"
     }
   },
   "runs": [
@@ -78,5 +88,15 @@
       "error": null
     }
   ],
-  "comment_runs": []
+  "comment_runs": [
+    {
+      "ts_utc": "2026-01-01T21:41:43Z",
+      "media_id": "18066902354449038",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Rough_Wood_Grain_Showing-120_Grit_for_Smoothing_Raw_Wood-wood-002.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "18075095570354652",
+      "template_idx": 2
+    }
+  ]
 }
