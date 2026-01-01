@@ -36,13 +36,26 @@ DEFAULT_JITTER_MAX_SEC = 3600
 
 # 5–7 templates (human-like, short, no links)
 TEMPLATES = [
-    "Quick tip: Use light pressure with {grit} grit and keep strokes consistent. What surface are you sanding?",
-    "If scratches still show, step back one grit and blend again. What grit are you using next?",
-    "Keep the block flat—don’t dig the edges. Are you sanding wet or dry on this project?",
-    "For {surface} prep: feather the edges first, then refine. What’s the hardest part so far?",
-    "If the paper loads up, rinse/clean it and keep moving. Want a simple grit guide? Comment “GRIT”.",
-    "After sanding, wipe dust and check under a bright light. Did the scratch pattern even out?",
-    "Small circles for blending, straight passes for leveling. What finish are you aiming for?",
+    "Light pressure with {grit} grit usually blends faster than pushing hard. What are you sanding today?",
+    "If the scratch pattern looks uneven, do a few crosshatch passes and re-check. Sanding wet or dry?",
+    "Keep the block flat so you don’t dig grooves at the edges. Are you using a sanding block or hand-only?",
+    "For {surface} work, feather the edges first, then refine the center. What part is giving you trouble?",
+    "If the paper starts loading up, wipe/rinse it and keep going—clean cuts cleaner. Does it clog on your surface?",
+    "After sanding, wipe dust and check under a bright light from the side. Do the lines disappear evenly?",
+    "Small circles help blend; straight passes help level. Are you going for a smooth finish or just prep?",
+    "If you’re jumping grits, don’t skip too far—blend one step at a time. What grit did you start with?",
+    "Try a few lighter passes instead of one heavy pass—less chance of gouging. Are you seeing swirl marks?",
+    "For corners/edges, ease up and let the abrasive do the work. Are edges the hardest part for you too?",
+    "Quick check: if it still feels scratchy, you may need one grit lower for a short blend. Want a simple grit ladder?",
+    "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+    "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+    "On {surface}, sanding dust can hide defects—wipe often and re-check. Do you see it only after wiping?",
+    "If the surface heats up, slow down and lighten pressure. Are you sanding by hand or with a tool?",
+    "A quick mist/wipe (for wet sanding) can show high spots fast. Are you using water or a lubricant?",
+    "If scratches stand out after paint/primer, it usually means the previous grit marks weren’t fully blended. What grit are you finishing with?",
+    "Don’t chase one spot too long—blend the area wider and re-check. Are the edges still visible?",
+    "If you’re getting pigtails or random deep lines, the paper may be loaded or folded. Are you using fresh sheets?",
+    "Before the next coat, clean the surface well so dust doesn’t telegraph through. Do you tack-cloth or wipe down?",
 ]
 
 
@@ -258,10 +271,10 @@ def main() -> int:
     if decision == "skip":
         rec2["comment_status"] = "skipped"
         rec2["comment_skipped_ts_utc"] = utc_now_iso()
-        rec2["comment_skipped_reason"] = "policy_20pct_skip"
+        rec2["comment_skipped_reason"] = "policy_10pct_skip"
         items[video_url] = rec2
         save_json_atomic(state_path, state)
-        print(f"SKIP: Policy skip (20%). video_id={video_id} manifest={manifest}")
+        print(f"SKIP: Policy skip (10%). video_id={video_id} manifest={manifest}")
         return 0
 
     # Build message
