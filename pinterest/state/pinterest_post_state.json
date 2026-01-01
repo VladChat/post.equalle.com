@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2025-12-30"
+    "manifest_index": 2,
+    "last_day": "2026-01-01"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -74,6 +74,20 @@
       "pin_id": "839428818087908339",
       "media_id": "5471764552523780392",
       "cover_image_url": "https://i.pinimg.com/1200x/c4/6e/e8/c46ee8b36b907d8f4f0f9df059c16121.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/orange_peel_still_visible-2000_grit_wet_sanding_for_clear_coat-wet-001.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/orange_peel_still_visible-2000_grit_wet_sanding_for_clear_coat-wet-001.mp4",
+      "filename": "orange_peel_still_visible-2000_grit_wet_sanding_for_clear_coat-wet-001.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049944",
+      "destination_url": "https://equalle.com/products/2000-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "title": "Orange Peel In Clear Coat? 2000 Grit Wet Sanding Steps",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-01T13:31:08+00:00",
+      "pin_id": "839428818087943940",
+      "media_id": "5472096852226678484",
+      "cover_image_url": "https://i.pinimg.com/1200x/0a/f1/c7/0af1c708b7bdb6901e8345068d0bbfee.jpg"
     }
   },
   "runs": [
@@ -125,6 +139,16 @@
       "result": "success",
       "pin_id": "839428818087908339",
       "media_id": "5471764552523780392",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-01T13:31:08+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/orange_peel_still_visible-2000_grit_wet_sanding_for_clear_coat-wet-001.mp4",
+      "filename": "orange_peel_still_visible-2000_grit_wet_sanding_for_clear_coat-wet-001.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818087943940",
+      "media_id": "5472096852226678484",
       "error": null
     }
   ]
