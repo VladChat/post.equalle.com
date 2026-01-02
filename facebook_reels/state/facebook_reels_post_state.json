@@ -56,7 +56,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-02T13:41:03Z",
-      "video_id": "1069895788577382"
+      "video_id": "1069895788577382",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 17
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-02T14:19:19Z",
+      "comment_text": "Don’t chase one spot too long—blend the area wider and re-check. Are the edges still visible?",
+      "comment_status": "commented",
+      "comment_id": "1069895788577382_1622529375772309",
+      "commented_ts_utc": "2026-01-02T14:19:21Z"
     }
   },
   "runs": [
@@ -106,6 +116,15 @@
       "result": "commented",
       "comment_id": "1176450381267776_1405966554256851",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-01-02T14:19:21Z",
+      "video_id": "1069895788577382",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "1069895788577382_1622529375772309",
+      "template_idx": 17
     }
   ]
 }
