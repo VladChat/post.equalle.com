@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-01-01"
+    "manifest_index": 2,
+    "last_day": "2026-01-02"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -62,6 +62,30 @@
       "comment_status": "commented",
       "comment_id": "18075095570354652",
       "commented_ts_utc": "2026-01-01T21:41:43Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/orange_peel_still_visible-2000_grit_wet_sanding_for_clear_coat-wet-001.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/orange_peel_still_visible-2000_grit_wet_sanding_for_clear_coat-wet-001.mp4",
+      "filename": "orange_peel_still_visible-2000_grit_wet_sanding_for_clear_coat-wet-001.mp4",
+      "manifest": "wet.json",
+      "title": "Orange Peel In Clear Coat? 2000 Grit Wet Sanding Steps",
+      "description": "Orange peel in clear coat? Wet sand with 2000 grit to level texture before polishing. Keep the surface wet, use light pressure, crosshatch passes, wipe often, and check reflection under a work light. Wet or dry use. — eQualle",
+      "caption": "Orange Peel In Clear Coat? 2000 Grit Wet Sanding Steps\n\nOrange peel in clear coat? Wet sand with 2000 grit to level texture before polishing. Keep the surface wet, use light pressure, crosshatch passes, wipe often, and check reflection under a work light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-02T13:36:10Z",
+      "mode": "binary",
+      "container_id": "18104832325741317",
+      "media_id": "18093946504740351",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18104832325741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18104832325741317"
+      }
     }
   },
   "runs": [
@@ -85,6 +109,17 @@
       "filename": "Rough_Wood_Grain_Showing-120_Grit_for_Smoothing_Raw_Wood-wood-002.mp4",
       "container_id": "18104776453741317",
       "media_id": "18066902354449038",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-02T13:36:10Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wet.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/orange_peel_still_visible-2000_grit_wet_sanding_for_clear_coat-wet-001.mp4",
+      "filename": "orange_peel_still_visible-2000_grit_wet_sanding_for_clear_coat-wet-001.mp4",
+      "container_id": "18104832325741317",
+      "media_id": "18093946504740351",
       "error": null
     }
   ],
