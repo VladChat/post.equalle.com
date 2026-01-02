@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-01-01"
+    "manifest_index": 3,
+    "last_day": "2026-01-02"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -88,6 +88,20 @@
       "pin_id": "839428818087943940",
       "media_id": "5472096852226678484",
       "cover_image_url": "https://i.pinimg.com/1200x/0a/f1/c7/0af1c708b7bdb6901e8345068d0bbfee.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_on_metal-80_grit_for_removing_surface_rust-metal-001.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_on_metal-80_grit_for_removing_surface_rust-metal-001.mp4",
+      "filename": "rust_spots_showing_on_metal-80_grit_for_removing_surface_rust-metal-001.mp4",
+      "manifest": "metal.json",
+      "board_id": "839428886736049946",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-80-10-sheets",
+      "title": "Remove Surface Rust on Metal With 80 Grit Sandpaper",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-02T13:31:40+00:00",
+      "pin_id": "839428818087963999",
+      "media_id": "5472277990608025477",
+      "cover_image_url": "https://i.pinimg.com/1200x/7e/24/3d/7e243d139a71ac872332a488c5a5deef.jpg"
     }
   },
   "runs": [
@@ -149,6 +163,16 @@
       "result": "success",
       "pin_id": "839428818087943940",
       "media_id": "5472096852226678484",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-02T13:31:40+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_on_metal-80_grit_for_removing_surface_rust-metal-001.mp4",
+      "filename": "rust_spots_showing_on_metal-80_grit_for_removing_surface_rust-metal-001.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "pin_id": "839428818087963999",
+      "media_id": "5472277990608025477",
       "error": null
     }
   ]
