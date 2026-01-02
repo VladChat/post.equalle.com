@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-01-01"
+    "manifest_index": 1,
+    "last_day": "2026-01-02"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -46,6 +46,17 @@
       "comment_status": "commented",
       "comment_id": "1176450381267776_1405966554256851",
       "commented_ts_utc": "2026-01-01T14:21:49Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4",
+      "filename": "Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4",
+      "manifest": "wood.json",
+      "title": "Paint Peeling on Wood: 180 Grit Wood Paint Prep",
+      "description": "Paint Peeling on Wood? Use 180 grit for wood paint prep. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-02T13:41:03Z",
+      "video_id": "1069895788577382"
     }
   },
   "runs": [
@@ -65,6 +76,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "1176450381267776",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-02T13:41:03Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4",
+      "filename": "Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "1069895788577382",
       "error": null
     }
   ],
