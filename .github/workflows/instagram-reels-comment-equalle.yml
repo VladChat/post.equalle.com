@@ -1,4 +1,4 @@
-name: Instagram Reels – Comment (eQualle)
+name: Instagram Reels – Comment Worker (eQualle)
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: instagram-reels-comment-worker-equalle
+  group: instagram-reels-equalle-state
   cancel-in-progress: false
 
 jobs:
@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -54,6 +56,6 @@ jobs:
             exit 0
           fi
           git commit -m "instagram_reels: update comment state"
-          git push
-
-
+          git fetch origin main
+          git rebase origin/main
+          git push origin main

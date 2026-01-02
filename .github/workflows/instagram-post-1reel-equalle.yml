@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: instagram-post-1reel-equalle
+  group: instagram-reels-equalle-state
   cancel-in-progress: false
 
 jobs:
@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -55,4 +57,6 @@ jobs:
             exit 0
           fi
           git commit -m "instagram_reels: update post state"
-          git push
+          git fetch origin main
+          git rebase origin/main
+          git push origin main
