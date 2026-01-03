@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-01-02"
+    "manifest_index": 2,
+    "last_day": "2026-01-03"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -67,6 +67,17 @@
       "comment_status": "commented",
       "comment_id": "1069895788577382_1622529375772309",
       "commented_ts_utc": "2026-01-02T14:19:21Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/orange_peel_still_visible-2000_grit_wet_sanding_for_clear_coat-wet-001.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/orange_peel_still_visible-2000_grit_wet_sanding_for_clear_coat-wet-001.mp4",
+      "filename": "orange_peel_still_visible-2000_grit_wet_sanding_for_clear_coat-wet-001.mp4",
+      "manifest": "wet.json",
+      "title": "Orange Peel In Clear Coat? 2000 Grit Wet Sanding Steps",
+      "description": "Orange peel in clear coat? Wet sand with 2000 grit to level texture before polishing. Keep the surface wet, use light pressure, crosshatch passes, wipe often, and check reflection under a work light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-03T13:36:52Z",
+      "video_id": "848656231323463"
     }
   },
   "runs": [
@@ -95,6 +106,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "1069895788577382",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-03T13:36:52Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/orange_peel_still_visible-2000_grit_wet_sanding_for_clear_coat-wet-001.mp4",
+      "filename": "orange_peel_still_visible-2000_grit_wet_sanding_for_clear_coat-wet-001.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "848656231323463",
       "error": null
     }
   ],
