@@ -109,7 +109,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18104918575741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 2
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-03T13:55:44Z",
+      "comment_text": "Keep the block flat so you don’t dig grooves at the edges. Are you using a sanding block or hand-only?",
+      "comment_status": "commented",
+      "comment_id": "18554203360011947",
+      "commented_ts_utc": "2026-01-03T13:55:47Z"
     }
   },
   "runs": [
@@ -166,6 +176,15 @@
       "manifest": "wood.json",
       "result": "commented",
       "comment_id": "18075095570354652",
+      "template_idx": 2
+    },
+    {
+      "ts_utc": "2026-01-03T13:55:47Z",
+      "media_id": "18315134971247148",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_on_metal-80_grit_for_removing_surface_rust-metal-001.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18554203360011947",
       "template_idx": 2
     }
   ]
