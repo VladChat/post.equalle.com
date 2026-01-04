@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: facebook-reels-comment-worker-equalle
+  group: state-writer-main
   cancel-in-progress: false
 
 jobs:
@@ -36,9 +36,9 @@ jobs:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           GRAPH_API_VERSION: "v21.0"
         run: |
-          python facebook_reels/comment_worker.py
+          python -u facebook_reels/comment_worker.py
 
-      - name: Commit state (if changed)
+      - name: Commit state (safe)
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
@@ -48,4 +48,6 @@ jobs:
             exit 0
           fi
           git commit -m "facebook_reels: update comment state"
-          git push
+          git fetch origin main
+          git rebase origin/main
+          git push --force-with-lease
