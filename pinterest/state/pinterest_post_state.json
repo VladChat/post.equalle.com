@@ -116,6 +116,20 @@
       "pin_id": "839428818088010364",
       "media_id": "5472695224373423253",
       "cover_image_url": "https://i.pinimg.com/1200x/a7/4e/c2/a74ec20764d1b612fc4a24cad04db9dc.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4",
+      "filename": "plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049964",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8DTGHP",
+      "title": "Plastic Feels Too Rough? Use 180 Grit To Smooth It",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-04T20:49:18+00:00",
+      "pin_id": "839428818088010407",
+      "media_id": "5472695446050779326",
+      "cover_image_url": "https://i.pinimg.com/1200x/70/84/ef/7084ef11fffb192a63726529b9230524.jpg"
     }
   },
   "runs": [
@@ -197,6 +211,16 @@
       "result": "success",
       "pin_id": "839428818088010364",
       "media_id": "5472695224373423253",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-04T20:49:18+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4",
+      "filename": "plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818088010407",
+      "media_id": "5472695446050779326",
       "error": null
     }
   ]
