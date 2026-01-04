@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-01-03"
+    "manifest_index": 4,
+    "last_day": "2026-01-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -120,6 +120,30 @@
       "comment_status": "commented",
       "comment_id": "18554203360011947",
       "commented_ts_utc": "2026-01-03T13:55:47Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4",
+      "filename": "scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4",
+      "manifest": "plastic.json",
+      "title": "Scratches Showing On Plastic? Use 220 Grit For Surface Prep",
+      "description": "If plastic scratches keep showing, 220 grit helps level the surface and reduce visible marks before paint or coating. Sand lightly with even pressure, then wipe clean and inspect under light. Sandpaper eQualle",
+      "caption": "Scratches Showing On Plastic? Use 220 Grit For Surface Prep\n\nIf plastic scratches keep showing, 220 grit helps level the surface and reduce visible marks before paint or coating. Sand lightly with even pressure, then wipe clean and inspect under light. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-04T13:33:03Z",
+      "mode": "binary",
+      "container_id": "18105003634741317",
+      "media_id": "17852992980567735",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18105003634741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18105003634741317"
+      }
     }
   },
   "runs": [
@@ -165,6 +189,17 @@
       "filename": "rust_spots_showing_on_metal-80_grit_for_removing_surface_rust-metal-001.mp4",
       "container_id": "18104918575741317",
       "media_id": "18315134971247148",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-04T13:33:03Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "plastic.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4",
+      "filename": "scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4",
+      "container_id": "18105003634741317",
+      "media_id": "17852992980567735",
       "error": null
     }
   ],
