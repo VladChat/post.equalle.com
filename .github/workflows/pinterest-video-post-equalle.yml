@@ -3,7 +3,7 @@ name: Pinterest — Post 1 Video Pin
 on:
   workflow_dispatch:
   schedule:
-    # Once per day (UTC). 13:00 UTC ≈ 7am Chicago in winter / 8am in summer.
+    # Once per day (UTC). 13:00 UTC ≈ 7am Chicago 
     - cron: "0 13 * * *"
 
 permissions:
@@ -20,7 +20,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # FIX: нужно, чтобы git pull/rebase работал
+          fetch-depth: 0  # need full history for rebase/pull
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -38,13 +38,27 @@ jobs:
         run: |
           python pinterest/post_one_video_pin.py
 
-      - name: Commit & push state
+      - name: Commit & push state (rebase-safe)
         run: |
+          set -e
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # FIX: если в main уже есть новые коммиты (другой workflow), подтягиваем их, чтобы push не отклонили
-          git pull --rebase origin main
+          # If there are remote commits (other workflows), rebase cleanly without losing our local state changes.
+          git fetch origin main
+
+          # Stash ONLY our state change before rebase (so rebase doesn't fail on uncommitted changes)
+          if ! git diff --quiet -- pinterest/state/pinterest_post_state.json; then
+            git stash push -u -m "pinterest-state" -- pinterest/state/pinterest_post_state.json
+          fi
+
+          git rebase origin/main
+
+          # Restore state changes (if we stashed them)
+          if git stash list | grep -q "pinterest-state"; then
+            git stash pop
+          fi
 
           git add pinterest/state/pinterest_post_state.json
           if git diff --cached --quiet; then
@@ -53,4 +67,10 @@ jobs:
           fi
 
           git commit -m "Update pinterest post state [skip ci]"
-          git push
+
+          # Push; if race happens again, retry once with fresh rebase
+          if ! git push; then
+            git fetch origin main
+            git rebase origin/main
+            git push
+          fi
