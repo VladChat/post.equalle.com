@@ -20,7 +20,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0  # FIX: нужно, чтобы git pull/rebase работал
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -43,6 +43,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+          # FIX: если в main уже есть новые коммиты (другой workflow), подтягиваем их, чтобы push не отклонили
+          git pull --rebase origin main
+
           git add pinterest/state/pinterest_post_state.json
           if git diff --cached --quiet; then
             echo "No state changes."
@@ -50,6 +53,4 @@ jobs:
           fi
 
           git commit -m "Update pinterest post state [skip ci]"
-
-          git pull --rebase origin main
           git push
