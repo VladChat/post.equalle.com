@@ -4,11 +4,13 @@
 #          using TWO state files:
 #          - youtube-post/state/youtube_post_state.json      (read-only)
 #          - youtube-post/state/youtube_comment_state.json   (write)
+#
 # Fixes (2026-01-05):
-# - Do NOT do immediate "exists" verification after POST (YouTube often lags returning the new thread).
-#   Immediate verify causes false "missing" -> retries -> attempts burn -> no eligible videos.
-# - Treat "missing" as legacy/lag and reconcile to "commented_unverified" to prevent repost loops.
-# - Add minimal diagnostics explaining WHY there is no eligible video (status/attempts per success run).
+# - DO NOT immediately verify comment existence after POST (YouTube often lags).
+# - Add verification on subsequent runs for commented_unverified/commented.
+#   If commentThread still not found after a delay -> mark not_found and allow one retry.
+# - Preserve COMMENT_PROBABILITY logic.
+# - Add helpful diagnostics + direct YouTube links for commentThread IDs.
 # ============================================
 
 from __future__ import annotations
@@ -33,6 +35,9 @@ MAX_COMMENT_ATTEMPTS = 2
 
 # Jitter
 DEFAULT_JITTER_MAX_SEC = 36
+
+# Verification
+VERIFY_DELAY_SEC = 180  # do not verify earlier than this after "commented_ts_utc"
 
 # Templates (expanded by you)
 TEMPLATES = [
@@ -219,12 +224,28 @@ def youtube_post_comment_http(*, access_token: str, video_id: str, text: str) ->
     return cid or "unknown"
 
 
+def youtube_commentthread_exists(*, access_token: str, comment_thread_id: str) -> bool:
+    if not comment_thread_id or comment_thread_id == "unknown":
+        return False
+    url = "https://www.googleapis.com/youtube/v3/commentThreads"
+    params = {"part": "id", "id": comment_thread_id}
+    headers = {"Authorization": f"Bearer {access_token}"}
+    resp = requests.get(url, params=params, headers=headers, timeout=30)
+    if resp.status_code == 404:
+        return False
+    resp.raise_for_status()
+    data = resp.json() or {}
+    items = data.get("items") or []
+    return bool(items)
+
+
+def yt_comment_link(video_id: str, comment_thread_id: str) -> str:
+    if not video_id or not comment_thread_id:
+        return ""
+    return f"https://www.youtube.com/watch?v={video_id}&lc={comment_thread_id}"
+
+
 def reconcile_legacy_missing(cstate: Dict[str, Any]) -> bool:
-    """
-    Legacy statuses:
-    - 'missing' was often caused by immediate verification lag.
-    Convert to 'commented_unverified' to prevent repost loops.
-    """
     items = cstate.get("items")
     if not isinstance(items, dict):
         return False
@@ -239,6 +260,79 @@ def reconcile_legacy_missing(cstate: Dict[str, Any]) -> bool:
             rec["comment_reconciled_ts_utc"] = utc_now_iso()
             items[vid] = rec
             changed = True
+    return changed
+
+
+def verify_pass(*, access_token: str, cstate: Dict[str, Any]) -> bool:
+    """
+    Verify older commented_unverified/commented records.
+    If not found after delay -> mark not_found and allow one retry.
+    """
+    items = cstate.get("items")
+    if not isinstance(items, dict):
+        return False
+
+    now = time.time()
+    changed = False
+
+    for vid, rec in list(items.items()):
+        if not isinstance(rec, dict):
+            continue
+
+        status = str(rec.get("comment_status") or "").strip().lower()
+        if status not in {"commented_unverified", "commented"}:
+            continue
+
+        cid = str(rec.get("comment_id") or "").strip()
+        ts = str(rec.get("commented_ts_utc") or "").strip()
+
+        # no timestamp -> don't verify
+        if not cid or not ts:
+            continue
+
+        # parse ISO-ish: YYYY-MM-DDTHH:MM:SSZ
+        m = re.match(r"^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})Z$", ts)
+        if not m:
+            continue
+
+        # convert to epoch (UTC) without datetime import
+        # crude but stable: use time.strptime
+        try:
+            t_struct = time.strptime(ts, "%Y-%m-%dT%H:%M:%SZ")
+            posted_epoch = time.mktime(t_struct)  # local, but good enough for delay check
+        except Exception:
+            continue
+
+        if (now - posted_epoch) < VERIFY_DELAY_SEC:
+            continue
+
+        try:
+            exists = youtube_commentthread_exists(access_token=access_token, comment_thread_id=cid)
+        except Exception as e:
+            rec["comment_verify_error"] = str(e)[:500]
+            items[vid] = rec
+            # don't change status on verify failures (avoid duplicates)
+            continue
+
+        if exists:
+            if status != "commented":
+                rec["comment_status"] = "commented"
+                rec["comment_verified_ts_utc"] = utc_now_iso()
+                items[vid] = rec
+                changed = True
+        else:
+            # comment thread not found -> mark not_found and allow one retry even if attempts were burned by legacy logic
+            rec["comment_status"] = "not_found"
+            rec["comment_not_found_ts_utc"] = utc_now_iso()
+
+            attempts = int(rec.get("comment_attempts", 0) or 0)
+            if attempts >= MAX_COMMENT_ATTEMPTS:
+                rec["comment_attempts"] = max(0, MAX_COMMENT_ATTEMPTS - 1)
+                rec["comment_attempts_reopened_ts_utc"] = utc_now_iso()
+
+            items[vid] = rec
+            changed = True
+
     return changed
 
 
@@ -262,8 +356,7 @@ def pick_eligible_video_run(
         rec = items.get(video_id) or {}
         status = str(rec.get("comment_status") or "").strip().lower()
 
-        # IMPORTANT: do not duplicate comments.
-        # We treat both "commented" and "commented_unverified" as DONE.
+        # DONE states
         if status in {"commented", "commented_unverified"}:
             continue
 
@@ -315,13 +408,19 @@ def main() -> int:
     else:
         cstate = {"version": 1, "items": {}, "runs": []}
 
-    changed = reconcile_legacy_missing(cstate)
+    changed = False
+    changed = reconcile_legacy_missing(cstate) or changed
 
     try:
         access_token = get_access_token()
     except Exception as e:
         print(f"FAILED: cannot get access token: {e}")
         return 2
+
+    # Verify older posted comments (after delay) and reopen one retry if truly not found
+    changed = verify_pass(access_token=access_token, cstate=cstate) or changed
+    if changed:
+        save_json_atomic(comment_state_path, cstate)
 
     picked = pick_eligible_video_run(post_state=post_state, comment_state=cstate)
     if not picked:
@@ -331,8 +430,6 @@ def main() -> int:
         items_n = len(items) if isinstance(items, dict) else 0
         print(f"No eligible successful YouTube uploads found for commenting yet. post_state_runs={runs_n} post_state_items={items_n}")
         debug_no_eligible(post_state, cstate)
-        if changed:
-            save_json_atomic(comment_state_path, cstate)
         return 0
 
     run, rec = picked
@@ -418,8 +515,7 @@ def main() -> int:
     try:
         cid = youtube_post_comment_http(access_token=access_token, video_id=video_id, text=msg)
 
-        # FIX: DO NOT immediately verify existence (YouTube lag).
-        # Successful POST == success; mark unverified to prevent duplicates.
+        # Do NOT immediately verify here.
         rec["comment_status"] = "commented_unverified"
         rec["comment_id"] = cid
         rec["commented_ts_utc"] = utc_now_iso()
@@ -431,7 +527,12 @@ def main() -> int:
         )
         save_json_atomic(comment_state_path, cstate)
 
-        print(f"OK: Comment posted (unverified to avoid lag duplicates). video_id={video_id} comment_id={cid} manifest={manifest}")
+        link = yt_comment_link(video_id, cid)
+        if link:
+            print(f"OK: Comment posted (unverified). video_id={video_id} comment_id={cid}")
+            print(f"Open comment: {link}")
+        else:
+            print(f"OK: Comment posted (unverified). video_id={video_id} comment_id={cid}")
         return 0
 
     except requests.HTTPError as e:
