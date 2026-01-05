@@ -15,6 +15,18 @@
       "comment_status": "commented",
       "comment_id": "UgwH2wXfa6HLN9Vd-fF4AaABAg",
       "commented_ts_utc": "2026-01-05T04:31:18Z"
+    },
+    "e6tiGf--Y5Y": {
+      "video_id": "e6tiGf--Y5Y",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4",
+      "manifest": "",
+      "comment_plan": {
+        "decision": "skip",
+        "template_idx": 15
+      },
+      "comment_status": "skipped",
+      "comment_skipped_ts_utc": "2026-01-05T14:33:18Z",
+      "comment_skipped_reason": "policy_skip"
     }
   },
   "runs": [
