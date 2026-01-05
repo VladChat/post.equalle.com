@@ -1,369 +1,967 @@
 {
-  "version": 1,
-  "source": "pinterest_manifests",
   "action": "metal",
   "tag": "metal",
   "video_base_url": "https://github.com/VladChat/video/releases/download/metal/",
-  "items": [
+  "pins": [
     {
       "filename": "rust_spots_showing_on_metal-80_grit_for_removing_surface_rust-metal-001.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_on_metal-80_grit_for_removing_surface_rust-metal-001.mp4",
       "title": "Remove Surface Rust on Metal With 80 Grit Sandpaper",
-      "description": "Surface rust spots on metal? Use 80 grit sandpaper to cut through oxidation fast and prep the area for primer or paint. Focus on even pressure and feather the edges for a smooth transition."
+      "description": "Surface rust spots on metal? Use 80 grit sandpaper to cut through oxidation fast and prep the area for primer or paint. Focus on even pressure and feather the edges for a smooth transition.",
+      "alt": "How to remove surface rust spots from metal using 80 grit sandpaper before primer or paint",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-9-x-11-grit-80-10-sheets"
+      },
+      "status": "ready"
     },
     {
       "filename": "flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4",
       "title": "Heavy Rust Removal on Metal With 60 Grit Sandpaper",
-      "description": "Flaky rust that won’t come off? Start with 60 grit to break through heavy scale fast. Work in controlled passes, then step up to a finer grit to smooth the surface before primer or paint."
+      "description": "Flaky rust that won’t come off? Start with 60 grit to break through heavy scale fast. Work in controlled passes, then step up to a finer grit to smooth the surface before primer or paint.",
+      "alt": "Heavy rust removal on metal using 60 grit sandpaper to strip flaky rust and prep for primer",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7RDBQ1"
+      },
+      "status": "ready"
     },
     {
       "filename": "metal_surface_covered_in_rust-80_grit_for_rust_stripping-metal-003.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_surface_covered_in_rust-80_grit_for_rust_stripping-metal-003.mp4",
       "title": "Strip Rust From a Metal Surface Using 80 Grit",
-      "description": "Metal completely covered in rust? Use 80 grit to strip oxidation efficiently and reveal clean metal. Keep the pad moving and finish with a finer grit for a smoother paint-ready surface."
+      "description": "Metal completely covered in rust? Use 80 grit to strip oxidation efficiently and reveal clean metal. Keep the pad moving and finish with a finer grit for a smoother paint-ready surface.",
+      "alt": "Stripping heavy surface rust from metal with 80 grit sandpaper for paint prep",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-80"
+      },
+      "status": "ready"
     },
     {
       "filename": "rust_bleeding_through_paint-80_grit_for_rust_prep_before_paint-metal-004.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_bleeding_through_paint-80_grit_for_rust_prep_before_paint-metal-004.mp4",
       "title": "Stop Rust Bleed-Through: Prep Metal With 80 Grit",
-      "description": "Seeing rust stains bleed through paint? Sand back to clean metal with 80 grit, feather the edges, and remove all oxidation before repainting. Proper prep helps the finish last longer."
+      "description": "Seeing rust stains bleed through paint? Sand back to clean metal with 80 grit, feather the edges, and remove all oxidation before repainting. Proper prep helps the finish last longer.",
+      "alt": "Preventing rust bleeding through paint by sanding metal with 80 grit before repainting",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7RP91J"
+      },
+      "status": "ready"
     },
     {
       "filename": "corrosion_still_visible_after_sanding-120_grit_for_rust_cleanup-metal-005.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/corrosion_still_visible_after_sanding-120_grit_for_rust_cleanup-metal-005.mp4",
       "title": "Clean Up Remaining Corrosion With 120 Grit Sandpaper",
-      "description": "Corrosion still visible after sanding? Switch to 120 grit to clean up rust residue and refine the surface. This step helps create a smoother base for primer and topcoat."
+      "description": "Corrosion still visible after sanding? Switch to 120 grit to clean up rust residue and refine the surface. This step helps create a smoother base for primer and topcoat.",
+      "alt": "Removing remaining corrosion on metal with 120 grit sandpaper to refine the surface",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-9-x-11-grit-120-10-sheets"
+      },
+      "status": "ready"
     },
     {
       "filename": "rust_pits_in_the_metal-60-80_grit_for_deep_rust_removal-metal-006.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_pits_in_the_metal-60-80_grit_for_deep_rust_removal-metal-006.mp4",
       "title": "Deep Rust Pits on Metal: Use 60–80 Grit to Cut In",
-      "description": "Rust pits in the metal? Start with 60 grit to reach the pit edges, then move to 80 grit to even out the surface. The goal is a clean, uniform profile before primer or filler."
+      "description": "Rust pits in the metal? Start with 60 grit to reach the pit edges, then move to 80 grit to even out the surface. The goal is a clean, uniform profile before primer or filler.",
+      "alt": "Deep rust pit removal on metal using 60 to 80 grit sandpaper in steps for better prep",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7R3MC1"
+      },
+      "status": "ready"
     },
     {
       "filename": "old_rust_stains_on_steel-80_grit_for_cleaning_rusted_steel-metal-007.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/old_rust_stains_on_steel-80_grit_for_cleaning_rusted_steel-metal-007.mp4",
       "title": "Remove Old Rust Stains on Steel With 80 Grit",
-      "description": "Old rust stains stuck on steel? Use 80 grit to clean the surface and level light pitting. Sand evenly and finish with a finer grit if you want a smoother coating base."
+      "description": "Old rust stains stuck on steel? Use 80 grit to clean the surface and level light pitting. Sand evenly and finish with a finer grit if you want a smoother coating base.",
+      "alt": "Cleaning old rust stains on steel using 80 grit sandpaper for a clean paint-ready surface",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-80"
+      },
+      "status": "ready"
     },
     {
       "filename": "rusty_metal_feels_rough-80_grit_for_smoothing_after_rust_removal-metal-008.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rusty_metal_feels_rough-80_grit_for_smoothing_after_rust_removal-metal-008.mp4",
       "title": "Smooth Rust-Cleaned Metal With 80 Grit Before Paint",
-      "description": "Metal feels rough after rust removal? Use 80 grit to smooth the surface and knock down sharp texture. Keep your strokes consistent to avoid gouges and create an even finish."
+      "description": "Metal feels rough after rust removal? Use 80 grit to smooth the surface and knock down sharp texture. Keep your strokes consistent to avoid gouges and create an even finish.",
+      "alt": "Smoothing rough metal after rust removal with 80 grit sandpaper before primer or paint",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RHVWCN9"
+      },
+      "status": "ready"
     },
     {
       "filename": "surface_rust_wont_smooth_out-120_grit_for_refining_rusted_metal-metal-009.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/surface_rust_wont_smooth_out-120_grit_for_refining_rusted_metal-metal-009.mp4",
       "title": "Refine Rusted Metal That Won’t Smooth Out With 120 Grit",
-      "description": "Surface rust won’t smooth out? Move to 120 grit to refine the scratches from coarse sanding and level remaining rust texture. This helps your primer lay down more evenly."
+      "description": "Surface rust won’t smooth out? Move to 120 grit to refine the scratches from coarse sanding and level remaining rust texture. This helps your primer lay down more evenly.",
+      "alt": "Refining rusted metal with 120 grit sandpaper to smooth texture and improve primer adhesion",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-120"
+      },
+      "status": "ready"
     },
     {
       "filename": "rust_keeps_coming_back-80_grit_for_proper_rust_removal-metal-010.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_keeps_coming_back-80_grit_for_proper_rust_removal-metal-010.mp4",
       "title": "Rust Keeps Coming Back? Re-Prep Metal With 80 Grit",
-      "description": "If rust keeps returning, the prep wasn’t deep enough. Use 80 grit to remove oxidation completely, feather into clean metal, and clean the surface before applying primer."
+      "description": "If rust keeps returning, the prep wasn’t deep enough. Use 80 grit to remove oxidation completely, feather into clean metal, and clean the surface before applying primer.",
+      "alt": "Fixing recurring rust by sanding metal with 80 grit to remove oxidation before priming",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07Q8BWSHP"
+      },
+      "status": "ready"
     },
     {
       "filename": "heavy_corrosion_on_metal_parts-60_grit_for_aggressive_rust_removal-metal-011.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/heavy_corrosion_on_metal_parts-60_grit_for_aggressive_rust_removal-metal-011.mp4",
       "title": "Aggressive Rust Removal on Metal Parts With 60 Grit",
-      "description": "Heavy corrosion on metal parts? Use 60 grit for aggressive removal to break through thick rust and scale. After you reach clean metal, step up in grit to refine the scratches."
+      "description": "Heavy corrosion on metal parts? Use 60 grit for aggressive removal to break through thick rust and scale. After you reach clean metal, step up in grit to refine the scratches.",
+      "alt": "Aggressive rust removal on metal parts using 60 grit sandpaper to strip heavy corrosion",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-9-x-11-grit-60-10"
+      },
+      "status": "ready"
     },
     {
       "filename": "rust_edges_still_visible-120_grit_for_feathering_rust_areas-metal-012.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_edges_still_visible-120_grit_for_feathering_rust_areas-metal-012.mp4",
       "title": "Feather Rust Edges on Metal With 120 Grit",
-      "description": "Rust edges still visible after cleanup? Use 120 grit to feather the transition into clean metal so the repair blends smoothly. This step helps reduce edge lines under paint."
+      "description": "Rust edges still visible after cleanup? Use 120 grit to feather the transition into clean metal so the repair blends smoothly. This step helps reduce edge lines under paint.",
+      "alt": "Feathering rust edges on metal with 120 grit sandpaper to blend into clean metal",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7VFK4N"
+      },
+      "status": "ready"
     },
     {
       "filename": "metal_looks_pitted_after_rust_removal-120_grit_for_smoothing_rust_pits-metal-013.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_looks_pitted_after_rust_removal-120_grit_for_smoothing_rust_pits-metal-013.mp4",
       "title": "Smooth Rust Pits on Metal After Cleanup With 120 Grit",
-      "description": "Metal looks pitted after rust removal? Use 120 grit to smooth pit edges and refine the surface. Work gradually and avoid over-sanding the surrounding metal."
+      "description": "Metal looks pitted after rust removal? Use 120 grit to smooth pit edges and refine the surface. Work gradually and avoid over-sanding the surrounding metal.",
+      "alt": "Smoothing rust pit texture on metal with 120 grit sandpaper after rust removal",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-120"
+      },
+      "status": "ready"
     },
     {
       "filename": "rust_under_old_paint-80_grit_for_stripping_rusted_paint_areas-metal-014.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_under_old_paint-80_grit_for_stripping_rusted_paint_areas-metal-014.mp4",
       "title": "Rust Under Old Paint: Strip Back With 80 Grit",
-      "description": "Rust hiding under old paint? Use 80 grit to strip the coating and remove oxidation underneath. Feather the perimeter so the repair transitions smoothly into surrounding paint."
+      "description": "Rust hiding under old paint? Use 80 grit to strip the coating and remove oxidation underneath. Feather the perimeter so the repair transitions smoothly into surrounding paint.",
+      "alt": "Removing rust under old paint on metal by stripping with 80 grit sandpaper before repainting",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZK2LKRX"
+      },
+      "status": "ready"
     },
     {
       "filename": "rusty_metal_not_ready_for_paint-120_grit_for_final_rust_prep-metal-015.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rusty_metal_not_ready_for_paint-120_grit_for_final_rust_prep-metal-015.mp4",
       "title": "Final Rust Prep for Paint on Metal With 120 Grit",
-      "description": "Metal not ready for paint after rust removal? Use 120 grit for final rust prep to refine the surface and remove lingering roughness. Wipe clean before priming."
+      "description": "Metal not ready for paint after rust removal? Use 120 grit for final rust prep to refine the surface and remove lingering roughness. Wipe clean before priming.",
+      "alt": "Final rust prep before painting metal using 120 grit sandpaper for a smoother surface",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-100-sheets-grit-120"
+      },
+      "status": "ready"
     },
     {
       "filename": "oxidation_on_bare_metal-80_grit_for_removing_metal_oxidation-metal-016.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/oxidation_on_bare_metal-80_grit_for_removing_metal_oxidation-metal-016.mp4",
       "title": "Remove Oxidation on Bare Metal With 80 Grit Sandpaper",
-      "description": "Oxidation on bare metal? Use 80 grit to remove the dull oxidized layer and expose clean metal. Sand evenly, then refine with a higher grit if you’re painting or sealing."
+      "description": "Oxidation on bare metal? Use 80 grit to remove the dull oxidized layer and expose clean metal. Sand evenly, then refine with a higher grit if you’re painting or sealing.",
+      "alt": "Removing oxidation from bare metal using 80 grit sandpaper to expose clean metal for coating",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7RP91J"
+      },
+      "status": "ready"
     },
     {
       "filename": "rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4",
       "title": "Remove Rust Scale on Metal With 60–80 Grit Sandpaper",
-      "description": "Rust scale hard to remove? Start with 60 grit to break the crust, then switch to 80 grit to level the surface. Use steady pressure and overlap passes so you don’t leave low spots."
+      "description": "Rust scale hard to remove? Start with 60 grit to break the crust, then switch to 80 grit to level the surface. Use steady pressure and overlap passes so you don’t leave low spots.",
+      "alt": "Removing rust scale from metal using 60 to 80 grit sandpaper to strip heavy scale and level the surface",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-60"
+      },
+      "status": "ready"
     },
     {
       "filename": "rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4",
       "title": "Final Rust Cleanup on Metal With 120 Grit",
-      "description": "Rust spots still showing after cleanup? Use 120 grit to remove leftover oxidation and refine the scratch pattern. This helps primer and paint lay down smoother and more evenly."
+      "description": "Rust spots still showing after cleanup? Use 120 grit to remove leftover oxidation and refine the scratch pattern. This helps primer and paint lay down smoother and more evenly.",
+      "alt": "Final rust cleanup on metal using 120 grit sandpaper to remove remaining rust spots before painting",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RHVV8DK"
+      },
+      "status": "ready"
     },
     {
       "filename": "metal_still_feels_corroded-80_grit_for_rust_surface_leveling-metal-019.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_still_feels_corroded-80_grit_for_rust_surface_leveling-metal-019.mp4",
       "title": "Level a Corroded Metal Surface With 80 Grit Sandpaper",
-      "description": "Metal still feels corroded after rust removal? Use 80 grit to level the surface and remove rough oxidation texture. Then step up to a finer grit if you want a smoother finish."
+      "description": "Metal still feels corroded after rust removal? Use 80 grit to level the surface and remove rough oxidation texture. Then step up to a finer grit if you want a smoother finish.",
+      "alt": "Leveling a corroded metal surface with 80 grit sandpaper to smooth rough rust texture",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-100-sheets-grit-80"
+      },
+      "status": "ready"
     },
     {
       "filename": "rust_damage_still_visible-120_grit_for_smoothing_corroded_metal-metal-020.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_damage_still_visible-120_grit_for_smoothing_corroded_metal-metal-020.mp4",
       "title": "Smooth Visible Rust Damage on Metal With 120 Grit",
-      "description": "Rust damage still visible? Use 120 grit to smooth corroded areas and refine the surface after coarse sanding. Focus on blending the transition so the repair won’t telegraph under paint."
+      "description": "Rust damage still visible? Use 120 grit to smooth corroded areas and refine the surface after coarse sanding. Focus on blending the transition so the repair won’t telegraph under paint.",
+      "alt": "Smoothing visible rust damage on metal using 120 grit sandpaper to blend corroded areas",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07QD2GTY4"
+      },
+      "status": "ready"
     },
     {
       "filename": "old_paint_still_on_metal-80_grit_for_removing_paint_from_metal-metal-021.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/old_paint_still_on_metal-80_grit_for_removing_paint_from_metal-metal-021.mp4",
       "title": "Remove Old Paint From Metal With 80 Grit Sandpaper",
-      "description": "Old paint still on metal? Use 80 grit to strip the remaining coating and expose a clean, even surface. Feather the edges where paint meets bare metal so primer blends smoothly."
+      "description": "Old paint still on metal? Use 80 grit to strip the remaining coating and expose a clean, even surface. Feather the edges where paint meets bare metal so primer blends smoothly.",
+      "alt": "Removing old paint from metal using 80 grit sandpaper to strip coating and prep for primer",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-9-x-11-grit-80-10-sheets"
+      },
+      "status": "ready"
     },
     {
       "filename": "paint_wont_sand_off_metal-60-80_grit_for_paint_removal-metal-022.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_wont_sand_off_metal-60-80_grit_for_paint_removal-metal-022.mp4",
       "title": "Paint Won’t Sand Off Metal? Start With 60–80 Grit",
-      "description": "Paint won’t sand off metal? Start with 60 grit to break the top layer, then use 80 grit to even out the surface. Keep your strokes consistent to avoid deep gouges."
+      "description": "Paint won’t sand off metal? Start with 60 grit to break the top layer, then use 80 grit to even out the surface. Keep your strokes consistent to avoid deep gouges.",
+      "alt": "Removing stubborn paint from metal using 60 to 80 grit sandpaper for faster stripping",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7L15KV"
+      },
+      "status": "ready"
     },
     {
       "filename": "multiple_paint_layers_on_metal-80_grit_for_stripping_old_paint-metal-023.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/multiple_paint_layers_on_metal-80_grit_for_stripping_old_paint-metal-023.mp4",
       "title": "Strip Multiple Paint Layers From Metal With 80 Grit",
-      "description": "Multiple paint layers on metal? Use 80 grit to strip old paint efficiently and level the surface. After removal, step up in grit to refine scratches before primer."
+      "description": "Multiple paint layers on metal? Use 80 grit to strip old paint efficiently and level the surface. After removal, step up in grit to refine scratches before primer.",
+      "alt": "Stripping multiple paint layers from metal using 80 grit sandpaper to prep for primer",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-80"
+      },
+      "status": "ready"
     },
     {
       "filename": "flaking_paint_on_metal_surface-80_grit_for_removing_loose_paint-metal-024.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/flaking_paint_on_metal_surface-80_grit_for_removing_loose_paint-metal-024.mp4",
       "title": "Remove Loose Flaking Paint on Metal Using 80 Grit",
-      "description": "Flaking paint on metal? Use 80 grit to remove loose paint and feather the edges into solid coating. This creates a cleaner transition for primer and a smoother topcoat."
+      "description": "Flaking paint on metal? Use 80 grit to remove loose paint and feather the edges into solid coating. This creates a cleaner transition for primer and a smoother topcoat.",
+      "alt": "Removing flaking paint from a metal surface with 80 grit sandpaper and feathering edges",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RHVWCN9"
+      },
+      "status": "ready"
     },
     {
       "filename": "paint_chipping_around_edges-120_grit_for_feathering_paint_edges-metal-025.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_chipping_around_edges-120_grit_for_feathering_paint_edges-metal-025.mp4",
       "title": "Feather Chipping Paint Edges on Metal With 120 Grit",
-      "description": "Paint chipping around the edges? Use 120 grit to feather paint edges and smooth the transition into surrounding coating. This helps reduce visible edge lines after repainting."
+      "description": "Paint chipping around the edges? Use 120 grit to feather paint edges and smooth the transition into surrounding coating. This helps reduce visible edge lines after repainting.",
+      "alt": "Feathering chipped paint edges on metal using 120 grit sandpaper for smoother repainting",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-9-x-11-grit-120-10-sheets"
+      },
+      "status": "ready"
     },
     {
       "filename": "glossy_paint_needs_removal-120_grit_for_dulling_painted_metal-metal-026.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/glossy_paint_needs_removal-120_grit_for_dulling_painted_metal-metal-026.mp4",
       "title": "Dull Glossy Paint on Metal With 120 Grit Before Recoat",
-      "description": "Glossy paint needs removal or scuffing? Use 120 grit to dull the surface and improve adhesion for the next coat. Sand lightly and evenly so you don’t cut through too far."
+      "description": "Glossy paint needs removal or scuffing? Use 120 grit to dull the surface and improve adhesion for the next coat. Sand lightly and evenly so you don’t cut through too far.",
+      "alt": "Dulling glossy painted metal with 120 grit sandpaper to prep for a new coat",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RLSHPZV"
+      },
+      "status": "ready"
     },
     {
       "filename": "powder_coat_too_hard_to_remove-60-80_grit_for_coating_removal-metal-027.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/powder_coat_too_hard_to_remove-60-80_grit_for_coating_removal-metal-027.mp4",
       "title": "Remove Tough Powder Coat From Metal With 60–80 Grit",
-      "description": "Powder coat too hard to remove? Start with 60 grit to cut the coating, then switch to 80 grit to level the surface. Finish with a finer grit to reduce scratches before primer."
+      "description": "Powder coat too hard to remove? Start with 60 grit to cut the coating, then switch to 80 grit to level the surface. Finish with a finer grit to reduce scratches before primer.",
+      "alt": "Removing powder coat from metal using 60 to 80 grit sandpaper for coating removal",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-60"
+      },
+      "status": "ready"
     },
     {
       "filename": "paint_residue_still_showing-120_grit_for_cleaning_painted_metal-metal-028.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_residue_still_showing-120_grit_for_cleaning_painted_metal-metal-028.mp4",
       "title": "Clean Paint Residue on Metal With 120 Grit Sandpaper",
-      "description": "Paint residue still showing? Use 120 grit to clean up leftover coating and smooth the scratch pattern from coarse stripping. This step helps primer apply more evenly."
+      "description": "Paint residue still showing? Use 120 grit to clean up leftover coating and smooth the scratch pattern from coarse stripping. This step helps primer apply more evenly.",
+      "alt": "Cleaning remaining paint residue on metal using 120 grit sandpaper before priming",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7VFK4N"
+      },
+      "status": "ready"
     },
     {
       "filename": "old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4",
       "title": "Level an Uneven Painted Metal Surface With 80 Grit",
-      "description": "Old paint causing an uneven surface? Use 80 grit to level ridges and knock down high areas before recoating. Sand evenly and feather edges to avoid visible transitions."
+      "description": "Old paint causing an uneven surface? Use 80 grit to level ridges and knock down high areas before recoating. Sand evenly and feather edges to avoid visible transitions.",
+      "alt": "Leveling uneven painted metal with 80 grit sandpaper to smooth ridges before repainting",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-80"
+      },
+      "status": "ready"
     },
     {
       "filename": "paint_peeling_after_prep-120_grit_for_proper_paint_removal-metal-030.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_peeling_after_prep-120_grit_for_proper_paint_removal-metal-030.mp4",
       "title": "Fix Paint Peeling After Prep: Re-Sand Metal With 120 Grit",
-      "description": "Paint peeling after prep usually means the surface wasn’t clean or smooth enough. Use 120 grit to remove weak paint, feather the edges, and refine the surface before primer."
+      "description": "Paint peeling after prep usually means the surface wasn’t clean or smooth enough. Use 120 grit to remove weak paint, feather the edges, and refine the surface before primer.",
+      "alt": "Fixing peeling paint on metal by resanding with 120 grit to improve adhesion before repainting",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RHVV8DK"
+      },
+      "status": "ready"
     },
     {
       "filename": "clear_coat_still_on_metal-120_grit_for_removing_clear_coat-metal-031.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/clear_coat_still_on_metal-120_grit_for_removing_clear_coat-metal-031.mp4",
       "title": "Remove Clear Coat From Metal With 120 Grit Sandpaper",
-      "description": "Clear coat still on metal? Use 120 grit to cut through the remaining clear coat and level the surface. Sand in consistent passes, then wipe clean so you can spot any shiny areas you missed."
+      "description": "Clear coat still on metal? Use 120 grit to cut through the remaining clear coat and level the surface. Sand in consistent passes, then wipe clean so you can spot any shiny areas you missed.",
+      "alt": "Removing remaining clear coat from metal using 120 grit sandpaper to prep the surface for repainting",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-120"
+      },
+      "status": "ready"
     },
     {
       "filename": "paint_build-up_on_metal_parts-80_grit_for_heavy_paint_removal-metal-032.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_build-up_on_metal_parts-80_grit_for_heavy_paint_removal-metal-032.mp4",
       "title": "Remove Heavy Paint Build-Up on Metal Parts Using 80 Grit",
-      "description": "Paint build-up on metal parts can hide rust and leave ridges. Use 80 grit to strip thick layers and flatten high spots. Finish with a finer grit to refine scratches before primer."
+      "description": "Paint build-up on metal parts can hide rust and leave ridges. Use 80 grit to strip thick layers and flatten high spots. Finish with a finer grit to refine scratches before primer.",
+      "alt": "Removing heavy paint build-up from metal parts with 80 grit sandpaper to strip thick layers",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07Q8BWSHP"
+      },
+      "status": "ready"
     },
     {
       "filename": "paint_lines_showing_through_finish-120_grit_for_smoothing_paint_edges-metal-033.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_lines_showing_through_finish-120_grit_for_smoothing_paint_edges-metal-033.mp4",
       "title": "Smooth Paint Edge Lines on Metal With 120 Grit Before Recoat",
-      "description": "Paint lines showing through the finish? Use 120 grit to smooth paint edges and feather ridges into the surrounding surface. This helps reduce edge telegraphing after the next coat."
+      "description": "Paint lines showing through the finish? Use 120 grit to smooth paint edges and feather ridges into the surrounding surface. This helps reduce edge telegraphing after the next coat.",
+      "alt": "Smoothing paint edge lines on metal using 120 grit sandpaper to feather ridges before recoating",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-120"
+      },
+      "status": "ready"
     },
     {
       "filename": "coating_not_fully_removed-80-120_grit_for_paint_cleanup-metal-034.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/coating_not_fully_removed-80-120_grit_for_paint_cleanup-metal-034.mp4",
       "title": "Coating Not Fully Removed? Use 80–120 Grit for Metal Paint Cleanup",
-      "description": "Coating not fully removed after stripping? Use 80 grit to clear stubborn spots, then switch to 120 grit to smooth and blend the surface. Wipe clean to check for remaining sheen."
+      "description": "Coating not fully removed after stripping? Use 80 grit to clear stubborn spots, then switch to 120 grit to smooth and blend the surface. Wipe clean to check for remaining sheen.",
+      "alt": "Cleaning up leftover coating on metal using 80 to 120 grit sandpaper to remove residue and blend edges",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZK2LKRX"
+      },
+      "status": "ready"
     },
     {
       "filename": "metal_not_clean_after_paint_removal-120_grit_for_final_paint_prep-metal-035.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_not_clean_after_paint_removal-120_grit_for_final_paint_prep-metal-035.mp4",
       "title": "Final Paint Prep on Metal: Clean Up With 120 Grit Sandpaper",
-      "description": "Metal not clean after paint removal? Use 120 grit to remove leftover coating haze and even out the scratch pattern. This creates a more uniform surface before primer."
+      "description": "Metal not clean after paint removal? Use 120 grit to remove leftover coating haze and even out the scratch pattern. This creates a more uniform surface before primer.",
+      "alt": "Final paint prep on metal using 120 grit sandpaper to remove leftover residue and smooth the surface",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-100-sheets-grit-120"
+      },
+      "status": "ready"
     },
     {
       "filename": "metal_surface_not_ready_for_paint-120_grit_for_metal_paint_prep-metal-036.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_surface_not_ready_for_paint-120_grit_for_metal_paint_prep-metal-036.mp4",
       "title": "Metal Surface Not Ready for Paint? Prep With 120 Grit",
-      "description": "Metal surface not ready for paint often needs a more even scratch pattern. Use 120 grit to smooth the surface and remove minor imperfections. Clean dust before priming."
+      "description": "Metal surface not ready for paint often needs a more even scratch pattern. Use 120 grit to smooth the surface and remove minor imperfections. Clean dust before priming.",
+      "alt": "Preparing a metal surface for paint using 120 grit sandpaper to smooth and refine scratches",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07QD2GTY4"
+      },
+      "status": "ready"
     },
     {
       "filename": "weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4",
       "title": "Smooth a Rough Weld Area on Metal With 120 Grit Sandpaper",
-      "description": "Weld area feels too rough? Use 120 grit to smooth welded metal and blend the transition into the surrounding surface. Keep the sanding block flat to avoid digging into edges."
+      "description": "Weld area feels too rough? Use 120 grit to smooth welded metal and blend the transition into the surrounding surface. Keep the sanding block flat to avoid digging into edges.",
+      "alt": "Smoothing welded metal with 120 grit sandpaper to blend weld transitions and reduce roughness",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-9-x-11-grit-120-10-sheets"
+      },
+      "status": "ready"
     },
     {
       "filename": "metal_feels_uneven_after_grinding-150_grit_for_leveling_metal_surface-metal-038.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_feels_uneven_after_grinding-150_grit_for_leveling_metal_surface-metal-038.mp4",
       "title": "Level Metal After Grinding With 150 Grit Sandpaper",
-      "description": "Metal feels uneven after grinding? Use 150 grit to level the surface and reduce grinding marks. Sand in a crosshatch pattern to avoid waves, then wipe clean to inspect."
+      "description": "Metal feels uneven after grinding? Use 150 grit to level the surface and reduce grinding marks. Sand in a crosshatch pattern to avoid waves, then wipe clean to inspect.",
+      "alt": "Leveling metal after grinding using 150 grit sandpaper to reduce grinder marks and smooth the surface",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7T4FFL"
+      },
+      "status": "ready"
     },
     {
       "filename": "paint_not_sticking_to_metal-180_grit_for_proper_metal_prep-metal-039.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_not_sticking_to_metal-180_grit_for_proper_metal_prep-metal-039.mp4",
       "title": "Paint Not Sticking to Metal? Scuff Prep With 180 Grit",
-      "description": "Paint not sticking to metal is often an adhesion issue. Use 180 grit to scuff the surface evenly and create a consistent profile for primer. Degrease and remove dust before painting."
+      "description": "Paint not sticking to metal is often an adhesion issue. Use 180 grit to scuff the surface evenly and create a consistent profile for primer. Degrease and remove dust before painting.",
+      "alt": "Scuffing metal with 180 grit sandpaper to improve paint adhesion and prep for primer",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use"
+      },
+      "status": "ready"
     },
     {
       "filename": "metal_shows_sanding_marks-150-180_grit_for_metal_surface_refinement-metal-040.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_shows_sanding_marks-150-180_grit_for_metal_surface_refinement-metal-040.mp4",
       "title": "Refine Sanding Marks on Metal With 150–180 Grit",
-      "description": "Metal shows sanding marks after rough prep? Use 150 grit to start refining, then move to 180 grit to smooth the scratch pattern. This helps primer and paint lay down more evenly."
+      "description": "Metal shows sanding marks after rough prep? Use 150 grit to start refining, then move to 180 grit to smooth the scratch pattern. This helps primer and paint lay down more evenly.",
+      "alt": "Refining sanding marks on metal using 150 to 180 grit sandpaper to smooth the surface before primer",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RJZ3C39"
+      },
+      "status": "ready"
     },
     {
       "filename": "bare_metal_feels_too_rough-150_grit_for_smoothing_bare_metal-metal-041.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/bare_metal_feels_too_rough-150_grit_for_smoothing_bare_metal-metal-041.mp4",
       "title": "Smooth Bare Metal That Feels Too Rough Using 150 Grit",
-      "description": "Bare metal feels too rough after stripping? Use 150 grit to smooth the surface and reduce deep scratches. Keep pressure even and finish by wiping down to remove sanding dust."
+      "description": "Bare metal feels too rough after stripping? Use 150 grit to smooth the surface and reduce deep scratches. Keep pressure even and finish by wiping down to remove sanding dust.",
+      "alt": "Smoothing rough bare metal with 150 grit sandpaper to prepare for primer and paint",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/150-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use"
+      },
+      "status": "ready"
     },
     {
       "filename": "metal_needs_scuffing_before_primer-180_grit_for_metal_primer_prep-metal-042.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_needs_scuffing_before_primer-180_grit_for_metal_primer_prep-metal-042.mp4",
       "title": "Scuff Metal Before Primer With 180 Grit for Better Adhesion",
-      "description": "Metal needs scuffing before primer to help it grip. Use 180 grit to scuff evenly without gouging. Clean and degrease the surface so primer bonds consistently."
+      "description": "Metal needs scuffing before primer to help it grip. Use 180 grit to scuff evenly without gouging. Clean and degrease the surface so primer bonds consistently.",
+      "alt": "Scuffing metal before primer using 180 grit sandpaper to improve adhesion and coating durability",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ8DTGHP"
+      },
+      "status": "ready"
     },
     {
       "filename": "surface_too_smooth_after_cleanup-150-180_grit_for_controlled_scuffing-metal-043.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/surface_too_smooth_after_cleanup-150-180_grit_for_controlled_scuffing-metal-043.mp4",
       "title": "Surface Too Smooth After Cleanup? Use 150–180 Grit for Controlled Scuffing",
-      "description": "If the surface feels too smooth after cleanup, primer may not grip evenly. Use 150 grit to start a uniform scuff, then switch to 180 grit to refine the scratch pattern. Wipe clean and degrease before coating."
+      "description": "If the surface feels too smooth after cleanup, primer may not grip evenly. Use 150 grit to start a uniform scuff, then switch to 180 grit to refine the scratch pattern. Wipe clean and degrease before coating.",
+      "alt": "Controlled scuffing on metal using 150 to 180 grit sandpaper to improve primer adhesion after cleanup",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-150"
+      },
+      "status": "ready"
     },
     {
       "filename": "metal_looks_patchy_before_paint-180_grit_for_even_metal_prep-metal-044.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_looks_patchy_before_paint-180_grit_for_even_metal_prep-metal-044.mp4",
       "title": "Even Out Patchy Metal Before Paint With 180 Grit Sandpaper",
-      "description": "Metal looks patchy before paint when the scratch pattern is uneven. Use 180 grit to scuff consistently and blend dull and shiny spots into one uniform finish. Clean the surface so primer lays down evenly."
+      "description": "Metal looks patchy before paint when the scratch pattern is uneven. Use 180 grit to scuff consistently and blend dull and shiny spots into one uniform finish. Clean the surface so primer lays down evenly.",
+      "alt": "Sanding patchy metal with 180 grit sandpaper to create an even surface before primer and paint",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RGRN3PL"
+      },
+      "status": "ready"
     },
     {
       "filename": "weld_area_not_blending_in-150-180_grit_for_blending_welded_areas-metal-045.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_area_not_blending_in-150-180_grit_for_blending_welded_areas-metal-045.mp4",
       "title": "Blend a Weld Area That Won’t Match: Use 150–180 Grit on Metal",
-      "description": "Weld area not blending in? Use 150 grit to flatten the transition, then move to 180 grit to smooth and blend into the surrounding metal. Keep pressure even to avoid low spots around the weld."
+      "description": "Weld area not blending in? Use 150 grit to flatten the transition, then move to 180 grit to smooth and blend into the surrounding metal. Keep pressure even to avoid low spots around the weld.",
+      "alt": "Blending welded metal areas using 150 to 180 grit sandpaper to smooth transitions before finishing",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-150"
+      },
+      "status": "ready"
     },
     {
       "filename": "metal_feels_sharp_around_edges-150_grit_for_softening_metal_edges-metal-046.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_feels_sharp_around_edges-150_grit_for_softening_metal_edges-metal-046.mp4",
       "title": "Soften Sharp Metal Edges Safely With 150 Grit Sandpaper",
-      "description": "Metal feels sharp around edges? Use 150 grit to break the edge and smooth burrs without over-rounding. Sand along the edge in controlled passes, then check by hand and remove dust before painting."
+      "description": "Metal feels sharp around edges? Use 150 grit to break the edge and smooth burrs without over-rounding. Sand along the edge in controlled passes, then check by hand and remove dust before painting.",
+      "alt": "Softening sharp metal edges using 150 grit sandpaper to remove burrs and make edges safer to handle",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07QF44CQT"
+      },
+      "status": "ready"
     },
     {
       "filename": "surface_not_clean_enough_for_welding-120_grit_for_pre-weld_prep-metal-047.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/surface_not_clean_enough_for_welding-120_grit_for_pre-weld_prep-metal-047.mp4",
       "title": "Pre-Weld Prep: Clean Metal With 120 Grit for a Better Weld Surface",
-      "description": "Surface not clean enough for welding? Use 120 grit to remove paint, oxidation, and light rust where the weld will go. Finish by wiping down to remove dust so the weld area stays clean."
+      "description": "Surface not clean enough for welding? Use 120 grit to remove paint, oxidation, and light rust where the weld will go. Finish by wiping down to remove dust so the weld area stays clean.",
+      "alt": "Pre-weld surface preparation using 120 grit sandpaper to clean metal and remove oxidation before welding",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-120"
+      },
+      "status": "ready"
     },
     {
       "filename": "sharp_metal_edges_after_cutting-150_grit_for_softening_metal_edges-metal-048.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/sharp_metal_edges_after_cutting-150_grit_for_softening_metal_edges-metal-048.mp4",
       "title": "Smooth Sharp Cut Metal Edges With 150 Grit (Quick Deburr)",
-      "description": "Sharp metal edges after cutting? Use 150 grit to deburr and soften the edge for safer handling. Focus on the cut line, keep strokes consistent, and check the edge often so you don’t over-round it."
+      "description": "Sharp metal edges after cutting? Use 150 grit to deburr and soften the edge for safer handling. Focus on the cut line, keep strokes consistent, and check the edge often so you don’t over-round it.",
+      "alt": "Deburring sharp cut metal edges using 150 grit sandpaper to soften edges and remove burrs",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RHVW4J5"
+      },
+      "status": "ready"
     },
     {
       "filename": "weld_beads_standing_too_high-120_grit_for_leveling_weld_beads-metal-049.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_beads_standing_too_high-120_grit_for_leveling_weld_beads-metal-049.mp4",
       "title": "Level High Weld Beads on Metal With 120 Grit Sandpaper",
-      "description": "Weld beads standing too high? Use 120 grit to level the bead and smooth the high spots. Work slowly, keep the sanding surface flat, and blend the edges so the transition is less noticeable."
+      "description": "Weld beads standing too high? Use 120 grit to level the bead and smooth the high spots. Work slowly, keep the sanding surface flat, and blend the edges so the transition is less noticeable.",
+      "alt": "Leveling raised weld beads using 120 grit sandpaper to smooth high spots and blend the weld area",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-120"
+      },
+      "status": "ready"
     },
     {
       "filename": "metal_corners_hard_to_smooth-150_grit_for_sanding_metal_corners-metal-050.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_corners_hard_to_smooth-150_grit_for_sanding_metal_corners-metal-050.mp4",
       "title": "Sand Metal Corners Cleanly With 150 Grit for Smoother Edges",
-      "description": "Metal corners hard to smooth? Use 150 grit to clean up corners and remove burrs while keeping the shape crisp. Fold the sheet for control, sand in short passes, then wipe clean to inspect."
+      "description": "Metal corners hard to smooth? Use 150 grit to clean up corners and remove burrs while keeping the shape crisp. Fold the sheet for control, sand in short passes, then wipe clean to inspect.",
+      "alt": "Sanding metal corners with 150 grit sandpaper to smooth edges and remove burrs without rounding corners",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7T4FFL"
+      },
+      "status": "ready"
     },
     {
       "filename": "weld_area_looks_uneven-150_grit_for_blending_welded_metal-metal-051.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_area_looks_uneven-150_grit_for_blending_welded_metal-metal-051.mp4",
       "title": "Blend an Uneven Weld Area on Metal With 150 Grit Sandpaper",
-      "description": "Weld area looks uneven after grinding? Use 150 grit to blend the surface and reduce visible transitions. Sand evenly around the weld zone, then clean off dust to check the contour under light."
+      "description": "Weld area looks uneven after grinding? Use 150 grit to blend the surface and reduce visible transitions. Sand evenly around the weld zone, then clean off dust to check the contour under light.",
+      "alt": "Blending uneven welded metal using 150 grit sandpaper to smooth transitions and prep for finishing",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-100-sheets-grit-150"
+      },
+      "status": "ready"
     },
     {
       "filename": "edges_catching_on_hands-150_grit_for_edge_cleanup_on_metal-metal-052.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/edges_catching_on_hands-150_grit_for_edge_cleanup_on_metal-metal-052.mp4",
       "title": "Edges Catching on Hands? Clean Up Metal Edges With 150 Grit",
-      "description": "Edges catching on hands usually means burrs or sharp high spots. Use 150 grit to smooth the edge and remove snags without changing the part too much. Brush off dust and re-check by touch."
+      "description": "Edges catching on hands usually means burrs or sharp high spots. Use 150 grit to smooth the edge and remove snags without changing the part too much. Brush off dust and re-check by touch.",
+      "alt": "Smoothing snagging metal edges using 150 grit sandpaper to remove burrs and make edges safer",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RJZ3C39"
+      },
+      "status": "ready"
     },
     {
       "filename": "metal_details_feel_too_rough-180_grit_for_detail_metal_sanding-metal-053.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_details_feel_too_rough-180_grit_for_detail_metal_sanding-metal-053.mp4",
       "title": "Detail Sanding on Metal: Use 180 Grit to Smooth Rough Spots",
-      "description": "Metal details feel too rough after initial sanding? Use 180 grit for detail sanding to smooth tight areas and refine scratches. Fold the sheet for control and use light pressure to avoid flat spots."
+      "description": "Metal details feel too rough after initial sanding? Use 180 grit for detail sanding to smooth tight areas and refine scratches. Fold the sheet for control and use light pressure to avoid flat spots.",
+      "alt": "Detail sanding rough metal areas using 180 grit sandpaper to refine scratches and smooth small spots",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-180"
+      },
+      "status": "ready"
     },
     {
       "filename": "small_metal_parts_hard_to_prep-150_grit_for_hand_sanding_metal_parts-metal-054.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/small_metal_parts_hard_to_prep-150_grit_for_hand_sanding_metal_parts-metal-054.mp4",
       "title": "Hand Sand Small Metal Parts With 150 Grit for Better Surface Prep",
-      "description": "Small metal parts hard to prep with power tools? Use 150 grit for hand sanding so you can control pressure and reach tight shapes. Aim for an even scratch pattern, then wipe clean before primer."
+      "description": "Small metal parts hard to prep with power tools? Use 150 grit for hand sanding so you can control pressure and reach tight shapes. Aim for an even scratch pattern, then wipe clean before primer.",
+      "alt": "Hand sanding small metal parts using 150 grit sandpaper to prep tight areas for primer and paint",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07QF44CQT"
+      },
+      "status": "ready"
     },
     {
       "filename": "weld_transitions_too_visible-180_grit_for_smoothing_weld_transitions-metal-055.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_transitions_too_visible-180_grit_for_smoothing_weld_transitions-metal-055.mp4",
       "title": "Make Weld Transitions Less Visible Using 180 Grit on Metal",
-      "description": "Weld transitions too visible after grinding? Use 180 grit to smooth the transition and refine the scratch pattern. Blend outward past the weld line so the surface looks more uniform under paint."
+      "description": "Weld transitions too visible after grinding? Use 180 grit to smooth the transition and refine the scratch pattern. Blend outward past the weld line so the surface looks more uniform under paint.",
+      "alt": "Smoothing visible weld transitions using 180 grit sandpaper to blend edges and prep metal for finishing",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-180"
+      },
+      "status": "ready"
     },
     {
       "filename": "metal_edges_show_scratches-180_grit_for_edge_scratch_refinement-metal-056.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_edges_show_scratches-180_grit_for_edge_scratch_refinement-metal-056.mp4",
       "title": "Refine Scratches on Metal Edges With 180 Grit Sandpaper",
-      "description": "Metal edges show scratches after rough sanding? Use 180 grit to refine edge scratches and smooth the surface for a cleaner finish. Keep strokes consistent and clean the edge to inspect under light."
+      "description": "Metal edges show scratches after rough sanding? Use 180 grit to refine edge scratches and smooth the surface for a cleaner finish. Keep strokes consistent and clean the edge to inspect under light.",
+      "alt": "Refining scratched metal edges using 180 grit sandpaper to smooth and prep edges for paint or coating",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07QG6R8Y1"
+      },
+      "status": "ready"
     },
     {
       "filename": "detail_areas_not_blending_in-150-180_grit_for_metal_detail_blending-metal-057.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/detail_areas_not_blending_in-150-180_grit_for_metal_detail_blending-metal-057.mp4",
       "title": "Blend Metal Detail Areas With 150–180 Grit for a More Even Finish",
-      "description": "Detail areas not blending in? Start with 150 grit to level the spot, then use 180 grit to blend into the surrounding metal. Extend your sanding a bit wider than the repair so the finish looks uniform."
+      "description": "Detail areas not blending in? Start with 150 grit to level the spot, then use 180 grit to blend into the surrounding metal. Extend your sanding a bit wider than the repair so the finish looks uniform.",
+      "alt": "Blending metal detail areas using 150 to 180 grit sandpaper to smooth transitions and even out the finish",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/150-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use"
+      },
+      "status": "ready"
     },
     {
       "filename": "corners_look_over-sanded-180_grit_for_controlled_metal_sanding-metal-058.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/corners_look_over-sanded-180_grit_for_controlled_metal_sanding-metal-058.mp4",
       "title": "Fix Over-Sanded Metal Corners With Controlled 180 Grit Passes",
-      "description": "Corners look over-sanded? Use 180 grit with light pressure to even out the scratch pattern without removing more material than needed. Blend outward from the corner to reduce visible sanding halos."
+      "description": "Corners look over-sanded? Use 180 grit with light pressure to even out the scratch pattern without removing more material than needed. Blend outward from the corner to reduce visible sanding halos.",
+      "alt": "Correcting over-sanded metal corners using 180 grit sandpaper to smooth scratch patterns with controlled passes",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RJZ55RL"
+      },
+      "status": "ready"
     },
     {
       "filename": "final_touch_needed_on_metal-220_grit_for_final_metal_prep-metal-059.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/final_touch_needed_on_metal-220_grit_for_final_metal_prep-metal-059.mp4",
       "title": "Final Metal Prep Before Paint: Use 220 Grit for the Last Pass",
-      "description": "Final touch needed on metal before paint? Use 220 grit for a light final pass to refine scratches and smooth the surface. Clean thoroughly after sanding so dust doesn’t interfere with primer or paint."
+      "description": "Final touch needed on metal before paint? Use 220 grit for a light final pass to refine scratches and smooth the surface. Clean thoroughly after sanding so dust doesn’t interfere with primer or paint.",
+      "alt": "Final sanding on metal using 220 grit sandpaper to refine scratches and prep the surface for primer and paint",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets"
+      },
+      "status": "ready"
     },
     {
       "filename": "metal_details_not_ready_for_paint-180-220_grit_for_final_detail_prep-metal-060.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_details_not_ready_for_paint-180-220_grit_for_final_detail_prep-metal-060.mp4",
       "title": "Final Detail Prep on Metal: Use 180–220 Grit Before Paint",
-      "description": "Metal details not ready for paint? Use 180 grit to scuff and level small areas, then switch to 220 grit to refine and smooth. This helps reduce visible scratches and supports a cleaner finish coat."
+      "description": "Metal details not ready for paint? Use 180 grit to scuff and level small areas, then switch to 220 grit to refine and smooth. This helps reduce visible scratches and supports a cleaner finish coat.",
+      "alt": "Final detail sanding on metal using 180 to 220 grit sandpaper to prep small areas before painting",
+      "board": {
+        "name": "Metal Polishing & Rust Repair",
+        "id": "839428886736049946"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ8DTGHP"
+      },
+      "status": "ready"
     }
   ]
 }

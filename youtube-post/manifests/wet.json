@@ -1,369 +1,967 @@
 {
-  "version": 1,
-  "source": "pinterest_manifests",
   "action": "wet",
   "tag": "Wet",
   "video_base_url": "https://github.com/VladChat/video/releases/download/Wet/",
-  "items": [
+  "pins": [
     {
       "filename": "orange_peel_still_visible-2000_grit_wet_sanding_for_clear_coat-wet-001.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/orange_peel_still_visible-2000_grit_wet_sanding_for_clear_coat-wet-001.mp4",
       "title": "Orange Peel In Clear Coat? 2000 Grit Wet Sanding Steps",
-      "description": "Orange peel in clear coat? Wet sand with 2000 grit to level texture before polishing. Keep the surface wet, use light pressure, crosshatch passes, wipe often, and check reflection under a work light. Wet or dry use. — eQualle"
+      "description": "Orange peel in clear coat? Wet sand with 2000 grit to level texture before polishing. Keep the surface wet, use light pressure, crosshatch passes, wipe often, and check reflection under a work light. Wet or dry use. — eQualle",
+      "alt": "Orange peel in clear coat: wet sand with 2000 grit, keep surface wet, use light pressure, crosshatch passes, and inspect under a work light.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/2000-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use"
+      },
+      "status": "ready"
     },
     {
       "filename": "clear_coat_feels_too_rough-1500_grit_wet_sand_before_polishing-wet-002.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_feels_too_rough-1500_grit_wet_sand_before_polishing-wet-002.mp4",
       "title": "Clear Coat Too Rough? 1500 Grit Wet Sand Before Polishing",
-      "description": "Clear coat feels too rough? Wet sand with 1500 grit to smooth texture before polishing. Keep the surface wet, use light pressure, crosshatch passes, wipe often, and stop once the texture levels. Wet or dry use. — eQualle"
+      "description": "Clear coat feels too rough? Wet sand with 1500 grit to smooth texture before polishing. Keep the surface wet, use light pressure, crosshatch passes, wipe often, and stop once the texture levels. Wet or dry use. — eQualle",
+      "alt": "Wet sand rough clear coat with 1500 grit using light pressure, crosshatch passes, and frequent wipe-down checks before polishing.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7T3663"
+      },
+      "status": "ready"
     },
     {
       "filename": "dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4",
       "title": "Dust Nibs In Clear Coat? 2000 Grit Wet Sand Between Coats",
-      "description": "Dust nibs in clear coat? Wet sand with 2000 grit between coats to knock down nibs without heavy scratching. Keep it wet, use light pressure, wipe clean often, and re-check under a work light before recoating. Wet or dry use. — eQualle"
+      "description": "Dust nibs in clear coat? Wet sand with 2000 grit between coats to knock down nibs without heavy scratching. Keep it wet, use light pressure, wipe clean often, and re-check under a work light before recoating. Wet or dry use. — eQualle",
+      "alt": "Remove dust nibs in clear coat by wet sanding with 2000 grit between coats, using light pressure and checking under a work light.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-2000"
+      },
+      "status": "ready"
     },
     {
       "filename": "scratches_after_paint_job-1500_grit_wet_sand_for_paint_correction-wet-004.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_after_paint_job-1500_grit_wet_sand_for_paint_correction-wet-004.mp4",
       "title": "Scratches After Paint Job? 1500 Grit Wet Sand For Correction",
-      "description": "Scratches showing after a paint job? Wet sand with 1500 grit to level the scratch edges and even the surface before polishing. Keep the surface wet, use light pressure, wipe often, and stop once defects fade evenly. Wet or dry use. — eQualle"
+      "description": "Scratches showing after a paint job? Wet sand with 1500 grit to level the scratch edges and even the surface before polishing. Keep the surface wet, use light pressure, wipe often, and stop once defects fade evenly. Wet or dry use. — eQualle",
+      "alt": "Correct scratches after a paint job by wet sanding with 1500 grit, keeping the surface wet and wiping often to check progress.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RFT4WDT"
+      },
+      "status": "ready"
     },
     {
       "filename": "surface_not_ready_for_polish-2000_grit_wet_sand_before_polishing-wet-005.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_not_ready_for_polish-2000_grit_wet_sand_before_polishing-wet-005.mp4",
       "title": "Not Ready To Polish? 2000 Grit Wet Sand For Clear Coat Prep",
-      "description": "Surface not ready for polish? Wet sand with 2000 grit to refine the finish and reduce sanding lines before polishing. Keep it wet, use light pressure, crosshatch passes, and wipe clean often to inspect under strong light. Wet or dry use. — eQualle"
+      "description": "Surface not ready for polish? Wet sand with 2000 grit to refine the finish and reduce sanding lines before polishing. Keep it wet, use light pressure, crosshatch passes, and wipe clean often to inspect under strong light. Wet or dry use. — eQualle",
+      "alt": "Prep clear coat for polishing by wet sanding with 2000 grit using light pressure, crosshatch passes, and frequent inspection under light.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-2000"
+      },
+      "status": "ready"
     },
     {
       "filename": "light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
       "title": "Light Orange Peel After Spray? Wet Sand 2000 To 3000 Grit",
-      "description": "Light orange peel after spraying clear coat? Start with 2000 grit to level texture, then move to 3000 grit to refine before polishing. Keep the surface wet, use light pressure, and wipe often to check the reflection. Wet or dry use. — eQualle"
+      "description": "Light orange peel after spraying clear coat? Start with 2000 grit to level texture, then move to 3000 grit to refine before polishing. Keep the surface wet, use light pressure, and wipe often to check the reflection. Wet or dry use. — eQualle",
+      "alt": "Fix light orange peel by wet sanding clear coat with 2000 grit, then refining with 3000 grit before polishing, keeping the surface wet.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7TX4KC"
+      },
+      "status": "ready"
     },
     {
       "filename": "clear_coat_shows_tiny_bumps-2000_grit_wet_sand_to_level_clear_coat-wet-007.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_shows_tiny_bumps-2000_grit_wet_sand_to_level_clear_coat-wet-007.mp4",
       "title": "Tiny Bumps In Clear Coat? Level With 2000 Grit Wet Sanding",
-      "description": "Clear coat shows tiny bumps? Wet sand with 2000 grit to level the surface before polishing or the next coat. Keep it wet, sand lightly in even passes, wipe clean often, and check under a work light for remaining high spots. Wet or dry use. — eQualle"
+      "description": "Clear coat shows tiny bumps? Wet sand with 2000 grit to level the surface before polishing or the next coat. Keep it wet, sand lightly in even passes, wipe clean often, and check under a work light for remaining high spots. Wet or dry use. — eQualle",
+      "alt": "Level tiny bumps in clear coat by wet sanding with 2000 grit using light pressure, even passes, and frequent wipe-down checks.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-100-sheets-grit-2000"
+      },
+      "status": "ready"
     },
     {
       "filename": "paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4",
       "title": "Paint Feels Gritty? 1500 Grit Wet Sand For Surface Leveling",
-      "description": "Paint feels gritty to the touch? Wet sand with 1500 grit to level the rough texture before polishing or clear coating. Keep the surface wet, use light pressure, wipe clean often, and inspect under strong light to avoid low spots. Wet or dry use. — eQualle"
+      "description": "Paint feels gritty to the touch? Wet sand with 1500 grit to level the rough texture before polishing or clear coating. Keep the surface wet, use light pressure, wipe clean often, and inspect under strong light to avoid low spots. Wet or dry use. — eQualle",
+      "alt": "Smooth gritty paint by wet sanding with 1500 grit using light pressure, keeping the surface wet, and inspecting often under strong light.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07QB4DZRK"
+      },
+      "status": "ready"
     },
     {
       "filename": "minor_defects_in_clear_coat-2000_grit_wet_sanding_paint_defects-wet-009.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/minor_defects_in_clear_coat-2000_grit_wet_sanding_paint_defects-wet-009.mp4",
       "title": "Minor Clear Coat Defects? 2000 Grit Wet Sand To Smooth",
-      "description": "Minor defects in clear coat? Wet sand with 2000 grit to refine the surface before polishing. Keep it wet, use light pressure, crosshatch passes, and wipe clean often to monitor the scratch pattern under a work light. Wet or dry use. — eQualle"
+      "description": "Minor defects in clear coat? Wet sand with 2000 grit to refine the surface before polishing. Keep it wet, use light pressure, crosshatch passes, and wipe clean often to monitor the scratch pattern under a work light. Wet or dry use. — eQualle",
+      "alt": "Refine minor clear coat defects with 2000 grit wet sanding using light pressure, crosshatch passes, and frequent inspection under a work light.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/2000-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use"
+      },
+      "status": "ready"
     },
     {
       "filename": "polish_isnt_cutting_it-1500_grit_wet_sand_before_polishing-wet-010.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/polish_isnt_cutting_it-1500_grit_wet_sand_before_polishing-wet-010.mp4",
       "title": "Polish Isn’t Cutting It? Use 1500 Grit Wet Sand First",
-      "description": "Polish isn’t cutting it on clear coat? Wet sand with 1500 grit first to level texture and reduce deeper defects, then move on to polishing. Keep the surface wet, use light pressure, wipe often, and re-check under a work light. Wet or dry use. — eQualle"
+      "description": "Polish isn’t cutting it on clear coat? Wet sand with 1500 grit first to level texture and reduce deeper defects, then move on to polishing. Keep the surface wet, use light pressure, wipe often, and re-check under a work light. Wet or dry use. — eQualle",
+      "alt": "If polish isn’t cutting it, wet sand clear coat with 1500 grit first using light pressure, keeping the surface wet and checking often.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RL3W6VT"
+      },
+      "status": "ready"
     },
     {
       "filename": "uneven_clear_coat_texture-2000_grit_wet_sand_to_smooth_clear_coat-wet-011.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/uneven_clear_coat_texture-2000_grit_wet_sand_to_smooth_clear_coat-wet-011.mp4",
       "title": "Uneven Clear Coat Texture? 2000 Grit Wet Sand To Smooth",
-      "description": "Uneven clear coat texture? Wet sand with 2000 grit to smooth the surface before polishing or the next coat. Keep it wet, use light pressure, sand in even passes, and wipe clean often to check reflection under strong light. Wet or dry use. — eQualle"
+      "description": "Uneven clear coat texture? Wet sand with 2000 grit to smooth the surface before polishing or the next coat. Keep it wet, use light pressure, sand in even passes, and wipe clean often to check reflection under strong light. Wet or dry use. — eQualle",
+      "alt": "Smooth uneven clear coat texture with 2000 grit wet sanding using light pressure, even passes, and frequent wipe-down inspections under light.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-2000"
+      },
+      "status": "ready"
     },
     {
       "filename": "clear_coat_needs_leveling-1500_grit_wet_sand_for_leveling_paint-wet-012.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_leveling-1500_grit_wet_sand_for_leveling_paint-wet-012.mp4",
       "title": "Clear Coat Needs Leveling? 1500 Grit Wet Sanding Prep",
-      "description": "Clear coat needs leveling? Wet sand with 1500 grit to flatten texture and high spots before polishing. Keep the surface wet, use light pressure, crosshatch passes, and wipe often to avoid over-sanding edges. Wet or dry use. — eQualle"
+      "description": "Clear coat needs leveling? Wet sand with 1500 grit to flatten texture and high spots before polishing. Keep the surface wet, use light pressure, crosshatch passes, and wipe often to avoid over-sanding edges. Wet or dry use. — eQualle",
+      "alt": "Level clear coat with 1500 grit wet sanding using light pressure and crosshatch passes, wiping often and being careful on edges.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7T3663"
+      },
+      "status": "ready"
     },
     {
       "filename": "paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4",
       "title": "Paint Looks Dull Before Polish? 3000 Grit Wet Sand Prep",
-      "description": "Paint looks dull before polishing? Wet sand with 3000 grit to refine the finish and reduce fine sanding lines so polishing cuts faster and more evenly. Keep it wet, use light pressure, wipe often, and inspect under a work light. Wet or dry use. — eQualle"
+      "description": "Paint looks dull before polishing? Wet sand with 3000 grit to refine the finish and reduce fine sanding lines so polishing cuts faster and more evenly. Keep it wet, use light pressure, wipe often, and inspect under a work light. Wet or dry use. — eQualle",
+      "alt": "Refine dull paint before polishing with 3000 grit wet sanding using light pressure, keeping the surface wet, and inspecting under a work light.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-9-x-11-grit-3000-10-sheets"
+      },
+      "status": "ready"
     },
     {
       "filename": "fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
       "title": "Fine Scratches In Clear Coat? Refine With 2000 Grit Wet Sand",
-      "description": "Fine scratches in clear coat? Wet sand with 2000 grit to refine the scratch pattern before polishing. Keep the surface wet, use light pressure, sand in even passes, and wipe clean often to track progress under strong light. Wet or dry use. — eQualle"
+      "description": "Fine scratches in clear coat? Wet sand with 2000 grit to refine the scratch pattern before polishing. Keep the surface wet, use light pressure, sand in even passes, and wipe clean often to track progress under strong light. Wet or dry use. — eQualle",
+      "alt": "Refine fine clear coat scratches by wet sanding with 2000 grit using light pressure, even passes, and frequent wipe-down checks under light.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RFT53W6"
+      },
+      "status": "ready"
     },
     {
       "filename": "clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4",
       "title": "Clear Coat Not Glossy Enough? 3000 Grit Wet Sand For Prep",
-      "description": "Clear coat not glossy enough after correction? Wet sand with 3000 grit to refine the finish before final polishing. Keep the surface wet, use light pressure, crosshatch passes, and wipe often to inspect reflection and scratch pattern. Wet or dry use. — eQualle"
+      "description": "Clear coat not glossy enough after correction? Wet sand with 3000 grit to refine the finish before final polishing. Keep the surface wet, use light pressure, crosshatch passes, and wipe often to inspect reflection and scratch pattern. Wet or dry use. — eQualle",
+      "alt": "Improve clear coat gloss prep by wet sanding with 3000 grit using light pressure, crosshatch passes, and frequent wipe-down inspections.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-3000"
+      },
+      "status": "ready"
     },
     {
       "filename": "spray_finish_looks_wavy-1500_grit_wet_sand_to_flatten_clear_coat-wet-016.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/spray_finish_looks_wavy-1500_grit_wet_sand_to_flatten_clear_coat-wet-016.mp4",
       "title": "Spray Finish Looks Wavy? Flatten Clear Coat With 1500 Grit",
-      "description": "Spray finish looks wavy in clear coat? Wet sand with 1500 grit to flatten texture before refining and polishing. Keep it wet, use light pressure, crosshatch passes, and wipe clean often to check for remaining low spots. Wet or dry use. — eQualle"
+      "description": "Spray finish looks wavy in clear coat? Wet sand with 1500 grit to flatten texture before refining and polishing. Keep it wet, use light pressure, crosshatch passes, and wipe clean often to check for remaining low spots. Wet or dry use. — eQualle",
+      "alt": "Flatten a wavy clear coat spray finish with 1500 grit wet sanding using light pressure, crosshatch passes, and frequent wipe-down checks.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RFT4WDT"
+      },
+      "status": "ready"
     },
     {
       "filename": "dust_specks_after_clear_coat-2000_grit_wet_sand_to_remove_dust_nibs-wet-017.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_specks_after_clear_coat-2000_grit_wet_sand_to_remove_dust_nibs-wet-017.mp4",
       "title": "Dust Specks After Clear Coat? 2000 Grit Wet Sand To Remove Nibs",
-      "description": "Dust specks after clear coat? Wet sand with 2000 grit to knock down dust nibs before polishing or the next coat. Keep the surface wet, use light pressure, short even passes, wipe clean often, and re-check under a work light. Wet or dry use. — eQualle"
+      "description": "Dust specks after clear coat? Wet sand with 2000 grit to knock down dust nibs before polishing or the next coat. Keep the surface wet, use light pressure, short even passes, wipe clean often, and re-check under a work light. Wet or dry use. — eQualle",
+      "alt": "Remove dust specks in clear coat by wet sanding with 2000 grit using light pressure, short even passes, and frequent wipe-down checks under a work light.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-2000"
+      },
+      "status": "ready"
     },
     {
       "filename": "clear_coat_needs_final_prep-3000_grit_wet_sand_before_final_polish-wet-018.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_final_prep-3000_grit_wet_sand_before_final_polish-wet-018.mp4",
       "title": "Final Polish Prep? 3000 Grit Wet Sand Clear Coat Before Buffing",
-      "description": "Clear coat needs final prep before polishing? Wet sand with 3000 grit to refine the finish so polishing cuts faster and more evenly. Keep it wet, use light pressure, crosshatch passes, wipe often, and inspect reflection under strong light. Wet or dry use. — eQualle"
+      "description": "Clear coat needs final prep before polishing? Wet sand with 3000 grit to refine the finish so polishing cuts faster and more evenly. Keep it wet, use light pressure, crosshatch passes, wipe often, and inspect reflection under strong light. Wet or dry use. — eQualle",
+      "alt": "Prep clear coat for final polishing by wet sanding with 3000 grit using light pressure, crosshatch passes, and frequent inspection under strong light.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0F9VR28HR"
+      },
+      "status": "ready"
     },
     {
       "filename": "paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4",
       "title": "Paint Correction Leaves Marks? 2000 Grit Wet Sand To Refine",
-      "description": "Paint correction leaving marks? Wet sand with 2000 grit to refine the surface before polishing. Keep the panel wet, use light pressure, sand in even crosshatch passes, wipe clean often, and track the scratch pattern under a work light. Wet or dry use. — eQualle"
+      "description": "Paint correction leaving marks? Wet sand with 2000 grit to refine the surface before polishing. Keep the panel wet, use light pressure, sand in even crosshatch passes, wipe clean often, and track the scratch pattern under a work light. Wet or dry use. — eQualle",
+      "alt": "Refine paint correction marks with 2000 grit wet sanding using light pressure, crosshatch passes, and frequent wipe-down checks under a work light.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-100-sheets-grit-2000"
+      },
+      "status": "ready"
     },
     {
       "filename": "clear_coat_still_feels_uneven-1500-2000_grit_wet_sanding_clear_coat-wet-020.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_still_feels_uneven-1500-2000_grit_wet_sanding_clear_coat-wet-020.mp4",
       "title": "Clear Coat Still Uneven? Wet Sand 1500 Then 2000 Grit",
-      "description": "Clear coat still feels uneven? Start with 1500 grit to level texture, then switch to 2000 grit to refine before polishing. Keep the surface wet, use light pressure, crosshatch passes, and wipe often to inspect under strong light. Wet or dry use. — eQualle"
+      "description": "Clear coat still feels uneven? Start with 1500 grit to level texture, then switch to 2000 grit to refine before polishing. Keep the surface wet, use light pressure, crosshatch passes, and wipe often to inspect under strong light. Wet or dry use. — eQualle",
+      "alt": "Wet sand uneven clear coat with 1500 grit to level, then 2000 grit to refine, using light pressure and frequent inspection under strong light.",
+      "board": {
+        "name": "Wet Sanding Clear Coat",
+        "id": "839428886736049944"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07QB4DZRK"
+      },
+      "status": "ready"
     },
     {
       "filename": "dust_nibs_after_first_coat-2000_grit_wet_sand_between_coats-wet-021.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_after_first_coat-2000_grit_wet_sand_between_coats-wet-021.mp4",
       "title": "Dust Nibs After First Coat? 2000 Grit Wet Sand Between Coats",
-      "description": "Dust nibs after the first coat? Wet sand with 2000 grit between coats to smooth the surface before recoating. Keep it wet, use light pressure, short even passes, wipe clean often, and check the finish under a work light. Wet or dry use. — eQualle"
+      "description": "Dust nibs after the first coat? Wet sand with 2000 grit between coats to smooth the surface before recoating. Keep it wet, use light pressure, short even passes, wipe clean often, and check the finish under a work light. Wet or dry use. — eQualle",
+      "alt": "Wet sand dust nibs after the first coat with 2000 grit between coats using light pressure, short even passes, and inspection under a work light.",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/2000-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use"
+      },
+      "status": "ready"
     },
     {
       "filename": "clear_coat_feels_gritty-2000_grit_wet_sand_before_next_coat-wet-022.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_feels_gritty-2000_grit_wet_sand_before_next_coat-wet-022.mp4",
       "title": "Clear Coat Feels Gritty? 2000 Grit Wet Sand Before Next Coat",
-      "description": "Clear coat feels gritty? Wet sand with 2000 grit before the next coat to smooth nibs and texture. Keep the surface wet, use light pressure, crosshatch passes, wipe clean often, and re-check under strong light before recoating. Wet or dry use. — eQualle"
+      "description": "Clear coat feels gritty? Wet sand with 2000 grit before the next coat to smooth nibs and texture. Keep the surface wet, use light pressure, crosshatch passes, wipe clean often, and re-check under strong light before recoating. Wet or dry use. — eQualle",
+      "alt": "Smooth gritty clear coat before the next coat by wet sanding with 2000 grit using light pressure, crosshatch passes, and frequent wipe-down checks.",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07QD2TNNW"
+      },
+      "status": "ready"
     },
     {
       "filename": "tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4",
       "title": "Tiny Specks In Fresh Paint? 2000 Grit Wet Sand To Remove Dust",
-      "description": "Tiny specks in fresh paint? Wet sand with 2000 grit to remove dust and smooth the surface before the next coat. Keep it wet, use light pressure, short even passes, wipe clean often, and inspect under a work light. Wet or dry use. — eQualle"
+      "description": "Tiny specks in fresh paint? Wet sand with 2000 grit to remove dust and smooth the surface before the next coat. Keep it wet, use light pressure, short even passes, wipe clean often, and inspect under a work light. Wet or dry use. — eQualle",
+      "alt": "Remove tiny dust specks in fresh paint by wet sanding with 2000 grit using light pressure, short even passes, and frequent inspection under a work light.",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-2000"
+      },
+      "status": "ready"
     },
     {
       "filename": "surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4",
       "title": "Not Smooth Between Coats? 2000 Grit Wet Sand For Coat Prep",
-      "description": "Surface not smooth between coats? Wet sand with 2000 grit to prep for the next coat and reduce texture. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and check the scratch pattern under strong light. Wet or dry use. — eQualle"
+      "description": "Surface not smooth between coats? Wet sand with 2000 grit to prep for the next coat and reduce texture. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and check the scratch pattern under strong light. Wet or dry use. — eQualle",
+      "alt": "Prep between coats by wet sanding with 2000 grit to smooth the surface, using light pressure, crosshatch passes, and frequent wipe-down checks.",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RGRPZVF"
+      },
+      "status": "ready"
     },
     {
       "filename": "light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4",
       "title": "Light Runs Starting? 2000 Grit Wet Sand To Level Before Recoat",
-      "description": "Light runs starting to form? Wet sand with 2000 grit to level the run edges before recoating. Keep the surface wet, use light pressure, sand in short even passes, wipe often, and re-check under a work light to avoid flattening surrounding areas. Wet or dry use. — eQualle"
+      "description": "Light runs starting to form? Wet sand with 2000 grit to level the run edges before recoating. Keep the surface wet, use light pressure, sand in short even passes, wipe often, and re-check under a work light to avoid flattening surrounding areas. Wet or dry use. — eQualle",
+      "alt": "Level light paint runs by wet sanding with 2000 grit using short even passes, light pressure, and frequent inspection under a work light.",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-2000"
+      },
+      "status": "ready"
     },
     {
       "filename": "bumps_after_spraying_clear_coat-2000_grit_wet_sand_before_recoat-wet-026.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/bumps_after_spraying_clear_coat-2000_grit_wet_sand_before_recoat-wet-026.mp4",
       "title": "Bumps After Clear Coat? 2000 Grit Wet Sand Before Recoat",
-      "description": "Bumps after spraying clear coat? Wet sand with 2000 grit before recoating to smooth nibs and texture. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light before the next coat. Wet or dry use. — eQualle"
+      "description": "Bumps after spraying clear coat? Wet sand with 2000 grit before recoating to smooth nibs and texture. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light before the next coat. Wet or dry use. — eQualle",
+      "alt": "Smooth bumps in clear coat by wet sanding with 2000 grit before recoating, using light pressure and frequent wipe-down inspections under light.",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7TX4KC"
+      },
+      "status": "ready"
     },
     {
       "filename": "next_coat_looks_uneven-1500-2000_grit_wet_sand_between_coats-wet-027.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/next_coat_looks_uneven-1500-2000_grit_wet_sand_between_coats-wet-027.mp4",
       "title": "Next Coat Looks Uneven? Wet Sand 1500 To 2000 Grit Between Coats",
-      "description": "Next coat looks uneven? Wet sand between coats—use 1500 grit to level texture, then 2000 grit to refine before recoating. Keep the surface wet, use light pressure, wipe clean often, and check reflection under a work light. Wet or dry use. — eQualle"
+      "description": "Next coat looks uneven? Wet sand between coats—use 1500 grit to level texture, then 2000 grit to refine before recoating. Keep the surface wet, use light pressure, wipe clean often, and check reflection under a work light. Wet or dry use. — eQualle",
+      "alt": "Wet sand between coats for an even finish using 1500 grit to level, then 2000 grit to refine, keeping the surface wet and checking often.",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/1500-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use"
+      },
+      "status": "ready"
     },
     {
       "filename": "fresh_paint_shows_texture-2000_grit_wet_sand_to_smooth_paint-wet-028.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/fresh_paint_shows_texture-2000_grit_wet_sand_to_smooth_paint-wet-028.mp4",
       "title": "Fresh Paint Shows Texture? 2000 Grit Wet Sand To Smooth",
-      "description": "Fresh paint showing texture? Wet sand with 2000 grit to smooth the surface before the next coat or polishing. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light for remaining texture. Wet or dry use. — eQualle"
+      "description": "Fresh paint showing texture? Wet sand with 2000 grit to smooth the surface before the next coat or polishing. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light for remaining texture. Wet or dry use. — eQualle",
+      "alt": "Smooth fresh paint texture by wet sanding with 2000 grit using light pressure, keeping the surface wet, and inspecting often under strong light.",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RFT53W6"
+      },
+      "status": "ready"
     },
     {
       "filename": "clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4",
       "title": "Light Leveling Needed? 2000 Grit Wet Sand Between Clear Coat Layers",
-      "description": "Clear coat needs light leveling between layers? Wet sand with 2000 grit to smooth texture before the next coat. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under a work light for uniform dullness. Wet or dry use. — eQualle"
+      "description": "Clear coat needs light leveling between layers? Wet sand with 2000 grit to smooth texture before the next coat. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under a work light for uniform dullness. Wet or dry use. — eQualle",
+      "alt": "Wet sand clear coat between layers with 2000 grit for light leveling, using light pressure, crosshatch passes, and checking for uniform dullness.",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-100-sheets-grit-2000"
+      },
+      "status": "ready"
     },
     {
       "filename": "paint_not_ready_for_second_coat-2000_grit_wet_sand_before_recoating-wet-030.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_not_ready_for_second_coat-2000_grit_wet_sand_before_recoating-wet-030.mp4",
       "title": "Not Ready For Second Coat? 2000 Grit Wet Sand Before Recoating",
-      "description": "Paint not ready for a second coat? Wet sand with 2000 grit to smooth texture and improve coat prep. Keep the surface wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light before recoating. Wet or dry use. — eQualle"
+      "description": "Paint not ready for a second coat? Wet sand with 2000 grit to smooth texture and improve coat prep. Keep the surface wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light before recoating. Wet or dry use. — eQualle",
+      "alt": "Prep for a second coat by wet sanding with 2000 grit, keeping the surface wet, using light pressure, and inspecting often under strong light.",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07QD2TNNW"
+      },
+      "status": "ready"
     },
     {
       "filename": "headlights_look_cloudy-1000_grit_wet_sanding_headlights-wet-031.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_look_cloudy-1000_grit_wet_sanding_headlights-wet-031.mp4",
       "title": "Cloudy Headlights? Start With 1000 Grit Wet Sanding",
-      "description": "Headlights look cloudy? Start wet sanding with 1000 grit to cut oxidation and surface haze. Keep the lens wet, use light pressure, sand in even passes, wipe often, and move to finer grits before polishing for clarity. Wet or dry use. — eQualle"
+      "description": "Headlights look cloudy? Start wet sanding with 1000 grit to cut oxidation and surface haze. Keep the lens wet, use light pressure, sand in even passes, wipe often, and move to finer grits before polishing for clarity. Wet or dry use. — eQualle",
+      "alt": "Restore cloudy headlights by starting wet sanding with 1000 grit, keeping the lens wet, using light pressure, and sanding in even passes.",
+      "board": {
+        "name": "Headlight Restoration",
+        "id": "839428886736049945"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/1000-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use"
+      },
+      "status": "ready"
     },
     {
       "filename": "yellow_haze_on_headlights-800-1500_grit_wet_sand_headlights-wet-032.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/yellow_haze_on_headlights-800-1500_grit_wet_sand_headlights-wet-032.mp4",
       "title": "Yellow Haze On Headlights? Wet Sand 800 To 1500 Grit",
-      "description": "Yellow haze on headlights? Wet sand with 800 grit to remove oxidation, then move to 1500 grit to refine before polishing. Keep the lens wet, use light pressure, sand in even passes, and wipe often to check clarity. Wet or dry use. — eQualle"
+      "description": "Yellow haze on headlights? Wet sand with 800 grit to remove oxidation, then move to 1500 grit to refine before polishing. Keep the lens wet, use light pressure, sand in even passes, and wipe often to check clarity. Wet or dry use. — eQualle",
+      "alt": "Remove yellow haze from headlights by wet sanding with 800 grit then 1500 grit, keeping the lens wet and checking clarity often.",
+      "board": {
+        "name": "Headlight Restoration",
+        "id": "839428886736049945"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7TL27F"
+      },
+      "status": "ready"
     },
     {
       "filename": "headlights_still_foggy-1500_grit_wet_sand_before_polishing-wet-033.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_still_foggy-1500_grit_wet_sand_before_polishing-wet-033.mp4",
       "title": "Headlights Still Foggy? 1500 Grit Wet Sand Before Polishing",
-      "description": "Headlights still foggy after sanding? Wet sand with 1500 grit to refine haze before polishing. Keep the lens wet, use light pressure, sand in even passes, wipe often, and inspect under good light before moving to finer steps. Wet or dry use. — eQualle"
+      "description": "Headlights still foggy after sanding? Wet sand with 1500 grit to refine haze before polishing. Keep the lens wet, use light pressure, sand in even passes, wipe often, and inspect under good light before moving to finer steps. Wet or dry use. — eQualle",
+      "alt": "Refine foggy headlights with 1500 grit wet sanding before polishing, keeping the lens wet, using light pressure, and wiping often to check progress.",
+      "board": {
+        "name": "Headlight Restoration",
+        "id": "839428886736049945"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-1500"
+      },
+      "status": "ready"
     },
     {
       "filename": "scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4",
       "title": "Scratches On Headlight Lens? 1500 Grit Wet Sand To Refine",
-      "description": "Scratches on a headlight lens? Wet sand with 1500 grit to reduce scratch visibility before polishing. Keep the lens wet, use light pressure, sand in even passes, and wipe often to check the scratch pattern under good light. Wet or dry use. — eQualle"
+      "description": "Scratches on a headlight lens? Wet sand with 1500 grit to reduce scratch visibility before polishing. Keep the lens wet, use light pressure, sand in even passes, and wipe often to check the scratch pattern under good light. Wet or dry use. — eQualle",
+      "alt": "Reduce headlight lens scratches by wet sanding with 1500 grit using light pressure, even passes, and frequent wipe-down checks under good light.",
+      "board": {
+        "name": "Headlight Restoration",
+        "id": "839428886736049945"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RL3W6VT"
+      },
+      "status": "ready"
     },
     {
       "filename": "headlights_not_clearing_up-2000_grit_wet_sand_for_headlight_prep-wet-035.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_not_clearing_up-2000_grit_wet_sand_for_headlight_prep-wet-035.mp4",
       "title": "Headlights Not Clearing Up? 2000 Grit Wet Sand For Prep",
-      "description": "Headlights not clearing up? Wet sand with 2000 grit to refine the surface before polishing for clarity. Keep the lens wet, use light pressure, sand in even passes, wipe often, and check under strong light for remaining haze. Wet or dry use. — eQualle"
+      "description": "Headlights not clearing up? Wet sand with 2000 grit to refine the surface before polishing for clarity. Keep the lens wet, use light pressure, sand in even passes, wipe often, and check under strong light for remaining haze. Wet or dry use. — eQualle",
+      "alt": "Refine hazy headlights with 2000 grit wet sanding before polishing, keeping the lens wet, using light pressure, and wiping often to check clarity.",
+      "board": {
+        "name": "Headlight Restoration",
+        "id": "839428886736049945"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/2000-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use"
+      },
+      "status": "ready"
     },
     {
       "filename": "plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4",
       "title": "Lens Feels Rough? Wet Sand Headlights 1000 To 2000 Grit",
-      "description": "Plastic lens feels rough? Wet sand headlights with 1000 grit to cut oxidation, then move to 2000 grit to refine before polishing. Keep the lens wet, use light pressure, sand in even passes, and wipe often to check progress. Wet or dry use. — eQualle"
+      "description": "Plastic lens feels rough? Wet sand headlights with 1000 grit to cut oxidation, then move to 2000 grit to refine before polishing. Keep the lens wet, use light pressure, sand in even passes, and wipe often to check progress. Wet or dry use. — eQualle",
+      "alt": "Smooth a rough headlight lens by wet sanding with 1000 grit then 2000 grit, keeping the lens wet, using light pressure, and wiping often.",
+      "board": {
+        "name": "Headlight Restoration",
+        "id": "839428886736049945"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ8CPYJS"
+      },
+      "status": "ready"
     },
     {
       "filename": "headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4",
       "title": "Headlights Need Polish Prep? 2000 Grit Wet Sand First",
-      "description": "Headlights need prep before polishing? Wet sand with 2000 grit to refine haze and sanding lines for a clearer polish result. Keep the lens wet, use light pressure, sand in even passes, wipe often, and inspect under good light. Wet or dry use. — eQualle"
+      "description": "Headlights need prep before polishing? Wet sand with 2000 grit to refine haze and sanding lines for a clearer polish result. Keep the lens wet, use light pressure, sand in even passes, wipe often, and inspect under good light. Wet or dry use. — eQualle",
+      "alt": "Prep headlights for polishing by wet sanding with 2000 grit, keeping the lens wet, using light pressure, and wiping often to inspect under good light.",
+      "board": {
+        "name": "Headlight Restoration",
+        "id": "839428886736049945"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-2000"
+      },
+      "status": "ready"
     },
     {
       "filename": "old_oxidation_on_headlights-800_grit_wet_sand_for_oxidation_removal-wet-038.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/old_oxidation_on_headlights-800_grit_wet_sand_for_oxidation_removal-wet-038.mp4",
       "title": "Old Oxidation On Headlights? 800 Grit Wet Sand Removal Step",
-      "description": "Old oxidation on headlights? Wet sand with 800 grit to remove the damaged layer, then step up to finer grits before polishing. Keep the lens wet, use light pressure, sand in even passes, and wipe often to check progress. Wet or dry use. — eQualle"
+      "description": "Old oxidation on headlights? Wet sand with 800 grit to remove the damaged layer, then step up to finer grits before polishing. Keep the lens wet, use light pressure, sand in even passes, and wipe often to check progress. Wet or dry use. — eQualle",
+      "alt": "Remove old headlight oxidation by wet sanding with 800 grit, keeping the lens wet, using light pressure, and sanding in even passes before moving to finer grits.",
+      "board": {
+        "name": "Headlight Restoration",
+        "id": "839428886736049945"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RLWGZ85"
+      },
+      "status": "ready"
     },
     {
       "filename": "headlight_surface_looks_patchy-1500-2000_grit_wet_sanding_lenses-wet-039.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlight_surface_looks_patchy-1500-2000_grit_wet_sanding_lenses-wet-039.mp4",
       "title": "Headlight Surface Patchy? Wet Sand 1500 To 2000 Grit",
-      "description": "Headlight surface looks patchy? Wet sand with 1500 grit to even the haze, then switch to 2000 grit to refine before polishing. Keep the lens wet, use light pressure, sand in even passes, and wipe often to check uniform clarity. Wet or dry use. — eQualle"
+      "description": "Headlight surface looks patchy? Wet sand with 1500 grit to even the haze, then switch to 2000 grit to refine before polishing. Keep the lens wet, use light pressure, sand in even passes, and wipe often to check uniform clarity. Wet or dry use. — eQualle",
+      "alt": "Fix a patchy headlight lens by wet sanding with 1500 grit then 2000 grit, keeping the lens wet, using light pressure, and wiping often to check uniformity.",
+      "board": {
+        "name": "Headlight Restoration",
+        "id": "839428886736049945"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-1500"
+      },
+      "status": "ready"
     },
     {
       "filename": "headlights_still_dull_after_sanding-3000_grit_wet_sanding_before_polish-wet-040.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_still_dull_after_sanding-3000_grit_wet_sanding_before_polish-wet-040.mp4",
       "title": "Headlights Still Dull? 3000 Grit Wet Sand Before Polishing",
-      "description": "Headlights still dull after sanding? Wet sand with 3000 grit to refine the lens and reduce fine haze before polishing. Keep the lens wet, use light pressure, sand in even passes, wipe often, and inspect under good light. Wet or dry use. — eQualle"
+      "description": "Headlights still dull after sanding? Wet sand with 3000 grit to refine the lens and reduce fine haze before polishing. Keep the lens wet, use light pressure, sand in even passes, wipe often, and inspect under good light. Wet or dry use. — eQualle",
+      "alt": "Refine dull headlights by wet sanding with 3000 grit before polishing, keeping the lens wet, using light pressure, and wiping often to inspect under good light.",
+      "board": {
+        "name": "Headlight Restoration",
+        "id": "839428886736049945"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0F9VR1H7L"
+      },
+      "status": "ready"
     },
     {
       "filename": "scratches_on_plastic_surface-1000_grit_wet_sanding_plastic-wet-041.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_on_plastic_surface-1000_grit_wet_sanding_plastic-wet-041.mp4",
       "title": "Scratches On Plastic? 1000 Grit Wet Sand To Start Refining",
-      "description": "Scratches on plastic surface? Start wet sanding with 1000 grit to level damage before stepping up to finer grits. Keep the surface wet, use light pressure, sand in even passes, wipe often, and move up once the scratch pattern looks uniform. Wet or dry use. — eQualle"
+      "description": "Scratches on plastic surface? Start wet sanding with 1000 grit to level damage before stepping up to finer grits. Keep the surface wet, use light pressure, sand in even passes, wipe often, and move up once the scratch pattern looks uniform. Wet or dry use. — eQualle",
+      "alt": "Start refining scratches on plastic by wet sanding with 1000 grit using light pressure, even passes, and frequent wipe-down checks before moving to finer grits.",
+      "board": {
+        "name": "Plastic & Epoxy Sanding",
+        "id": "839428886736049964"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-1000"
+      },
+      "status": "ready"
     },
     {
       "filename": "plastic_feels_rough_to_touch-1500_grit_wet_sand_for_plastic_prep-wet-042.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_feels_rough_to_touch-1500_grit_wet_sand_for_plastic_prep-wet-042.mp4",
       "title": "Plastic Feels Rough? 1500 Grit Wet Sand For Smooth Prep",
-      "description": "Plastic feels rough to the touch? Wet sand with 1500 grit to smooth the surface before polishing, paint, or clear coat. Keep it wet, use light pressure, sand in even passes, wipe often, and check under good light for a uniform finish. Wet or dry use. — eQualle"
+      "description": "Plastic feels rough to the touch? Wet sand with 1500 grit to smooth the surface before polishing, paint, or clear coat. Keep it wet, use light pressure, sand in even passes, wipe often, and check under good light for a uniform finish. Wet or dry use. — eQualle",
+      "alt": "Smooth rough plastic with 1500 grit wet sanding using light pressure, even passes, and frequent wipe-down checks under good light for uniform prep.",
+      "board": {
+        "name": "Plastic & Epoxy Sanding",
+        "id": "839428886736049964"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7T3663"
+      },
+      "status": "ready"
     },
     {
       "filename": "clear_plastic_looks_hazy-2000_grit_wet_sand_before_polishing-wet-043.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_plastic_looks_hazy-2000_grit_wet_sand_before_polishing-wet-043.mp4",
       "title": "Clear Plastic Looks Hazy? 2000 Grit Wet Sand Before Polishing",
-      "description": "Clear plastic looks hazy? Wet sand with 2000 grit to refine the surface before polishing for clarity. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light until the haze looks even. Wet or dry use. — eQualle"
+      "description": "Clear plastic looks hazy? Wet sand with 2000 grit to refine the surface before polishing for clarity. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light until the haze looks even. Wet or dry use. — eQualle",
+      "alt": "Refine hazy clear plastic by wet sanding with 2000 grit using light pressure, crosshatch passes, and frequent wipe-down inspections under strong light.",
+      "board": {
+        "name": "Plastic & Epoxy Sanding",
+        "id": "839428886736049964"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-2000"
+      },
+      "status": "ready"
     },
     {
       "filename": "deep_scratches_in_plastic-800-1500_grit_wet_sand_plastic-wet-044.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/deep_scratches_in_plastic-800-1500_grit_wet_sand_plastic-wet-044.mp4",
       "title": "Deep Scratches In Plastic? Wet Sand 800 Then 1500 Grit",
-      "description": "Deep scratches in plastic? Start wet sanding with 800 grit to reduce scratch depth, then move to 1500 grit to refine before polishing. Keep the surface wet, use light pressure, sand in even passes, and wipe often to check progress. Wet or dry use. — eQualle"
+      "description": "Deep scratches in plastic? Start wet sanding with 800 grit to reduce scratch depth, then move to 1500 grit to refine before polishing. Keep the surface wet, use light pressure, sand in even passes, and wipe often to check progress. Wet or dry use. — eQualle",
+      "alt": "Reduce deep scratches in plastic by wet sanding with 800 grit then 1500 grit, keeping the surface wet, using light pressure, and wiping often to check progress.",
+      "board": {
+        "name": "Plastic & Epoxy Sanding",
+        "id": "839428886736049964"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07QD2GX43"
+      },
+      "status": "ready"
     },
     {
       "filename": "plastic_needs_polish_prep-2000_grit_wet_sanding_plastic_surface-wet-045.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_needs_polish_prep-2000_grit_wet_sanding_plastic_surface-wet-045.mp4",
       "title": "Polish Prep For Plastic? 2000 Grit Wet Sand For Clarity",
-      "description": "Plastic needs polish prep? Wet sand with 2000 grit to refine the surface before polishing. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light for a consistent scratch pattern before you polish. Wet or dry use. — eQualle"
+      "description": "Plastic needs polish prep? Wet sand with 2000 grit to refine the surface before polishing. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light for a consistent scratch pattern before you polish. Wet or dry use. — eQualle",
+      "alt": "Prep plastic for polishing by wet sanding with 2000 grit using light pressure, crosshatch passes, and frequent inspection under strong light for consistent refinement.",
+      "board": {
+        "name": "Plastic & Epoxy Sanding",
+        "id": "839428886736049964"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-100-sheets-grit-2000"
+      },
+      "status": "ready"
     },
     {
       "filename": "resin_surface_looks_uneven-1500_grit_wet_sanding_epoxy_resin-wet-046.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/resin_surface_looks_uneven-1500_grit_wet_sanding_epoxy_resin-wet-046.mp4",
       "title": "Epoxy Resin Uneven? 1500 Grit Wet Sand To Level And Refine",
-      "description": "Resin surface looks uneven? Wet sand epoxy resin with 1500 grit to level texture before moving to finer grits and polishing. Keep it wet, use light pressure, sand in even passes, wipe often, and check reflection under strong light. Wet or dry use. — eQualle"
+      "description": "Resin surface looks uneven? Wet sand epoxy resin with 1500 grit to level texture before moving to finer grits and polishing. Keep it wet, use light pressure, sand in even passes, wipe often, and check reflection under strong light. Wet or dry use. — eQualle",
+      "alt": "Level uneven epoxy resin by wet sanding with 1500 grit using light pressure, even passes, and frequent wipe-down checks under strong light before polishing.",
+      "board": {
+        "name": "Plastic & Epoxy Sanding",
+        "id": "839428886736049964"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RFT4WDT"
+      },
+      "status": "ready"
     },
     {
       "filename": "acrylic_shows_fine_scratches-2000_grit_wet_sand_acrylic_sheet-wet-047.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/acrylic_shows_fine_scratches-2000_grit_wet_sand_acrylic_sheet-wet-047.mp4",
       "title": "Acrylic Shows Fine Scratches? 2000 Grit Wet Sand To Refine",
-      "description": "Acrylic shows fine scratches? Wet sand with 2000 grit to refine the surface before polishing for clarity. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light for a uniform scratch pattern. Wet or dry use. — eQualle"
+      "description": "Acrylic shows fine scratches? Wet sand with 2000 grit to refine the surface before polishing for clarity. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light for a uniform scratch pattern. Wet or dry use. — eQualle",
+      "alt": "Refine fine scratches on acrylic by wet sanding with 2000 grit using light pressure, crosshatch passes, and frequent inspection under strong light before polishing.",
+      "board": {
+        "name": "Plastic & Epoxy Sanding",
+        "id": "839428886736049964"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/2000-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use"
+      },
+      "status": "ready"
     },
     {
       "filename": "plastic_not_smooth_enough-1500-2000_grit_wet_sand_plastic-wet-048.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_not_smooth_enough-1500-2000_grit_wet_sand_plastic-wet-048.mp4",
       "title": "Plastic Not Smooth Enough? Wet Sand 1500 To 2000 Grit",
-      "description": "Plastic not smooth enough? Wet sand with 1500 grit to smooth and level, then step up to 2000 grit to refine before polishing. Keep it wet, use light pressure, crosshatch passes, wipe often, and check under strong light. Wet or dry use. — eQualle"
+      "description": "Plastic not smooth enough? Wet sand with 1500 grit to smooth and level, then step up to 2000 grit to refine before polishing. Keep it wet, use light pressure, crosshatch passes, wipe often, and check under strong light. Wet or dry use. — eQualle",
+      "alt": "Wet sand plastic from 1500 to 2000 grit for smoother results, keeping the surface wet, using light pressure, and checking often under strong light.",
+      "board": {
+        "name": "Plastic & Epoxy Sanding",
+        "id": "839428886736049964"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07QB4DZRK"
+      },
+      "status": "ready"
     },
     {
       "filename": "resin_needs_final_smoothing-3000_grit_wet_sand_before_polishing-wet-049.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/resin_needs_final_smoothing-3000_grit_wet_sand_before_polishing-wet-049.mp4",
       "title": "Resin Needs Final Smoothing? 3000 Grit Wet Sand Before Polish",
-      "description": "Resin needs final smoothing before polishing? Wet sand with 3000 grit to refine the surface for a cleaner polish result. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect reflection under strong light. Wet or dry use. — eQualle"
+      "description": "Resin needs final smoothing before polishing? Wet sand with 3000 grit to refine the surface for a cleaner polish result. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect reflection under strong light. Wet or dry use. — eQualle",
+      "alt": "Final-prep epoxy resin by wet sanding with 3000 grit using light pressure, crosshatch passes, and frequent wipe-down inspections under strong light before polishing.",
+      "board": {
+        "name": "Plastic & Epoxy Sanding",
+        "id": "839428886736049964"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-3000"
+      },
+      "status": "ready"
     },
     {
       "filename": "plastic_surface_looks_dull-2000_grit_wet_sand_for_gloss_prep-wet-050.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_surface_looks_dull-2000_grit_wet_sand_for_gloss_prep-wet-050.mp4",
       "title": "Plastic Looks Dull? 2000 Grit Wet Sand For Gloss Prep",
-      "description": "Plastic surface looks dull? Wet sand with 2000 grit to refine before polishing for a clearer gloss. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light for a consistent scratch pattern. Wet or dry use. — eQualle"
+      "description": "Plastic surface looks dull? Wet sand with 2000 grit to refine before polishing for a clearer gloss. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light for a consistent scratch pattern. Wet or dry use. — eQualle",
+      "alt": "Prep dull plastic for gloss by wet sanding with 2000 grit using light pressure, crosshatch passes, and frequent inspection under strong light before polishing.",
+      "board": {
+        "name": "Plastic & Epoxy Sanding",
+        "id": "839428886736049964"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RGRPZVF"
+      },
+      "status": "ready"
     },
     {
       "filename": "which_grit_to_start_wet_sanding-800-1000_grit_for_wet_sanding_start-wet-051.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/which_grit_to_start_wet_sanding-800-1000_grit_for_wet_sanding_start-wet-051.mp4",
       "title": "Which Grit To Start Wet Sanding? 800 vs 1000 Quick Guide",
-      "description": "Which grit to start wet sanding—800 or 1000? Use 800 grit for heavier oxidation, deeper texture, or faster leveling; use 1000 grit for lighter defects and a softer cut. Keep it wet, use light pressure, and step up through finer grits. Wet or dry use. — eQualle"
+      "description": "Which grit to start wet sanding—800 or 1000? Use 800 grit for heavier oxidation, deeper texture, or faster leveling; use 1000 grit for lighter defects and a softer cut. Keep it wet, use light pressure, and step up through finer grits. Wet or dry use. — eQualle",
+      "alt": "Guide to starting wet sanding with 800 vs 1000 grit, explaining when to use each and how to step up through finer grits with light pressure and water.",
+      "board": {
+        "name": "Waterproof & Wet/Dry Paper",
+        "id": "839428886736049962"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/800-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use"
+      },
+      "status": "ready"
     },
     {
       "filename": "wet_sanding_leaves_scratches-1500-2000_grit_wet_sanding_steps-wet-052.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/wet_sanding_leaves_scratches-1500-2000_grit_wet_sanding_steps-wet-052.mp4",
       "title": "Wet Sanding Leaves Scratches? Fix It With 1500 To 2000 Grit",
-      "description": "Wet sanding still leaves scratches? The fix is grit progression: refine with 1500 grit first, then switch to 2000 grit to remove the 1500 scratch pattern before polishing. Keep it wet, use light pressure, and wipe often to inspect. Wet or dry use. — eQualle"
+      "description": "Wet sanding still leaves scratches? The fix is grit progression: refine with 1500 grit first, then switch to 2000 grit to remove the 1500 scratch pattern before polishing. Keep it wet, use light pressure, and wipe often to inspect. Wet or dry use. — eQualle",
+      "alt": "Fix wet sanding scratches by progressing from 1500 grit to 2000 grit, using light pressure, keeping the surface wet, and inspecting often before polishing.",
+      "board": {
+        "name": "Waterproof & Wet/Dry Paper",
+        "id": "839428886736049962"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RL3W6VT"
+      },
+      "status": "ready"
     },
     {
       "filename": "not_sure_which_grit_to_use-wet_sanding_grit_guide_800-3000-wet-053.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/not_sure_which_grit_to_use-wet_sanding_grit_guide_800-3000-wet-053.mp4",
       "title": "Wet Sanding Grit Guide: 800 To 3000 (When To Use Each)",
-      "description": "Not sure which grit to use for wet sanding? Quick guide: 800 removes heavy defects, 1000–1500 refines, 2000 preps for polishing, 3000 is final polish prep. Keep it wet, use light pressure, and step up once the scratch pattern is uniform. Wet or dry use. — eQualle"
+      "description": "Not sure which grit to use for wet sanding? Quick guide: 800 removes heavy defects, 1000–1500 refines, 2000 preps for polishing, 3000 is final polish prep. Keep it wet, use light pressure, and step up once the scratch pattern is uniform. Wet or dry use. — eQualle",
+      "alt": "Wet sanding grit guide from 800 to 3000 showing what each grit is for and when to step up based on a uniform scratch pattern with light pressure and water.",
+      "board": {
+        "name": "Waterproof & Wet/Dry Paper",
+        "id": "839428886736049962"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-800"
+      },
+      "status": "ready"
     },
     {
       "filename": "wet_sanding_before_polishing-2000_grit_wet_sand_before_polish-wet-054.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/wet_sanding_before_polishing-2000_grit_wet_sand_before_polish-wet-054.mp4",
       "title": "Wet Sanding Before Polishing: Use 2000 Grit For Polish Prep",
-      "description": "Wet sanding before polishing? Use 2000 grit to refine the surface so polishing cuts faster and more evenly. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light for a consistent scratch pattern. Wet or dry use. — eQualle"
+      "description": "Wet sanding before polishing? Use 2000 grit to refine the surface so polishing cuts faster and more evenly. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light for a consistent scratch pattern. Wet or dry use. — eQualle",
+      "alt": "Polish prep with 2000 grit wet sanding using light pressure, crosshatch passes, and frequent inspection under strong light for a consistent refined scratch pattern.",
+      "board": {
+        "name": "Waterproof & Wet/Dry Paper",
+        "id": "839428886736049962"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7TX4KC"
+      },
+      "status": "ready"
     },
     {
       "filename": "surface_still_rough_after_wet_sanding-1500-2000_grit_for_smoother_finish-wet-055.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_still_rough_after_wet_sanding-1500-2000_grit_for_smoother_finish-wet-055.mp4",
       "title": "Still Rough After Wet Sanding? Step 1500 To 2000 Grit",
-      "description": "Surface still rough after wet sanding? Step up: use 1500 grit to smooth and level, then 2000 grit to refine for a cleaner finish before polishing. Keep it wet, use light pressure, wipe often, and stop when the scratch pattern looks uniform. Wet or dry use. — eQualle"
+      "description": "Surface still rough after wet sanding? Step up: use 1500 grit to smooth and level, then 2000 grit to refine for a cleaner finish before polishing. Keep it wet, use light pressure, wipe often, and stop when the scratch pattern looks uniform. Wet or dry use. — eQualle",
+      "alt": "Smooth a rough finish by wet sanding from 1500 grit to 2000 grit, using light pressure, keeping the surface wet, and inspecting often for a uniform scratch pattern.",
+      "board": {
+        "name": "Waterproof & Wet/Dry Paper",
+        "id": "839428886736049962"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-100-sheets-grit-1500"
+      },
+      "status": "ready"
     },
     {
       "filename": "when_to_use_3000_grit_wet_sanding-3000_grit_for_final_polish_prep-wet-056.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/when_to_use_3000_grit_wet_sanding-3000_grit_for_final_polish_prep-wet-056.mp4",
       "title": "When To Use 3000 Grit Wet Sanding (Final Polish Prep)",
-      "description": "When should you use 3000 grit wet sanding? Use it after 2000 grit when you want a finer finish before polishing—especially on clear coat and plastics. Keep it wet, use light pressure, crosshatch passes, and wipe often to inspect. Wet or dry use. — eQualle"
+      "description": "When should you use 3000 grit wet sanding? Use it after 2000 grit when you want a finer finish before polishing—especially on clear coat and plastics. Keep it wet, use light pressure, crosshatch passes, and wipe often to inspect. Wet or dry use. — eQualle",
+      "alt": "Explain when to use 3000 grit wet sanding after 2000 grit for final polish prep on clear coat or plastic, using light pressure, water, and frequent inspection.",
+      "board": {
+        "name": "Waterproof & Wet/Dry Paper",
+        "id": "839428886736049962"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0FHJCF1X6"
+      },
+      "status": "ready"
     },
     {
       "filename": "wet_sanding_order_confusing-800-1500-2000_grit_wet_sanding_steps-wet-057.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/wet_sanding_order_confusing-800-1500-2000_grit_wet_sanding_steps-wet-057.mp4",
       "title": "Wet Sanding Order Confusing? 800-1500-2000 Simple Steps",
-      "description": "Wet sanding order confusing? Simple steps: 800 grit levels heavier defects, 1500 grit refines, 2000 grit preps for polishing. Keep it wet, use light pressure, and move up only when the scratch pattern is uniform. Wet or dry use. — eQualle"
+      "description": "Wet sanding order confusing? Simple steps: 800 grit levels heavier defects, 1500 grit refines, 2000 grit preps for polishing. Keep it wet, use light pressure, and move up only when the scratch pattern is uniform. Wet or dry use. — eQualle",
+      "alt": "Simple wet sanding order guide using 800 then 1500 then 2000 grit, emphasizing light pressure, water, and moving up only after a uniform scratch pattern.",
+      "board": {
+        "name": "Waterproof & Wet/Dry Paper",
+        "id": "839428886736049962"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-800"
+      },
+      "status": "ready"
     },
     {
       "filename": "too_aggressive_wet_sanding-move_up_grits_for_controlled_wet_sanding-wet-058.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/too_aggressive_wet_sanding-move_up_grits_for_controlled_wet_sanding-wet-058.mp4",
       "title": "Wet Sanding Too Aggressive? Move Up Grits For More Control",
-      "description": "Wet sanding feels too aggressive? Move up to a finer grit and reduce pressure for more control. Use more water, shorten your passes, and step up gradually until the scratch pattern looks finer and more uniform. Wet or dry use. — eQualle"
+      "description": "Wet sanding feels too aggressive? Move up to a finer grit and reduce pressure for more control. Use more water, shorten your passes, and step up gradually until the scratch pattern looks finer and more uniform. Wet or dry use. — eQualle",
+      "alt": "Reduce aggressive wet sanding by moving to a finer grit, using lighter pressure, more water, shorter passes, and stepping up until the scratch pattern is uniform.",
+      "board": {
+        "name": "Waterproof & Wet/Dry Paper",
+        "id": "839428886736049962"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RFT53W6"
+      },
+      "status": "ready"
     },
     {
       "filename": "wet_sanding_takes_too_long-proper_grit_progression_for_wet_sanding-wet-059.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/wet_sanding_takes_too_long-proper_grit_progression_for_wet_sanding-wet-059.mp4",
       "title": "Wet Sanding Takes Too Long? Use The Right Grit Progression",
-      "description": "Wet sanding takes too long? The fix is proper grit progression: start only as coarse as needed, then step up in logical jumps so each grit removes the previous scratch pattern quickly. Keep it wet, use light pressure, and wipe often to inspect. Wet or dry use. — eQualle"
+      "description": "Wet sanding takes too long? The fix is proper grit progression: start only as coarse as needed, then step up in logical jumps so each grit removes the previous scratch pattern quickly. Keep it wet, use light pressure, and wipe often to inspect. Wet or dry use. — eQualle",
+      "alt": "Speed up wet sanding by using proper grit progression, starting only as coarse as needed, stepping up logically, keeping the surface wet, and inspecting often.",
+      "board": {
+        "name": "Waterproof & Wet/Dry Paper",
+        "id": "839428886736049962"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-800"
+      },
+      "status": "ready"
     },
     {
       "filename": "want_better_polishing_results-2000-3000_grit_wet_sand_before_polish-wet-060.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/want_better_polishing_results-2000-3000_grit_wet_sand_before_polish-wet-060.mp4",
       "title": "Want Better Polishing Results? Wet Sand 2000 Then 3000 Grit",
-      "description": "Want better polishing results? Wet sand with 2000 grit to refine, then 3000 grit for final polish prep. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and polish only after the scratch pattern looks uniform and fine. Wet or dry use. — eQualle"
+      "description": "Want better polishing results? Wet sand with 2000 grit to refine, then 3000 grit for final polish prep. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and polish only after the scratch pattern looks uniform and fine. Wet or dry use. — eQualle",
+      "alt": "Improve polishing results by wet sanding with 2000 grit then 3000 grit, using light pressure, crosshatch passes, and frequent inspection for a uniform fine scratch pattern.",
+      "board": {
+        "name": "Waterproof & Wet/Dry Paper",
+        "id": "839428886736049962"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RFT53W6"
+      },
+      "status": "ready"
     }
   ]
 }

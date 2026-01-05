@@ -1,369 +1,967 @@
 {
-  "version": 1,
-  "source": "pinterest_manifests",
   "action": "drywall",
   "tag": "Drywall",
   "video_base_url": "https://github.com/VladChat/video/releases/download/Drywall/",
-  "items": [
+  "pins": [
     {
       "filename": "drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4",
       "title": "Drywall Seams Still Showing? Feather Joint Compound With 120 Grit",
-      "description": "If seams are still visible after drying, lightly sand the joint compound with 120 grit to knock down high spots and feather the edges before the next coat. Sandpaper eQualle"
+      "description": "If seams are still visible after drying, lightly sand the joint compound with 120 grit to knock down high spots and feather the edges before the next coat. Sandpaper eQualle",
+      "alt": "Drywall seams sanding joint compound with 120 grit to feather edges",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-9-x-11-grit-120-10-sheets"
+      },
+      "status": "ready"
     },
     {
       "filename": "joint_compound_feels_too_rough-120_grit_to_smooth_drywall_mud-drywall-002.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_feels_too_rough-120_grit_to_smooth_drywall_mud-drywall-002.mp4",
       "title": "Joint Compound Feels Too Rough? Smooth Drywall Mud With 120 Grit",
-      "description": "If dried drywall mud feels gritty or bumpy, sand it lightly with 120 grit to level the surface and remove high spots before applying the next coat. Sandpaper eQualle"
+      "description": "If dried drywall mud feels gritty or bumpy, sand it lightly with 120 grit to level the surface and remove high spots before applying the next coat. Sandpaper eQualle",
+      "alt": "Sanding rough joint compound on drywall with 120 grit to smooth mud",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7VFK4N"
+      },
+      "status": "ready"
     },
     {
       "filename": "patch_not_blending_into_wall-150_grit_for_drywall_patch_prep-drywall-003.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_not_blending_into_wall-150_grit_for_drywall_patch_prep-drywall-003.mp4",
       "title": "Patch Not Blending Into the Wall? Prep It With 150 Grit",
-      "description": "If a drywall patch edge stands out, sand the perimeter with 150 grit to feather the transition and level the surface before priming or painting. Sandpaper eQualle"
+      "description": "If a drywall patch edge stands out, sand the perimeter with 150 grit to feather the transition and level the surface before priming or painting. Sandpaper eQualle",
+      "alt": "Feathering a drywall patch edge with 150 grit so it blends into the wall",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/150-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use"
+      },
+      "status": "ready"
     },
     {
       "filename": "uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4",
       "title": "Uneven Joint Lines After Mud? Level Drywall Seams With 120 Grit",
-      "description": "If joint lines feel uneven after drying, sand the seam lightly with 120 grit to knock down ridges and level high spots before applying the next coat. Sandpaper eQualle"
+      "description": "If joint lines feel uneven after drying, sand the seam lightly with 120 grit to knock down ridges and level high spots before applying the next coat. Sandpaper eQualle",
+      "alt": "Leveling uneven drywall seam lines by sanding joint compound with 120 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RHVV8DK"
+      },
+      "status": "ready"
     },
     {
       "filename": "drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
       "title": "Drywall Mud Looks Lumpy? Smooth Joint Compound With 120 Grit",
-      "description": "If dried compound has lumps or bumps, sand lightly with 120 grit to flatten high spots and smooth the surface before you skim or add another coat. Sandpaper eQualle"
+      "description": "If dried compound has lumps or bumps, sand lightly with 120 grit to flatten high spots and smooth the surface before you skim or add another coat. Sandpaper eQualle",
+      "alt": "Smoothing lumpy drywall mud by sanding joint compound with 120 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-120"
+      },
+      "status": "ready"
     },
     {
       "filename": "seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
       "title": "Seam Lines Visible Under Light? Feather Drywall Joints With 150 Grit",
-      "description": "If seams show when light hits the wall, feather the joint edges with 150 grit to blend the transition and prep the surface for primer and paint. Sandpaper eQualle"
+      "description": "If seams show when light hits the wall, feather the joint edges with 150 grit to blend the transition and prep the surface for primer and paint. Sandpaper eQualle",
+      "alt": "Feathering drywall joints with 150 grit to hide seam lines under light",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7T4FFL"
+      },
+      "status": "ready"
     },
     {
       "filename": "drywall_patch_edges_stand_out-150_grit_for_blending_drywall_patch-drywall-007.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_edges_stand_out-150_grit_for_blending_drywall_patch-drywall-007.mp4",
       "title": "Patch Edges Stand Out? Blend the Drywall Patch With 150 Grit",
-      "description": "If a patch edge is still visible, sand the perimeter with 150 grit to feather the compound and blend it into the surrounding wall before primer. Sandpaper eQualle"
+      "description": "If a patch edge is still visible, sand the perimeter with 150 grit to feather the compound and blend it into the surrounding wall before primer. Sandpaper eQualle",
+      "alt": "Blending drywall patch edges by feather sanding with 150 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-150"
+      },
+      "status": "ready"
     },
     {
       "filename": "joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
       "title": "Joint Compound Dried Too Hard? Dry Sand Mud With 120 Grit",
-      "description": "If compound dried rock-hard, start with light pressure using 120 grit to cut high spots and even the surface, then wipe dust before recoating. Sandpaper eQualle"
+      "description": "If compound dried rock-hard, start with light pressure using 120 grit to cut high spots and even the surface, then wipe dust before recoating. Sandpaper eQualle",
+      "alt": "Dry sanding hard joint compound with 120 grit to remove high spots",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07QD2GTY4"
+      },
+      "status": "ready"
     },
     {
       "filename": "drywall_surface_feels_wavy-150_grit_for_flattening_drywall_surface-drywall-009.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_feels_wavy-150_grit_for_flattening_drywall_surface-drywall-009.mp4",
       "title": "Drywall Surface Feels Wavy? Flatten the Surface With 150 Grit",
-      "description": "If the wall feels wavy to the touch, sand lightly with 150 grit to level minor highs and blend transitions before final paint prep. Sandpaper eQualle"
+      "description": "If the wall feels wavy to the touch, sand lightly with 150 grit to level minor highs and blend transitions before final paint prep. Sandpaper eQualle",
+      "alt": "Flattening wavy drywall surface by sanding with 150 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-150"
+      },
+      "status": "ready"
     },
     {
       "filename": "mud_lines_showing_through_paint-150_grit_for_drywall_paint_prep-drywall-010.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/mud_lines_showing_through_paint-150_grit_for_drywall_paint_prep-drywall-010.mp4",
       "title": "Mud Lines Showing Through Paint? Prep Drywall With 150 Grit",
-      "description": "If paint highlights mud lines, sand the area with 150 grit to feather edges and smooth the surface before primer or touch-up paint. Sandpaper eQualle"
+      "description": "If paint highlights mud lines, sand the area with 150 grit to feather edges and smooth the surface before primer or touch-up paint. Sandpaper eQualle",
+      "alt": "Prepping drywall for paint by sanding mud lines with 150 grit",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RJZ3C39"
+      },
+      "status": "ready"
     },
     {
       "filename": "drywall_repair_looks_obvious-150_grit_for_smoothing_repair_area-drywall-011.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_repair_looks_obvious-150_grit_for_smoothing_repair_area-drywall-011.mp4",
       "title": "Drywall Repair Looks Obvious? Smooth the Area With 150 Grit",
-      "description": "If a repair spot stands out, sand with 150 grit to feather the compound into the wall and smooth the surface before primer and paint. Sandpaper eQualle"
+      "description": "If a repair spot stands out, sand with 150 grit to feather the compound into the wall and smooth the surface before primer and paint. Sandpaper eQualle",
+      "alt": "Smoothing an obvious drywall repair by feather sanding with 150 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-100-sheets-grit-150"
+      },
+      "status": "ready"
     },
     {
       "filename": "joint_compound_not_even-120_grit_for_leveling_mud_application-drywall-012.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_not_even-120_grit_for_leveling_mud_application-drywall-012.mp4",
       "title": "Joint Compound Not Even? Level Mud Application With 120 Grit",
-      "description": "If the mud dried uneven, sand lightly with 120 grit to knock down ridges and level high spots before you skim or apply another coat. Sandpaper eQualle"
+      "description": "If the mud dried uneven, sand lightly with 120 grit to knock down ridges and level high spots before you skim or apply another coat. Sandpaper eQualle",
+      "alt": "Leveling uneven joint compound on drywall by sanding with 120 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RLSHPZV"
+      },
+      "status": "ready"
     },
     {
       "filename": "drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4",
       "title": "Drywall Patch Feels Raised? Level It With 120–150 Grit",
-      "description": "If a patch sits higher than the wall, start with 120 grit to knock it down, then switch to 150 grit to feather the edges and blend the repair. Sandpaper eQualle"
+      "description": "If a patch sits higher than the wall, start with 120 grit to knock it down, then switch to 150 grit to feather the edges and blend the repair. Sandpaper eQualle",
+      "alt": "Leveling a raised drywall patch using 120 to 150 grit sanding steps",
+      "board": {
+        "name": "Grit Guide & Education",
+        "id": "839428886736049959"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-120"
+      },
+      "status": "ready"
     },
     {
       "filename": "edges_of_mud_patch_too_sharp-150_grit_for_feathering_drywall_edges-drywall-014.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_of_mud_patch_too_sharp-150_grit_for_feathering_drywall_edges-drywall-014.mp4",
       "title": "Edges of Mud Patch Too Sharp? Feather Drywall Edges With 150 Grit",
-      "description": "If patch edges feel sharp or visible, feather them with 150 grit to blend the transition into the wall before final primer and paint. Sandpaper eQualle"
+      "description": "If patch edges feel sharp or visible, feather them with 150 grit to blend the transition into the wall before final primer and paint. Sandpaper eQualle",
+      "alt": "Feathering sharp drywall patch edges by sanding with 150 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07QF44CQT"
+      },
+      "status": "ready"
     },
     {
       "filename": "drywall_surface_not_smooth_enough-150_grit_for_final_joint_prep-drywall-015.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_not_smooth_enough-150_grit_for_final_joint_prep-drywall-015.mp4",
       "title": "Drywall Not Smooth Enough? Final Joint Prep With 150 Grit",
-      "description": "If the surface still feels uneven, sand lightly with 150 grit to refine joints and feather edges before primer and paint. Sandpaper eQualle"
+      "description": "If the surface still feels uneven, sand lightly with 150 grit to refine joints and feather edges before primer and paint. Sandpaper eQualle",
+      "alt": "Final drywall joint prep by sanding with 150 grit for a smoother surface",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/150-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use"
+      },
+      "status": "ready"
     },
     {
       "filename": "fresh_mud_shows_tool_marks-120_grit_for_removing_tool_marks-drywall-016.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/fresh_mud_shows_tool_marks-120_grit_for_removing_tool_marks-drywall-016.mp4",
       "title": "Fresh Mud Shows Tool Marks? Remove Marks With 120 Grit",
-      "description": "If dried mud shows knife lines, sand lightly with 120 grit to knock down tool marks and smooth the surface before your next coat. Sandpaper eQualle"
+      "description": "If dried mud shows knife lines, sand lightly with 120 grit to knock down tool marks and smooth the surface before your next coat. Sandpaper eQualle",
+      "alt": "Removing drywall tool marks by sanding dried mud with 120 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7VFK4N"
+      },
+      "status": "ready"
     },
     {
       "filename": "drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4",
       "title": "Drywall Seams Won’t Disappear? Blend Seams With 150 Grit",
-      "description": "If seams keep showing, sand the joint edges with 150 grit to feather the transition and blend the compound into the wall before primer. Sandpaper eQualle"
+      "description": "If seams keep showing, sand the joint edges with 150 grit to feather the transition and blend the compound into the wall before primer. Sandpaper eQualle",
+      "alt": "Blending drywall seams by feather sanding joint compound with 150 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-150"
+      },
+      "status": "ready"
     },
     {
       "filename": "joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
       "title": "Joint Lines Still Visible? Final Drywall Prep With 150 Grit",
-      "description": "If joint lines are still visible, sand lightly with 150 grit to feather edges and smooth the surface before primer and paint. Sandpaper eQualle"
+      "description": "If joint lines are still visible, sand lightly with 150 grit to feather edges and smooth the surface before primer and paint. Sandpaper eQualle",
+      "alt": "Final drywall prep by sanding visible joint lines with 150 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RHVW4J5"
+      },
+      "status": "ready"
     },
     {
       "filename": "drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4",
       "title": "Drywall Mud Feels Grainy? Smooth Compound With 120 Grit",
-      "description": "If joint compound feels grainy after drying, sand lightly with 120 grit to remove high spots and smooth the surface before recoating. Sandpaper eQualle"
+      "description": "If joint compound feels grainy after drying, sand lightly with 120 grit to remove high spots and smooth the surface before recoating. Sandpaper eQualle",
+      "alt": "Smoothing grainy drywall mud by sanding joint compound with 120 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-100-sheets-grit-120"
+      },
+      "status": "ready"
     },
     {
       "filename": "wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
       "title": "Wall Not Ready for the Next Coat? Prep Drywall With 150 Grit",
-      "description": "Before recoating, sand lightly with 150 grit to smooth small ridges and feather edges so the next coat lays down evenly. Sandpaper eQualle"
+      "description": "Before recoating, sand lightly with 150 grit to smooth small ridges and feather edges so the next coat lays down evenly. Sandpaper eQualle",
+      "alt": "Prepping drywall between coats by sanding with 150 grit before recoating",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7T4FFL"
+      },
+      "status": "ready"
     },
     {
       "filename": "ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4",
       "title": "Ridges Showing After the First Coat? Feather Drywall Mud With 180 Grit",
-      "description": "If ridges show after your first coat, sand lightly with 180 grit to knock down high spots and feather the edges before applying the next coat. Sandpaper eQualle"
+      "description": "If ridges show after your first coat, sand lightly with 180 grit to knock down high spots and feather the edges before applying the next coat. Sandpaper eQualle",
+      "alt": "Feather sanding drywall mud ridges after first coat using 180 grit",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use"
+      },
+      "status": "ready"
     },
     {
       "filename": "edges_visible_between_coats-180_grit_for_blending_drywall_layers-drywall-022.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_visible_between_coats-180_grit_for_blending_drywall_layers-drywall-022.mp4",
       "title": "Edges Visible Between Coats? Blend Drywall Layers With 180 Grit",
-      "description": "If edges show between coats, sand with 180 grit using light pressure to blend the transition and prep the surface before the next coat. Sandpaper eQualle"
+      "description": "If edges show between coats, sand with 180 grit using light pressure to blend the transition and prep the surface before the next coat. Sandpaper eQualle",
+      "alt": "Blending visible drywall edges between coats by sanding with 180 grit",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ8DTGHP"
+      },
+      "status": "ready"
     },
     {
       "filename": "second_coat_looks_uneven-180_grit_for_leveling_between_coats-drywall-023.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/second_coat_looks_uneven-180_grit_for_leveling_between_coats-drywall-023.mp4",
       "title": "Second Coat Looks Uneven? Level Between Coats With 180 Grit",
-      "description": "If the second coat dried uneven, sand lightly with 180 grit to level small highs and smooth the surface before you apply another coat. Sandpaper eQualle"
+      "description": "If the second coat dried uneven, sand lightly with 180 grit to level small highs and smooth the surface before you apply another coat. Sandpaper eQualle",
+      "alt": "Leveling an uneven second coat on drywall by sanding with 180 grit",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-180"
+      },
+      "status": "ready"
     },
     {
       "filename": "drywall_patch_not_blending_yet-180_grit_for_feather_sanding_patch-drywall-024.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_not_blending_yet-180_grit_for_feather_sanding_patch-drywall-024.mp4",
       "title": "Drywall Patch Not Blending Yet? Feather Sand the Patch With 180 Grit",
-      "description": "If a patch still stands out, feather sand the edges with 180 grit to blend the repair into the wall before your next coat or primer. Sandpaper eQualle"
+      "description": "If a patch still stands out, feather sand the edges with 180 grit to blend the repair into the wall before your next coat or primer. Sandpaper eQualle",
+      "alt": "Feather sanding a drywall patch with 180 grit so it blends into the wall",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RGRN3PL"
+      },
+      "status": "ready"
     },
     {
       "filename": "mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4",
       "title": "Mud Buildup on Edges? Smooth Between Coats With 180 Grit",
-      "description": "If mud built up along edges, sand lightly with 180 grit to smooth the ridge and feather it out before the next coat goes on. Sandpaper eQualle"
+      "description": "If mud built up along edges, sand lightly with 180 grit to smooth the ridge and feather it out before the next coat goes on. Sandpaper eQualle",
+      "alt": "Smoothing drywall mud buildup on edges between coats using 180 grit",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-180"
+      },
+      "status": "ready"
     },
     {
       "filename": "lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
       "title": "Lines Showing After a Skim Coat? Lightly Feather Sand With 220 Grit",
-      "description": "If lines show after a skim coat, use 220 grit with light pressure to feather the surface and smooth minor marks before the next coat or primer. Sandpaper eQualle"
+      "description": "If lines show after a skim coat, use 220 grit with light pressure to feather the surface and smooth minor marks before the next coat or primer. Sandpaper eQualle",
+      "alt": "Light feather sanding skim coat lines on drywall using 220 grit",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ8DFS6T"
+      },
+      "status": "ready"
     },
     {
       "filename": "raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
       "title": "Raised Areas After Drying? Knock Down High Spots With 180 Grit",
-      "description": "If you feel raised areas after the mud dries, sand lightly with 180 grit to knock down high spots and blend the surface before the next step. Sandpaper eQualle"
+      "description": "If you feel raised areas after the mud dries, sand lightly with 180 grit to knock down high spots and blend the surface before the next step. Sandpaper eQualle",
+      "alt": "Knocking down raised drywall high spots after drying using 180 grit sanding",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-100-sheets-grit-180"
+      },
+      "status": "ready"
     },
     {
       "filename": "joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4",
       "title": "Joint Lines Still Shadowing? Final Feather Prep With 220 Grit",
-      "description": "If seams still cast a shadow, use 220 grit with light pressure to feather the edges and smooth the surface before primer or paint. Sandpaper eQualle"
+      "description": "If seams still cast a shadow, use 220 grit with light pressure to feather the edges and smooth the surface before primer or paint. Sandpaper eQualle",
+      "alt": "Final feather sanding drywall joint lines that still shadow using 220 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RL3XSWS"
+      },
+      "status": "ready"
     },
     {
       "filename": "wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4",
       "title": "Wall Feels Rough After Coat Two? Smooth the Surface With 180 Grit",
-      "description": "If the wall feels rough after the second coat, sand lightly with 180 grit to smooth the surface and prep it for the next coat. Sandpaper eQualle"
+      "description": "If the wall feels rough after the second coat, sand lightly with 180 grit to smooth the surface and prep it for the next coat. Sandpaper eQualle",
+      "alt": "Smoothing a rough drywall wall after coat two by sanding with 180 grit",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use"
+      },
+      "status": "ready"
     },
     {
       "filename": "patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4",
       "title": "Patch Edges Catch the Light? Blend Drywall Edges With 220 Grit",
-      "description": "If patch edges catch the light, sand with 220 grit using light pressure to blend the edge and smooth the transition before primer. Sandpaper eQualle"
+      "description": "If patch edges catch the light, sand with 220 grit using light pressure to blend the edge and smooth the transition before primer. Sandpaper eQualle",
+      "alt": "Blending drywall patch edges that catch light by sanding with 220 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07QD2RZ63"
+      },
+      "status": "ready"
     },
     {
       "filename": "between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4",
       "title": "Between-Coat Texture Too Heavy? Refine Drywall Surface With 180 Grit",
-      "description": "If texture feels too heavy between coats, sand lightly with 180 grit to refine high spots and smooth the surface before recoating. Sandpaper eQualle"
+      "description": "If texture feels too heavy between coats, sand lightly with 180 grit to refine high spots and smooth the surface before recoating. Sandpaper eQualle",
+      "alt": "Refining heavy between-coat drywall texture by sanding with 180 grit",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-180"
+      },
+      "status": "ready"
     },
     {
       "filename": "drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4",
       "title": "Looks Flat but Feels Rough? Light Sand Between Coats With 220 Grit",
-      "description": "If the surface looks flat but feels rough, do a light pass with 220 grit to smooth the feel and prep for the next coat. Sandpaper eQualle"
+      "description": "If the surface looks flat but feels rough, do a light pass with 220 grit to smooth the feel and prep for the next coat. Sandpaper eQualle",
+      "alt": "Light sanding drywall between coats with 220 grit to smooth a rough feel",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RHVX7F6"
+      },
+      "status": "ready"
     },
     {
       "filename": "edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
       "title": "Edges Still Too Sharp? Controlled Feathering With 180–220 Grit",
-      "description": "If edges still feel sharp, start with 180 grit to knock them down, then switch to 220 grit to feather smoothly and blend the transition. Sandpaper eQualle"
+      "description": "If edges still feel sharp, start with 180 grit to knock them down, then switch to 220 grit to feather smoothly and blend the transition. Sandpaper eQualle",
+      "alt": "Controlled feather sanding sharp drywall edges using 180 to 220 grit steps",
+      "board": {
+        "name": "Grit Guide & Education",
+        "id": "839428886736049959"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-180"
+      },
+      "status": "ready"
     },
     {
       "filename": "wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4",
       "title": "Wall Not Smooth Before Paint? Final Between-Coat Prep With 220 Grit",
-      "description": "If the wall still isn’t smooth, make a light pass with 220 grit to refine the surface before the final coat, primer, or paint. Sandpaper eQualle"
+      "description": "If the wall still isn’t smooth, make a light pass with 220 grit to refine the surface before the final coat, primer, or paint. Sandpaper eQualle",
+      "alt": "Final between-coat drywall prep before paint using 220 grit light sanding",
+      "board": {
+        "name": "Between-Coats Sanding",
+        "id": "839428886736049948"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ8DFS6T"
+      },
+      "status": "ready"
     },
     {
       "filename": "feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
       "title": "Feathering Not Wide Enough? Expand the Feather Area With 180 Grit",
-      "description": "If the blend zone is too narrow, sand outward with 180 grit using light pressure to widen the feather and smooth the transition into the wall. Sandpaper eQualle"
+      "description": "If the blend zone is too narrow, sand outward with 180 grit using light pressure to widen the feather and smooth the transition into the wall. Sandpaper eQualle",
+      "alt": "Expanding a drywall feather area by sanding outward with 180 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-100-sheets-grit-180"
+      },
+      "status": "ready"
     },
     {
       "filename": "high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4",
       "title": "High Spots Showing on the Wall? Knock Down Drywall High Spots With 120 Grit",
-      "description": "If you see high spots, sand lightly with 120 grit to knock them down and level the surface before you feather or recoat. Sandpaper eQualle"
+      "description": "If you see high spots, sand lightly with 120 grit to knock them down and level the surface before you feather or recoat. Sandpaper eQualle",
+      "alt": "Knocking down drywall high spots by sanding with 120 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RHVV8DK"
+      },
+      "status": "ready"
     },
     {
       "filename": "drywall_surface_looks_wavy-150_grit_for_flattening_wall_surface-drywall-037.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_looks_wavy-150_grit_for_flattening_wall_surface-drywall-037.mp4",
       "title": "Drywall Surface Looks Wavy? Flatten the Wall Surface With 150 Grit",
-      "description": "If the wall looks wavy, sand lightly with 150 grit to level minor highs and blend transitions before final prep. Sandpaper eQualle"
+      "description": "If the wall looks wavy, sand lightly with 150 grit to level minor highs and blend transitions before final prep. Sandpaper eQualle",
+      "alt": "Flattening a wavy drywall wall surface by sanding with 150 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-150"
+      },
+      "status": "ready"
     },
     {
       "filename": "tool_marks_left_in_drywall_mud-120_grit_for_removing_tool_marks-drywall-038.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/tool_marks_left_in_drywall_mud-120_grit_for_removing_tool_marks-drywall-038.mp4",
       "title": "Tool Marks Left in Drywall Mud? Remove Tool Marks With 120 Grit",
-      "description": "If knife lines are left in the mud, sand lightly with 120 grit to knock them down and smooth the surface before the next coat. Sandpaper eQualle"
+      "description": "If knife lines are left in the mud, sand lightly with 120 grit to knock them down and smooth the surface before the next coat. Sandpaper eQualle",
+      "alt": "Removing drywall mud tool marks by sanding with 120 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07QD2GTY4"
+      },
+      "status": "ready"
     },
     {
       "filename": "scratches_visible_on_drywall-150_grit_for_smoothing_wall_scratches-drywall-039.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/scratches_visible_on_drywall-150_grit_for_smoothing_wall_scratches-drywall-039.mp4",
       "title": "Scratches Visible on Drywall? Smooth Wall Scratches With 150 Grit",
-      "description": "If scratches show on the wall, sand lightly with 150 grit to smooth the area and blend edges before primer or paint. Sandpaper eQualle"
+      "description": "If scratches show on the wall, sand lightly with 150 grit to smooth the area and blend edges before primer or paint. Sandpaper eQualle",
+      "alt": "Smoothing visible drywall scratches by sanding with 150 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-100-sheets-grit-150"
+      },
+      "status": "ready"
     },
     {
       "filename": "drywall_patch_looks_bumpy-150_grit_for_leveling_patch_area-drywall-040.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_looks_bumpy-150_grit_for_leveling_patch_area-drywall-040.mp4",
       "title": "Drywall Patch Looks Bumpy? Level the Patch Area With 150 Grit",
-      "description": "If a patch looks bumpy, sand lightly with 150 grit to level high spots and feather the edges before primer and paint. Sandpaper eQualle"
+      "description": "If a patch looks bumpy, sand lightly with 150 grit to level high spots and feather the edges before primer and paint. Sandpaper eQualle",
+      "alt": "Leveling a bumpy drywall patch area by sanding with 150 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RJZ3C39"
+      },
+      "status": "ready"
     },
     {
       "filename": "uneven_texture_after_repair-180_grit_for_blending_drywall_surface-drywall-041.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/uneven_texture_after_repair-180_grit_for_blending_drywall_surface-drywall-041.mp4",
       "title": "Uneven Texture After a Repair? Blend Drywall Surface With 180 Grit",
-      "description": "If a repaired area feels uneven, sand lightly with 180 grit to blend the texture into the surrounding wall before final prep. Sandpaper eQualle"
+      "description": "If a repaired area feels uneven, sand lightly with 180 grit to blend the texture into the surrounding wall before final prep. Sandpaper eQualle",
+      "alt": "Blending uneven drywall repair texture by sanding the surface with 180 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use"
+      },
+      "status": "ready"
     },
     {
       "filename": "wall_surface_not_flat_enough-150_grit_for_correcting_uneven_areas-drywall-042.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_surface_not_flat_enough-150_grit_for_correcting_uneven_areas-drywall-042.mp4",
       "title": "Wall Surface Not Flat Enough? Correct Uneven Areas With 150 Grit",
-      "description": "If the surface isn’t flat, sand lightly with 150 grit to reduce minor high areas and blend transitions before primer or paint. Sandpaper eQualle"
+      "description": "If the surface isn’t flat, sand lightly with 150 grit to reduce minor high areas and blend transitions before primer or paint. Sandpaper eQualle",
+      "alt": "Correcting uneven drywall areas by sanding the wall surface with 150 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07QF44CQT"
+      },
+      "status": "ready"
     },
     {
       "filename": "raised_lines_wont_sand_out-120-150_grit_for_surface_correction-drywall-043.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/raised_lines_wont_sand_out-120-150_grit_for_surface_correction-drywall-043.mp4",
       "title": "Raised Lines Won’t Sand Out? Surface Correction With 120–150 Grit",
-      "description": "If raised lines won’t sand out, start with 120 grit to knock them down, then switch to 150 grit to feather and smooth the area for finishing. Sandpaper eQualle"
+      "description": "If raised lines won’t sand out, start with 120 grit to knock them down, then switch to 150 grit to feather and smooth the area for finishing. Sandpaper eQualle",
+      "alt": "Surface correction for raised drywall lines using 120 to 150 grit sanding steps",
+      "board": {
+        "name": "Grit Guide & Education",
+        "id": "839428886736049959"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-9-x-11-grit-120-10-sheets"
+      },
+      "status": "ready"
     },
     {
       "filename": "drywall_feels_rough_under_hand-150_grit_for_general_wall_smoothing-drywall-044.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_feels_rough_under_hand-150_grit_for_general_wall_smoothing-drywall-044.mp4",
       "title": "Drywall Feels Rough Under Hand? General Wall Smoothing With 150 Grit",
-      "description": "If the wall feels rough, sand lightly with 150 grit to smooth the surface and blend minor imperfections before primer or paint. Sandpaper eQualle"
+      "description": "If the wall feels rough, sand lightly with 150 grit to smooth the surface and blend minor imperfections before primer or paint. Sandpaper eQualle",
+      "alt": "General drywall wall smoothing by sanding rough areas with 150 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RHVW4J5"
+      },
+      "status": "ready"
     },
     {
       "filename": "patch_area_still_noticeable-180_grit_for_blending_repair_area-drywall-045.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_area_still_noticeable-180_grit_for_blending_repair_area-drywall-045.mp4",
       "title": "Patch Area Still Noticeable? Blend the Repair Area With 180 Grit",
-      "description": "If the repair is still noticeable, sand lightly with 180 grit to blend the patch into the surrounding wall before final prep. Sandpaper eQualle"
+      "description": "If the repair is still noticeable, sand lightly with 180 grit to blend the patch into the surrounding wall before final prep. Sandpaper eQualle",
+      "alt": "Blending a noticeable drywall patch area by sanding the repair with 180 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-180"
+      },
+      "status": "ready"
     },
     {
       "filename": "surface_imperfections_showing_through_paint-180_grit_for_final_wall_prep-drywall-046.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/surface_imperfections_showing_through_paint-180_grit_for_final_wall_prep-drywall-046.mp4",
       "title": "Surface Imperfections Showing Through Paint? Final Wall Prep With 180 Grit",
-      "description": "If paint reveals imperfections, sand lightly with 180 grit to smooth small highs and blend edges before primer or touch-up paint. Sandpaper eQualle"
+      "description": "If paint reveals imperfections, sand lightly with 180 grit to smooth small highs and blend edges before primer or touch-up paint. Sandpaper eQualle",
+      "alt": "Final wall prep when paint shows imperfections by sanding with 180 grit",
+      "board": {
+        "name": "Paint Removal & Surface Prep",
+        "id": "839428886736049947"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07QG6R8Y1"
+      },
+      "status": "ready"
     },
     {
       "filename": "drywall_repair_still_looks_messy-150-180_grit_for_surface_cleanup-drywall-047.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_repair_still_looks_messy-150-180_grit_for_surface_cleanup-drywall-047.mp4",
       "title": "Drywall Repair Still Looks Messy? Surface Cleanup With 150–180 Grit",
-      "description": "If a repair looks messy, start with 150 grit to smooth ridges, then switch to 180 grit to feather edges and refine the surface before primer. Sandpaper eQualle"
+      "description": "If a repair looks messy, start with 150 grit to smooth ridges, then switch to 180 grit to feather edges and refine the surface before primer. Sandpaper eQualle",
+      "alt": "Cleaning up a messy drywall repair using 150 to 180 grit sanding steps",
+      "board": {
+        "name": "Grit Guide & Education",
+        "id": "839428886736049959"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/150-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use"
+      },
+      "status": "ready"
     },
     {
       "filename": "drywall_corners_look_uneven-180_grit_for_sanding_inside_corners-drywall-048.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_corners_look_uneven-180_grit_for_sanding_inside_corners-drywall-048.mp4",
       "title": "Drywall Corners Look Uneven? Sand Inside Corners With 180 Grit",
-      "description": "If inside corners look uneven, use 180 grit with light pressure to smooth ridges and blend the corner before the next coat. Sandpaper eQualle"
+      "description": "If inside corners look uneven, use 180 grit with light pressure to smooth ridges and blend the corner before the next coat. Sandpaper eQualle",
+      "alt": "Sanding uneven drywall inside corners with 180 grit to smooth ridges",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RJZ55RL"
+      },
+      "status": "ready"
     },
     {
       "filename": "outside_corners_feel_too_sharp-150_grit_for_softening_drywall_edges-drywall-049.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/outside_corners_feel_too_sharp-150_grit_for_softening_drywall_edges-drywall-049.mp4",
       "title": "Outside Corners Feel Too Sharp? Soften Drywall Edges With 150 Grit",
-      "description": "If outside corners feel sharp, sand lightly with 150 grit to soften the edge and feather the compound for a smoother transition. Sandpaper eQualle"
+      "description": "If outside corners feel sharp, sand lightly with 150 grit to soften the edge and feather the compound for a smoother transition. Sandpaper eQualle",
+      "alt": "Softening sharp drywall outside corners by sanding edges with 150 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-150"
+      },
+      "status": "ready"
     },
     {
       "filename": "corner_bead_showing_through-180_grit_for_blending_corner_bead-drywall-050.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/corner_bead_showing_through-180_grit_for_blending_corner_bead-drywall-050.mp4",
       "title": "Corner Bead Showing Through? Blend the Corner Bead With 180 Grit",
-      "description": "If the corner bead is telegraphing through, sand lightly with 180 grit to feather the compound and blend the edge before primer. Sandpaper eQualle"
+      "description": "If the corner bead is telegraphing through, sand lightly with 180 grit to feather the compound and blend the edge before primer. Sandpaper eQualle",
+      "alt": "Blending drywall corner bead showing through by feather sanding with 180 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ8DTGHP"
+      },
+      "status": "ready"
     },
     {
       "filename": "edges_of_patch_too_visible-180_grit_for_edge_feathering-drywall-051.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_of_patch_too_visible-180_grit_for_edge_feathering-drywall-051.mp4",
       "title": "Edges of Patch Too Visible? Feather the Edge With 180 Grit",
-      "description": "If a patch edge is still visible, feather sand with 180 grit to blend the repair into the surrounding wall before the next coat or primer. Sandpaper eQualle"
+      "description": "If a patch edge is still visible, feather sand with 180 grit to blend the repair into the surrounding wall before the next coat or primer. Sandpaper eQualle",
+      "alt": "Feather sanding a visible drywall patch edge using 180 grit for blending",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-50-sheets-grit-180"
+      },
+      "status": "ready"
     },
     {
       "filename": "tight_spots_hard_to_sand-180_grit_for_detail_drywall_sanding-drywall-052.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/tight_spots_hard_to_sand-180_grit_for_detail_drywall_sanding-drywall-052.mp4",
       "title": "Tight Spots Hard to Sand? Detail Drywall Sanding With 180 Grit",
-      "description": "For tight spots, use a small folded piece of 180 grit to control pressure and smooth the area without over-sanding the surrounding surface. Sandpaper eQualle"
+      "description": "For tight spots, use a small folded piece of 180 grit to control pressure and smooth the area without over-sanding the surrounding surface. Sandpaper eQualle",
+      "alt": "Detail sanding tight drywall spots using a folded 180 grit sanding sheet",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RGRN3PL"
+      },
+      "status": "ready"
     },
     {
       "filename": "drywall_corners_catch_the_light-220_grit_for_final_corner_prep-drywall-053.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_corners_catch_the_light-220_grit_for_final_corner_prep-drywall-053.mp4",
       "title": "Drywall Corners Catch the Light? Final Corner Prep With 220 Grit",
-      "description": "If corners catch the light, do a light pass with 220 grit to refine the surface and smooth the edge before primer or paint. Sandpaper eQualle"
+      "description": "If corners catch the light, do a light pass with 220 grit to refine the surface and smooth the edge before primer or paint. Sandpaper eQualle",
+      "alt": "Final prep on drywall corners that catch light using 220 grit light sanding",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets"
+      },
+      "status": "ready"
     },
     {
       "filename": "edges_look_overbuilt_with_mud-150_grit_for_trimming_drywall_edges-drywall-054.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_look_overbuilt_with_mud-150_grit_for_trimming_drywall_edges-drywall-054.mp4",
       "title": "Edges Look Overbuilt With Mud? Trim Drywall Edges With 150 Grit",
-      "description": "If edges look overbuilt, sand lightly with 150 grit to trim down excess mud and feather the transition into the wall before the next step. Sandpaper eQualle"
+      "description": "If edges look overbuilt, sand lightly with 150 grit to trim down excess mud and feather the transition into the wall before the next step. Sandpaper eQualle",
+      "alt": "Trimming overbuilt drywall edges with 150 grit to reduce excess mud",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B0CZ7T4FFL"
+      },
+      "status": "ready"
     },
     {
       "filename": "corner_repairs_not_blending_in-180_grit_for_corner_repair_blending-drywall-055.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/corner_repairs_not_blending_in-180_grit_for_corner_repair_blending-drywall-055.mp4",
       "title": "Corner Repairs Not Blending In? Blend Corner Repairs With 180 Grit",
-      "description": "If corner repairs won’t blend, feather sand with 180 grit to smooth ridges and blend the repair into the surrounding corner before primer. Sandpaper eQualle"
+      "description": "If corner repairs won’t blend, feather sand with 180 grit to smooth ridges and blend the repair into the surrounding corner before primer. Sandpaper eQualle",
+      "alt": "Blending drywall corner repairs by feather sanding with 180 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-100-sheets-grit-180"
+      },
+      "status": "ready"
     },
     {
       "filename": "drywall_edges_feel_rough-150_grit_for_edge_smoothing-drywall-056.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_edges_feel_rough-150_grit_for_edge_smoothing-drywall-056.mp4",
       "title": "Drywall Edges Feel Rough? Smooth Edges With 150 Grit",
-      "description": "If drywall edges feel rough, sand lightly with 150 grit to smooth the edge and feather the compound for a cleaner transition. Sandpaper eQualle"
+      "description": "If drywall edges feel rough, sand lightly with 150 grit to smooth the edge and feather the compound for a cleaner transition. Sandpaper eQualle",
+      "alt": "Smoothing rough drywall edges by sanding with 150 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RJZ3C39"
+      },
+      "status": "ready"
     },
     {
       "filename": "detail_repairs_stand_out-180_grit_for_small_area_blending-drywall-057.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/detail_repairs_stand_out-180_grit_for_small_area_blending-drywall-057.mp4",
       "title": "Detail Repairs Stand Out? Small-Area Blending With 180 Grit",
-      "description": "If small repairs stand out, sand lightly with 180 grit to blend the patch into the wall without over-sanding the surrounding surface. Sandpaper eQualle"
+      "description": "If small repairs stand out, sand lightly with 180 grit to blend the patch into the wall without over-sanding the surrounding surface. Sandpaper eQualle",
+      "alt": "Blending small drywall detail repairs by sanding with 180 grit",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use"
+      },
+      "status": "ready"
     },
     {
       "filename": "corners_not_smooth_enough-220_grit_for_fine_corner_sanding-drywall-058.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/corners_not_smooth_enough-220_grit_for_fine_corner_sanding-drywall-058.mp4",
       "title": "Corners Not Smooth Enough? Fine Corner Sanding With 220 Grit",
-      "description": "If corners still aren’t smooth, use 220 grit with light pressure to refine the surface and remove minor marks before primer or paint. Sandpaper eQualle"
+      "description": "If corners still aren’t smooth, use 220 grit with light pressure to refine the surface and remove minor marks before primer or paint. Sandpaper eQualle",
+      "alt": "Fine sanding drywall corners with 220 grit to refine surface before paint",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07RL3XSWS"
+      },
+      "status": "ready"
     },
     {
       "filename": "edges_still_too_harsh-180-220_grit_for_controlled_edge_sanding-drywall-059.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_still_too_harsh-180-220_grit_for_controlled_edge_sanding-drywall-059.mp4",
       "title": "Edges Still Too Harsh? Controlled Edge Sanding With 180–220 Grit",
-      "description": "If edges still look harsh, start with 180 grit to soften them, then switch to 220 grit to refine and smooth the transition for finishing. Sandpaper eQualle"
+      "description": "If edges still look harsh, start with 180 grit to soften them, then switch to 220 grit to refine and smooth the transition for finishing. Sandpaper eQualle",
+      "alt": "Controlled edge sanding to reduce harsh drywall edges using 180 to 220 grit",
+      "board": {
+        "name": "Grit Guide & Education",
+        "id": "839428886736049959"
+      },
+      "destination": {
+        "type": "equalle",
+        "url": "https://equalle.com/products/sandpaper-25-sheets-grit-180"
+      },
+      "status": "ready"
     },
     {
       "filename": "final_touch_needed_on_corners-220_grit_for_final_detail_prep-drywall-060.mp4",
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/final_touch_needed_on_corners-220_grit_for_final_detail_prep-drywall-060.mp4",
       "title": "Final Touch Needed on Corners? Final Detail Prep With 220 Grit",
-      "description": "If corners need a final touch, make a light pass with 220 grit to refine the surface and smooth minor marks before primer or paint. Sandpaper eQualle"
+      "description": "If corners need a final touch, make a light pass with 220 grit to refine the surface and smooth minor marks before primer or paint. Sandpaper eQualle",
+      "alt": "Final detail prep on drywall corners using 220 grit light sanding",
+      "board": {
+        "name": "Drywall Sanding",
+        "id": "839428886736049941"
+      },
+      "destination": {
+        "type": "amazon",
+        "url": "https://www.amazon.com/gp/product/B07QD2RZ63"
+      },
+      "status": "ready"
     }
   ]
 }
