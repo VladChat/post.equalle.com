@@ -2,66 +2,63 @@
 # File: youtube-post/post_one_video.py
 # Purpose: Post exactly 1 YouTube video per run (from local manifests) and persist independent state
 # Notes:
-# - Uses the same manifest format as your Pinterest/FB scripts: manifests/*.json -> { items: [...] }
+# - Uses local manifests in youtube-post/manifests/*.json (current format: { pins: [...] })
 # - Uploading to YouTube requires OAuth 2.0 (refresh token). API key alone won't work.
+# - This script is autonomous: it reads only from youtube-post/* and writes only to youtube-post/state/*
 # ============================================
 
 from __future__ import annotations
 
 import json
 import os
+import re
 import tempfile
 import time
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 import requests
+
 from youtube_auth import get_access_token
 
 
-# ----- Config (safe defaults; override via env) -----
+# ---------- Paths (repo-relative) ----------
+REPO_ROOT = Path(__file__).resolve().parents[1]
+MANIFEST_DIR = REPO_ROOT / "youtube-post" / "manifests"
+STATE_PATH = REPO_ROOT / "youtube-post" / "state" / "youtube_post_state.json"
 
-# Manifest ordering (daily starting point rotates)
+# Daily manifest rotation order (starting point rotates each day)
 MANIFEST_FILES_ORDER = ["drywall.json", "wood.json", "wet.json", "metal.json", "plastic.json"]
 
-# Limits (keep metadata readable)
+# ---------- Limits ----------
 TITLE_MAX = 100
-DESC_MAX = 5000  # YouTube allows much more; keep reasonable
-
+DESC_MAX = 5000  # YouTube allows much more; keep it readable
 MAX_ATTEMPTS_PER_VIDEO = 3
-
-# Download timeout safety (seconds)
-DOWNLOAD_TIMEOUT = 600
+DOWNLOAD_TIMEOUT = 600  # seconds
 
 # Defaults for video metadata
 DEFAULT_PRIVACY_STATUS = "public"  # public | unlisted | private
 DEFAULT_CATEGORY_ID = "26"  # 26 = Howto & Style
+DEFAULT_MADE_FOR_KIDS = False
 
 
 @dataclass(frozen=True)
 class VideoItem:
     manifest_name: str
+    manifest_action: str
+    manifest_tag: str
     video_url: str
     filename: str
     title: str
     description: str
+    destination_url: str
+    alt: str
+    status: str
 
 
-def base_dir_from_this_file() -> Path:
-    # youtube-post/post_one_video.py -> base dir = youtube-post/
-    return Path(__file__).resolve().parent
-
-
-
-def utc_now_iso() -> str:
-    return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-
-
-def utc_today() -> str:
-    return time.strftime("%Y-%m-%d", time.gmtime())
-
-
+# ----------------- JSON helpers -----------------
 def load_json(path: Path) -> Dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 
@@ -69,126 +66,282 @@ def load_json(path: Path) -> Dict[str, Any]:
 def save_json_atomic(path: Path, data: Dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
-    tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     tmp.replace(path)
 
 
-def truncate(text: str, limit: int) -> str:
-    text = (text or "").strip()
-    if len(text) <= limit:
-        return text
-    return text[: max(0, limit - 1)].rstrip() + "…"
+def utc_day_str() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 
-def manifest_cycle_for_today(state: Dict[str, Any]) -> List[str]:
-    """Rotate the *starting* manifest once per UTC day.
-    If run multiple times same day -> same start.
-    """
-    rot = state.setdefault("rotation", {})
-    today = utc_today()
-
-    last_day = (rot.get("last_day") or "").strip()
-    idx_raw = rot.get("manifest_index")
-
-    try:
-        idx = int(idx_raw) if idx_raw is not None else -1
-    except Exception:
-        idx = -1
-
-    if last_day != today:
-        idx = (idx + 1) % len(MANIFEST_FILES_ORDER) if idx >= 0 else 0
-        rot["manifest_index"] = idx
-        rot["last_day"] = today
-
-    start = int(rot.get("manifest_index", 0) or 0) % len(MANIFEST_FILES_ORDER)
-    return MANIFEST_FILES_ORDER[start:] + MANIFEST_FILES_ORDER[:start]
-
-
-def ensure_required_fields(raw: Dict[str, Any], manifest_name: str) -> VideoItem:
-    video_url = (raw.get("video_url") or "").strip()
-    if not video_url:
-        raise ValueError(f"[{manifest_name}] missing 'video_url'")
-
-    filename = (raw.get("filename") or "").strip()
-    if not filename:
-        filename = video_url.split("?")[0].split("#")[0].rstrip("/").split("/")[-1] or "video.mp4"
-
-    title = truncate(str(raw.get("title") or ""), TITLE_MAX)
-    description = truncate(str(raw.get("description") or ""), DESC_MAX)
-
-    return VideoItem(
-        manifest_name=manifest_name,
-        video_url=video_url,
-        filename=filename,
-        title=title,
-        description=description,
+# ----------------- Manifest parsing -----------------
+def _infer_filename(video_url: str) -> str:
+    return (
+        video_url.split("?")[0]
+        .split("#")[0]
+        .rstrip("/")
+        .split("/")[-1]
+        or "video.mp4"
     )
 
 
-def pick_next_item(manifest_dir: Path, state: Dict[str, Any]) -> Optional[VideoItem]:
-    """Pick 1 item using today's manifest rotation order."""
-    st_items = state.get("items", {}) or {}
-    ordered_names = manifest_cycle_for_today(state)
+def read_manifest_file(path: Path) -> List[VideoItem]:
+    data = load_json(path)
 
-    existing_paths = [manifest_dir / name for name in ordered_names if (manifest_dir / name).exists()]
-    if not existing_paths:
-        raise FileNotFoundError(f"No manifest json files found in: {manifest_dir}")
+    action = str(data.get("action") or "").strip()
+    tag = str(data.get("tag") or "").strip()
 
-    for path in existing_paths:
-        manifest_name = path.name
-        data = load_json(path)
+    pins = data.get("pins")
+    if not isinstance(pins, list):
+        raise ValueError(f"[{path.name}] expected top-level 'pins' as array")
 
-        items = data.get("items")
-        if not isinstance(items, list):
-            raise ValueError(f"[{manifest_name}] expected top-level 'items' as array")
+    out: List[VideoItem] = []
+    for raw in pins:
+        if not isinstance(raw, dict):
+            continue
 
-        for raw in items:
-            if not isinstance(raw, dict):
+        status = str(raw.get("status") or "").strip()
+        video_url = str(raw.get("video_url") or "").strip()
+        if not video_url:
+            continue
+
+        filename = str(raw.get("filename") or "").strip() or _infer_filename(video_url)
+        title = str(raw.get("title") or "").strip()
+        description = str(raw.get("description") or "").strip()
+        alt = str(raw.get("alt") or "").strip()
+
+        destination_url = ""
+        dest = raw.get("destination")
+        if isinstance(dest, dict):
+            destination_url = str(dest.get("url") or "").strip()
+
+        out.append(
+            VideoItem(
+                manifest_name=path.name,
+                manifest_action=action,
+                manifest_tag=tag,
+                video_url=video_url,
+                filename=filename,
+                title=title,
+                description=description,
+                destination_url=destination_url,
+                alt=alt,
+                status=status,
+            )
+        )
+
+    return out
+
+
+def read_all_items() -> List[VideoItem]:
+    paths: List[Path] = []
+    for name in MANIFEST_FILES_ORDER:
+        p = MANIFEST_DIR / name
+        if p.exists():
+            paths.append(p)
+
+    # Include any extra manifests not in the order list
+    extra = sorted([p for p in MANIFEST_DIR.glob("*.json") if p.name not in set(MANIFEST_FILES_ORDER)])
+    paths.extend(extra)
+
+    out: List[VideoItem] = []
+    for p in paths:
+        out.extend(read_manifest_file(p))
+    return out
+
+
+# ----------------- SEO formatting -----------------
+def _truncate(text: str, limit: int) -> str:
+    text = (text or "").strip()
+    if len(text) <= limit:
+        return text
+    return text[: limit - 1].rstrip() + "…"
+
+
+def _split_summary_rest(text: str) -> Tuple[str, str]:
+    t = re.sub(r"\s+", " ", (text or "").strip())
+    if not t:
+        return "", ""
+    parts = re.split(r"(?<=[.!?])\s+", t, maxsplit=1)
+    summary = parts[0].strip()
+    rest = parts[1].strip() if len(parts) > 1 else ""
+    return summary, rest
+
+
+def _hashtagify(s: str) -> str:
+    s = (s or "").strip().lower()
+    s = re.sub(r"[^a-z0-9]+", "", s)
+    if not s:
+        return ""
+    return f"#{s}"
+
+
+def build_description(item: VideoItem) -> str:
+    # Use first sentence as the visible "hook" line; keep it short.
+    summary, rest = _split_summary_rest(item.description)
+
+    if not summary:
+        summary = item.title
+
+    summary = _truncate(summary, 180)
+
+    # Optional extra line derived from alt (only if it adds information)
+    extra = ""
+    if item.alt:
+        alt_clean = re.sub(r"\s+", " ", item.alt.strip())
+        # Avoid duplicating if already contained
+        if alt_clean and alt_clean.lower() not in (item.description or "").lower():
+            extra = f"Tip: {alt_clean}."
+
+    # Hashtags: keep 2–3 maximum (more can look spammy on Shorts)
+    tags_raw = [
+        item.manifest_tag,
+        item.manifest_action,
+        "sanding",
+    ]
+    hashtags: List[str] = []
+    for t in tags_raw:
+        h = _hashtagify(t)
+        if h and h not in hashtags:
+            hashtags.append(h)
+        if len(hashtags) >= 3:
+            break
+
+    lines: List[str] = [summary]
+
+    # Put the link on line 2 so it's visible without expanding the description.
+    if item.destination_url:
+        lines.append(item.destination_url)
+        lines.append("")
+
+    if rest:
+        lines.append(_truncate(rest, 800))
+        lines.append("")
+
+    if extra:
+        lines.append(_truncate(extra, 240))
+        lines.append("")
+
+    if hashtags:
+        lines.append(" ".join(hashtags))
+
+    # Trim trailing blank lines
+    while lines and lines[-1] == "":
+        lines.pop()
+
+    desc = "\n".join(lines).strip()
+    return _truncate(desc, DESC_MAX)
+
+
+def build_tags(item: VideoItem) -> List[str]:
+    # YouTube "tags" are optional. Keep short and relevant.
+    base = []
+    for t in [item.manifest_tag, item.manifest_action, "sanding", "sandpaper"]:
+        t = (t or "").strip()
+        if not t:
+            continue
+        if t.lower() not in [x.lower() for x in base]:
+            base.append(t)
+    return base[:8]
+
+
+# ----------------- State / rotation -----------------
+def load_or_init_state() -> Dict[str, Any]:
+    if STATE_PATH.exists():
+        return load_json(STATE_PATH)
+    return {
+        "version": 1,
+        "rotation": {"manifest_index": -1, "last_day": ""},
+        "items": {},  # keyed by video_url
+        "runs": [],
+    }
+
+
+def should_skip_item(state: Dict[str, Any], item: VideoItem) -> bool:
+    items = state.get("items") or {}
+    rec = items.get(item.video_url)
+    if not isinstance(rec, dict):
+        return False
+    # success already posted
+    if rec.get("result") == "success":
+        return True
+    # too many attempts
+    attempts = int(rec.get("attempts") or 0)
+    return attempts >= MAX_ATTEMPTS_PER_VIDEO
+
+
+def pick_next_item(state: Dict[str, Any], all_items: List[VideoItem]) -> Optional[VideoItem]:
+    # Rotate starting manifest index once per day
+    rotation = state.get("rotation") or {}
+    last_day = str(rotation.get("last_day") or "")
+    idx = int(rotation.get("manifest_index") or -1)
+
+    today = utc_day_str()
+    if today != last_day:
+        idx = (idx + 1) % max(1, len(MANIFEST_FILES_ORDER))
+        rotation["manifest_index"] = idx
+        rotation["last_day"] = today
+        state["rotation"] = rotation
+
+    # Build an ordered manifest list starting from idx
+    ordered_manifests = []
+    for i in range(len(MANIFEST_FILES_ORDER)):
+        ordered_manifests.append(MANIFEST_FILES_ORDER[(idx + i) % len(MANIFEST_FILES_ORDER)])
+
+    # Scan manifests in that order; take first READY item that isn't posted yet
+    by_manifest: Dict[str, List[VideoItem]] = {}
+    for it in all_items:
+        by_manifest.setdefault(it.manifest_name, []).append(it)
+
+    for m in ordered_manifests:
+        for it in by_manifest.get(m, []):
+            if it.status and it.status.lower() != "ready":
                 continue
-
-            it = ensure_required_fields(raw, manifest_name)
-
-            rec = st_items.get(it.video_url) or {}
-            if rec.get("result") == "success":
+            if not it.video_url or not it.title:
                 continue
-
-            attempts = int(rec.get("attempts", 0) or 0)
-            if attempts >= MAX_ATTEMPTS_PER_VIDEO:
+            if should_skip_item(state, it):
                 continue
-
             return it
+
+    # Fallback: scan everything
+    for it in all_items:
+        if it.status and it.status.lower() != "ready":
+            continue
+        if not it.video_url or not it.title:
+            continue
+        if should_skip_item(state, it):
+            continue
+        return it
 
     return None
 
 
-def download_video_to_temp(url: str, filename: str) -> Path:
-    """Download URL to a temp file and return path."""
-    tmp_dir = Path(tempfile.mkdtemp(prefix="yt_upload_"))
-    out_path = tmp_dir / filename
-
-    with requests.get(url, stream=True, timeout=DOWNLOAD_TIMEOUT) as r:
+# ----------------- Download + Upload -----------------
+def download_video(video_url: str, out_path: Path) -> None:
+    with requests.get(video_url, stream=True, timeout=DOWNLOAD_TIMEOUT) as r:
         r.raise_for_status()
         with out_path.open("wb") as f:
             for chunk in r.iter_content(chunk_size=1024 * 1024):
                 if chunk:
                     f.write(chunk)
 
-    return out_path
 
-
-def youtube_upload_video_http(
-    *,
+def youtube_resumable_upload_init(
     access_token: str,
-    file_path: Path,
+    *,
+    file_size: int,
+    mime_type: str,
     title: str,
     description: str,
+    tags: List[str],
     privacy_status: str,
     category_id: str,
     made_for_kids: bool,
-    tags: Optional[List[str]] = None,
 ) -> str:
-    """Resumable upload and return YouTube video ID."""
-    meta: Dict[str, Any] = {
+    url = "https://www.googleapis.com/upload/youtube/v3/videos"
+    params = {"uploadType": "resumable", "part": "snippet,status"}
+
+    payload: Dict[str, Any] = {
         "snippet": {
             "title": title,
             "description": description,
@@ -196,212 +349,120 @@ def youtube_upload_video_http(
         },
         "status": {
             "privacyStatus": privacy_status,
-            "selfDeclaredMadeForKids": bool(made_for_kids),
+            "selfDeclaredMadeForKids": made_for_kids,
         },
     }
-    if tags:
-        meta["snippet"]["tags"] = tags
 
-    init_url = "https://www.googleapis.com/upload/youtube/v3/videos"
-    params = {"uploadType": "resumable", "part": "snippet,status"}
+    if tags:
+        payload["snippet"]["tags"] = tags
 
     headers = {
         "Authorization": f"Bearer {access_token}",
-        "Content-Type": "application/json; charset=utf-8",
-        "X-Upload-Content-Type": "video/*",
-        "X-Upload-Content-Length": str(file_path.stat().st_size),
+        "Content-Type": "application/json; charset=UTF-8",
+        "X-Upload-Content-Type": mime_type,
+        "X-Upload-Content-Length": str(file_size),
     }
 
-    init = requests.post(init_url, params=params, headers=headers, json=meta, timeout=120)
-    init.raise_for_status()
-
-    upload_url = (init.headers.get("Location") or "").strip()
+    resp = requests.post(url, params=params, headers=headers, json=payload, timeout=60)
+    resp.raise_for_status()
+    upload_url = resp.headers.get("Location")
     if not upload_url:
-        raise RuntimeError(f"Resumable init missing Location header. Status={init.status_code} Body={init.text[:500]}")
+        raise RuntimeError("YouTube resumable init did not return Location header")
+    return upload_url
 
+
+def youtube_resumable_upload_put(access_token: str, upload_url: str, file_path: Path, *, mime_type: str) -> str:
+    headers = {
+        "Authorization": f"Bearer {access_token}",
+        "Content-Type": mime_type,
+    }
     with file_path.open("rb") as f:
-        up_headers = {
-            "Authorization": f"Bearer {access_token}",
-            "Content-Type": "video/*",
-        }
-        up = requests.put(upload_url, headers=up_headers, data=f, timeout=DOWNLOAD_TIMEOUT)
-        up.raise_for_status()
-        resp = up.json()
-
-    video_id = (resp.get("id") or "").strip()
-    if not video_id:
-        raise RuntimeError(f"Upload finished but no video id returned: {resp}")
-    return video_id
+        resp = requests.put(upload_url, headers=headers, data=f, timeout=DOWNLOAD_TIMEOUT)
+    resp.raise_for_status()
+    data = resp.json()
+    vid = str(data.get("id") or "").strip()
+    if not vid:
+        raise RuntimeError("Upload succeeded but no video id returned")
+    return vid
 
 
+def record_attempt(state: Dict[str, Any], item: VideoItem, *, result: str, video_id: str = "", error: str = "") -> None:
+    items = state.setdefault("items", {})
+    rec = items.get(item.video_url) if isinstance(items, dict) else None
+    if not isinstance(rec, dict):
+        rec = {"attempts": 0}
+        items[item.video_url] = rec
 
-def main() -> int:
-    base_dir = base_dir_from_this_file()
+    rec["video_url"] = item.video_url
+    rec["filename"] = item.filename
+    rec["manifest"] = item.manifest_name
+    rec["title"] = item.title
+    rec["destination_url"] = item.destination_url
+    rec["result"] = result
+    rec["attempts"] = int(rec.get("attempts") or 0) + 1
+    rec["video_id"] = video_id
+    if error:
+        rec["error"] = error
 
-    # Paths (autonomous)
-    manifest_dir = base_dir / "manifests"
-    state_path = base_dir / "state" / "youtube_post_state.json"
-
-    # Load or init state
-    if state_path.exists():
-        state = load_json(state_path)
-    else:
-        state = {"version": 1, "rotation": {"manifest_index": -1, "last_day": ""}, "items": {}, "runs": []}
-
-    item = pick_next_item(manifest_dir, state)
-    if not item:
-        print("No pending items found in manifests (everything posted or max attempts reached).")
-        save_json_atomic(state_path, state)
-        return 0
-
-    # Ensure item record exists
-    st_items = state.setdefault("items", {})
-    if not isinstance(st_items, dict):
-        state["items"] = {}
-        st_items = state["items"]
-
-    rec = st_items.get(item.video_url) or {}
-    attempts = int(rec.get("attempts", 0) or 0) + 1
-
-    rec.update(
+    state.setdefault("runs", []).append(
         {
+            "ts_utc": datetime.now(timezone.utc).isoformat(),
             "video_url": item.video_url,
-            "filename": item.filename,
-            "manifest": item.manifest_name,
-            "title": item.title,
-            "description": item.description,
-            "attempts": attempts,
-            "last_try_ts_utc": utc_now_iso(),
-            "result": "pending",
+            "result": result,
+            "video_id": video_id,
         }
     )
-    st_items[item.video_url] = rec
-    save_json_atomic(state_path, state)
 
-    # Metadata overrides
-    privacy = (os.getenv("YOUTUBE_PRIVACY_STATUS") or DEFAULT_PRIVACY_STATUS).strip().lower()
-    if privacy not in ("public", "unlisted", "private"):
-        privacy = DEFAULT_PRIVACY_STATUS
 
-    category_id = (os.getenv("YOUTUBE_CATEGORY_ID") or DEFAULT_CATEGORY_ID).strip() or DEFAULT_CATEGORY_ID
+def main() -> None:
+    all_items = read_all_items()
+    if not all_items:
+        raise SystemExit(f"No manifest items found in {MANIFEST_DIR}")
 
-    made_for_kids = (os.getenv("YOUTUBE_MADE_FOR_KIDS") or "false").strip().lower() in ("1", "true", "yes")
+    state = load_or_init_state()
+    item = pick_next_item(state, all_items)
+    if not item:
+        print("No eligible video to post (all posted or exhausted attempts).")
+        return
 
-    tags_raw = (os.getenv("YOUTUBE_TAGS") or "").strip()
-    tags = [t.strip() for t in tags_raw.split(",") if t.strip()] if tags_raw else None
+    title = _truncate(item.title.strip(), TITLE_MAX)
+    description = build_description(item)
+    tags = build_tags(item)
 
-    dry_run = (os.getenv("YOUTUBE_POST_DRY_RUN") or os.getenv("DRY_RUN") or "").strip().lower() in ("1", "true", "yes")
-    if dry_run:
-        rec["result"] = "dry_run"
-        rec["dry_run_ts_utc"] = utc_now_iso()
-        st_items[item.video_url] = rec
-        state.setdefault("runs", []).append(
-            {
-                "ts_utc": utc_now_iso(),
-                "video_url": item.video_url,
-                "manifest": item.manifest_name,
-                "result": "dry_run",
-            }
-        )
-        state["last_post"] = {"ts_utc": utc_now_iso(), "video_url": item.video_url, "manifest": item.manifest_name}
-        save_json_atomic(state_path, state)
-        print(f"DRY RUN: would upload video: {item.video_url}")
-        return 0
+    access_token = get_access_token()
 
-    # OAuth access token
-    try:
-        access_token = get_access_token()
-    except Exception as e:
-        rec["result"] = "failed"
-        rec["error"] = str(e)[:1500]
-        st_items[item.video_url] = rec
-        state.setdefault("runs", []).append(
-            {
-                "ts_utc": utc_now_iso(),
-                "video_url": item.video_url,
-                "manifest": item.manifest_name,
-                "result": "failed",
-                "error": str(e)[:500],
-            }
-        )
-        save_json_atomic(state_path, state)
-        print(f"FAILED: {e}")
-        return 2
+    with tempfile.TemporaryDirectory() as td:
+        local_path = Path(td) / item.filename
+        print(f"Downloading: {item.video_url}")
+        download_video(item.video_url, local_path)
 
-    # Download and upload
-    try:
-        print(f"[youtube] downloading: {item.video_url}")
-        file_path = download_video_to_temp(item.video_url, item.filename)
-        print(f"[youtube] downloaded to: {file_path}")
+        file_size = local_path.stat().st_size
+        mime_type = "video/mp4"
 
-        print(f"[youtube] uploading: title='{item.title}' privacy='{privacy}'")
-        video_id = youtube_upload_video_http(
-            access_token=access_token,
-            file_path=file_path,
-            title=item.title,
-            description=item.description,
-            privacy_status=privacy,
-            category_id=category_id,
-            made_for_kids=made_for_kids,
+        print("Init upload...")
+        upload_url = youtube_resumable_upload_init(
+            access_token,
+            file_size=file_size,
+            mime_type=mime_type,
+            title=title,
+            description=description,
             tags=tags,
+            privacy_status=DEFAULT_PRIVACY_STATUS,
+            category_id=DEFAULT_CATEGORY_ID,
+            made_for_kids=DEFAULT_MADE_FOR_KIDS,
         )
 
-        rec["result"] = "success"
-        rec["youtube_video_id"] = video_id
-        rec["published_ts_utc"] = utc_now_iso()
-        rec.pop("error", None)
-        st_items[item.video_url] = rec
-
-        run_entry = {
-            "ts_utc": utc_now_iso(),
-            "video_url": item.video_url,
-            "manifest": item.manifest_name,
-            "result": "success",
-            "youtube_video_id": video_id,
-        }
-        state.setdefault("runs", []).append(run_entry)
-        state["last_post"] = run_entry
-        save_json_atomic(state_path, state)
-
-        print(f"OK: uploaded. video_id={video_id} manifest={item.manifest_name}")
-        return 0
-    except requests.HTTPError as e:
-        err = str(e)
-        rec["result"] = "failed"
-        rec["error"] = (getattr(e.response, "text", "") or err)[:1500]
-        st_items[item.video_url] = rec
-
-        state.setdefault("runs", []).append(
-            {
-                "ts_utc": utc_now_iso(),
-                "video_url": item.video_url,
-                "manifest": item.manifest_name,
-                "result": "failed",
-                "error": rec["error"][:500],
-            }
-        )
-        save_json_atomic(state_path, state)
-        print(f"FAILED: {rec['error']}")
-        return 1
-
-    except Exception as e:
-        rec["result"] = "failed"
-        rec["error"] = str(e)[:1500]
-        st_items[item.video_url] = rec
-
-        state.setdefault("runs", []).append(
-            {
-                "ts_utc": utc_now_iso(),
-                "video_url": item.video_url,
-                "manifest": item.manifest_name,
-                "result": "failed",
-                "error": str(e)[:500],
-            }
-        )
-        save_json_atomic(state_path, state)
-        print(f"FAILED: {e}")
-        return 1
+        print("Uploading bytes...")
+        try:
+            video_id = youtube_resumable_upload_put(access_token, upload_url, local_path, mime_type=mime_type)
+            record_attempt(state, item, result="success", video_id=video_id)
+            save_json_atomic(STATE_PATH, state)
+            print(f"SUCCESS video_id={video_id}")
+        except Exception as e:
+            record_attempt(state, item, result="failed", error=str(e))
+            save_json_atomic(STATE_PATH, state)
+            raise
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()
