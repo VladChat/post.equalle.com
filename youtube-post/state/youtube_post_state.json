@@ -36,6 +36,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ8DTGHP",
       "result": "success",
       "video_id": "e6tiGf--Y5Y"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4",
+      "filename": "surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4",
+      "manifest": "plastic.json",
+      "title": "Surface Not Ready For Paint? Use 220 Grit For Plastic Prep",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-220",
+      "result": "success",
+      "video_id": "xSHlLyiCN90"
     }
   },
   "runs": [
@@ -57,6 +67,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4",
       "result": "success",
       "video_id": "e6tiGf--Y5Y"
+    },
+    {
+      "ts_utc": "2026-01-05T18:01:40.660883+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4",
+      "result": "success",
+      "video_id": "xSHlLyiCN90"
     }
   ],
   "last_post": {
