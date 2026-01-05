@@ -26,6 +26,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
       "result": "success",
       "video_id": "X0p6cjcC6M8"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4",
+      "filename": "plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4",
+      "manifest": "plastic.json",
+      "title": "Plastic Feels Too Rough? Use 180 Grit To Smooth It",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8DTGHP",
+      "result": "success",
+      "video_id": "e6tiGf--Y5Y"
     }
   },
   "runs": [
@@ -41,6 +51,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4",
       "result": "success",
       "video_id": "X0p6cjcC6M8"
+    },
+    {
+      "ts_utc": "2026-01-05T11:20:37.563386+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4",
+      "result": "success",
+      "video_id": "e6tiGf--Y5Y"
     }
   ],
   "last_post": {
