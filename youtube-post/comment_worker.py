@@ -4,10 +4,12 @@
 #          using TWO state files:
 #          - youtube-post/state/youtube_post_state.json      (read-only)
 #          - youtube-post/state/youtube_comment_state.json   (write)
-# Fixes:
-# - Robust parsing of youtube_post_state.json (supports different field names and result values).
-# - If post_state["runs"] is missing/empty, fallback to derive runs from post_state["items"].
-# - Extract video_id from youtube/watch/shorts URLs when not explicitly stored.
+#
+# Fix (2026-01-05):
+# - Stop posting duplicate comments caused by immediate "exists" verification.
+#   YouTube often does not return a freshly created comment thread right away.
+#   We treat a successful POST as success and mark the video as commented.
+# - Legacy "missing" statuses are converted to "commented_unverified" to prevent repost loops.
 # ============================================
 
 from __future__ import annotations
@@ -31,7 +33,7 @@ COMMENT_PROBABILITY = 0.90  # override with YOUTUBE_COMMENT_ALWAYS=1
 MAX_COMMENT_ATTEMPTS = 2
 
 # Jitter
-DEFAULT_JITTER_MAX_SEC = 36
+DEFAULT_JITTER_MAX_SEC = 3600
 
 # Templates (expanded by you)
 TEMPLATES = [
@@ -133,17 +135,14 @@ def extract_video_id_from_url(url: str) -> str:
         return ""
     u = url.strip()
 
-    # shorts
     m = re.search(r"/shorts/([A-Za-z0-9_-]{6,})", u)
     if m:
         return m.group(1)
 
-    # watch?v=
     m = re.search(r"[?&]v=([A-Za-z0-9_-]{6,})", u)
     if m:
         return m.group(1)
 
-    # youtu.be/<id>
     m = re.search(r"youtu\.be/([A-Za-z0-9_-]{6,})", u)
     if m:
         return m.group(1)
@@ -152,10 +151,8 @@ def extract_video_id_from_url(url: str) -> str:
 
 
 def normalize_run(run: Dict[str, Any]) -> Dict[str, Any]:
-    """Return a shallow copy with normalized keys used by the commenter."""
     r = dict(run)
 
-    # video id
     vid = (
         str(r.get("youtube_video_id") or "").strip()
         or str(r.get("video_id") or "").strip()
@@ -170,7 +167,6 @@ def normalize_run(run: Dict[str, Any]) -> Dict[str, Any]:
 
     r["youtube_video_id"] = vid
 
-    # result/status
     res = str(r.get("result") or "").strip().lower()
     if not res:
         res = str(r.get("status") or "").strip().lower()
@@ -180,10 +176,6 @@ def normalize_run(run: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def iter_success_runs(post_state: Dict[str, Any]) -> Iterator[Dict[str, Any]]:
-    """
-    Yield normalized success runs from newest to oldest.
-    Supports schema differences in youtube_post_state.json.
-    """
     success_values = {"success", "uploaded", "posted", "ok", "done"}
 
     runs = post_state.get("runs") or []
@@ -193,21 +185,18 @@ def iter_success_runs(post_state: Dict[str, Any]) -> Iterator[Dict[str, Any]]:
             if isinstance(raw, dict):
                 norm_runs.append(normalize_run(raw))
 
-    # Fallback: derive runs from items if runs is missing/empty
     if not norm_runs:
         items = post_state.get("items") or {}
         if isinstance(items, dict):
             for k, v in items.items():
                 if not isinstance(v, dict):
                     continue
-                # best effort: treat each item as a run
                 rr = dict(v)
                 rr.setdefault("video_url", rr.get("video_url") or k)
                 rr.setdefault("manifest", rr.get("manifest") or rr.get("manifest_name") or "")
                 rr = normalize_run(rr)
                 norm_runs.append(rr)
 
-    # Newest to oldest (many states already append chronologically; we force it)
     for run in reversed(norm_runs):
         res = str(run.get("result") or "").lower()
         if res not in success_values:
@@ -231,26 +220,10 @@ def youtube_post_comment_http(*, access_token: str, video_id: str, text: str) ->
     return cid or "unknown"
 
 
-def youtube_commentthread_exists(*, access_token: str, comment_thread_id: str) -> bool:
-    if not comment_thread_id or comment_thread_id == "unknown":
-        return False
-    url = "https://www.googleapis.com/youtube/v3/commentThreads"
-    params = {"part": "id", "id": comment_thread_id}
-    headers = {"Authorization": f"Bearer {access_token}"}
-    resp = requests.get(url, params=params, headers=headers, timeout=30)
-    if resp.status_code == 404:
-        return False
-    resp.raise_for_status()
-    data = resp.json() or {}
-    items = data.get("items") or []
-    return bool(items)
-
-
 def pick_eligible_video_run(
     *,
     post_state: Dict[str, Any],
     comment_state: Dict[str, Any],
-    access_token_for_verify: Optional[str],
 ) -> Optional[Tuple[Dict[str, Any], Dict[str, Any]]]:
     items = comment_state.setdefault("items", {})
     if not isinstance(items, dict):
@@ -267,19 +240,10 @@ def pick_eligible_video_run(
         rec = items.get(video_id) or {}
         status = str(rec.get("comment_status") or "").strip().lower()
 
-        if status == "commented":
-            cid = str(rec.get("comment_id") or "").strip()
-            if access_token_for_verify and cid:
-                try:
-                    if youtube_commentthread_exists(access_token=access_token_for_verify, comment_thread_id=cid):
-                        continue
-                    rec["comment_status"] = "missing"
-                    rec["comment_missing_detected_ts_utc"] = utc_now_iso()
-                    items[video_id] = rec
-                except Exception:
-                    continue
-            else:
-                continue
+        # Do not repost duplicates.
+        # "missing" comes from old logic that tried to verify immediately; treat it as already posted.
+        if status in {"commented", "commented_unverified", "missing"}:
+            continue
 
         if status == "skipped" and not retry_skipped:
             continue
@@ -291,6 +255,24 @@ def pick_eligible_video_run(
         return run, rec
 
     return None
+
+
+def reconcile_legacy_missing(cstate: Dict[str, Any]) -> bool:
+    items = cstate.get("items")
+    if not isinstance(items, dict):
+        return False
+
+    changed = False
+    for vid, rec in items.items():
+        if not isinstance(rec, dict):
+            continue
+        status = str(rec.get("comment_status") or "").strip().lower()
+        if status == "missing":
+            rec["comment_status"] = "commented_unverified"
+            rec["comment_reconciled_ts_utc"] = utc_now_iso()
+            items[vid] = rec
+            changed = True
+    return changed
 
 
 def main() -> int:
@@ -310,21 +292,23 @@ def main() -> int:
     else:
         cstate = {"version": 1, "items": {}, "runs": []}
 
+    changed = reconcile_legacy_missing(cstate)
+
     try:
         access_token = get_access_token()
     except Exception as e:
         print(f"FAILED: cannot get access token: {e}")
         return 2
 
-    picked = pick_eligible_video_run(post_state=post_state, comment_state=cstate, access_token_for_verify=access_token)
+    picked = pick_eligible_video_run(post_state=post_state, comment_state=cstate)
     if not picked:
-        # Helpful minimal diagnostics (no spam): show what we see in post_state
         runs = post_state.get("runs")
         items = post_state.get("items")
         runs_n = len(runs) if isinstance(runs, list) else 0
         items_n = len(items) if isinstance(items, dict) else 0
         print(f"No eligible successful YouTube uploads found for commenting yet. post_state_runs={runs_n} post_state_items={items_n}")
-        save_json_atomic(comment_state_path, cstate)
+        if changed:
+            save_json_atomic(comment_state_path, cstate)
         return 0
 
     run, rec = picked
@@ -410,28 +394,11 @@ def main() -> int:
     try:
         cid = youtube_post_comment_http(access_token=access_token, video_id=video_id, text=msg)
 
-        exists = False
-        try:
-            exists = youtube_commentthread_exists(access_token=access_token, comment_thread_id=cid)
-        except Exception:
-            exists = False
-
-        if not exists:
-            rec["comment_status"] = "missing"
-            rec["comment_id"] = cid
-            rec["comment_missing_detected_ts_utc"] = utc_now_iso()
-            items[video_id] = rec
-            cstate.setdefault("runs", []).append(
-                {"ts_utc": utc_now_iso(), "video_id": video_id, "video_url": video_url, "manifest": manifest, "result": "missing", "comment_id": cid, "template_idx": template_idx}
-            )
-            save_json_atomic(comment_state_path, cstate)
-            print(f"WARNING: posted comment but cannot verify it exists. Will retry later. video_id={video_id} comment_id={cid}")
-            return 0
-
+        # Treat successful POST as success. Do not repost duplicates due to immediate verification lag.
         rec["comment_status"] = "commented"
         rec["comment_id"] = cid
         rec["commented_ts_utc"] = utc_now_iso()
-        rec.pop("comment_error", None)
+        rec["comment_verified"] = False
         items[video_id] = rec
 
         cstate.setdefault("runs", []).append(
@@ -439,7 +406,7 @@ def main() -> int:
         )
         save_json_atomic(comment_state_path, cstate)
 
-        print(f"OK: Commented. video_id={video_id} comment_id={cid} manifest={manifest}")
+        print(f"OK: Comment posted. video_id={video_id} comment_id={cid} manifest={manifest}")
         return 0
 
     except requests.HTTPError as e:
