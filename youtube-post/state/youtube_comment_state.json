@@ -52,9 +52,14 @@
         "decision": "skip",
         "template_idx": 12
       },
-      "comment_status": "skipped",
+      "comment_status": "commented_unverified",
       "comment_skipped_ts_utc": "2026-01-05T18:03:44Z",
-      "comment_skipped_reason": "policy_skip"
+      "comment_skipped_reason": "policy_skip",
+      "comment_id": "UgwMURnizthUv9dQB_N4AaABAg",
+      "comment_text": "If the paper loads up, rinse or replace it—clean paper cuts cleaner.",
+      "comment_attempts": 1,
+      "commented_ts": "2026-01-05T18:36:33Z",
+      "verify_after_ts": 1767639993.5984414
     }
   },
   "runs": [
@@ -84,6 +89,12 @@
       "result": "missing",
       "comment_id": "UgyKx0H8Dsg3Qy7qO2N4AaABAg",
       "template_idx": 19
+    },
+    {
+      "ts": "2026-01-05T18:36:33Z",
+      "video_id": "xSHlLyiCN90",
+      "result": "commented_unverified",
+      "comment_id": "UgwMURnizthUv9dQB_N4AaABAg"
     }
   ]
 }
