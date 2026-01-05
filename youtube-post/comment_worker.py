@@ -4,12 +4,11 @@
 #          using TWO state files:
 #          - youtube-post/state/youtube_post_state.json      (read-only)
 #          - youtube-post/state/youtube_comment_state.json   (write)
-#
-# Fix (2026-01-05):
-# - Stop posting duplicate comments caused by immediate "exists" verification.
-#   YouTube often does not return a freshly created comment thread right away.
-#   We treat a successful POST as success and mark the video as commented.
-# - Legacy "missing" statuses are converted to "commented_unverified" to prevent repost loops.
+# Fixes (2026-01-05):
+# - Do NOT do immediate "exists" verification after POST (YouTube often lags returning the new thread).
+#   Immediate verify causes false "missing" -> retries -> attempts burn -> no eligible videos.
+# - Treat "missing" as legacy/lag and reconcile to "commented_unverified" to prevent repost loops.
+# - Add minimal diagnostics explaining WHY there is no eligible video (status/attempts per success run).
 # ============================================
 
 from __future__ import annotations
@@ -21,7 +20,7 @@ import random
 import re
 import time
 from pathlib import Path
-from typing import Any, Dict, Optional, Tuple, Iterator
+from typing import Any, Dict, Optional, Tuple, Iterator, List
 
 import requests
 
@@ -33,7 +32,7 @@ COMMENT_PROBABILITY = 0.90  # override with YOUTUBE_COMMENT_ALWAYS=1
 MAX_COMMENT_ATTEMPTS = 2
 
 # Jitter
-DEFAULT_JITTER_MAX_SEC = 3600
+DEFAULT_JITTER_MAX_SEC = 36
 
 # Templates (expanded by you)
 TEMPLATES = [
@@ -179,7 +178,7 @@ def iter_success_runs(post_state: Dict[str, Any]) -> Iterator[Dict[str, Any]]:
     success_values = {"success", "uploaded", "posted", "ok", "done"}
 
     runs = post_state.get("runs") or []
-    norm_runs = []
+    norm_runs: List[Dict[str, Any]] = []
     if isinstance(runs, list) and runs:
         for raw in runs:
             if isinstance(raw, dict):
@@ -220,6 +219,29 @@ def youtube_post_comment_http(*, access_token: str, video_id: str, text: str) ->
     return cid or "unknown"
 
 
+def reconcile_legacy_missing(cstate: Dict[str, Any]) -> bool:
+    """
+    Legacy statuses:
+    - 'missing' was often caused by immediate verification lag.
+    Convert to 'commented_unverified' to prevent repost loops.
+    """
+    items = cstate.get("items")
+    if not isinstance(items, dict):
+        return False
+
+    changed = False
+    for vid, rec in items.items():
+        if not isinstance(rec, dict):
+            continue
+        status = str(rec.get("comment_status") or "").strip().lower()
+        if status == "missing":
+            rec["comment_status"] = "commented_unverified"
+            rec["comment_reconciled_ts_utc"] = utc_now_iso()
+            items[vid] = rec
+            changed = True
+    return changed
+
+
 def pick_eligible_video_run(
     *,
     post_state: Dict[str, Any],
@@ -240,9 +262,9 @@ def pick_eligible_video_run(
         rec = items.get(video_id) or {}
         status = str(rec.get("comment_status") or "").strip().lower()
 
-        # Do not repost duplicates.
-        # "missing" comes from old logic that tried to verify immediately; treat it as already posted.
-        if status in {"commented", "commented_unverified", "missing"}:
+        # IMPORTANT: do not duplicate comments.
+        # We treat both "commented" and "commented_unverified" as DONE.
+        if status in {"commented", "commented_unverified"}:
             continue
 
         if status == "skipped" and not retry_skipped:
@@ -257,22 +279,23 @@ def pick_eligible_video_run(
     return None
 
 
-def reconcile_legacy_missing(cstate: Dict[str, Any]) -> bool:
-    items = cstate.get("items")
-    if not isinstance(items, dict):
-        return False
+def debug_no_eligible(post_state: Dict[str, Any], cstate: Dict[str, Any]) -> None:
+    items = cstate.get("items") if isinstance(cstate.get("items"), dict) else {}
+    lines: List[str] = []
+    for run in iter_success_runs(post_state):
+        vid = str(run.get("youtube_video_id") or "").strip()
+        manifest = str(run.get("manifest") or "").strip()
+        rec = items.get(vid, {}) if isinstance(items, dict) else {}
+        status = str(rec.get("comment_status") or "").strip().lower() or "none"
+        attempts = int(rec.get("comment_attempts", 0) or 0)
+        plan = rec.get("comment_plan") if isinstance(rec.get("comment_plan"), dict) else {}
+        decision = str(plan.get("decision") or "")
+        lines.append(f"- video_id={vid} manifest={manifest} status={status} attempts={attempts} plan_decision={decision}")
 
-    changed = False
-    for vid, rec in items.items():
-        if not isinstance(rec, dict):
-            continue
-        status = str(rec.get("comment_status") or "").strip().lower()
-        if status == "missing":
-            rec["comment_status"] = "commented_unverified"
-            rec["comment_reconciled_ts_utc"] = utc_now_iso()
-            items[vid] = rec
-            changed = True
-    return changed
+    if lines:
+        print("[debug] Success videos seen + comment-state:")
+        for s in lines[:50]:
+            print(s)
 
 
 def main() -> int:
@@ -307,6 +330,7 @@ def main() -> int:
         runs_n = len(runs) if isinstance(runs, list) else 0
         items_n = len(items) if isinstance(items, dict) else 0
         print(f"No eligible successful YouTube uploads found for commenting yet. post_state_runs={runs_n} post_state_items={items_n}")
+        debug_no_eligible(post_state, cstate)
         if changed:
             save_json_atomic(comment_state_path, cstate)
         return 0
@@ -394,19 +418,20 @@ def main() -> int:
     try:
         cid = youtube_post_comment_http(access_token=access_token, video_id=video_id, text=msg)
 
-        # Treat successful POST as success. Do not repost duplicates due to immediate verification lag.
-        rec["comment_status"] = "commented"
+        # FIX: DO NOT immediately verify existence (YouTube lag).
+        # Successful POST == success; mark unverified to prevent duplicates.
+        rec["comment_status"] = "commented_unverified"
         rec["comment_id"] = cid
         rec["commented_ts_utc"] = utc_now_iso()
-        rec["comment_verified"] = False
+        rec.pop("comment_error", None)
         items[video_id] = rec
 
         cstate.setdefault("runs", []).append(
-            {"ts_utc": utc_now_iso(), "video_id": video_id, "video_url": video_url, "manifest": manifest, "result": "commented", "comment_id": cid, "template_idx": template_idx}
+            {"ts_utc": utc_now_iso(), "video_id": video_id, "video_url": video_url, "manifest": manifest, "result": "commented_unverified", "comment_id": cid, "template_idx": template_idx}
         )
         save_json_atomic(comment_state_path, cstate)
 
-        print(f"OK: Comment posted. video_id={video_id} comment_id={cid} manifest={manifest}")
+        print(f"OK: Comment posted (unverified to avoid lag duplicates). video_id={video_id} comment_id={cid} manifest={manifest}")
         return 0
 
     except requests.HTTPError as e:
