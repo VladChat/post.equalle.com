@@ -3,7 +3,7 @@
 # Purpose: YouTube — comment on last posted video (updates youtube-post/state/*)
 # ============================================
 
-name: YouTube — Comment Last Video (eQualle)
+name: YouTube — Comment Video (eQualle)
 
 on:
   workflow_dispatch:
@@ -80,3 +80,4 @@ jobs:
 
           echo "Push failed after retries."
           exit 1
+
