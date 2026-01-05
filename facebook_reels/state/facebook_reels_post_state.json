@@ -99,7 +99,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-05T13:49:04Z",
-      "video_id": "1195598896009969"
+      "video_id": "1195598896009969",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 5
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-05T14:23:58Z",
+      "comment_text": "After sanding, wipe dust and check under a bright light from the side. Do the lines disappear evenly?",
+      "comment_status": "commented",
+      "comment_id": "1195598896009969_1541066340503623",
+      "commented_ts_utc": "2026-01-05T14:24:01Z"
     }
   },
   "runs": [
@@ -185,6 +195,15 @@
       "result": "commented",
       "comment_id": "1069895788577382_1622529375772309",
       "template_idx": 17
+    },
+    {
+      "ts_utc": "2026-01-05T14:24:01Z",
+      "video_id": "1195598896009969",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "1195598896009969_1541066340503623",
+      "template_idx": 5
     }
   ]
 }
