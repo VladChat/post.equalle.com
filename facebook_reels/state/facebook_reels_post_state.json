@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-01-04"
+    "manifest_index": 4,
+    "last_day": "2026-01-05"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -89,6 +89,17 @@
       "attempts": 1,
       "last_ts_utc": "2026-01-04T13:37:37Z",
       "video_id": "4362142674070333"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4",
+      "filename": "scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4",
+      "manifest": "plastic.json",
+      "title": "Scratches Showing On Plastic? Use 220 Grit For Surface Prep",
+      "description": "If plastic scratches keep showing, 220 grit helps level the surface and reduce visible marks before paint or coating. Sand lightly with even pressure, then wipe clean and inspect under light. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-05T13:49:04Z",
+      "video_id": "1195598896009969"
     }
   },
   "runs": [
@@ -135,6 +146,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "4362142674070333",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-05T13:49:04Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4",
+      "filename": "scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "1195598896009969",
       "error": null
     }
   ],
