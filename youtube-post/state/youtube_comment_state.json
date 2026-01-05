@@ -27,6 +27,21 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-01-05T14:33:18Z",
       "comment_skipped_reason": "policy_skip"
+    },
+    "X0p6cjcC6M8": {
+      "video_id": "X0p6cjcC6M8",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4",
+      "manifest": "",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 19
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-05T14:39:00Z",
+      "comment_text": "For wood sanding, follow the grain on the final passes after crosshatch blending—grain-direction finishing hides micro-scratches better. What wood type are you working with?",
+      "comment_status": "missing",
+      "comment_id": "UgwBo5GrFAq-Nkdxds54AaABAg",
+      "comment_missing_detected_ts_utc": "2026-01-05T14:39:01Z"
     }
   },
   "runs": [
@@ -38,6 +53,15 @@
       "result": "commented",
       "comment_id": "UgwH2wXfa6HLN9Vd-fF4AaABAg",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-01-05T14:39:01Z",
+      "video_id": "X0p6cjcC6M8",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4",
+      "manifest": "",
+      "result": "missing",
+      "comment_id": "UgwBo5GrFAq-Nkdxds54AaABAg",
+      "template_idx": 19
     }
   ]
 }
