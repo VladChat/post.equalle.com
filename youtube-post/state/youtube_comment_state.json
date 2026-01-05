@@ -39,9 +39,10 @@
       "comment_attempts": 2,
       "comment_last_try_ts_utc": "2026-01-05T14:47:46Z",
       "comment_text": "For wood sanding, follow the grain on the final passes after crosshatch blending—grain-direction finishing hides micro-scratches better. What wood type are you working with?",
-      "comment_status": "missing",
+      "comment_status": "commented_unverified",
       "comment_id": "UgyKx0H8Dsg3Qy7qO2N4AaABAg",
-      "comment_missing_detected_ts_utc": "2026-01-05T14:47:47Z"
+      "comment_missing_detected_ts_utc": "2026-01-05T14:47:47Z",
+      "comment_reconciled_ts_utc": "2026-01-05T15:24:22Z"
     }
   },
   "runs": [
