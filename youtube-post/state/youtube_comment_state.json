@@ -43,6 +43,18 @@
       "comment_id": "UgyKx0H8Dsg3Qy7qO2N4AaABAg",
       "comment_missing_detected_ts_utc": "2026-01-05T14:47:47Z",
       "comment_reconciled_ts_utc": "2026-01-05T15:24:22Z"
+    },
+    "xSHlLyiCN90": {
+      "video_id": "xSHlLyiCN90",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4",
+      "manifest": "",
+      "comment_plan": {
+        "decision": "skip",
+        "template_idx": 12
+      },
+      "comment_status": "skipped",
+      "comment_skipped_ts_utc": "2026-01-05T18:03:44Z",
+      "comment_skipped_reason": "policy_skip"
     }
   },
   "runs": [
