@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
   schedule:
     # 06:20 Chicago (CST) = 12:20 UTC (winter)
-    - cron: "20 12 * * *"
+    - cron: "20 11 * * *"
 
 permissions:
   contents: write
@@ -54,6 +54,11 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
+          # IMPORTANT:
+          # The script may have modified files already (dirty working tree).
+          # --autostash allows rebase even when there are local changes.
+          git pull --rebase --autostash origin main
+
           git add youtube-post/state/*.json || true
 
           if git diff --cached --quiet; then
@@ -63,14 +68,14 @@ jobs:
 
           git commit -m "youtube_comment: update state"
 
-          # Push with retries. Rebase ONLY after commit (clean index), never with staged/unstaged changes.
+          # Push with retries.
           for i in 1 2 3; do
             if git push origin HEAD:main; then
               echo "Pushed OK."
               exit 0
             fi
-            echo "Push failed (attempt $i). Rebase and retry..."
-            git pull --rebase origin main
+            echo "Push failed (attempt $i). Rebase (autostash) and retry..."
+            git pull --rebase --autostash origin main
           done
 
           echo "Push failed after retries."
