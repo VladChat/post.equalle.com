@@ -32,7 +32,7 @@ COMMENT_PROBABILITY = 0.90  # 90% comment, 10% skip
 MAX_COMMENT_ATTEMPTS = 2
 
 # Jitter (random delay to look natural)
-DEFAULT_JITTER_MAX_SEC = 3600
+DEFAULT_JITTER_MAX_SEC = 36
 
 # 8–12 templates (short, human-like, no links)
 TEMPLATES = [
