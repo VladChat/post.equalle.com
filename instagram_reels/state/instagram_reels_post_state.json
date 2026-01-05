@@ -174,7 +174,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18105085387741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-05T14:16:12Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "18098802493880535",
+      "commented_ts_utc": "2026-01-05T14:16:15Z"
     }
   },
   "runs": [
@@ -263,6 +273,15 @@
       "result": "commented",
       "comment_id": "18554203360011947",
       "template_idx": 2
+    },
+    {
+      "ts_utc": "2026-01-05T14:16:15Z",
+      "media_id": "17995366655902566",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18098802493880535",
+      "template_idx": 12
     }
   ]
 }
