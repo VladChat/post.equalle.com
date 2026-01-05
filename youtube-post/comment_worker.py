@@ -4,12 +4,10 @@
 #          using TWO state files:
 #          - youtube-post/state/youtube_post_state.json      (read-only)
 #          - youtube-post/state/youtube_comment_state.json   (write)
-# Notes:
-# - Best practice: comment is delayed and optional.
-# - No repeats by default: 1 comment per video unless comment is missing (deleted/hidden).
-# - Fix: scan recent uploads until we find an eligible video (not only the latest run).
-# - Fix: verify that "commented" commentThread still exists; if missing -> retry later.
-# - Jitter: optional random delay (default up to 1 hour).
+# Fixes:
+# - Robust parsing of youtube_post_state.json (supports different field names and result values).
+# - If post_state["runs"] is missing/empty, fallback to derive runs from post_state["items"].
+# - Extract video_id from youtube/watch/shorts URLs when not explicitly stored.
 # ============================================
 
 from __future__ import annotations
@@ -21,7 +19,7 @@ import random
 import re
 import time
 from pathlib import Path
-from typing import Any, Dict, Optional, Tuple
+from typing import Any, Dict, Optional, Tuple, Iterator
 
 import requests
 
@@ -29,13 +27,13 @@ from youtube_auth import get_access_token
 
 
 # Comment policy
-COMMENT_PROBABILITY = 0.90  # 90% comment, 10% skip (override with YOUTUBE_COMMENT_ALWAYS=1)
+COMMENT_PROBABILITY = 0.90  # override with YOUTUBE_COMMENT_ALWAYS=1
 MAX_COMMENT_ATTEMPTS = 2
 
-# Jitter (random delay to look natural)
+# Jitter
 DEFAULT_JITTER_MAX_SEC = 36
 
-# 8–12 templates (short, human-like, no links)
+# Templates (expanded by you)
 TEMPLATES = [
     "Light pressure with {grit} grit usually blends faster than pushing hard—let the Silicon Carbide abrasive do the cutting. Are you sanding wood, metal, drywall, or paint today?",
     "If the scratch pattern looks uneven, do a few light crosshatch passes and re-check under side light. Are you sanding wet or dry on {surface}?",
@@ -65,9 +63,7 @@ TEMPLATES = [
 ]
 
 
-
 def base_dir_from_this_file() -> Path:
-    # youtube-post/comment_worker.py -> base dir = youtube-post/
     return Path(__file__).resolve().parent
 
 
@@ -91,14 +87,12 @@ def utc_today() -> str:
 
 
 def stable_rng(seed_text: str) -> random.Random:
-    """Deterministic RNG per seed_text (stable across retries)."""
     h = hashlib.sha256(seed_text.encode("utf-8")).hexdigest()
     seed = int(h[:8], 16)
     return random.Random(seed)
 
 
 def parse_grit(text: str) -> Optional[str]:
-    """Extract grit like '180' or '180–220' from filename/title/description patterns."""
     if not text:
         return None
     t = text.lower()
@@ -134,13 +128,89 @@ def surface_from_manifest(manifest_name: str) -> str:
     return mapping.get(name, name or "surface")
 
 
-def iter_success_runs(post_state: Dict[str, Any]):
-    """Yield success runs from newest to oldest with youtube_video_id present."""
+def extract_video_id_from_url(url: str) -> str:
+    if not url:
+        return ""
+    u = url.strip()
+
+    # shorts
+    m = re.search(r"/shorts/([A-Za-z0-9_-]{6,})", u)
+    if m:
+        return m.group(1)
+
+    # watch?v=
+    m = re.search(r"[?&]v=([A-Za-z0-9_-]{6,})", u)
+    if m:
+        return m.group(1)
+
+    # youtu.be/<id>
+    m = re.search(r"youtu\.be/([A-Za-z0-9_-]{6,})", u)
+    if m:
+        return m.group(1)
+
+    return ""
+
+
+def normalize_run(run: Dict[str, Any]) -> Dict[str, Any]:
+    """Return a shallow copy with normalized keys used by the commenter."""
+    r = dict(run)
+
+    # video id
+    vid = (
+        str(r.get("youtube_video_id") or "").strip()
+        or str(r.get("video_id") or "").strip()
+        or str(r.get("yt_video_id") or "").strip()
+    )
+    if not vid:
+        vid = extract_video_id_from_url(str(r.get("youtube_url") or "").strip())
+    if not vid:
+        vid = extract_video_id_from_url(str(r.get("url") or "").strip())
+    if not vid:
+        vid = extract_video_id_from_url(str(r.get("video_link") or "").strip())
+
+    r["youtube_video_id"] = vid
+
+    # result/status
+    res = str(r.get("result") or "").strip().lower()
+    if not res:
+        res = str(r.get("status") or "").strip().lower()
+    r["result"] = res
+
+    return r
+
+
+def iter_success_runs(post_state: Dict[str, Any]) -> Iterator[Dict[str, Any]]:
+    """
+    Yield normalized success runs from newest to oldest.
+    Supports schema differences in youtube_post_state.json.
+    """
+    success_values = {"success", "uploaded", "posted", "ok", "done"}
+
     runs = post_state.get("runs") or []
-    for run in reversed(runs):
-        if not isinstance(run, dict):
-            continue
-        if run.get("result") != "success":
+    norm_runs = []
+    if isinstance(runs, list) and runs:
+        for raw in runs:
+            if isinstance(raw, dict):
+                norm_runs.append(normalize_run(raw))
+
+    # Fallback: derive runs from items if runs is missing/empty
+    if not norm_runs:
+        items = post_state.get("items") or {}
+        if isinstance(items, dict):
+            for k, v in items.items():
+                if not isinstance(v, dict):
+                    continue
+                # best effort: treat each item as a run
+                rr = dict(v)
+                rr.setdefault("video_url", rr.get("video_url") or k)
+                rr.setdefault("manifest", rr.get("manifest") or rr.get("manifest_name") or "")
+                rr = normalize_run(rr)
+                norm_runs.append(rr)
+
+    # Newest to oldest (many states already append chronologically; we force it)
+    for run in reversed(norm_runs):
+        res = str(run.get("result") or "").lower()
+        if res not in success_values:
             continue
         vid = str(run.get("youtube_video_id") or "").strip()
         if not vid:
@@ -149,7 +219,6 @@ def iter_success_runs(post_state: Dict[str, Any]):
 
 
 def youtube_post_comment_http(*, access_token: str, video_id: str, text: str) -> str:
-    """Post a top-level comment and return commentThread id."""
     url = "https://www.googleapis.com/youtube/v3/commentThreads"
     params = {"part": "snippet"}
     headers = {"Authorization": f"Bearer {access_token}", "Content-Type": "application/json; charset=utf-8"}
@@ -163,7 +232,6 @@ def youtube_post_comment_http(*, access_token: str, video_id: str, text: str) ->
 
 
 def youtube_commentthread_exists(*, access_token: str, comment_thread_id: str) -> bool:
-    """Best-effort: verify that commentThread still exists."""
     if not comment_thread_id or comment_thread_id == "unknown":
         return False
     url = "https://www.googleapis.com/youtube/v3/commentThreads"
@@ -184,11 +252,6 @@ def pick_eligible_video_run(
     comment_state: Dict[str, Any],
     access_token_for_verify: Optional[str],
 ) -> Optional[Tuple[Dict[str, Any], Dict[str, Any]]]:
-    """
-    Return (run, rec) for the newest video that needs a comment.
-    Fix: do NOT stop at the latest run if it's already processed; scan backwards.
-    Fix: if state says 'commented' but commentThread is missing, allow retry.
-    """
     items = comment_state.setdefault("items", {})
     if not isinstance(items, dict):
         comment_state["items"] = {}
@@ -204,22 +267,19 @@ def pick_eligible_video_run(
         rec = items.get(video_id) or {}
         status = str(rec.get("comment_status") or "").strip().lower()
 
-        # Allow retry if previously commented but comment is gone
         if status == "commented":
             cid = str(rec.get("comment_id") or "").strip()
             if access_token_for_verify and cid:
                 try:
                     if youtube_commentthread_exists(access_token=access_token_for_verify, comment_thread_id=cid):
-                        continue  # truly commented, skip this video
-                    # Missing: mark and allow retry
+                        continue
                     rec["comment_status"] = "missing"
                     rec["comment_missing_detected_ts_utc"] = utc_now_iso()
                     items[video_id] = rec
                 except Exception:
-                    # If verify fails, keep existing status and move on to next run
                     continue
             else:
-                continue  # no way to verify; keep conservative behavior
+                continue
 
         if status == "skipped" and not retry_skipped:
             continue
@@ -245,24 +305,25 @@ def main() -> int:
 
     post_state = load_json(post_state_path)
 
-    # Load or init comment state
     if comment_state_path.exists():
         cstate = load_json(comment_state_path)
     else:
         cstate = {"version": 1, "items": {}, "runs": []}
 
-    # Get token early (also used for verifying "commented but missing")
     try:
         access_token = get_access_token()
     except Exception as e:
-        # If we can't auth, we also can't verify; keep state unchanged.
         print(f"FAILED: cannot get access token: {e}")
         return 2
 
     picked = pick_eligible_video_run(post_state=post_state, comment_state=cstate, access_token_for_verify=access_token)
     if not picked:
-        print("No eligible successful YouTube uploads found for commenting yet.")
-        # Save in case we marked something as missing during scan
+        # Helpful minimal diagnostics (no spam): show what we see in post_state
+        runs = post_state.get("runs")
+        items = post_state.get("items")
+        runs_n = len(runs) if isinstance(runs, list) else 0
+        items_n = len(items) if isinstance(items, dict) else 0
+        print(f"No eligible successful YouTube uploads found for commenting yet. post_state_runs={runs_n} post_state_items={items_n}")
         save_json_atomic(comment_state_path, cstate)
         return 0
 
@@ -271,7 +332,6 @@ def main() -> int:
     video_url = str(run.get("video_url") or "").strip()
     manifest = str(run.get("manifest") or "").strip()
 
-    # JITTER
     try:
         jitter_max = int((os.getenv("YOUTUBE_COMMENT_JITTER_MAX_SEC") or str(DEFAULT_JITTER_MAX_SEC)).strip())
     except Exception:
@@ -287,7 +347,6 @@ def main() -> int:
             print(f"[comment_worker] jitter sleep: {delay}s (max={jitter_max}s) video_id={video_id}")
             time.sleep(delay)
 
-    # Decision
     always_comment = (os.getenv("YOUTUBE_COMMENT_ALWAYS") or "").strip().lower() in ("1", "true", "yes")
 
     plan = rec.get("comment_plan") if isinstance(rec.get("comment_plan"), dict) else {}
@@ -300,14 +359,7 @@ def main() -> int:
         template_idx = rng.randrange(len(TEMPLATES))
         plan = {"decision": decision, "template_idx": template_idx}
 
-    rec.update(
-        {
-            "video_id": video_id,
-            "video_url": video_url,
-            "manifest": manifest,
-            "comment_plan": plan,
-        }
-    )
+    rec.update({"video_id": video_id, "video_url": video_url, "manifest": manifest, "comment_plan": plan})
 
     items = cstate.setdefault("items", {})
     if not isinstance(items, dict):
@@ -323,9 +375,12 @@ def main() -> int:
         print(f"SKIP: Policy skip. video_id={video_id} manifest={manifest}")
         return 0
 
-    # Build message using post_state item details if available
     post_items = post_state.get("items") or {}
-    post_rec = post_items.get(video_url) if isinstance(post_items, dict) else {}
+    post_rec = None
+    if isinstance(post_items, dict) and video_url:
+        post_rec = post_items.get(video_url)
+    if not isinstance(post_rec, dict):
+        post_rec = {}
 
     filename = str((post_rec or {}).get("filename") or "")
     title = str((post_rec or {}).get("title") or "")
@@ -333,10 +388,8 @@ def main() -> int:
 
     grit = parse_grit(filename) or parse_grit(title) or parse_grit(desc) or "this"
     surface = surface_from_manifest(manifest)
-
     msg = TEMPLATES[template_idx].format(grit=grit, surface=surface).strip()
 
-    # Persist attempt before calling API
     attempts = int(rec.get("comment_attempts", 0) or 0) + 1
     rec["comment_attempts"] = attempts
     rec["comment_last_try_ts_utc"] = utc_now_iso()
@@ -349,9 +402,7 @@ def main() -> int:
     if dry_run:
         rec["comment_status"] = "dry_run"
         items[video_id] = rec
-        cstate.setdefault("runs", []).append(
-            {"ts_utc": utc_now_iso(), "video_id": video_id, "result": "dry_run", "template_idx": template_idx}
-        )
+        cstate.setdefault("runs", []).append({"ts_utc": utc_now_iso(), "video_id": video_id, "result": "dry_run", "template_idx": template_idx})
         save_json_atomic(comment_state_path, cstate)
         print(f"DRY RUN: would comment on video_id={video_id}: {msg}")
         return 0
@@ -359,7 +410,6 @@ def main() -> int:
     try:
         cid = youtube_post_comment_http(access_token=access_token, video_id=video_id, text=msg)
 
-        # Verify existence; if missing -> do NOT lock as commented
         exists = False
         try:
             exists = youtube_commentthread_exists(access_token=access_token, comment_thread_id=cid)
@@ -372,15 +422,7 @@ def main() -> int:
             rec["comment_missing_detected_ts_utc"] = utc_now_iso()
             items[video_id] = rec
             cstate.setdefault("runs", []).append(
-                {
-                    "ts_utc": utc_now_iso(),
-                    "video_id": video_id,
-                    "video_url": video_url,
-                    "manifest": manifest,
-                    "result": "missing",
-                    "comment_id": cid,
-                    "template_idx": template_idx,
-                }
+                {"ts_utc": utc_now_iso(), "video_id": video_id, "video_url": video_url, "manifest": manifest, "result": "missing", "comment_id": cid, "template_idx": template_idx}
             )
             save_json_atomic(comment_state_path, cstate)
             print(f"WARNING: posted comment but cannot verify it exists. Will retry later. video_id={video_id} comment_id={cid}")
@@ -393,15 +435,7 @@ def main() -> int:
         items[video_id] = rec
 
         cstate.setdefault("runs", []).append(
-            {
-                "ts_utc": utc_now_iso(),
-                "video_id": video_id,
-                "video_url": video_url,
-                "manifest": manifest,
-                "result": "commented",
-                "comment_id": cid,
-                "template_idx": template_idx,
-            }
+            {"ts_utc": utc_now_iso(), "video_id": video_id, "video_url": video_url, "manifest": manifest, "result": "commented", "comment_id": cid, "template_idx": template_idx}
         )
         save_json_atomic(comment_state_path, cstate)
 
@@ -414,15 +448,7 @@ def main() -> int:
         rec["comment_error"] = err[:1500]
         items[video_id] = rec
         cstate.setdefault("runs", []).append(
-            {
-                "ts_utc": utc_now_iso(),
-                "video_id": video_id,
-                "video_url": video_url,
-                "manifest": manifest,
-                "result": "failed",
-                "error": err[:500],
-                "template_idx": template_idx,
-            }
+            {"ts_utc": utc_now_iso(), "video_id": video_id, "video_url": video_url, "manifest": manifest, "result": "failed", "error": err[:500], "template_idx": template_idx}
         )
         save_json_atomic(comment_state_path, cstate)
         print(f"FAILED: {err}")
@@ -432,9 +458,7 @@ def main() -> int:
         rec["comment_status"] = "failed"
         rec["comment_error"] = str(e)[:1500]
         items[video_id] = rec
-        cstate.setdefault("runs", []).append(
-            {"ts_utc": utc_now_iso(), "video_id": video_id, "result": "failed", "error": str(e)[:500]},
-        )
+        cstate.setdefault("runs", []).append({"ts_utc": utc_now_iso(), "video_id": video_id, "result": "failed", "error": str(e)[:500]})
         save_json_atomic(comment_state_path, cstate)
         print(f"FAILED: {e}")
         return 1
