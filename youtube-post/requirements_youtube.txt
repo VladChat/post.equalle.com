@@ -1,0 +1,4 @@
+# Add these to your repo requirements.txt if not present
+google-api-python-client==2.*
+google-auth==2.*
+requests==2.*
