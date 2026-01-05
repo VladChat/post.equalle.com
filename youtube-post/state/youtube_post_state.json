@@ -16,6 +16,16 @@
       "result": "success",
       "youtube_video_id": "r8qA50kzsvY",
       "published_ts_utc": "2026-01-05T03:58:37Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4",
+      "filename": "scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4",
+      "manifest": "plastic.json",
+      "title": "Scratches Showing On Plastic? Use 220 Grit For Surface Prep",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
+      "result": "success",
+      "video_id": "X0p6cjcC6M8"
     }
   },
   "runs": [
@@ -25,6 +35,12 @@
       "manifest": "drywall.json",
       "result": "success",
       "youtube_video_id": "r8qA50kzsvY"
+    },
+    {
+      "ts_utc": "2026-01-05T04:25:46.012158+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4",
+      "result": "success",
+      "video_id": "X0p6cjcC6M8"
     }
   ],
   "last_post": {
