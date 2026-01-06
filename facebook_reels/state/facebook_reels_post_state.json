@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-01-05"
+    "manifest_index": 0,
+    "last_day": "2026-01-06"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -110,6 +110,17 @@
       "comment_status": "commented",
       "comment_id": "1195598896009969_1541066340503623",
       "commented_ts_utc": "2026-01-05T14:24:01Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/patch_not_blending_into_wall-150_grit_for_drywall_patch_prep-drywall-003.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_not_blending_into_wall-150_grit_for_drywall_patch_prep-drywall-003.mp4",
+      "filename": "patch_not_blending_into_wall-150_grit_for_drywall_patch_prep-drywall-003.mp4",
+      "manifest": "drywall.json",
+      "title": "Patch Not Blending Into the Wall? Prep It With 150 Grit",
+      "description": "If a drywall patch edge stands out, sand the perimeter with 150 grit to feather the transition and level the surface before priming or painting. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-06T13:47:01Z",
+      "video_id": "1175689477983640"
     }
   },
   "runs": [
@@ -165,6 +176,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1195598896009969",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-06T13:47:01Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_not_blending_into_wall-150_grit_for_drywall_patch_prep-drywall-003.mp4",
+      "filename": "patch_not_blending_into_wall-150_grit_for_drywall_patch_prep-drywall-003.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1175689477983640",
       "error": null
     }
   ],
