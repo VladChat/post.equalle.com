@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-01-05"
+    "manifest_index": 1,
+    "last_day": "2026-01-06"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -144,6 +144,20 @@
       "pin_id": "839428818088025151",
       "media_id": "5472822563749042455",
       "cover_image_url": "https://i.pinimg.com/1200x/57/84/2a/57842af21c030a9737763ccdb116a513.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Primer_Looks_Uneven-150_Grit_for_Wood_Primer_Prep-wood-004.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Primer_Looks_Uneven-150_Grit_for_Wood_Primer_Prep-wood-004.mp4",
+      "filename": "Primer_Looks_Uneven-150_Grit_for_Wood_Primer_Prep-wood-004.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7T4FFL",
+      "title": "Primer Looks Uneven: 150 Grit Wood Primer Prep",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-06T13:36:11+00:00",
+      "pin_id": "839428818088045734",
+      "media_id": "5473003328017334095",
+      "cover_image_url": "https://i.pinimg.com/1200x/a3/e7/ce/a3e7cec5389ce8a936ca944432adfc6d.jpg"
     }
   },
   "runs": [
@@ -245,6 +259,16 @@
       "result": "success",
       "pin_id": "839428818088025151",
       "media_id": "5472822563749042455",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-06T13:36:11+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Primer_Looks_Uneven-150_Grit_for_Wood_Primer_Prep-wood-004.mp4",
+      "filename": "Primer_Looks_Uneven-150_Grit_for_Wood_Primer_Prep-wood-004.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818088045734",
+      "media_id": "5473003328017334095",
       "error": null
     }
   ]
