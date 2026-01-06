@@ -208,7 +208,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18105167449741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 13
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-06T14:33:37Z",
+      "comment_text": "On wood, sanding dust can hide defects—wipe often and re-check. Do you see it only after wiping?",
+      "comment_status": "commented",
+      "comment_id": "17847545076654979",
+      "commented_ts_utc": "2026-01-06T14:33:39Z"
     }
   },
   "runs": [
@@ -317,6 +327,15 @@
       "result": "commented",
       "comment_id": "18098802493880535",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-01-06T14:33:39Z",
+      "media_id": "18056713907663913",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Brush_Marks_Stand_Out_More-220_Grit_for_Paint_Prep_on_Wood-wood-003.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "17847545076654979",
+      "template_idx": 13
     }
   ]
 }
