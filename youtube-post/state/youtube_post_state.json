@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-05"
+    "last_day": "2026-01-06"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -46,6 +46,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-220",
       "result": "success",
       "video_id": "xSHlLyiCN90"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_feels_too_rough-120_grit_to_smooth_drywall_mud-drywall-002.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_feels_too_rough-120_grit_to_smooth_drywall_mud-drywall-002.mp4",
+      "filename": "joint_compound_feels_too_rough-120_grit_to_smooth_drywall_mud-drywall-002.mp4",
+      "manifest": "drywall.json",
+      "title": "Joint Compound Feels Too Rough? Smooth Drywall Mud With 120 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7VFK4N",
+      "result": "success",
+      "video_id": "hg1Wk-qkKbQ"
     }
   },
   "runs": [
@@ -73,6 +83,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4",
       "result": "success",
       "video_id": "xSHlLyiCN90"
+    },
+    {
+      "ts_utc": "2026-01-06T11:20:01.230596+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_feels_too_rough-120_grit_to_smooth_drywall_mud-drywall-002.mp4",
+      "result": "success",
+      "video_id": "hg1Wk-qkKbQ"
     }
   ],
   "last_post": {
