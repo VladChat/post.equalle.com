@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-01-05"
+    "manifest_index": 1,
+    "last_day": "2026-01-06"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -185,6 +185,30 @@
       "comment_status": "commented",
       "comment_id": "18098802493880535",
       "commented_ts_utc": "2026-01-05T14:16:15Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Brush_Marks_Stand_Out_More-220_Grit_for_Paint_Prep_on_Wood-wood-003.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Brush_Marks_Stand_Out_More-220_Grit_for_Paint_Prep_on_Wood-wood-003.mp4",
+      "filename": "Brush_Marks_Stand_Out_More-220_Grit_for_Paint_Prep_on_Wood-wood-003.mp4",
+      "manifest": "wood.json",
+      "title": "Brush Marks Stand Out More: 220 Grit Paint Prep on Wood",
+      "description": "Brush Marks Stand Out More? Use 220 grit for paint prep on wood. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "caption": "Brush Marks Stand Out More: 220 Grit Paint Prep on Wood\n\nBrush Marks Stand Out More? Use 220 grit for paint prep on wood. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-06T13:41:14Z",
+      "mode": "binary",
+      "container_id": "18105167449741317",
+      "media_id": "18056713907663913",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18105167449741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18105167449741317"
+      }
     }
   },
   "runs": [
@@ -252,6 +276,17 @@
       "filename": "drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4",
       "container_id": "18105085387741317",
       "media_id": "17995366655902566",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-06T13:41:14Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wood.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Brush_Marks_Stand_Out_More-220_Grit_for_Paint_Prep_on_Wood-wood-003.mp4",
+      "filename": "Brush_Marks_Stand_Out_More-220_Grit_for_Paint_Prep_on_Wood-wood-003.mp4",
+      "container_id": "18105167449741317",
+      "media_id": "18056713907663913",
       "error": null
     }
   ],
