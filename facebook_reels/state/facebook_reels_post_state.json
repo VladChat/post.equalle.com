@@ -141,7 +141,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-07T13:48:32Z",
-      "video_id": "1399144208328915"
+      "video_id": "1399144208328915",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 15
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-07T14:27:52Z",
+      "comment_text": "A quick mist/wipe (for wet sanding) can show high spots fast. Are you using water or a lubricant?",
+      "comment_status": "commented",
+      "comment_id": "1399144208328915_1615777539558564",
+      "commented_ts_utc": "2026-01-07T14:27:57Z"
     }
   },
   "runs": [
@@ -263,6 +273,15 @@
       "result": "commented",
       "comment_id": "1175689477983640_849217601277304",
       "template_idx": 18
+    },
+    {
+      "ts_utc": "2026-01-07T14:27:57Z",
+      "video_id": "1399144208328915",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Rough_Wood_Grain_Showing-120_Grit_for_Smoothing_Raw_Wood-wood-002.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "1399144208328915_1615777539558564",
+      "template_idx": 15
     }
   ]
 }
