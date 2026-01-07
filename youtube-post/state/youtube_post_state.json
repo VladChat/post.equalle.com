@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-06"
+    "last_day": "2026-01-07"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -56,6 +56,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7VFK4N",
       "result": "success",
       "video_id": "hg1Wk-qkKbQ"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/patch_not_blending_into_wall-150_grit_for_drywall_patch_prep-drywall-003.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_not_blending_into_wall-150_grit_for_drywall_patch_prep-drywall-003.mp4",
+      "filename": "patch_not_blending_into_wall-150_grit_for_drywall_patch_prep-drywall-003.mp4",
+      "manifest": "drywall.json",
+      "title": "Patch Not Blending Into the Wall? Prep It With 150 Grit",
+      "destination_url": "https://equalle.com/products/150-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "result": "success",
+      "video_id": "uXYOMdqAu1c"
     }
   },
   "runs": [
@@ -89,6 +99,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_feels_too_rough-120_grit_to_smooth_drywall_mud-drywall-002.mp4",
       "result": "success",
       "video_id": "hg1Wk-qkKbQ"
+    },
+    {
+      "ts_utc": "2026-01-07T11:21:09.847002+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_not_blending_into_wall-150_grit_for_drywall_patch_prep-drywall-003.mp4",
+      "result": "success",
+      "video_id": "uXYOMdqAu1c"
     }
   ],
   "last_post": {
