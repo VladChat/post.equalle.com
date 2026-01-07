@@ -242,7 +242,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18105251020741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-07T14:20:26Z",
+      "comment_text": "Light pressure with 1500 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "18122605555546819",
+      "commented_ts_utc": "2026-01-07T14:20:28Z"
     }
   },
   "runs": [
@@ -371,6 +381,15 @@
       "result": "commented",
       "comment_id": "17847545076654979",
       "template_idx": 13
+    },
+    {
+      "ts_utc": "2026-01-07T14:20:28Z",
+      "media_id": "17937429027114961",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_feels_too_rough-1500_grit_wet_sand_before_polishing-wet-002.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18122605555546819",
+      "template_idx": 0
     }
   ]
 }
