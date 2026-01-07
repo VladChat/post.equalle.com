@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-01-06"
+    "manifest_index": 2,
+    "last_day": "2026-01-07"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -158,6 +158,20 @@
       "pin_id": "839428818088045734",
       "media_id": "5473003328017334095",
       "cover_image_url": "https://i.pinimg.com/1200x/a3/e7/ce/a3e7cec5389ce8a936ca944432adfc6d.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_coat_feels_too_rough-1500_grit_wet_sand_before_polishing-wet-002.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_feels_too_rough-1500_grit_wet_sand_before_polishing-wet-002.mp4",
+      "filename": "clear_coat_feels_too_rough-1500_grit_wet_sand_before_polishing-wet-002.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049944",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7T3663",
+      "title": "Clear Coat Too Rough? 1500 Grit Wet Sand Before Polishing",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-07T16:21:33+00:00",
+      "pin_id": "839428818088069046",
+      "media_id": "5473205469340305817",
+      "cover_image_url": "https://i.pinimg.com/1200x/10/8c/49/108c49a6d246174db08a038741109ced.jpg"
     }
   },
   "runs": [
@@ -269,6 +283,16 @@
       "result": "success",
       "pin_id": "839428818088045734",
       "media_id": "5473003328017334095",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-07T16:21:33+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_feels_too_rough-1500_grit_wet_sand_before_polishing-wet-002.mp4",
+      "filename": "clear_coat_feels_too_rough-1500_grit_wet_sand_before_polishing-wet-002.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818088069046",
+      "media_id": "5473205469340305817",
       "error": null
     }
   ]
