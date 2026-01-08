@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # Once per day (UTC). 13:00 UTC ≈ 7am Chicago 
-    - cron: "0 13 * * *"
+    - cron: "35 12 * * *"
 
 permissions:
   contents: write
@@ -74,3 +74,4 @@ jobs:
             git rebase origin/main
             git push
           fi
+
