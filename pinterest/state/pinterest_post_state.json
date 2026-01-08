@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-01-07"
+    "manifest_index": 3,
+    "last_day": "2026-01-08"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -172,6 +172,20 @@
       "pin_id": "839428818088069046",
       "media_id": "5473205469340305817",
       "cover_image_url": "https://i.pinimg.com/1200x/10/8c/49/108c49a6d246174db08a038741109ced.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4",
+      "filename": "flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4",
+      "manifest": "metal.json",
+      "board_id": "839428886736049946",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7RDBQ1",
+      "title": "Heavy Rust Removal on Metal With 60 Grit Sandpaper",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-08T13:25:06+00:00",
+      "pin_id": "839428818088086375",
+      "media_id": "5473364441548525961",
+      "cover_image_url": "https://i.pinimg.com/1200x/69/39/20/6939204a205f53145504e6ff80f08fd0.jpg"
     }
   },
   "runs": [
@@ -293,6 +307,16 @@
       "result": "success",
       "pin_id": "839428818088069046",
       "media_id": "5473205469340305817",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-08T13:25:06+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4",
+      "filename": "flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "pin_id": "839428818088086375",
+      "media_id": "5473364441548525961",
       "error": null
     }
   ]
