@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-07"
+    "last_day": "2026-01-08"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -66,6 +66,16 @@
       "destination_url": "https://equalle.com/products/150-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
       "result": "success",
       "video_id": "uXYOMdqAu1c"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4",
+      "filename": "uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4",
+      "manifest": "drywall.json",
+      "title": "Uneven Joint Lines After Mud? Level Drywall Seams With 120 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVV8DK",
+      "result": "success",
+      "video_id": "Nm5SMAkROmg"
     }
   },
   "runs": [
@@ -105,6 +115,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_not_blending_into_wall-150_grit_for_drywall_patch_prep-drywall-003.mp4",
       "result": "success",
       "video_id": "uXYOMdqAu1c"
+    },
+    {
+      "ts_utc": "2026-01-08T11:21:55.146454+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4",
+      "result": "success",
+      "video_id": "Nm5SMAkROmg"
     }
   ],
   "last_post": {
