@@ -276,7 +276,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18105336298741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 16
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-08T14:08:57Z",
+      "comment_text": "If scratches stand out after paint/primer, it usually means the previous grit marks weren’t fully blended. What grit are you finishing with?",
+      "comment_status": "commented",
+      "comment_id": "17880375177443848",
+      "commented_ts_utc": "2026-01-08T14:08:59Z"
     }
   },
   "runs": [
@@ -425,6 +435,15 @@
       "result": "commented",
       "comment_id": "18122605555546819",
       "template_idx": 0
+    },
+    {
+      "ts_utc": "2026-01-08T14:08:59Z",
+      "media_id": "18149079343440870",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "17880375177443848",
+      "template_idx": 16
     }
   ]
 }
