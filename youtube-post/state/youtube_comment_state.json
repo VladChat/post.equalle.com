@@ -81,6 +81,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-01-07T11:35:20Z",
       "verify_after_ts": 1767787520.2224545
+    },
+    "Nm5SMAkROmg": {
+      "comment_status": "commented_unverified",
+      "comment_id": "UgwN04cBBSAwhhcCfBV4AaABAg",
+      "comment_text": "When sanding curves on surface, wrap the sheet around a soft pad so you keep contact without creating flat spots. Is it a curve, radius, or tight inside corner?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-01-08T11:36:15Z",
+      "verify_after_ts": 1767873975.859929
     }
   },
   "runs": [
@@ -134,6 +142,12 @@
       "video_id": "uXYOMdqAu1c",
       "result": "commented_unverified",
       "comment_id": "UgzT7zszYfuMPBQmU9p4AaABAg"
+    },
+    {
+      "ts": "2026-01-08T11:36:15Z",
+      "video_id": "Nm5SMAkROmg",
+      "result": "commented_unverified",
+      "comment_id": "UgwN04cBBSAwhhcCfBV4AaABAg"
     }
   ]
 }
