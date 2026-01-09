@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-01-08"
+    "manifest_index": 3,
+    "last_day": "2026-01-09"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -170,6 +170,17 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-01-08T14:31:44Z",
       "comment_skipped_reason": "policy_10pct_skip"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4",
+      "filename": "flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4",
+      "manifest": "metal.json",
+      "title": "Heavy Rust Removal on Metal With 60 Grit Sandpaper",
+      "description": "Flaky rust that won’t come off? Start with 60 grit to break through heavy scale fast. Work in controlled passes, then step up to a finer grit to smooth the surface before primer or paint.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-09T13:46:40Z",
+      "video_id": "1192446325854413"
     }
   },
   "runs": [
@@ -252,6 +263,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "1248470164005512",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-09T13:46:40Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4",
+      "filename": "flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "1192446325854413",
       "error": null
     }
   ],
