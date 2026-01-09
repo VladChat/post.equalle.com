@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-01-08"
+    "manifest_index": 4,
+    "last_day": "2026-01-09"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -287,6 +287,30 @@
       "comment_status": "commented",
       "comment_id": "17880375177443848",
       "commented_ts_utc": "2026-01-08T14:08:59Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4",
+      "filename": "plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4",
+      "manifest": "plastic.json",
+      "title": "Plastic Feels Too Rough? Use 180 Grit To Smooth It",
+      "description": "When plastic feels too rough, 180 grit helps knock down texture and even out the surface before primer, paint, or epoxy. Use light pressure and overlapping passes, then wipe clean to check progress. Sandpaper eQualle",
+      "caption": "Plastic Feels Too Rough? Use 180 Grit To Smooth It\n\nWhen plastic feels too rough, 180 grit helps knock down texture and even out the surface before primer, paint, or epoxy. Use light pressure and overlapping passes, then wipe clean to check progress. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-09T13:41:20Z",
+      "mode": "binary",
+      "container_id": "18105414907741317",
+      "media_id": "18065973287560632",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18105414907741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18105414907741317"
+      }
     }
   },
   "runs": [
@@ -387,6 +411,17 @@
       "filename": "flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4",
       "container_id": "18105336298741317",
       "media_id": "18149079343440870",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-09T13:41:20Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "plastic.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4",
+      "filename": "plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4",
+      "container_id": "18105414907741317",
+      "media_id": "18065973287560632",
       "error": null
     }
   ],
