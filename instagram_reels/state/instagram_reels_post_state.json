@@ -310,7 +310,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18105414907741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 13
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-09T14:28:52Z",
+      "comment_text": "On plastic, sanding dust can hide defects—wipe often and re-check. Do you see it only after wiping?",
+      "comment_status": "commented",
+      "comment_id": "18103425265783617",
+      "commented_ts_utc": "2026-01-09T14:28:54Z"
     }
   },
   "runs": [
@@ -479,6 +489,15 @@
       "result": "commented",
       "comment_id": "17880375177443848",
       "template_idx": 16
+    },
+    {
+      "ts_utc": "2026-01-09T14:28:54Z",
+      "media_id": "18065973287560632",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "18103425265783617",
+      "template_idx": 13
     }
   ]
 }
