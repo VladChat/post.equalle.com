@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-08"
+    "last_day": "2026-01-09"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -76,6 +76,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RHVV8DK",
       "result": "success",
       "video_id": "Nm5SMAkROmg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
+      "filename": "drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Mud Looks Lumpy? Smooth Joint Compound With 120 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-120",
+      "result": "success",
+      "video_id": "mNOaYakkB1c"
     }
   },
   "runs": [
@@ -121,6 +131,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4",
       "result": "success",
       "video_id": "Nm5SMAkROmg"
+    },
+    {
+      "ts_utc": "2026-01-09T11:20:27.549856+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
+      "result": "success",
+      "video_id": "mNOaYakkB1c"
     }
   ],
   "last_post": {
