@@ -180,7 +180,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-09T13:46:40Z",
-      "video_id": "1192446325854413"
+      "video_id": "1192446325854413",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 17
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-09T14:52:18Z",
+      "comment_text": "Don’t chase one spot too long—blend the area wider and re-check. Are the edges still visible?",
+      "comment_status": "commented",
+      "comment_id": "1192446325854413_1364641554984202",
+      "commented_ts_utc": "2026-01-09T14:52:21Z"
     }
   },
   "runs": [
@@ -329,6 +339,15 @@
       "result": "commented",
       "comment_id": "1399144208328915_1615777539558564",
       "template_idx": 15
+    },
+    {
+      "ts_utc": "2026-01-09T14:52:21Z",
+      "video_id": "1192446325854413",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "1192446325854413_1364641554984202",
+      "template_idx": 17
     }
   ]
 }
