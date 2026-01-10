@@ -344,7 +344,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18105497563741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 13
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-10T14:00:11Z",
+      "comment_text": "On drywall, sanding dust can hide defects—wipe often and re-check. Do you see it only after wiping?",
+      "comment_status": "commented",
+      "comment_id": "17980261973794928",
+      "commented_ts_utc": "2026-01-10T14:00:13Z"
     }
   },
   "runs": [
@@ -532,6 +542,15 @@
       "manifest": "plastic.json",
       "result": "commented",
       "comment_id": "18103425265783617",
+      "template_idx": 13
+    },
+    {
+      "ts_utc": "2026-01-10T14:00:13Z",
+      "media_id": "17869567866521158",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_feels_too_rough-120_grit_to_smooth_drywall_mud-drywall-002.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "17980261973794928",
       "template_idx": 13
     }
   ]
