@@ -5,12 +5,14 @@
 
 from __future__ import annotations
 
+import base64
 import os
 from typing import Any, Dict
 
 import requests
 
 PINTEREST_API_BASE = "https://api.pinterest.com/v5"
+PINTEREST_OAUTH_TOKEN_URL = f"{PINTEREST_API_BASE}/oauth/token"
 
 
 class PinterestConfigError(Exception):
@@ -18,24 +20,83 @@ class PinterestConfigError(Exception):
     pass
 
 
+def _env(name: str) -> str:
+    return (os.getenv(name) or "").strip()
+
+
+def _refresh_access_token() -> str:
+    """
+    Preferred: get a fresh access token via refresh_token flow.
+
+    Expected env (GitHub Secrets):
+      - PINTEREST_CLIENT_ID_NAILAK
+      - PINTEREST_CLIENT_SECRET_NAILAK
+      - PINTEREST_REFRESH_TOKEN_NAILAK
+    """
+    client_id = _env("PINTEREST_CLIENT_ID_NAILAK")
+    client_secret = _env("PINTEREST_CLIENT_SECRET_NAILAK")
+    refresh_token = _env("PINTEREST_REFRESH_TOKEN_NAILAK")
+
+    if not (client_id and client_secret and refresh_token):
+        return ""
+
+    basic = base64.b64encode(f"{client_id}:{client_secret}".encode("utf-8")).decode("ascii")
+
+    resp = requests.post(
+        PINTEREST_OAUTH_TOKEN_URL,
+        headers={
+            "Authorization": f"Basic {basic}",
+            "Content-Type": "application/x-www-form-urlencoded",
+        },
+        data={
+            "grant_type": "refresh_token",
+            "refresh_token": refresh_token,
+        },
+        timeout=30,
+    )
+
+    if resp.status_code != 200:
+        raise PinterestConfigError(
+            f"[pin][auth] refresh failed: {resp.status_code} {resp.text}"
+        )
+
+    data = resp.json()
+    token = str(data.get("access_token") or "").strip()
+    if not token:
+        raise PinterestConfigError("[pin][auth] refresh response missing access_token")
+
+    return token
+
+
 def _get_access_token() -> str:
     """
-    Read access token from environment.
+    Access token resolution order:
 
-    Primary variable:
-      - PINTEREST_ACCESS_TOKEN  (GitHub Secret)
+    1) Refresh-token flow (recommended):
+       - PINTEREST_CLIENT_ID_NAILAK
+       - PINTEREST_CLIENT_SECRET_NAILAK
+       - PINTEREST_REFRESH_TOKEN_NAILAK
 
-    Fallback:
-      - PINTEREST_TOKEN         (на всякий случай, для старых настроек)
+    2) Static tokens (fallback):
+       - PINTEREST_ACCESS_TOKEN_NAILAK
+       - PINTEREST_ACCESS_TOKEN
+       - PINTEREST_TOKEN
     """
-    token = os.getenv("PINTEREST_ACCESS_TOKEN", "").strip()
+    token = _refresh_access_token()
+    if token:
+        return token
+
+    token = _env("PINTEREST_ACCESS_TOKEN_NAILAK")
     if not token:
-        token = os.getenv("PINTEREST_TOKEN", "").strip()
+        token = _env("PINTEREST_ACCESS_TOKEN")
+    if not token:
+        token = _env("PINTEREST_TOKEN")
 
     if not token:
         raise PinterestConfigError(
-            "Pinterest access token not found. "
-            "Set PINTEREST_ACCESS_TOKEN as a GitHub Actions secret."
+            "Pinterest token not found. "
+            "Set refresh-token secrets (PINTEREST_CLIENT_ID_NAILAK, PINTEREST_CLIENT_SECRET_NAILAK, "
+            "PINTEREST_REFRESH_TOKEN_NAILAK) or set PINTEREST_ACCESS_TOKEN_NAILAK."
         )
 
     return token
