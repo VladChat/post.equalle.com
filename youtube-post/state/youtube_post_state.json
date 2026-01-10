@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-09"
+    "last_day": "2026-01-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -86,6 +86,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-120",
       "result": "success",
       "video_id": "mNOaYakkB1c"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
+      "filename": "seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
+      "manifest": "drywall.json",
+      "title": "Seam Lines Visible Under Light? Feather Drywall Joints With 150 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7T4FFL",
+      "result": "success",
+      "video_id": "SiX_O2nWnMg"
     }
   },
   "runs": [
@@ -137,6 +147,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
       "result": "success",
       "video_id": "mNOaYakkB1c"
+    },
+    {
+      "ts_utc": "2026-01-10T11:18:33.440421+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
+      "result": "success",
+      "video_id": "SiX_O2nWnMg"
     }
   ],
   "last_post": {
