@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-01-09"
+    "manifest_index": 4,
+    "last_day": "2026-01-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -191,6 +191,17 @@
       "comment_status": "commented",
       "comment_id": "1192446325854413_1364641554984202",
       "commented_ts_utc": "2026-01-09T14:52:21Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4",
+      "filename": "plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4",
+      "manifest": "plastic.json",
+      "title": "Plastic Feels Too Rough? Use 180 Grit To Smooth It",
+      "description": "When plastic feels too rough, 180 grit helps knock down texture and even out the surface before primer, paint, or epoxy. Use light pressure and overlapping passes, then wipe clean to check progress. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-10T13:37:08Z",
+      "video_id": "1360776875787668"
     }
   },
   "runs": [
@@ -282,6 +293,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "1192446325854413",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-10T13:37:08Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4",
+      "filename": "plastic_feels_too_rough-180_grit_to_smooth_plastic_surface-plastic-002.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "1360776875787668",
       "error": null
     }
   ],
