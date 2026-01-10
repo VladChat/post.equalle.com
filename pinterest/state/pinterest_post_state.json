@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-01-08"
+    "manifest_index": 4,
+    "last_day": "2026-01-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -186,6 +186,20 @@
       "pin_id": "839428818088086375",
       "media_id": "5473364441548525961",
       "cover_image_url": "https://i.pinimg.com/1200x/69/39/20/6939204a205f53145504e6ff80f08fd0.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4",
+      "filename": "surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-220",
+      "title": "Surface Not Ready For Paint? Use 220 Grit For Plastic Prep",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-10T13:09:12+00:00",
+      "pin_id": "839428818088125418",
+      "media_id": "5473724850549893373",
+      "cover_image_url": "https://i.pinimg.com/1200x/54/c3/01/54c301a37774983355842e61ac70eb44.jpg"
     }
   },
   "runs": [
@@ -317,6 +331,16 @@
       "result": "success",
       "pin_id": "839428818088086375",
       "media_id": "5473364441548525961",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-10T13:09:12+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4",
+      "filename": "surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818088125418",
+      "media_id": "5473724850549893373",
       "error": null
     }
   ]
