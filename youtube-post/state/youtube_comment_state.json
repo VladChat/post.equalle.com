@@ -105,6 +105,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-01-10T11:31:26Z",
       "verify_after_ts": 1768046486.592694
+    },
+    "guZVsb5CWOk": {
+      "comment_status": "commented_unverified",
+      "comment_id": "UgwV-l3v4C0UQesIiVh4AaABAg",
+      "comment_text": "On drywall mud, keep pressure light and use longer strokes—short aggressive strokes can leave ridges you’ll see after paint. Are you sanding a seam, patch, or corner?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-01-11T11:31:37Z",
+      "verify_after_ts": 1768132897.5474203
     }
   },
   "runs": [
@@ -176,6 +184,12 @@
       "video_id": "SiX_O2nWnMg",
       "result": "commented_unverified",
       "comment_id": "UgxwRUtokYB8uMkJ0HF4AaABAg"
+    },
+    {
+      "ts": "2026-01-11T11:31:37Z",
+      "video_id": "guZVsb5CWOk",
+      "result": "commented_unverified",
+      "comment_id": "UgwV-l3v4C0UQesIiVh4AaABAg"
     }
   ]
 }
