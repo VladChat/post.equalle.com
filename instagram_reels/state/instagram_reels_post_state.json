@@ -378,7 +378,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18105586462741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 10
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-11T13:45:49Z",
+      "comment_text": "Quick check: if it still feels scratchy, you may need one grit lower for a short blend. Want a simple grit ladder?",
+      "comment_status": "commented",
+      "comment_id": "18097574959715416",
+      "commented_ts_utc": "2026-01-11T13:45:52Z"
     }
   },
   "runs": [
@@ -587,6 +597,15 @@
       "result": "commented",
       "comment_id": "17980261973794928",
       "template_idx": 13
+    },
+    {
+      "ts_utc": "2026-01-11T13:45:52Z",
+      "media_id": "17949285944942822",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Primer_Looks_Uneven-150_Grit_for_Wood_Primer_Prep-wood-004.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "18097574959715416",
+      "template_idx": 10
     }
   ]
 }
