@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-01-10"
+    "manifest_index": 0,
+    "last_day": "2026-01-11"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -209,6 +209,17 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-01-10T13:52:46Z",
       "comment_skipped_reason": "policy_10pct_skip"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4",
+      "filename": "uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4",
+      "manifest": "drywall.json",
+      "title": "Uneven Joint Lines After Mud? Level Drywall Seams With 120 Grit",
+      "description": "If joint lines feel uneven after drying, sand the seam lightly with 120 grit to knock down ridges and level high spots before applying the next coat. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-11T13:38:06Z",
+      "video_id": "1214365470786264"
     }
   },
   "runs": [
@@ -309,6 +320,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1360776875787668",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-11T13:38:06Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4",
+      "filename": "uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1214365470786264",
       "error": null
     }
   ],
