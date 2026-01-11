@@ -219,7 +219,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-11T13:38:06Z",
-      "video_id": "1214365470786264"
+      "video_id": "1214365470786264",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 9
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-11T14:01:26Z",
+      "comment_text": "For corners/edges, ease up and let the abrasive do the work. Are edges the hardest part for you too?",
+      "comment_status": "commented",
+      "comment_id": "1214365470786264_848354284629281",
+      "commented_ts_utc": "2026-01-11T14:01:28Z"
     }
   },
   "runs": [
@@ -395,6 +405,15 @@
       "result": "commented",
       "comment_id": "1192446325854413_1364641554984202",
       "template_idx": 17
+    },
+    {
+      "ts_utc": "2026-01-11T14:01:28Z",
+      "video_id": "1214365470786264",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1214365470786264_848354284629281",
+      "template_idx": 9
     }
   ]
 }
