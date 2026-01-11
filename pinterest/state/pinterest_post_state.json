@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-01-10"
+    "manifest_index": 0,
+    "last_day": "2026-01-11"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -200,6 +200,20 @@
       "pin_id": "839428818088125418",
       "media_id": "5473724850549893373",
       "cover_image_url": "https://i.pinimg.com/1200x/54/c3/01/54c301a37774983355842e61ac70eb44.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4",
+      "filename": "uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049941",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVV8DK",
+      "title": "Uneven Joint Lines After Mud? Level Drywall Seams With 120 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-11T13:10:51+00:00",
+      "pin_id": "839428818088144201",
+      "media_id": "5473906154826431026",
+      "cover_image_url": "https://i.pinimg.com/1200x/23/d8/e3/23d8e3acd6f33c1ab864c5c05ad72ec4.jpg"
     }
   },
   "runs": [
@@ -341,6 +355,16 @@
       "result": "success",
       "pin_id": "839428818088125418",
       "media_id": "5473724850549893373",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-11T13:10:51+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4",
+      "filename": "uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818088144201",
+      "media_id": "5473906154826431026",
       "error": null
     }
   ]
