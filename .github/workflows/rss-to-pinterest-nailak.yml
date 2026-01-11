@@ -21,17 +21,10 @@ jobs:
 
     env:
       BLOG_RSS_URL: https://blog.nailak.com/index.xml
-
-      # Fallback (старый способ) — оставляем как было
       PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN_NAILAK }}
-
-      # Новый способ (refresh flow) — чтобы токен обновлялся автоматически
       PINTEREST_CLIENT_ID_NAILAK: ${{ secrets.PINTEREST_CLIENT_ID_NAILAK }}
       PINTEREST_CLIENT_SECRET_NAILAK: ${{ secrets.PINTEREST_CLIENT_SECRET_NAILAK }}
       PINTEREST_REFRESH_TOKEN_NAILAK: ${{ secrets.PINTEREST_REFRESH_TOKEN_NAILAK }}
-
-      # На всякий случай (если код смотрит именно этот ключ)
-      PINTEREST_ACCESS_TOKEN_NAILAK: ${{ secrets.PINTEREST_ACCESS_TOKEN_NAILAK }}
 
     steps:
       - name: Checkout repo
