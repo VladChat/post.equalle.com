@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-01-11"
+    "manifest_index": 1,
+    "last_day": "2026-01-12"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -214,6 +214,20 @@
       "pin_id": "839428818088144201",
       "media_id": "5473906154826431026",
       "cover_image_url": "https://i.pinimg.com/1200x/23/d8/e3/23d8e3acd6f33c1ab864c5c05ad72ec4.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Finish_Feels_Too_Rough-180_Grit_for_Smoothing_Before_Paint-wood-005.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Finish_Feels_Too_Rough-180_Grit_for_Smoothing_Before_Paint-wood-005.mp4",
+      "filename": "Finish_Feels_Too_Rough-180_Grit_for_Smoothing_Before_Paint-wood-005.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-180",
+      "title": "Finish Feels Too Rough: 180 Grit Smoothing Before Paint",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-12T15:22:47+00:00",
+      "pin_id": "839428818088167747",
+      "media_id": "5474104034835111020",
+      "cover_image_url": "https://i.pinimg.com/1200x/63/35/49/6335490b7e96d8a1ecc17c806ec35fd5.jpg"
     }
   },
   "runs": [
@@ -365,6 +379,16 @@
       "result": "success",
       "pin_id": "839428818088144201",
       "media_id": "5473906154826431026",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-12T15:22:47+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Finish_Feels_Too_Rough-180_Grit_for_Smoothing_Before_Paint-wood-005.mp4",
+      "filename": "Finish_Feels_Too_Rough-180_Grit_for_Smoothing_Before_Paint-wood-005.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818088167747",
+      "media_id": "5474104034835111020",
       "error": null
     }
   ]
