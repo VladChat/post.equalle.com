@@ -240,7 +240,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-12T13:50:35Z",
-      "video_id": "1789438978422560"
+      "video_id": "1789438978422560",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 5
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-12T14:03:45Z",
+      "comment_text": "After sanding, wipe dust and check under a bright light from the side. Do the lines disappear evenly?",
+      "comment_status": "commented",
+      "comment_id": "1789438978422560_858247843715792",
+      "commented_ts_utc": "2026-01-12T14:03:51Z"
     }
   },
   "runs": [
@@ -434,6 +444,15 @@
       "result": "commented",
       "comment_id": "1214365470786264_848354284629281",
       "template_idx": 9
+    },
+    {
+      "ts_utc": "2026-01-12T14:03:51Z",
+      "video_id": "1789438978422560",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Brush_Marks_Stand_Out_More-220_Grit_for_Paint_Prep_on_Wood-wood-003.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "1789438978422560_858247843715792",
+      "template_idx": 5
     }
   ]
 }
