@@ -412,7 +412,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18105668245741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-12T14:14:56Z",
+      "comment_text": "For wet-sanding work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "17936503509115566",
+      "commented_ts_utc": "2026-01-12T14:14:59Z"
     }
   },
   "runs": [
@@ -641,6 +651,15 @@
       "result": "commented",
       "comment_id": "18097574959715416",
       "template_idx": 10
+    },
+    {
+      "ts_utc": "2026-01-12T14:14:59Z",
+      "media_id": "18100846378664975",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "17936503509115566",
+      "template_idx": 3
     }
   ]
 }
