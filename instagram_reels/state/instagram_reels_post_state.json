@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-01-11"
+    "manifest_index": 2,
+    "last_day": "2026-01-12"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -389,6 +389,30 @@
       "comment_status": "commented",
       "comment_id": "18097574959715416",
       "commented_ts_utc": "2026-01-11T13:45:52Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4",
+      "filename": "dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4",
+      "manifest": "wet.json",
+      "title": "Dust Nibs In Clear Coat? 2000 Grit Wet Sand Between Coats",
+      "description": "Dust nibs in clear coat? Wet sand with 2000 grit between coats to knock down nibs without heavy scratching. Keep it wet, use light pressure, wipe clean often, and re-check under a work light before recoating. Wet or dry use. — eQualle",
+      "caption": "Dust Nibs In Clear Coat? 2000 Grit Wet Sand Between Coats\n\nDust nibs in clear coat? Wet sand with 2000 grit between coats to knock down nibs without heavy scratching. Keep it wet, use light pressure, wipe clean often, and re-check under a work light before recoating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-12T13:46:27Z",
+      "mode": "binary",
+      "container_id": "18105668245741317",
+      "media_id": "18100846378664975",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18105668245741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18105668245741317"
+      }
     }
   },
   "runs": [
@@ -522,6 +546,17 @@
       "filename": "Primer_Looks_Uneven-150_Grit_for_Wood_Primer_Prep-wood-004.mp4",
       "container_id": "18105586462741317",
       "media_id": "17949285944942822",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-12T13:46:27Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wet.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4",
+      "filename": "dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4",
+      "container_id": "18105668245741317",
+      "media_id": "18100846378664975",
       "error": null
     }
   ],
