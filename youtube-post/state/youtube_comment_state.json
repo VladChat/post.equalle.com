@@ -113,6 +113,11 @@
       "comment_attempts": 1,
       "commented_ts": "2026-01-11T11:31:37Z",
       "verify_after_ts": 1768132897.5474203
+    },
+    "zhrORdJn3qU": {
+      "comment_status": "failed",
+      "retry_after_ts": 1768266426.7470844,
+      "error": "403 Client Error: Forbidden for url: https://www.googleapis.com/youtube/v3/commentThreads?part=snippet"
     }
   },
   "runs": [
