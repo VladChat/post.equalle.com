@@ -1,15 +1,12 @@
 {
-  "post_id": "325670187920349_1317401417068008",
+  "post_id": "325670187920349_1322639623210854",
   "product": {
     "source": "amazon",
-    "url": "https://www.amazon.com/gp/product/B0CZ7SLBB4",
-    "grit": 320,
+    "url": "https://www.amazon.com/gp/product/B0CZ7VV273",
+    "grit": 360,
     "pack": 10,
-    "anchor": "320 Grit (Fine)",
-    "grit_description": "Fine finishing grit for sanding between coats of paint, primer, or lacquer. Provides smooth, even results for woodworking, automotive, and precision finishing. Works efficiently for wet or dry applications.",
-    "contexts": [
-      "wood",
-      "finishing"
-    ]
+    "anchor": "360 Grit (Fine)",
+    "grit_description": "Precision grit for removing haze and small surface defects. Ensures scratch-free sanding on wood, plastic, or metal. Ideal for both wet and dry use before the polishing stage.",
+    "contexts": []
   }
 }
