@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-01-12"
+    "manifest_index": 2,
+    "last_day": "2026-01-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -228,6 +228,20 @@
       "pin_id": "839428818088167747",
       "media_id": "5474104034835111020",
       "cover_image_url": "https://i.pinimg.com/1200x/63/35/49/6335490b7e96d8a1ecc17c806ec35fd5.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4",
+      "filename": "dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049944",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-2000",
+      "title": "Dust Nibs In Clear Coat? 2000 Grit Wet Sand Between Coats",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-13T02:25:37+00:00",
+      "pin_id": "839428818088177299",
+      "media_id": "5474187321574233350",
+      "cover_image_url": "https://i.pinimg.com/1200x/4b/94/91/4b94911c26d32d96d50e1ddb6942d0eb.jpg"
     }
   },
   "runs": [
@@ -389,6 +403,16 @@
       "result": "success",
       "pin_id": "839428818088167747",
       "media_id": "5474104034835111020",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-13T02:25:37+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4",
+      "filename": "dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818088177299",
+      "media_id": "5474187321574233350",
       "error": null
     }
   ]
