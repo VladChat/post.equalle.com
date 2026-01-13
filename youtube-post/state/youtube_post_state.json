@@ -116,6 +116,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QD2GTY4",
       "result": "success",
       "video_id": "zhrORdJn3qU"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_looks_uneven_after_cutting-180_grit_for_leveling_plastic-plastic-004.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_looks_uneven_after_cutting-180_grit_for_leveling_plastic-plastic-004.mp4",
+      "filename": "plastic_looks_uneven_after_cutting-180_grit_for_leveling_plastic-plastic-004.mp4",
+      "manifest": "plastic.json",
+      "title": "Plastic Uneven After Cutting? Level It With 180 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RGRN3PL",
+      "result": "success",
+      "video_id": "dPsNqbFZeRA"
     }
   },
   "runs": [
@@ -185,6 +195,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
       "result": "success",
       "video_id": "zhrORdJn3qU"
+    },
+    {
+      "ts_utc": "2026-01-13T11:21:23.021446+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_looks_uneven_after_cutting-180_grit_for_leveling_plastic-plastic-004.mp4",
+      "result": "success",
+      "video_id": "dPsNqbFZeRA"
     }
   ],
   "last_post": {
