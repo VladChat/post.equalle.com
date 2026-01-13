@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-01-12"
+    "manifest_index": 2,
+    "last_day": "2026-01-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -251,6 +251,17 @@
       "comment_status": "commented",
       "comment_id": "1789438978422560_858247843715792",
       "commented_ts_utc": "2026-01-12T14:03:51Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4",
+      "filename": "dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4",
+      "manifest": "wet.json",
+      "title": "Dust Nibs In Clear Coat? 2000 Grit Wet Sand Between Coats",
+      "description": "Dust nibs in clear coat? Wet sand with 2000 grit between coats to knock down nibs without heavy scratching. Keep it wet, use light pressure, wipe clean often, and re-check under a work light before recoating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-13T13:49:57Z",
+      "video_id": "1881858163206943"
     }
   },
   "runs": [
@@ -369,6 +380,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "1789438978422560",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-13T13:49:57Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4",
+      "filename": "dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "1881858163206943",
       "error": null
     }
   ],
