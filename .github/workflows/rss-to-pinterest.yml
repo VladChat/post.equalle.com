@@ -21,10 +21,14 @@ jobs:
 
     env:
       BLOG_RSS_URL: https://blog.equalle.com/index.xml
+
+      # Preferred: refresh-token flow (eQualle)
+      PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID_EQUALLE }}
+      PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET_EQUALLE }}
+      PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN_EQUALLE }}
+
+      # Optional fallback (legacy)
       PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
-      PINTEREST_CLIENT_ID_EQUALLE: ${{ secrets.PINTEREST_CLIENT_ID_EQUALLE }}
-      PINTEREST_CLIENT_SECRET_EQUALLE: ${{ secrets.PINTEREST_CLIENT_SECRET_EQUALLE }}
-      PINTEREST_REFRESH_TOKEN_EQUALLE: ${{ secrets.PINTEREST_REFRESH_TOKEN_EQUALLE }}
 
     steps:
       - name: Checkout repo
