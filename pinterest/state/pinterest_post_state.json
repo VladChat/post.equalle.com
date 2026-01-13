@@ -242,6 +242,20 @@
       "pin_id": "839428818088177299",
       "media_id": "5474187321574233350",
       "cover_image_url": "https://i.pinimg.com/1200x/4b/94/91/4b94911c26d32d96d50e1ddb6942d0eb.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/scratches_after_paint_job-1500_grit_wet_sand_for_paint_correction-wet-004.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_after_paint_job-1500_grit_wet_sand_for_paint_correction-wet-004.mp4",
+      "filename": "scratches_after_paint_job-1500_grit_wet_sand_for_paint_correction-wet-004.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049944",
+      "destination_url": "https://www.amazon.com/gp/product/B07RFT4WDT",
+      "title": "Scratches After Paint Job? 1500 Grit Wet Sand For Correction",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-13T16:52:33+00:00",
+      "pin_id": "839428818088188866",
+      "media_id": "5474296536722647224",
+      "cover_image_url": "https://i.pinimg.com/1200x/d2/b3/e1/d2b3e117bf1d14b0af3ea4724aae2b6d.jpg"
     }
   },
   "runs": [
@@ -413,6 +427,16 @@
       "result": "success",
       "pin_id": "839428818088177299",
       "media_id": "5474187321574233350",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-13T16:52:33+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_after_paint_job-1500_grit_wet_sand_for_paint_correction-wet-004.mp4",
+      "filename": "scratches_after_paint_job-1500_grit_wet_sand_for_paint_correction-wet-004.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818088188866",
+      "media_id": "5474296536722647224",
       "error": null
     }
   ]
