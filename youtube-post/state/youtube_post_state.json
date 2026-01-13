@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-11"
+    "last_day": "2026-01-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -106,6 +106,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-150",
       "result": "success",
       "video_id": "guZVsb5CWOk"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
+      "filename": "joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
+      "manifest": "drywall.json",
+      "title": "Joint Compound Dried Too Hard? Dry Sand Mud With 120 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07QD2GTY4",
+      "result": "success",
+      "video_id": "zhrORdJn3qU"
     }
   },
   "runs": [
@@ -169,6 +179,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_edges_stand_out-150_grit_for_blending_drywall_patch-drywall-007.mp4",
       "result": "success",
       "video_id": "guZVsb5CWOk"
+    },
+    {
+      "ts_utc": "2026-01-13T00:01:03.681118+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
+      "result": "success",
+      "video_id": "zhrORdJn3qU"
     }
   ],
   "last_post": {
