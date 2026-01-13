@@ -446,7 +446,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18105749419741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 4
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-13T14:33:47Z",
+      "comment_text": "If the paper starts loading up, wipe/rinse it and keep going—clean paper cuts cleaner. Does it clog on your surface?",
+      "comment_status": "commented",
+      "comment_id": "17858135595534905",
+      "commented_ts_utc": "2026-01-13T14:33:49Z"
     }
   },
   "runs": [
@@ -695,6 +705,15 @@
       "result": "commented",
       "comment_id": "17936503509115566",
       "template_idx": 3
+    },
+    {
+      "ts_utc": "2026-01-13T14:33:49Z",
+      "media_id": "17933887863147837",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_surface_covered_in_rust-80_grit_for_rust_stripping-metal-003.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "17858135595534905",
+      "template_idx": 4
     }
   ]
 }
