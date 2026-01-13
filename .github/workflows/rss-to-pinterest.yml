@@ -1,1 +1,62 @@
-PLACEHOLDER
+# ============================================================
+# File: .github/workflows/rss-to-pinterest.yml
+# Purpose:
+#   - Read blog RSS feed
+#   - Post next unpublished article to a Pinterest board
+# ============================================================
+
+name: RSS → Pinterest Pin
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 17 * * *"   # Каждый день в 11:00 Chicago (18:00 UTC)
+
+permissions:
+  contents: write
+
+jobs:
+  post-to-pinterest:
+    runs-on: ubuntu-latest
+
+    env:
+      BLOG_RSS_URL: https://blog.equalle.com/index.xml
+      PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+      PINTEREST_CLIENT_ID_EQUALLE: ${{ secrets.PINTEREST_CLIENT_ID_EQUALLE }}
+      PINTEREST_CLIENT_SECRET_EQUALLE: ${{ secrets.PINTEREST_CLIENT_SECRET_EQUALLE }}
+      PINTEREST_REFRESH_TOKEN_EQUALLE: ${{ secrets.PINTEREST_REFRESH_TOKEN_EQUALLE }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r blog-equalle/requirements.txt
+
+      - name: Run Pinterest poster
+        run: |
+          python blog-equalle/main_pinterest.py
+
+      - name: Commit updated state.json (if changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if git status --porcelain | grep "blog-equalle/state/state.json"; then
+            git add blog-equalle/state/state.json
+            git commit -m "Update Pinterest post state [skip ci]" || echo "Nothing to commit"
+            git push
+          else
+            echo "No state changes."
+          fi
