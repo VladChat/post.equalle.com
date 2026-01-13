@@ -1,12 +1,16 @@
 {
-  "post_id": "325670187920349_1322639623210854",
+  "post_id": "325670187920349_1322654653209351",
   "product": {
     "source": "amazon",
-    "url": "https://www.amazon.com/gp/product/B0CZ7VV273",
-    "grit": 360,
+    "url": "https://www.amazon.com/gp/product/B0CZ7W28G1",
+    "grit": 400,
     "pack": 10,
-    "anchor": "360 Grit (Fine)",
-    "grit_description": "Precision grit for removing haze and small surface defects. Ensures scratch-free sanding on wood, plastic, or metal. Ideal for both wet and dry use before the polishing stage.",
-    "contexts": []
+    "anchor": "400 Grit (Fine)",
+    "grit_description": "Ultra-fine abrasive for refining surfaces before polishing or coating. Commonly used in auto body repair and resin finishing. Produces flawless smoothness with wet or dry sanding.",
+    "contexts": [
+      "metal",
+      "auto",
+      "finishing"
+    ]
   }
 }
