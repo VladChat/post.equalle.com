@@ -480,7 +480,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18105833683741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 10
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-14T14:49:12Z",
+      "comment_text": "Quick check: if it still feels scratchy, you may need one grit lower for a short blend. Want a simple grit ladder?",
+      "comment_status": "commented",
+      "comment_id": "18089614769051382",
+      "commented_ts_utc": "2026-01-14T14:49:16Z"
     }
   },
   "runs": [
@@ -749,6 +759,15 @@
       "result": "commented",
       "comment_id": "17858135595534905",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-01-14T14:49:16Z",
+      "media_id": "18081768944331906",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "18089614769051382",
+      "template_idx": 10
     }
   ]
 }
