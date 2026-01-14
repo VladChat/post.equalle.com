@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-01-13"
+    "manifest_index": 3,
+    "last_day": "2026-01-14"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -256,6 +256,20 @@
       "pin_id": "839428818088188866",
       "media_id": "5474296536722647224",
       "cover_image_url": "https://i.pinimg.com/1200x/d2/b3/e1/d2b3e117bf1d14b0af3ea4724aae2b6d.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/metal_surface_covered_in_rust-80_grit_for_rust_stripping-metal-003.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_surface_covered_in_rust-80_grit_for_rust_stripping-metal-003.mp4",
+      "filename": "metal_surface_covered_in_rust-80_grit_for_rust_stripping-metal-003.mp4",
+      "manifest": "metal.json",
+      "board_id": "839428886736049946",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-80",
+      "title": "Strip Rust From a Metal Surface Using 80 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-14T13:27:19+00:00",
+      "pin_id": "839428818088206026",
+      "media_id": "5474451764346434294",
+      "cover_image_url": "https://i.pinimg.com/1200x/00/f4/4c/00f44c5915c5f73891c292df574b5ac5.jpg"
     }
   },
   "runs": [
@@ -437,6 +451,16 @@
       "result": "success",
       "pin_id": "839428818088188866",
       "media_id": "5474296536722647224",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-14T13:27:19+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_surface_covered_in_rust-80_grit_for_rust_stripping-metal-003.mp4",
+      "filename": "metal_surface_covered_in_rust-80_grit_for_rust_stripping-metal-003.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "pin_id": "839428818088206026",
+      "media_id": "5474451764346434294",
       "error": null
     }
   ]
