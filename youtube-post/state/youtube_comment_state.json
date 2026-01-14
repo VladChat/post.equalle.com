@@ -131,6 +131,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-01-13T11:36:48Z",
       "verify_after_ts": 1768306008.3609302
+    },
+    "G8CNd8fYi3s": {
+      "comment_status": "commented_unverified",
+      "comment_id": "Ugzv40HaqpwrVKuroNd4AaABAg",
+      "comment_text": "For wet sanding, a quick rinse keeps the scratch pattern tighter and helps prevent clogging—especially above 400 grit. Are you using a spray bottle or dipping the sheet?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-01-14T11:38:41Z",
+      "verify_after_ts": 1768392521.3382401
     }
   },
   "runs": [
@@ -220,6 +228,12 @@
       "video_id": "dPsNqbFZeRA",
       "result": "commented_unverified",
       "comment_id": "Ugx-yvLWL1gnnOj-YXx4AaABAg"
+    },
+    {
+      "ts": "2026-01-14T11:38:41Z",
+      "video_id": "G8CNd8fYi3s",
+      "result": "commented_unverified",
+      "comment_id": "Ugzv40HaqpwrVKuroNd4AaABAg"
     }
   ]
 }
