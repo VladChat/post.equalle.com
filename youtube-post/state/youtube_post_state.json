@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-13"
+    "last_day": "2026-01-14"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -126,6 +126,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RGRN3PL",
       "result": "success",
       "video_id": "dPsNqbFZeRA"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_feels_wavy-150_grit_for_flattening_drywall_surface-drywall-009.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_feels_wavy-150_grit_for_flattening_drywall_surface-drywall-009.mp4",
+      "filename": "drywall_surface_feels_wavy-150_grit_for_flattening_drywall_surface-drywall-009.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Surface Feels Wavy? Flatten the Surface With 150 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-150",
+      "result": "success",
+      "video_id": "G8CNd8fYi3s"
     }
   },
   "runs": [
@@ -201,6 +211,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_looks_uneven_after_cutting-180_grit_for_leveling_plastic-plastic-004.mp4",
       "result": "success",
       "video_id": "dPsNqbFZeRA"
+    },
+    {
+      "ts_utc": "2026-01-14T11:22:39.912940+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_feels_wavy-150_grit_for_flattening_drywall_surface-drywall-009.mp4",
+      "result": "success",
+      "video_id": "G8CNd8fYi3s"
     }
   ],
   "last_post": {
