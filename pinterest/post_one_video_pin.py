@@ -501,6 +501,7 @@ def main() -> int:
         for attempt in range(3):
             try:
                 created = create_video_pin(token, item, media_id)
+                print(f"[pin][retry] pins/create succeeded on attempt {attempt + 1}/3")
                 last_err = None
                 break
             except RuntimeError as e:
