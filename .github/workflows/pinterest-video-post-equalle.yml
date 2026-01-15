@@ -3,8 +3,13 @@ name: Pinterest — Post 1 Video Pin
 on:
   workflow_dispatch:
   schedule:
-    # Once per day (UTC). 13:00 UTC ≈ 7am Chicago 
-    - cron: "35 12 * * *"
+    - cron: "17 9 * * 1"   # Mon — 09:17 UTC
+    - cron: "41 10 * * 2"  # Tue — 10:41 UTC
+    - cron: "09 8 * * 3"   # Wed — 08:09 UTC
+    - cron: "53 9 * * 4"   # Thu — 09:53 UTC
+    - cron: "21 10 * * 5"  # Fri — 10:21 UTC
+    - cron: "37 8 * * 6"   # Sat — 08:37 UTC
+    - cron: "49 9 * * 0"   # Sun — 09:49 UTC
 
 permissions:
   contents: write
