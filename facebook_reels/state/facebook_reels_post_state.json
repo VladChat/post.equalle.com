@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-01-14"
+    "manifest_index": 4,
+    "last_day": "2026-01-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -290,6 +290,17 @@
       "comment_status": "commented",
       "comment_id": "760566319820986_3109689599239203",
       "commented_ts_utc": "2026-01-14T14:03:46Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4",
+      "filename": "surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4",
+      "manifest": "plastic.json",
+      "title": "Surface Not Ready For Paint? Use 220 Grit For Plastic Prep",
+      "description": "If paint prep on plastic feels incomplete, 220 grit creates an even scuff so primer and paint can grip. Sand gently, keep the sheet flat, then wipe with a clean cloth before coating. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-15T13:49:26Z",
+      "video_id": "1557963285483826"
     }
   },
   "runs": [
@@ -426,6 +437,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "760566319820986",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-15T13:49:26Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4",
+      "filename": "surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "1557963285483826",
       "error": null
     }
   ],
