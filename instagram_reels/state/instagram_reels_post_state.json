@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-01-14"
+    "manifest_index": 0,
+    "last_day": "2026-01-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -491,6 +491,30 @@
       "comment_status": "commented",
       "comment_id": "18089614769051382",
       "commented_ts_utc": "2026-01-14T14:49:16Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/patch_not_blending_into_wall-150_grit_for_drywall_patch_prep-drywall-003.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_not_blending_into_wall-150_grit_for_drywall_patch_prep-drywall-003.mp4",
+      "filename": "patch_not_blending_into_wall-150_grit_for_drywall_patch_prep-drywall-003.mp4",
+      "manifest": "drywall.json",
+      "title": "Patch Not Blending Into the Wall? Prep It With 150 Grit",
+      "description": "If a drywall patch edge stands out, sand the perimeter with 150 grit to feather the transition and level the surface before priming or painting. Sandpaper eQualle",
+      "caption": "Patch Not Blending Into the Wall? Prep It With 150 Grit\n\nIf a drywall patch edge stands out, sand the perimeter with 150 grit to feather the transition and level the surface before priming or painting. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-15T13:43:37Z",
+      "mode": "binary",
+      "container_id": "18105918517741317",
+      "media_id": "18031492859773979",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18105918517741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18105918517741317"
+      }
     }
   },
   "runs": [
@@ -657,6 +681,17 @@
       "filename": "surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4",
       "container_id": "18105833683741317",
       "media_id": "18081768944331906",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-15T13:43:37Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_not_blending_into_wall-150_grit_for_drywall_patch_prep-drywall-003.mp4",
+      "filename": "patch_not_blending_into_wall-150_grit_for_drywall_patch_prep-drywall-003.mp4",
+      "container_id": "18105918517741317",
+      "media_id": "18031492859773979",
       "error": null
     }
   ],
