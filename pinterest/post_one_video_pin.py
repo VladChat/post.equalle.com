@@ -495,8 +495,25 @@ def main() -> int:
         if status != "succeeded":
             raise RuntimeError(f"media processing status: {status}")
 
-        # 5) Create pin with media_id
-        created = create_video_pin(token, item, media_id)
+        # 5) Create pin with media_id (retry on temporary Pinterest save blocks)
+        created = None
+        last_err = None
+        for attempt in range(3):
+            try:
+                created = create_video_pin(token, item, media_id)
+                last_err = None
+                break
+            except RuntimeError as e:
+                last_err = str(e)
+                # Retry ONLY for the known temporary Pinterest block
+                if ("doesn't allow you to save Pins" in last_err) and attempt < 2:
+                    time.sleep(60 * (2 ** attempt))  # 60, 120, 240
+                    continue
+                raise
+
+        if created is None:
+            raise RuntimeError(last_err or "pins/create failed (unknown)")
+
         pin_id = created.get("id")
 
         cover = None
