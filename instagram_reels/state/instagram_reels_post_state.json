@@ -514,7 +514,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18105918517741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-15T14:45:45Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "17917670313251147",
+      "commented_ts_utc": "2026-01-15T14:46:08Z"
     }
   },
   "runs": [
@@ -803,6 +813,15 @@
       "result": "commented",
       "comment_id": "18089614769051382",
       "template_idx": 10
+    },
+    {
+      "ts_utc": "2026-01-15T14:46:08Z",
+      "media_id": "18031492859773979",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_not_blending_into_wall-150_grit_for_drywall_patch_prep-drywall-003.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "17917670313251147",
+      "template_idx": 12
     }
   ]
 }
