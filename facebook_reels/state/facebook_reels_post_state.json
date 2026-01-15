@@ -300,7 +300,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-15T13:49:26Z",
-      "video_id": "1557963285483826"
+      "video_id": "1557963285483826",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 11
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-15T14:47:12Z",
+      "comment_text": "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+      "comment_status": "commented",
+      "comment_id": "1557963285483826_1586269342693452",
+      "commented_ts_utc": "2026-01-15T14:47:16Z"
     }
   },
   "runs": [
@@ -539,6 +549,15 @@
       "result": "commented",
       "comment_id": "760566319820986_3109689599239203",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-01-15T14:47:16Z",
+      "video_id": "1557963285483826",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/surface_not_ready_for_paint-220_grit_for_plastic_paint_prep-plastic-003.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "1557963285483826_1586269342693452",
+      "template_idx": 11
     }
   ]
 }
