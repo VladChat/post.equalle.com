@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-15"
+    "last_day": "2026-01-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -146,6 +146,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RJZ3C39",
       "result": "success",
       "video_id": "RHja1NRkbRE"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_repair_looks_obvious-150_grit_for_smoothing_repair_area-drywall-011.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_repair_looks_obvious-150_grit_for_smoothing_repair_area-drywall-011.mp4",
+      "filename": "drywall_repair_looks_obvious-150_grit_for_smoothing_repair_area-drywall-011.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Repair Looks Obvious? Smooth the Area With 150 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-150",
+      "result": "success",
+      "video_id": "wKZiKQaHnBw"
     }
   },
   "runs": [
@@ -233,6 +243,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/mud_lines_showing_through_paint-150_grit_for_drywall_paint_prep-drywall-010.mp4",
       "result": "success",
       "video_id": "RHja1NRkbRE"
+    },
+    {
+      "ts_utc": "2026-01-16T11:20:37.415638+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_repair_looks_obvious-150_grit_for_smoothing_repair_area-drywall-011.mp4",
+      "result": "success",
+      "video_id": "wKZiKQaHnBw"
     }
   ],
   "last_post": {
