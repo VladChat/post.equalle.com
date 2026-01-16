@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-01-15"
+    "manifest_index": 0,
+    "last_day": "2026-01-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -311,6 +311,17 @@
       "comment_status": "commented",
       "comment_id": "1557963285483826_1586269342693452",
       "commented_ts_utc": "2026-01-15T14:47:16Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
+      "filename": "drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Mud Looks Lumpy? Smooth Joint Compound With 120 Grit",
+      "description": "If dried compound has lumps or bumps, sand lightly with 120 grit to flatten high spots and smooth the surface before you skim or add another coat. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-16T13:47:01Z",
+      "video_id": "2146062022800262"
     }
   },
   "runs": [
@@ -456,6 +467,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1557963285483826",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-16T13:47:01Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
+      "filename": "drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "2146062022800262",
       "error": null
     }
   ],
