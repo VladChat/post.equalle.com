@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-01-15"
+    "manifest_index": 0,
+    "last_day": "2026-01-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -284,6 +284,20 @@
       "pin_id": "839428818088227383",
       "media_id": "5474640665740639463",
       "cover_image_url": "https://i.pinimg.com/1200x/eb/89/e1/eb89e1c582eabcbd5483bcff7096e4c3.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
+      "filename": "drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049941",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-120",
+      "title": "Drywall Mud Looks Lumpy? Smooth Joint Compound With 120 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-16T10:48:52+00:00",
+      "pin_id": "839428818088245887",
+      "media_id": "5474793919996834694",
+      "cover_image_url": "https://i.pinimg.com/1200x/e2/17/01/e21701b003f4245fbe5f5a947d446ce6.jpg"
     }
   },
   "runs": [
@@ -485,6 +499,16 @@
       "result": "success",
       "pin_id": "839428818088227383",
       "media_id": "5474640665740639463",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-16T10:48:52+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
+      "filename": "drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818088245887",
+      "media_id": "5474793919996834694",
       "error": null
     }
   ]
