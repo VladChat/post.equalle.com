@@ -321,7 +321,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-16T13:47:01Z",
-      "video_id": "2146062022800262"
+      "video_id": "2146062022800262",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 5
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-16T14:48:59Z",
+      "comment_text": "After sanding, wipe dust and check under a bright light from the side. Do the lines disappear evenly?",
+      "comment_status": "commented",
+      "comment_id": "2146062022800262_1926377685425246",
+      "commented_ts_utc": "2026-01-16T14:49:03Z"
     }
   },
   "runs": [
@@ -578,6 +588,15 @@
       "result": "commented",
       "comment_id": "1557963285483826_1586269342693452",
       "template_idx": 11
+    },
+    {
+      "ts_utc": "2026-01-16T14:49:03Z",
+      "video_id": "2146062022800262",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "2146062022800262_1926377685425246",
+      "template_idx": 5
     }
   ]
 }
