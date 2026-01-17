@@ -342,7 +342,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-17T13:36:31Z",
-      "video_id": "908911371661730"
+      "video_id": "908911371661730",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-17T14:11:31Z",
+      "comment_text": "Light pressure with 150 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "908911371661730_1650904849210121",
+      "commented_ts_utc": "2026-01-17T14:11:34Z"
     }
   },
   "runs": [
@@ -617,6 +627,15 @@
       "result": "commented",
       "comment_id": "2146062022800262_1926377685425246",
       "template_idx": 5
+    },
+    {
+      "ts_utc": "2026-01-17T14:11:34Z",
+      "video_id": "908911371661730",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Primer_Looks_Uneven-150_Grit_for_Wood_Primer_Prep-wood-004.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "908911371661730_1650904849210121",
+      "template_idx": 0
     }
   ]
 }
