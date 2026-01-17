@@ -85,7 +85,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18104832325741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 13
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-17T14:12:27Z",
+      "comment_text": "On wet-sanding, sanding dust can hide defects—wipe often and re-check. Do you see it only after wiping?",
+      "comment_status": "commented",
+      "comment_id": "17842381974675829",
+      "commented_ts_utc": "2026-01-17T14:12:30Z"
     },
     "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_on_metal-80_grit_for_removing_surface_rust-metal-001.mp4": {
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_on_metal-80_grit_for_removing_surface_rust-metal-001.mp4",
@@ -864,6 +874,15 @@
       "result": "commented",
       "comment_id": "17917670313251147",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-01-17T14:12:30Z",
+      "media_id": "18093946504740351",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/orange_peel_still_visible-2000_grit_wet_sanding_for_clear_coat-wet-001.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "17842381974675829",
+      "template_idx": 13
     }
   ]
 }
