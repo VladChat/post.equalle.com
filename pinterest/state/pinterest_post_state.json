@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-01-16"
+    "manifest_index": 1,
+    "last_day": "2026-01-17"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -298,6 +298,20 @@
       "pin_id": "839428818088245887",
       "media_id": "5474793919996834694",
       "cover_image_url": "https://i.pinimg.com/1200x/e2/17/01/e21701b003f4245fbe5f5a947d446ce6.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Paint_Looks_Patchy_on_Wood-180_Grit_for_Even_Paint_Finish-wood-006.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Looks_Patchy_on_Wood-180_Grit_for_Even_Paint_Finish-wood-006.mp4",
+      "filename": "Paint_Looks_Patchy_on_Wood-180_Grit_for_Even_Paint_Finish-wood-006.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8DTGHP",
+      "title": "Paint Looks Patchy on Wood: 180 Grit Even Paint Finish",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-17T08:53:19+00:00",
+      "pin_id": "839428818088264767",
+      "media_id": "5474960799428579583",
+      "cover_image_url": "https://i.pinimg.com/1200x/bc/d5/bd/bcd5bd899ea304435ebb924f88351ca3.jpg"
     }
   },
   "runs": [
@@ -509,6 +523,16 @@
       "result": "success",
       "pin_id": "839428818088245887",
       "media_id": "5474793919996834694",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-17T08:53:19+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Looks_Patchy_on_Wood-180_Grit_for_Even_Paint_Finish-wood-006.mp4",
+      "filename": "Paint_Looks_Patchy_on_Wood-180_Grit_for_Even_Paint_Finish-wood-006.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818088264767",
+      "media_id": "5474960799428579583",
       "error": null
     }
   ]
