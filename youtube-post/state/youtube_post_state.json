@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-17"
+    "last_day": "2026-01-18"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -166,6 +166,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RLSHPZV",
       "result": "success",
       "video_id": "L3HtCcb8fds"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4",
+      "filename": "drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Patch Feels Raised? Level It With 120–150 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-120",
+      "result": "success",
+      "video_id": "B5FhlCgrrIo"
     }
   },
   "runs": [
@@ -265,6 +275,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_not_even-120_grit_for_leveling_mud_application-drywall-012.mp4",
       "result": "success",
       "video_id": "L3HtCcb8fds"
+    },
+    {
+      "ts_utc": "2026-01-18T11:17:51.293319+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4",
+      "result": "success",
+      "video_id": "B5FhlCgrrIo"
     }
   ],
   "last_post": {
