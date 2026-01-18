@@ -50,6 +50,56 @@ DEFAULT_CHUNK_SIZE = 4 * 1024 * 1024
 # Download timeout safety (seconds)
 DOWNLOAD_TIMEOUT = 300
 
+# Upload retry (ONLY for Step 2 upload)
+# Default: 3 attempts total, delays 60s -> 180s -> 600s
+# Override via:
+#   FB_REELS_UPLOAD_MAX_ATTEMPTS="3"
+#   FB_REELS_UPLOAD_RETRY_DELAYS_SEC="60,180,600"
+MAX_UPLOAD_ATTEMPTS = int(os.getenv("FB_REELS_UPLOAD_MAX_ATTEMPTS", "3"))
+_UPLOAD_DELAYS_RAW = (os.getenv("FB_REELS_UPLOAD_RETRY_DELAYS_SEC", "60,180,600") or "").strip()
+
+
+def _parse_retry_delays(raw: str) -> List[int]:
+    out: List[int] = []
+    for part in (raw or "").split(","):
+        part = part.strip()
+        if not part:
+            continue
+        try:
+            v = int(part)
+            if v > 0:
+                out.append(v)
+        except Exception:
+            continue
+    return out or [60, 180, 600]
+
+
+UPLOAD_RETRY_DELAYS_SEC = _parse_retry_delays(_UPLOAD_DELAYS_RAW)
+
+
+def _is_retriable_upload_error(err_text: str) -> bool:
+    """
+    Best-effort transient classification for upload flaps.
+    We retry on:
+      - timeouts / connection resets
+      - HTTP 429
+      - HTTP 5xx
+      - generic "Request processing failed" / processing failed signals
+    """
+    t = (err_text or "").lower()
+    if "http 429" in t:
+        return True
+    if "http 5" in t:  # crude but works for "HTTP 500/502/503/504"
+        return True
+    if "timeout" in t or "timed out" in t:
+        return True
+    if "connection reset" in t or "connection aborted" in t:
+        return True
+    if "request processing failed" in t or "processing failed" in t:
+        return True
+    # keep robots/403 as NOT retriable by default
+    return False
+
 
 @dataclass(frozen=True)
 class ReelItem:
@@ -209,18 +259,15 @@ def _download_to_tempfile(video_url: str, filename_hint: str) -> Tuple[Path, int
     Download the video from video_url to a temp file on the runner.
     Returns (path, size_bytes).
     """
-    # Ensure extension hint helps some platforms; keep original filename if possible.
     safe_name = (filename_hint or "video.mp4").strip()
     if not safe_name:
         safe_name = "video.mp4"
 
-    # GitHub sometimes requires a UA; also helps avoid 403 from some CDNs.
     headers = {"User-Agent": "facebook-reels-uploader/1.0 (+https://github.com/)"}
 
     with requests.get(video_url, stream=True, headers=headers, timeout=60, allow_redirects=True) as r:
         if r.status_code != 200:
             raise RuntimeError(f"download failed: HTTP {r.status_code}: {r.text[:300]}")
-        # Use a temp dir so the runner's workspace doesn't fill with leftovers.
         tmp_dir = Path(tempfile.mkdtemp(prefix="fb_reels_"))
         out_path = tmp_dir / safe_name
 
@@ -251,27 +298,18 @@ def upload_hosted_video(upload_url: str, page_token: str, video_url: str) -> Non
     resp = requests.post(upload_url, headers=headers, timeout=180)
     if resp.status_code not in (200, 201):
         raise RuntimeError(f"upload_hosted failed: HTTP {resp.status_code}: {resp.text[:800]}")
-    # If response is {"success": true} it's fine. If not JSON, still treat 2xx as ok.
 
 
 def upload_binary_video(upload_url: str, page_token: str, file_path: Path, file_size: int, *, chunk_size: int) -> None:
     """
     Binary upload to the given upload_url.
 
-    IMPORTANT (practical reality for Page Reels):
-    - Many upload_url endpoints returned by /video_reels?upload_phase=start behave like *rupload* and
-      will reject chunked uploads unless the request length matches the expected remaining bytes.
-    - Your GitHub-hosted videos are small (~8–10MB), so the most reliable path is SINGLE-SHOT upload:
-      send the entire file in one POST with headers:
+    Default: SINGLE-SHOT upload (most reliable for small ~8–15MB reels):
+      headers:
         Authorization: OAuth <token>
         offset: 0
         file_size: <total bytes>
-      This avoids "PartialRequestError (did not match length of file)".
-
-    If you ever upload larger files, you can force resumable chunking with:
-      FB_REELS_FORCE_RESUMABLE=1
     """
-    # Force single-shot by default for reliability.
     force_resumable = (os.getenv("FB_REELS_FORCE_RESUMABLE") or "").strip().lower() in ("1", "true", "yes")
 
     headers_base = {
@@ -489,13 +527,46 @@ def main() -> int:
         video_id = str(created["video_id"])
         upload_url = str(created["upload_url"])
 
-        # 2) Upload
-        if upload_mode == "hosted":
-            upload_hosted_video(upload_url, page_token, item.video_url)
-        else:
-            # Download + binary upload (fix for robots.txt / 403 on hosted fetch)
-            tmp_file, size = _download_to_tempfile(item.video_url, item.filename)
-            upload_binary_video(upload_url, page_token, tmp_file, size, chunk_size=chunk_size)
+        # 2) Upload (with retry)
+        last_upload_err: Optional[str] = None
+        attempts_total = max(1, int(MAX_UPLOAD_ATTEMPTS))
+
+        for attempt in range(1, attempts_total + 1):
+            try:
+                if upload_mode == "hosted":
+                    upload_hosted_video(upload_url, page_token, item.video_url)
+                else:
+                    tmp_file, size = _download_to_tempfile(item.video_url, item.filename)
+                    upload_binary_video(upload_url, page_token, tmp_file, size, chunk_size=chunk_size)
+
+                last_upload_err = None
+                break
+
+            except Exception as e:
+                last_upload_err = str(e)[:1500]
+
+                # cleanup temp file between retries (binary mode)
+                try:
+                    if tmp_file and tmp_file.exists():
+                        tmp_dir = tmp_file.parent
+                        tmp_file.unlink(missing_ok=True)
+                        try:
+                            tmp_dir.rmdir()
+                        except Exception:
+                            pass
+                except Exception:
+                    pass
+                tmp_file = None
+
+                if attempt < attempts_total and _is_retriable_upload_error(last_upload_err):
+                    delay = UPLOAD_RETRY_DELAYS_SEC[min(attempt - 1, len(UPLOAD_RETRY_DELAYS_SEC) - 1)]
+                    print(f"[upload] attempt {attempt}/{attempts_total} failed (retriable). Sleeping {delay}s then retry...")
+                    time.sleep(delay)
+                    continue
+                raise
+
+        if last_upload_err:
+            raise RuntimeError(last_upload_err)
 
         # 3) Publish
         publish_reel(page_id, page_token, version, video_id, item.title, item.description)
@@ -515,7 +586,6 @@ def main() -> int:
 
     except Exception as e:
         err = str(e)[:1500]
-        # Improve the most common hosted-url failure message for faster debugging
         if "robots.txt" in err.lower() or "fileurlprocessingerror" in err.lower():
             err += " | TIP: set FB_REELS_UPLOAD_MODE=binary (default) to upload bytes instead of file_url hosted fetch."
         update_state_for_attempt(state, item, "failed", video_id=video_id, error=err)
@@ -524,12 +594,10 @@ def main() -> int:
         return 1
 
     finally:
-        # Cleanup temp download
         try:
             if tmp_file and tmp_file.exists():
                 tmp_dir = tmp_file.parent
                 tmp_file.unlink(missing_ok=True)
-                # remove dir if empty
                 try:
                     tmp_dir.rmdir()
                 except Exception:
