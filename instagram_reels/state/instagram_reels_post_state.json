@@ -590,6 +590,30 @@
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18106135792741317"
       }
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/surface_not_ready_for_polish-2000_grit_wet_sand_before_polishing-wet-005.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_not_ready_for_polish-2000_grit_wet_sand_before_polishing-wet-005.mp4",
+      "filename": "surface_not_ready_for_polish-2000_grit_wet_sand_before_polishing-wet-005.mp4",
+      "manifest": "wet.json",
+      "title": "Not Ready To Polish? 2000 Grit Wet Sand For Clear Coat Prep",
+      "description": "Surface not ready for polish? Wet sand with 2000 grit to refine the finish and reduce sanding lines before polishing. Keep it wet, use light pressure, crosshatch passes, and wipe clean often to inspect under strong light. Wet or dry use. — eQualle",
+      "caption": "Not Ready To Polish? 2000 Grit Wet Sand For Clear Coat Prep\n\nSurface not ready for polish? Wet sand with 2000 grit to refine the finish and reduce sanding lines before polishing. Keep it wet, use light pressure, crosshatch passes, and wipe clean often to inspect under strong light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-18T13:32:25Z",
+      "mode": "binary",
+      "container_id": "18106190134741317",
+      "media_id": "18082133240180613",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18106190134741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18106190134741317"
+      }
     }
   },
   "runs": [
@@ -789,6 +813,17 @@
       "filename": "scratches_after_paint_job-1500_grit_wet_sand_for_paint_correction-wet-004.mp4",
       "container_id": "18106135792741317",
       "media_id": "18088473749022843",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-18T13:32:25Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wet.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_not_ready_for_polish-2000_grit_wet_sand_before_polishing-wet-005.mp4",
+      "filename": "surface_not_ready_for_polish-2000_grit_wet_sand_before_polishing-wet-005.mp4",
+      "container_id": "18106190134741317",
+      "media_id": "18082133240180613",
       "error": null
     }
   ],
