@@ -472,7 +472,7 @@ def resumable_upload_bytes(rupload_url: str, token: str, file_path: Path, file_s
     headers = {
         "Authorization": f"OAuth {token}",
         "Content-Type": "application/octet-stream",
-        "file_offset": "0",
+        "offset": "0",  # <-- restored (as requested)
         "file_size": str(int(file_size)),
         "Content-Length": str(int(file_size)),
     }
