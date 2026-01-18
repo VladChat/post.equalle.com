@@ -48,6 +48,29 @@ MAX_ATTEMPTS_PER_VIDEO = int(os.getenv("IG_MAX_ATTEMPTS_PER_VIDEO", "3"))
 STATUS_POLL_TIMEOUT_SEC = int(os.getenv("IG_STATUS_POLL_TIMEOUT_SEC", "900"))
 STATUS_POLL_INTERVAL_SEC = int(os.getenv("IG_STATUS_POLL_INTERVAL_SEC", "10"))
 
+# Upload retry (for transient Meta rupload flaps)
+# Default: 3 attempts total, delays 30s -> 90s -> 180s (override via IG_RUPLOAD_RETRY_DELAYS_SEC="30,90,180")
+MAX_RUPLOAD_ATTEMPTS = int(os.getenv("IG_RUPLOAD_MAX_ATTEMPTS", "3"))
+_RUPLOAD_DELAYS_RAW = (os.getenv("IG_RUPLOAD_RETRY_DELAYS_SEC", "30,90,180") or "").strip()
+
+
+def _parse_retry_delays(raw: str) -> List[int]:
+    out: List[int] = []
+    for part in (raw or "").split(","):
+        part = part.strip()
+        if not part:
+            continue
+        try:
+            v = int(part)
+            if v > 0:
+                out.append(v)
+        except Exception:
+            continue
+    return out or [30, 90, 180]
+
+
+RUPLOAD_RETRY_DELAYS_SEC = _parse_retry_delays(_RUPLOAD_DELAYS_RAW)
+
 # Upload modes:
 # - "binary" (preferred): download video and upload bytes to Meta resumable endpoint
 # - "url": Meta fetches video_url itself
@@ -142,6 +165,30 @@ def debug_list_dir(path: Path, title: str) -> None:
         return
     for p in sorted(path.glob("*")):
         log(f"  - {p.name}")
+
+
+def _is_retriable_rupload_error(err_text: str) -> bool:
+    """
+    Best-effort classification for Meta rupload transient flaps.
+    We retry on:
+      - ProcessingFailedError (seen in the wild)
+      - retriable=true in debug_info
+      - HTTP 429 / timeouts / 5xx (if present in message)
+    """
+    t = (err_text or "").lower()
+    if "processingfailederror" in t:
+        return True
+    if '"retriable":true' in t or "retriable\":true" in t:
+        return True
+    if "http 429" in t:
+        return True
+    if "http 5" in t:  # crude but useful for messages like "HTTP 500/502/503"
+        return True
+    if "timeout" in t or "timed out" in t:
+        return True
+    if "connection reset" in t or "connection aborted" in t:
+        return True
+    return False
 
 
 # -------------------------
@@ -425,7 +472,7 @@ def resumable_upload_bytes(rupload_url: str, token: str, file_path: Path, file_s
     headers = {
         "Authorization": f"OAuth {token}",
         "Content-Type": "application/octet-stream",
-        "offset": "0",
+        "file_offset": "0",
         "file_size": str(int(file_size)),
         "Content-Length": str(int(file_size)),
     }
@@ -649,8 +696,26 @@ def main() -> int:
             log(f"Rupload URL: {rupload_url}")
             log("Create response raw: " + json.dumps(created.get("raw") or {}, ensure_ascii=False))
 
-            upload_resp = resumable_upload_bytes(rupload_url, token, tmp_file, size)
-            log("Upload response: " + json.dumps(upload_resp, ensure_ascii=False))
+            # Retry ONLY the rupload call for transient Meta flaps
+            last_upload_err: Optional[str] = None
+            attempts_total = max(1, int(MAX_RUPLOAD_ATTEMPTS))
+            for attempt in range(1, attempts_total + 1):
+                try:
+                    upload_resp = resumable_upload_bytes(rupload_url, token, tmp_file, size)
+                    log("Upload response: " + json.dumps(upload_resp, ensure_ascii=False))
+                    last_upload_err = None
+                    break
+                except Exception as e:
+                    last_upload_err = str(e)[:1500]
+                    if attempt < attempts_total and _is_retriable_rupload_error(last_upload_err):
+                        delay = RUPLOAD_RETRY_DELAYS_SEC[min(attempt - 1, len(RUPLOAD_RETRY_DELAYS_SEC) - 1)]
+                        log(f"[rupload] attempt {attempt}/{attempts_total} failed (retriable). Sleeping {delay}s then retry...")
+                        time.sleep(delay)
+                        continue
+                    raise
+
+            if last_upload_err:
+                raise RuntimeError(last_upload_err)
 
             last_container_status = wait_container_finished(container_id, token, version)
 
