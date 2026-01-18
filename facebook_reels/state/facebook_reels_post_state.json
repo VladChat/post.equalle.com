@@ -363,7 +363,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-18T13:37:10Z",
-      "video_id": "1853833441925912"
+      "video_id": "1853833441925912",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-18T14:24:04Z",
+      "comment_text": "Light pressure with 1500 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "1853833441925912_1268853955149608",
+      "commented_ts_utc": "2026-01-18T14:24:08Z"
     }
   },
   "runs": [
@@ -655,6 +665,15 @@
       "manifest": "wood.json",
       "result": "commented",
       "comment_id": "908911371661730_1650904849210121",
+      "template_idx": 0
+    },
+    {
+      "ts_utc": "2026-01-18T14:24:08Z",
+      "video_id": "1853833441925912",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_after_paint_job-1500_grit_wet_sand_for_paint_correction-wet-004.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1853833441925912_1268853955149608",
       "template_idx": 0
     }
   ]
