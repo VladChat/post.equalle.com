@@ -384,7 +384,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-19T13:52:51Z",
-      "video_id": "2744888419181768"
+      "video_id": "2744888419181768",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 1
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-19T14:49:50Z",
+      "comment_text": "If the scratch pattern looks uneven, do a few crosshatch passes and re-check. Sanding wet or dry?",
+      "comment_status": "commented",
+      "comment_id": "2744888419181768_1668283387911187",
+      "commented_ts_utc": "2026-01-19T14:49:53Z"
     }
   },
   "runs": [
@@ -695,6 +705,15 @@
       "result": "commented",
       "comment_id": "1853833441925912_1268853955149608",
       "template_idx": 0
+    },
+    {
+      "ts_utc": "2026-01-19T14:49:53Z",
+      "video_id": "2744888419181768",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_bleeding_through_paint-80_grit_for_rust_prep_before_paint-metal-004.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "2744888419181768_1668283387911187",
+      "template_idx": 1
     }
   ]
 }
