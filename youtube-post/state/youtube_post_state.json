@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-18"
+    "last_day": "2026-01-19"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -176,6 +176,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-120",
       "result": "success",
       "video_id": "B5FhlCgrrIo"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/edges_of_mud_patch_too_sharp-150_grit_for_feathering_drywall_edges-drywall-014.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_of_mud_patch_too_sharp-150_grit_for_feathering_drywall_edges-drywall-014.mp4",
+      "filename": "edges_of_mud_patch_too_sharp-150_grit_for_feathering_drywall_edges-drywall-014.mp4",
+      "manifest": "drywall.json",
+      "title": "Edges of Mud Patch Too Sharp? Feather Drywall Edges With 150 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07QF44CQT",
+      "result": "success",
+      "video_id": "F4MljG6Ie9M"
     }
   },
   "runs": [
@@ -281,6 +291,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4",
       "result": "success",
       "video_id": "B5FhlCgrrIo"
+    },
+    {
+      "ts_utc": "2026-01-19T11:22:16.933820+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_of_mud_patch_too_sharp-150_grit_for_feathering_drywall_edges-drywall-014.mp4",
+      "result": "success",
+      "video_id": "F4MljG6Ie9M"
     }
   ],
   "last_post": {
