@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-01-18"
+    "manifest_index": 3,
+    "last_day": "2026-01-19"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -374,6 +374,17 @@
       "comment_status": "commented",
       "comment_id": "1853833441925912_1268853955149608",
       "commented_ts_utc": "2026-01-18T14:24:08Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rust_bleeding_through_paint-80_grit_for_rust_prep_before_paint-metal-004.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_bleeding_through_paint-80_grit_for_rust_prep_before_paint-metal-004.mp4",
+      "filename": "rust_bleeding_through_paint-80_grit_for_rust_prep_before_paint-metal-004.mp4",
+      "manifest": "metal.json",
+      "title": "Stop Rust Bleed-Through: Prep Metal With 80 Grit",
+      "description": "Seeing rust stains bleed through paint? Sand back to clean metal with 80 grit, feather the edges, and remove all oxidation before repainting. Proper prep helps the finish last longer.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-19T13:52:51Z",
+      "video_id": "2744888419181768"
     }
   },
   "runs": [
@@ -546,6 +557,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "1853833441925912",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-19T13:52:51Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_bleeding_through_paint-80_grit_for_rust_prep_before_paint-metal-004.mp4",
+      "filename": "rust_bleeding_through_paint-80_grit_for_rust_prep_before_paint-metal-004.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "2744888419181768",
       "error": null
     }
   ],
