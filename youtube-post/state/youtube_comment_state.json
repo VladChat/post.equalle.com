@@ -179,6 +179,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-01-19T11:39:01Z",
       "verify_after_ts": 1768824541.6691387
+    },
+    "2qZqCP5f3bE": {
+      "comment_status": "commented_unverified",
+      "comment_id": "Ugy1i7KGEBH5ZvZ6Sjp4AaABAg",
+      "comment_text": "Before the next coat, clean the surface so dust doesn’t show through paint, stain, or clear coat—tack cloth or damp wipe helps. Do you wipe down between coats?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-01-20T11:40:51Z",
+      "verify_after_ts": 1768911051.625963
     }
   },
   "runs": [
@@ -304,6 +312,12 @@
       "video_id": "F4MljG6Ie9M",
       "result": "commented_unverified",
       "comment_id": "UgxLFvrSNAKnMJiAlXd4AaABAg"
+    },
+    {
+      "ts": "2026-01-20T11:40:51Z",
+      "video_id": "2qZqCP5f3bE",
+      "result": "commented_unverified",
+      "comment_id": "Ugy1i7KGEBH5ZvZ6Sjp4AaABAg"
     }
   ]
 }
