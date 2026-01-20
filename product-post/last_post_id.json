@@ -1,16 +1,12 @@
 {
-  "post_id": "325670187920349_1322654653209351",
+  "post_id": "325670187920349_1328102182664598",
   "product": {
     "source": "amazon",
-    "url": "https://www.amazon.com/gp/product/B0CZ7W28G1",
-    "grit": 400,
+    "url": "https://www.amazon.com/gp/product/B0CZ7VP623",
+    "grit": 500,
     "pack": 10,
-    "anchor": "400 Grit (Fine)",
-    "grit_description": "Ultra-fine abrasive for refining surfaces before polishing or coating. Commonly used in auto body repair and resin finishing. Produces flawless smoothness with wet or dry sanding.",
-    "contexts": [
-      "metal",
-      "auto",
-      "finishing"
-    ]
+    "anchor": "500 Grit (Fine)",
+    "grit_description": "Fine precision sandpaper for detailed primer and surface smoothing. Removes light scratches and prepares for higher-grit polishing. Suitable for plastic, resin, and metal work in wet or dry conditions.",
+    "contexts": []
   }
 }
