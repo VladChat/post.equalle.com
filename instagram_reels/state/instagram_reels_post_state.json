@@ -678,7 +678,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18106404574741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-20T14:47:22Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "18127071640524115",
+      "commented_ts_utc": "2026-01-20T14:47:26Z"
     }
   },
   "runs": [
@@ -1049,6 +1059,15 @@
       "result": "commented",
       "comment_id": "18059249840331173",
       "template_idx": 2
+    },
+    {
+      "ts_utc": "2026-01-20T14:47:26Z",
+      "media_id": "18009561365669619",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_looks_uneven_after_cutting-180_grit_for_leveling_plastic-plastic-004.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "18127071640524115",
+      "template_idx": 12
     }
   ]
 }
