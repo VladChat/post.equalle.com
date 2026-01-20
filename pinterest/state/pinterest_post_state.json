@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-01-19"
+    "manifest_index": 4,
+    "last_day": "2026-01-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -340,6 +340,20 @@
       "pin_id": "839428818088307453",
       "media_id": "5475330569680263731",
       "cover_image_url": "https://i.pinimg.com/1200x/85/c2/58/85c25835938586c46f785064a6be65bf.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/rough_marks_on_plastic_surface-220_grit_for_smoothing_plastic-plastic-005.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/rough_marks_on_plastic_surface-220_grit_for_smoothing_plastic-plastic-005.mp4",
+      "filename": "rough_marks_on_plastic_surface-220_grit_for_smoothing_plastic-plastic-005.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049964",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-220",
+      "title": "Rough Marks On Plastic? Smooth Them With 220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-20T11:01:17+00:00",
+      "pin_id": "839428818088328416",
+      "media_id": "5475520538994619729",
+      "cover_image_url": "https://i.pinimg.com/1200x/a6/44/a6/a644a636a7baa6bc7a5993d5411887d9.jpg"
     }
   },
   "runs": [
@@ -581,6 +595,16 @@
       "result": "success",
       "pin_id": "839428818088307453",
       "media_id": "5475330569680263731",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-20T11:01:17+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/rough_marks_on_plastic_surface-220_grit_for_smoothing_plastic-plastic-005.mp4",
+      "filename": "rough_marks_on_plastic_surface-220_grit_for_smoothing_plastic-plastic-005.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818088328416",
+      "media_id": "5475520538994619729",
       "error": null
     }
   ]
