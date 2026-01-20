@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-01-19"
+    "manifest_index": 4,
+    "last_day": "2026-01-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -395,6 +395,17 @@
       "comment_status": "commented",
       "comment_id": "2744888419181768_1668283387911187",
       "commented_ts_utc": "2026-01-19T14:49:53Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_looks_uneven_after_cutting-180_grit_for_leveling_plastic-plastic-004.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_looks_uneven_after_cutting-180_grit_for_leveling_plastic-plastic-004.mp4",
+      "filename": "plastic_looks_uneven_after_cutting-180_grit_for_leveling_plastic-plastic-004.mp4",
+      "manifest": "plastic.json",
+      "title": "Plastic Uneven After Cutting? Level It With 180 Grit",
+      "description": "After cutting, plastic can look uneven along the surface. 180 grit helps level high spots and blend the cut area before finishing. Use short, controlled strokes and check flatness often. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-20T13:54:14Z",
+      "video_id": "886822370394233"
     }
   },
   "runs": [
@@ -576,6 +587,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "2744888419181768",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-20T13:54:14Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_looks_uneven_after_cutting-180_grit_for_leveling_plastic-plastic-004.mp4",
+      "filename": "plastic_looks_uneven_after_cutting-180_grit_for_leveling_plastic-plastic-004.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "886822370394233",
       "error": null
     }
   ],
