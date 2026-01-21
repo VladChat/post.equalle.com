@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-01-20"
+    "manifest_index": 0,
+    "last_day": "2026-01-21"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -354,6 +354,20 @@
       "pin_id": "839428818088328416",
       "media_id": "5475520538994619729",
       "cover_image_url": "https://i.pinimg.com/1200x/a6/44/a6/a644a636a7baa6bc7a5993d5411887d9.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
+      "filename": "seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049941",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7T4FFL",
+      "title": "Seam Lines Visible Under Light? Feather Drywall Joints With 150 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-21T08:49:19+00:00",
+      "pin_id": "839428818088347598",
+      "media_id": "5475685085671925664",
+      "cover_image_url": "https://i.pinimg.com/1200x/35/b9/20/35b9206df10e3a6ae227853dc4f46c77.jpg"
     }
   },
   "runs": [
@@ -605,6 +619,16 @@
       "result": "success",
       "pin_id": "839428818088328416",
       "media_id": "5475520538994619729",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-21T08:49:19+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
+      "filename": "seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818088347598",
+      "media_id": "5475685085671925664",
       "error": null
     }
   ]
