@@ -426,7 +426,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-21T13:54:10Z",
-      "video_id": "1393716458920226"
+      "video_id": "1393716458920226",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-21T14:42:56Z",
+      "comment_text": "Light pressure with 150 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "1393716458920226_26410348231901116",
+      "commented_ts_utc": "2026-01-21T14:42:58Z"
     }
   },
   "runs": [
@@ -773,6 +783,15 @@
       "result": "commented",
       "comment_id": "886822370394233_900447862372336",
       "template_idx": 10
+    },
+    {
+      "ts_utc": "2026-01-21T14:42:58Z",
+      "video_id": "1393716458920226",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1393716458920226_26410348231901116",
+      "template_idx": 0
     }
   ]
 }
