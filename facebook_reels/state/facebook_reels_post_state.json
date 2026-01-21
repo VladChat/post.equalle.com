@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-01-20"
+    "manifest_index": 0,
+    "last_day": "2026-01-21"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -416,6 +416,17 @@
       "comment_status": "commented",
       "comment_id": "886822370394233_900447862372336",
       "commented_ts_utc": "2026-01-20T14:09:43Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
+      "filename": "seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
+      "manifest": "drywall.json",
+      "title": "Seam Lines Visible Under Light? Feather Drywall Joints With 150 Grit",
+      "description": "If seams show when light hits the wall, feather the joint edges with 150 grit to blend the transition and prep the surface for primer and paint. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-21T13:54:10Z",
+      "video_id": "1393716458920226"
     }
   },
   "runs": [
@@ -606,6 +617,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "886822370394233",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-21T13:54:10Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
+      "filename": "seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1393716458920226",
       "error": null
     }
   ],
