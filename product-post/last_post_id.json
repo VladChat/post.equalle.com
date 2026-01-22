@@ -1,12 +1,15 @@
 {
-  "post_id": "325670187920349_1328102182664598",
+  "post_id": "325670187920349_1329739875834162",
   "product": {
     "source": "amazon",
-    "url": "https://www.amazon.com/gp/product/B0CZ7VP623",
-    "grit": 500,
+    "url": "https://www.amazon.com/gp/product/B0CZ7V2FFC",
+    "grit": 600,
     "pack": 10,
-    "anchor": "500 Grit (Fine)",
-    "grit_description": "Fine precision sandpaper for detailed primer and surface smoothing. Removes light scratches and prepares for higher-grit polishing. Suitable for plastic, resin, and metal work in wet or dry conditions.",
-    "contexts": []
+    "anchor": "600 Grit (Fine)",
+    "grit_description": "High-precision finishing grit that delivers ultra-smooth surfaces. Common in primer sanding, automotive detailing, and fine metal work. Performs excellently in both wet and dry sanding.",
+    "contexts": [
+      "metal",
+      "finishing"
+    ]
   }
 }
