@@ -743,7 +743,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18106620556741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 1
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-22T14:34:17Z",
+      "comment_text": "If the scratch pattern looks uneven, do a few crosshatch passes and re-check. Sanding wet or dry?",
+      "comment_status": "commented",
+      "comment_id": "17846538897641684",
+      "commented_ts_utc": "2026-01-22T14:34:18Z"
     }
   },
   "runs": [
@@ -1145,6 +1155,15 @@
       "result": "commented",
       "comment_id": "18127071640524115",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-01-22T14:34:18Z",
+      "media_id": "18557567923052866",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Looks_Patchy_on_Wood-180_Grit_for_Even_Paint_Finish-wood-006.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "17846538897641684",
+      "template_idx": 1
     }
   ]
 }
