@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-01-21"
+    "manifest_index": 1,
+    "last_day": "2026-01-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -720,6 +720,30 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-01-21T14:06:47Z",
       "comment_skipped_reason": "policy_10pct_skip"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Paint_Looks_Patchy_on_Wood-180_Grit_for_Even_Paint_Finish-wood-006.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Looks_Patchy_on_Wood-180_Grit_for_Even_Paint_Finish-wood-006.mp4",
+      "filename": "Paint_Looks_Patchy_on_Wood-180_Grit_for_Even_Paint_Finish-wood-006.mp4",
+      "manifest": "wood.json",
+      "title": "Paint Looks Patchy on Wood: 180 Grit Even Paint Finish",
+      "description": "Paint Looks Patchy on Wood? Use 180 grit for even paint finish. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "caption": "Paint Looks Patchy on Wood: 180 Grit Even Paint Finish\n\nPaint Looks Patchy on Wood? Use 180 grit for even paint finish. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-22T13:51:53Z",
+      "mode": "binary",
+      "container_id": "18106620556741317",
+      "media_id": "18557567923052866",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18106620556741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18106620556741317"
+      }
     }
   },
   "runs": [
@@ -963,6 +987,17 @@
       "filename": "uneven_joint_lines_after_mud-120_grit_for_leveling_drywall_seams-drywall-004.mp4",
       "container_id": "18106512601741317",
       "media_id": "17933193360171986",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-22T13:51:53Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wood.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Looks_Patchy_on_Wood-180_Grit_for_Even_Paint_Finish-wood-006.mp4",
+      "filename": "Paint_Looks_Patchy_on_Wood-180_Grit_for_Even_Paint_Finish-wood-006.mp4",
+      "container_id": "18106620556741317",
+      "media_id": "18557567923052866",
       "error": null
     }
   ],
