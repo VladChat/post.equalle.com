@@ -447,7 +447,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-22T13:54:46Z",
-      "video_id": "902968992282308"
+      "video_id": "902968992282308",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 10
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-22T14:02:42Z",
+      "comment_text": "Quick check: if it still feels scratchy, you may need one grit lower for a short blend. Want a simple grit ladder?",
+      "comment_status": "commented",
+      "comment_id": "902968992282308_1534527041178706",
+      "commented_ts_utc": "2026-01-22T14:02:45Z"
     }
   },
   "runs": [
@@ -812,6 +822,15 @@
       "result": "commented",
       "comment_id": "1393716458920226_26410348231901116",
       "template_idx": 0
+    },
+    {
+      "ts_utc": "2026-01-22T14:02:45Z",
+      "video_id": "902968992282308",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Finish_Feels_Too_Rough-180_Grit_for_Smoothing_Before_Paint-wood-005.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "902968992282308_1534527041178706",
+      "template_idx": 10
     }
   ]
 }
