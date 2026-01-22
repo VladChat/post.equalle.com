@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-01-21"
+    "manifest_index": 1,
+    "last_day": "2026-01-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -437,6 +437,17 @@
       "comment_status": "commented",
       "comment_id": "1393716458920226_26410348231901116",
       "commented_ts_utc": "2026-01-21T14:42:58Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Finish_Feels_Too_Rough-180_Grit_for_Smoothing_Before_Paint-wood-005.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Finish_Feels_Too_Rough-180_Grit_for_Smoothing_Before_Paint-wood-005.mp4",
+      "filename": "Finish_Feels_Too_Rough-180_Grit_for_Smoothing_Before_Paint-wood-005.mp4",
+      "manifest": "wood.json",
+      "title": "Finish Feels Too Rough: 180 Grit Smoothing Before Paint",
+      "description": "Finish Feels Too Rough? Use 180 grit for smoothing before paint. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-22T13:54:46Z",
+      "video_id": "902968992282308"
     }
   },
   "runs": [
@@ -636,6 +647,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "1393716458920226",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-22T13:54:46Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Finish_Feels_Too_Rough-180_Grit_for_Smoothing_Before_Paint-wood-005.mp4",
+      "filename": "Finish_Feels_Too_Rough-180_Grit_for_Smoothing_Before_Paint-wood-005.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "902968992282308",
       "error": null
     }
   ],
