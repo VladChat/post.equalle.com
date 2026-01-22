@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-21"
+    "last_day": "2026-01-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -206,6 +206,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7VFK4N",
       "result": "success",
       "video_id": "YLLOlakC1FE"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4",
+      "filename": "drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Seams Won’t Disappear? Blend Seams With 150 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-150",
+      "result": "success",
+      "video_id": "7NYCvWji1V8"
     }
   },
   "runs": [
@@ -329,6 +339,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/fresh_mud_shows_tool_marks-120_grit_for_removing_tool_marks-drywall-016.mp4",
       "result": "success",
       "video_id": "YLLOlakC1FE"
+    },
+    {
+      "ts_utc": "2026-01-22T11:24:28.002081+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4",
+      "result": "success",
+      "video_id": "7NYCvWji1V8"
     }
   ],
   "last_post": {
