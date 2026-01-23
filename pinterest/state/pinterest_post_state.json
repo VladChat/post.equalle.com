@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-01-21"
+    "manifest_index": 1,
+    "last_day": "2026-01-23"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -368,6 +368,20 @@
       "pin_id": "839428818088347598",
       "media_id": "5475685085671925664",
       "cover_image_url": "https://i.pinimg.com/1200x/35/b9/20/35b9206df10e3a6ae227853dc4f46c77.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Scratches_Under_Paint-220_Grit_for_Final_Paint_Prep-wood-007.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Scratches_Under_Paint-220_Grit_for_Final_Paint_Prep-wood-007.mp4",
+      "filename": "Scratches_Under_Paint-220_Grit_for_Final_Paint_Prep-wood-007.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-220",
+      "title": "Scratches Under Paint: 220 Grit Final Paint Prep",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-23T10:47:10+00:00",
+      "pin_id": "839428818088390462",
+      "media_id": "5476062501275766841",
+      "cover_image_url": "https://i.pinimg.com/1200x/11/cc/27/11cc27d575d6883588edef262a195095.jpg"
     }
   },
   "runs": [
@@ -629,6 +643,16 @@
       "result": "success",
       "pin_id": "839428818088347598",
       "media_id": "5475685085671925664",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-23T10:47:10+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Scratches_Under_Paint-220_Grit_for_Final_Paint_Prep-wood-007.mp4",
+      "filename": "Scratches_Under_Paint-220_Grit_for_Final_Paint_Prep-wood-007.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818088390462",
+      "media_id": "5476062501275766841",
       "error": null
     }
   ]
