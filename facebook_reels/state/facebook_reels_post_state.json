@@ -468,7 +468,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-23T13:51:18Z",
-      "video_id": "25603520832636825"
+      "video_id": "25603520832636825",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 13
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-23T14:28:20Z",
+      "comment_text": "On wet-sanding, sanding dust can hide defects—wipe often and re-check. Do you see it only after wiping?",
+      "comment_status": "commented",
+      "comment_id": "25603520832636825_1297189305789637",
+      "commented_ts_utc": "2026-01-23T14:28:23Z"
     }
   },
   "runs": [
@@ -851,6 +861,15 @@
       "result": "commented",
       "comment_id": "902968992282308_1534527041178706",
       "template_idx": 10
+    },
+    {
+      "ts_utc": "2026-01-23T14:28:23Z",
+      "video_id": "25603520832636825",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_not_ready_for_polish-2000_grit_wet_sand_before_polishing-wet-005.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "25603520832636825_1297189305789637",
+      "template_idx": 13
     }
   ]
 }
