@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-22"
+    "last_day": "2026-01-23"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -216,6 +216,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-150",
       "result": "success",
       "video_id": "7NYCvWji1V8"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
+      "filename": "joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
+      "manifest": "drywall.json",
+      "title": "Joint Lines Still Visible? Final Drywall Prep With 150 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVW4J5",
+      "result": "success",
+      "video_id": "t3hqkqxPy6E"
     }
   },
   "runs": [
@@ -345,6 +355,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4",
       "result": "success",
       "video_id": "7NYCvWji1V8"
+    },
+    {
+      "ts_utc": "2026-01-23T11:22:09.900603+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
+      "result": "success",
+      "video_id": "t3hqkqxPy6E"
     }
   ],
   "last_post": {
