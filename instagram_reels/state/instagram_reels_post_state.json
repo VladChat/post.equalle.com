@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-01-22"
+    "manifest_index": 2,
+    "last_day": "2026-01-23"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -754,6 +754,30 @@
       "comment_status": "commented",
       "comment_id": "17846538897641684",
       "commented_ts_utc": "2026-01-22T14:34:18Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
+      "filename": "light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
+      "manifest": "wet.json",
+      "title": "Light Orange Peel After Spray? Wet Sand 2000 To 3000 Grit",
+      "description": "Light orange peel after spraying clear coat? Start with 2000 grit to level texture, then move to 3000 grit to refine before polishing. Keep the surface wet, use light pressure, and wipe often to check the reflection. Wet or dry use. — eQualle",
+      "caption": "Light Orange Peel After Spray? Wet Sand 2000 To 3000 Grit\n\nLight orange peel after spraying clear coat? Start with 2000 grit to level texture, then move to 3000 grit to refine before polishing. Keep the surface wet, use light pressure, and wipe often to check the reflection. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-23T13:47:11Z",
+      "mode": "binary",
+      "container_id": "18106734160741317",
+      "media_id": "18117165139588399",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18106734160741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18106734160741317"
+      }
     }
   },
   "runs": [
@@ -1008,6 +1032,17 @@
       "filename": "Paint_Looks_Patchy_on_Wood-180_Grit_for_Even_Paint_Finish-wood-006.mp4",
       "container_id": "18106620556741317",
       "media_id": "18557567923052866",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-23T13:47:11Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wet.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
+      "filename": "light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
+      "container_id": "18106734160741317",
+      "media_id": "18117165139588399",
       "error": null
     }
   ],
