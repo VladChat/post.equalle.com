@@ -777,7 +777,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18106734160741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 18
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-23T14:23:09Z",
+      "comment_text": "If you’re getting random deep lines, the sheet may be loaded or folded. Are you using fresh paper?",
+      "comment_status": "commented",
+      "comment_id": "18113875510552692",
+      "commented_ts_utc": "2026-01-23T14:23:13Z"
     }
   },
   "runs": [
@@ -1199,6 +1209,15 @@
       "result": "commented",
       "comment_id": "17846538897641684",
       "template_idx": 1
+    },
+    {
+      "ts_utc": "2026-01-23T14:23:13Z",
+      "media_id": "18117165139588399",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18113875510552692",
+      "template_idx": 18
     }
   ]
 }
