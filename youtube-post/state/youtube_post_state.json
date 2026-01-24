@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-23"
+    "last_day": "2026-01-24"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -226,6 +226,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RHVW4J5",
       "result": "success",
       "video_id": "t3hqkqxPy6E"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4",
+      "filename": "drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Mud Feels Grainy? Smooth Compound With 120 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-120",
+      "result": "success",
+      "video_id": "gUgrXePGnDA"
     }
   },
   "runs": [
@@ -361,6 +371,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
       "result": "success",
       "video_id": "t3hqkqxPy6E"
+    },
+    {
+      "ts_utc": "2026-01-24T11:18:53.844333+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4",
+      "result": "success",
+      "video_id": "gUgrXePGnDA"
     }
   ],
   "last_post": {
