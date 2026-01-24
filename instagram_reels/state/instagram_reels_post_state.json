@@ -811,7 +811,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18106877002741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 2
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-24T14:12:36Z",
+      "comment_text": "Keep the block flat so you don’t dig grooves at the edges. Are you using a sanding block or hand-only?",
+      "comment_status": "commented",
+      "comment_id": "18558363397053691",
+      "commented_ts_utc": "2026-01-24T14:12:38Z"
     }
   },
   "runs": [
@@ -1253,6 +1263,15 @@
       "result": "commented",
       "comment_id": "18113875510552692",
       "template_idx": 18
+    },
+    {
+      "ts_utc": "2026-01-24T14:12:38Z",
+      "media_id": "18036806111756972",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/corrosion_still_visible_after_sanding-120_grit_for_rust_cleanup-metal-005.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18558363397053691",
+      "template_idx": 2
     }
   ]
 }
