@@ -489,7 +489,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-24T13:39:08Z",
-      "video_id": "1177134437520142"
+      "video_id": "1177134437520142",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 19
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-24T13:56:30Z",
+      "comment_text": "Before the next coat, clean the surface well so dust doesn’t telegraph through. Do you tack-cloth or wipe down?",
+      "comment_status": "commented",
+      "comment_id": "1177134437520142_1935359487370267",
+      "commented_ts_utc": "2026-01-24T13:56:33Z"
     }
   },
   "runs": [
@@ -890,6 +900,15 @@
       "result": "commented",
       "comment_id": "25603520832636825_1297189305789637",
       "template_idx": 13
+    },
+    {
+      "ts_utc": "2026-01-24T13:56:33Z",
+      "video_id": "1177134437520142",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/corrosion_still_visible_after_sanding-120_grit_for_rust_cleanup-metal-005.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "1177134437520142_1935359487370267",
+      "template_idx": 19
     }
   ]
 }
