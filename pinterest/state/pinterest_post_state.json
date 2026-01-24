@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-01-23"
+    "manifest_index": 2,
+    "last_day": "2026-01-24"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -382,6 +382,20 @@
       "pin_id": "839428818088390462",
       "media_id": "5476062501275766841",
       "cover_image_url": "https://i.pinimg.com/1200x/11/cc/27/11cc27d575d6883588edef262a195095.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
+      "filename": "light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049944",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7TX4KC",
+      "title": "Light Orange Peel After Spray? Wet Sand 2000 To 3000 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-24T08:53:23+00:00",
+      "pin_id": "839428818088408812",
+      "media_id": "5476229273937316722",
+      "cover_image_url": "https://i.pinimg.com/1200x/64/18/6e/64186e699121b5fc6330786be477d9bf.jpg"
     }
   },
   "runs": [
@@ -653,6 +667,16 @@
       "result": "success",
       "pin_id": "839428818088390462",
       "media_id": "5476062501275766841",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-24T08:53:23+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
+      "filename": "light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818088408812",
+      "media_id": "5476229273937316722",
       "error": null
     }
   ]
