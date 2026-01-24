@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-01-23"
+    "manifest_index": 3,
+    "last_day": "2026-01-24"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -479,6 +479,17 @@
       "comment_status": "commented",
       "comment_id": "25603520832636825_1297189305789637",
       "commented_ts_utc": "2026-01-23T14:28:23Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/corrosion_still_visible_after_sanding-120_grit_for_rust_cleanup-metal-005.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/corrosion_still_visible_after_sanding-120_grit_for_rust_cleanup-metal-005.mp4",
+      "filename": "corrosion_still_visible_after_sanding-120_grit_for_rust_cleanup-metal-005.mp4",
+      "manifest": "metal.json",
+      "title": "Clean Up Remaining Corrosion With 120 Grit Sandpaper",
+      "description": "Corrosion still visible after sanding? Switch to 120 grit to clean up rust residue and refine the surface. This step helps create a smoother base for primer and topcoat.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-24T13:39:08Z",
+      "video_id": "1177134437520142"
     }
   },
   "runs": [
@@ -696,6 +707,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "25603520832636825",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-24T13:39:08Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/corrosion_still_visible_after_sanding-120_grit_for_rust_cleanup-metal-005.mp4",
+      "filename": "corrosion_still_visible_after_sanding-120_grit_for_rust_cleanup-metal-005.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "1177134437520142",
       "error": null
     }
   ],
