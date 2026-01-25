@@ -845,7 +845,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18107042455741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 5
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-25T14:31:06Z",
+      "comment_text": "After sanding, wipe dust and check under a bright light from the side. Do the lines disappear evenly?",
+      "comment_status": "commented",
+      "comment_id": "17995381034734058",
+      "commented_ts_utc": "2026-01-25T14:31:08Z"
     }
   },
   "runs": [
@@ -1307,6 +1317,15 @@
       "result": "commented",
       "comment_id": "18558363397053691",
       "template_idx": 2
+    },
+    {
+      "ts_utc": "2026-01-25T14:31:08Z",
+      "media_id": "18117071857587118",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/rough_marks_on_plastic_surface-220_grit_for_smoothing_plastic-plastic-005.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "17995381034734058",
+      "template_idx": 5
     }
   ]
 }
