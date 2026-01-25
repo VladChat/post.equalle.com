@@ -510,7 +510,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-25T13:40:15Z",
-      "video_id": "1527926648281775"
+      "video_id": "1527926648281775",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 9
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-25T14:41:36Z",
+      "comment_text": "For corners/edges, ease up and let the abrasive do the work. Are edges the hardest part for you too?",
+      "comment_status": "commented",
+      "comment_id": "1527926648281775_3864525403848739",
+      "commented_ts_utc": "2026-01-25T14:41:39Z"
     }
   },
   "runs": [
@@ -929,6 +939,15 @@
       "result": "commented",
       "comment_id": "1177134437520142_1935359487370267",
       "template_idx": 19
+    },
+    {
+      "ts_utc": "2026-01-25T14:41:39Z",
+      "video_id": "1527926648281775",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/rough_marks_on_plastic_surface-220_grit_for_smoothing_plastic-plastic-005.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "1527926648281775_3864525403848739",
+      "template_idx": 9
     }
   ]
 }
