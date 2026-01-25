@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-24"
+    "last_day": "2026-01-25"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -236,6 +236,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-120",
       "result": "success",
       "video_id": "gUgrXePGnDA"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
+      "filename": "wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
+      "manifest": "drywall.json",
+      "title": "Wall Not Ready for the Next Coat? Prep Drywall With 150 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7T4FFL",
+      "result": "success",
+      "video_id": "hN7CU--11TA"
     }
   },
   "runs": [
@@ -377,6 +387,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4",
       "result": "success",
       "video_id": "gUgrXePGnDA"
+    },
+    {
+      "ts_utc": "2026-01-25T11:18:49.351063+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
+      "result": "success",
+      "video_id": "hN7CU--11TA"
     }
   ],
   "last_post": {
