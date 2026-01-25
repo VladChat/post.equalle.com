@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-01-24"
+    "manifest_index": 4,
+    "last_day": "2026-01-25"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -500,6 +500,17 @@
       "comment_status": "commented",
       "comment_id": "1177134437520142_1935359487370267",
       "commented_ts_utc": "2026-01-24T13:56:33Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/rough_marks_on_plastic_surface-220_grit_for_smoothing_plastic-plastic-005.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/rough_marks_on_plastic_surface-220_grit_for_smoothing_plastic-plastic-005.mp4",
+      "filename": "rough_marks_on_plastic_surface-220_grit_for_smoothing_plastic-plastic-005.mp4",
+      "manifest": "plastic.json",
+      "title": "Rough Marks On Plastic? Smooth Them With 220 Grit",
+      "description": "Rough marks on plastic stand out under paint and clear coats. 220 grit helps refine the surface and blend sanding lines. Use even pressure, overlap passes, then wipe clean and inspect under light. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-25T13:40:15Z",
+      "video_id": "1527926648281775"
     }
   },
   "runs": [
@@ -726,6 +737,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "1177134437520142",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-25T13:40:15Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/rough_marks_on_plastic_surface-220_grit_for_smoothing_plastic-plastic-005.mp4",
+      "filename": "rough_marks_on_plastic_surface-220_grit_for_smoothing_plastic-plastic-005.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "1527926648281775",
       "error": null
     }
   ],
