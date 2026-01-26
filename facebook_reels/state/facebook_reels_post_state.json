@@ -531,7 +531,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-26T13:52:17Z",
-      "video_id": "1025035067350094"
+      "video_id": "1025035067350094",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 18
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-26T14:24:15Z",
+      "comment_text": "If you’re getting pigtails or random deep lines, the paper may be loaded or folded. Are you using fresh sheets?",
+      "comment_status": "commented",
+      "comment_id": "1025035067350094_749036614529652",
+      "commented_ts_utc": "2026-01-26T14:24:19Z"
     }
   },
   "runs": [
@@ -968,6 +978,15 @@
       "result": "commented",
       "comment_id": "1527926648281775_3864525403848739",
       "template_idx": 9
+    },
+    {
+      "ts_utc": "2026-01-26T14:24:19Z",
+      "video_id": "1025035067350094",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_edges_stand_out-150_grit_for_blending_drywall_patch-drywall-007.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1025035067350094_749036614529652",
+      "template_idx": 18
     }
   ]
 }
