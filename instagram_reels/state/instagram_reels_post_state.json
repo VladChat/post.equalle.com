@@ -879,7 +879,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18107157652741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 4
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-26T14:40:08Z",
+      "comment_text": "If the paper starts loading up, wipe/rinse it and keep going—clean paper cuts cleaner. Does it clog on your surface?",
+      "comment_status": "commented",
+      "comment_id": "18383784817152934",
+      "commented_ts_utc": "2026-01-26T14:40:10Z"
     }
   },
   "runs": [
@@ -1361,6 +1371,15 @@
       "result": "commented",
       "comment_id": "17995381034734058",
       "template_idx": 5
+    },
+    {
+      "ts_utc": "2026-01-26T14:40:10Z",
+      "media_id": "17902227363202122",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18383784817152934",
+      "template_idx": 4
     }
   ]
 }
