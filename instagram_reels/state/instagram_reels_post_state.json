@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-01-25"
+    "manifest_index": 0,
+    "last_day": "2026-01-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -856,6 +856,30 @@
       "comment_status": "commented",
       "comment_id": "17995381034734058",
       "commented_ts_utc": "2026-01-25T14:31:08Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
+      "filename": "drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Mud Looks Lumpy? Smooth Joint Compound With 120 Grit",
+      "description": "If dried compound has lumps or bumps, sand lightly with 120 grit to flatten high spots and smooth the surface before you skim or add another coat. Sandpaper eQualle",
+      "caption": "Drywall Mud Looks Lumpy? Smooth Joint Compound With 120 Grit\n\nIf dried compound has lumps or bumps, sand lightly with 120 grit to flatten high spots and smooth the surface before you skim or add another coat. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-26T13:49:34Z",
+      "mode": "binary",
+      "container_id": "18107157652741317",
+      "media_id": "17902227363202122",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18107157652741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18107157652741317"
+      }
     }
   },
   "runs": [
@@ -1143,6 +1167,17 @@
       "filename": "rough_marks_on_plastic_surface-220_grit_for_smoothing_plastic-plastic-005.mp4",
       "container_id": "18107042455741317",
       "media_id": "18117071857587118",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-26T13:49:34Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
+      "filename": "drywall_mud_looks_lumpy-120_grit_for_smoothing_joint_compound-drywall-005.mp4",
+      "container_id": "18107157652741317",
+      "media_id": "17902227363202122",
       "error": null
     }
   ],
