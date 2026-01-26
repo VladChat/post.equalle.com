@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-25"
+    "last_day": "2026-01-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -246,6 +246,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7T4FFL",
       "result": "success",
       "video_id": "hN7CU--11TA"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4",
+      "filename": "ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4",
+      "manifest": "drywall.json",
+      "title": "Ridges Showing After the First Coat? Feather Drywall Mud With 180 Grit",
+      "destination_url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "result": "success",
+      "video_id": "gmZgnc8FUzI"
     }
   },
   "runs": [
@@ -393,6 +403,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
       "result": "success",
       "video_id": "hN7CU--11TA"
+    },
+    {
+      "ts_utc": "2026-01-26T11:21:45.219290+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4",
+      "result": "success",
+      "video_id": "gmZgnc8FUzI"
     }
   ],
   "last_post": {
