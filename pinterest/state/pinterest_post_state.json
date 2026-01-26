@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-01-25"
+    "manifest_index": 4,
+    "last_day": "2026-01-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -410,6 +410,20 @@
       "pin_id": "839428818088431917",
       "media_id": "5476418542263938170",
       "cover_image_url": "https://i.pinimg.com/1200x/80/09/9e/80099e77cdb4ee1fdfb81fbf63604be0.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_has_factory_texture-180_grit_for_plastic_surface_prep-plastic-006.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_has_factory_texture-180_grit_for_plastic_surface_prep-plastic-006.mp4",
+      "filename": "plastic_has_factory_texture-180_grit_for_plastic_surface_prep-plastic-006.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049964",
+      "destination_url": "https://www.amazon.com/gp/product/B07QG6R8Y1",
+      "title": "Factory Texture On Plastic? Use 180 Grit For Prep",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-26T09:49:57+00:00",
+      "pin_id": "839428818088454374",
+      "media_id": "5476598819701456229",
+      "cover_image_url": "https://i.pinimg.com/1200x/46/4d/c9/464dc97305da96b52894f140eebdd975.jpg"
     }
   },
   "runs": [
@@ -701,6 +715,16 @@
       "result": "success",
       "pin_id": "839428818088431917",
       "media_id": "5476418542263938170",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-26T09:49:57+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_has_factory_texture-180_grit_for_plastic_surface_prep-plastic-006.mp4",
+      "filename": "plastic_has_factory_texture-180_grit_for_plastic_surface_prep-plastic-006.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818088454374",
+      "media_id": "5476598819701456229",
       "error": null
     }
   ]
