@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-01-25"
+    "manifest_index": 0,
+    "last_day": "2026-01-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -521,6 +521,17 @@
       "comment_status": "commented",
       "comment_id": "1527926648281775_3864525403848739",
       "commented_ts_utc": "2026-01-25T14:41:39Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_edges_stand_out-150_grit_for_blending_drywall_patch-drywall-007.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_edges_stand_out-150_grit_for_blending_drywall_patch-drywall-007.mp4",
+      "filename": "drywall_patch_edges_stand_out-150_grit_for_blending_drywall_patch-drywall-007.mp4",
+      "manifest": "drywall.json",
+      "title": "Patch Edges Stand Out? Blend the Drywall Patch With 150 Grit",
+      "description": "If a patch edge is still visible, sand the perimeter with 150 grit to feather the compound and blend it into the surrounding wall before primer. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-26T13:52:17Z",
+      "video_id": "1025035067350094"
     }
   },
   "runs": [
@@ -756,6 +767,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1527926648281775",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-26T13:52:17Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_edges_stand_out-150_grit_for_blending_drywall_patch-drywall-007.mp4",
+      "filename": "drywall_patch_edges_stand_out-150_grit_for_blending_drywall_patch-drywall-007.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1025035067350094",
       "error": null
     }
   ],
