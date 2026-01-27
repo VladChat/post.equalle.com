@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-01-26"
+    "manifest_index": 1,
+    "last_day": "2026-01-27"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -542,6 +542,17 @@
       "comment_status": "commented",
       "comment_id": "1025035067350094_749036614529652",
       "commented_ts_utc": "2026-01-26T14:24:19Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Paint_Looks_Patchy_on_Wood-180_Grit_for_Even_Paint_Finish-wood-006.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Looks_Patchy_on_Wood-180_Grit_for_Even_Paint_Finish-wood-006.mp4",
+      "filename": "Paint_Looks_Patchy_on_Wood-180_Grit_for_Even_Paint_Finish-wood-006.mp4",
+      "manifest": "wood.json",
+      "title": "Paint Looks Patchy on Wood: 180 Grit Even Paint Finish",
+      "description": "Paint Looks Patchy on Wood? Use 180 grit for even paint finish. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-27T13:54:52Z",
+      "video_id": "1902000900690537"
     }
   },
   "runs": [
@@ -786,6 +797,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "1025035067350094",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-27T13:54:52Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Looks_Patchy_on_Wood-180_Grit_for_Even_Paint_Finish-wood-006.mp4",
+      "filename": "Paint_Looks_Patchy_on_Wood-180_Grit_for_Even_Paint_Finish-wood-006.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "1902000900690537",
       "error": null
     }
   ],
