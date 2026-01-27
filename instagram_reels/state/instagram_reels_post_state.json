@@ -913,7 +913,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18107252272741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 5
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-27T14:31:06Z",
+      "comment_text": "After sanding, wipe dust and check under a bright light from the side. Do the lines disappear evenly?",
+      "comment_status": "commented",
+      "comment_id": "18086143898334585",
+      "commented_ts_utc": "2026-01-27T14:31:08Z"
     }
   },
   "runs": [
@@ -1415,6 +1425,15 @@
       "result": "commented",
       "comment_id": "18383784817152934",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-01-27T14:31:08Z",
+      "media_id": "17846666724672470",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Scratches_Under_Paint-220_Grit_for_Final_Paint_Prep-wood-007.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "18086143898334585",
+      "template_idx": 5
     }
   ]
 }
