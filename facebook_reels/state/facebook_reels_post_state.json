@@ -552,7 +552,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-27T13:54:52Z",
-      "video_id": "1902000900690537"
+      "video_id": "1902000900690537",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 4
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-27T14:05:26Z",
+      "comment_text": "If the paper starts loading up, wipe/rinse it and keep going—clean cuts cleaner. Does it clog on your surface?",
+      "comment_status": "commented",
+      "comment_id": "1902000900690537_1430363168600430",
+      "commented_ts_utc": "2026-01-27T14:05:29Z"
     }
   },
   "runs": [
@@ -1007,6 +1017,15 @@
       "result": "commented",
       "comment_id": "1025035067350094_749036614529652",
       "template_idx": 18
+    },
+    {
+      "ts_utc": "2026-01-27T14:05:29Z",
+      "video_id": "1902000900690537",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Looks_Patchy_on_Wood-180_Grit_for_Even_Paint_Finish-wood-006.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "1902000900690537_1430363168600430",
+      "template_idx": 4
     }
   ]
 }
