@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-01-27"
+    "manifest_index": 2,
+    "last_day": "2026-01-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -563,6 +563,17 @@
       "comment_status": "commented",
       "comment_id": "1902000900690537_1430363168600430",
       "commented_ts_utc": "2026-01-27T14:05:29Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
+      "filename": "light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
+      "manifest": "wet.json",
+      "title": "Light Orange Peel After Spray? Wet Sand 2000 To 3000 Grit",
+      "description": "Light orange peel after spraying clear coat? Start with 2000 grit to level texture, then move to 3000 grit to refine before polishing. Keep the surface wet, use light pressure, and wipe often to check the reflection. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-28T13:55:08Z",
+      "video_id": "1304211291726627"
     }
   },
   "runs": [
@@ -816,6 +827,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "1902000900690537",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-28T13:55:08Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
+      "filename": "light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "1304211291726627",
       "error": null
     }
   ],
