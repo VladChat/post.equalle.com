@@ -573,7 +573,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-28T13:55:08Z",
-      "video_id": "1304211291726627"
+      "video_id": "1304211291726627",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-28T14:16:06Z",
+      "comment_text": "For wet-sanding work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "1304211291726627_738444629088858",
+      "commented_ts_utc": "2026-01-28T14:16:09Z"
     }
   },
   "runs": [
@@ -1046,6 +1056,15 @@
       "result": "commented",
       "comment_id": "1902000900690537_1430363168600430",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-01-28T14:16:09Z",
+      "video_id": "1304211291726627",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1304211291726627_738444629088858",
+      "template_idx": 3
     }
   ]
 }
