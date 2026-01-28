@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-01-27"
+    "manifest_index": 2,
+    "last_day": "2026-01-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -924,6 +924,30 @@
       "comment_status": "commented",
       "comment_id": "18086143898334585",
       "commented_ts_utc": "2026-01-27T14:31:08Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_coat_shows_tiny_bumps-2000_grit_wet_sand_to_level_clear_coat-wet-007.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_shows_tiny_bumps-2000_grit_wet_sand_to_level_clear_coat-wet-007.mp4",
+      "filename": "clear_coat_shows_tiny_bumps-2000_grit_wet_sand_to_level_clear_coat-wet-007.mp4",
+      "manifest": "wet.json",
+      "title": "Tiny Bumps In Clear Coat? Level With 2000 Grit Wet Sanding",
+      "description": "Clear coat shows tiny bumps? Wet sand with 2000 grit to level the surface before polishing or the next coat. Keep it wet, sand lightly in even passes, wipe clean often, and check under a work light for remaining high spots. Wet or dry use. — eQualle",
+      "caption": "Tiny Bumps In Clear Coat? Level With 2000 Grit Wet Sanding\n\nClear coat shows tiny bumps? Wet sand with 2000 grit to level the surface before polishing or the next coat. Keep it wet, sand lightly in even passes, wipe clean often, and check under a work light for remaining high spots. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-28T13:52:35Z",
+      "mode": "binary",
+      "container_id": "18107364331741317",
+      "media_id": "18418055458190830",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18107364331741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18107364331741317"
+      }
     }
   },
   "runs": [
@@ -1233,6 +1257,17 @@
       "filename": "Scratches_Under_Paint-220_Grit_for_Final_Paint_Prep-wood-007.mp4",
       "container_id": "18107252272741317",
       "media_id": "17846666724672470",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-28T13:52:35Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wet.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_shows_tiny_bumps-2000_grit_wet_sand_to_level_clear_coat-wet-007.mp4",
+      "filename": "clear_coat_shows_tiny_bumps-2000_grit_wet_sand_to_level_clear_coat-wet-007.mp4",
+      "container_id": "18107364331741317",
+      "media_id": "18418055458190830",
       "error": null
     }
   ],
