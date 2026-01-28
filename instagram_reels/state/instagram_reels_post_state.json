@@ -947,7 +947,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18107364331741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-28T14:16:36Z",
+      "comment_text": "Light pressure with 2000 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "18065452814265642",
+      "commented_ts_utc": "2026-01-28T14:16:40Z"
     }
   },
   "runs": [
@@ -1469,6 +1479,15 @@
       "result": "commented",
       "comment_id": "18086143898334585",
       "template_idx": 5
+    },
+    {
+      "ts_utc": "2026-01-28T14:16:40Z",
+      "media_id": "18418055458190830",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_shows_tiny_bumps-2000_grit_wet_sand_to_level_clear_coat-wet-007.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18065452814265642",
+      "template_idx": 0
     }
   ]
 }
