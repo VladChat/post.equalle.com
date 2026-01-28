@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-01-27"
+    "manifest_index": 1,
+    "last_day": "2026-01-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -438,6 +438,20 @@
       "pin_id": "839428818088477463",
       "media_id": "5476788953778563848",
       "cover_image_url": "https://i.pinimg.com/1200x/09/0e/35/090e358f54b3d7ab93a34bbfa2b97c3a.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4",
+      "filename": "Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8DFS6T",
+      "title": "Wood Feels Fuzzy After Sanding: 220 Grit Final Sand With Grain",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-28T08:49:22+00:00",
+      "pin_id": "839428818088497695",
+      "media_id": "5476953602538933207",
+      "cover_image_url": "https://i.pinimg.com/1200x/72/27/ed/7227edb9c4123c8a0d80405839839dcc.jpg"
     }
   },
   "runs": [
@@ -749,6 +763,16 @@
       "result": "success",
       "pin_id": "839428818088477463",
       "media_id": "5476788953778563848",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-28T08:49:22+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4",
+      "filename": "Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818088497695",
+      "media_id": "5476953602538933207",
       "error": null
     }
   ]
