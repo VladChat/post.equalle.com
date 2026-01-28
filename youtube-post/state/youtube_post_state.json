@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-27"
+    "last_day": "2026-01-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -266,6 +266,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ8DTGHP",
       "result": "success",
       "video_id": "dLJc3C_7ZPo"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/second_coat_looks_uneven-180_grit_for_leveling_between_coats-drywall-023.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/second_coat_looks_uneven-180_grit_for_leveling_between_coats-drywall-023.mp4",
+      "filename": "second_coat_looks_uneven-180_grit_for_leveling_between_coats-drywall-023.mp4",
+      "manifest": "drywall.json",
+      "title": "Second Coat Looks Uneven? Level Between Coats With 180 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-180",
+      "result": "success",
+      "video_id": "r5Jagrzd7wI"
     }
   },
   "runs": [
@@ -425,6 +435,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_visible_between_coats-180_grit_for_blending_drywall_layers-drywall-022.mp4",
       "result": "success",
       "video_id": "dLJc3C_7ZPo"
+    },
+    {
+      "ts_utc": "2026-01-28T11:23:47.289508+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/second_coat_looks_uneven-180_grit_for_leveling_between_coats-drywall-023.mp4",
+      "result": "success",
+      "video_id": "r5Jagrzd7wI"
     }
   ],
   "last_post": {
