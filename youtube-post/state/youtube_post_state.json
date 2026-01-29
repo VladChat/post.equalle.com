@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-28"
+    "last_day": "2026-01-29"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -276,6 +276,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-180",
       "result": "success",
       "video_id": "r5Jagrzd7wI"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_not_blending_yet-180_grit_for_feather_sanding_patch-drywall-024.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_not_blending_yet-180_grit_for_feather_sanding_patch-drywall-024.mp4",
+      "filename": "drywall_patch_not_blending_yet-180_grit_for_feather_sanding_patch-drywall-024.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Patch Not Blending Yet? Feather Sand the Patch With 180 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RGRN3PL",
+      "result": "success",
+      "video_id": "JtrurmtbsU8"
     }
   },
   "runs": [
@@ -441,6 +451,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/second_coat_looks_uneven-180_grit_for_leveling_between_coats-drywall-023.mp4",
       "result": "success",
       "video_id": "r5Jagrzd7wI"
+    },
+    {
+      "ts_utc": "2026-01-29T11:32:29.906488+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_not_blending_yet-180_grit_for_feather_sanding_patch-drywall-024.mp4",
+      "result": "success",
+      "video_id": "JtrurmtbsU8"
     }
   ],
   "last_post": {
