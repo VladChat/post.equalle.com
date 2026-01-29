@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-01-28"
+    "manifest_index": 2,
+    "last_day": "2026-01-29"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -452,6 +452,20 @@
       "pin_id": "839428818088497695",
       "media_id": "5476953602538933207",
       "cover_image_url": "https://i.pinimg.com/1200x/72/27/ed/7227edb9c4123c8a0d80405839839dcc.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_coat_shows_tiny_bumps-2000_grit_wet_sand_to_level_clear_coat-wet-007.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_shows_tiny_bumps-2000_grit_wet_sand_to_level_clear_coat-wet-007.mp4",
+      "filename": "clear_coat_shows_tiny_bumps-2000_grit_wet_sand_to_level_clear_coat-wet-007.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049944",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-2000",
+      "title": "Tiny Bumps In Clear Coat? Level With 2000 Grit Wet Sanding",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-29T10:22:59+00:00",
+      "pin_id": "839428818088517547",
+      "media_id": "5477146529982656162",
+      "cover_image_url": "https://i.pinimg.com/1200x/08/8c/0b/088c0b7ba78e53ca0e640095ba14334c.jpg"
     }
   },
   "runs": [
@@ -773,6 +787,16 @@
       "result": "success",
       "pin_id": "839428818088497695",
       "media_id": "5476953602538933207",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-29T10:22:59+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_shows_tiny_bumps-2000_grit_wet_sand_to_level_clear_coat-wet-007.mp4",
+      "filename": "clear_coat_shows_tiny_bumps-2000_grit_wet_sand_to_level_clear_coat-wet-007.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818088517547",
+      "media_id": "5477146529982656162",
       "error": null
     }
   ]
