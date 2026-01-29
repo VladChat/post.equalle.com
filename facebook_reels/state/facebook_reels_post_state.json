@@ -594,7 +594,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-29T14:04:46Z",
-      "video_id": "1411027960809890"
+      "video_id": "1411027960809890",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-29T14:51:07Z",
+      "comment_text": "Light pressure with 60–80 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "1411027960809890_3364712363706443",
+      "commented_ts_utc": "2026-01-29T14:51:10Z"
     }
   },
   "runs": [
@@ -1085,6 +1095,15 @@
       "result": "commented",
       "comment_id": "1304211291726627_738444629088858",
       "template_idx": 3
+    },
+    {
+      "ts_utc": "2026-01-29T14:51:10Z",
+      "video_id": "1411027960809890",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_pits_in_the_metal-60-80_grit_for_deep_rust_removal-metal-006.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "1411027960809890_3364712363706443",
+      "template_idx": 0
     }
   ]
 }
