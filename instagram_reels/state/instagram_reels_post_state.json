@@ -981,7 +981,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18107473984741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-29T14:19:10Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "18165381523397713",
+      "commented_ts_utc": "2026-01-29T14:19:11Z"
     }
   },
   "runs": [
@@ -1523,6 +1533,15 @@
       "result": "commented",
       "comment_id": "18065452814265642",
       "template_idx": 0
+    },
+    {
+      "ts_utc": "2026-01-29T14:19:11Z",
+      "media_id": "17910144165304633",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_pits_in_the_metal-60-80_grit_for_deep_rust_removal-metal-006.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18165381523397713",
+      "template_idx": 12
     }
   ]
 }
