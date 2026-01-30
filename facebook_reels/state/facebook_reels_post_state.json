@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-01-29"
+    "manifest_index": 4,
+    "last_day": "2026-01-30"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -605,6 +605,17 @@
       "comment_status": "commented",
       "comment_id": "1411027960809890_3364712363706443",
       "commented_ts_utc": "2026-01-29T14:51:10Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_has_factory_texture-180_grit_for_plastic_surface_prep-plastic-006.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_has_factory_texture-180_grit_for_plastic_surface_prep-plastic-006.mp4",
+      "filename": "plastic_has_factory_texture-180_grit_for_plastic_surface_prep-plastic-006.mp4",
+      "manifest": "plastic.json",
+      "title": "Factory Texture On Plastic? Use 180 Grit For Prep",
+      "description": "Many plastics have a factory texture that can show through finishes. 180 grit helps reduce texture and create a more uniform surface for primer, paint, or epoxy. Sand lightly and clean before coating. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-30T14:01:26Z",
+      "video_id": "1604577657657027"
     }
   },
   "runs": [
@@ -876,6 +887,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "1411027960809890",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-30T14:01:26Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_has_factory_texture-180_grit_for_plastic_surface_prep-plastic-006.mp4",
+      "filename": "plastic_has_factory_texture-180_grit_for_plastic_surface_prep-plastic-006.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "1604577657657027",
       "error": null
     }
   ],
