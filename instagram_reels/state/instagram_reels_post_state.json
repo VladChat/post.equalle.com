@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-01-30"
+    "manifest_index": 0,
+    "last_day": "2026-01-31"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -1026,6 +1026,30 @@
       "comment_status": "commented",
       "comment_id": "18063805556294060",
       "commented_ts_utc": "2026-01-30T14:21:24Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
+      "filename": "seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
+      "manifest": "drywall.json",
+      "title": "Seam Lines Visible Under Light? Feather Drywall Joints With 150 Grit",
+      "description": "If seams show when light hits the wall, feather the joint edges with 150 grit to blend the transition and prep the surface for primer and paint. Sandpaper eQualle",
+      "caption": "Seam Lines Visible Under Light? Feather Drywall Joints With 150 Grit\n\nIf seams show when light hits the wall, feather the joint edges with 150 grit to blend the transition and prep the surface for primer and paint. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-31T13:44:31Z",
+      "mode": "binary",
+      "container_id": "18107688574741317",
+      "media_id": "17947077324094903",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18107688574741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18107688574741317"
+      }
     }
   },
   "runs": [
@@ -1368,6 +1392,17 @@
       "filename": "plastic_has_factory_texture-180_grit_for_plastic_surface_prep-plastic-006.mp4",
       "container_id": "18107579704741317",
       "media_id": "18071471378146923",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-31T13:44:31Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
+      "filename": "seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
+      "container_id": "18107688574741317",
+      "media_id": "17947077324094903",
       "error": null
     }
   ],
