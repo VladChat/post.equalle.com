@@ -636,7 +636,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-31T13:48:54Z",
-      "video_id": "845626428458618"
+      "video_id": "845626428458618",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-31T14:40:43Z",
+      "comment_text": "For drywall work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "845626428458618_1426066765587575",
+      "commented_ts_utc": "2026-01-31T14:40:50Z"
     }
   },
   "runs": [
@@ -1163,6 +1173,15 @@
       "result": "commented",
       "comment_id": "1604577657657027_2448951512189686",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-01-31T14:40:50Z",
+      "video_id": "845626428458618",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "845626428458618_1426066765587575",
+      "template_idx": 3
     }
   ]
 }
