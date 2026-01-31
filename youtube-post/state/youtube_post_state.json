@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-30"
+    "last_day": "2026-01-31"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -296,6 +296,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-180",
       "result": "success",
       "video_id": "BodeXgDpT5Y"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
+      "filename": "lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
+      "manifest": "drywall.json",
+      "title": "Lines Showing After a Skim Coat? Lightly Feather Sand With 220 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8DFS6T",
+      "result": "success",
+      "video_id": "WShUH47Bfxc"
     }
   },
   "runs": [
@@ -473,6 +483,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4",
       "result": "success",
       "video_id": "BodeXgDpT5Y"
+    },
+    {
+      "ts_utc": "2026-01-31T11:21:39.285171+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
+      "result": "success",
+      "video_id": "WShUH47Bfxc"
     }
   ],
   "last_post": {
