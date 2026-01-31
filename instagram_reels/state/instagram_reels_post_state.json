@@ -1049,7 +1049,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18107688574741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 2
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-01-31T14:27:26Z",
+      "comment_text": "Keep the block flat so you don’t dig grooves at the edges. Are you using a sanding block or hand-only?",
+      "comment_status": "commented",
+      "comment_id": "18377349346087630",
+      "commented_ts_utc": "2026-01-31T14:27:31Z"
     }
   },
   "runs": [
@@ -1631,6 +1641,15 @@
       "result": "commented",
       "comment_id": "18063805556294060",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-01-31T14:27:31Z",
+      "media_id": "17947077324094903",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18377349346087630",
+      "template_idx": 2
     }
   ]
 }
