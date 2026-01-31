@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-01-30"
+    "manifest_index": 0,
+    "last_day": "2026-01-31"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -626,6 +626,17 @@
       "comment_status": "commented",
       "comment_id": "1604577657657027_2448951512189686",
       "commented_ts_utc": "2026-01-30T14:27:34Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
+      "filename": "joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
+      "manifest": "drywall.json",
+      "title": "Joint Compound Dried Too Hard? Dry Sand Mud With 120 Grit",
+      "description": "If compound dried rock-hard, start with light pressure using 120 grit to cut high spots and even the surface, then wipe dust before recoating. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-01-31T13:48:54Z",
+      "video_id": "845626428458618"
     }
   },
   "runs": [
@@ -906,6 +917,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1604577657657027",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-01-31T13:48:54Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
+      "filename": "joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "845626428458618",
       "error": null
     }
   ],
