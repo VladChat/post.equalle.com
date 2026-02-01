@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-01-31"
+    "last_day": "2026-02-01"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -306,6 +306,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ8DFS6T",
       "result": "success",
       "video_id": "WShUH47Bfxc"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
+      "filename": "raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
+      "manifest": "drywall.json",
+      "title": "Raised Areas After Drying? Knock Down High Spots With 180 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-180",
+      "result": "success",
+      "video_id": "VJz-9dux7pQ"
     }
   },
   "runs": [
@@ -489,6 +499,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
       "result": "success",
       "video_id": "WShUH47Bfxc"
+    },
+    {
+      "ts_utc": "2026-02-01T11:22:39.208795+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
+      "result": "success",
+      "video_id": "VJz-9dux7pQ"
     }
   ],
   "last_post": {
