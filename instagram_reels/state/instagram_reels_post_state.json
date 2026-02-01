@@ -1083,7 +1083,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18107781103741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-01T14:05:45Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "17942882505106876",
+      "commented_ts_utc": "2026-02-01T14:05:51Z"
     }
   },
   "runs": [
@@ -1685,6 +1695,15 @@
       "result": "commented",
       "comment_id": "18377349346087630",
       "template_idx": 2
+    },
+    {
+      "ts_utc": "2026-02-01T14:05:51Z",
+      "media_id": "17939735385119680",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "17942882505106876",
+      "template_idx": 12
     }
   ]
 }
