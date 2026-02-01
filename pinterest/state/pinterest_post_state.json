@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-01-31"
+    "manifest_index": 0,
+    "last_day": "2026-02-01"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -494,6 +494,20 @@
       "pin_id": "839428818088554547",
       "media_id": "5477498254872616136",
       "cover_image_url": "https://i.pinimg.com/1200x/41/98/44/419844dc0cc3f4968a3bf64ff2c80e19.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
+      "filename": "joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049941",
+      "destination_url": "https://www.amazon.com/gp/product/B07QD2GTY4",
+      "title": "Joint Compound Dried Too Hard? Dry Sand Mud With 120 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-01T10:01:59+00:00",
+      "pin_id": "839428818088573517",
+      "media_id": "5477687458170730930",
+      "cover_image_url": "https://i.pinimg.com/1200x/3d/57/bb/3d57bb63dd3d4d9132f5e9942c1d2a3b.jpg"
     }
   },
   "runs": [
@@ -845,6 +859,16 @@
       "result": "success",
       "pin_id": "839428818088554547",
       "media_id": "5477498254872616136",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-01T10:01:59+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
+      "filename": "joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818088573517",
+      "media_id": "5477687458170730930",
       "error": null
     }
   ]
