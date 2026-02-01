@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-01-31"
+    "manifest_index": 1,
+    "last_day": "2026-02-01"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -1060,6 +1060,30 @@
       "comment_status": "commented",
       "comment_id": "18377349346087630",
       "commented_ts_utc": "2026-01-31T14:27:31Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4",
+      "filename": "Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4",
+      "manifest": "wood.json",
+      "title": "Wood Feels Fuzzy After Sanding: 220 Grit Final Sand With Grain",
+      "description": "Wood Feels Fuzzy After Sanding? Use 220 grit for final sand with grain. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "caption": "Wood Feels Fuzzy After Sanding: 220 Grit Final Sand With Grain\n\nWood Feels Fuzzy After Sanding? Use 220 grit for final sand with grain. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-01T13:47:34Z",
+      "mode": "binary",
+      "container_id": "18107781103741317",
+      "media_id": "17939735385119680",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18107781103741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18107781103741317"
+      }
     }
   },
   "runs": [
@@ -1413,6 +1437,17 @@
       "filename": "seam_lines_visible_under_light-150_grit_for_feathering_drywall_joints-drywall-006.mp4",
       "container_id": "18107688574741317",
       "media_id": "17947077324094903",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-01T13:47:34Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wood.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4",
+      "filename": "Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4",
+      "container_id": "18107781103741317",
+      "media_id": "17939735385119680",
       "error": null
     }
   ],
