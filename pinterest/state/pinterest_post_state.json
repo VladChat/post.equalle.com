@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-02-01"
+    "manifest_index": 1,
+    "last_day": "2026-02-02"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -508,6 +508,20 @@
       "pin_id": "839428818088573517",
       "media_id": "5477687458170730930",
       "cover_image_url": "https://i.pinimg.com/1200x/3d/57/bb/3d57bb63dd3d4d9132f5e9942c1d2a3b.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/New_Boards_Feel_Too_Rough-120_Grit_for_Quick_Wood_Smoothing-wood-009.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/New_Boards_Feel_Too_Rough-120_Grit_for_Quick_Wood_Smoothing-wood-009.mp4",
+      "filename": "New_Boards_Feel_Too_Rough-120_Grit_for_Quick_Wood_Smoothing-wood-009.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-120-10-sheets",
+      "title": "New Boards Feel Too Rough: 120 Grit Quick Wood Smoothing",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-02T10:09:16+00:00",
+      "pin_id": "839428818088594073",
+      "media_id": "5477869459836313059",
+      "cover_image_url": "https://i.pinimg.com/1200x/35/59/6b/35596b05459329168fb3ca91372f4d43.jpg"
     }
   },
   "runs": [
@@ -869,6 +883,16 @@
       "result": "success",
       "pin_id": "839428818088573517",
       "media_id": "5477687458170730930",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-02T10:09:16+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/New_Boards_Feel_Too_Rough-120_Grit_for_Quick_Wood_Smoothing-wood-009.mp4",
+      "filename": "New_Boards_Feel_Too_Rough-120_Grit_for_Quick_Wood_Smoothing-wood-009.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818088594073",
+      "media_id": "5477869459836313059",
       "error": null
     }
   ]
