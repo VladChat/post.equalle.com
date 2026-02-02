@@ -678,7 +678,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-02T14:06:59Z",
-      "video_id": "2124226468333288"
+      "video_id": "2124226468333288",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 2
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-02T14:32:01Z",
+      "comment_text": "Keep the block flat so you don’t dig grooves at the edges. Are you using a sanding block or hand-only?",
+      "comment_status": "commented",
+      "comment_id": "2124226468333288_1965768357335765",
+      "commented_ts_utc": "2026-02-02T14:32:05Z"
     }
   },
   "runs": [
@@ -1241,6 +1251,15 @@
       "result": "commented",
       "comment_id": "1578257683230131_904988585369487",
       "template_idx": 5
+    },
+    {
+      "ts_utc": "2026-02-02T14:32:05Z",
+      "video_id": "2124226468333288",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_shows_tiny_bumps-2000_grit_wet_sand_to_level_clear_coat-wet-007.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "2124226468333288_1965768357335765",
+      "template_idx": 2
     }
   ]
 }
