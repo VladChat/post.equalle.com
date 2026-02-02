@@ -1117,7 +1117,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18107870011741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 6
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-02T15:03:52Z",
+      "comment_text": "Small circles help blend; straight passes help level. Are you going for a smooth finish or just prep?",
+      "comment_status": "commented",
+      "comment_id": "18106514563685751",
+      "commented_ts_utc": "2026-02-02T15:03:55Z"
     }
   },
   "runs": [
@@ -1739,6 +1749,15 @@
       "result": "commented",
       "comment_id": "17942882505106876",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-02-02T15:03:55Z",
+      "media_id": "18080603039590838",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18106514563685751",
+      "template_idx": 6
     }
   ]
 }
