@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-02"
+    "last_day": "2026-02-03"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -326,6 +326,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RL3XSWS",
       "result": "success",
       "video_id": "7aXrSgwFoaA"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4",
+      "filename": "wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4",
+      "manifest": "drywall.json",
+      "title": "Wall Feels Rough After Coat Two? Smooth the Surface With 180 Grit",
+      "destination_url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "result": "success",
+      "video_id": "iQsPZidH0Fk"
     }
   },
   "runs": [
@@ -521,6 +531,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4",
       "result": "success",
       "video_id": "7aXrSgwFoaA"
+    },
+    {
+      "ts_utc": "2026-02-03T11:35:12.425304+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4",
+      "result": "success",
+      "video_id": "iQsPZidH0Fk"
     }
   ],
   "last_post": {
