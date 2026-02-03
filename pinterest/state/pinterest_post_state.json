@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-02-02"
+    "manifest_index": 2,
+    "last_day": "2026-02-03"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -522,6 +522,20 @@
       "pin_id": "839428818088594073",
       "media_id": "5477869459836313059",
       "cover_image_url": "https://i.pinimg.com/1200x/35/59/6b/35596b05459329168fb3ca91372f4d43.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4",
+      "filename": "paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049944",
+      "destination_url": "https://www.amazon.com/gp/product/B07QB4DZRK",
+      "title": "Paint Feels Gritty? 1500 Grit Wet Sand For Surface Leveling",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-03T11:22:32+00:00",
+      "pin_id": "839428818088615586",
+      "media_id": "5478059920716805100",
+      "cover_image_url": "https://i.pinimg.com/1200x/ab/01/80/ab01806966532e3be8cf3f857973cbb9.jpg"
     }
   },
   "runs": [
@@ -893,6 +907,16 @@
       "result": "success",
       "pin_id": "839428818088594073",
       "media_id": "5477869459836313059",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-03T11:22:32+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4",
+      "filename": "paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818088615586",
+      "media_id": "5478059920716805100",
       "error": null
     }
   ]
