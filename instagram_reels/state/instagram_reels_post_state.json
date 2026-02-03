@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-02-02"
+    "manifest_index": 3,
+    "last_day": "2026-02-03"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -1128,6 +1128,30 @@
       "comment_status": "commented",
       "comment_id": "18106514563685751",
       "commented_ts_utc": "2026-02-02T15:03:55Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/old_rust_stains_on_steel-80_grit_for_cleaning_rusted_steel-metal-007.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_rust_stains_on_steel-80_grit_for_cleaning_rusted_steel-metal-007.mp4",
+      "filename": "old_rust_stains_on_steel-80_grit_for_cleaning_rusted_steel-metal-007.mp4",
+      "manifest": "metal.json",
+      "title": "Remove Old Rust Stains on Steel With 80 Grit",
+      "description": "Old rust stains stuck on steel? Use 80 grit to clean the surface and level light pitting. Sand evenly and finish with a finer grit if you want a smoother coating base.",
+      "caption": "Remove Old Rust Stains on Steel With 80 Grit\n\nOld rust stains stuck on steel? Use 80 grit to clean the surface and level light pitting. Sand evenly and finish with a finer grit if you want a smoother coating base.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-03T14:07:10Z",
+      "mode": "binary",
+      "container_id": "18107957494741317",
+      "media_id": "18057419288359692",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18107957494741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18107957494741317"
+      }
     }
   },
   "runs": [
@@ -1503,6 +1527,17 @@
       "filename": "paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4",
       "container_id": "18107870011741317",
       "media_id": "18080603039590838",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-03T14:07:10Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "metal.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_rust_stains_on_steel-80_grit_for_cleaning_rusted_steel-metal-007.mp4",
+      "filename": "old_rust_stains_on_steel-80_grit_for_cleaning_rusted_steel-metal-007.mp4",
+      "container_id": "18107957494741317",
+      "media_id": "18057419288359692",
       "error": null
     }
   ],
