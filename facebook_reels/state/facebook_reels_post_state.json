@@ -699,7 +699,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-03T14:09:29Z",
-      "video_id": "2426717321099596"
+      "video_id": "2426717321099596",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 4
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-03T15:09:13Z",
+      "comment_text": "If the paper starts loading up, wipe/rinse it and keep going—clean cuts cleaner. Does it clog on your surface?",
+      "comment_status": "commented",
+      "comment_id": "2426717321099596_4204439999886040",
+      "commented_ts_utc": "2026-02-03T15:09:18Z"
     }
   },
   "runs": [
@@ -1280,6 +1290,15 @@
       "result": "commented",
       "comment_id": "2124226468333288_1965768357335765",
       "template_idx": 2
+    },
+    {
+      "ts_utc": "2026-02-03T15:09:18Z",
+      "video_id": "2426717321099596",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_rust_stains_on_steel-80_grit_for_cleaning_rusted_steel-metal-007.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "2426717321099596_4204439999886040",
+      "template_idx": 4
     }
   ]
 }
