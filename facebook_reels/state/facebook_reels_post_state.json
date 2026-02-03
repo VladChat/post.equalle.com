@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-02-02"
+    "manifest_index": 3,
+    "last_day": "2026-02-03"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -689,6 +689,17 @@
       "comment_status": "commented",
       "comment_id": "2124226468333288_1965768357335765",
       "commented_ts_utc": "2026-02-02T14:32:05Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/old_rust_stains_on_steel-80_grit_for_cleaning_rusted_steel-metal-007.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_rust_stains_on_steel-80_grit_for_cleaning_rusted_steel-metal-007.mp4",
+      "filename": "old_rust_stains_on_steel-80_grit_for_cleaning_rusted_steel-metal-007.mp4",
+      "manifest": "metal.json",
+      "title": "Remove Old Rust Stains on Steel With 80 Grit",
+      "description": "Old rust stains stuck on steel? Use 80 grit to clean the surface and level light pitting. Sand evenly and finish with a finer grit if you want a smoother coating base.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-03T14:09:29Z",
+      "video_id": "2426717321099596"
     }
   },
   "runs": [
@@ -996,6 +1007,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "2124226468333288",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-03T14:09:29Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_rust_stains_on_steel-80_grit_for_cleaning_rusted_steel-metal-007.mp4",
+      "filename": "old_rust_stains_on_steel-80_grit_for_cleaning_rusted_steel-metal-007.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "2426717321099596",
       "error": null
     }
   ],
