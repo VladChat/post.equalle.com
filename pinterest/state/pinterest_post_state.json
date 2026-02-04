@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-02-03"
+    "manifest_index": 3,
+    "last_day": "2026-02-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -536,6 +536,20 @@
       "pin_id": "839428818088615586",
       "media_id": "5478059920716805100",
       "cover_image_url": "https://i.pinimg.com/1200x/ab/01/80/ab01806966532e3be8cf3f857973cbb9.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/old_rust_stains_on_steel-80_grit_for_cleaning_rusted_steel-metal-007.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_rust_stains_on_steel-80_grit_for_cleaning_rusted_steel-metal-007.mp4",
+      "filename": "old_rust_stains_on_steel-80_grit_for_cleaning_rusted_steel-metal-007.mp4",
+      "manifest": "metal.json",
+      "board_id": "839428886736049946",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-80",
+      "title": "Remove Old Rust Stains on Steel With 80 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-04T08:58:31+00:00",
+      "pin_id": "839428818088635376",
+      "media_id": "5478223075610797295",
+      "cover_image_url": "https://i.pinimg.com/1200x/49/fd/eb/49fdeb8d1b2011de7bebf76a930ea77b.jpg"
     }
   },
   "runs": [
@@ -917,6 +931,16 @@
       "result": "success",
       "pin_id": "839428818088615586",
       "media_id": "5478059920716805100",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-04T08:58:31+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_rust_stains_on_steel-80_grit_for_cleaning_rusted_steel-metal-007.mp4",
+      "filename": "old_rust_stains_on_steel-80_grit_for_cleaning_rusted_steel-metal-007.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "pin_id": "839428818088635376",
+      "media_id": "5478223075610797295",
       "error": null
     }
   ]
