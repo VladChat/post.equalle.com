@@ -720,7 +720,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-04T14:07:43Z",
-      "video_id": "1964992627768934"
+      "video_id": "1964992627768934",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 15
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-04T14:52:59Z",
+      "comment_text": "A quick mist/wipe (for wet sanding) can show high spots fast. Are you using water or a lubricant?",
+      "comment_status": "commented",
+      "comment_id": "1964992627768934_1181369480449577",
+      "commented_ts_utc": "2026-02-04T14:53:05Z"
     }
   },
   "runs": [
@@ -1319,6 +1329,15 @@
       "result": "commented",
       "comment_id": "2426717321099596_4204439999886040",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-02-04T14:53:05Z",
+      "video_id": "1964992627768934",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_wavy_to_touch-180_grit_to_flatten_plastic_surface-plastic-007.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "1964992627768934_1181369480449577",
+      "template_idx": 15
     }
   ]
 }
