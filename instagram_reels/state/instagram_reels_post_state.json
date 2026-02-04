@@ -1185,7 +1185,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18108039247741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 11
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-04T14:53:57Z",
+      "comment_text": "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+      "comment_status": "commented",
+      "comment_id": "18081441722216837",
+      "commented_ts_utc": "2026-02-04T14:54:00Z"
     }
   },
   "runs": [
@@ -1847,6 +1857,15 @@
       "result": "commented",
       "comment_id": "17961637608032189",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-02-04T14:54:00Z",
+      "media_id": "17933323893177079",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_wavy_to_touch-180_grit_to_flatten_plastic_surface-plastic-007.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "18081441722216837",
+      "template_idx": 11
     }
   ]
 }
