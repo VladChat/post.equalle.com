@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-04"
+    "last_day": "2026-02-05"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -346,6 +346,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QD2RZ63",
       "result": "success",
       "video_id": "0hUSMqqaCew"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4",
+      "filename": "between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4",
+      "manifest": "drywall.json",
+      "title": "Between-Coat Texture Too Heavy? Refine Drywall Surface With 180 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-180",
+      "result": "success",
+      "video_id": "SxQwimAE9Ug"
     }
   },
   "runs": [
@@ -553,6 +563,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4",
       "result": "success",
       "video_id": "0hUSMqqaCew"
+    },
+    {
+      "ts_utc": "2026-02-05T11:36:20.988350+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4",
+      "result": "success",
+      "video_id": "SxQwimAE9Ug"
     }
   ],
   "last_post": {
