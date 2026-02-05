@@ -1219,7 +1219,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18108118411741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 8
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-05T14:34:05Z",
+      "comment_text": "Try a few lighter passes instead of one heavy pass—less chance of gouging. Are you seeing swirl marks?",
+      "comment_status": "commented",
+      "comment_id": "18059714135658611",
+      "commented_ts_utc": "2026-02-05T14:34:07Z"
     }
   },
   "runs": [
@@ -1901,6 +1911,15 @@
       "result": "commented",
       "comment_id": "18081441722216837",
       "template_idx": 11
+    },
+    {
+      "ts_utc": "2026-02-05T14:34:07Z",
+      "media_id": "17928684294196428",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_edges_stand_out-150_grit_for_blending_drywall_patch-drywall-007.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18059714135658611",
+      "template_idx": 8
     }
   ]
 }
