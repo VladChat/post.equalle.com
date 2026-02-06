@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-02-05"
+    "manifest_index": 1,
+    "last_day": "2026-02-06"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -752,6 +752,17 @@
       "comment_status": "commented",
       "comment_id": "908121981686410_1912990069316601",
       "commented_ts_utc": "2026-02-05T14:52:22Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4",
+      "filename": "Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4",
+      "manifest": "wood.json",
+      "title": "Wood Feels Fuzzy After Sanding: 220 Grit Final Sand With Grain",
+      "description": "Wood Feels Fuzzy After Sanding? Use 220 grit for final sand with grain. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-06T14:07:05Z",
+      "video_id": "839844055708813"
     }
   },
   "runs": [
@@ -1086,6 +1097,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "908121981686410",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-06T14:07:05Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4",
+      "filename": "Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "839844055708813",
       "error": null
     }
   ],
