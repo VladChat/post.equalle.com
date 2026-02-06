@@ -1253,7 +1253,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18108202960741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 15
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-06T14:31:18Z",
+      "comment_text": "A quick mist/wipe (for wet sanding) can show high spots fast. Are you using water or a lubricant?",
+      "comment_status": "commented",
+      "comment_id": "18114322723714617",
+      "commented_ts_utc": "2026-02-06T14:31:19Z"
     }
   },
   "runs": [
@@ -1955,6 +1965,15 @@
       "result": "commented",
       "comment_id": "18059714135658611",
       "template_idx": 8
+    },
+    {
+      "ts_utc": "2026-02-06T14:31:19Z",
+      "media_id": "18101988892886038",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/New_Boards_Feel_Too_Rough-120_Grit_for_Quick_Wood_Smoothing-wood-009.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "18114322723714617",
+      "template_idx": 15
     }
   ]
 }
