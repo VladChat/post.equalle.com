@@ -762,7 +762,14 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-06T14:07:05Z",
-      "video_id": "839844055708813"
+      "video_id": "839844055708813",
+      "comment_plan": {
+        "decision": "skip",
+        "template_idx": 0
+      },
+      "comment_status": "skipped",
+      "comment_skipped_ts_utc": "2026-02-06T15:01:32Z",
+      "comment_skipped_reason": "policy_10pct_skip"
     }
   },
   "runs": [
