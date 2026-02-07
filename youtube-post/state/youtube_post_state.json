@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-06"
+    "last_day": "2026-02-07"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -366,6 +366,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RHVX7F6",
       "result": "success",
       "video_id": "MAJWRTPN3yY"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
+      "filename": "edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
+      "manifest": "drywall.json",
+      "title": "Edges Still Too Sharp? Controlled Feathering With 180–220 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-180",
+      "result": "success",
+      "video_id": "YwIyir2mgKo"
     }
   },
   "runs": [
@@ -585,6 +595,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4",
       "result": "success",
       "video_id": "MAJWRTPN3yY"
+    },
+    {
+      "ts_utc": "2026-02-07T11:23:32.179221+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
+      "result": "success",
+      "video_id": "YwIyir2mgKo"
     }
   ],
   "last_post": {
