@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-02-06"
+    "manifest_index": 1,
+    "last_day": "2026-02-07"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -578,6 +578,20 @@
       "pin_id": "839428818088677552",
       "media_id": "5478601286318366495",
       "cover_image_url": "https://i.pinimg.com/1200x/ec/e2/b5/ece2b513a215d4f34b2ad5893a46461a.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Paint_Shows_Every_Line-180_Grit_for_Consistent_Wood_Prep-wood-010.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Shows_Every_Line-180_Grit_for_Consistent_Wood_Prep-wood-010.mp4",
+      "filename": "Paint_Shows_Every_Line-180_Grit_for_Consistent_Wood_Prep-wood-010.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://www.amazon.com/gp/product/B07RGRN3PL",
+      "title": "Paint Shows Every Line: 180 Grit Consistent Wood Prep",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-07T09:00:23+00:00",
+      "pin_id": "839428818088696041",
+      "media_id": "5478766870446276440",
+      "cover_image_url": "https://i.pinimg.com/1200x/da/cd/8c/dacd8ca92762593480816b009cb4e07e.jpg"
     }
   },
   "runs": [
@@ -989,6 +1003,16 @@
       "result": "success",
       "pin_id": "839428818088677552",
       "media_id": "5478601286318366495",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-07T09:00:23+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Shows_Every_Line-180_Grit_for_Consistent_Wood_Prep-wood-010.mp4",
+      "filename": "Paint_Shows_Every_Line-180_Grit_for_Consistent_Wood_Prep-wood-010.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818088696041",
+      "media_id": "5478766870446276440",
       "error": null
     }
   ]
