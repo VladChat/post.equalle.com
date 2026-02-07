@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-02-06"
+    "manifest_index": 2,
+    "last_day": "2026-02-07"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -770,6 +770,17 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-02-06T15:01:32Z",
       "comment_skipped_reason": "policy_10pct_skip"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4",
+      "filename": "paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4",
+      "manifest": "wet.json",
+      "title": "Paint Feels Gritty? 1500 Grit Wet Sand For Surface Leveling",
+      "description": "Paint feels gritty to the touch? Wet sand with 1500 grit to level the rough texture before polishing or clear coating. Keep the surface wet, use light pressure, wipe clean often, and inspect under strong light to avoid low spots. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-07T13:51:41Z",
+      "video_id": "906904118361677"
     }
   },
   "runs": [
@@ -1113,6 +1124,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "839844055708813",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-07T13:51:41Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4",
+      "filename": "paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "906904118361677",
       "error": null
     }
   ],
