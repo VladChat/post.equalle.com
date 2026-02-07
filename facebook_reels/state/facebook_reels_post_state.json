@@ -780,7 +780,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-07T13:51:41Z",
-      "video_id": "906904118361677"
+      "video_id": "906904118361677",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 11
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-07T14:48:16Z",
+      "comment_text": "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+      "comment_status": "commented",
+      "comment_id": "906904118361677_26845517088372234",
+      "commented_ts_utc": "2026-02-07T14:48:20Z"
     }
   },
   "runs": [
@@ -1424,6 +1434,15 @@
       "result": "commented",
       "comment_id": "908121981686410_1912990069316601",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-02-07T14:48:20Z",
+      "video_id": "906904118361677",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "906904118361677_26845517088372234",
+      "template_idx": 11
     }
   ]
 }
