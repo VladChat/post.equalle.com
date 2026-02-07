@@ -1287,7 +1287,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18108288307741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 19
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-07T14:26:44Z",
+      "comment_text": "Before the next coat, clean the surface well so dust doesn’t telegraph through. Do you wipe down between coats?",
+      "comment_status": "commented",
+      "comment_id": "17913506625278352",
+      "commented_ts_utc": "2026-02-07T14:26:49Z"
     }
   },
   "runs": [
@@ -2009,6 +2019,15 @@
       "result": "commented",
       "comment_id": "18114322723714617",
       "template_idx": 15
+    },
+    {
+      "ts_utc": "2026-02-07T14:26:49Z",
+      "media_id": "18074853488577635",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/minor_defects_in_clear_coat-2000_grit_wet_sanding_paint_defects-wet-009.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "17913506625278352",
+      "template_idx": 19
     }
   ]
 }
