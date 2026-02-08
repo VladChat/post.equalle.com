@@ -1321,7 +1321,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18108376588741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 6
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-08T14:34:41Z",
+      "comment_text": "Small circles help blend; straight passes help level. Are you going for a smooth finish or just prep?",
+      "comment_status": "commented",
+      "comment_id": "17863566624504318",
+      "commented_ts_utc": "2026-02-08T14:34:43Z"
     }
   },
   "runs": [
@@ -2063,6 +2073,15 @@
       "result": "commented",
       "comment_id": "17913506625278352",
       "template_idx": 19
+    },
+    {
+      "ts_utc": "2026-02-08T14:34:43Z",
+      "media_id": "17924501862235488",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rusty_metal_feels_rough-80_grit_for_smoothing_after_rust_removal-metal-008.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "17863566624504318",
+      "template_idx": 6
     }
   ]
 }
