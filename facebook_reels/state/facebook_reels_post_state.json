@@ -801,7 +801,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-08T13:52:40Z",
-      "video_id": "2075043729952433"
+      "video_id": "2075043729952433",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 2
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-08T14:17:02Z",
+      "comment_text": "Keep the block flat so you don’t dig grooves at the edges. Are you using a sanding block or hand-only?",
+      "comment_status": "commented",
+      "comment_id": "2075043729952433_1261949055815360",
+      "commented_ts_utc": "2026-02-08T14:17:06Z"
     }
   },
   "runs": [
@@ -1463,6 +1473,15 @@
       "result": "commented",
       "comment_id": "906904118361677_26845517088372234",
       "template_idx": 11
+    },
+    {
+      "ts_utc": "2026-02-08T14:17:06Z",
+      "video_id": "2075043729952433",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rusty_metal_feels_rough-80_grit_for_smoothing_after_rust_removal-metal-008.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "2075043729952433_1261949055815360",
+      "template_idx": 2
     }
   ]
 }
