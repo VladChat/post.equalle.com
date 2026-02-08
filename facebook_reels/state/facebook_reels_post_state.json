@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-02-07"
+    "manifest_index": 3,
+    "last_day": "2026-02-08"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -791,6 +791,17 @@
       "comment_status": "commented",
       "comment_id": "906904118361677_26845517088372234",
       "commented_ts_utc": "2026-02-07T14:48:20Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rusty_metal_feels_rough-80_grit_for_smoothing_after_rust_removal-metal-008.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rusty_metal_feels_rough-80_grit_for_smoothing_after_rust_removal-metal-008.mp4",
+      "filename": "rusty_metal_feels_rough-80_grit_for_smoothing_after_rust_removal-metal-008.mp4",
+      "manifest": "metal.json",
+      "title": "Smooth Rust-Cleaned Metal With 80 Grit Before Paint",
+      "description": "Metal feels rough after rust removal? Use 80 grit to smooth the surface and knock down sharp texture. Keep your strokes consistent to avoid gouges and create an even finish.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-08T13:52:40Z",
+      "video_id": "2075043729952433"
     }
   },
   "runs": [
@@ -1143,6 +1154,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "906904118361677",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-08T13:52:40Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rusty_metal_feels_rough-80_grit_for_smoothing_after_rust_removal-metal-008.mp4",
+      "filename": "rusty_metal_feels_rough-80_grit_for_smoothing_after_rust_removal-metal-008.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "2075043729952433",
       "error": null
     }
   ],
