@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-02-07"
+    "manifest_index": 2,
+    "last_day": "2026-02-08"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -592,6 +592,20 @@
       "pin_id": "839428818088696041",
       "media_id": "5478766870446276440",
       "cover_image_url": "https://i.pinimg.com/1200x/da/cd/8c/dacd8ca92762593480816b009cb4e07e.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/minor_defects_in_clear_coat-2000_grit_wet_sanding_paint_defects-wet-009.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/minor_defects_in_clear_coat-2000_grit_wet_sanding_paint_defects-wet-009.mp4",
+      "filename": "minor_defects_in_clear_coat-2000_grit_wet_sanding_paint_defects-wet-009.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049944",
+      "destination_url": "https://equalle.com/products/2000-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "title": "Minor Clear Coat Defects? 2000 Grit Wet Sand To Smooth",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-08T10:01:46+00:00",
+      "pin_id": "839428818088715828",
+      "media_id": "5478955818355325668",
+      "cover_image_url": "https://i.pinimg.com/1200x/42/9d/16/429d167232cea213bfaca87b2837dfb0.jpg"
     }
   },
   "runs": [
@@ -1013,6 +1027,16 @@
       "result": "success",
       "pin_id": "839428818088696041",
       "media_id": "5478766870446276440",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-08T10:01:46+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/minor_defects_in_clear_coat-2000_grit_wet_sanding_paint_defects-wet-009.mp4",
+      "filename": "minor_defects_in_clear_coat-2000_grit_wet_sanding_paint_defects-wet-009.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818088715828",
+      "media_id": "5478955818355325668",
       "error": null
     }
   ]
