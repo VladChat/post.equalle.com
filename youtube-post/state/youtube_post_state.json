@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-07"
+    "last_day": "2026-02-08"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -376,6 +376,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-180",
       "result": "success",
       "video_id": "YwIyir2mgKo"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4",
+      "filename": "wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4",
+      "manifest": "drywall.json",
+      "title": "Wall Not Smooth Before Paint? Final Between-Coat Prep With 220 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8DFS6T",
+      "result": "success",
+      "video_id": "gUiixsRDybM"
     }
   },
   "runs": [
@@ -601,6 +611,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
       "result": "success",
       "video_id": "YwIyir2mgKo"
+    },
+    {
+      "ts_utc": "2026-02-08T11:24:15.150469+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4",
+      "result": "success",
+      "video_id": "gUiixsRDybM"
     }
   ],
   "last_post": {
