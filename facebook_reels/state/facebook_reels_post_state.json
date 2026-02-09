@@ -88,7 +88,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-01-04T13:37:37Z",
-      "video_id": "4362142674070333"
+      "video_id": "4362142674070333",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 14
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-09T15:20:39Z",
+      "comment_text": "If the surface heats up, slow down and lighten pressure. Are you sanding by hand or with a tool?",
+      "comment_status": "commented",
+      "comment_id": "4362142674070333_2033198033948700",
+      "commented_ts_utc": "2026-02-09T15:20:42Z"
     },
     "https://github.com/VladChat/video/releases/download/Plastic/scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4": {
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_showing_on_plastic-220_grit_for_plastic_surface_prep-plastic-001.mp4",
@@ -1482,6 +1492,15 @@
       "result": "commented",
       "comment_id": "2075043729952433_1261949055815360",
       "template_idx": 2
+    },
+    {
+      "ts_utc": "2026-02-09T15:20:42Z",
+      "video_id": "4362142674070333",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_on_metal-80_grit_for_removing_surface_rust-metal-001.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "4362142674070333_2033198033948700",
+      "template_idx": 14
     }
   ]
 }
