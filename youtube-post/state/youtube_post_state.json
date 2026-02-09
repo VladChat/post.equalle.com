@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-08"
+    "last_day": "2026-02-09"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -386,6 +386,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ8DFS6T",
       "result": "success",
       "video_id": "gUiixsRDybM"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
+      "filename": "feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
+      "manifest": "drywall.json",
+      "title": "Feathering Not Wide Enough? Expand the Feather Area With 180 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-180",
+      "result": "success",
+      "video_id": "I5Y5a3eb7pM"
     }
   },
   "runs": [
@@ -617,6 +627,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4",
       "result": "success",
       "video_id": "gUiixsRDybM"
+    },
+    {
+      "ts_utc": "2026-02-09T11:46:02.718790+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
+      "result": "success",
+      "video_id": "I5Y5a3eb7pM"
     }
   ],
   "last_post": {
