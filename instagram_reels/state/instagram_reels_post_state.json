@@ -1355,7 +1355,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18108463594741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 8
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-09T15:28:12Z",
+      "comment_text": "Try a few lighter passes instead of one heavy pass—less chance of gouging. Are you seeing swirl marks?",
+      "comment_status": "commented",
+      "comment_id": "18031074581592498",
+      "commented_ts_utc": "2026-02-09T15:28:15Z"
     }
   },
   "runs": [
@@ -2117,6 +2127,15 @@
       "result": "commented",
       "comment_id": "17863566624504318",
       "template_idx": 6
+    },
+    {
+      "ts_utc": "2026-02-09T15:28:15Z",
+      "media_id": "17900527263220828",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_too_deep_on_plastic-150-220_grit_plastic_sanding_steps-plastic-008.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "18031074581592498",
+      "template_idx": 8
     }
   ]
 }
