@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-09"
+    "last_day": "2026-02-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -396,6 +396,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-180",
       "result": "success",
       "video_id": "I5Y5a3eb7pM"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4",
+      "filename": "high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4",
+      "manifest": "drywall.json",
+      "title": "High Spots Showing on the Wall? Knock Down Drywall High Spots With 120 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVV8DK",
+      "result": "success",
+      "video_id": "TO6lr--PaB8"
     }
   },
   "runs": [
@@ -633,6 +643,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
       "result": "success",
       "video_id": "I5Y5a3eb7pM"
+    },
+    {
+      "ts_utc": "2026-02-10T11:51:12.807375+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4",
+      "result": "success",
+      "video_id": "TO6lr--PaB8"
     }
   ],
   "last_post": {
