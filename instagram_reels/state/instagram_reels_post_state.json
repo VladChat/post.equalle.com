@@ -1389,7 +1389,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18108543685741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 14
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-10T15:33:42Z",
+      "comment_text": "If the surface heats up, slow down and lighten pressure. Are you sanding by hand or with a tool?",
+      "comment_status": "commented",
+      "comment_id": "17942736123124561",
+      "commented_ts_utc": "2026-02-10T15:33:45Z"
     }
   },
   "runs": [
@@ -2171,6 +2181,15 @@
       "result": "commented",
       "comment_id": "18031074581592498",
       "template_idx": 8
+    },
+    {
+      "ts_utc": "2026-02-10T15:33:45Z",
+      "media_id": "18343288864233929",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "17942736123124561",
+      "template_idx": 14
     }
   ]
 }
