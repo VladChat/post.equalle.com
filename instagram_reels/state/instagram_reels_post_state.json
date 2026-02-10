@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-02-09"
+    "manifest_index": 0,
+    "last_day": "2026-02-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -1366,6 +1366,30 @@
       "comment_status": "commented",
       "comment_id": "18031074581592498",
       "commented_ts_utc": "2026-02-09T15:28:15Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
+      "filename": "joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
+      "manifest": "drywall.json",
+      "title": "Joint Compound Dried Too Hard? Dry Sand Mud With 120 Grit",
+      "description": "If compound dried rock-hard, start with light pressure using 120 grit to cut high spots and even the surface, then wipe dust before recoating. Sandpaper eQualle",
+      "caption": "Joint Compound Dried Too Hard? Dry Sand Mud With 120 Grit\n\nIf compound dried rock-hard, start with light pressure using 120 grit to cut high spots and even the surface, then wipe dust before recoating. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-10T14:23:11Z",
+      "mode": "binary",
+      "container_id": "18108543685741317",
+      "media_id": "18343288864233929",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18108543685741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18108543685741317"
+      }
     }
   },
   "runs": [
@@ -1818,6 +1842,17 @@
       "filename": "scratches_too_deep_on_plastic-150-220_grit_plastic_sanding_steps-plastic-008.mp4",
       "container_id": "18108463594741317",
       "media_id": "17900527263220828",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-10T14:23:11Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
+      "filename": "joint_compound_dried_too_hard-120_grit_for_dry_mud_sanding-drywall-008.mp4",
+      "container_id": "18108543685741317",
+      "media_id": "18343288864233929",
       "error": null
     }
   ],
