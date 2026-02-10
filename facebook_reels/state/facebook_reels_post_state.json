@@ -832,7 +832,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-10T14:24:29Z",
-      "video_id": "1384355416309388"
+      "video_id": "1384355416309388",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 17
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-10T15:28:37Z",
+      "comment_text": "Don’t chase one spot too long—blend the area wider and re-check. Are the edges still visible?",
+      "comment_status": "commented",
+      "comment_id": "1384355416309388_1236243461974422",
+      "commented_ts_utc": "2026-02-10T15:28:41Z"
     }
   },
   "runs": [
@@ -1521,6 +1531,15 @@
       "result": "commented",
       "comment_id": "4362142674070333_2033198033948700",
       "template_idx": 14
+    },
+    {
+      "ts_utc": "2026-02-10T15:28:41Z",
+      "video_id": "1384355416309388",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_too_deep_on_plastic-150-220_grit_plastic_sanding_steps-plastic-008.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "1384355416309388_1236243461974422",
+      "template_idx": 17
     }
   ]
 }
