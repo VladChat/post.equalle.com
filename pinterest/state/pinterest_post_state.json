@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-02-08"
+    "manifest_index": 3,
+    "last_day": "2026-02-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -606,6 +606,20 @@
       "pin_id": "839428818088715828",
       "media_id": "5478955818355325668",
       "cover_image_url": "https://i.pinimg.com/1200x/42/9d/16/429d167232cea213bfaca87b2837dfb0.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rusty_metal_feels_rough-80_grit_for_smoothing_after_rust_removal-metal-008.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rusty_metal_feels_rough-80_grit_for_smoothing_after_rust_removal-metal-008.mp4",
+      "filename": "rusty_metal_feels_rough-80_grit_for_smoothing_after_rust_removal-metal-008.mp4",
+      "manifest": "metal.json",
+      "board_id": "839428886736049946",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVWCN9",
+      "title": "Smooth Rust-Cleaned Metal With 80 Grit Before Paint",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-10T11:36:04+00:00",
+      "pin_id": "839428818088758568",
+      "media_id": "5479330137304536047",
+      "cover_image_url": "https://i.pinimg.com/1200x/ba/cc/c0/baccc0c50d9616a8f2869dcb0f71543f.jpg"
     }
   },
   "runs": [
@@ -1037,6 +1051,16 @@
       "result": "success",
       "pin_id": "839428818088715828",
       "media_id": "5478955818355325668",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-10T11:36:04+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rusty_metal_feels_rough-80_grit_for_smoothing_after_rust_removal-metal-008.mp4",
+      "filename": "rusty_metal_feels_rough-80_grit_for_smoothing_after_rust_removal-metal-008.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "pin_id": "839428818088758568",
+      "media_id": "5479330137304536047",
       "error": null
     }
   ]
