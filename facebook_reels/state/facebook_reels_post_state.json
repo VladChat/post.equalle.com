@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-02-08"
+    "manifest_index": 4,
+    "last_day": "2026-02-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -822,6 +822,17 @@
       "comment_status": "commented",
       "comment_id": "2075043729952433_1261949055815360",
       "commented_ts_utc": "2026-02-08T14:17:06Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/scratches_too_deep_on_plastic-150-220_grit_plastic_sanding_steps-plastic-008.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_too_deep_on_plastic-150-220_grit_plastic_sanding_steps-plastic-008.mp4",
+      "filename": "scratches_too_deep_on_plastic-150-220_grit_plastic_sanding_steps-plastic-008.mp4",
+      "manifest": "plastic.json",
+      "title": "Deep Plastic Scratches? Step From 150 To 220 Grit",
+      "description": "For scratches that feel too deep, start with 150 grit to reduce the scratch depth, then move to 220 grit to refine the surface before primer or paint. Keep strokes even and wipe clean between steps. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-10T14:24:29Z",
+      "video_id": "1384355416309388"
     }
   },
   "runs": [
@@ -1183,6 +1194,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "2075043729952433",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-10T14:24:29Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_too_deep_on_plastic-150-220_grit_plastic_sanding_steps-plastic-008.mp4",
+      "filename": "scratches_too_deep_on_plastic-150-220_grit_plastic_sanding_steps-plastic-008.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "1384355416309388",
       "error": null
     }
   ],
