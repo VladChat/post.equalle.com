@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-02-10"
+    "manifest_index": 0,
+    "last_day": "2026-02-11"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -843,6 +843,17 @@
       "comment_status": "commented",
       "comment_id": "1384355416309388_1236243461974422",
       "commented_ts_utc": "2026-02-10T15:28:41Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/mud_lines_showing_through_paint-150_grit_for_drywall_paint_prep-drywall-010.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/mud_lines_showing_through_paint-150_grit_for_drywall_paint_prep-drywall-010.mp4",
+      "filename": "mud_lines_showing_through_paint-150_grit_for_drywall_paint_prep-drywall-010.mp4",
+      "manifest": "drywall.json",
+      "title": "Mud Lines Showing Through Paint? Prep Drywall With 150 Grit",
+      "description": "If paint highlights mud lines, sand the area with 150 grit to feather edges and smooth the surface before primer or touch-up paint. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-11T14:19:19Z",
+      "video_id": "1242927244443980"
     }
   },
   "runs": [
@@ -1213,6 +1224,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1384355416309388",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-11T14:19:19Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/mud_lines_showing_through_paint-150_grit_for_drywall_paint_prep-drywall-010.mp4",
+      "filename": "mud_lines_showing_through_paint-150_grit_for_drywall_paint_prep-drywall-010.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1242927244443980",
       "error": null
     }
   ],
