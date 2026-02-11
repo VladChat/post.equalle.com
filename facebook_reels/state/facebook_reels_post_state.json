@@ -853,7 +853,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-11T14:19:19Z",
-      "video_id": "1242927244443980"
+      "video_id": "1242927244443980",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-11T15:16:20Z",
+      "comment_text": "For drywall work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "1242927244443980_1280789217245570",
+      "commented_ts_utc": "2026-02-11T15:16:25Z"
     }
   },
   "runs": [
@@ -1560,6 +1570,15 @@
       "result": "commented",
       "comment_id": "1384355416309388_1236243461974422",
       "template_idx": 17
+    },
+    {
+      "ts_utc": "2026-02-11T15:16:25Z",
+      "video_id": "1242927244443980",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/mud_lines_showing_through_paint-150_grit_for_drywall_paint_prep-drywall-010.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1242927244443980_1280789217245570",
+      "template_idx": 3
     }
   ]
 }
