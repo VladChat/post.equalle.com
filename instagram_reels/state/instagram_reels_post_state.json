@@ -1423,7 +1423,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18108629740741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 7
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-11T15:27:51Z",
+      "comment_text": "If you’re jumping grits, don’t skip too far—blend one step at a time. What grit did you start with?",
+      "comment_status": "commented",
+      "comment_id": "18071396987411612",
+      "commented_ts_utc": "2026-02-11T15:27:53Z"
     }
   },
   "runs": [
@@ -2225,6 +2235,15 @@
       "result": "commented",
       "comment_id": "17942736123124561",
       "template_idx": 14
+    },
+    {
+      "ts_utc": "2026-02-11T15:27:53Z",
+      "media_id": "18095922989503935",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Shows_Every_Line-180_Grit_for_Consistent_Wood_Prep-wood-010.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "18071396987411612",
+      "template_idx": 7
     }
   ]
 }
