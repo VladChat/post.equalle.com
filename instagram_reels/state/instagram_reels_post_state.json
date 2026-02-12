@@ -1457,7 +1457,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18108717121741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 9
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-12T14:17:24Z",
+      "comment_text": "For corners/edges, ease up and let the abrasive do the work. Are edges the hardest part for you too?",
+      "comment_status": "commented",
+      "comment_id": "18113871052711221",
+      "commented_ts_utc": "2026-02-12T14:17:26Z"
     }
   },
   "runs": [
@@ -2279,6 +2289,15 @@
       "result": "commented",
       "comment_id": "18071396987411612",
       "template_idx": 7
+    },
+    {
+      "ts_utc": "2026-02-12T14:17:26Z",
+      "media_id": "18094437718801812",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/polish_isnt_cutting_it-1500_grit_wet_sand_before_polishing-wet-010.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18113871052711221",
+      "template_idx": 9
     }
   ]
 }
