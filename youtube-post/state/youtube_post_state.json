@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-11"
+    "last_day": "2026-02-12"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -416,6 +416,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-150",
       "result": "success",
       "video_id": "_PCMyrBDv-U"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/tool_marks_left_in_drywall_mud-120_grit_for_removing_tool_marks-drywall-038.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/tool_marks_left_in_drywall_mud-120_grit_for_removing_tool_marks-drywall-038.mp4",
+      "filename": "tool_marks_left_in_drywall_mud-120_grit_for_removing_tool_marks-drywall-038.mp4",
+      "manifest": "drywall.json",
+      "title": "Tool Marks Left in Drywall Mud? Remove Tool Marks With 120 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07QD2GTY4",
+      "result": "success",
+      "video_id": "R9dJfiqxw2k"
     }
   },
   "runs": [
@@ -665,6 +675,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_looks_wavy-150_grit_for_flattening_wall_surface-drywall-037.mp4",
       "result": "success",
       "video_id": "_PCMyrBDv-U"
+    },
+    {
+      "ts_utc": "2026-02-12T11:40:58.406276+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/tool_marks_left_in_drywall_mud-120_grit_for_removing_tool_marks-drywall-038.mp4",
+      "result": "success",
+      "video_id": "R9dJfiqxw2k"
     }
   ],
   "last_post": {
