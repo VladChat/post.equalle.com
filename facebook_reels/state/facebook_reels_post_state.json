@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-02-11"
+    "manifest_index": 1,
+    "last_day": "2026-02-12"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -864,6 +864,17 @@
       "comment_status": "commented",
       "comment_id": "1242927244443980_1280789217245570",
       "commented_ts_utc": "2026-02-11T15:16:25Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/New_Boards_Feel_Too_Rough-120_Grit_for_Quick_Wood_Smoothing-wood-009.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/New_Boards_Feel_Too_Rough-120_Grit_for_Quick_Wood_Smoothing-wood-009.mp4",
+      "filename": "New_Boards_Feel_Too_Rough-120_Grit_for_Quick_Wood_Smoothing-wood-009.mp4",
+      "manifest": "wood.json",
+      "title": "New Boards Feel Too Rough: 120 Grit Quick Wood Smoothing",
+      "description": "New Boards Feel Too Rough? Use 120 grit for quick wood smoothing. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-12T14:14:57Z",
+      "video_id": "1413297213670455"
     }
   },
   "runs": [
@@ -1243,6 +1254,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "1242927244443980",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-12T14:14:57Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/New_Boards_Feel_Too_Rough-120_Grit_for_Quick_Wood_Smoothing-wood-009.mp4",
+      "filename": "New_Boards_Feel_Too_Rough-120_Grit_for_Quick_Wood_Smoothing-wood-009.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "1413297213670455",
       "error": null
     }
   ],
