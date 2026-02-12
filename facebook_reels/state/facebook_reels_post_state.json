@@ -874,7 +874,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-12T14:14:57Z",
-      "video_id": "1413297213670455"
+      "video_id": "1413297213670455",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 19
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-12T15:12:02Z",
+      "comment_text": "Before the next coat, clean the surface well so dust doesn’t telegraph through. Do you tack-cloth or wipe down?",
+      "comment_status": "commented",
+      "comment_id": "1413297213670455_1240619644801871",
+      "commented_ts_utc": "2026-02-12T15:12:06Z"
     }
   },
   "runs": [
@@ -1599,6 +1609,15 @@
       "result": "commented",
       "comment_id": "1242927244443980_1280789217245570",
       "template_idx": 3
+    },
+    {
+      "ts_utc": "2026-02-12T15:12:06Z",
+      "video_id": "1413297213670455",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/New_Boards_Feel_Too_Rough-120_Grit_for_Quick_Wood_Smoothing-wood-009.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "1413297213670455_1240619644801871",
+      "template_idx": 19
     }
   ]
 }
