@@ -895,7 +895,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-13T14:06:59Z",
-      "video_id": "33822732474039468"
+      "video_id": "33822732474039468",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-13T14:45:28Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "33822732474039468_1639598320815664",
+      "commented_ts_utc": "2026-02-13T14:45:33Z"
     }
   },
   "runs": [
@@ -1638,6 +1648,15 @@
       "result": "commented",
       "comment_id": "1413297213670455_1240619644801871",
       "template_idx": 19
+    },
+    {
+      "ts_utc": "2026-02-13T14:45:33Z",
+      "video_id": "33822732474039468",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/minor_defects_in_clear_coat-2000_grit_wet_sanding_paint_defects-wet-009.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "33822732474039468_1639598320815664",
+      "template_idx": 12
     }
   ]
 }
