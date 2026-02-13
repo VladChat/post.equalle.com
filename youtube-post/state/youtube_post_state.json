@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-12"
+    "last_day": "2026-02-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -426,6 +426,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QD2GTY4",
       "result": "success",
       "video_id": "R9dJfiqxw2k"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/scratches_visible_on_drywall-150_grit_for_smoothing_wall_scratches-drywall-039.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/scratches_visible_on_drywall-150_grit_for_smoothing_wall_scratches-drywall-039.mp4",
+      "filename": "scratches_visible_on_drywall-150_grit_for_smoothing_wall_scratches-drywall-039.mp4",
+      "manifest": "drywall.json",
+      "title": "Scratches Visible on Drywall? Smooth Wall Scratches With 150 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-150",
+      "result": "success",
+      "video_id": "4LVrbR5H_Qg"
     }
   },
   "runs": [
@@ -681,6 +691,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/tool_marks_left_in_drywall_mud-120_grit_for_removing_tool_marks-drywall-038.mp4",
       "result": "success",
       "video_id": "R9dJfiqxw2k"
+    },
+    {
+      "ts_utc": "2026-02-13T11:31:41.234557+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/scratches_visible_on_drywall-150_grit_for_smoothing_wall_scratches-drywall-039.mp4",
+      "result": "success",
+      "video_id": "4LVrbR5H_Qg"
     }
   ],
   "last_post": {
