@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-02-12"
+    "manifest_index": 3,
+    "last_day": "2026-02-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -1468,6 +1468,30 @@
       "comment_status": "commented",
       "comment_id": "18113871052711221",
       "commented_ts_utc": "2026-02-12T14:17:26Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/surface_rust_wont_smooth_out-120_grit_for_refining_rusted_metal-metal-009.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/surface_rust_wont_smooth_out-120_grit_for_refining_rusted_metal-metal-009.mp4",
+      "filename": "surface_rust_wont_smooth_out-120_grit_for_refining_rusted_metal-metal-009.mp4",
+      "manifest": "metal.json",
+      "title": "Refine Rusted Metal That Won’t Smooth Out With 120 Grit",
+      "description": "Surface rust won’t smooth out? Move to 120 grit to refine the scratches from coarse sanding and level remaining rust texture. This helps your primer lay down more evenly.",
+      "caption": "Refine Rusted Metal That Won’t Smooth Out With 120 Grit\n\nSurface rust won’t smooth out? Move to 120 grit to refine the scratches from coarse sanding and level remaining rust texture. This helps your primer lay down more evenly.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-13T14:04:36Z",
+      "mode": "binary",
+      "container_id": "18108806596741317",
+      "media_id": "18086310902166381",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18108806596741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18108806596741317"
+      }
     }
   },
   "runs": [
@@ -1953,6 +1977,17 @@
       "filename": "polish_isnt_cutting_it-1500_grit_wet_sand_before_polishing-wet-010.mp4",
       "container_id": "18108717121741317",
       "media_id": "18094437718801812",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-13T14:04:36Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "metal.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/surface_rust_wont_smooth_out-120_grit_for_refining_rusted_metal-metal-009.mp4",
+      "filename": "surface_rust_wont_smooth_out-120_grit_for_refining_rusted_metal-metal-009.mp4",
+      "container_id": "18108806596741317",
+      "media_id": "18086310902166381",
       "error": null
     }
   ],
