@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-02-12"
+    "manifest_index": 1,
+    "last_day": "2026-02-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -648,6 +648,20 @@
       "pin_id": "839428818088796929",
       "media_id": "5479684194068143007",
       "cover_image_url": "https://i.pinimg.com/1200x/48/db/7e/48db7e89c2e177f38e9d4d231800ce73.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Bumps_After_First_Coat-220_Grit_for_Sanding_Between_Coats-wood-011.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Bumps_After_First_Coat-220_Grit_for_Sanding_Between_Coats-wood-011.mp4",
+      "filename": "Bumps_After_First_Coat-220_Grit_for_Sanding_Between_Coats-wood-011.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-220",
+      "title": "Bumps After First Coat: 220 Grit Sanding Between Coats",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-13T11:05:52+00:00",
+      "pin_id": "839428818088817184",
+      "media_id": "5479869755110259175",
+      "cover_image_url": "https://i.pinimg.com/1200x/37/33/8d/37338db863887592fff82bc7f22b51bc.jpg"
     }
   },
   "runs": [
@@ -1109,6 +1123,16 @@
       "result": "success",
       "pin_id": "839428818088796929",
       "media_id": "5479684194068143007",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-13T11:05:52+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Bumps_After_First_Coat-220_Grit_for_Sanding_Between_Coats-wood-011.mp4",
+      "filename": "Bumps_After_First_Coat-220_Grit_for_Sanding_Between_Coats-wood-011.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818088817184",
+      "media_id": "5479869755110259175",
       "error": null
     }
   ]
