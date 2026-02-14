@@ -916,7 +916,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-14T13:51:46Z",
-      "video_id": "1469312004058167"
+      "video_id": "1469312004058167",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 9
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-14T14:04:54Z",
+      "comment_text": "For corners/edges, ease up and let the abrasive do the work. Are edges the hardest part for you too?",
+      "comment_status": "commented",
+      "comment_id": "1469312004058167_2387745851687775",
+      "commented_ts_utc": "2026-02-14T14:04:59Z"
     }
   },
   "runs": [
@@ -1677,6 +1687,15 @@
       "result": "commented",
       "comment_id": "33822732474039468_1639598320815664",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-02-14T14:04:59Z",
+      "video_id": "1469312004058167",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/surface_rust_wont_smooth_out-120_grit_for_refining_rusted_metal-metal-009.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "1469312004058167_2387745851687775",
+      "template_idx": 9
     }
   ]
 }
