@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-02-13"
+    "manifest_index": 3,
+    "last_day": "2026-02-14"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -906,6 +906,17 @@
       "comment_status": "commented",
       "comment_id": "33822732474039468_1639598320815664",
       "commented_ts_utc": "2026-02-13T14:45:33Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/surface_rust_wont_smooth_out-120_grit_for_refining_rusted_metal-metal-009.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/surface_rust_wont_smooth_out-120_grit_for_refining_rusted_metal-metal-009.mp4",
+      "filename": "surface_rust_wont_smooth_out-120_grit_for_refining_rusted_metal-metal-009.mp4",
+      "manifest": "metal.json",
+      "title": "Refine Rusted Metal That Won’t Smooth Out With 120 Grit",
+      "description": "Surface rust won’t smooth out? Move to 120 grit to refine the scratches from coarse sanding and level remaining rust texture. This helps your primer lay down more evenly.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-14T13:51:46Z",
+      "video_id": "1469312004058167"
     }
   },
   "runs": [
@@ -1303,6 +1314,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "33822732474039468",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-14T13:51:46Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/surface_rust_wont_smooth_out-120_grit_for_refining_rusted_metal-metal-009.mp4",
+      "filename": "surface_rust_wont_smooth_out-120_grit_for_refining_rusted_metal-metal-009.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "1469312004058167",
       "error": null
     }
   ],
