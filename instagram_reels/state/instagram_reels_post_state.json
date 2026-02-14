@@ -1522,7 +1522,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18108909274741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-14T13:57:51Z",
+      "comment_text": "For plastic work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "18092111663073930",
+      "commented_ts_utc": "2026-02-14T13:57:53Z"
     }
   },
   "runs": [
@@ -2375,6 +2385,15 @@
       "result": "commented",
       "comment_id": "18113871052711221",
       "template_idx": 9
+    },
+    {
+      "ts_utc": "2026-02-14T13:57:53Z",
+      "media_id": "17959967772028149",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_needs_scuffing-220_grit_for_plastic_scuff_sanding-plastic-009.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "18092111663073930",
+      "template_idx": 3
     }
   ]
 }
