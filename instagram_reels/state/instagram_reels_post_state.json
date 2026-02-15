@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-02-14"
+    "manifest_index": 0,
+    "last_day": "2026-02-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -1533,6 +1533,30 @@
       "comment_status": "commented",
       "comment_id": "18092111663073930",
       "commented_ts_utc": "2026-02-14T13:57:53Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_feels_wavy-150_grit_for_flattening_drywall_surface-drywall-009.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_feels_wavy-150_grit_for_flattening_drywall_surface-drywall-009.mp4",
+      "filename": "drywall_surface_feels_wavy-150_grit_for_flattening_drywall_surface-drywall-009.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Surface Feels Wavy? Flatten the Surface With 150 Grit",
+      "description": "If the wall feels wavy to the touch, sand lightly with 150 grit to level minor highs and blend transitions before final paint prep. Sandpaper eQualle",
+      "caption": "Drywall Surface Feels Wavy? Flatten the Surface With 150 Grit\n\nIf the wall feels wavy to the touch, sand lightly with 150 grit to level minor highs and blend transitions before final paint prep. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-15T13:49:29Z",
+      "mode": "binary",
+      "container_id": "18109018033741317",
+      "media_id": "17892271722415883",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18109018033741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18109018033741317"
+      }
     }
   },
   "runs": [
@@ -2040,6 +2064,17 @@
       "filename": "plastic_needs_scuffing-220_grit_for_plastic_scuff_sanding-plastic-009.mp4",
       "container_id": "18108909274741317",
       "media_id": "17959967772028149",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-15T13:49:29Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_feels_wavy-150_grit_for_flattening_drywall_surface-drywall-009.mp4",
+      "filename": "drywall_surface_feels_wavy-150_grit_for_flattening_drywall_surface-drywall-009.mp4",
+      "container_id": "18109018033741317",
+      "media_id": "17892271722415883",
       "error": null
     }
   ],
