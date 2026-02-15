@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-14"
+    "last_day": "2026-02-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -446,6 +446,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RJZ3C39",
       "result": "success",
       "video_id": "srI9jDBPmsM"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/uneven_texture_after_repair-180_grit_for_blending_drywall_surface-drywall-041.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/uneven_texture_after_repair-180_grit_for_blending_drywall_surface-drywall-041.mp4",
+      "filename": "uneven_texture_after_repair-180_grit_for_blending_drywall_surface-drywall-041.mp4",
+      "manifest": "drywall.json",
+      "title": "Uneven Texture After a Repair? Blend Drywall Surface With 180 Grit",
+      "destination_url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "result": "success",
+      "video_id": "_FqH9XVKz3k"
     }
   },
   "runs": [
@@ -713,6 +723,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_looks_bumpy-150_grit_for_leveling_patch_area-drywall-040.mp4",
       "result": "success",
       "video_id": "srI9jDBPmsM"
+    },
+    {
+      "ts_utc": "2026-02-15T11:23:25.756458+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/uneven_texture_after_repair-180_grit_for_blending_drywall_surface-drywall-041.mp4",
+      "result": "success",
+      "video_id": "_FqH9XVKz3k"
     }
   ],
   "last_post": {
