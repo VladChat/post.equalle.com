@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-02-15"
+    "manifest_index": 0,
+    "last_day": "2026-02-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -948,6 +948,17 @@
       "comment_status": "commented",
       "comment_id": "1189586756531589_898291643172176",
       "commented_ts_utc": "2026-02-15T14:38:36Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_repair_looks_obvious-150_grit_for_smoothing_repair_area-drywall-011.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_repair_looks_obvious-150_grit_for_smoothing_repair_area-drywall-011.mp4",
+      "filename": "drywall_repair_looks_obvious-150_grit_for_smoothing_repair_area-drywall-011.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Repair Looks Obvious? Smooth the Area With 150 Grit",
+      "description": "If a repair spot stands out, sand with 150 grit to feather the compound into the wall and smooth the surface before primer and paint. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-16T14:10:23Z",
+      "video_id": "1923994598484473"
     }
   },
   "runs": [
@@ -1363,6 +1374,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1189586756531589",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-16T14:10:23Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_repair_looks_obvious-150_grit_for_smoothing_repair_area-drywall-011.mp4",
+      "filename": "drywall_repair_looks_obvious-150_grit_for_smoothing_repair_area-drywall-011.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1923994598484473",
       "error": null
     }
   ],
