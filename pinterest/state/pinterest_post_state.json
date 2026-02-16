@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-02-15"
+    "manifest_index": 4,
+    "last_day": "2026-02-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -690,6 +690,20 @@
       "pin_id": "839428818088852594",
       "media_id": "5480224274371392840",
       "cover_image_url": "https://i.pinimg.com/1200x/fb/d8/3b/fbd83bf30664d111f746b92d9c4623f8.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_surface_not_uniform-180_grit_for_even_plastic_prep-plastic-010.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_surface_not_uniform-180_grit_for_even_plastic_prep-plastic-010.mp4",
+      "filename": "plastic_surface_not_uniform-180_grit_for_even_plastic_prep-plastic-010.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049964",
+      "destination_url": "https://www.amazon.com/gp/product/B07RJZ55RL",
+      "title": "Plastic Not Uniform? Even It Out With 180 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-16T20:35:04+00:00",
+      "pin_id": "839428818088881633",
+      "media_id": "5480485126783705507",
+      "cover_image_url": "https://i.pinimg.com/1200x/24/74/39/24743948317c89577508e8b93c2bc5a5.jpg"
     }
   },
   "runs": [
@@ -1181,6 +1195,16 @@
       "result": "success",
       "pin_id": "839428818088852594",
       "media_id": "5480224274371392840",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-16T20:35:04+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_surface_not_uniform-180_grit_for_even_plastic_prep-plastic-010.mp4",
+      "filename": "plastic_surface_not_uniform-180_grit_for_even_plastic_prep-plastic-010.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818088881633",
+      "media_id": "5480485126783705507",
       "error": null
     }
   ]
