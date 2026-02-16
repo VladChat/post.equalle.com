@@ -958,7 +958,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-16T14:10:23Z",
-      "video_id": "1923994598484473"
+      "video_id": "1923994598484473",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 13
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-16T14:56:59Z",
+      "comment_text": "On drywall, sanding dust can hide defects—wipe often and re-check. Do you see it only after wiping?",
+      "comment_status": "commented",
+      "comment_id": "1923994598484473_900133679440316",
+      "commented_ts_utc": "2026-02-16T14:57:08Z"
     }
   },
   "runs": [
@@ -1755,6 +1765,15 @@
       "result": "commented",
       "comment_id": "1189586756531589_898291643172176",
       "template_idx": 17
+    },
+    {
+      "ts_utc": "2026-02-16T14:57:08Z",
+      "video_id": "1923994598484473",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_repair_looks_obvious-150_grit_for_smoothing_repair_area-drywall-011.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1923994598484473_900133679440316",
+      "template_idx": 13
     }
   ]
 }
