@@ -1587,7 +1587,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18109109701741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 13
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-16T14:37:02Z",
+      "comment_text": "On wood, sanding dust can hide defects—wipe often and re-check. Do you see it only after wiping?",
+      "comment_status": "commented",
+      "comment_id": "18039037448537707",
+      "commented_ts_utc": "2026-02-16T14:37:04Z"
     }
   },
   "runs": [
@@ -2471,6 +2481,15 @@
       "result": "commented",
       "comment_id": "18092111663073930",
       "template_idx": 3
+    },
+    {
+      "ts_utc": "2026-02-16T14:37:04Z",
+      "media_id": "18118768033611692",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Bumps_After_First_Coat-220_Grit_for_Sanding_Between_Coats-wood-011.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "18039037448537707",
+      "template_idx": 13
     }
   ]
 }
