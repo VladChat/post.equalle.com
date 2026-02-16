@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-15"
+    "last_day": "2026-02-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -456,6 +456,16 @@
       "destination_url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
       "result": "success",
       "video_id": "_FqH9XVKz3k"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/wall_surface_not_flat_enough-150_grit_for_correcting_uneven_areas-drywall-042.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_surface_not_flat_enough-150_grit_for_correcting_uneven_areas-drywall-042.mp4",
+      "filename": "wall_surface_not_flat_enough-150_grit_for_correcting_uneven_areas-drywall-042.mp4",
+      "manifest": "drywall.json",
+      "title": "Wall Surface Not Flat Enough? Correct Uneven Areas With 150 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07QF44CQT",
+      "result": "success",
+      "video_id": "iPTiCDasviE"
     }
   },
   "runs": [
@@ -729,6 +739,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/uneven_texture_after_repair-180_grit_for_blending_drywall_surface-drywall-041.mp4",
       "result": "success",
       "video_id": "_FqH9XVKz3k"
+    },
+    {
+      "ts_utc": "2026-02-16T11:41:07.522788+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_surface_not_flat_enough-150_grit_for_correcting_uneven_areas-drywall-042.mp4",
+      "result": "success",
+      "video_id": "iPTiCDasviE"
     }
   ],
   "last_post": {
