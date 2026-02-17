@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-16"
+    "last_day": "2026-02-17"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -466,6 +466,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QF44CQT",
       "result": "success",
       "video_id": "iPTiCDasviE"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/raised_lines_wont_sand_out-120-150_grit_for_surface_correction-drywall-043.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/raised_lines_wont_sand_out-120-150_grit_for_surface_correction-drywall-043.mp4",
+      "filename": "raised_lines_wont_sand_out-120-150_grit_for_surface_correction-drywall-043.mp4",
+      "manifest": "drywall.json",
+      "title": "Raised Lines Won’t Sand Out? Surface Correction With 120–150 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-120-10-sheets",
+      "result": "success",
+      "video_id": "YYlCeMUsI8o"
     }
   },
   "runs": [
@@ -745,6 +755,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_surface_not_flat_enough-150_grit_for_correcting_uneven_areas-drywall-042.mp4",
       "result": "success",
       "video_id": "iPTiCDasviE"
+    },
+    {
+      "ts_utc": "2026-02-17T11:40:03.550245+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/raised_lines_wont_sand_out-120-150_grit_for_surface_correction-drywall-043.mp4",
+      "result": "success",
+      "video_id": "YYlCeMUsI8o"
     }
   ],
   "last_post": {
