@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-02-16"
+    "manifest_index": 1,
+    "last_day": "2026-02-17"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -969,6 +969,17 @@
       "comment_status": "commented",
       "comment_id": "1923994598484473_900133679440316",
       "commented_ts_utc": "2026-02-16T14:57:08Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Paint_Shows_Every_Line-180_Grit_for_Consistent_Wood_Prep-wood-010.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Shows_Every_Line-180_Grit_for_Consistent_Wood_Prep-wood-010.mp4",
+      "filename": "Paint_Shows_Every_Line-180_Grit_for_Consistent_Wood_Prep-wood-010.mp4",
+      "manifest": "wood.json",
+      "title": "Paint Shows Every Line: 180 Grit Consistent Wood Prep",
+      "description": "Paint Shows Every Line? Use 180 grit for consistent wood prep. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-17T14:11:32Z",
+      "video_id": "761574609950469"
     }
   },
   "runs": [
@@ -1393,6 +1404,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "1923994598484473",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-17T14:11:32Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Shows_Every_Line-180_Grit_for_Consistent_Wood_Prep-wood-010.mp4",
+      "filename": "Paint_Shows_Every_Line-180_Grit_for_Consistent_Wood_Prep-wood-010.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "761574609950469",
       "error": null
     }
   ],
