@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-02-16"
+    "manifest_index": 0,
+    "last_day": "2026-02-17"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -704,6 +704,20 @@
       "pin_id": "839428818088881633",
       "media_id": "5480485126783705507",
       "cover_image_url": "https://i.pinimg.com/1200x/24/74/39/24743948317c89577508e8b93c2bc5a5.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_repair_looks_obvious-150_grit_for_smoothing_repair_area-drywall-011.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_repair_looks_obvious-150_grit_for_smoothing_repair_area-drywall-011.mp4",
+      "filename": "drywall_repair_looks_obvious-150_grit_for_smoothing_repair_area-drywall-011.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049941",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-150",
+      "title": "Drywall Repair Looks Obvious? Smooth the Area With 150 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-17T11:27:58+00:00",
+      "pin_id": "839428818088892178",
+      "media_id": "5480597380636152691",
+      "cover_image_url": "https://i.pinimg.com/1200x/e4/b6/9e/e4b69e2ddb76b9e6eca9a59d82bf13c7.jpg"
     }
   },
   "runs": [
@@ -1205,6 +1219,16 @@
       "result": "success",
       "pin_id": "839428818088881633",
       "media_id": "5480485126783705507",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-17T11:27:58+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_repair_looks_obvious-150_grit_for_smoothing_repair_area-drywall-011.mp4",
+      "filename": "drywall_repair_looks_obvious-150_grit_for_smoothing_repair_area-drywall-011.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818088892178",
+      "media_id": "5480597380636152691",
       "error": null
     }
   ]
