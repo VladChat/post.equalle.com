@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-02-16"
+    "manifest_index": 2,
+    "last_day": "2026-02-17"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -1598,6 +1598,30 @@
       "comment_status": "commented",
       "comment_id": "18039037448537707",
       "commented_ts_utc": "2026-02-16T14:37:04Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/uneven_clear_coat_texture-2000_grit_wet_sand_to_smooth_clear_coat-wet-011.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/uneven_clear_coat_texture-2000_grit_wet_sand_to_smooth_clear_coat-wet-011.mp4",
+      "filename": "uneven_clear_coat_texture-2000_grit_wet_sand_to_smooth_clear_coat-wet-011.mp4",
+      "manifest": "wet.json",
+      "title": "Uneven Clear Coat Texture? 2000 Grit Wet Sand To Smooth",
+      "description": "Uneven clear coat texture? Wet sand with 2000 grit to smooth the surface before polishing or the next coat. Keep it wet, use light pressure, sand in even passes, and wipe clean often to check reflection under strong light. Wet or dry use. — eQualle",
+      "caption": "Uneven Clear Coat Texture? 2000 Grit Wet Sand To Smooth\n\nUneven clear coat texture? Wet sand with 2000 grit to smooth the surface before polishing or the next coat. Keep it wet, use light pressure, sand in even passes, and wipe clean often to check reflection under strong light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-17T14:08:49Z",
+      "mode": "binary",
+      "container_id": "18109199593741317",
+      "media_id": "18056083196415720",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18109199593741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18109199593741317"
+      }
     }
   },
   "runs": [
@@ -2127,6 +2151,17 @@
       "filename": "Bumps_After_First_Coat-220_Grit_for_Sanding_Between_Coats-wood-011.mp4",
       "container_id": "18109109701741317",
       "media_id": "18118768033611692",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-17T14:08:49Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wet.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/uneven_clear_coat_texture-2000_grit_wet_sand_to_smooth_clear_coat-wet-011.mp4",
+      "filename": "uneven_clear_coat_texture-2000_grit_wet_sand_to_smooth_clear_coat-wet-011.mp4",
+      "container_id": "18109199593741317",
+      "media_id": "18056083196415720",
       "error": null
     }
   ],
