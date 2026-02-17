@@ -1621,7 +1621,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18109199593741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 10
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-17T14:19:35Z",
+      "comment_text": "Quick check: if it still feels scratchy, you may need one grit lower for a short blend. Want a simple grit ladder?",
+      "comment_status": "commented",
+      "comment_id": "18118845457608403",
+      "commented_ts_utc": "2026-02-17T14:19:37Z"
     }
   },
   "runs": [
@@ -2525,6 +2535,15 @@
       "result": "commented",
       "comment_id": "18039037448537707",
       "template_idx": 13
+    },
+    {
+      "ts_utc": "2026-02-17T14:19:37Z",
+      "media_id": "18056083196415720",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/uneven_clear_coat_texture-2000_grit_wet_sand_to_smooth_clear_coat-wet-011.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18118845457608403",
+      "template_idx": 10
     }
   ]
 }
