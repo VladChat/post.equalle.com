@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-02-17"
+    "manifest_index": 2,
+    "last_day": "2026-02-18"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -987,6 +987,17 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-02-17T14:47:10Z",
       "comment_skipped_reason": "policy_10pct_skip"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/polish_isnt_cutting_it-1500_grit_wet_sand_before_polishing-wet-010.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/polish_isnt_cutting_it-1500_grit_wet_sand_before_polishing-wet-010.mp4",
+      "filename": "polish_isnt_cutting_it-1500_grit_wet_sand_before_polishing-wet-010.mp4",
+      "manifest": "wet.json",
+      "title": "Polish Isn’t Cutting It? Use 1500 Grit Wet Sand First",
+      "description": "Polish isn’t cutting it on clear coat? Wet sand with 1500 grit first to level texture and reduce deeper defects, then move on to polishing. Keep the surface wet, use light pressure, wipe often, and re-check under a work light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-18T14:11:21Z",
+      "video_id": "959216466769894"
     }
   },
   "runs": [
@@ -1420,6 +1431,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "761574609950469",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-18T14:11:21Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/polish_isnt_cutting_it-1500_grit_wet_sand_before_polishing-wet-010.mp4",
+      "filename": "polish_isnt_cutting_it-1500_grit_wet_sand_before_polishing-wet-010.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "959216466769894",
       "error": null
     }
   ],
