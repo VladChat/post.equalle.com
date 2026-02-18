@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-17"
+    "last_day": "2026-02-18"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -476,6 +476,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-120-10-sheets",
       "result": "success",
       "video_id": "YYlCeMUsI8o"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_feels_rough_under_hand-150_grit_for_general_wall_smoothing-drywall-044.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_feels_rough_under_hand-150_grit_for_general_wall_smoothing-drywall-044.mp4",
+      "filename": "drywall_feels_rough_under_hand-150_grit_for_general_wall_smoothing-drywall-044.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Feels Rough Under Hand? General Wall Smoothing With 150 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVW4J5",
+      "result": "success",
+      "video_id": "CfCjG8MFWTw"
     }
   },
   "runs": [
@@ -761,6 +771,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/raised_lines_wont_sand_out-120-150_grit_for_surface_correction-drywall-043.mp4",
       "result": "success",
       "video_id": "YYlCeMUsI8o"
+    },
+    {
+      "ts_utc": "2026-02-18T11:39:07.658851+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_feels_rough_under_hand-150_grit_for_general_wall_smoothing-drywall-044.mp4",
+      "result": "success",
+      "video_id": "CfCjG8MFWTw"
     }
   ],
   "last_post": {
