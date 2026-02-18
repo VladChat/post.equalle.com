@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-02-17"
+    "manifest_index": 1,
+    "last_day": "2026-02-18"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -718,6 +718,20 @@
       "pin_id": "839428818088892178",
       "media_id": "5480597380636152691",
       "cover_image_url": "https://i.pinimg.com/1200x/e4/b6/9e/e4b69e2ddb76b9e6eca9a59d82bf13c7.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Dust_Nibs_in_the_Finish-320_Grit_for_Between-Coat_Sanding-wood-012.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Dust_Nibs_in_the_Finish-320_Grit_for_Between-Coat_Sanding-wood-012.mp4",
+      "filename": "Dust_Nibs_in_the_Finish-320_Grit_for_Between-Coat_Sanding-wood-012.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7SLBB4",
+      "title": "Dust Nibs in the Finish: 320 Grit Between-Coat Sanding",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-18T09:02:07+00:00",
+      "pin_id": "839428818088910150",
+      "media_id": "5480760151935890610",
+      "cover_image_url": "https://i.pinimg.com/1200x/64/b9/a3/64b9a3ca28a732f5cedd6062fba711fb.jpg"
     }
   },
   "runs": [
@@ -1229,6 +1243,16 @@
       "result": "success",
       "pin_id": "839428818088892178",
       "media_id": "5480597380636152691",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-18T09:02:07+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Dust_Nibs_in_the_Finish-320_Grit_for_Between-Coat_Sanding-wood-012.mp4",
+      "filename": "Dust_Nibs_in_the_Finish-320_Grit_for_Between-Coat_Sanding-wood-012.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818088910150",
+      "media_id": "5480760151935890610",
       "error": null
     }
   ]
