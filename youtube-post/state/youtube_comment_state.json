@@ -411,6 +411,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-02-17T11:56:20Z",
       "verify_after_ts": 1771331180.7130184
+    },
+    "CfCjG8MFWTw": {
+      "comment_status": "commented_unverified",
+      "comment_id": "UgwsdL633YA1mzJqjmF4AaABAg",
+      "comment_text": "If scratches stand out after primer/paint, the previous grit marks weren’t fully blended—go back one step briefly and re-feather. What grit are you finishing with now?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-02-18T11:56:54Z",
+      "verify_after_ts": 1771417614.9179237
     }
   },
   "runs": [
@@ -710,6 +718,12 @@
       "video_id": "YYlCeMUsI8o",
       "result": "commented_unverified",
       "comment_id": "UgxIbZMSESkQ6KNjDhh4AaABAg"
+    },
+    {
+      "ts": "2026-02-18T11:56:54Z",
+      "video_id": "CfCjG8MFWTw",
+      "result": "commented_unverified",
+      "comment_id": "UgwsdL633YA1mzJqjmF4AaABAg"
     }
   ]
 }
