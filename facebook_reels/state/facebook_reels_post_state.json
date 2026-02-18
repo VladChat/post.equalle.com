@@ -997,7 +997,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-18T14:11:21Z",
-      "video_id": "959216466769894"
+      "video_id": "959216466769894",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 18
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-18T14:59:04Z",
+      "comment_text": "If you’re getting pigtails or random deep lines, the paper may be loaded or folded. Are you using fresh sheets?",
+      "comment_status": "commented",
+      "comment_id": "959216466769894_1460613105462019",
+      "commented_ts_utc": "2026-02-18T14:59:07Z"
     }
   },
   "runs": [
@@ -1821,6 +1831,15 @@
       "result": "commented",
       "comment_id": "1923994598484473_900133679440316",
       "template_idx": 13
+    },
+    {
+      "ts_utc": "2026-02-18T14:59:07Z",
+      "video_id": "959216466769894",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/polish_isnt_cutting_it-1500_grit_wet_sand_before_polishing-wet-010.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "959216466769894_1460613105462019",
+      "template_idx": 18
     }
   ]
 }
