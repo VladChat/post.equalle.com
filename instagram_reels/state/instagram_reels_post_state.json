@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-02-17"
+    "manifest_index": 3,
+    "last_day": "2026-02-18"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -1632,6 +1632,30 @@
       "comment_status": "commented",
       "comment_id": "18118845457608403",
       "commented_ts_utc": "2026-02-17T14:19:37Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rust_keeps_coming_back-80_grit_for_proper_rust_removal-metal-010.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_keeps_coming_back-80_grit_for_proper_rust_removal-metal-010.mp4",
+      "filename": "rust_keeps_coming_back-80_grit_for_proper_rust_removal-metal-010.mp4",
+      "manifest": "metal.json",
+      "title": "Rust Keeps Coming Back? Re-Prep Metal With 80 Grit",
+      "description": "If rust keeps returning, the prep wasn’t deep enough. Use 80 grit to remove oxidation completely, feather into clean metal, and clean the surface before applying primer.",
+      "caption": "Rust Keeps Coming Back? Re-Prep Metal With 80 Grit\n\nIf rust keeps returning, the prep wasn’t deep enough. Use 80 grit to remove oxidation completely, feather into clean metal, and clean the surface before applying primer.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-18T14:08:50Z",
+      "mode": "binary",
+      "container_id": "18109288069741317",
+      "media_id": "17932866321036606",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v24.0/18109288069741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18109288069741317"
+      }
     }
   },
   "runs": [
@@ -2172,6 +2196,17 @@
       "filename": "uneven_clear_coat_texture-2000_grit_wet_sand_to_smooth_clear_coat-wet-011.mp4",
       "container_id": "18109199593741317",
       "media_id": "18056083196415720",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-18T14:08:50Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "metal.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_keeps_coming_back-80_grit_for_proper_rust_removal-metal-010.mp4",
+      "filename": "rust_keeps_coming_back-80_grit_for_proper_rust_removal-metal-010.mp4",
+      "container_id": "18109288069741317",
+      "media_id": "17932866321036606",
       "error": null
     }
   ],
