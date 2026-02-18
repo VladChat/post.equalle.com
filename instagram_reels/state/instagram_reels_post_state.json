@@ -1655,7 +1655,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18109288069741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 18
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-18T14:38:26Z",
+      "comment_text": "If you’re getting random deep lines, the sheet may be loaded or folded. Are you using fresh paper?",
+      "comment_status": "commented",
+      "comment_id": "17909581548161580",
+      "commented_ts_utc": "2026-02-18T14:38:29Z"
     }
   },
   "runs": [
@@ -2579,6 +2589,15 @@
       "result": "commented",
       "comment_id": "18118845457608403",
       "template_idx": 10
+    },
+    {
+      "ts_utc": "2026-02-18T14:38:29Z",
+      "media_id": "17932866321036606",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_keeps_coming_back-80_grit_for_proper_rust_removal-metal-010.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "17909581548161580",
+      "template_idx": 18
     }
   ]
 }
