@@ -1018,7 +1018,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-19T14:13:25Z",
-      "video_id": "2111329059614122"
+      "video_id": "2111329059614122",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 5
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-19T14:49:39Z",
+      "comment_text": "After sanding, wipe dust and check under a bright light from the side. Do the lines disappear evenly?",
+      "comment_status": "commented",
+      "comment_id": "2111329059614122_4128887617372376",
+      "commented_ts_utc": "2026-02-19T14:49:43Z"
     }
   },
   "runs": [
@@ -1860,6 +1870,15 @@
       "result": "commented",
       "comment_id": "959216466769894_1460613105462019",
       "template_idx": 18
+    },
+    {
+      "ts_utc": "2026-02-19T14:49:43Z",
+      "video_id": "2111329059614122",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_keeps_coming_back-80_grit_for_proper_rust_removal-metal-010.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "2111329059614122_4128887617372376",
+      "template_idx": 5
     }
   ]
 }
