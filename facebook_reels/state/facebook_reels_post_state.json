@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-02-18"
+    "manifest_index": 3,
+    "last_day": "2026-02-19"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1008,6 +1008,17 @@
       "comment_status": "commented",
       "comment_id": "959216466769894_1460613105462019",
       "commented_ts_utc": "2026-02-18T14:59:07Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rust_keeps_coming_back-80_grit_for_proper_rust_removal-metal-010.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_keeps_coming_back-80_grit_for_proper_rust_removal-metal-010.mp4",
+      "filename": "rust_keeps_coming_back-80_grit_for_proper_rust_removal-metal-010.mp4",
+      "manifest": "metal.json",
+      "title": "Rust Keeps Coming Back? Re-Prep Metal With 80 Grit",
+      "description": "If rust keeps returning, the prep wasn’t deep enough. Use 80 grit to remove oxidation completely, feather into clean metal, and clean the surface before applying primer.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-19T14:13:25Z",
+      "video_id": "2111329059614122"
     }
   },
   "runs": [
@@ -1450,6 +1461,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "959216466769894",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-19T14:13:25Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_keeps_coming_back-80_grit_for_proper_rust_removal-metal-010.mp4",
+      "filename": "rust_keeps_coming_back-80_grit_for_proper_rust_removal-metal-010.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "2111329059614122",
       "error": null
     }
   ],
