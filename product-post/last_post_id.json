@@ -1,13 +1,14 @@
 {
-  "post_id": "325670187920349_1352349643573185",
+  "post_id": "325670187920349_1353958846745598",
   "product": {
     "source": "amazon",
-    "url": "https://www.amazon.com/gp/product/B0CZ7T3663",
-    "grit": 1500,
+    "url": "https://www.amazon.com/gp/product/B0CZ7TX4KC",
+    "grit": 2000,
     "pack": 10,
-    "anchor": "1500 Grit (Ultra-Fine)",
-    "grit_description": "Professional ultra-fine grit for satin or semi-gloss finishing. Removes micro-scratches from clear coats and paint touch-ups. Produces flawless textures and consistent results before final polishing.",
+    "anchor": "2000 Grit (Ultra-Fine)",
+    "grit_description": "Super-fine grit for restoring deep gloss on automotive paint, resin, or metal. Removes micro-defects and surface haze. Ideal for precision polishing prior to waxing or compounding.",
     "contexts": [
+      "auto",
       "polishing"
     ]
   }
