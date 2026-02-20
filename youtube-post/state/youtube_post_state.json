@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-19"
+    "last_day": "2026-02-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -496,6 +496,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-180",
       "result": "success",
       "video_id": "T0iQzHPYJNo"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/surface_imperfections_showing_through_paint-180_grit_for_final_wall_prep-drywall-046.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/surface_imperfections_showing_through_paint-180_grit_for_final_wall_prep-drywall-046.mp4",
+      "filename": "surface_imperfections_showing_through_paint-180_grit_for_final_wall_prep-drywall-046.mp4",
+      "manifest": "drywall.json",
+      "title": "Surface Imperfections Showing Through Paint? Final Wall Prep With 180 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07QG6R8Y1",
+      "result": "success",
+      "video_id": "-zxUTQm5pQ0"
     }
   },
   "runs": [
@@ -793,6 +803,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_area_still_noticeable-180_grit_for_blending_repair_area-drywall-045.mp4",
       "result": "success",
       "video_id": "T0iQzHPYJNo"
+    },
+    {
+      "ts_utc": "2026-02-20T11:33:21.927929+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/surface_imperfections_showing_through_paint-180_grit_for_final_wall_prep-drywall-046.mp4",
+      "result": "success",
+      "video_id": "-zxUTQm5pQ0"
     }
   ],
   "last_post": {
