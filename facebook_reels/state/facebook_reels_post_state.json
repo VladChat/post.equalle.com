@@ -1039,7 +1039,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-20T14:04:44Z",
-      "video_id": "2115843232483988"
+      "video_id": "2115843232483988",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 9
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-20T14:35:01Z",
+      "comment_text": "For corners/edges, ease up and let the abrasive do the work. Are edges the hardest part for you too?",
+      "comment_status": "commented",
+      "comment_id": "2115843232483988_897690446304205",
+      "commented_ts_utc": "2026-02-20T14:35:05Z"
     }
   },
   "runs": [
@@ -1899,6 +1909,15 @@
       "result": "commented",
       "comment_id": "2111329059614122_4128887617372376",
       "template_idx": 5
+    },
+    {
+      "ts_utc": "2026-02-20T14:35:05Z",
+      "video_id": "2115843232483988",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_surface_not_uniform-180_grit_for_even_plastic_prep-plastic-010.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "2115843232483988_897690446304205",
+      "template_idx": 9
     }
   ]
 }
