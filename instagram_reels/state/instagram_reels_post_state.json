@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-02-19"
+    "manifest_index": 0,
+    "last_day": "2026-02-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -1697,6 +1697,30 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-02-19T14:55:29Z",
       "comment_skipped_reason": "policy_10pct_skip"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/mud_lines_showing_through_paint-150_grit_for_drywall_paint_prep-drywall-010.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/mud_lines_showing_through_paint-150_grit_for_drywall_paint_prep-drywall-010.mp4",
+      "filename": "mud_lines_showing_through_paint-150_grit_for_drywall_paint_prep-drywall-010.mp4",
+      "manifest": "drywall.json",
+      "title": "Mud Lines Showing Through Paint? Prep Drywall With 150 Grit",
+      "description": "If paint highlights mud lines, sand the area with 150 grit to feather edges and smooth the surface before primer or touch-up paint. Sandpaper eQualle",
+      "caption": "Mud Lines Showing Through Paint? Prep Drywall With 150 Grit\n\nIf paint highlights mud lines, sand the area with 150 grit to feather edges and smooth the surface before primer or touch-up paint. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-20T14:02:28Z",
+      "mode": "binary",
+      "container_id": "18109471972741317",
+      "media_id": "17994848327918939",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18109471972741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18109471972741317"
+      }
     }
   },
   "runs": [
@@ -2259,6 +2283,17 @@
       "filename": "plastic_surface_not_uniform-180_grit_for_even_plastic_prep-plastic-010.mp4",
       "container_id": "18109378849741317",
       "media_id": "17868462102468534",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-20T14:02:28Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/mud_lines_showing_through_paint-150_grit_for_drywall_paint_prep-drywall-010.mp4",
+      "filename": "mud_lines_showing_through_paint-150_grit_for_drywall_paint_prep-drywall-010.mp4",
+      "container_id": "18109471972741317",
+      "media_id": "17994848327918939",
       "error": null
     }
   ],
