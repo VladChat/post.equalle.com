@@ -1720,7 +1720,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18109471972741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 7
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-20T14:36:55Z",
+      "comment_text": "If you’re jumping grits, don’t skip too far—blend one step at a time. What grit did you start with?",
+      "comment_status": "commented",
+      "comment_id": "18084658685244407",
+      "commented_ts_utc": "2026-02-20T14:36:58Z"
     }
   },
   "runs": [
@@ -2675,6 +2685,15 @@
       "result": "commented",
       "comment_id": "17909581548161580",
       "template_idx": 18
+    },
+    {
+      "ts_utc": "2026-02-20T14:36:58Z",
+      "media_id": "17994848327918939",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/mud_lines_showing_through_paint-150_grit_for_drywall_paint_prep-drywall-010.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18084658685244407",
+      "template_idx": 7
     }
   ]
 }
