@@ -1060,7 +1060,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-21T13:50:37Z",
-      "video_id": "805159839277242"
+      "video_id": "805159839277242",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 13
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-21T14:39:19Z",
+      "comment_text": "On drywall, sanding dust can hide defects—wipe often and re-check. Do you see it only after wiping?",
+      "comment_status": "commented",
+      "comment_id": "805159839277242_923118197115223",
+      "commented_ts_utc": "2026-02-21T14:39:24Z"
     }
   },
   "runs": [
@@ -1938,6 +1948,15 @@
       "result": "commented",
       "comment_id": "2115843232483988_897690446304205",
       "template_idx": 9
+    },
+    {
+      "ts_utc": "2026-02-21T14:39:24Z",
+      "video_id": "805159839277242",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_not_even-120_grit_for_leveling_mud_application-drywall-012.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "805159839277242_923118197115223",
+      "template_idx": 13
     }
   ]
 }
