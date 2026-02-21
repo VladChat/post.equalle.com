@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-02-20"
+    "manifest_index": 0,
+    "last_day": "2026-02-21"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1050,6 +1050,17 @@
       "comment_status": "commented",
       "comment_id": "2115843232483988_897690446304205",
       "commented_ts_utc": "2026-02-20T14:35:05Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_not_even-120_grit_for_leveling_mud_application-drywall-012.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_not_even-120_grit_for_leveling_mud_application-drywall-012.mp4",
+      "filename": "joint_compound_not_even-120_grit_for_leveling_mud_application-drywall-012.mp4",
+      "manifest": "drywall.json",
+      "title": "Joint Compound Not Even? Level Mud Application With 120 Grit",
+      "description": "If the mud dried uneven, sand lightly with 120 grit to knock down ridges and level high spots before you skim or apply another coat. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-21T13:50:37Z",
+      "video_id": "805159839277242"
     }
   },
   "runs": [
@@ -1510,6 +1521,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "2115843232483988",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-21T13:50:37Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_not_even-120_grit_for_leveling_mud_application-drywall-012.mp4",
+      "filename": "joint_compound_not_even-120_grit_for_leveling_mud_application-drywall-012.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "805159839277242",
       "error": null
     }
   ],
