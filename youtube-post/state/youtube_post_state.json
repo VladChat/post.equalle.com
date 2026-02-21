@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-20"
+    "last_day": "2026-02-21"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -506,6 +506,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QG6R8Y1",
       "result": "success",
       "video_id": "-zxUTQm5pQ0"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_repair_still_looks_messy-150-180_grit_for_surface_cleanup-drywall-047.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_repair_still_looks_messy-150-180_grit_for_surface_cleanup-drywall-047.mp4",
+      "filename": "drywall_repair_still_looks_messy-150-180_grit_for_surface_cleanup-drywall-047.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Repair Still Looks Messy? Surface Cleanup With 150–180 Grit",
+      "destination_url": "https://equalle.com/products/150-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "result": "success",
+      "video_id": "DYoW48JS9sk"
     }
   },
   "runs": [
@@ -809,6 +819,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/surface_imperfections_showing_through_paint-180_grit_for_final_wall_prep-drywall-046.mp4",
       "result": "success",
       "video_id": "-zxUTQm5pQ0"
+    },
+    {
+      "ts_utc": "2026-02-21T11:23:30.141720+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_repair_still_looks_messy-150-180_grit_for_surface_cleanup-drywall-047.mp4",
+      "result": "success",
+      "video_id": "DYoW48JS9sk"
     }
   ],
   "last_post": {
