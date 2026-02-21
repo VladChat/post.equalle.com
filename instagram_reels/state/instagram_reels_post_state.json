@@ -1754,7 +1754,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18109562788741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-21T14:22:21Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "18098106617298238",
+      "commented_ts_utc": "2026-02-21T14:22:25Z"
     }
   },
   "runs": [
@@ -2729,6 +2739,15 @@
       "result": "commented",
       "comment_id": "18084658685244407",
       "template_idx": 7
+    },
+    {
+      "ts_utc": "2026-02-21T14:22:25Z",
+      "media_id": "18049835717706313",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Dust_Nibs_in_the_Finish-320_Grit_for_Between-Coat_Sanding-wood-012.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "18098106617298238",
+      "template_idx": 12
     }
   ]
 }
