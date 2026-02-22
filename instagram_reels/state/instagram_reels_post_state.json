@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-02-21"
+    "manifest_index": 2,
+    "last_day": "2026-02-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -1765,6 +1765,30 @@
       "comment_status": "commented",
       "comment_id": "18098106617298238",
       "commented_ts_utc": "2026-02-21T14:22:25Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_leveling-1500_grit_wet_sand_for_leveling_paint-wet-012.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_leveling-1500_grit_wet_sand_for_leveling_paint-wet-012.mp4",
+      "filename": "clear_coat_needs_leveling-1500_grit_wet_sand_for_leveling_paint-wet-012.mp4",
+      "manifest": "wet.json",
+      "title": "Clear Coat Needs Leveling? 1500 Grit Wet Sanding Prep",
+      "description": "Clear coat needs leveling? Wet sand with 1500 grit to flatten texture and high spots before polishing. Keep the surface wet, use light pressure, crosshatch passes, and wipe often to avoid over-sanding edges. Wet or dry use. — eQualle",
+      "caption": "Clear Coat Needs Leveling? 1500 Grit Wet Sanding Prep\n\nClear coat needs leveling? Wet sand with 1500 grit to flatten texture and high spots before polishing. Keep the surface wet, use light pressure, crosshatch passes, and wipe often to avoid over-sanding edges. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-22T13:47:44Z",
+      "mode": "binary",
+      "container_id": "18109649953741317",
+      "media_id": "17907328878350777",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18109649953741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18109649953741317"
+      }
     }
   },
   "runs": [
@@ -2349,6 +2373,17 @@
       "filename": "Dust_Nibs_in_the_Finish-320_Grit_for_Between-Coat_Sanding-wood-012.mp4",
       "container_id": "18109562788741317",
       "media_id": "18049835717706313",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-22T13:47:44Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wet.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_leveling-1500_grit_wet_sand_for_leveling_paint-wet-012.mp4",
+      "filename": "clear_coat_needs_leveling-1500_grit_wet_sand_for_leveling_paint-wet-012.mp4",
+      "container_id": "18109649953741317",
+      "media_id": "17907328878350777",
       "error": null
     }
   ],
