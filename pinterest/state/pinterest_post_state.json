@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-02-21"
+    "manifest_index": 0,
+    "last_day": "2026-02-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -774,6 +774,20 @@
       "pin_id": "839428818088972251",
       "media_id": "5481303538495719516",
       "cover_image_url": "https://i.pinimg.com/1200x/48/d8/f5/48d8f56999c8fdbb9118501d350fa062.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_not_even-120_grit_for_leveling_mud_application-drywall-012.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_not_even-120_grit_for_leveling_mud_application-drywall-012.mp4",
+      "filename": "joint_compound_not_even-120_grit_for_leveling_mud_application-drywall-012.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049941",
+      "destination_url": "https://www.amazon.com/gp/product/B07RLSHPZV",
+      "title": "Joint Compound Not Even? Level Mud Application With 120 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-22T10:05:28+00:00",
+      "pin_id": "839428818088994169",
+      "media_id": "5481492542159660591",
+      "cover_image_url": "https://i.pinimg.com/1200x/f8/9a/21/f89a217e5444fffbcad469494d6df0ee.jpg"
     }
   },
   "runs": [
@@ -1325,6 +1339,16 @@
       "result": "success",
       "pin_id": "839428818088972251",
       "media_id": "5481303538495719516",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-22T10:05:28+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_not_even-120_grit_for_leveling_mud_application-drywall-012.mp4",
+      "filename": "joint_compound_not_even-120_grit_for_leveling_mud_application-drywall-012.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818088994169",
+      "media_id": "5481492542159660591",
       "error": null
     }
   ]
