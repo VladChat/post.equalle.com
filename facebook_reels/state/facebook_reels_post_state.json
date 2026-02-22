@@ -1081,7 +1081,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-22T13:51:10Z",
-      "video_id": "903190529344646"
+      "video_id": "903190529344646",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-22T14:20:09Z",
+      "comment_text": "For wood work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "903190529344646_1437139241392677",
+      "commented_ts_utc": "2026-02-22T14:20:16Z"
     }
   },
   "runs": [
@@ -1977,6 +1987,15 @@
       "result": "commented",
       "comment_id": "805159839277242_923118197115223",
       "template_idx": 13
+    },
+    {
+      "ts_utc": "2026-02-22T14:20:16Z",
+      "video_id": "903190529344646",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Bumps_After_First_Coat-220_Grit_for_Sanding_Between_Coats-wood-011.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "903190529344646_1437139241392677",
+      "template_idx": 3
     }
   ]
 }
