@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-02-21"
+    "manifest_index": 1,
+    "last_day": "2026-02-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1071,6 +1071,17 @@
       "comment_status": "commented",
       "comment_id": "805159839277242_923118197115223",
       "commented_ts_utc": "2026-02-21T14:39:24Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Bumps_After_First_Coat-220_Grit_for_Sanding_Between_Coats-wood-011.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Bumps_After_First_Coat-220_Grit_for_Sanding_Between_Coats-wood-011.mp4",
+      "filename": "Bumps_After_First_Coat-220_Grit_for_Sanding_Between_Coats-wood-011.mp4",
+      "manifest": "wood.json",
+      "title": "Bumps After First Coat: 220 Grit Sanding Between Coats",
+      "description": "Bumps After First Coat? Use 220 grit for sanding between coats. Lightly scuff sand between coats to knock down nibs and keep the next coat smooth. Use light pressure, keep the surface flat, and stop as soon as it feels even. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-22T13:51:10Z",
+      "video_id": "903190529344646"
     }
   },
   "runs": [
@@ -1540,6 +1551,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "805159839277242",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-22T13:51:10Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Bumps_After_First_Coat-220_Grit_for_Sanding_Between_Coats-wood-011.mp4",
+      "filename": "Bumps_After_First_Coat-220_Grit_for_Sanding_Between_Coats-wood-011.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "903190529344646",
       "error": null
     }
   ],
