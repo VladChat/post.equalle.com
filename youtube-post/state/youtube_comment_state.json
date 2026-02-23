@@ -451,6 +451,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-02-22T11:38:43Z",
       "verify_after_ts": 1771762123.852503
+    },
+    "wL4eAFHR_QA": {
+      "comment_status": "commented_unverified",
+      "comment_id": "UgzZZZCJdUTT6-xMS1t4AaABAg",
+      "comment_text": "For surface work, feather the edges first, then refine the center so the blend disappears into the surrounding area. What part is giving you trouble—edges, center, or corners?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-02-23T11:55:59Z",
+      "verify_after_ts": 1771849559.0852513
     }
   },
   "runs": [
@@ -780,6 +788,12 @@
       "video_id": "MUKOoOXIdt4",
       "result": "commented_unverified",
       "comment_id": "UgzI5o-Pzor1ibpowpR4AaABAg"
+    },
+    {
+      "ts": "2026-02-23T11:55:59Z",
+      "video_id": "wL4eAFHR_QA",
+      "result": "commented_unverified",
+      "comment_id": "UgzZZZCJdUTT6-xMS1t4AaABAg"
     }
   ]
 }
