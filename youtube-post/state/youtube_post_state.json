@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-22"
+    "last_day": "2026-02-23"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -526,6 +526,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RJZ55RL",
       "result": "success",
       "video_id": "MUKOoOXIdt4"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/outside_corners_feel_too_sharp-150_grit_for_softening_drywall_edges-drywall-049.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/outside_corners_feel_too_sharp-150_grit_for_softening_drywall_edges-drywall-049.mp4",
+      "filename": "outside_corners_feel_too_sharp-150_grit_for_softening_drywall_edges-drywall-049.mp4",
+      "manifest": "drywall.json",
+      "title": "Outside Corners Feel Too Sharp? Soften Drywall Edges With 150 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-150",
+      "result": "success",
+      "video_id": "wL4eAFHR_QA"
     }
   },
   "runs": [
@@ -841,6 +851,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_corners_look_uneven-180_grit_for_sanding_inside_corners-drywall-048.mp4",
       "result": "success",
       "video_id": "MUKOoOXIdt4"
+    },
+    {
+      "ts_utc": "2026-02-23T11:40:24.760691+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/outside_corners_feel_too_sharp-150_grit_for_softening_drywall_edges-drywall-049.mp4",
+      "result": "success",
+      "video_id": "wL4eAFHR_QA"
     }
   ],
   "last_post": {
