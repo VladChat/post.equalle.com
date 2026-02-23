@@ -1819,7 +1819,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18109735282741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 16
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-23T15:13:12Z",
+      "comment_text": "If scratches stand out after paint/primer, it usually means the previous grit marks weren’t fully blended. What grit are you finishing with?",
+      "comment_status": "commented",
+      "comment_id": "17999227241727554",
+      "commented_ts_utc": "2026-02-23T15:13:25Z"
     }
   },
   "runs": [
@@ -2825,6 +2835,15 @@
       "result": "commented",
       "comment_id": "18098106617298238",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-02-23T15:13:25Z",
+      "media_id": "18044008643722298",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/heavy_corrosion_on_metal_parts-60_grit_for_aggressive_rust_removal-metal-011.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "17999227241727554",
+      "template_idx": 16
     }
   ]
 }
