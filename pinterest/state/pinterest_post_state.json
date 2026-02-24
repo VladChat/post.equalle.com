@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-02-23"
+    "manifest_index": 2,
+    "last_day": "2026-02-24"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -802,6 +802,20 @@
       "pin_id": "839428818089016067",
       "media_id": "5481675220018342313",
       "cover_image_url": "https://i.pinimg.com/1200x/87/a5/f2/87a5f2ffbd33fba877c89769b5d13a5d.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_leveling-1500_grit_wet_sand_for_leveling_paint-wet-012.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_leveling-1500_grit_wet_sand_for_leveling_paint-wet-012.mp4",
+      "filename": "clear_coat_needs_leveling-1500_grit_wet_sand_for_leveling_paint-wet-012.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049944",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7T3663",
+      "title": "Clear Coat Needs Leveling? 1500 Grit Wet Sanding Prep",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-24T11:28:36+00:00",
+      "pin_id": "839428818089037518",
+      "media_id": "5481865781629235541",
+      "cover_image_url": "https://i.pinimg.com/1200x/7b/2c/c0/7b2cc091bdbc63778460694f6588de44.jpg"
     }
   },
   "runs": [
@@ -1373,6 +1387,16 @@
       "result": "success",
       "pin_id": "839428818089016067",
       "media_id": "5481675220018342313",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-24T11:28:36+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_leveling-1500_grit_wet_sand_for_leveling_paint-wet-012.mp4",
+      "filename": "clear_coat_needs_leveling-1500_grit_wet_sand_for_leveling_paint-wet-012.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818089037518",
+      "media_id": "5481865781629235541",
       "error": null
     }
   ]
