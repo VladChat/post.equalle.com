@@ -1853,7 +1853,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18109823419741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-24T14:26:19Z",
+      "comment_text": "Light pressure with 180 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "17988186149779032",
+      "commented_ts_utc": "2026-02-24T14:26:22Z"
     }
   },
   "runs": [
@@ -2879,6 +2889,15 @@
       "result": "commented",
       "comment_id": "17999227241727554",
       "template_idx": 16
+    },
+    {
+      "ts_utc": "2026-02-24T14:26:22Z",
+      "media_id": "17865142098589990",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_sharp_after_cutting-180_grit_for_plastic_edge_smoothing-plastic-011.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "17988186149779032",
+      "template_idx": 0
     }
   ]
 }
