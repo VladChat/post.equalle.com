@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-23"
+    "last_day": "2026-02-24"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -536,6 +536,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-150",
       "result": "success",
       "video_id": "wL4eAFHR_QA"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/corner_bead_showing_through-180_grit_for_blending_corner_bead-drywall-050.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/corner_bead_showing_through-180_grit_for_blending_corner_bead-drywall-050.mp4",
+      "filename": "corner_bead_showing_through-180_grit_for_blending_corner_bead-drywall-050.mp4",
+      "manifest": "drywall.json",
+      "title": "Corner Bead Showing Through? Blend the Corner Bead With 180 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8DTGHP",
+      "result": "success",
+      "video_id": "vHqGuWypvlM"
     }
   },
   "runs": [
@@ -857,6 +867,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/outside_corners_feel_too_sharp-150_grit_for_softening_drywall_edges-drywall-049.mp4",
       "result": "success",
       "video_id": "wL4eAFHR_QA"
+    },
+    {
+      "ts_utc": "2026-02-24T11:41:10.004691+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/corner_bead_showing_through-180_grit_for_blending_corner_bead-drywall-050.mp4",
+      "result": "success",
+      "video_id": "vHqGuWypvlM"
     }
   ],
   "last_post": {
