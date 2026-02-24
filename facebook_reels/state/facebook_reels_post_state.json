@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-02-23"
+    "manifest_index": 3,
+    "last_day": "2026-02-24"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1113,6 +1113,17 @@
       "comment_status": "commented",
       "comment_id": "1446021790036632_1564220481467420",
       "commented_ts_utc": "2026-02-23T14:59:15Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/heavy_corrosion_on_metal_parts-60_grit_for_aggressive_rust_removal-metal-011.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/heavy_corrosion_on_metal_parts-60_grit_for_aggressive_rust_removal-metal-011.mp4",
+      "filename": "heavy_corrosion_on_metal_parts-60_grit_for_aggressive_rust_removal-metal-011.mp4",
+      "manifest": "metal.json",
+      "title": "Aggressive Rust Removal on Metal Parts With 60 Grit",
+      "description": "Heavy corrosion on metal parts? Use 60 grit for aggressive removal to break through thick rust and scale. After you reach clean metal, step up in grit to refine the scratches.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-24T14:15:28Z",
+      "video_id": "2089002848560689"
     }
   },
   "runs": [
@@ -1600,6 +1611,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "1446021790036632",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-24T14:15:28Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/heavy_corrosion_on_metal_parts-60_grit_for_aggressive_rust_removal-metal-011.mp4",
+      "filename": "heavy_corrosion_on_metal_parts-60_grit_for_aggressive_rust_removal-metal-011.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "2089002848560689",
       "error": null
     }
   ],
