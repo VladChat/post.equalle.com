@@ -1123,7 +1123,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-24T14:15:28Z",
-      "video_id": "2089002848560689"
+      "video_id": "2089002848560689",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 11
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-24T15:24:14Z",
+      "comment_text": "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+      "comment_status": "commented",
+      "comment_id": "2089002848560689_1412517143691974",
+      "commented_ts_utc": "2026-02-24T15:24:18Z"
     }
   },
   "runs": [
@@ -2055,6 +2065,15 @@
       "result": "commented",
       "comment_id": "1446021790036632_1564220481467420",
       "template_idx": 8
+    },
+    {
+      "ts_utc": "2026-02-24T15:24:18Z",
+      "video_id": "2089002848560689",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/heavy_corrosion_on_metal_parts-60_grit_for_aggressive_rust_removal-metal-011.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "2089002848560689_1412517143691974",
+      "template_idx": 11
     }
   ]
 }
