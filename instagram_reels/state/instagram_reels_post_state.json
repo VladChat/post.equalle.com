@@ -589,7 +589,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18106135792741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 14
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-25T15:00:33Z",
+      "comment_text": "If the surface heats up, slow down and lighten pressure. Are you sanding by hand or with a tool?",
+      "comment_status": "commented",
+      "comment_id": "18070969538535572",
+      "commented_ts_utc": "2026-02-25T15:00:36Z"
     },
     "https://github.com/VladChat/video/releases/download/Wet/surface_not_ready_for_polish-2000_grit_wet_sand_before_polishing-wet-005.mp4": {
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_not_ready_for_polish-2000_grit_wet_sand_before_polishing-wet-005.mp4",
@@ -2898,6 +2908,15 @@
       "result": "commented",
       "comment_id": "17988186149779032",
       "template_idx": 0
+    },
+    {
+      "ts_utc": "2026-02-25T15:00:36Z",
+      "media_id": "18088473749022843",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_after_paint_job-1500_grit_wet_sand_for_paint_correction-wet-004.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18070969538535572",
+      "template_idx": 14
     }
   ]
 }
