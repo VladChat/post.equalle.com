@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-02-24"
+    "manifest_index": 4,
+    "last_day": "2026-02-25"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1134,6 +1134,17 @@
       "comment_status": "commented",
       "comment_id": "2089002848560689_1412517143691974",
       "commented_ts_utc": "2026-02-24T15:24:18Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_sharp_after_cutting-180_grit_for_plastic_edge_smoothing-plastic-011.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_sharp_after_cutting-180_grit_for_plastic_edge_smoothing-plastic-011.mp4",
+      "filename": "plastic_feels_sharp_after_cutting-180_grit_for_plastic_edge_smoothing-plastic-011.mp4",
+      "manifest": "plastic.json",
+      "title": "Sharp Plastic Edge? Smooth It With 180 Grit",
+      "description": "If plastic edges feel sharp after cutting, 180 grit helps soften the edge and remove burrs. Fold the sheet, sand along the edge with controlled strokes, then wipe clean and re-check by touch. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-25T14:13:50Z",
+      "video_id": "1561934274921291"
     }
   },
   "runs": [
@@ -1630,6 +1641,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "2089002848560689",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-25T14:13:50Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_sharp_after_cutting-180_grit_for_plastic_edge_smoothing-plastic-011.mp4",
+      "filename": "plastic_feels_sharp_after_cutting-180_grit_for_plastic_edge_smoothing-plastic-011.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "1561934274921291",
       "error": null
     }
   ],
