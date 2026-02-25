@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-24"
+    "last_day": "2026-02-25"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -546,6 +546,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ8DTGHP",
       "result": "success",
       "video_id": "vHqGuWypvlM"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/edges_of_patch_too_visible-180_grit_for_edge_feathering-drywall-051.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_of_patch_too_visible-180_grit_for_edge_feathering-drywall-051.mp4",
+      "filename": "edges_of_patch_too_visible-180_grit_for_edge_feathering-drywall-051.mp4",
+      "manifest": "drywall.json",
+      "title": "Edges of Patch Too Visible? Feather the Edge With 180 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-180",
+      "result": "success",
+      "video_id": "q-SFHPU8feo"
     }
   },
   "runs": [
@@ -873,6 +883,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/corner_bead_showing_through-180_grit_for_blending_corner_bead-drywall-050.mp4",
       "result": "success",
       "video_id": "vHqGuWypvlM"
+    },
+    {
+      "ts_utc": "2026-02-25T11:41:07.649687+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_of_patch_too_visible-180_grit_for_edge_feathering-drywall-051.mp4",
+      "result": "success",
+      "video_id": "q-SFHPU8feo"
     }
   ],
   "last_post": {
