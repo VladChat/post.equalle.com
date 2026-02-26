@@ -1165,7 +1165,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-26T14:14:12Z",
-      "video_id": "1221183236830806"
+      "video_id": "1221183236830806",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 14
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-26T15:06:48Z",
+      "comment_text": "If the surface heats up, slow down and lighten pressure. Are you sanding by hand or with a tool?",
+      "comment_status": "commented",
+      "comment_id": "1221183236830806_973448628743571",
+      "commented_ts_utc": "2026-02-26T15:06:53Z"
     }
   },
   "runs": [
@@ -2133,6 +2143,15 @@
       "result": "commented",
       "comment_id": "1561934274921291_4232658196972988",
       "template_idx": 5
+    },
+    {
+      "ts_utc": "2026-02-26T15:06:53Z",
+      "video_id": "1221183236830806",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1221183236830806_973448628743571",
+      "template_idx": 14
     }
   ]
 }
