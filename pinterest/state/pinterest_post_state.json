@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-02-25"
+    "manifest_index": 4,
+    "last_day": "2026-02-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -830,6 +830,20 @@
       "pin_id": "839428818089054961",
       "media_id": "5482028909662908812",
       "cover_image_url": "https://i.pinimg.com/1200x/2c/63/aa/2c63aa889160a4aeaf4e89239bc07d35.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/uneven_plastic_after_repair-220_grit_for_blending_plastic_surface-plastic-012.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/uneven_plastic_after_repair-220_grit_for_blending_plastic_surface-plastic-012.mp4",
+      "filename": "uneven_plastic_after_repair-220_grit_for_blending_plastic_surface-plastic-012.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049964",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8DFS6T",
+      "title": "Uneven After Plastic Repair? Blend With 220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-26T10:32:11+00:00",
+      "pin_id": "839428818089076946",
+      "media_id": "5482221086315716825",
+      "cover_image_url": "https://i.pinimg.com/1200x/95/0c/07/950c076af82d1b446ca1deea99fe01cd.jpg"
     }
   },
   "runs": [
@@ -1421,6 +1435,16 @@
       "result": "success",
       "pin_id": "839428818089054961",
       "media_id": "5482028909662908812",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-26T10:32:11+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/uneven_plastic_after_repair-220_grit_for_blending_plastic_surface-plastic-012.mp4",
+      "filename": "uneven_plastic_after_repair-220_grit_for_blending_plastic_surface-plastic-012.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818089076946",
+      "media_id": "5482221086315716825",
       "error": null
     }
   ]
