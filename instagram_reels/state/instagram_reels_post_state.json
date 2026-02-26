@@ -27,7 +27,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18104775802741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 15
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-26T14:19:49Z",
+      "comment_text": "A quick mist/wipe (for wet sanding) can show high spots fast. Are you using water or a lubricant?",
+      "comment_status": "commented",
+      "comment_id": "18098015737745643",
+      "commented_ts_utc": "2026-02-26T14:19:52Z"
     },
     "https://github.com/VladChat/video/releases/download/wood/Rough_Wood_Grain_Showing-120_Grit_for_Smoothing_Raw_Wood-wood-002.mp4": {
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Rough_Wood_Grain_Showing-120_Grit_for_Smoothing_Raw_Wood-wood-002.mp4",
@@ -2917,6 +2927,15 @@
       "result": "commented",
       "comment_id": "18070969538535572",
       "template_idx": 14
+    },
+    {
+      "ts_utc": "2026-02-26T14:19:52Z",
+      "media_id": "17903240724182540",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "18098015737745643",
+      "template_idx": 15
     }
   ]
 }
