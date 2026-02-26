@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-25"
+    "last_day": "2026-02-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -556,6 +556,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-180",
       "result": "success",
       "video_id": "q-SFHPU8feo"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/tight_spots_hard_to_sand-180_grit_for_detail_drywall_sanding-drywall-052.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/tight_spots_hard_to_sand-180_grit_for_detail_drywall_sanding-drywall-052.mp4",
+      "filename": "tight_spots_hard_to_sand-180_grit_for_detail_drywall_sanding-drywall-052.mp4",
+      "manifest": "drywall.json",
+      "title": "Tight Spots Hard to Sand? Detail Drywall Sanding With 180 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RGRN3PL",
+      "result": "success",
+      "video_id": "Y48azXwtTis"
     }
   },
   "runs": [
@@ -889,6 +899,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_of_patch_too_visible-180_grit_for_edge_feathering-drywall-051.mp4",
       "result": "success",
       "video_id": "q-SFHPU8feo"
+    },
+    {
+      "ts_utc": "2026-02-26T11:40:35.992425+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/tight_spots_hard_to_sand-180_grit_for_detail_drywall_sanding-drywall-052.mp4",
+      "result": "success",
+      "video_id": "Y48azXwtTis"
     }
   ],
   "last_post": {
