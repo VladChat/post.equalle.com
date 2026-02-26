@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-02-25"
+    "manifest_index": 0,
+    "last_day": "2026-02-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1155,6 +1155,17 @@
       "comment_status": "commented",
       "comment_id": "1561934274921291_4232658196972988",
       "commented_ts_utc": "2026-02-25T15:22:03Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4",
+      "filename": "drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Patch Feels Raised? Level It With 120–150 Grit",
+      "description": "If a patch sits higher than the wall, start with 120 grit to knock it down, then switch to 150 grit to feather the edges and blend the repair. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-26T14:14:12Z",
+      "video_id": "1221183236830806"
     }
   },
   "runs": [
@@ -1660,6 +1671,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1561934274921291",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-26T14:14:12Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4",
+      "filename": "drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1221183236830806",
       "error": null
     }
   ],
