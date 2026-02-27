@@ -1931,7 +1931,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18110097271741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 6
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-27T14:40:50Z",
+      "comment_text": "Small circles help blend; straight passes help level. Are you going for a smooth finish or just prep?",
+      "comment_status": "commented",
+      "comment_id": "18068679029247434",
+      "commented_ts_utc": "2026-02-27T14:40:52Z"
     }
   },
   "runs": [
@@ -3006,6 +3016,15 @@
       "result": "commented",
       "comment_id": "18098015737745643",
       "template_idx": 15
+    },
+    {
+      "ts_utc": "2026-02-27T14:40:52Z",
+      "media_id": "17882332791465915",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_not_even-120_grit_for_leveling_mud_application-drywall-012.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18068679029247434",
+      "template_idx": 6
     }
   ]
 }
