@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-02-26"
+    "manifest_index": 1,
+    "last_day": "2026-02-27"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1176,6 +1176,17 @@
       "comment_status": "commented",
       "comment_id": "1221183236830806_973448628743571",
       "commented_ts_utc": "2026-02-26T15:06:53Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Dust_Nibs_in_the_Finish-320_Grit_for_Between-Coat_Sanding-wood-012.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Dust_Nibs_in_the_Finish-320_Grit_for_Between-Coat_Sanding-wood-012.mp4",
+      "filename": "Dust_Nibs_in_the_Finish-320_Grit_for_Between-Coat_Sanding-wood-012.mp4",
+      "manifest": "wood.json",
+      "title": "Dust Nibs in the Finish: 320 Grit Between-Coat Sanding",
+      "description": "Dust Nibs in the Finish? Use 320 grit for between-coat sanding. Lightly scuff sand between coats to knock down nibs and keep the next coat smooth. Use light pressure, keep the surface flat, and stop as soon as it feels even. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-02-27T14:04:17Z",
+      "video_id": "889683084053695"
     }
   },
   "runs": [
@@ -1690,6 +1701,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "1221183236830806",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-02-27T14:04:17Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Dust_Nibs_in_the_Finish-320_Grit_for_Between-Coat_Sanding-wood-012.mp4",
+      "filename": "Dust_Nibs_in_the_Finish-320_Grit_for_Between-Coat_Sanding-wood-012.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "889683084053695",
       "error": null
     }
   ],
