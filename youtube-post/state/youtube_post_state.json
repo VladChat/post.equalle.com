@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-26"
+    "last_day": "2026-02-27"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -566,6 +566,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RGRN3PL",
       "result": "success",
       "video_id": "Y48azXwtTis"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_corners_catch_the_light-220_grit_for_final_corner_prep-drywall-053.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_corners_catch_the_light-220_grit_for_final_corner_prep-drywall-053.mp4",
+      "filename": "drywall_corners_catch_the_light-220_grit_for_final_corner_prep-drywall-053.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Corners Catch the Light? Final Corner Prep With 220 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
+      "result": "success",
+      "video_id": "EtEm2B31tbc"
     }
   },
   "runs": [
@@ -905,6 +915,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/tight_spots_hard_to_sand-180_grit_for_detail_drywall_sanding-drywall-052.mp4",
       "result": "success",
       "video_id": "Y48azXwtTis"
+    },
+    {
+      "ts_utc": "2026-02-27T11:33:17.401274+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_corners_catch_the_light-220_grit_for_final_corner_prep-drywall-053.mp4",
+      "result": "success",
+      "video_id": "EtEm2B31tbc"
     }
   ],
   "last_post": {
