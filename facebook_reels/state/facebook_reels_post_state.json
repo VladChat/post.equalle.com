@@ -1186,7 +1186,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-27T14:04:17Z",
-      "video_id": "889683084053695"
+      "video_id": "889683084053695",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 5
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-27T14:51:33Z",
+      "comment_text": "After sanding, wipe dust and check under a bright light from the side. Do the lines disappear evenly?",
+      "comment_status": "commented",
+      "comment_id": "889683084053695_4367649946888820",
+      "commented_ts_utc": "2026-02-27T14:51:36Z"
     }
   },
   "runs": [
@@ -2172,6 +2182,15 @@
       "result": "commented",
       "comment_id": "1221183236830806_973448628743571",
       "template_idx": 14
+    },
+    {
+      "ts_utc": "2026-02-27T14:51:36Z",
+      "video_id": "889683084053695",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Dust_Nibs_in_the_Finish-320_Grit_for_Between-Coat_Sanding-wood-012.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "889683084053695_4367649946888820",
+      "template_idx": 5
     }
   ]
 }
