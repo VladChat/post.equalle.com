@@ -1207,7 +1207,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-02-28T13:43:47Z",
-      "video_id": "1401294341309577"
+      "video_id": "1401294341309577",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 8
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-28T14:53:21Z",
+      "comment_text": "Try a few lighter passes instead of one heavy pass—less chance of gouging. Are you seeing swirl marks?",
+      "comment_status": "commented",
+      "comment_id": "1401294341309577_846051118554394",
+      "commented_ts_utc": "2026-02-28T14:53:26Z"
     }
   },
   "runs": [
@@ -2211,6 +2221,15 @@
       "result": "commented",
       "comment_id": "889683084053695_4367649946888820",
       "template_idx": 5
+    },
+    {
+      "ts_utc": "2026-02-28T14:53:26Z",
+      "video_id": "1401294341309577",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_leveling-1500_grit_wet_sand_for_leveling_paint-wet-012.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1401294341309577_846051118554394",
+      "template_idx": 8
     }
   ]
 }
