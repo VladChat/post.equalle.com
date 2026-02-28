@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-27"
+    "last_day": "2026-02-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -576,6 +576,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
       "result": "success",
       "video_id": "EtEm2B31tbc"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/edges_look_overbuilt_with_mud-150_grit_for_trimming_drywall_edges-drywall-054.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_look_overbuilt_with_mud-150_grit_for_trimming_drywall_edges-drywall-054.mp4",
+      "filename": "edges_look_overbuilt_with_mud-150_grit_for_trimming_drywall_edges-drywall-054.mp4",
+      "manifest": "drywall.json",
+      "title": "Edges Look Overbuilt With Mud? Trim Drywall Edges With 150 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7T4FFL",
+      "result": "success",
+      "video_id": "JZadPPxcl7U"
     }
   },
   "runs": [
@@ -921,6 +931,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_corners_catch_the_light-220_grit_for_final_corner_prep-drywall-053.mp4",
       "result": "success",
       "video_id": "EtEm2B31tbc"
+    },
+    {
+      "ts_utc": "2026-02-28T11:20:15.970143+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_look_overbuilt_with_mud-150_grit_for_trimming_drywall_edges-drywall-054.mp4",
+      "result": "success",
+      "video_id": "JZadPPxcl7U"
     }
   ],
   "last_post": {
