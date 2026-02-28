@@ -1965,7 +1965,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18110186065741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 19
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-02-28T14:46:59Z",
+      "comment_text": "Before the next coat, clean the surface well so dust doesn’t telegraph through. Do you wipe down between coats?",
+      "comment_status": "commented",
+      "comment_id": "18105129775848139",
+      "commented_ts_utc": "2026-02-28T14:47:03Z"
     }
   },
   "runs": [
@@ -3060,6 +3070,15 @@
       "result": "commented",
       "comment_id": "18068679029247434",
       "template_idx": 6
+    },
+    {
+      "ts_utc": "2026-02-28T14:47:03Z",
+      "media_id": "18080282612581048",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Finish_Feels_Gritty-320_Grit_for_Smoothing_Between_Coats-wood-013.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "18105129775848139",
+      "template_idx": 19
     }
   ]
 }
