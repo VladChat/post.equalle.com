@@ -491,6 +491,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-02-27T11:48:17Z",
       "verify_after_ts": 1772194697.8269455
+    },
+    "JZadPPxcl7U": {
+      "comment_status": "commented_unverified",
+      "comment_id": "Ugxu_dXaglYj77TM-L54AaABAg",
+      "comment_text": "After sanding, wipe dust and check under a bright light from the side to reveal remaining lines and waves. Do the marks disappear evenly across the whole area?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-02-28T11:34:04Z",
+      "verify_after_ts": 1772280244.2691667
     }
   },
   "runs": [
@@ -850,6 +858,12 @@
       "video_id": "EtEm2B31tbc",
       "result": "commented_unverified",
       "comment_id": "UgwKd5mpZnqOgSiOlVV4AaABAg"
+    },
+    {
+      "ts": "2026-02-28T11:34:04Z",
+      "video_id": "JZadPPxcl7U",
+      "result": "commented_unverified",
+      "comment_id": "Ugxu_dXaglYj77TM-L54AaABAg"
     }
   ]
 }
