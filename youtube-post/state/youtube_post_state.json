@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-02-28"
+    "last_day": "2026-03-01"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -586,6 +586,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7T4FFL",
       "result": "success",
       "video_id": "JZadPPxcl7U"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/corner_repairs_not_blending_in-180_grit_for_corner_repair_blending-drywall-055.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/corner_repairs_not_blending_in-180_grit_for_corner_repair_blending-drywall-055.mp4",
+      "filename": "corner_repairs_not_blending_in-180_grit_for_corner_repair_blending-drywall-055.mp4",
+      "manifest": "drywall.json",
+      "title": "Corner Repairs Not Blending In? Blend Corner Repairs With 180 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-180",
+      "result": "success",
+      "video_id": "SuWKiG-QAWU"
     }
   },
   "runs": [
@@ -937,6 +947,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_look_overbuilt_with_mud-150_grit_for_trimming_drywall_edges-drywall-054.mp4",
       "result": "success",
       "video_id": "JZadPPxcl7U"
+    },
+    {
+      "ts_utc": "2026-03-01T11:21:11.219275+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/corner_repairs_not_blending_in-180_grit_for_corner_repair_blending-drywall-055.mp4",
+      "result": "success",
+      "video_id": "SuWKiG-QAWU"
     }
   ],
   "last_post": {
