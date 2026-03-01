@@ -1999,7 +1999,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18110277571741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-01T14:19:34Z",
+      "comment_text": "For wet-sanding work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "18328494769301444",
+      "commented_ts_utc": "2026-03-01T14:19:37Z"
     }
   },
   "runs": [
@@ -3114,6 +3124,15 @@
       "result": "commented",
       "comment_id": "18105129775848139",
       "template_idx": 19
+    },
+    {
+      "ts_utc": "2026-03-01T14:19:37Z",
+      "media_id": "17880387642471157",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18328494769301444",
+      "template_idx": 3
     }
   ]
 }
