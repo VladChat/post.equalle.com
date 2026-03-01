@@ -1228,7 +1228,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-01T13:46:59Z",
-      "video_id": "1212611614412415"
+      "video_id": "1212611614412415",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 11
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-01T14:37:23Z",
+      "comment_text": "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+      "comment_status": "commented",
+      "comment_id": "1212611614412415_677034792135171",
+      "commented_ts_utc": "2026-03-01T14:37:27Z"
     }
   },
   "runs": [
@@ -2250,6 +2260,15 @@
       "result": "commented",
       "comment_id": "1401294341309577_846051118554394",
       "template_idx": 8
+    },
+    {
+      "ts_utc": "2026-03-01T14:37:27Z",
+      "video_id": "1212611614412415",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_edges_still_visible-120_grit_for_feathering_rust_areas-metal-012.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "1212611614412415_677034792135171",
+      "template_idx": 11
     }
   ]
 }
