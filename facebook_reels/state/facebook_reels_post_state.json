@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-02-28"
+    "manifest_index": 3,
+    "last_day": "2026-03-01"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1218,6 +1218,17 @@
       "comment_status": "commented",
       "comment_id": "1401294341309577_846051118554394",
       "commented_ts_utc": "2026-02-28T14:53:26Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rust_edges_still_visible-120_grit_for_feathering_rust_areas-metal-012.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_edges_still_visible-120_grit_for_feathering_rust_areas-metal-012.mp4",
+      "filename": "rust_edges_still_visible-120_grit_for_feathering_rust_areas-metal-012.mp4",
+      "manifest": "metal.json",
+      "title": "Feather Rust Edges on Metal With 120 Grit",
+      "description": "Rust edges still visible after cleanup? Use 120 grit to feather the transition into clean metal so the repair blends smoothly. This step helps reduce edge lines under paint.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-01T13:46:59Z",
+      "video_id": "1212611614412415"
     }
   },
   "runs": [
@@ -1750,6 +1761,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "1401294341309577",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-01T13:46:59Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_edges_still_visible-120_grit_for_feathering_rust_areas-metal-012.mp4",
+      "filename": "rust_edges_still_visible-120_grit_for_feathering_rust_areas-metal-012.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "1212611614412415",
       "error": null
     }
   ],
