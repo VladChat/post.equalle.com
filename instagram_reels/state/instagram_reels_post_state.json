@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-02-28"
+    "manifest_index": 2,
+    "last_day": "2026-03-01"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -1976,6 +1976,30 @@
       "comment_status": "commented",
       "comment_id": "18105129775848139",
       "commented_ts_utc": "2026-02-28T14:47:03Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4",
+      "filename": "paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4",
+      "manifest": "wet.json",
+      "title": "Paint Looks Dull Before Polish? 3000 Grit Wet Sand Prep",
+      "description": "Paint looks dull before polishing? Wet sand with 3000 grit to refine the finish and reduce fine sanding lines so polishing cuts faster and more evenly. Keep it wet, use light pressure, wipe often, and inspect under a work light. Wet or dry use. — eQualle",
+      "caption": "Paint Looks Dull Before Polish? 3000 Grit Wet Sand Prep\n\nPaint looks dull before polishing? Wet sand with 3000 grit to refine the finish and reduce fine sanding lines so polishing cuts faster and more evenly. Keep it wet, use light pressure, wipe often, and inspect under a work light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-01T13:42:05Z",
+      "mode": "binary",
+      "container_id": "18110277571741317",
+      "media_id": "17880387642471157",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18110277571741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18110277571741317"
+      }
     }
   },
   "runs": [
@@ -2626,6 +2650,17 @@
       "filename": "Finish_Feels_Gritty-320_Grit_for_Smoothing_Between_Coats-wood-013.mp4",
       "container_id": "18110186065741317",
       "media_id": "18080282612581048",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-01T13:42:05Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wet.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4",
+      "filename": "paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4",
+      "container_id": "18110277571741317",
+      "media_id": "17880387642471157",
       "error": null
     }
   ],
