@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-02-28"
+    "manifest_index": 2,
+    "last_day": "2026-03-01"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -872,6 +872,20 @@
       "pin_id": "839428818089113878",
       "media_id": "5482571368081988326",
       "cover_image_url": "https://i.pinimg.com/1200x/07/ac/60/07ac60e5926b0e01b9a74b99947fe62d.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4",
+      "filename": "paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049944",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-3000-10-sheets",
+      "title": "Paint Looks Dull Before Polish? 3000 Grit Wet Sand Prep",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-01T10:01:16+00:00",
+      "pin_id": "839428818089133948",
+      "media_id": "5482760739280190325",
+      "cover_image_url": "https://i.pinimg.com/1200x/8e/cc/9b/8ecc9b679cb06ccee143abaccc3df295.jpg"
     }
   },
   "runs": [
@@ -1493,6 +1507,16 @@
       "result": "success",
       "pin_id": "839428818089113878",
       "media_id": "5482571368081988326",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-01T10:01:16+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4",
+      "filename": "paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818089133948",
+      "media_id": "5482760739280190325",
       "error": null
     }
   ]
