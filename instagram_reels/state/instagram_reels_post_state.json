@@ -2033,7 +2033,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18110375206741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 7
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-02T14:44:59Z",
+      "comment_text": "If you’re jumping grits, don’t skip too far—blend one step at a time. What grit did you start with?",
+      "comment_status": "commented",
+      "comment_id": "18011527244827175",
+      "commented_ts_utc": "2026-03-02T14:45:02Z"
     }
   },
   "runs": [
@@ -3168,6 +3178,15 @@
       "result": "commented",
       "comment_id": "18328494769301444",
       "template_idx": 3
+    },
+    {
+      "ts_utc": "2026-03-02T14:45:02Z",
+      "media_id": "18126070756562561",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_edges_still_visible-120_grit_for_feathering_rust_areas-metal-012.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18011527244827175",
+      "template_idx": 7
     }
   ]
 }
