@@ -507,6 +507,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-03-01T11:36:27Z",
       "verify_after_ts": 1772366787.6352606
+    },
+    "rB-9ZX5Rw5k": {
+      "comment_status": "commented_unverified",
+      "comment_id": "UgzPSb8TRpyGx9Mk0Nx4AaABAg",
+      "comment_text": "If the scratch pattern looks uneven, do a few light crosshatch passes and re-check under side light. Are you sanding wet or dry on surface?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-03-02T11:48:19Z",
+      "verify_after_ts": 1772453899.841747
     }
   },
   "runs": [
@@ -878,6 +886,12 @@
       "video_id": "SuWKiG-QAWU",
       "result": "commented_unverified",
       "comment_id": "Ugxa-kJzbr6MORdNrul4AaABAg"
+    },
+    {
+      "ts": "2026-03-02T11:48:19Z",
+      "video_id": "rB-9ZX5Rw5k",
+      "result": "commented_unverified",
+      "comment_id": "UgzPSb8TRpyGx9Mk0Nx4AaABAg"
     }
   ]
 }
