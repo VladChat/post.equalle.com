@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-01"
+    "last_day": "2026-03-02"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -596,6 +596,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-180",
       "result": "success",
       "video_id": "SuWKiG-QAWU"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_edges_feel_rough-150_grit_for_edge_smoothing-drywall-056.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_edges_feel_rough-150_grit_for_edge_smoothing-drywall-056.mp4",
+      "filename": "drywall_edges_feel_rough-150_grit_for_edge_smoothing-drywall-056.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Edges Feel Rough? Smooth Edges With 150 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RJZ3C39",
+      "result": "success",
+      "video_id": "rB-9ZX5Rw5k"
     }
   },
   "runs": [
@@ -953,6 +963,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/corner_repairs_not_blending_in-180_grit_for_corner_repair_blending-drywall-055.mp4",
       "result": "success",
       "video_id": "SuWKiG-QAWU"
+    },
+    {
+      "ts_utc": "2026-03-02T11:32:42.703342+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_edges_feel_rough-150_grit_for_edge_smoothing-drywall-056.mp4",
+      "result": "success",
+      "video_id": "rB-9ZX5Rw5k"
     }
   ],
   "last_post": {
