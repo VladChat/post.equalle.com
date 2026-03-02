@@ -1249,7 +1249,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-02T14:05:45Z",
-      "video_id": "706659275770194"
+      "video_id": "706659275770194",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-02T14:55:29Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "706659275770194_1933123804239751",
+      "commented_ts_utc": "2026-03-02T14:55:34Z"
     }
   },
   "runs": [
@@ -2289,6 +2299,15 @@
       "result": "commented",
       "comment_id": "1212611614412415_677034792135171",
       "template_idx": 11
+    },
+    {
+      "ts_utc": "2026-03-02T14:55:34Z",
+      "video_id": "706659275770194",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/uneven_plastic_after_repair-220_grit_for_blending_plastic_surface-plastic-012.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "706659275770194_1933123804239751",
+      "template_idx": 12
     }
   ]
 }
