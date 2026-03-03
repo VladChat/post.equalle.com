@@ -1,15 +1,14 @@
 {
-  "post_id": "325670187920349_1358297949645021",
+  "post_id": "325670187920349_1364199589054857",
   "product": {
     "source": "amazon",
-    "url": "https://www.amazon.com/gp/product/B0F9VR28HR",
-    "grit": 3000,
-    "pack": 10,
-    "anchor": "3000 Grit (Ultra-Fine)",
-    "grit_description": "Final polishing grit that produces a mirror-like finish on paint, resin, and metal. Used by professionals for detailing and restoration. Leaves an ultra-clear, high-gloss surface after wet or dry sanding.",
+    "url": "https://www.amazon.com/gp/product/B0CZ7R3MC1",
+    "grit": 60,
+    "pack": 25,
+    "anchor": "60 Grit (Coarse)",
+    "grit_description": "Extremely coarse Silicon Carbide abrasive for rapid material removal and shaping. Ideal for stripping paint, smoothing rough lumber, or cleaning rusted metal. Suitable for wet or dry sanding, it prepares surfaces for smoother grits like 80 or 100.",
     "contexts": [
-      "auto",
-      "polishing"
+      "metal"
     ]
   }
 }
