@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-03-02"
+    "manifest_index": 0,
+    "last_day": "2026-03-03"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1260,6 +1260,17 @@
       "comment_status": "commented",
       "comment_id": "706659275770194_1933123804239751",
       "commented_ts_utc": "2026-03-02T14:55:34Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/edges_of_mud_patch_too_sharp-150_grit_for_feathering_drywall_edges-drywall-014.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_of_mud_patch_too_sharp-150_grit_for_feathering_drywall_edges-drywall-014.mp4",
+      "filename": "edges_of_mud_patch_too_sharp-150_grit_for_feathering_drywall_edges-drywall-014.mp4",
+      "manifest": "drywall.json",
+      "title": "Edges of Mud Patch Too Sharp? Feather Drywall Edges With 150 Grit",
+      "description": "If patch edges feel sharp or visible, feather them with 150 grit to blend the transition into the wall before final primer and paint. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-03T14:04:11Z",
+      "video_id": "1541742283597549"
     }
   },
   "runs": [
@@ -1810,6 +1821,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "706659275770194",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-03T14:04:11Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_of_mud_patch_too_sharp-150_grit_for_feathering_drywall_edges-drywall-014.mp4",
+      "filename": "edges_of_mud_patch_too_sharp-150_grit_for_feathering_drywall_edges-drywall-014.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1541742283597549",
       "error": null
     }
   ],
