@@ -2067,7 +2067,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18110464102741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 17
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-03T14:58:19Z",
+      "comment_text": "Don’t chase one spot too long—blend the area wider and re-check. Are the edges still visible?",
+      "comment_status": "commented",
+      "comment_id": "18567832237047914",
+      "commented_ts_utc": "2026-03-03T14:58:21Z"
     }
   },
   "runs": [
@@ -3222,6 +3232,15 @@
       "result": "commented",
       "comment_id": "18011527244827175",
       "template_idx": 7
+    },
+    {
+      "ts_utc": "2026-03-03T14:58:21Z",
+      "media_id": "18000352748882763",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/uneven_plastic_after_repair-220_grit_for_blending_plastic_surface-plastic-012.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "18567832237047914",
+      "template_idx": 17
     }
   ]
 }
