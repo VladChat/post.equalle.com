@@ -1270,7 +1270,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-03T14:04:11Z",
-      "video_id": "1541742283597549"
+      "video_id": "1541742283597549",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 10
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-03T14:45:40Z",
+      "comment_text": "Quick check: if it still feels scratchy, you may need one grit lower for a short blend. Want a simple grit ladder?",
+      "comment_status": "commented",
+      "comment_id": "1541742283597549_808091524950977",
+      "commented_ts_utc": "2026-03-03T14:45:45Z"
     }
   },
   "runs": [
@@ -2328,6 +2338,15 @@
       "result": "commented",
       "comment_id": "706659275770194_1933123804239751",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-03-03T14:45:45Z",
+      "video_id": "1541742283597549",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_of_mud_patch_too_sharp-150_grit_for_feathering_drywall_edges-drywall-014.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1541742283597549_808091524950977",
+      "template_idx": 10
     }
   ]
 }
