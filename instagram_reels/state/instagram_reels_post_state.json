@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-03-03"
+    "manifest_index": 0,
+    "last_day": "2026-03-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -2078,6 +2078,30 @@
       "comment_status": "commented",
       "comment_id": "18567832237047914",
       "commented_ts_utc": "2026-03-03T14:58:21Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4",
+      "filename": "drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Patch Feels Raised? Level It With 120–150 Grit",
+      "description": "If a patch sits higher than the wall, start with 120 grit to knock it down, then switch to 150 grit to feather the edges and blend the repair. Sandpaper eQualle",
+      "caption": "Drywall Patch Feels Raised? Level It With 120–150 Grit\n\nIf a patch sits higher than the wall, start with 120 grit to knock it down, then switch to 150 grit to feather the edges and blend the repair. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-04T14:00:06Z",
+      "mode": "binary",
+      "container_id": "18110562787741317",
+      "media_id": "18109159276762700",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18110562787741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18110562787741317"
+      }
     }
   },
   "runs": [
@@ -2761,6 +2785,17 @@
       "filename": "uneven_plastic_after_repair-220_grit_for_blending_plastic_surface-plastic-012.mp4",
       "container_id": "18110464102741317",
       "media_id": "18000352748882763",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-04T14:00:06Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4",
+      "filename": "drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4",
+      "container_id": "18110562787741317",
+      "media_id": "18109159276762700",
       "error": null
     }
   ],
