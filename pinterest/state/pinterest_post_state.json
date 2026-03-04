@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-03-02"
+    "manifest_index": 4,
+    "last_day": "2026-03-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -900,6 +900,20 @@
       "pin_id": "839428818089152696",
       "media_id": "5482942798827170152",
       "cover_image_url": "https://i.pinimg.com/1200x/c3/da/c2/c3dac21a2018114ab445118968b2ec16.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_looks_dull_and_rough-220_grit_for_plastic_refinement-plastic-013.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_looks_dull_and_rough-220_grit_for_plastic_refinement-plastic-013.mp4",
+      "filename": "plastic_looks_dull_and_rough-220_grit_for_plastic_refinement-plastic-013.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049964",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
+      "title": "Plastic Looks Dull And Rough? Refine With 220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-04T08:55:12+00:00",
+      "pin_id": "839428818089192226",
+      "media_id": "5483296159111919540",
+      "cover_image_url": "https://i.pinimg.com/1200x/a3/3e/0e/a33e0e31a5f44735bc41526df59f6f1d.jpg"
     }
   },
   "runs": [
@@ -1541,6 +1555,16 @@
       "result": "success",
       "pin_id": "839428818089152696",
       "media_id": "5482942798827170152",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-04T08:55:12+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_looks_dull_and_rough-220_grit_for_plastic_refinement-plastic-013.mp4",
+      "filename": "plastic_looks_dull_and_rough-220_grit_for_plastic_refinement-plastic-013.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818089192226",
+      "media_id": "5483296159111919540",
       "error": null
     }
   ]
