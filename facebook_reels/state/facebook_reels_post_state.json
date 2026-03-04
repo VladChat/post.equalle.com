@@ -1291,7 +1291,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-04T14:02:55Z",
-      "video_id": "1548705209536769"
+      "video_id": "1548705209536769",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 16
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-04T14:30:22Z",
+      "comment_text": "If scratches stand out after paint/primer, it usually means the previous grit marks weren’t fully blended. What grit are you finishing with?",
+      "comment_status": "commented",
+      "comment_id": "1548705209536769_782933228199314",
+      "commented_ts_utc": "2026-03-04T14:30:28Z"
     }
   },
   "runs": [
@@ -2367,6 +2377,15 @@
       "result": "commented",
       "comment_id": "1541742283597549_808091524950977",
       "template_idx": 10
+    },
+    {
+      "ts_utc": "2026-03-04T14:30:28Z",
+      "video_id": "1548705209536769",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Finish_Feels_Gritty-320_Grit_for_Smoothing_Between_Coats-wood-013.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "1548705209536769_782933228199314",
+      "template_idx": 16
     }
   ]
 }
