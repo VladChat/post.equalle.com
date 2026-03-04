@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-03"
+    "last_day": "2026-03-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -616,6 +616,16 @@
       "destination_url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
       "result": "success",
       "video_id": "BpdJ1CzeZ5g"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/corners_not_smooth_enough-220_grit_for_fine_corner_sanding-drywall-058.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/corners_not_smooth_enough-220_grit_for_fine_corner_sanding-drywall-058.mp4",
+      "filename": "corners_not_smooth_enough-220_grit_for_fine_corner_sanding-drywall-058.mp4",
+      "manifest": "drywall.json",
+      "title": "Corners Not Smooth Enough? Fine Corner Sanding With 220 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RL3XSWS",
+      "result": "success",
+      "video_id": "qFBoL5EHwH4"
     }
   },
   "runs": [
@@ -985,6 +995,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/detail_repairs_stand_out-180_grit_for_small_area_blending-drywall-057.mp4",
       "result": "success",
       "video_id": "BpdJ1CzeZ5g"
+    },
+    {
+      "ts_utc": "2026-03-04T11:31:28.561318+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/corners_not_smooth_enough-220_grit_for_fine_corner_sanding-drywall-058.mp4",
+      "result": "success",
+      "video_id": "qFBoL5EHwH4"
     }
   ],
   "last_post": {
