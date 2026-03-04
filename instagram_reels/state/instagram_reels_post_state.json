@@ -2101,7 +2101,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18110562787741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 18
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-04T15:02:32Z",
+      "comment_text": "If you’re getting random deep lines, the sheet may be loaded or folded. Are you using fresh paper?",
+      "comment_status": "commented",
+      "comment_id": "17984783942958328",
+      "commented_ts_utc": "2026-03-04T15:02:35Z"
     }
   },
   "runs": [
@@ -3276,6 +3286,15 @@
       "result": "commented",
       "comment_id": "18567832237047914",
       "template_idx": 17
+    },
+    {
+      "ts_utc": "2026-03-04T15:02:35Z",
+      "media_id": "18109159276762700",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "17984783942958328",
+      "template_idx": 18
     }
   ]
 }
