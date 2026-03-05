@@ -2135,7 +2135,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18110653111741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 5
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-05T15:01:17Z",
+      "comment_text": "After sanding, wipe dust and check under a bright light from the side. Do the lines disappear evenly?",
+      "comment_status": "commented",
+      "comment_id": "17929404000219642",
+      "commented_ts_utc": "2026-03-05T15:01:20Z"
     }
   },
   "runs": [
@@ -3330,6 +3340,15 @@
       "result": "commented",
       "comment_id": "17984783942958328",
       "template_idx": 18
+    },
+    {
+      "ts_utc": "2026-03-05T15:01:20Z",
+      "media_id": "18426186295190413",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Tiny_Specks_in_Paint-320_Grit_for_Removing_Dust_Nibs-wood-014.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "17929404000219642",
+      "template_idx": 5
     }
   ]
 }
