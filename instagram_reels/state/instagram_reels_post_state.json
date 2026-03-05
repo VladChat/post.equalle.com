@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-03-04"
+    "manifest_index": 1,
+    "last_day": "2026-03-05"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -2112,6 +2112,30 @@
       "comment_status": "commented",
       "comment_id": "17984783942958328",
       "commented_ts_utc": "2026-03-04T15:02:35Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Tiny_Specks_in_Paint-320_Grit_for_Removing_Dust_Nibs-wood-014.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Tiny_Specks_in_Paint-320_Grit_for_Removing_Dust_Nibs-wood-014.mp4",
+      "filename": "Tiny_Specks_in_Paint-320_Grit_for_Removing_Dust_Nibs-wood-014.mp4",
+      "manifest": "wood.json",
+      "title": "Tiny Specks in Paint: 320 Grit Removing Dust Nibs",
+      "description": "Tiny Specks in Paint? Use 320 grit for removing dust nibs. Lightly scuff sand between coats to knock down nibs and keep the next coat smooth. Use light pressure, keep the surface flat, and stop as soon as it feels even. Wet or dry use. — eQualle",
+      "caption": "Tiny Specks in Paint: 320 Grit Removing Dust Nibs\n\nTiny Specks in Paint? Use 320 grit for removing dust nibs. Lightly scuff sand between coats to knock down nibs and keep the next coat smooth. Use light pressure, keep the surface flat, and stop as soon as it feels even. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-05T14:03:12Z",
+      "mode": "binary",
+      "container_id": "18110653111741317",
+      "media_id": "18426186295190413",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18110653111741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18110653111741317"
+      }
     }
   },
   "runs": [
@@ -2806,6 +2830,17 @@
       "filename": "drywall_patch_feels_raised-120-150_grit_for_patch_leveling-drywall-013.mp4",
       "container_id": "18110562787741317",
       "media_id": "18109159276762700",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-05T14:03:12Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wood.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Tiny_Specks_in_Paint-320_Grit_for_Removing_Dust_Nibs-wood-014.mp4",
+      "filename": "Tiny_Specks_in_Paint-320_Grit_for_Removing_Dust_Nibs-wood-014.mp4",
+      "container_id": "18110653111741317",
+      "media_id": "18426186295190413",
       "error": null
     }
   ],
