@@ -1312,7 +1312,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-05T14:05:43Z",
-      "video_id": "1728999318072991"
+      "video_id": "1728999318072991",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 14
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-05T15:03:50Z",
+      "comment_text": "If the surface heats up, slow down and lighten pressure. Are you sanding by hand or with a tool?",
+      "comment_status": "commented",
+      "comment_id": "1728999318072991_947734474275363",
+      "commented_ts_utc": "2026-03-05T15:03:55Z"
     }
   },
   "runs": [
@@ -2406,6 +2416,15 @@
       "result": "commented",
       "comment_id": "1548705209536769_782933228199314",
       "template_idx": 16
+    },
+    {
+      "ts_utc": "2026-03-05T15:03:55Z",
+      "video_id": "1728999318072991",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1728999318072991_947734474275363",
+      "template_idx": 14
     }
   ]
 }
