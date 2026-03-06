@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-05"
+    "last_day": "2026-03-06"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -636,6 +636,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-180",
       "result": "success",
       "video_id": "1WKRXMPaeaM"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/final_touch_needed_on_corners-220_grit_for_final_detail_prep-drywall-060.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/final_touch_needed_on_corners-220_grit_for_final_detail_prep-drywall-060.mp4",
+      "filename": "final_touch_needed_on_corners-220_grit_for_final_detail_prep-drywall-060.mp4",
+      "manifest": "drywall.json",
+      "title": "Final Touch Needed on Corners? Final Detail Prep With 220 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07QD2RZ63",
+      "result": "success",
+      "video_id": "6T0ciYwrF0s"
     }
   },
   "runs": [
@@ -1017,6 +1027,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_still_too_harsh-180-220_grit_for_controlled_edge_sanding-drywall-059.mp4",
       "result": "success",
       "video_id": "1WKRXMPaeaM"
+    },
+    {
+      "ts_utc": "2026-03-06T11:29:54.611818+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/final_touch_needed_on_corners-220_grit_for_final_detail_prep-drywall-060.mp4",
+      "result": "success",
+      "video_id": "6T0ciYwrF0s"
     }
   ],
   "last_post": {
