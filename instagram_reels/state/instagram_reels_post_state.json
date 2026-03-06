@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-03-05"
+    "manifest_index": 2,
+    "last_day": "2026-03-06"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -2146,6 +2146,30 @@
       "comment_status": "commented",
       "comment_id": "17929404000219642",
       "commented_ts_utc": "2026-03-05T15:01:20Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
+      "filename": "fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
+      "manifest": "wet.json",
+      "title": "Fine Scratches In Clear Coat? Refine With 2000 Grit Wet Sand",
+      "description": "Fine scratches in clear coat? Wet sand with 2000 grit to refine the scratch pattern before polishing. Keep the surface wet, use light pressure, sand in even passes, and wipe clean often to track progress under strong light. Wet or dry use. — eQualle",
+      "caption": "Fine Scratches In Clear Coat? Refine With 2000 Grit Wet Sand\n\nFine scratches in clear coat? Wet sand with 2000 grit to refine the scratch pattern before polishing. Keep the surface wet, use light pressure, sand in even passes, and wipe clean often to track progress under strong light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-06T13:57:28Z",
+      "mode": "binary",
+      "container_id": "18110746957741317",
+      "media_id": "17930119842054616",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18110746957741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18110746957741317"
+      }
     }
   },
   "runs": [
@@ -2851,6 +2875,17 @@
       "filename": "Tiny_Specks_in_Paint-320_Grit_for_Removing_Dust_Nibs-wood-014.mp4",
       "container_id": "18110653111741317",
       "media_id": "18426186295190413",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-06T13:57:28Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wet.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
+      "filename": "fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
+      "container_id": "18110746957741317",
+      "media_id": "17930119842054616",
       "error": null
     }
   ],
