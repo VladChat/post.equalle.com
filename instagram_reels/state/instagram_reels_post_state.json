@@ -2169,7 +2169,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18110746957741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 8
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-06T14:22:22Z",
+      "comment_text": "Try a few lighter passes instead of one heavy pass—less chance of gouging. Are you seeing swirl marks?",
+      "comment_status": "commented",
+      "comment_id": "18070096124536137",
+      "commented_ts_utc": "2026-03-06T14:22:26Z"
     }
   },
   "runs": [
@@ -3384,6 +3394,15 @@
       "result": "commented",
       "comment_id": "17929404000219642",
       "template_idx": 5
+    },
+    {
+      "ts_utc": "2026-03-06T14:22:26Z",
+      "media_id": "17930119842054616",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18070096124536137",
+      "template_idx": 8
     }
   ]
 }
