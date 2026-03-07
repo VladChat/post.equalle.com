@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-03-06"
+    "manifest_index": 2,
+    "last_day": "2026-03-07"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -942,6 +942,20 @@
       "pin_id": "839428818089231429",
       "media_id": "5483674003348460924",
       "cover_image_url": "https://i.pinimg.com/1200x/17/c9/36/17c93643467f5aa22eab1d2c3f1f5f36.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
+      "filename": "fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049944",
+      "destination_url": "https://www.amazon.com/gp/product/B07RFT53W6",
+      "title": "Fine Scratches In Clear Coat? Refine With 2000 Grit Wet Sand",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-07T08:58:30+00:00",
+      "pin_id": "839428818089248461",
+      "media_id": "5483840014022417809",
+      "cover_image_url": "https://i.pinimg.com/1200x/22/8e/77/228e778cb2f5b2240623d7bfff624167.jpg"
     }
   },
   "runs": [
@@ -1613,6 +1627,16 @@
       "result": "success",
       "pin_id": "839428818089231429",
       "media_id": "5483674003348460924",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-07T08:58:30+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
+      "filename": "fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818089248461",
+      "media_id": "5483840014022417809",
       "error": null
     }
   ]
