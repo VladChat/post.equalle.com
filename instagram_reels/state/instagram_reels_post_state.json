@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-03-06"
+    "manifest_index": 3,
+    "last_day": "2026-03-07"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -2180,6 +2180,30 @@
       "comment_status": "commented",
       "comment_id": "18070096124536137",
       "commented_ts_utc": "2026-03-06T14:22:26Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/metal_looks_pitted_after_rust_removal-120_grit_for_smoothing_rust_pits-metal-013.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_looks_pitted_after_rust_removal-120_grit_for_smoothing_rust_pits-metal-013.mp4",
+      "filename": "metal_looks_pitted_after_rust_removal-120_grit_for_smoothing_rust_pits-metal-013.mp4",
+      "manifest": "metal.json",
+      "title": "Smooth Rust Pits on Metal After Cleanup With 120 Grit",
+      "description": "Metal looks pitted after rust removal? Use 120 grit to smooth pit edges and refine the surface. Work gradually and avoid over-sanding the surrounding metal.",
+      "caption": "Smooth Rust Pits on Metal After Cleanup With 120 Grit\n\nMetal looks pitted after rust removal? Use 120 grit to smooth pit edges and refine the surface. Work gradually and avoid over-sanding the surrounding metal.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-07T13:41:49Z",
+      "mode": "binary",
+      "container_id": "18110838649741317",
+      "media_id": "17883083091368063",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18110838649741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18110838649741317"
+      }
     }
   },
   "runs": [
@@ -2896,6 +2920,17 @@
       "filename": "fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
       "container_id": "18110746957741317",
       "media_id": "17930119842054616",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-07T13:41:49Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "metal.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_looks_pitted_after_rust_removal-120_grit_for_smoothing_rust_pits-metal-013.mp4",
+      "filename": "metal_looks_pitted_after_rust_removal-120_grit_for_smoothing_rust_pits-metal-013.mp4",
+      "container_id": "18110838649741317",
+      "media_id": "17883083091368063",
       "error": null
     }
   ],
