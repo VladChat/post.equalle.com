@@ -2203,7 +2203,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18110838649741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 2
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-07T14:39:42Z",
+      "comment_text": "Keep the block flat so you don’t dig grooves at the edges. Are you using a sanding block or hand-only?",
+      "comment_status": "commented",
+      "comment_id": "18362872303205401",
+      "commented_ts_utc": "2026-03-07T14:39:45Z"
     }
   },
   "runs": [
@@ -3438,6 +3448,15 @@
       "result": "commented",
       "comment_id": "18070096124536137",
       "template_idx": 8
+    },
+    {
+      "ts_utc": "2026-03-07T14:39:45Z",
+      "media_id": "17883083091368063",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_looks_pitted_after_rust_removal-120_grit_for_smoothing_rust_pits-metal-013.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18362872303205401",
+      "template_idx": 2
     }
   ]
 }
