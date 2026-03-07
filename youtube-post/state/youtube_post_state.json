@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-06"
+    "last_day": "2026-03-07"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -646,6 +646,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QD2RZ63",
       "result": "success",
       "video_id": "6T0ciYwrF0s"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4",
+      "filename": "Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4",
+      "manifest": "wood.json",
+      "title": "Paint Peeling on Wood: 180 Grit Wood Paint Prep",
+      "destination_url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "result": "success",
+      "video_id": "a9orGkffLjM"
     }
   },
   "runs": [
@@ -1033,6 +1043,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/final_touch_needed_on_corners-220_grit_for_final_detail_prep-drywall-060.mp4",
       "result": "success",
       "video_id": "6T0ciYwrF0s"
+    },
+    {
+      "ts_utc": "2026-03-07T11:21:01.017282+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4",
+      "result": "success",
+      "video_id": "a9orGkffLjM"
     }
   ],
   "last_post": {
