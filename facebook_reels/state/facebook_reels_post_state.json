@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-03-07"
+    "manifest_index": 0,
+    "last_day": "2026-03-08"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1365,6 +1365,17 @@
       "comment_status": "commented",
       "comment_id": "1211723444283955_2624057131302169",
       "commented_ts_utc": "2026-03-07T14:24:59Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_not_smooth_enough-150_grit_for_final_joint_prep-drywall-015.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_not_smooth_enough-150_grit_for_final_joint_prep-drywall-015.mp4",
+      "filename": "drywall_surface_not_smooth_enough-150_grit_for_final_joint_prep-drywall-015.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Not Smooth Enough? Final Joint Prep With 150 Grit",
+      "description": "If the surface still feels uneven, sand lightly with 150 grit to refine joints and feather edges before primer and paint. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-08T13:47:50Z",
+      "video_id": "925756840416030"
     }
   },
   "runs": [
@@ -1960,6 +1971,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1211723444283955",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-08T13:47:50Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_not_smooth_enough-150_grit_for_final_joint_prep-drywall-015.mp4",
+      "filename": "drywall_surface_not_smooth_enough-150_grit_for_final_joint_prep-drywall-015.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "925756840416030",
       "error": null
     }
   ],
