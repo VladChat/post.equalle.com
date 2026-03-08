@@ -2237,7 +2237,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18110945986741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 18
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-08T14:35:30Z",
+      "comment_text": "If you’re getting random deep lines, the sheet may be loaded or folded. Are you using fresh paper?",
+      "comment_status": "commented",
+      "comment_id": "18566334598003398",
+      "commented_ts_utc": "2026-03-08T14:35:32Z"
     }
   },
   "runs": [
@@ -3492,6 +3502,15 @@
       "result": "commented",
       "comment_id": "18362872303205401",
       "template_idx": 2
+    },
+    {
+      "ts_utc": "2026-03-08T14:35:32Z",
+      "media_id": "17953033275095975",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_looks_dull_and_rough-220_grit_for_plastic_refinement-plastic-013.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "18566334598003398",
+      "template_idx": 18
     }
   ]
 }
