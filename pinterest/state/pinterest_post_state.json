@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-03-07"
+    "manifest_index": 3,
+    "last_day": "2026-03-08"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -956,6 +956,20 @@
       "pin_id": "839428818089248461",
       "media_id": "5483840014022417809",
       "cover_image_url": "https://i.pinimg.com/1200x/22/8e/77/228e778cb2f5b2240623d7bfff624167.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/metal_looks_pitted_after_rust_removal-120_grit_for_smoothing_rust_pits-metal-013.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_looks_pitted_after_rust_removal-120_grit_for_smoothing_rust_pits-metal-013.mp4",
+      "filename": "metal_looks_pitted_after_rust_removal-120_grit_for_smoothing_rust_pits-metal-013.mp4",
+      "manifest": "metal.json",
+      "board_id": "839428886736049946",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-120",
+      "title": "Smooth Rust Pits on Metal After Cleanup With 120 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-08T10:04:39+00:00",
+      "pin_id": "839428818089269676",
+      "media_id": "5484029242673007697",
+      "cover_image_url": "https://i.pinimg.com/1200x/a3/b4/46/a3b4466ad5047755a8812f900e8935a7.jpg"
     }
   },
   "runs": [
@@ -1637,6 +1651,16 @@
       "result": "success",
       "pin_id": "839428818089248461",
       "media_id": "5483840014022417809",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-08T10:04:39+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_looks_pitted_after_rust_removal-120_grit_for_smoothing_rust_pits-metal-013.mp4",
+      "filename": "metal_looks_pitted_after_rust_removal-120_grit_for_smoothing_rust_pits-metal-013.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "pin_id": "839428818089269676",
+      "media_id": "5484029242673007697",
       "error": null
     }
   ]
