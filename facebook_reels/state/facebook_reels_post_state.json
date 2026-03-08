@@ -1375,7 +1375,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-08T13:47:50Z",
-      "video_id": "925756840416030"
+      "video_id": "925756840416030",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 2
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-08T14:50:25Z",
+      "comment_text": "Keep the block flat so you don’t dig grooves at the edges. Are you using a sanding block or hand-only?",
+      "comment_status": "commented",
+      "comment_id": "925756840416030_1491278152521448",
+      "commented_ts_utc": "2026-03-08T14:50:32Z"
     }
   },
   "runs": [
@@ -2523,6 +2533,15 @@
       "result": "commented",
       "comment_id": "1211723444283955_2624057131302169",
       "template_idx": 5
+    },
+    {
+      "ts_utc": "2026-03-08T14:50:32Z",
+      "video_id": "925756840416030",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_not_smooth_enough-150_grit_for_final_joint_prep-drywall-015.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "925756840416030_1491278152521448",
+      "template_idx": 2
     }
   ]
 }
