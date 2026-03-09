@@ -2271,7 +2271,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18111065710741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 7
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-09T14:48:47Z",
+      "comment_text": "If you’re jumping grits, don’t skip too far—blend one step at a time. What grit did you start with?",
+      "comment_status": "commented",
+      "comment_id": "18066546416306569",
+      "commented_ts_utc": "2026-03-09T14:48:49Z"
     }
   },
   "runs": [
@@ -3546,6 +3556,15 @@
       "result": "commented",
       "comment_id": "18566334598003398",
       "template_idx": 18
+    },
+    {
+      "ts_utc": "2026-03-09T14:48:49Z",
+      "media_id": "18136535941500070",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_of_mud_patch_too_sharp-150_grit_for_feathering_drywall_edges-drywall-014.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18066546416306569",
+      "template_idx": 7
     }
   ]
 }
