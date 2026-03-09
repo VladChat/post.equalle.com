@@ -1396,7 +1396,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-09T14:11:26Z",
-      "video_id": "1239110165060667"
+      "video_id": "1239110165060667",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 1
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-09T15:21:01Z",
+      "comment_text": "If the scratch pattern looks uneven, do a few crosshatch passes and re-check. Sanding wet or dry?",
+      "comment_status": "commented",
+      "comment_id": "1239110165060667_1735301044522780",
+      "commented_ts_utc": "2026-03-09T15:21:06Z"
     }
   },
   "runs": [
@@ -2562,6 +2572,15 @@
       "result": "commented",
       "comment_id": "925756840416030_1491278152521448",
       "template_idx": 2
+    },
+    {
+      "ts_utc": "2026-03-09T15:21:06Z",
+      "video_id": "1239110165060667",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Tiny_Specks_in_Paint-320_Grit_for_Removing_Dust_Nibs-wood-014.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "1239110165060667_1735301044522780",
+      "template_idx": 1
     }
   ]
 }
