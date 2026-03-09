@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-03-08"
+    "manifest_index": 4,
+    "last_day": "2026-03-09"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -970,6 +970,20 @@
       "pin_id": "839428818089269676",
       "media_id": "5484029242673007697",
       "cover_image_url": "https://i.pinimg.com/1200x/a3/b4/46/a3b4466ad5047755a8812f900e8935a7.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/marks_left_from_coarse_grit-220_grit_for_plastic_scratch_refinement-plastic-014.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/marks_left_from_coarse_grit-220_grit_for_plastic_scratch_refinement-plastic-014.mp4",
+      "filename": "marks_left_from_coarse_grit-220_grit_for_plastic_scratch_refinement-plastic-014.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049964",
+      "destination_url": "https://www.amazon.com/gp/product/B07RL3XSWS",
+      "title": "Coarse Grit Marks Left? Refine Plastic With 220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-09T10:08:37+00:00",
+      "pin_id": "839428818089290798",
+      "media_id": "5484211256709675702",
+      "cover_image_url": "https://i.pinimg.com/1200x/60/13/ff/6013ffe267f92c229b2ea110f52e29eb.jpg"
     }
   },
   "runs": [
@@ -1661,6 +1675,16 @@
       "result": "success",
       "pin_id": "839428818089269676",
       "media_id": "5484029242673007697",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-09T10:08:37+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/marks_left_from_coarse_grit-220_grit_for_plastic_scratch_refinement-plastic-014.mp4",
+      "filename": "marks_left_from_coarse_grit-220_grit_for_plastic_scratch_refinement-plastic-014.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818089290798",
+      "media_id": "5484211256709675702",
       "error": null
     }
   ]
