@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-03-08"
+    "manifest_index": 1,
+    "last_day": "2026-03-09"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1386,6 +1386,17 @@
       "comment_status": "commented",
       "comment_id": "925756840416030_1491278152521448",
       "commented_ts_utc": "2026-03-08T14:50:32Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Tiny_Specks_in_Paint-320_Grit_for_Removing_Dust_Nibs-wood-014.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Tiny_Specks_in_Paint-320_Grit_for_Removing_Dust_Nibs-wood-014.mp4",
+      "filename": "Tiny_Specks_in_Paint-320_Grit_for_Removing_Dust_Nibs-wood-014.mp4",
+      "manifest": "wood.json",
+      "title": "Tiny Specks in Paint: 320 Grit Removing Dust Nibs",
+      "description": "Tiny Specks in Paint? Use 320 grit for removing dust nibs. Lightly scuff sand between coats to knock down nibs and keep the next coat smooth. Use light pressure, keep the surface flat, and stop as soon as it feels even. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-09T14:11:26Z",
+      "video_id": "1239110165060667"
     }
   },
   "runs": [
@@ -1990,6 +2001,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "925756840416030",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-09T14:11:26Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Tiny_Specks_in_Paint-320_Grit_for_Removing_Dust_Nibs-wood-014.mp4",
+      "filename": "Tiny_Specks_in_Paint-320_Grit_for_Removing_Dust_Nibs-wood-014.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "1239110165060667",
       "error": null
     }
   ],
