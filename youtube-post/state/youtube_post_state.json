@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-09"
+    "last_day": "2026-03-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -676,6 +676,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
       "result": "success",
       "video_id": "DyDQ9slf7ME"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Primer_Looks_Uneven-150_Grit_for_Wood_Primer_Prep-wood-004.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Primer_Looks_Uneven-150_Grit_for_Wood_Primer_Prep-wood-004.mp4",
+      "filename": "Primer_Looks_Uneven-150_Grit_for_Wood_Primer_Prep-wood-004.mp4",
+      "manifest": "wood.json",
+      "title": "Primer Looks Uneven: 150 Grit Wood Primer Prep",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7T4FFL",
+      "result": "success",
+      "video_id": "lXmUtblfUUI"
     }
   },
   "runs": [
@@ -1081,6 +1091,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Brush_Marks_Stand_Out_More-220_Grit_for_Paint_Prep_on_Wood-wood-003.mp4",
       "result": "success",
       "video_id": "DyDQ9slf7ME"
+    },
+    {
+      "ts_utc": "2026-03-10T11:33:40.391360+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Primer_Looks_Uneven-150_Grit_for_Wood_Primer_Prep-wood-004.mp4",
+      "result": "success",
+      "video_id": "lXmUtblfUUI"
     }
   ],
   "last_post": {
