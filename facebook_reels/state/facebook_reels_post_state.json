@@ -1417,7 +1417,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-10T14:06:45Z",
-      "video_id": "1974086553492466"
+      "video_id": "1974086553492466",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 17
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-10T14:49:28Z",
+      "comment_text": "Don’t chase one spot too long—blend the area wider and re-check. Are the edges still visible?",
+      "comment_status": "commented",
+      "comment_id": "1974086553492466_2108015059952562",
+      "commented_ts_utc": "2026-03-10T14:49:37Z"
     }
   },
   "runs": [
@@ -2601,6 +2611,15 @@
       "result": "commented",
       "comment_id": "1239110165060667_1735301044522780",
       "template_idx": 1
+    },
+    {
+      "ts_utc": "2026-03-10T14:49:37Z",
+      "video_id": "1974086553492466",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1974086553492466_2108015059952562",
+      "template_idx": 17
     }
   ]
 }
