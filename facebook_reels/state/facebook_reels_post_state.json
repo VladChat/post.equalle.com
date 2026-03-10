@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-03-09"
+    "manifest_index": 2,
+    "last_day": "2026-03-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1407,6 +1407,17 @@
       "comment_status": "commented",
       "comment_id": "1239110165060667_1735301044522780",
       "commented_ts_utc": "2026-03-09T15:21:06Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
+      "filename": "fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
+      "manifest": "wet.json",
+      "title": "Fine Scratches In Clear Coat? Refine With 2000 Grit Wet Sand",
+      "description": "Fine scratches in clear coat? Wet sand with 2000 grit to refine the scratch pattern before polishing. Keep the surface wet, use light pressure, sand in even passes, and wipe clean often to track progress under strong light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-10T14:06:45Z",
+      "video_id": "1974086553492466"
     }
   },
   "runs": [
@@ -2020,6 +2031,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "1239110165060667",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-10T14:06:45Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
+      "filename": "fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "1974086553492466",
       "error": null
     }
   ],
