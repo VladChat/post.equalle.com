@@ -2305,7 +2305,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18111177091741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 11
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-10T14:31:06Z",
+      "comment_text": "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+      "comment_status": "commented",
+      "comment_id": "18122858854604979",
+      "commented_ts_utc": "2026-03-10T14:31:09Z"
     }
   },
   "runs": [
@@ -3600,6 +3610,15 @@
       "result": "commented",
       "comment_id": "18066546416306569",
       "template_idx": 7
+    },
+    {
+      "ts_utc": "2026-03-10T14:31:09Z",
+      "media_id": "18097994023748936",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Not_Smooth_After_Primer-220_Grit_for_Sanding_Primer_Coat-wood-015.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "18122858854604979",
+      "template_idx": 11
     }
   ]
 }
