@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-03-09"
+    "manifest_index": 1,
+    "last_day": "2026-03-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -2282,6 +2282,30 @@
       "comment_status": "commented",
       "comment_id": "18066546416306569",
       "commented_ts_utc": "2026-03-09T14:48:49Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Surface_Not_Smooth_After_Primer-220_Grit_for_Sanding_Primer_Coat-wood-015.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Not_Smooth_After_Primer-220_Grit_for_Sanding_Primer_Coat-wood-015.mp4",
+      "filename": "Surface_Not_Smooth_After_Primer-220_Grit_for_Sanding_Primer_Coat-wood-015.mp4",
+      "manifest": "wood.json",
+      "title": "Surface Not Smooth After Primer: 220 Grit Sanding Primer Coat",
+      "description": "Surface Not Smooth After Primer? Use 220 grit for sanding primer coat. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "caption": "Surface Not Smooth After Primer: 220 Grit Sanding Primer Coat\n\nSurface Not Smooth After Primer? Use 220 grit for sanding primer coat. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-10T14:03:33Z",
+      "mode": "binary",
+      "container_id": "18111177091741317",
+      "media_id": "18097994023748936",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18111177091741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18111177091741317"
+      }
     }
   },
   "runs": [
@@ -3031,6 +3055,17 @@
       "filename": "edges_of_mud_patch_too_sharp-150_grit_for_feathering_drywall_edges-drywall-014.mp4",
       "container_id": "18111065710741317",
       "media_id": "18136535941500070",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-10T14:03:33Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wood.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Not_Smooth_After_Primer-220_Grit_for_Sanding_Primer_Coat-wood-015.mp4",
+      "filename": "Surface_Not_Smooth_After_Primer-220_Grit_for_Sanding_Primer_Coat-wood-015.mp4",
+      "container_id": "18111177091741317",
+      "media_id": "18097994023748936",
       "error": null
     }
   ],
