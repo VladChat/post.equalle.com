@@ -2339,7 +2339,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18111268426741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 6
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-11T14:18:06Z",
+      "comment_text": "Small circles help blend; straight passes help level. Are you going for a smooth finish or just prep?",
+      "comment_status": "commented",
+      "comment_id": "18090009821146599",
+      "commented_ts_utc": "2026-03-11T14:18:08Z"
     }
   },
   "runs": [
@@ -3654,6 +3664,15 @@
       "result": "commented",
       "comment_id": "18122858854604979",
       "template_idx": 11
+    },
+    {
+      "ts_utc": "2026-03-11T14:18:08Z",
+      "media_id": "18081303920370255",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18090009821146599",
+      "template_idx": 6
     }
   ]
 }
