@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-03-10"
+    "manifest_index": 2,
+    "last_day": "2026-03-11"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -2316,6 +2316,30 @@
       "comment_status": "commented",
       "comment_id": "18122858854604979",
       "commented_ts_utc": "2026-03-10T14:31:09Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4",
+      "filename": "clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4",
+      "manifest": "wet.json",
+      "title": "Clear Coat Not Glossy Enough? 3000 Grit Wet Sand For Prep",
+      "description": "Clear coat not glossy enough after correction? Wet sand with 3000 grit to refine the finish before final polishing. Keep the surface wet, use light pressure, crosshatch passes, and wipe often to inspect reflection and scratch pattern. Wet or dry use. — eQualle",
+      "caption": "Clear Coat Not Glossy Enough? 3000 Grit Wet Sand For Prep\n\nClear coat not glossy enough after correction? Wet sand with 3000 grit to refine the finish before final polishing. Keep the surface wet, use light pressure, crosshatch passes, and wipe often to inspect reflection and scratch pattern. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-11T14:08:11Z",
+      "mode": "binary",
+      "container_id": "18111268426741317",
+      "media_id": "18081303920370255",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18111268426741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18111268426741317"
+      }
     }
   },
   "runs": [
@@ -3076,6 +3100,17 @@
       "filename": "Surface_Not_Smooth_After_Primer-220_Grit_for_Sanding_Primer_Coat-wood-015.mp4",
       "container_id": "18111177091741317",
       "media_id": "18097994023748936",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-11T14:08:11Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wet.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4",
+      "filename": "clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4",
+      "container_id": "18111268426741317",
+      "media_id": "18081303920370255",
       "error": null
     }
   ],
