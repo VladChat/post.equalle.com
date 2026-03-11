@@ -1438,7 +1438,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-11T14:11:08Z",
-      "video_id": "1329293075625606"
+      "video_id": "1329293075625606",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-11T14:29:02Z",
+      "comment_text": "Light pressure with 80 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "1329293075625606_803440158854584",
+      "commented_ts_utc": "2026-03-11T14:29:07Z"
     }
   },
   "runs": [
@@ -2640,6 +2650,15 @@
       "result": "commented",
       "comment_id": "1974086553492466_2108015059952562",
       "template_idx": 17
+    },
+    {
+      "ts_utc": "2026-03-11T14:29:07Z",
+      "video_id": "1329293075625606",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_under_old_paint-80_grit_for_stripping_rusted_paint_areas-metal-014.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "1329293075625606_803440158854584",
+      "template_idx": 0
     }
   ]
 }
