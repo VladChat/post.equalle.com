@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-03-10"
+    "manifest_index": 1,
+    "last_day": "2026-03-11"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -998,6 +998,20 @@
       "pin_id": "839428818089310821",
       "media_id": "5484401538602434185",
       "cover_image_url": "https://i.pinimg.com/1200x/f4/30/45/f43045bc6bec94285c1adfd60ac8c007.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Raised_Texture_After_Painting-320_Grit_for_Leveling_Between_Coats-wood-016.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Raised_Texture_After_Painting-320_Grit_for_Leveling_Between_Coats-wood-016.mp4",
+      "filename": "Raised_Texture_After_Painting-320_Grit_for_Leveling_Between_Coats-wood-016.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://www.amazon.com/gp/product/B07QD1PR32",
+      "title": "Raised Texture After Painting: 320 Grit Leveling Between Coats",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-11T08:58:31+00:00",
+      "pin_id": "839428818089328452",
+      "media_id": "5484564791502643392",
+      "cover_image_url": "https://i.pinimg.com/1200x/8b/2f/30/8b2f30c5c6168a6a8c0bc2b9113c5bb8.jpg"
     }
   },
   "runs": [
@@ -1709,6 +1723,16 @@
       "result": "success",
       "pin_id": "839428818089310821",
       "media_id": "5484401538602434185",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-11T08:58:31+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Raised_Texture_After_Painting-320_Grit_for_Leveling_Between_Coats-wood-016.mp4",
+      "filename": "Raised_Texture_After_Painting-320_Grit_for_Leveling_Between_Coats-wood-016.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818089328452",
+      "media_id": "5484564791502643392",
       "error": null
     }
   ]
