@@ -2373,7 +2373,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18111410932741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 2
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-12T14:35:32Z",
+      "comment_text": "Keep the block flat so you don’t dig grooves at the edges. Are you using a sanding block or hand-only?",
+      "comment_status": "commented",
+      "comment_id": "18096501596291119",
+      "commented_ts_utc": "2026-03-12T14:35:34Z"
     }
   },
   "runs": [
@@ -3708,6 +3718,15 @@
       "result": "commented",
       "comment_id": "18090009821146599",
       "template_idx": 6
+    },
+    {
+      "ts_utc": "2026-03-12T14:35:34Z",
+      "media_id": "17968079259031574",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_under_old_paint-80_grit_for_stripping_rusted_paint_areas-metal-014.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18096501596291119",
+      "template_idx": 2
     }
   ]
 }
