@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-03-11"
+    "manifest_index": 2,
+    "last_day": "2026-03-12"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1012,6 +1012,20 @@
       "pin_id": "839428818089328452",
       "media_id": "5484564791502643392",
       "cover_image_url": "https://i.pinimg.com/1200x/8b/2f/30/8b2f30c5c6168a6a8c0bc2b9113c5bb8.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4",
+      "filename": "clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049944",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-3000",
+      "title": "Clear Coat Not Glossy Enough? 3000 Grit Wet Sand For Prep",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-12T10:26:01+00:00",
+      "pin_id": "839428818089348194",
+      "media_id": "5484757016054411687",
+      "cover_image_url": "https://i.pinimg.com/1200x/4e/0d/ca/4e0dca20aded8212dffb090dba14f992.jpg"
     }
   },
   "runs": [
@@ -1733,6 +1747,16 @@
       "result": "success",
       "pin_id": "839428818089328452",
       "media_id": "5484564791502643392",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-12T10:26:01+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4",
+      "filename": "clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818089348194",
+      "media_id": "5484757016054411687",
       "error": null
     }
   ]
