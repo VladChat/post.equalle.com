@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-03-11"
+    "manifest_index": 4,
+    "last_day": "2026-03-12"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1449,6 +1449,17 @@
       "comment_status": "commented",
       "comment_id": "1329293075625606_803440158854584",
       "commented_ts_utc": "2026-03-11T14:29:07Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/marks_left_from_coarse_grit-220_grit_for_plastic_scratch_refinement-plastic-014.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/marks_left_from_coarse_grit-220_grit_for_plastic_scratch_refinement-plastic-014.mp4",
+      "filename": "marks_left_from_coarse_grit-220_grit_for_plastic_scratch_refinement-plastic-014.mp4",
+      "manifest": "plastic.json",
+      "title": "Coarse Grit Marks Left? Refine Plastic With 220 Grit",
+      "description": "If coarse grit marks are still visible on plastic, switch to 220 grit to refine the scratches and even out the surface before paint or epoxy. Use light pressure, overlap passes, then wipe clean to inspect. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-12T14:08:35Z",
+      "video_id": "920600050806175"
     }
   },
   "runs": [
@@ -2080,6 +2091,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "1329293075625606",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-12T14:08:35Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/marks_left_from_coarse_grit-220_grit_for_plastic_scratch_refinement-plastic-014.mp4",
+      "filename": "marks_left_from_coarse_grit-220_grit_for_plastic_scratch_refinement-plastic-014.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "920600050806175",
       "error": null
     }
   ],
