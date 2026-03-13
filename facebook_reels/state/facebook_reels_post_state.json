@@ -1477,7 +1477,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-13T14:04:57Z",
-      "video_id": "945663648641007"
+      "video_id": "945663648641007",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 2
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-13T14:29:18Z",
+      "comment_text": "Keep the block flat so you don’t dig grooves at the edges. Are you using a sanding block or hand-only?",
+      "comment_status": "commented",
+      "comment_id": "945663648641007_1420611636412280",
+      "commented_ts_utc": "2026-03-13T14:29:25Z"
     }
   },
   "runs": [
@@ -2706,6 +2716,15 @@
       "result": "commented",
       "comment_id": "1329293075625606_803440158854584",
       "template_idx": 0
+    },
+    {
+      "ts_utc": "2026-03-13T14:29:25Z",
+      "video_id": "945663648641007",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/fresh_mud_shows_tool_marks-120_grit_for_removing_tool_marks-drywall-016.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "945663648641007_1420611636412280",
+      "template_idx": 2
     }
   ]
 }
