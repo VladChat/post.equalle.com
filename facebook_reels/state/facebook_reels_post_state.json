@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-03-12"
+    "manifest_index": 0,
+    "last_day": "2026-03-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1467,6 +1467,17 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-03-12T14:46:49Z",
       "comment_skipped_reason": "policy_10pct_skip"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/fresh_mud_shows_tool_marks-120_grit_for_removing_tool_marks-drywall-016.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/fresh_mud_shows_tool_marks-120_grit_for_removing_tool_marks-drywall-016.mp4",
+      "filename": "fresh_mud_shows_tool_marks-120_grit_for_removing_tool_marks-drywall-016.mp4",
+      "manifest": "drywall.json",
+      "title": "Fresh Mud Shows Tool Marks? Remove Marks With 120 Grit",
+      "description": "If dried mud shows knife lines, sand lightly with 120 grit to knock down tool marks and smooth the surface before your next coat. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-13T14:04:57Z",
+      "video_id": "945663648641007"
     }
   },
   "runs": [
@@ -2107,6 +2118,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "920600050806175",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-13T14:04:57Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/fresh_mud_shows_tool_marks-120_grit_for_removing_tool_marks-drywall-016.mp4",
+      "filename": "fresh_mud_shows_tool_marks-120_grit_for_removing_tool_marks-drywall-016.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "945663648641007",
       "error": null
     }
   ],
