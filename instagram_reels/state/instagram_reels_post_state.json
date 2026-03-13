@@ -2407,7 +2407,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18111578308741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 7
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-13T14:26:46Z",
+      "comment_text": "If you’re jumping grits, don’t skip too far—blend one step at a time. What grit did you start with?",
+      "comment_status": "commented",
+      "comment_id": "18084835016002256",
+      "commented_ts_utc": "2026-03-13T14:26:49Z"
     }
   },
   "runs": [
@@ -3762,6 +3772,15 @@
       "result": "commented",
       "comment_id": "18096501596291119",
       "template_idx": 2
+    },
+    {
+      "ts_utc": "2026-03-13T14:26:49Z",
+      "media_id": "17859480066655945",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/marks_left_from_coarse_grit-220_grit_for_plastic_scratch_refinement-plastic-014.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "18084835016002256",
+      "template_idx": 7
     }
   ]
 }
