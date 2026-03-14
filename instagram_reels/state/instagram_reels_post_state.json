@@ -2441,7 +2441,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18111741148741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 16
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-14T14:34:08Z",
+      "comment_text": "If scratches stand out after paint/primer, it usually means the previous grit marks weren’t fully blended. What grit are you finishing with?",
+      "comment_status": "commented",
+      "comment_id": "17965262388018901",
+      "commented_ts_utc": "2026-03-14T14:34:10Z"
     }
   },
   "runs": [
@@ -3816,6 +3826,15 @@
       "result": "commented",
       "comment_id": "18084835016002256",
       "template_idx": 7
+    },
+    {
+      "ts_utc": "2026-03-14T14:34:10Z",
+      "media_id": "18084824527996686",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_not_smooth_enough-150_grit_for_final_joint_prep-drywall-015.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "17965262388018901",
+      "template_idx": 16
     }
   ]
 }
