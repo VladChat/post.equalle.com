@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-13"
+    "last_day": "2026-03-14"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -716,6 +716,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-220",
       "result": "success",
       "video_id": "P9Ws4umCAII"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4",
+      "filename": "Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4",
+      "manifest": "wood.json",
+      "title": "Wood Feels Fuzzy After Sanding: 220 Grit Final Sand With Grain",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8DFS6T",
+      "result": "success",
+      "video_id": "Bq1ReWEeLAs"
     }
   },
   "runs": [
@@ -1145,6 +1155,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Scratches_Under_Paint-220_Grit_for_Final_Paint_Prep-wood-007.mp4",
       "result": "success",
       "video_id": "P9Ws4umCAII"
+    },
+    {
+      "ts_utc": "2026-03-14T11:25:17.511310+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4",
+      "result": "success",
+      "video_id": "Bq1ReWEeLAs"
     }
   ],
   "last_post": {
