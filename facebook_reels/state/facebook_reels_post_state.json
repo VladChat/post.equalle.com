@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-03-13"
+    "manifest_index": 1,
+    "last_day": "2026-03-14"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1488,6 +1488,17 @@
       "comment_status": "commented",
       "comment_id": "945663648641007_1420611636412280",
       "commented_ts_utc": "2026-03-13T14:29:25Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Surface_Not_Smooth_After_Primer-220_Grit_for_Sanding_Primer_Coat-wood-015.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Not_Smooth_After_Primer-220_Grit_for_Sanding_Primer_Coat-wood-015.mp4",
+      "filename": "Surface_Not_Smooth_After_Primer-220_Grit_for_Sanding_Primer_Coat-wood-015.mp4",
+      "manifest": "wood.json",
+      "title": "Surface Not Smooth After Primer: 220 Grit Sanding Primer Coat",
+      "description": "Surface Not Smooth After Primer? Use 220 grit for sanding primer coat. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-14T13:53:04Z",
+      "video_id": "918346460982641"
     }
   },
   "runs": [
@@ -2137,6 +2148,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "945663648641007",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-14T13:53:04Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Not_Smooth_After_Primer-220_Grit_for_Sanding_Primer_Coat-wood-015.mp4",
+      "filename": "Surface_Not_Smooth_After_Primer-220_Grit_for_Sanding_Primer_Coat-wood-015.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "918346460982641",
       "error": null
     }
   ],
