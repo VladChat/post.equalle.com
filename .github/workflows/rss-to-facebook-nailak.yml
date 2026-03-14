@@ -1,9 +1,5 @@
 # ============================================================
 # File: .github/workflows/rss-to-facebook-nailak.yml
-# Purpose:
-#   - Read blog RSS from blog.nailak.com
-#   - Post next unpublished article to Nailak Facebook Page
-#   - Uses FB_PAGE_TOKEN_NAILAK GitHub Secret (page access token)
 # ============================================================
 
 name: RSS → Facebook Post (Nailak)
@@ -11,7 +7,7 @@ name: RSS → Facebook Post (Nailak)
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "0 17 * * *"   # Каждый день в 11:00 по Чикаго (17:00 UTC)
+    - cron: "0 17 * * 3"   # Каждую среду в 17:00 UTC (11:00 Chicago)
 
 permissions:
   contents: write
@@ -51,7 +47,6 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Подтягиваем свежие изменения, чтобы избежать "fetch first"
           git fetch origin
           git pull --rebase origin main || true
 
