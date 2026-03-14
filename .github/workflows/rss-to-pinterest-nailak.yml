@@ -9,8 +9,6 @@ name: RSS → Pinterest Pin (Nailak)
 
 on:
   workflow_dispatch: {}
-  schedule:
-    - cron: "0 15 * * *"   # Каждый день в 09:00 Chicago (15:00 UTC)
 
 permissions:
   contents: write
@@ -53,7 +51,6 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Avoid "fetch first" error
           git fetch origin
           git pull --rebase origin main || true
 
