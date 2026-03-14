@@ -3,22 +3,22 @@
 
 from __future__ import annotations
 
+import base64
 import json
 import os
-import time
+import random
 import tempfile
-import base64
+import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 import requests
-import random
 
 
 API_BASE = "https://api.pinterest.com/v5"
-OAUTH_TOKEN_URL = f"{API_BASE}/oauth/token"
+OAUTH_TOKEN_URL = "https://api.pinterest.com/v5/oauth/token"
 
 # Stable order (simple + predictable)
 MANIFEST_FILES_ORDER = ["drywall.json", "wood.json", "wet.json", "metal.json", "plastic.json"]
@@ -242,7 +242,6 @@ def _refresh_access_token() -> str:
       - PINTEREST_CLIENT_SECRET
       - PINTEREST_REFRESH_TOKEN
     """
-
     client_id = _env("PINTEREST_CLIENT_ID_EQUALLE") or _env("PINTEREST_CLIENT_ID")
     client_secret = _env("PINTEREST_CLIENT_SECRET_EQUALLE") or _env("PINTEREST_CLIENT_SECRET")
     refresh_token = _env("PINTEREST_REFRESH_TOKEN_EQUALLE") or _env("PINTEREST_REFRESH_TOKEN")
@@ -257,6 +256,7 @@ def _refresh_access_token() -> str:
         headers={
             "Authorization": f"Basic {basic}",
             "Content-Type": "application/x-www-form-urlencoded",
+            "Accept": "application/json",
         },
         data={
             "grant_type": "refresh_token",
@@ -283,7 +283,6 @@ def get_access_token() -> str:
     1) Refresh-token flow (recommended)
     2) Static tokens (fallback)
     """
-
     token = _refresh_access_token()
     if token:
         return token
@@ -367,7 +366,6 @@ def poll_media_status(token: str, media_id: str) -> str:
 def create_video_pin(token: str, item: PinItem, media_id: str) -> Dict[str, Any]:
     url = f"{API_BASE}/pins"
 
-    # IMPORTANT:
     # Pinterest requires a cover for video pins.
     # Simplest: provide cover_image_key_frame_time (seconds) so Pinterest generates cover from that frame.
     cover_time = random.randint(1, 7)
@@ -392,11 +390,8 @@ def create_video_pin(token: str, item: PinItem, media_id: str) -> Dict[str, Any]
         timeout=60,
     )
     if resp.status_code not in (200, 201):
-        raise RuntimeError(
-            f"pins/create failed: HTTP {resp.status_code}: {resp.text[:800]}"
-        )
+        raise RuntimeError(f"pins/create failed: HTTP {resp.status_code}: {resp.text[:800]}")
     return resp.json()
-
 
 
 def update_state_for_attempt(
@@ -506,9 +501,9 @@ def main() -> int:
                 break
             except RuntimeError as e:
                 last_err = str(e)
-                # Retry ONLY for the known temporary Pinterest block
-                if ("doesn't allow you to save Pins" in last_err) and attempt < 2:
-                    time.sleep(60 * (2 ** attempt))  # 60, 120, 240
+                # Retry only for the known temporary Pinterest block
+                if "doesn't allow you to save Pins" in last_err and attempt < 2:
+                    time.sleep(60 * (2 ** attempt))  # 60, 120
                     continue
                 raise
 
