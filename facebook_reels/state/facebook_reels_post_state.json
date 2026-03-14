@@ -1498,7 +1498,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-14T13:53:04Z",
-      "video_id": "918346460982641"
+      "video_id": "918346460982641",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-14T14:18:32Z",
+      "comment_text": "For wood work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "918346460982641_1591227082110282",
+      "commented_ts_utc": "2026-03-14T14:18:36Z"
     }
   },
   "runs": [
@@ -2745,6 +2755,15 @@
       "result": "commented",
       "comment_id": "945663648641007_1420611636412280",
       "template_idx": 2
+    },
+    {
+      "ts_utc": "2026-03-14T14:18:36Z",
+      "video_id": "918346460982641",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Not_Smooth_After_Primer-220_Grit_for_Sanding_Primer_Coat-wood-015.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "918346460982641_1591227082110282",
+      "template_idx": 3
     }
   ]
 }
