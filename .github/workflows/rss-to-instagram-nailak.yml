@@ -1,9 +1,5 @@
 # ============================================================
 # File: .github/workflows/rss-to-instagram-nailak.yml
-# Purpose:
-#   - Read blog RSS from blog.nailak.com
-#   - Post next unpublished article to Instagram Business (Nailak)
-#   - Uses FB_PAGE_TOKEN_NAILAK GitHub Secret (shared token)
 # ============================================================
 
 name: RSS → Instagram Post (Nailak)
@@ -11,8 +7,8 @@ name: RSS → Instagram Post (Nailak)
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "0 16 * * *"   # Каждый день в 10:00 по Чикаго (17:00 UTC)
-    
+    - cron: "0 16 * * 3"   # Каждую среду в 16:00 UTC (10:00 Chicago)
+
 permissions:
   contents: write
 
@@ -24,7 +20,7 @@ jobs:
       FB_PAGE_TOKEN_NAILAK: ${{ secrets.FB_PAGE_TOKEN_NAILAK }}
       BLOG_RSS_URL: https://blog.nailak.com/index.xml
       FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN_NAILAK }}
-      PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN_NAILAK }}   # используется instagram_poster
+      PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN_NAILAK }}
 
     steps:
       - name: Checkout repo
