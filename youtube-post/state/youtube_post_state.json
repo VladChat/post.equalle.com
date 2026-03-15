@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-14"
+    "last_day": "2026-03-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -726,6 +726,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ8DFS6T",
       "result": "success",
       "video_id": "Bq1ReWEeLAs"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/New_Boards_Feel_Too_Rough-120_Grit_for_Quick_Wood_Smoothing-wood-009.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/New_Boards_Feel_Too_Rough-120_Grit_for_Quick_Wood_Smoothing-wood-009.mp4",
+      "filename": "New_Boards_Feel_Too_Rough-120_Grit_for_Quick_Wood_Smoothing-wood-009.mp4",
+      "manifest": "wood.json",
+      "title": "New Boards Feel Too Rough: 120 Grit Quick Wood Smoothing",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-120-10-sheets",
+      "result": "success",
+      "video_id": "rHYNsLhtRTI"
     }
   },
   "runs": [
@@ -1161,6 +1171,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Wood_Feels_Fuzzy_After_Sanding-220_Grit_for_Final_Sand_With_Grain-wood-008.mp4",
       "result": "success",
       "video_id": "Bq1ReWEeLAs"
+    },
+    {
+      "ts_utc": "2026-03-15T11:27:06.921060+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/New_Boards_Feel_Too_Rough-120_Grit_for_Quick_Wood_Smoothing-wood-009.mp4",
+      "result": "success",
+      "video_id": "rHYNsLhtRTI"
     }
   ],
   "last_post": {
