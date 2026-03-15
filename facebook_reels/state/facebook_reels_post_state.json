@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-03-14"
+    "manifest_index": 2,
+    "last_day": "2026-03-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1509,6 +1509,17 @@
       "comment_status": "commented",
       "comment_id": "918346460982641_1591227082110282",
       "commented_ts_utc": "2026-03-14T14:18:36Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4",
+      "filename": "clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4",
+      "manifest": "wet.json",
+      "title": "Clear Coat Not Glossy Enough? 3000 Grit Wet Sand For Prep",
+      "description": "Clear coat not glossy enough after correction? Wet sand with 3000 grit to refine the finish before final polishing. Keep the surface wet, use light pressure, crosshatch passes, and wipe often to inspect reflection and scratch pattern. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-15T13:53:57Z",
+      "video_id": "4289821467924773"
     }
   },
   "runs": [
@@ -2167,6 +2178,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "918346460982641",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-15T13:53:57Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4",
+      "filename": "clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "4289821467924773",
       "error": null
     }
   ],
