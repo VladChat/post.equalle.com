@@ -1519,7 +1519,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-15T13:53:57Z",
-      "video_id": "4289821467924773"
+      "video_id": "4289821467924773",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 7
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-15T14:10:13Z",
+      "comment_text": "If you’re jumping grits, don’t skip too far—blend one step at a time. What grit did you start with?",
+      "comment_status": "commented",
+      "comment_id": "4289821467924773_819264561205631",
+      "commented_ts_utc": "2026-03-15T14:10:18Z"
     }
   },
   "runs": [
@@ -2784,6 +2794,15 @@
       "result": "commented",
       "comment_id": "918346460982641_1591227082110282",
       "template_idx": 3
+    },
+    {
+      "ts_utc": "2026-03-15T14:10:18Z",
+      "video_id": "4289821467924773",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_not_glossy_enough-3000_grit_wet_sanding_for_gloss_prep-wet-015.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "4289821467924773_819264561205631",
+      "template_idx": 7
     }
   ]
 }
