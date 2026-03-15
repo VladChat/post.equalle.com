@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-03-14"
+    "manifest_index": 0,
+    "last_day": "2026-03-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1054,6 +1054,20 @@
       "pin_id": "839428818089389425",
       "media_id": "5485153837750761232",
       "cover_image_url": "https://i.pinimg.com/1200x/1f/16/22/1f16227fb692cacc09dc2c7e2a2a46d4.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/fresh_mud_shows_tool_marks-120_grit_for_removing_tool_marks-drywall-016.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/fresh_mud_shows_tool_marks-120_grit_for_removing_tool_marks-drywall-016.mp4",
+      "filename": "fresh_mud_shows_tool_marks-120_grit_for_removing_tool_marks-drywall-016.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049941",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7VFK4N",
+      "title": "Fresh Mud Shows Tool Marks? Remove Marks With 120 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-15T10:15:51+00:00",
+      "pin_id": "839428818089403502",
+      "media_id": "5485299239076575103",
+      "cover_image_url": "https://i.pinimg.com/1200x/83/32/06/833206b6f7911cb25b4e65fdb0529a21.jpg"
     }
   },
   "runs": [
@@ -1805,6 +1819,16 @@
       "result": "success",
       "pin_id": "839428818089389425",
       "media_id": "5485153837750761232",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-15T10:15:51+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/fresh_mud_shows_tool_marks-120_grit_for_removing_tool_marks-drywall-016.mp4",
+      "filename": "fresh_mud_shows_tool_marks-120_grit_for_removing_tool_marks-drywall-016.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818089403502",
+      "media_id": "5485299239076575103",
       "error": null
     }
   ]
