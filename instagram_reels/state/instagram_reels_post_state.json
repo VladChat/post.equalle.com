@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-03-14"
+    "manifest_index": 1,
+    "last_day": "2026-03-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -2452,6 +2452,30 @@
       "comment_status": "commented",
       "comment_id": "17965262388018901",
       "commented_ts_utc": "2026-03-14T14:34:10Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Raised_Texture_After_Painting-320_Grit_for_Leveling_Between_Coats-wood-016.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Raised_Texture_After_Painting-320_Grit_for_Leveling_Between_Coats-wood-016.mp4",
+      "filename": "Raised_Texture_After_Painting-320_Grit_for_Leveling_Between_Coats-wood-016.mp4",
+      "manifest": "wood.json",
+      "title": "Raised Texture After Painting: 320 Grit Leveling Between Coats",
+      "description": "Raised Texture After Painting? Use 320 grit for leveling between coats. Lightly scuff sand between coats to knock down nibs and keep the next coat smooth. Use light pressure, keep the surface flat, and stop as soon as it feels even. Wet or dry use. — eQualle",
+      "caption": "Raised Texture After Painting: 320 Grit Leveling Between Coats\n\nRaised Texture After Painting? Use 320 grit for leveling between coats. Lightly scuff sand between coats to knock down nibs and keep the next coat smooth. Use light pressure, keep the surface flat, and stop as soon as it feels even. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-15T13:51:07Z",
+      "mode": "binary",
+      "container_id": "18111875611741317",
+      "media_id": "18097097350972345",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18111875611741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18111875611741317"
+      }
     }
   },
   "runs": [
@@ -3256,6 +3280,17 @@
       "filename": "drywall_surface_not_smooth_enough-150_grit_for_final_joint_prep-drywall-015.mp4",
       "container_id": "18111741148741317",
       "media_id": "18084824527996686",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-15T13:51:07Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wood.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Raised_Texture_After_Painting-320_Grit_for_Leveling_Between_Coats-wood-016.mp4",
+      "filename": "Raised_Texture_After_Painting-320_Grit_for_Leveling_Between_Coats-wood-016.mp4",
+      "container_id": "18111875611741317",
+      "media_id": "18097097350972345",
       "error": null
     }
   ],
