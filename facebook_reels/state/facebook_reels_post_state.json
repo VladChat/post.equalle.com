@@ -1540,7 +1540,14 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-16T14:24:03Z",
-      "video_id": "1429330618931274"
+      "video_id": "1429330618931274",
+      "comment_plan": {
+        "decision": "skip",
+        "template_idx": 12
+      },
+      "comment_status": "skipped",
+      "comment_skipped_ts_utc": "2026-03-16T15:02:01Z",
+      "comment_skipped_reason": "policy_10pct_skip"
     }
   },
   "runs": [
