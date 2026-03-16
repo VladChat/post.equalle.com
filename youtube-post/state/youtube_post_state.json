@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-15"
+    "last_day": "2026-03-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -736,6 +736,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-120-10-sheets",
       "result": "success",
       "video_id": "rHYNsLhtRTI"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Paint_Shows_Every_Line-180_Grit_for_Consistent_Wood_Prep-wood-010.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Shows_Every_Line-180_Grit_for_Consistent_Wood_Prep-wood-010.mp4",
+      "filename": "Paint_Shows_Every_Line-180_Grit_for_Consistent_Wood_Prep-wood-010.mp4",
+      "manifest": "wood.json",
+      "title": "Paint Shows Every Line: 180 Grit Consistent Wood Prep",
+      "destination_url": "https://www.amazon.com/gp/product/B07RGRN3PL",
+      "result": "success",
+      "video_id": "qjlfGHJRhug"
     }
   },
   "runs": [
@@ -1177,6 +1187,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/New_Boards_Feel_Too_Rough-120_Grit_for_Quick_Wood_Smoothing-wood-009.mp4",
       "result": "success",
       "video_id": "rHYNsLhtRTI"
+    },
+    {
+      "ts_utc": "2026-03-16T11:49:05.031228+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Shows_Every_Line-180_Grit_for_Consistent_Wood_Prep-wood-010.mp4",
+      "result": "success",
+      "video_id": "qjlfGHJRhug"
     }
   ],
   "last_post": {
