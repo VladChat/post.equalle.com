@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-03-15"
+    "manifest_index": 2,
+    "last_day": "2026-03-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -2486,6 +2486,30 @@
       "comment_status": "commented",
       "comment_id": "17956741842075014",
       "commented_ts_utc": "2026-03-15T14:55:24Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/spray_finish_looks_wavy-1500_grit_wet_sand_to_flatten_clear_coat-wet-016.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/spray_finish_looks_wavy-1500_grit_wet_sand_to_flatten_clear_coat-wet-016.mp4",
+      "filename": "spray_finish_looks_wavy-1500_grit_wet_sand_to_flatten_clear_coat-wet-016.mp4",
+      "manifest": "wet.json",
+      "title": "Spray Finish Looks Wavy? Flatten Clear Coat With 1500 Grit",
+      "description": "Spray finish looks wavy in clear coat? Wet sand with 1500 grit to flatten texture before refining and polishing. Keep it wet, use light pressure, crosshatch passes, and wipe clean often to check for remaining low spots. Wet or dry use. — eQualle",
+      "caption": "Spray Finish Looks Wavy? Flatten Clear Coat With 1500 Grit\n\nSpray finish looks wavy in clear coat? Wet sand with 1500 grit to flatten texture before refining and polishing. Keep it wet, use light pressure, crosshatch passes, and wipe clean often to check for remaining low spots. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-16T14:22:44Z",
+      "mode": "binary",
+      "container_id": "18112002022741317",
+      "media_id": "18351521569229813",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18112002022741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18112002022741317"
+      }
     }
   },
   "runs": [
@@ -3301,6 +3325,17 @@
       "filename": "Raised_Texture_After_Painting-320_Grit_for_Leveling_Between_Coats-wood-016.mp4",
       "container_id": "18111875611741317",
       "media_id": "18097097350972345",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-16T14:22:44Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wet.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/spray_finish_looks_wavy-1500_grit_wet_sand_to_flatten_clear_coat-wet-016.mp4",
+      "filename": "spray_finish_looks_wavy-1500_grit_wet_sand_to_flatten_clear_coat-wet-016.mp4",
+      "container_id": "18112002022741317",
+      "media_id": "18351521569229813",
       "error": null
     }
   ],
