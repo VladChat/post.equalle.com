@@ -2543,7 +2543,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18112130188741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 13
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-17T14:47:02Z",
+      "comment_text": "On metal, sanding dust can hide defects—wipe often and re-check. Do you see it only after wiping?",
+      "comment_status": "commented",
+      "comment_id": "18332886721300201",
+      "commented_ts_utc": "2026-03-17T14:47:06Z"
     }
   },
   "runs": [
@@ -3978,6 +3988,15 @@
       "result": "commented",
       "comment_id": "18087900866207969",
       "template_idx": 3
+    },
+    {
+      "ts_utc": "2026-03-17T14:47:06Z",
+      "media_id": "18111745312742754",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rusty_metal_not_ready_for_paint-120_grit_for_final_rust_prep-metal-015.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18332886721300201",
+      "template_idx": 13
     }
   ]
 }
