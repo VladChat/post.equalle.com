@@ -1558,7 +1558,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-17T14:21:12Z",
-      "video_id": "1379892140575276"
+      "video_id": "1379892140575276",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 15
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-17T15:33:52Z",
+      "comment_text": "A quick mist/wipe (for wet sanding) can show high spots fast. Are you using water or a lubricant?",
+      "comment_status": "commented",
+      "comment_id": "1379892140575276_971796065175395",
+      "commented_ts_utc": "2026-03-17T15:33:55Z"
     }
   },
   "runs": [
@@ -2850,6 +2860,15 @@
       "result": "commented",
       "comment_id": "4289821467924773_819264561205631",
       "template_idx": 7
+    },
+    {
+      "ts_utc": "2026-03-17T15:33:55Z",
+      "video_id": "1379892140575276",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_still_feels_grainy-220_grit_for_final_plastic_prep-plastic-015.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "1379892140575276_971796065175395",
+      "template_idx": 15
     }
   ]
 }
