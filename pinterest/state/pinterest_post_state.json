@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-03-16"
+    "manifest_index": 2,
+    "last_day": "2026-03-17"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1082,6 +1082,20 @@
       "pin_id": "839428818089423743",
       "media_id": "5485480573371753801",
       "cover_image_url": "https://i.pinimg.com/1200x/d4/4d/2f/d44d2ffe81a9e033ad3c484db7bfa839.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/spray_finish_looks_wavy-1500_grit_wet_sand_to_flatten_clear_coat-wet-016.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/spray_finish_looks_wavy-1500_grit_wet_sand_to_flatten_clear_coat-wet-016.mp4",
+      "filename": "spray_finish_looks_wavy-1500_grit_wet_sand_to_flatten_clear_coat-wet-016.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049944",
+      "destination_url": "https://www.amazon.com/gp/product/B07RFT4WDT",
+      "title": "Spray Finish Looks Wavy? Flatten Clear Coat With 1500 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-17T11:30:00+00:00",
+      "pin_id": "839428818089444305",
+      "media_id": "5485671028633963605",
+      "cover_image_url": "https://i.pinimg.com/1200x/9c/d8/8b/9cd88b09544a03226a1e5a162940727a.jpg"
     }
   },
   "runs": [
@@ -1853,6 +1867,16 @@
       "result": "success",
       "pin_id": "839428818089423743",
       "media_id": "5485480573371753801",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-17T11:30:00+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/spray_finish_looks_wavy-1500_grit_wet_sand_to_flatten_clear_coat-wet-016.mp4",
+      "filename": "spray_finish_looks_wavy-1500_grit_wet_sand_to_flatten_clear_coat-wet-016.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818089444305",
+      "media_id": "5485671028633963605",
       "error": null
     }
   ]
