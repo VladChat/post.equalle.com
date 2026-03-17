@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-16"
+    "last_day": "2026-03-17"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -746,6 +746,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RGRN3PL",
       "result": "success",
       "video_id": "qjlfGHJRhug"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Bumps_After_First_Coat-220_Grit_for_Sanding_Between_Coats-wood-011.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Bumps_After_First_Coat-220_Grit_for_Sanding_Between_Coats-wood-011.mp4",
+      "filename": "Bumps_After_First_Coat-220_Grit_for_Sanding_Between_Coats-wood-011.mp4",
+      "manifest": "wood.json",
+      "title": "Bumps After First Coat: 220 Grit Sanding Between Coats",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-220",
+      "result": "success",
+      "video_id": "5SlRWs5soMQ"
     }
   },
   "runs": [
@@ -1193,6 +1203,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Shows_Every_Line-180_Grit_for_Consistent_Wood_Prep-wood-010.mp4",
       "result": "success",
       "video_id": "qjlfGHJRhug"
+    },
+    {
+      "ts_utc": "2026-03-17T11:43:57.024655+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Bumps_After_First_Coat-220_Grit_for_Sanding_Between_Coats-wood-011.mp4",
+      "result": "success",
+      "video_id": "5SlRWs5soMQ"
     }
   ],
   "last_post": {
