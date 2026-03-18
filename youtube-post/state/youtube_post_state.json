@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-17"
+    "last_day": "2026-03-18"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -756,6 +756,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-220",
       "result": "success",
       "video_id": "5SlRWs5soMQ"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Dust_Nibs_in_the_Finish-320_Grit_for_Between-Coat_Sanding-wood-012.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Dust_Nibs_in_the_Finish-320_Grit_for_Between-Coat_Sanding-wood-012.mp4",
+      "filename": "Dust_Nibs_in_the_Finish-320_Grit_for_Between-Coat_Sanding-wood-012.mp4",
+      "manifest": "wood.json",
+      "title": "Dust Nibs in the Finish: 320 Grit Between-Coat Sanding",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7SLBB4",
+      "result": "success",
+      "video_id": "QyPhYZLndWU"
     }
   },
   "runs": [
@@ -1209,6 +1219,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Bumps_After_First_Coat-220_Grit_for_Sanding_Between_Coats-wood-011.mp4",
       "result": "success",
       "video_id": "5SlRWs5soMQ"
+    },
+    {
+      "ts_utc": "2026-03-18T11:47:26.375712+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Dust_Nibs_in_the_Finish-320_Grit_for_Between-Coat_Sanding-wood-012.mp4",
+      "result": "success",
+      "video_id": "QyPhYZLndWU"
     }
   ],
   "last_post": {
