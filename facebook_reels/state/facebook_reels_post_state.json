@@ -1579,7 +1579,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-18T14:24:48Z",
-      "video_id": "1491860719171785"
+      "video_id": "1491860719171785",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 6
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-18T15:29:01Z",
+      "comment_text": "Small circles help blend; straight passes help level. Are you going for a smooth finish or just prep?",
+      "comment_status": "commented",
+      "comment_id": "1491860719171785_1784059449240318",
+      "commented_ts_utc": "2026-03-18T15:29:05Z"
     }
   },
   "runs": [
@@ -2889,6 +2899,15 @@
       "result": "commented",
       "comment_id": "1379892140575276_971796065175395",
       "template_idx": 15
+    },
+    {
+      "ts_utc": "2026-03-18T15:29:05Z",
+      "video_id": "1491860719171785",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1491860719171785_1784059449240318",
+      "template_idx": 6
     }
   ]
 }
