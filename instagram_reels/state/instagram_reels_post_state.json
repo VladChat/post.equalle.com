@@ -2577,7 +2577,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18112262851741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 14
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-18T14:57:53Z",
+      "comment_text": "If the surface heats up, slow down and lighten pressure. Are you sanding by hand or with a tool?",
+      "comment_status": "commented",
+      "comment_id": "18077239406389147",
+      "commented_ts_utc": "2026-03-18T14:57:55Z"
     }
   },
   "runs": [
@@ -4032,6 +4042,15 @@
       "result": "commented",
       "comment_id": "18332886721300201",
       "template_idx": 13
+    },
+    {
+      "ts_utc": "2026-03-18T14:57:55Z",
+      "media_id": "18071863049207213",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_still_feels_grainy-220_grit_for_final_plastic_prep-plastic-015.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "18077239406389147",
+      "template_idx": 14
     }
   ]
 }
