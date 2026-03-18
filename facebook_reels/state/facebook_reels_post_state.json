@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-03-17"
+    "manifest_index": 0,
+    "last_day": "2026-03-18"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1569,6 +1569,17 @@
       "comment_status": "commented",
       "comment_id": "1379892140575276_971796065175395",
       "commented_ts_utc": "2026-03-17T15:33:55Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4",
+      "filename": "drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Seams Won’t Disappear? Blend Seams With 150 Grit",
+      "description": "If seams keep showing, sand the joint edges with 150 grit to feather the transition and blend the compound into the wall before primer. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-18T14:24:48Z",
+      "video_id": "1491860719171785"
     }
   },
   "runs": [
@@ -2254,6 +2265,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1379892140575276",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-18T14:24:48Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4",
+      "filename": "drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1491860719171785",
       "error": null
     }
   ],
