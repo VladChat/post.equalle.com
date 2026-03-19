@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-18"
+    "last_day": "2026-03-19"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -766,6 +766,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7SLBB4",
       "result": "success",
       "video_id": "QyPhYZLndWU"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Finish_Feels_Gritty-320_Grit_for_Smoothing_Between_Coats-wood-013.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Finish_Feels_Gritty-320_Grit_for_Smoothing_Between_Coats-wood-013.mp4",
+      "filename": "Finish_Feels_Gritty-320_Grit_for_Smoothing_Between_Coats-wood-013.mp4",
+      "manifest": "wood.json",
+      "title": "Finish Feels Gritty: 320 Grit Smoothing Between Coats",
+      "destination_url": "https://equalle.com/products/sandpaper-10-sheets-grit-320",
+      "result": "success",
+      "video_id": "Njolwdqh-mE"
     }
   },
   "runs": [
@@ -1225,6 +1235,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Dust_Nibs_in_the_Finish-320_Grit_for_Between-Coat_Sanding-wood-012.mp4",
       "result": "success",
       "video_id": "QyPhYZLndWU"
+    },
+    {
+      "ts_utc": "2026-03-19T11:36:22.913946+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Finish_Feels_Gritty-320_Grit_for_Smoothing_Between_Coats-wood-013.mp4",
+      "result": "success",
+      "video_id": "Njolwdqh-mE"
     }
   ],
   "last_post": {
