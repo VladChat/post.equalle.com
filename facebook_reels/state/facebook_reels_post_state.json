@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-03-18"
+    "manifest_index": 1,
+    "last_day": "2026-03-19"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1590,6 +1590,17 @@
       "comment_status": "commented",
       "comment_id": "1491860719171785_1784059449240318",
       "commented_ts_utc": "2026-03-18T15:29:05Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Raised_Texture_After_Painting-320_Grit_for_Leveling_Between_Coats-wood-016.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Raised_Texture_After_Painting-320_Grit_for_Leveling_Between_Coats-wood-016.mp4",
+      "filename": "Raised_Texture_After_Painting-320_Grit_for_Leveling_Between_Coats-wood-016.mp4",
+      "manifest": "wood.json",
+      "title": "Raised Texture After Painting: 320 Grit Leveling Between Coats",
+      "description": "Raised Texture After Painting? Use 320 grit for leveling between coats. Lightly scuff sand between coats to knock down nibs and keep the next coat smooth. Use light pressure, keep the surface flat, and stop as soon as it feels even. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-19T14:11:59Z",
+      "video_id": "962884979523955"
     }
   },
   "runs": [
@@ -2284,6 +2295,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "1491860719171785",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-19T14:11:59Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Raised_Texture_After_Painting-320_Grit_for_Leveling_Between_Coats-wood-016.mp4",
+      "filename": "Raised_Texture_After_Painting-320_Grit_for_Leveling_Between_Coats-wood-016.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "962884979523955",
       "error": null
     }
   ],
