@@ -2611,7 +2611,14 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18112453642741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "skip",
+        "template_idx": 6
+      },
+      "comment_status": "skipped",
+      "comment_skipped_ts_utc": "2026-03-19T14:24:56Z",
+      "comment_skipped_reason": "policy_10pct_skip"
     }
   },
   "runs": [
