@@ -1600,7 +1600,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-19T14:11:59Z",
-      "video_id": "962884979523955"
+      "video_id": "962884979523955",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 9
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-19T15:04:36Z",
+      "comment_text": "For corners/edges, ease up and let the abrasive do the work. Are edges the hardest part for you too?",
+      "comment_status": "commented",
+      "comment_id": "962884979523955_922721980719493",
+      "commented_ts_utc": "2026-03-19T15:04:39Z"
     }
   },
   "runs": [
@@ -2928,6 +2938,15 @@
       "result": "commented",
       "comment_id": "1491860719171785_1784059449240318",
       "template_idx": 6
+    },
+    {
+      "ts_utc": "2026-03-19T15:04:39Z",
+      "video_id": "962884979523955",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Raised_Texture_After_Painting-320_Grit_for_Leveling_Between_Coats-wood-016.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "962884979523955_922721980719493",
+      "template_idx": 9
     }
   ]
 }
