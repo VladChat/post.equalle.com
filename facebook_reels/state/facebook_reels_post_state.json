@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-03-19"
+    "manifest_index": 2,
+    "last_day": "2026-03-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1611,6 +1611,17 @@
       "comment_status": "commented",
       "comment_id": "962884979523955_922721980719493",
       "commented_ts_utc": "2026-03-19T15:04:39Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/spray_finish_looks_wavy-1500_grit_wet_sand_to_flatten_clear_coat-wet-016.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/spray_finish_looks_wavy-1500_grit_wet_sand_to_flatten_clear_coat-wet-016.mp4",
+      "filename": "spray_finish_looks_wavy-1500_grit_wet_sand_to_flatten_clear_coat-wet-016.mp4",
+      "manifest": "wet.json",
+      "title": "Spray Finish Looks Wavy? Flatten Clear Coat With 1500 Grit",
+      "description": "Spray finish looks wavy in clear coat? Wet sand with 1500 grit to flatten texture before refining and polishing. Keep it wet, use light pressure, crosshatch passes, and wipe clean often to check for remaining low spots. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-20T14:05:36Z",
+      "video_id": "1213748290555798"
     }
   },
   "runs": [
@@ -2314,6 +2325,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "962884979523955",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-20T14:05:36Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/spray_finish_looks_wavy-1500_grit_wet_sand_to_flatten_clear_coat-wet-016.mp4",
+      "filename": "spray_finish_looks_wavy-1500_grit_wet_sand_to_flatten_clear_coat-wet-016.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "1213748290555798",
       "error": null
     }
   ],
