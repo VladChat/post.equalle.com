@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-19"
+    "last_day": "2026-03-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -776,6 +776,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-10-sheets-grit-320",
       "result": "success",
       "video_id": "Njolwdqh-mE"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Tiny_Specks_in_Paint-320_Grit_for_Removing_Dust_Nibs-wood-014.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Tiny_Specks_in_Paint-320_Grit_for_Removing_Dust_Nibs-wood-014.mp4",
+      "filename": "Tiny_Specks_in_Paint-320_Grit_for_Removing_Dust_Nibs-wood-014.mp4",
+      "manifest": "wood.json",
+      "title": "Tiny Specks in Paint: 320 Grit Removing Dust Nibs",
+      "destination_url": "https://www.amazon.com/gp/product/B07RJZ42DT",
+      "result": "success",
+      "video_id": "JiHHWCY_H14"
     }
   },
   "runs": [
@@ -1241,6 +1251,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Finish_Feels_Gritty-320_Grit_for_Smoothing_Between_Coats-wood-013.mp4",
       "result": "success",
       "video_id": "Njolwdqh-mE"
+    },
+    {
+      "ts_utc": "2026-03-20T11:32:52.383941+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Tiny_Specks_in_Paint-320_Grit_for_Removing_Dust_Nibs-wood-014.mp4",
+      "result": "success",
+      "video_id": "JiHHWCY_H14"
     }
   ],
   "last_post": {
