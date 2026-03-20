@@ -1621,7 +1621,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-20T14:05:36Z",
-      "video_id": "1213748290555798"
+      "video_id": "1213748290555798",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-20T14:50:26Z",
+      "comment_text": "For wet-sanding work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "1213748290555798_1120481146871409",
+      "commented_ts_utc": "2026-03-20T14:50:30Z"
     }
   },
   "runs": [
@@ -2967,6 +2977,15 @@
       "result": "commented",
       "comment_id": "962884979523955_922721980719493",
       "template_idx": 9
+    },
+    {
+      "ts_utc": "2026-03-20T14:50:30Z",
+      "video_id": "1213748290555798",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/spray_finish_looks_wavy-1500_grit_wet_sand_to_flatten_clear_coat-wet-016.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1213748290555798_1120481146871409",
+      "template_idx": 3
     }
   ]
 }
