@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-03-19"
+    "manifest_index": 0,
+    "last_day": "2026-03-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1124,6 +1124,20 @@
       "pin_id": "839428818089480287",
       "media_id": "5486025427770216281",
       "cover_image_url": "https://i.pinimg.com/1200x/9e/83/b7/9e83b756873fe4a2a24ed2876fc47ca1.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4",
+      "filename": "drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049941",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-150",
+      "title": "Drywall Seams Won’t Disappear? Blend Seams With 150 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-20T11:01:10+00:00",
+      "pin_id": "839428818089499952",
+      "media_id": "5486210883453521837",
+      "cover_image_url": "https://i.pinimg.com/1200x/04/c4/50/04c450a864b2f925a6b9197dbecb7887.jpg"
     }
   },
   "runs": [
@@ -1925,6 +1939,16 @@
       "result": "success",
       "pin_id": "839428818089480287",
       "media_id": "5486025427770216281",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-20T11:01:10+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4",
+      "filename": "drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818089499952",
+      "media_id": "5486210883453521837",
       "error": null
     }
   ]
