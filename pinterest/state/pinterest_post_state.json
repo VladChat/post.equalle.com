@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-03-20"
+    "manifest_index": 1,
+    "last_day": "2026-03-21"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1138,6 +1138,20 @@
       "pin_id": "839428818089499952",
       "media_id": "5486210883453521837",
       "cover_image_url": "https://i.pinimg.com/1200x/04/c4/50/04c450a864b2f925a6b9197dbecb7887.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Next_Coat_Looks_Streaky-220_Grit_for_Scuff_Sand_Between_Coats-wood-018.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Next_Coat_Looks_Streaky-220_Grit_for_Scuff_Sand_Between_Coats-wood-018.mp4",
+      "filename": "Next_Coat_Looks_Streaky-220_Grit_for_Scuff_Sand_Between_Coats-wood-018.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://www.amazon.com/gp/product/B07RL3XSWS",
+      "title": "Next Coat Looks Streaky: 220 Grit Scuff Sand Between Coats",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-21T09:01:00+00:00",
+      "pin_id": "839428818089516876",
+      "media_id": "5486377055148899425",
+      "cover_image_url": "https://i.pinimg.com/1200x/22/b6/63/22b663d9e6bb642865e98b683eb4445e.jpg"
     }
   },
   "runs": [
@@ -1949,6 +1963,16 @@
       "result": "success",
       "pin_id": "839428818089499952",
       "media_id": "5486210883453521837",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-21T09:01:00+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Next_Coat_Looks_Streaky-220_Grit_for_Scuff_Sand_Between_Coats-wood-018.mp4",
+      "filename": "Next_Coat_Looks_Streaky-220_Grit_for_Scuff_Sand_Between_Coats-wood-018.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818089516876",
+      "media_id": "5486377055148899425",
       "error": null
     }
   ]
