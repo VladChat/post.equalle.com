@@ -2707,7 +2707,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18112897336741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 9
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-22T14:44:32Z",
+      "comment_text": "For corners/edges, ease up and let the abrasive do the work. Are edges the hardest part for you too?",
+      "comment_status": "commented",
+      "comment_id": "18110346646741323",
+      "commented_ts_utc": "2026-03-22T14:44:35Z"
     }
   },
   "runs": [
@@ -4224,6 +4234,15 @@
       "result": "commented",
       "comment_id": "18095146913085910",
       "template_idx": 17
+    },
+    {
+      "ts_utc": "2026-03-22T14:44:35Z",
+      "media_id": "18076001264406451",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/oxidation_on_bare_metal-80_grit_for_removing_metal_oxidation-metal-016.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18110346646741323",
+      "template_idx": 9
     }
   ]
 }
