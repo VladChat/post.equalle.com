@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-03-21"
+    "manifest_index": 2,
+    "last_day": "2026-03-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1152,6 +1152,20 @@
       "pin_id": "839428818089516876",
       "media_id": "5486377055148899425",
       "cover_image_url": "https://i.pinimg.com/1200x/22/b6/63/22b663d9e6bb642865e98b683eb4445e.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/dust_specks_after_clear_coat-2000_grit_wet_sand_to_remove_dust_nibs-wet-017.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_specks_after_clear_coat-2000_grit_wet_sand_to_remove_dust_nibs-wet-017.mp4",
+      "filename": "dust_specks_after_clear_coat-2000_grit_wet_sand_to_remove_dust_nibs-wet-017.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049944",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-2000",
+      "title": "Dust Specks After Clear Coat? 2000 Grit Wet Sand To Remove Nibs",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-22T10:06:20+00:00",
+      "pin_id": "839428818089535358",
+      "media_id": "5486566102339232718",
+      "cover_image_url": "https://i.pinimg.com/1200x/4c/df/2c/4cdf2c005c01e6aead1462f62cb15628.jpg"
     }
   },
   "runs": [
@@ -1973,6 +1987,16 @@
       "result": "success",
       "pin_id": "839428818089516876",
       "media_id": "5486377055148899425",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-22T10:06:20+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_specks_after_clear_coat-2000_grit_wet_sand_to_remove_dust_nibs-wet-017.mp4",
+      "filename": "dust_specks_after_clear_coat-2000_grit_wet_sand_to_remove_dust_nibs-wet-017.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818089535358",
+      "media_id": "5486566102339232718",
       "error": null
     }
   ]
