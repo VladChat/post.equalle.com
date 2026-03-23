@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-22"
+    "last_day": "2026-03-23"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -806,6 +806,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QD1PR32",
       "result": "success",
       "video_id": "yO5r81oUSh4"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Light_Runs_Starting_to_Form-320_Grit_for_Leveling_Paint_Runs-wood-017.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Light_Runs_Starting_to_Form-320_Grit_for_Leveling_Paint_Runs-wood-017.mp4",
+      "filename": "Light_Runs_Starting_to_Form-320_Grit_for_Leveling_Paint_Runs-wood-017.mp4",
+      "manifest": "wood.json",
+      "title": "Light Runs Starting to Form: 320 Grit Leveling Paint Runs",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-320",
+      "result": "success",
+      "video_id": "ceqt7JHkJpc"
     }
   },
   "runs": [
@@ -1289,6 +1299,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Raised_Texture_After_Painting-320_Grit_for_Leveling_Between_Coats-wood-016.mp4",
       "result": "success",
       "video_id": "yO5r81oUSh4"
+    },
+    {
+      "ts_utc": "2026-03-23T11:43:57.221059+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Light_Runs_Starting_to_Form-320_Grit_for_Leveling_Paint_Runs-wood-017.mp4",
+      "result": "success",
+      "video_id": "ceqt7JHkJpc"
     }
   ],
   "last_post": {
