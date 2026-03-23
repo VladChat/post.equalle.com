@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-03-22"
+    "manifest_index": 0,
+    "last_day": "2026-03-23"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1674,6 +1674,17 @@
       "comment_status": "commented",
       "comment_id": "1156309853173210_2020184615260738",
       "commented_ts_utc": "2026-03-22T14:26:54Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
+      "filename": "joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
+      "manifest": "drywall.json",
+      "title": "Joint Lines Still Visible? Final Drywall Prep With 150 Grit",
+      "description": "If joint lines are still visible, sand lightly with 150 grit to feather edges and smooth the surface before primer and paint. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-23T14:19:47Z",
+      "video_id": "1430510408162543"
     }
   },
   "runs": [
@@ -2404,6 +2415,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1156309853173210",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-23T14:19:47Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
+      "filename": "joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1430510408162543",
       "error": null
     }
   ],
