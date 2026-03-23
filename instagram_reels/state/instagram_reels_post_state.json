@@ -2741,7 +2741,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18113007547741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 4
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-23T14:58:45Z",
+      "comment_text": "If the paper starts loading up, wipe/rinse it and keep going—clean paper cuts cleaner. Does it clog on your surface?",
+      "comment_status": "commented",
+      "comment_id": "18057878465455817",
+      "commented_ts_utc": "2026-03-23T14:58:49Z"
     }
   },
   "runs": [
@@ -4278,6 +4288,15 @@
       "result": "commented",
       "comment_id": "18110346646741323",
       "template_idx": 9
+    },
+    {
+      "ts_utc": "2026-03-23T14:58:49Z",
+      "media_id": "18098056993807481",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_needs_light_smoothing-320_grit_for_fine_plastic_prep-plastic-016.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "18057878465455817",
+      "template_idx": 4
     }
   ]
 }
