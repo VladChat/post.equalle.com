@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-03-23"
+    "manifest_index": 1,
+    "last_day": "2026-03-24"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1685,6 +1685,17 @@
       "attempts": 1,
       "last_ts_utc": "2026-03-23T14:19:47Z",
       "video_id": "1430510408162543"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Light_Runs_Starting_to_Form-320_Grit_for_Leveling_Paint_Runs-wood-017.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Light_Runs_Starting_to_Form-320_Grit_for_Leveling_Paint_Runs-wood-017.mp4",
+      "filename": "Light_Runs_Starting_to_Form-320_Grit_for_Leveling_Paint_Runs-wood-017.mp4",
+      "manifest": "wood.json",
+      "title": "Light Runs Starting to Form: 320 Grit Leveling Paint Runs",
+      "description": "Light Runs Starting to Form? Use 320 grit for leveling paint runs. Lightly scuff sand between coats to knock down nibs and keep the next coat smooth. Use light pressure, keep the surface flat, and stop as soon as it feels even. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-24T14:22:21Z",
+      "video_id": "1193526022672423"
     }
   },
   "runs": [
@@ -2424,6 +2435,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "1430510408162543",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-24T14:22:21Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Light_Runs_Starting_to_Form-320_Grit_for_Leveling_Paint_Runs-wood-017.mp4",
+      "filename": "Light_Runs_Starting_to_Form-320_Grit_for_Leveling_Paint_Runs-wood-017.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "1193526022672423",
       "error": null
     }
   ],
