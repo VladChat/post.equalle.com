@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-03-23"
+    "manifest_index": 4,
+    "last_day": "2026-03-24"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1180,6 +1180,20 @@
       "pin_id": "839428818089553828",
       "media_id": "5486748828436607603",
       "cover_image_url": "https://i.pinimg.com/1200x/0b/56/a9/0b56a9f59f9ca6dd4331fecb58382048.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/surface_too_smooth_to_grip_paint-220_grit_for_plastic_scuff_prep-plastic-017.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/surface_too_smooth_to_grip_paint-220_grit_for_plastic_scuff_prep-plastic-017.mp4",
+      "filename": "surface_too_smooth_to_grip_paint-220_grit_for_plastic_scuff_prep-plastic-017.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049964",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-220",
+      "title": "Surface Too Smooth For Paint? Scuff With 220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-24T11:32:10+00:00",
+      "pin_id": "839428818089574853",
+      "media_id": "5486939623500357777",
+      "cover_image_url": "https://i.pinimg.com/1200x/af/52/4f/af524f375d4e1a90721d026503ad3d40.jpg"
     }
   },
   "runs": [
@@ -2021,6 +2035,16 @@
       "result": "success",
       "pin_id": "839428818089553828",
       "media_id": "5486748828436607603",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-24T11:32:10+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/surface_too_smooth_to_grip_paint-220_grit_for_plastic_scuff_prep-plastic-017.mp4",
+      "filename": "surface_too_smooth_to_grip_paint-220_grit_for_plastic_scuff_prep-plastic-017.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818089574853",
+      "media_id": "5486939623500357777",
       "error": null
     }
   ]
