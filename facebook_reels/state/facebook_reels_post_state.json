@@ -1695,7 +1695,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-24T14:22:21Z",
-      "video_id": "1193526022672423"
+      "video_id": "1193526022672423",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 10
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-24T15:20:34Z",
+      "comment_text": "Quick check: if it still feels scratchy, you may need one grit lower for a short blend. Want a simple grit ladder?",
+      "comment_status": "commented",
+      "comment_id": "1193526022672423_1469328304738828",
+      "commented_ts_utc": "2026-03-24T15:20:37Z"
     }
   },
   "runs": [
@@ -3104,6 +3114,15 @@
       "result": "commented",
       "comment_id": "1156309853173210_2020184615260738",
       "template_idx": 15
+    },
+    {
+      "ts_utc": "2026-03-24T15:20:37Z",
+      "video_id": "1193526022672423",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Light_Runs_Starting_to_Form-320_Grit_for_Leveling_Paint_Runs-wood-017.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "1193526022672423_1469328304738828",
+      "template_idx": 10
     }
   ]
 }
