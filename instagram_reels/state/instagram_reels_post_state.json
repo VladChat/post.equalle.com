@@ -2775,7 +2775,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18113114566741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 17
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-24T14:42:16Z",
+      "comment_text": "Don’t chase one spot too long—blend the area wider and re-check. Are the edges still visible?",
+      "comment_status": "commented",
+      "comment_id": "17931339327227607",
+      "commented_ts_utc": "2026-03-24T14:42:19Z"
     }
   },
   "runs": [
@@ -4332,6 +4342,15 @@
       "result": "commented",
       "comment_id": "18057878465455817",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-03-24T14:42:19Z",
+      "media_id": "18072551489204702",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_wont_disappear-150_grit_for_seam_blending-drywall-017.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "17931339327227607",
+      "template_idx": 17
     }
   ]
 }
