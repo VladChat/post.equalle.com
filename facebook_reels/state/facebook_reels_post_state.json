@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-03-24"
+    "manifest_index": 2,
+    "last_day": "2026-03-25"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1706,6 +1706,17 @@
       "comment_status": "commented",
       "comment_id": "1193526022672423_1469328304738828",
       "commented_ts_utc": "2026-03-24T15:20:37Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/dust_specks_after_clear_coat-2000_grit_wet_sand_to_remove_dust_nibs-wet-017.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_specks_after_clear_coat-2000_grit_wet_sand_to_remove_dust_nibs-wet-017.mp4",
+      "filename": "dust_specks_after_clear_coat-2000_grit_wet_sand_to_remove_dust_nibs-wet-017.mp4",
+      "manifest": "wet.json",
+      "title": "Dust Specks After Clear Coat? 2000 Grit Wet Sand To Remove Nibs",
+      "description": "Dust specks after clear coat? Wet sand with 2000 grit to knock down dust nibs before polishing or the next coat. Keep the surface wet, use light pressure, short even passes, wipe clean often, and re-check under a work light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-25T14:21:40Z",
+      "video_id": "2005295230195148"
     }
   },
   "runs": [
@@ -2454,6 +2465,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "1193526022672423",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-25T14:21:40Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_specks_after_clear_coat-2000_grit_wet_sand_to_remove_dust_nibs-wet-017.mp4",
+      "filename": "dust_specks_after_clear_coat-2000_grit_wet_sand_to_remove_dust_nibs-wet-017.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "2005295230195148",
       "error": null
     }
   ],
