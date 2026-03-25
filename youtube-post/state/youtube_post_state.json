@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-24"
+    "last_day": "2026-03-25"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -826,6 +826,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RL3XSWS",
       "result": "success",
       "video_id": "xC_6y2ONeFE"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
+      "filename": "Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
+      "manifest": "wood.json",
+      "title": "Edges Feel Rough After Coat 1: 220 Grit Light Edge Scuff Sand",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
+      "result": "success",
+      "video_id": "f5gi8K0gvx0"
     }
   },
   "runs": [
@@ -1321,6 +1331,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Next_Coat_Looks_Streaky-220_Grit_for_Scuff_Sand_Between_Coats-wood-018.mp4",
       "result": "success",
       "video_id": "xC_6y2ONeFE"
+    },
+    {
+      "ts_utc": "2026-03-25T11:42:10.599622+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
+      "result": "success",
+      "video_id": "f5gi8K0gvx0"
     }
   ],
   "last_post": {
