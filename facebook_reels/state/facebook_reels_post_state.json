@@ -1716,7 +1716,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-25T14:21:40Z",
-      "video_id": "2005295230195148"
+      "video_id": "2005295230195148",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 15
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-25T15:06:39Z",
+      "comment_text": "A quick mist/wipe (for wet sanding) can show high spots fast. Are you using water or a lubricant?",
+      "comment_status": "commented",
+      "comment_id": "2005295230195148_985088397537419",
+      "commented_ts_utc": "2026-03-25T15:06:42Z"
     }
   },
   "runs": [
@@ -3143,6 +3153,15 @@
       "result": "commented",
       "comment_id": "1193526022672423_1469328304738828",
       "template_idx": 10
+    },
+    {
+      "ts_utc": "2026-03-25T15:06:42Z",
+      "video_id": "2005295230195148",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_specks_after_clear_coat-2000_grit_wet_sand_to_remove_dust_nibs-wet-017.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "2005295230195148_985088397537419",
+      "template_idx": 15
     }
   ]
 }
