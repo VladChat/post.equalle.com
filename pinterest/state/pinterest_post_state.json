@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-03-24"
+    "manifest_index": 0,
+    "last_day": "2026-03-25"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1194,6 +1194,20 @@
       "pin_id": "839428818089574853",
       "media_id": "5486939623500357777",
       "cover_image_url": "https://i.pinimg.com/1200x/af/52/4f/af524f375d4e1a90721d026503ad3d40.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
+      "filename": "joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049941",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVW4J5",
+      "title": "Joint Lines Still Visible? Final Drywall Prep With 150 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-25T09:06:09+00:00",
+      "pin_id": "839428818089591227",
+      "media_id": "5487102506907545156",
+      "cover_image_url": "https://i.pinimg.com/1200x/f4/ab/40/f4ab40a5460be0a2965c5e746dc7db5f.jpg"
     }
   },
   "runs": [
@@ -2045,6 +2059,16 @@
       "result": "success",
       "pin_id": "839428818089574853",
       "media_id": "5486939623500357777",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-25T09:06:09+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
+      "filename": "joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818089591227",
+      "media_id": "5487102506907545156",
       "error": null
     }
   ]
