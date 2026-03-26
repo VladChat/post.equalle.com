@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-25"
+    "last_day": "2026-03-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -836,6 +836,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
       "result": "success",
       "video_id": "f5gi8K0gvx0"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
+      "filename": "Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
+      "manifest": "wood.json",
+      "title": "Want a Smoother Topcoat: 400 Grit Very Light Between Coats",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7W28G1",
+      "result": "success",
+      "video_id": "UYZgQOIz5XE"
     }
   },
   "runs": [
@@ -1337,6 +1347,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
       "result": "success",
       "video_id": "f5gi8K0gvx0"
+    },
+    {
+      "ts_utc": "2026-03-26T11:51:00.858821+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
+      "result": "success",
+      "video_id": "UYZgQOIz5XE"
     }
   ],
   "last_post": {
