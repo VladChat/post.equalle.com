@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-03-25"
+    "manifest_index": 3,
+    "last_day": "2026-03-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1727,6 +1727,17 @@
       "comment_status": "commented",
       "comment_id": "2005295230195148_985088397537419",
       "commented_ts_utc": "2026-03-25T15:06:42Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4",
+      "filename": "rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4",
+      "manifest": "metal.json",
+      "title": "Remove Rust Scale on Metal With 60–80 Grit Sandpaper",
+      "description": "Rust scale hard to remove? Start with 60 grit to break the crust, then switch to 80 grit to level the surface. Use steady pressure and overlap passes so you don’t leave low spots.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-26T14:43:11Z",
+      "video_id": "1255009159549397"
     }
   },
   "runs": [
@@ -2484,6 +2495,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "2005295230195148",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-26T14:43:11Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4",
+      "filename": "rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "1255009159549397",
       "error": null
     }
   ],
