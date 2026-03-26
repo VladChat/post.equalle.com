@@ -1737,7 +1737,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-26T14:43:11Z",
-      "video_id": "1255009159549397"
+      "video_id": "1255009159549397",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 11
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-26T14:58:52Z",
+      "comment_text": "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+      "comment_status": "commented",
+      "comment_id": "1255009159549397_1486416436530787",
+      "commented_ts_utc": "2026-03-26T14:58:57Z"
     }
   },
   "runs": [
@@ -3182,6 +3192,15 @@
       "result": "commented",
       "comment_id": "2005295230195148_985088397537419",
       "template_idx": 15
+    },
+    {
+      "ts_utc": "2026-03-26T14:58:57Z",
+      "video_id": "1255009159549397",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "1255009159549397_1486416436530787",
+      "template_idx": 11
     }
   ]
 }
