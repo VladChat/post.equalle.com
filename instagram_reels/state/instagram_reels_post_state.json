@@ -2843,7 +2843,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18113324902741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 5
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-26T14:45:51Z",
+      "comment_text": "After sanding, wipe dust and check under a bright light from the side. Do the lines disappear evenly?",
+      "comment_status": "commented",
+      "comment_id": "17918033595325374",
+      "commented_ts_utc": "2026-03-26T14:45:54Z"
     }
   },
   "runs": [
@@ -4440,6 +4450,15 @@
       "result": "commented",
       "comment_id": "17962934112052979",
       "template_idx": 1
+    },
+    {
+      "ts_utc": "2026-03-26T14:45:54Z",
+      "media_id": "18073690742557438",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_final_prep-3000_grit_wet_sand_before_final_polish-wet-018.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "17918033595325374",
+      "template_idx": 5
     }
   ]
 }
