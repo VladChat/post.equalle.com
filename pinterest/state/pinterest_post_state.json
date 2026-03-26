@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-03-25"
+    "manifest_index": 1,
+    "last_day": "2026-03-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1208,6 +1208,20 @@
       "pin_id": "839428818089591227",
       "media_id": "5487102506907545156",
       "cover_image_url": "https://i.pinimg.com/1200x/f4/ab/40/f4ab40a5460be0a2965c5e746dc7db5f.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
+      "filename": "Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
+      "title": "Edges Feel Rough After Coat 1: 220 Grit Light Edge Scuff Sand",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-26T10:37:41+00:00",
+      "pin_id": "839428818089609769",
+      "media_id": "5487295271840841184",
+      "cover_image_url": "https://i.pinimg.com/1200x/cd/21/90/cd21909c438f0a8d6bedb256db05b090.jpg"
     }
   },
   "runs": [
@@ -2069,6 +2083,16 @@
       "result": "success",
       "pin_id": "839428818089591227",
       "media_id": "5487102506907545156",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-26T10:37:41+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
+      "filename": "Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818089609769",
+      "media_id": "5487295271840841184",
       "error": null
     }
   ]
