@@ -2877,7 +2877,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18113428561741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-27T14:39:12Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "18107014454502708",
+      "commented_ts_utc": "2026-03-27T14:39:15Z"
     }
   },
   "runs": [
@@ -4494,6 +4504,15 @@
       "result": "commented",
       "comment_id": "17918033595325374",
       "template_idx": 5
+    },
+    {
+      "ts_utc": "2026-03-27T14:39:15Z",
+      "media_id": "18125293339517565",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18107014454502708",
+      "template_idx": 12
     }
   ]
 }
