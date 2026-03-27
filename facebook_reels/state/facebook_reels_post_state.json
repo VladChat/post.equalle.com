@@ -1758,7 +1758,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-27T14:15:47Z",
-      "video_id": "1193644589389133"
+      "video_id": "1193644589389133",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 7
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-27T14:48:05Z",
+      "comment_text": "If you’re jumping grits, don’t skip too far—blend one step at a time. What grit did you start with?",
+      "comment_status": "commented",
+      "comment_id": "1193644589389133_2003700877025050",
+      "commented_ts_utc": "2026-03-27T14:48:10Z"
     }
   },
   "runs": [
@@ -3221,6 +3231,15 @@
       "result": "commented",
       "comment_id": "1255009159549397_1486416436530787",
       "template_idx": 11
+    },
+    {
+      "ts_utc": "2026-03-27T14:48:10Z",
+      "video_id": "1193644589389133",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/surface_too_smooth_to_grip_paint-220_grit_for_plastic_scuff_prep-plastic-017.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "1193644589389133_2003700877025050",
+      "template_idx": 7
     }
   ]
 }
