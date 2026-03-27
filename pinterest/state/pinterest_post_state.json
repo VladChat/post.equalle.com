@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-03-26"
+    "manifest_index": 2,
+    "last_day": "2026-03-27"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1222,6 +1222,20 @@
       "pin_id": "839428818089609769",
       "media_id": "5487295271840841184",
       "cover_image_url": "https://i.pinimg.com/1200x/cd/21/90/cd21909c438f0a8d6bedb256db05b090.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_final_prep-3000_grit_wet_sand_before_final_polish-wet-018.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_final_prep-3000_grit_wet_sand_before_final_polish-wet-018.mp4",
+      "filename": "clear_coat_needs_final_prep-3000_grit_wet_sand_before_final_polish-wet-018.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049944",
+      "destination_url": "https://www.amazon.com/gp/product/B0F9VR28HR",
+      "title": "Final Polish Prep? 3000 Grit Wet Sand Clear Coat Before Buffing",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-27T11:09:52+00:00",
+      "pin_id": "839428818089628427",
+      "media_id": "5487480490759889179",
+      "cover_image_url": "https://i.pinimg.com/1200x/86/93/c2/8693c28d84a2844e6edec273a63435aa.jpg"
     }
   },
   "runs": [
@@ -2093,6 +2107,16 @@
       "result": "success",
       "pin_id": "839428818089609769",
       "media_id": "5487295271840841184",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-27T11:09:52+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_final_prep-3000_grit_wet_sand_before_final_polish-wet-018.mp4",
+      "filename": "clear_coat_needs_final_prep-3000_grit_wet_sand_before_final_polish-wet-018.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818089628427",
+      "media_id": "5487480490759889179",
       "error": null
     }
   ]
