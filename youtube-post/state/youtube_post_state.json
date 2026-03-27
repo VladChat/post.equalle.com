@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-26"
+    "last_day": "2026-03-27"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -846,6 +846,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7W28G1",
       "result": "success",
       "video_id": "UYZgQOIz5XE"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Old_Paint_Still_On_the_Wood-80_Grit_for_Removing_Old_Paint-wood-021.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Paint_Still_On_the_Wood-80_Grit_for_Removing_Old_Paint-wood-021.mp4",
+      "filename": "Old_Paint_Still_On_the_Wood-80_Grit_for_Removing_Old_Paint-wood-021.mp4",
+      "manifest": "wood.json",
+      "title": "Old Paint Still On the Wood: 80 Grit Removing Old Paint",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-80-10-sheets",
+      "result": "success",
+      "video_id": "XId0jkfWo4A"
     }
   },
   "runs": [
@@ -1353,6 +1363,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
       "result": "success",
       "video_id": "UYZgQOIz5XE"
+    },
+    {
+      "ts_utc": "2026-03-27T11:42:07.429198+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Paint_Still_On_the_Wood-80_Grit_for_Removing_Old_Paint-wood-021.mp4",
+      "result": "success",
+      "video_id": "XId0jkfWo4A"
     }
   ],
   "last_post": {
