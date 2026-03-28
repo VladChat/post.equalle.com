@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-03-27"
+    "manifest_index": 0,
+    "last_day": "2026-03-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1769,6 +1769,17 @@
       "comment_status": "commented",
       "comment_id": "1193644589389133_2003700877025050",
       "commented_ts_utc": "2026-03-27T14:48:10Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4",
+      "filename": "drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Mud Feels Grainy? Smooth Compound With 120 Grit",
+      "description": "If joint compound feels grainy after drying, sand lightly with 120 grit to remove high spots and smooth the surface before recoating. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-28T13:55:48Z",
+      "video_id": "2023870351525318"
     }
   },
   "runs": [
@@ -2544,6 +2555,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1193644589389133",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-28T13:55:48Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4",
+      "filename": "drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "2023870351525318",
       "error": null
     }
   ],
