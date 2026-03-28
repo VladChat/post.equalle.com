@@ -1779,7 +1779,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-28T13:55:48Z",
-      "video_id": "2023870351525318"
+      "video_id": "2023870351525318",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-28T14:42:20Z",
+      "comment_text": "Light pressure with 120 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "2023870351525318_1374190834471468",
+      "commented_ts_utc": "2026-03-28T14:42:25Z"
     }
   },
   "runs": [
@@ -3260,6 +3270,15 @@
       "result": "commented",
       "comment_id": "1193644589389133_2003700877025050",
       "template_idx": 7
+    },
+    {
+      "ts_utc": "2026-03-28T14:42:25Z",
+      "video_id": "2023870351525318",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "2023870351525318_1374190834471468",
+      "template_idx": 0
     }
   ]
 }
