@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-03-27"
+    "manifest_index": 4,
+    "last_day": "2026-03-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -2888,6 +2888,30 @@
       "comment_status": "commented",
       "comment_id": "18107014454502708",
       "commented_ts_utc": "2026-03-27T14:39:15Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/surface_too_smooth_to_grip_paint-220_grit_for_plastic_scuff_prep-plastic-017.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/surface_too_smooth_to_grip_paint-220_grit_for_plastic_scuff_prep-plastic-017.mp4",
+      "filename": "surface_too_smooth_to_grip_paint-220_grit_for_plastic_scuff_prep-plastic-017.mp4",
+      "manifest": "plastic.json",
+      "title": "Surface Too Smooth For Paint? Scuff With 220 Grit",
+      "description": "If plastic is too smooth to grip paint, 220 grit scuff sanding creates a consistent tooth for primer and topcoat. Cover edges and curves evenly, then wipe clean before coating. Sandpaper eQualle",
+      "caption": "Surface Too Smooth For Paint? Scuff With 220 Grit\n\nIf plastic is too smooth to grip paint, 220 grit scuff sanding creates a consistent tooth for primer and topcoat. Cover edges and curves evenly, then wipe clean before coating. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-28T13:53:47Z",
+      "mode": "binary",
+      "container_id": "18113525899741317",
+      "media_id": "17936007912198450",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18113525899741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18113525899741317"
+      }
     }
   },
   "runs": [
@@ -3835,6 +3859,17 @@
       "filename": "rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4",
       "container_id": "18113428561741317",
       "media_id": "18125293339517565",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-28T13:53:47Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "plastic.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/surface_too_smooth_to_grip_paint-220_grit_for_plastic_scuff_prep-plastic-017.mp4",
+      "filename": "surface_too_smooth_to_grip_paint-220_grit_for_plastic_scuff_prep-plastic-017.mp4",
+      "container_id": "18113525899741317",
+      "media_id": "17936007912198450",
       "error": null
     }
   ],
