@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-27"
+    "last_day": "2026-03-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -856,6 +856,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-80-10-sheets",
       "result": "success",
       "video_id": "XId0jkfWo4A"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Varnish_Wont_Come_Off-80_Grit_for_Removing_Old_Varnish-wood-022.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Varnish_Wont_Come_Off-80_Grit_for_Removing_Old_Varnish-wood-022.mp4",
+      "filename": "Varnish_Wont_Come_Off-80_Grit_for_Removing_Old_Varnish-wood-022.mp4",
+      "manifest": "wood.json",
+      "title": "Varnish Won't Come Off: 80 Grit Removing Old Varnish",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7RP91J",
+      "result": "success",
+      "video_id": "HRu-kb2Jvpk"
     }
   },
   "runs": [
@@ -1369,6 +1379,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Paint_Still_On_the_Wood-80_Grit_for_Removing_Old_Paint-wood-021.mp4",
       "result": "success",
       "video_id": "XId0jkfWo4A"
+    },
+    {
+      "ts_utc": "2026-03-28T11:29:02.389638+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Varnish_Wont_Come_Off-80_Grit_for_Removing_Old_Varnish-wood-022.mp4",
+      "result": "success",
+      "video_id": "HRu-kb2Jvpk"
     }
   ],
   "last_post": {
