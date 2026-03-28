@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-03-27"
+    "manifest_index": 3,
+    "last_day": "2026-03-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1236,6 +1236,20 @@
       "pin_id": "839428818089628427",
       "media_id": "5487480490759889179",
       "cover_image_url": "https://i.pinimg.com/1200x/86/93/c2/8693c28d84a2844e6edec273a63435aa.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4",
+      "filename": "rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4",
+      "manifest": "metal.json",
+      "board_id": "839428886736049946",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-60",
+      "title": "Remove Rust Scale on Metal With 60–80 Grit Sandpaper",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-28T09:10:27+00:00",
+      "pin_id": "839428818089644514",
+      "media_id": "5487646250505410943",
+      "cover_image_url": "https://i.pinimg.com/1200x/df/5e/1b/df5e1bd159b297bca843b6c1e2bdebc0.jpg"
     }
   },
   "runs": [
@@ -2117,6 +2131,16 @@
       "result": "success",
       "pin_id": "839428818089628427",
       "media_id": "5487480490759889179",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-28T09:10:27+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4",
+      "filename": "rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "pin_id": "839428818089644514",
+      "media_id": "5487646250505410943",
       "error": null
     }
   ]
