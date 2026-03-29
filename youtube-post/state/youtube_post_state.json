@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-28"
+    "last_day": "2026-03-29"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -866,6 +866,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7RP91J",
       "result": "success",
       "video_id": "HRu-kb2Jvpk"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Thick_Finish_Taking_Forever-60_Grit_for_Heavy_Finish_Removal-wood-023.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Thick_Finish_Taking_Forever-60_Grit_for_Heavy_Finish_Removal-wood-023.mp4",
+      "filename": "Thick_Finish_Taking_Forever-60_Grit_for_Heavy_Finish_Removal-wood-023.mp4",
+      "manifest": "wood.json",
+      "title": "Thick Finish Taking Forever: 60 Grit Heavy Finish Removal",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-60-10",
+      "result": "success",
+      "video_id": "5k2HJTEXK-I"
     }
   },
   "runs": [
@@ -1385,6 +1395,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Varnish_Wont_Come_Off-80_Grit_for_Removing_Old_Varnish-wood-022.mp4",
       "result": "success",
       "video_id": "HRu-kb2Jvpk"
+    },
+    {
+      "ts_utc": "2026-03-29T11:30:23.862904+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Thick_Finish_Taking_Forever-60_Grit_for_Heavy_Finish_Removal-wood-023.mp4",
+      "result": "success",
+      "video_id": "5k2HJTEXK-I"
     }
   ],
   "last_post": {
