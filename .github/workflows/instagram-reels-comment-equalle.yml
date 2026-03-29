@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # Runs daily a bit after the post workflow (UTC).
-    - cron: "20 13 * * *"
+    - cron: "20 13 * * 2,4,6"
 
 permissions:
   contents: write
