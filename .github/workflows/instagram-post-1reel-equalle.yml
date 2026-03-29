@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # Runs daily; GitHub Actions schedule is UTC.
-    - cron: "5 13 * * *"
+    - cron: "5 13 * * 2,4,6"
 
 permissions:
   contents: write
