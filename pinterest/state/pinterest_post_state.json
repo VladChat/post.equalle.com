@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-03-28"
+    "manifest_index": 4,
+    "last_day": "2026-03-29"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1250,6 +1250,20 @@
       "pin_id": "839428818089644514",
       "media_id": "5487646250505410943",
       "cover_image_url": "https://i.pinimg.com/1200x/df/5e/1b/df5e1bd159b297bca843b6c1e2bdebc0.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_inconsistent-180-220_grit_for_plastic_leveling-plastic-018.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_inconsistent-180-220_grit_for_plastic_leveling-plastic-018.mp4",
+      "filename": "plastic_feels_inconsistent-180-220_grit_for_plastic_leveling-plastic-018.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049964",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8DTGHP",
+      "title": "Plastic Feels Inconsistent? Level With 180 Then 220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-29T09:56:06+00:00",
+      "pin_id": "839428818089661337",
+      "media_id": "5487833587281624864",
+      "cover_image_url": "https://i.pinimg.com/1200x/ca/b3/a7/cab3a7c1d5d966c1ef645d7abfb688a5.jpg"
     }
   },
   "runs": [
@@ -2141,6 +2155,16 @@
       "result": "success",
       "pin_id": "839428818089644514",
       "media_id": "5487646250505410943",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-29T09:56:06+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_inconsistent-180-220_grit_for_plastic_leveling-plastic-018.mp4",
+      "filename": "plastic_feels_inconsistent-180-220_grit_for_plastic_leveling-plastic-018.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818089661337",
+      "media_id": "5487833587281624864",
       "error": null
     }
   ]
