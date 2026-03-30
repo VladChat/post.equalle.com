@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-03-29"
+    "manifest_index": 0,
+    "last_day": "2026-03-30"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1264,6 +1264,20 @@
       "pin_id": "839428818089661337",
       "media_id": "5487833587281624864",
       "cover_image_url": "https://i.pinimg.com/1200x/ca/b3/a7/cab3a7c1d5d966c1ef645d7abfb688a5.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4",
+      "filename": "drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049941",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-120",
+      "title": "Drywall Mud Feels Grainy? Smooth Compound With 120 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-30T10:42:37+00:00",
+      "pin_id": "839428818089678703",
+      "media_id": "5488020600744122682",
+      "cover_image_url": "https://i.pinimg.com/1200x/90/70/33/90703389a67c439d6ac4456636faf983.jpg"
     }
   },
   "runs": [
@@ -2165,6 +2179,16 @@
       "result": "success",
       "pin_id": "839428818089661337",
       "media_id": "5487833587281624864",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-30T10:42:37+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4",
+      "filename": "drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818089678703",
+      "media_id": "5488020600744122682",
       "error": null
     }
   ]
