@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-03-29"
+    "last_day": "2026-03-30"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -876,6 +876,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-60-10",
       "result": "success",
       "video_id": "5k2HJTEXK-I"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Flaking_Paint_Everywhere-80_Grit_for_Stripping_Loose_Paint-wood-024.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Flaking_Paint_Everywhere-80_Grit_for_Stripping_Loose_Paint-wood-024.mp4",
+      "filename": "Flaking_Paint_Everywhere-80_Grit_for_Stripping_Loose_Paint-wood-024.mp4",
+      "manifest": "wood.json",
+      "title": "Flaking Paint Everywhere: 80 Grit Stripping Loose Paint",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVWCN9",
+      "result": "success",
+      "video_id": "TVZUIAYQZYU"
     }
   },
   "runs": [
@@ -1401,6 +1411,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Thick_Finish_Taking_Forever-60_Grit_for_Heavy_Finish_Removal-wood-023.mp4",
       "result": "success",
       "video_id": "5k2HJTEXK-I"
+    },
+    {
+      "ts_utc": "2026-03-30T11:54:20.581406+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Flaking_Paint_Everywhere-80_Grit_for_Stripping_Loose_Paint-wood-024.mp4",
+      "result": "success",
+      "video_id": "TVZUIAYQZYU"
     }
   ],
   "last_post": {
