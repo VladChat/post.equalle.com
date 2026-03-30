@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-03-28"
+    "manifest_index": 1,
+    "last_day": "2026-03-30"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1790,6 +1790,17 @@
       "comment_status": "commented",
       "comment_id": "2023870351525318_1374190834471468",
       "commented_ts_utc": "2026-03-28T14:42:25Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Next_Coat_Looks_Streaky-220_Grit_for_Scuff_Sand_Between_Coats-wood-018.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Next_Coat_Looks_Streaky-220_Grit_for_Scuff_Sand_Between_Coats-wood-018.mp4",
+      "filename": "Next_Coat_Looks_Streaky-220_Grit_for_Scuff_Sand_Between_Coats-wood-018.mp4",
+      "manifest": "wood.json",
+      "title": "Next Coat Looks Streaky: 220 Grit Scuff Sand Between Coats",
+      "description": "Next Coat Looks Streaky? Use 220 grit for scuff sand between coats. Lightly scuff sand between coats to knock down nibs and keep the next coat smooth. Use light pressure, keep the surface flat, and stop as soon as it feels even. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-30T14:44:08Z",
+      "video_id": "1271348775115414"
     }
   },
   "runs": [
@@ -2574,6 +2585,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "2023870351525318",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-30T14:44:08Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Next_Coat_Looks_Streaky-220_Grit_for_Scuff_Sand_Between_Coats-wood-018.mp4",
+      "filename": "Next_Coat_Looks_Streaky-220_Grit_for_Scuff_Sand_Between_Coats-wood-018.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "1271348775115414",
       "error": null
     }
   ],
