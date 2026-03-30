@@ -1800,7 +1800,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-03-30T14:44:08Z",
-      "video_id": "1271348775115414"
+      "video_id": "1271348775115414",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 10
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-03-30T15:20:45Z",
+      "comment_text": "Quick check: if it still feels scratchy, you may need one grit lower for a short blend. Want a simple grit ladder?",
+      "comment_status": "commented",
+      "comment_id": "1271348775115414_954313250511459",
+      "commented_ts_utc": "2026-03-30T15:20:48Z"
     }
   },
   "runs": [
@@ -3299,6 +3309,15 @@
       "result": "commented",
       "comment_id": "2023870351525318_1374190834471468",
       "template_idx": 0
+    },
+    {
+      "ts_utc": "2026-03-30T15:20:48Z",
+      "video_id": "1271348775115414",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Next_Coat_Looks_Streaky-220_Grit_for_Scuff_Sand_Between_Coats-wood-018.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "1271348775115414_954313250511459",
+      "template_idx": 10
     }
   ]
 }
