@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-03-28"
+    "manifest_index": 0,
+    "last_day": "2026-03-31"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -2922,6 +2922,30 @@
       "comment_status": "commented",
       "comment_id": "17881018020524571",
       "commented_ts_utc": "2026-03-28T14:31:00Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
+      "filename": "joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
+      "manifest": "drywall.json",
+      "title": "Joint Lines Still Visible? Final Drywall Prep With 150 Grit",
+      "description": "If joint lines are still visible, sand lightly with 150 grit to feather edges and smooth the surface before primer and paint. Sandpaper eQualle",
+      "caption": "Joint Lines Still Visible? Final Drywall Prep With 150 Grit\n\nIf joint lines are still visible, sand lightly with 150 grit to feather edges and smooth the surface before primer and paint. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-03-31T14:41:53Z",
+      "mode": "binary",
+      "container_id": "18113818471741317",
+      "media_id": "18126311221576232",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18113818471741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18113818471741317"
+      }
     }
   },
   "runs": [
@@ -3880,6 +3904,17 @@
       "filename": "surface_too_smooth_to_grip_paint-220_grit_for_plastic_scuff_prep-plastic-017.mp4",
       "container_id": "18113525899741317",
       "media_id": "17936007912198450",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-03-31T14:41:53Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
+      "filename": "joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
+      "container_id": "18113818471741317",
+      "media_id": "18126311221576232",
       "error": null
     }
   ],
