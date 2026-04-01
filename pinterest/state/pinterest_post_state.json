@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-03-30"
+    "manifest_index": 1,
+    "last_day": "2026-04-01"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1278,6 +1278,20 @@
       "pin_id": "839428818089678703",
       "media_id": "5488020600744122682",
       "cover_image_url": "https://i.pinimg.com/1200x/90/70/33/90703389a67c439d6ac4456636faf983.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
+      "filename": "Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7W28G1",
+      "title": "Want a Smoother Topcoat: 400 Grit Very Light Between Coats",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-01T10:19:07+00:00",
+      "pin_id": "839428818089716065",
+      "media_id": "5488379970954794030",
+      "cover_image_url": "https://i.pinimg.com/1200x/1d/20/6b/1d206b9777fdb3f3effc7ae29b6aae9d.jpg"
     }
   },
   "runs": [
@@ -2189,6 +2203,16 @@
       "result": "success",
       "pin_id": "839428818089678703",
       "media_id": "5488020600744122682",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-01T10:19:07+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
+      "filename": "Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818089716065",
+      "media_id": "5488379970954794030",
       "error": null
     }
   ]
