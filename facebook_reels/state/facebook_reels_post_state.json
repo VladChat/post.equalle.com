@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-03-30"
+    "manifest_index": 2,
+    "last_day": "2026-04-01"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1811,6 +1811,17 @@
       "comment_status": "commented",
       "comment_id": "1271348775115414_954313250511459",
       "commented_ts_utc": "2026-03-30T15:20:48Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_final_prep-3000_grit_wet_sand_before_final_polish-wet-018.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_final_prep-3000_grit_wet_sand_before_final_polish-wet-018.mp4",
+      "filename": "clear_coat_needs_final_prep-3000_grit_wet_sand_before_final_polish-wet-018.mp4",
+      "manifest": "wet.json",
+      "title": "Final Polish Prep? 3000 Grit Wet Sand Clear Coat Before Buffing",
+      "description": "Clear coat needs final prep before polishing? Wet sand with 3000 grit to refine the finish so polishing cuts faster and more evenly. Keep it wet, use light pressure, crosshatch passes, wipe often, and inspect reflection under strong light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-01T14:45:05Z",
+      "video_id": "698467189995012"
     }
   },
   "runs": [
@@ -2604,6 +2615,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "1271348775115414",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-01T14:45:05Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_final_prep-3000_grit_wet_sand_before_final_polish-wet-018.mp4",
+      "filename": "clear_coat_needs_final_prep-3000_grit_wet_sand_before_final_polish-wet-018.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "698467189995012",
       "error": null
     }
   ],
