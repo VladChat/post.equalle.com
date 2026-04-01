@@ -1821,7 +1821,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-04-01T14:45:05Z",
-      "video_id": "698467189995012"
+      "video_id": "698467189995012",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 13
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-04-01T14:56:27Z",
+      "comment_text": "On wet-sanding, sanding dust can hide defects—wipe often and re-check. Do you see it only after wiping?",
+      "comment_status": "commented",
+      "comment_id": "698467189995012_1565365814534082",
+      "commented_ts_utc": "2026-04-01T14:56:30Z"
     }
   },
   "runs": [
@@ -3338,6 +3348,15 @@
       "result": "commented",
       "comment_id": "1271348775115414_954313250511459",
       "template_idx": 10
+    },
+    {
+      "ts_utc": "2026-04-01T14:56:30Z",
+      "video_id": "698467189995012",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_final_prep-3000_grit_wet_sand_before_final_polish-wet-018.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "698467189995012_1565365814534082",
+      "template_idx": 13
     }
   ]
 }
