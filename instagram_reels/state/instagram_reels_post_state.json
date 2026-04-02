@@ -2976,7 +2976,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18114009259741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 9
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-04-02T14:36:13Z",
+      "comment_text": "For corners/edges, ease up and let the abrasive do the work. Are edges the hardest part for you too?",
+      "comment_status": "commented",
+      "comment_id": "17913555072161398",
+      "commented_ts_utc": "2026-04-02T14:36:16Z"
     }
   },
   "runs": [
@@ -4644,6 +4654,15 @@
       "result": "commented",
       "comment_id": "17881018020524571",
       "template_idx": 10
+    },
+    {
+      "ts_utc": "2026-04-02T14:36:16Z",
+      "media_id": "18126164719603467",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "17913555072161398",
+      "template_idx": 9
     }
   ]
 }
