@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-01"
+    "last_day": "2026-04-02"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -906,6 +906,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7SX5F4",
       "result": "success",
       "video_id": "d2EgfKXE1Dc"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4",
+      "filename": "Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4",
+      "manifest": "wood.json",
+      "title": "Old Poly Feels Like Plastic: 80 Grit Removing Polyurethane",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-80",
+      "result": "success",
+      "video_id": "E520LVz2zYI"
     }
   },
   "runs": [
@@ -1449,6 +1459,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Glossy_Finish_Needs_Removal-100_Grit_for_Stripping_Old_Finish-wood-026.mp4",
       "result": "success",
       "video_id": "d2EgfKXE1Dc"
+    },
+    {
+      "ts_utc": "2026-04-02T11:46:31.311315+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4",
+      "result": "success",
+      "video_id": "E520LVz2zYI"
     }
   ],
   "last_post": {
