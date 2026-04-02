@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-03-31"
+    "manifest_index": 1,
+    "last_day": "2026-04-02"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -2953,6 +2953,30 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-03-31T14:44:55Z",
       "comment_skipped_reason": "policy_10pct_skip"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
+      "filename": "Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
+      "manifest": "wood.json",
+      "title": "Edges Feel Rough After Coat 1: 220 Grit Light Edge Scuff Sand",
+      "description": "Edges Feel Rough After Coat 1? Use 220 grit for light edge scuff sand. Lightly scuff sand between coats to knock down nibs and keep the next coat smooth. Use light pressure, keep the surface flat, and stop as soon as it feels even. Wet or dry use. — eQualle",
+      "caption": "Edges Feel Rough After Coat 1: 220 Grit Light Edge Scuff Sand\n\nEdges Feel Rough After Coat 1? Use 220 grit for light edge scuff sand. Lightly scuff sand between coats to knock down nibs and keep the next coat smooth. Use light pressure, keep the surface flat, and stop as soon as it feels even. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-02T14:24:40Z",
+      "mode": "binary",
+      "container_id": "18114009259741317",
+      "media_id": "18126164719603467",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18114009259741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18114009259741317"
+      }
     }
   },
   "runs": [
@@ -3922,6 +3946,17 @@
       "filename": "joint_lines_still_visible-150_grit_for_final_drywall_prep-drywall-018.mp4",
       "container_id": "18113818471741317",
       "media_id": "18126311221576232",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-02T14:24:40Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wood.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
+      "filename": "Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
+      "container_id": "18114009259741317",
+      "media_id": "18126164719603467",
       "error": null
     }
   ],
