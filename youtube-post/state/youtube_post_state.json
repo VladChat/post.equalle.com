@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-02"
+    "last_day": "2026-04-03"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -916,6 +916,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-80",
       "result": "success",
       "video_id": "E520LVz2zYI"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Sanding_Isnt_Cutting_It-60-80_Grit_for_Fast_Finish_Removal-wood-028.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Isnt_Cutting_It-60-80_Grit_for_Fast_Finish_Removal-wood-028.mp4",
+      "filename": "Sanding_Isnt_Cutting_It-60-80_Grit_for_Fast_Finish_Removal-wood-028.mp4",
+      "manifest": "wood.json",
+      "title": "Sanding Isn't Cutting It: 60-80 Grit Fast Finish Removal",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7RDBQ1",
+      "result": "success",
+      "video_id": "bwVmlD-LNOE"
     }
   },
   "runs": [
@@ -1465,6 +1475,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4",
       "result": "success",
       "video_id": "E520LVz2zYI"
+    },
+    {
+      "ts_utc": "2026-04-03T11:38:12.763875+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Isnt_Cutting_It-60-80_Grit_for_Fast_Finish_Removal-wood-028.mp4",
+      "result": "success",
+      "video_id": "bwVmlD-LNOE"
     }
   ],
   "last_post": {
