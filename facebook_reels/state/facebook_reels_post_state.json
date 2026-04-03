@@ -1842,7 +1842,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-04-03T14:06:21Z",
-      "video_id": "1433227971612260"
+      "video_id": "1433227971612260",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-04-03T14:56:07Z",
+      "comment_text": "Light pressure with 120 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "1433227971612260_1703399470786896",
+      "commented_ts_utc": "2026-04-03T14:56:11Z"
     }
   },
   "runs": [
@@ -3377,6 +3387,15 @@
       "result": "commented",
       "comment_id": "698467189995012_1565365814534082",
       "template_idx": 13
+    },
+    {
+      "ts_utc": "2026-04-03T14:56:11Z",
+      "video_id": "1433227971612260",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "1433227971612260_1703399470786896",
+      "template_idx": 0
     }
   ]
 }
