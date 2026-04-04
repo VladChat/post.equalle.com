@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-04-02"
+    "manifest_index": 2,
+    "last_day": "2026-04-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -2987,6 +2987,30 @@
       "comment_status": "commented",
       "comment_id": "17913555072161398",
       "commented_ts_utc": "2026-04-02T14:36:16Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4",
+      "filename": "paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4",
+      "manifest": "wet.json",
+      "title": "Paint Correction Leaves Marks? 2000 Grit Wet Sand To Refine",
+      "description": "Paint correction leaving marks? Wet sand with 2000 grit to refine the surface before polishing. Keep the panel wet, use light pressure, sand in even crosshatch passes, wipe clean often, and track the scratch pattern under a work light. Wet or dry use. — eQualle",
+      "caption": "Paint Correction Leaves Marks? 2000 Grit Wet Sand To Refine\n\nPaint correction leaving marks? Wet sand with 2000 grit to refine the surface before polishing. Keep the panel wet, use light pressure, sand in even crosshatch passes, wipe clean often, and track the scratch pattern under a work light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-04T13:57:03Z",
+      "mode": "binary",
+      "container_id": "18114204232741317",
+      "media_id": "18070221059270756",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18114204232741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18114204232741317"
+      }
     }
   },
   "runs": [
@@ -3967,6 +3991,17 @@
       "filename": "Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
       "container_id": "18114009259741317",
       "media_id": "18126164719603467",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-04T13:57:03Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wet.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4",
+      "filename": "paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4",
+      "container_id": "18114204232741317",
+      "media_id": "18070221059270756",
       "error": null
     }
   ],
