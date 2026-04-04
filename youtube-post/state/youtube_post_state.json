@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-03"
+    "last_day": "2026-04-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -926,6 +926,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7RDBQ1",
       "result": "success",
       "video_id": "bwVmlD-LNOE"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Paint_Edges_Keep_Chipping-80_Grit_for_Feathering_Paint_Edges-wood-029.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Edges_Keep_Chipping-80_Grit_for_Feathering_Paint_Edges-wood-029.mp4",
+      "filename": "Paint_Edges_Keep_Chipping-80_Grit_for_Feathering_Paint_Edges-wood-029.mp4",
+      "manifest": "wood.json",
+      "title": "Paint Edges Keep Chipping: 80 Grit Feathering Paint Edges",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-80",
+      "result": "success",
+      "video_id": "txETME6l6Q8"
     }
   },
   "runs": [
@@ -1481,6 +1491,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Isnt_Cutting_It-60-80_Grit_for_Fast_Finish_Removal-wood-028.mp4",
       "result": "success",
       "video_id": "bwVmlD-LNOE"
+    },
+    {
+      "ts_utc": "2026-04-04T11:29:49.728012+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Edges_Keep_Chipping-80_Grit_for_Feathering_Paint_Edges-wood-029.mp4",
+      "result": "success",
+      "video_id": "txETME6l6Q8"
     }
   ],
   "last_post": {
