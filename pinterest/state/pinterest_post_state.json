@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-04-01"
+    "manifest_index": 2,
+    "last_day": "2026-04-05"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1292,6 +1292,20 @@
       "pin_id": "839428818089716065",
       "media_id": "5488379970954794030",
       "cover_image_url": "https://i.pinimg.com/1200x/1d/20/6b/1d206b9777fdb3f3effc7ae29b6aae9d.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4",
+      "filename": "paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049944",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-2000",
+      "title": "Paint Correction Leaves Marks? 2000 Grit Wet Sand To Refine",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-05T09:58:43+00:00",
+      "pin_id": "839428818089790894",
+      "media_id": "3387357447140899328",
+      "cover_image_url": "https://i.pinimg.com/1200x/9f/49/67/9f4967cc1a3b37ef8f445cea3dbd4cdb.jpg"
     }
   },
   "runs": [
@@ -2213,6 +2227,16 @@
       "result": "success",
       "pin_id": "839428818089716065",
       "media_id": "5488379970954794030",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-05T09:58:43+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4",
+      "filename": "paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818089790894",
+      "media_id": "3387357447140899328",
       "error": null
     }
   ]
