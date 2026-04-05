@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-04"
+    "last_day": "2026-04-05"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -936,6 +936,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-80",
       "result": "success",
       "video_id": "txETME6l6Q8"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Need_to_Refinish_Fast-100_Grit_for_Removing_Old_Clear_Coat-wood-030.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Need_to_Refinish_Fast-100_Grit_for_Removing_Old_Clear_Coat-wood-030.mp4",
+      "filename": "Need_to_Refinish_Fast-100_Grit_for_Removing_Old_Clear_Coat-wood-030.mp4",
+      "manifest": "wood.json",
+      "title": "Need to Refinish Fast: 100 Grit Removing Old Clear Coat",
+      "destination_url": "https://www.amazon.com/gp/product/B07RFT4SN8",
+      "result": "success",
+      "video_id": "BA7f8oWVC44"
     }
   },
   "runs": [
@@ -1497,6 +1507,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Edges_Keep_Chipping-80_Grit_for_Feathering_Paint_Edges-wood-029.mp4",
       "result": "success",
       "video_id": "txETME6l6Q8"
+    },
+    {
+      "ts_utc": "2026-04-05T11:30:51.694180+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Need_to_Refinish_Fast-100_Grit_for_Removing_Old_Clear_Coat-wood-030.mp4",
+      "result": "success",
+      "video_id": "BA7f8oWVC44"
     }
   ],
   "last_post": {
