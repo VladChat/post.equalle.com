@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-04-05"
+    "manifest_index": 3,
+    "last_day": "2026-04-06"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1306,6 +1306,20 @@
       "pin_id": "839428818089790894",
       "media_id": "3387357447140899328",
       "cover_image_url": "https://i.pinimg.com/1200x/9f/49/67/9f4967cc1a3b37ef8f445cea3dbd4cdb.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4",
+      "filename": "rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4",
+      "manifest": "metal.json",
+      "board_id": "839428886736049946",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVV8DK",
+      "title": "Final Rust Cleanup on Metal With 120 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-06T10:34:50+00:00",
+      "pin_id": "839428818089810455",
+      "media_id": "3390327415314115648",
+      "cover_image_url": "https://i.pinimg.com/1200x/ea/64/34/ea6434b45eb79964d2eb5c245e9c035c.jpg"
     }
   },
   "runs": [
@@ -2237,6 +2251,16 @@
       "result": "success",
       "pin_id": "839428818089790894",
       "media_id": "3387357447140899328",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-06T10:34:50+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4",
+      "filename": "rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "pin_id": "839428818089810455",
+      "media_id": "3390327415314115648",
       "error": null
     }
   ]
