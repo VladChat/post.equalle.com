@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-05"
+    "last_day": "2026-04-06"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -946,6 +946,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RFT4SN8",
       "result": "success",
       "video_id": "BA7f8oWVC44"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4",
+      "filename": "Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4",
+      "manifest": "wood.json",
+      "title": "Scratches Still Showing: 150 Grit Removing Scratches",
+      "destination_url": "https://equalle.com/products/150-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "result": "success",
+      "video_id": "4hEKGAbYmmw"
     }
   },
   "runs": [
@@ -1513,6 +1523,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Need_to_Refinish_Fast-100_Grit_for_Removing_Old_Clear_Coat-wood-030.mp4",
       "result": "success",
       "video_id": "BA7f8oWVC44"
+    },
+    {
+      "ts_utc": "2026-04-06T11:49:57.042664+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4",
+      "result": "success",
+      "video_id": "4hEKGAbYmmw"
     }
   ],
   "last_post": {
