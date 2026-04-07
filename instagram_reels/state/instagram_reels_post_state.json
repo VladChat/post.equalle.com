@@ -3041,7 +3041,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18114489466741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-04-07T15:08:44Z",
+      "comment_text": "For metal work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "18403221658151208",
+      "commented_ts_utc": "2026-04-07T15:08:46Z"
     }
   },
   "runs": [
@@ -4740,6 +4750,15 @@
       "result": "commented",
       "comment_id": "17913555072161398",
       "template_idx": 9
+    },
+    {
+      "ts_utc": "2026-04-07T15:08:46Z",
+      "media_id": "18078427139421932",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18403221658151208",
+      "template_idx": 3
     }
   ]
 }
