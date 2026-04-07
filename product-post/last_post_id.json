@@ -1,13 +1,14 @@
 {
-  "post_id": "325670187920349_1387349746739841",
+  "post_id": "325670187920349_1393118792829603",
   "product": {
     "source": "amazon",
-    "url": "https://www.amazon.com/gp/product/B07RJZ4K4W",
-    "grit": 280,
+    "url": "https://www.amazon.com/gp/product/B07RJZ42DT",
+    "grit": 320,
     "pack": 25,
-    "anchor": "280 Grit (Fine)",
-    "grit_description": "Fine abrasive for leveling varnish or clear coats with precision. Creates a refined surface before high-gloss finishing. Performs reliably on wood, resin, or painted materials in wet or dry conditions.",
+    "anchor": "320 Grit (Fine)",
+    "grit_description": "Fine finishing grit for sanding between coats of paint, primer, or lacquer. Provides smooth, even results for woodworking, automotive, and precision finishing. Works efficiently for wet or dry applications.",
     "contexts": [
+      "wood",
       "finishing"
     ]
   }
