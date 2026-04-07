@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-04-04"
+    "manifest_index": 3,
+    "last_day": "2026-04-07"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -3018,6 +3018,30 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-04-04T14:10:07Z",
       "comment_skipped_reason": "policy_10pct_skip"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4",
+      "filename": "rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4",
+      "manifest": "metal.json",
+      "title": "Final Rust Cleanup on Metal With 120 Grit",
+      "description": "Rust spots still showing after cleanup? Use 120 grit to remove leftover oxidation and refine the scratch pattern. This helps primer and paint lay down smoother and more evenly.",
+      "caption": "Final Rust Cleanup on Metal With 120 Grit\n\nRust spots still showing after cleanup? Use 120 grit to remove leftover oxidation and refine the scratch pattern. This helps primer and paint lay down smoother and more evenly.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-07T14:48:11Z",
+      "mode": "binary",
+      "container_id": "18114489466741317",
+      "media_id": "18078427139421932",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18114489466741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18114489466741317"
+      }
     }
   },
   "runs": [
@@ -4009,6 +4033,17 @@
       "filename": "paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4",
       "container_id": "18114204232741317",
       "media_id": "18070221059270756",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-07T14:48:11Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "metal.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4",
+      "filename": "rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4",
+      "container_id": "18114489466741317",
+      "media_id": "18078427139421932",
       "error": null
     }
   ],
