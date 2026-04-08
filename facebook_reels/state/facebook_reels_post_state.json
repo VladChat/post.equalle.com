@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-04-06"
+    "manifest_index": 0,
+    "last_day": "2026-04-08"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1874,6 +1874,17 @@
       "comment_status": "commented",
       "comment_id": "1297407142509233_2406236623145225",
       "commented_ts_utc": "2026-04-06T14:50:47Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
+      "filename": "wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
+      "manifest": "drywall.json",
+      "title": "Wall Not Ready for the Next Coat? Prep Drywall With 150 Grit",
+      "description": "Before recoating, sand lightly with 150 grit to smooth small ridges and feather edges so the next coat lays down evenly. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-08T14:48:55Z",
+      "video_id": "1250395247305121"
     }
   },
   "runs": [
@@ -2694,6 +2705,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1297407142509233",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-08T14:48:55Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
+      "filename": "wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1250395247305121",
       "error": null
     }
   ],
