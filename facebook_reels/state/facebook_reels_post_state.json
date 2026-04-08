@@ -1884,7 +1884,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-04-08T14:48:55Z",
-      "video_id": "1250395247305121"
+      "video_id": "1250395247305121",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-04-08T15:48:07Z",
+      "comment_text": "Light pressure with 150 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "1250395247305121_937793219120132",
+      "commented_ts_utc": "2026-04-08T15:48:11Z"
     }
   },
   "runs": [
@@ -3455,6 +3465,15 @@
       "result": "commented",
       "comment_id": "1297407142509233_2406236623145225",
       "template_idx": 3
+    },
+    {
+      "ts_utc": "2026-04-08T15:48:11Z",
+      "video_id": "1250395247305121",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1250395247305121_937793219120132",
+      "template_idx": 0
     }
   ]
 }
