@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-07"
+    "last_day": "2026-04-08"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -966,6 +966,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RJZ3C39",
       "result": "success",
       "video_id": "-UMyrtL9j-k"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4",
+      "filename": "Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4",
+      "manifest": "wood.json",
+      "title": "Sanding Lines Look Random: 180 Grit Even Sanding Pattern",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-180",
+      "result": "success",
+      "video_id": "E_2_g4uWYr0"
     }
   },
   "runs": [
@@ -1545,6 +1555,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Tool_Marks_Wont_Disappear-150_Grit_for_Removing_Tool_Marks-wood-032.mp4",
       "result": "success",
       "video_id": "-UMyrtL9j-k"
+    },
+    {
+      "ts_utc": "2026-04-08T11:55:18.236401+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4",
+      "result": "success",
+      "video_id": "E_2_g4uWYr0"
     }
   ],
   "last_post": {
