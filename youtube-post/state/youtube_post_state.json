@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-08"
+    "last_day": "2026-04-09"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -976,6 +976,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-180",
       "result": "success",
       "video_id": "E_2_g4uWYr0"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Dents_Sanded_Around-120_Grit_for_Leveling_Small_High_Spots-wood-034.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Dents_Sanded_Around-120_Grit_for_Leveling_Small_High_Spots-wood-034.mp4",
+      "filename": "Dents_Sanded_Around-120_Grit_for_Leveling_Small_High_Spots-wood-034.mp4",
+      "manifest": "wood.json",
+      "title": "Dents Sanded Around: 120 Grit Leveling Small High Spots",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVV8DK",
+      "result": "success",
+      "video_id": "gXjojw2mp-A"
     }
   },
   "runs": [
@@ -1561,6 +1571,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4",
       "result": "success",
       "video_id": "E_2_g4uWYr0"
+    },
+    {
+      "ts_utc": "2026-04-09T11:55:22.411051+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Dents_Sanded_Around-120_Grit_for_Leveling_Small_High_Spots-wood-034.mp4",
+      "result": "success",
+      "video_id": "gXjojw2mp-A"
     }
   ],
   "last_post": {
