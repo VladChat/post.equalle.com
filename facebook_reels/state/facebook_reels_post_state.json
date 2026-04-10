@@ -1905,7 +1905,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-04-10T14:19:53Z",
-      "video_id": "3084614791739954"
+      "video_id": "3084614791739954",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 19
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-04-10T15:28:35Z",
+      "comment_text": "Before the next coat, clean the surface well so dust doesn’t telegraph through. Do you tack-cloth or wipe down?",
+      "comment_status": "commented",
+      "comment_id": "3084614791739954_2262627311218900",
+      "commented_ts_utc": "2026-04-10T15:28:39Z"
     }
   },
   "runs": [
@@ -3494,6 +3504,15 @@
       "result": "commented",
       "comment_id": "1250395247305121_937793219120132",
       "template_idx": 0
+    },
+    {
+      "ts_utc": "2026-04-10T15:28:39Z",
+      "video_id": "3084614791739954",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "3084614791739954_2262627311218900",
+      "template_idx": 19
     }
   ]
 }
