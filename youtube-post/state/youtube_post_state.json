@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-09"
+    "last_day": "2026-04-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -986,6 +986,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RHVV8DK",
       "result": "success",
       "video_id": "gXjojw2mp-A"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4",
+      "filename": "Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4",
+      "manifest": "wood.json",
+      "title": "Surface Looks Wavy: 120 Grit Flattening Wood Surface",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-120",
+      "result": "success",
+      "video_id": "gHLXT6dMgwQ"
     }
   },
   "runs": [
@@ -1577,6 +1587,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Dents_Sanded_Around-120_Grit_for_Leveling_Small_High_Spots-wood-034.mp4",
       "result": "success",
       "video_id": "gXjojw2mp-A"
+    },
+    {
+      "ts_utc": "2026-04-10T11:50:11.050915+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4",
+      "result": "success",
+      "video_id": "gHLXT6dMgwQ"
     }
   ],
   "last_post": {
