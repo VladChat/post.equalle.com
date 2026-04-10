@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-04-08"
+    "manifest_index": 1,
+    "last_day": "2026-04-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1895,6 +1895,17 @@
       "comment_status": "commented",
       "comment_id": "1250395247305121_937793219120132",
       "commented_ts_utc": "2026-04-08T15:48:11Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
+      "filename": "Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
+      "manifest": "wood.json",
+      "title": "Edges Feel Rough After Coat 1: 220 Grit Light Edge Scuff Sand",
+      "description": "Edges Feel Rough After Coat 1? Use 220 grit for light edge scuff sand. Lightly scuff sand between coats to knock down nibs and keep the next coat smooth. Use light pressure, keep the surface flat, and stop as soon as it feels even. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-10T14:19:53Z",
+      "video_id": "3084614791739954"
     }
   },
   "runs": [
@@ -2724,6 +2735,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "1250395247305121",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-10T14:19:53Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
+      "filename": "Edges_Feel_Rough_After_Coat_1-220_Grit_for_Light_Edge_Scuff_Sand-wood-019.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "3084614791739954",
       "error": null
     }
   ],
