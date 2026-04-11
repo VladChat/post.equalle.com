@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-10"
+    "last_day": "2026-04-11"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -996,6 +996,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-120",
       "result": "success",
       "video_id": "gHLXT6dMgwQ"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Swirl_Marks_in_the_Wood-180to220_Grit_for_Finish_Sanding_Wood-wood-036.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Swirl_Marks_in_the_Wood-180to220_Grit_for_Finish_Sanding_Wood-wood-036.mp4",
+      "filename": "Swirl_Marks_in_the_Wood-180to220_Grit_for_Finish_Sanding_Wood-wood-036.mp4",
+      "manifest": "wood.json",
+      "title": "Swirl Marks in the Wood: 180–220 Grit Finish Sanding Wood",
+      "destination_url": "https://www.amazon.com/gp/product/B07QG6R8Y1",
+      "result": "success",
+      "video_id": "Lo07Z158sgI"
     }
   },
   "runs": [
@@ -1593,6 +1603,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4",
       "result": "success",
       "video_id": "gHLXT6dMgwQ"
+    },
+    {
+      "ts_utc": "2026-04-11T11:30:45.036364+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Swirl_Marks_in_the_Wood-180to220_Grit_for_Finish_Sanding_Wood-wood-036.mp4",
+      "result": "success",
+      "video_id": "Lo07Z158sgI"
     }
   ],
   "last_post": {
