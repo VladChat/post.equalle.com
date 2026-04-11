@@ -3106,7 +3106,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18114870988741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 11
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-04-11T14:18:15Z",
+      "comment_text": "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+      "comment_status": "commented",
+      "comment_id": "18064181114370427",
+      "commented_ts_utc": "2026-04-11T14:18:37Z"
     }
   },
   "runs": [
@@ -4836,6 +4846,15 @@
       "result": "commented",
       "comment_id": "18403221658151208",
       "template_idx": 3
+    },
+    {
+      "ts_utc": "2026-04-11T14:18:37Z",
+      "media_id": "18097071893044284",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18064181114370427",
+      "template_idx": 11
     }
   ]
 }
