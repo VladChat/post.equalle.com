@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-04-08"
+    "manifest_index": 0,
+    "last_day": "2026-04-12"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1334,6 +1334,20 @@
       "pin_id": "839428818089849516",
       "media_id": "3396122591769245760",
       "cover_image_url": "https://i.pinimg.com/1200x/c7/14/41/c71441f3cc453f09e9238c7056f26665.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
+      "filename": "wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7T4FFL",
+      "title": "Wall Not Ready for the Next Coat? Prep Drywall With 150 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-12T10:03:23+00:00",
+      "pin_id": "839428818089925031",
+      "media_id": "3407660557351807104",
+      "cover_image_url": "https://i.pinimg.com/1200x/d0/41/7d/d0417d6763cdc1d485fba1f6926bfebf.jpg"
     }
   },
   "runs": [
@@ -2285,6 +2299,16 @@
       "result": "success",
       "pin_id": "839428818089849516",
       "media_id": "3396122591769245760",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-12T10:03:23+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
+      "filename": "wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818089925031",
+      "media_id": "3407660557351807104",
       "error": null
     }
   ]
