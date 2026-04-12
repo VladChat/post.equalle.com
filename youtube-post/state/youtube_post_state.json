@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-11"
+    "last_day": "2026-04-12"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1006,6 +1006,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QG6R8Y1",
       "result": "success",
       "video_id": "Lo07Z158sgI"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Deep_Scratches_After_Coarse_Grit-150to180_Grit_for_Scratch_Refinement-wood-037.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Deep_Scratches_After_Coarse_Grit-150to180_Grit_for_Scratch_Refinement-wood-037.mp4",
+      "filename": "Deep_Scratches_After_Coarse_Grit-150to180_Grit_for_Scratch_Refinement-wood-037.mp4",
+      "manifest": "wood.json",
+      "title": "Deep Scratches After Coarse Grit: 150–180 Grit Scratch Refinement",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-150",
+      "result": "success",
+      "video_id": "X0a9BQ-lmso"
     }
   },
   "runs": [
@@ -1609,6 +1619,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Swirl_Marks_in_the_Wood-180to220_Grit_for_Finish_Sanding_Wood-wood-036.mp4",
       "result": "success",
       "video_id": "Lo07Z158sgI"
+    },
+    {
+      "ts_utc": "2026-04-12T11:34:52.068118+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Deep_Scratches_After_Coarse_Grit-150to180_Grit_for_Scratch_Refinement-wood-037.mp4",
+      "result": "success",
+      "video_id": "X0a9BQ-lmso"
     }
   ],
   "last_post": {
