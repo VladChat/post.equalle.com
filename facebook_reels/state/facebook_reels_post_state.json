@@ -1926,7 +1926,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-04-13T14:55:27Z",
-      "video_id": "1692127548597207"
+      "video_id": "1692127548597207",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 6
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-04-13T15:04:47Z",
+      "comment_text": "Small circles help blend; straight passes help level. Are you going for a smooth finish or just prep?",
+      "comment_status": "commented",
+      "comment_id": "1692127548597207_1609116776965756",
+      "commented_ts_utc": "2026-04-13T15:04:52Z"
     }
   },
   "runs": [
@@ -3533,6 +3543,15 @@
       "result": "commented",
       "comment_id": "3084614791739954_2262627311218900",
       "template_idx": 19
+    },
+    {
+      "ts_utc": "2026-04-13T15:04:52Z",
+      "video_id": "1692127548597207",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1692127548597207_1609116776965756",
+      "template_idx": 6
     }
   ]
 }
