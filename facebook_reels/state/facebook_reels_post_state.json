@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-04-10"
+    "manifest_index": 2,
+    "last_day": "2026-04-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1916,6 +1916,17 @@
       "comment_status": "commented",
       "comment_id": "3084614791739954_2262627311218900",
       "commented_ts_utc": "2026-04-10T15:28:39Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4",
+      "filename": "paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4",
+      "manifest": "wet.json",
+      "title": "Paint Correction Leaves Marks? 2000 Grit Wet Sand To Refine",
+      "description": "Paint correction leaving marks? Wet sand with 2000 grit to refine the surface before polishing. Keep the panel wet, use light pressure, sand in even crosshatch passes, wipe clean often, and track the scratch pattern under a work light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-13T14:55:27Z",
+      "video_id": "1692127548597207"
     }
   },
   "runs": [
@@ -2754,6 +2765,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "3084614791739954",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-13T14:55:27Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4",
+      "filename": "paint_correction_leaves_marks-2000_grit_wet_sanding_paint_correction-wet-019.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "1692127548597207",
       "error": null
     }
   ],
