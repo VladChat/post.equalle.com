@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-04-12"
+    "manifest_index": 1,
+    "last_day": "2026-04-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1348,6 +1348,20 @@
       "pin_id": "839428818089925031",
       "media_id": "3407660557351807104",
       "cover_image_url": "https://i.pinimg.com/1200x/d0/41/7d/d0417d6763cdc1d485fba1f6926bfebf.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Old_Paint_Still_On_the_Wood-80_Grit_for_Removing_Old_Paint-wood-021.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Paint_Still_On_the_Wood-80_Grit_for_Removing_Old_Paint-wood-021.mp4",
+      "filename": "Old_Paint_Still_On_the_Wood-80_Grit_for_Removing_Old_Paint-wood-021.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-80-10-sheets",
+      "title": "Old Paint Still On the Wood: 80 Grit Removing Old Paint",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-13T10:58:54+00:00",
+      "pin_id": "839428818089945295",
+      "media_id": "3410668849249691392",
+      "cover_image_url": "https://i.pinimg.com/1200x/e1/7e/80/e17e80564a946af193ef58297e5ef385.jpg"
     }
   },
   "runs": [
@@ -2309,6 +2323,16 @@
       "result": "success",
       "pin_id": "839428818089925031",
       "media_id": "3407660557351807104",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-13T10:58:54+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Paint_Still_On_the_Wood-80_Grit_for_Removing_Old_Paint-wood-021.mp4",
+      "filename": "Old_Paint_Still_On_the_Wood-80_Grit_for_Removing_Old_Paint-wood-021.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818089945295",
+      "media_id": "3410668849249691392",
       "error": null
     }
   ]
