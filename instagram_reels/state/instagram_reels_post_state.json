@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-04-11"
+    "manifest_index": 1,
+    "last_day": "2026-04-14"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -3117,6 +3117,30 @@
       "comment_status": "commented",
       "comment_id": "18064181114370427",
       "commented_ts_utc": "2026-04-11T14:18:37Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
+      "filename": "Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
+      "manifest": "wood.json",
+      "title": "Want a Smoother Topcoat: 400 Grit Very Light Between Coats",
+      "description": "Want a Smoother Topcoat? Use 400 grit for very light between coats. Lightly scuff sand between coats to knock down nibs and keep the next coat smooth. Use light pressure, keep the surface flat, and stop as soon as it feels even. Wet or dry use. — eQualle",
+      "caption": "Want a Smoother Topcoat: 400 Grit Very Light Between Coats\n\nWant a Smoother Topcoat? Use 400 grit for very light between coats. Lightly scuff sand between coats to knock down nibs and keep the next coat smooth. Use light pressure, keep the surface flat, and stop as soon as it feels even. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-14T14:55:44Z",
+      "mode": "binary",
+      "container_id": "18115175227741317",
+      "media_id": "18079834637530195",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18115175227741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18115175227741317"
+      }
     }
   },
   "runs": [
@@ -4141,6 +4165,17 @@
       "filename": "drywall_mud_feels_grainy-120_grit_for_smoothing_compound-drywall-019.mp4",
       "container_id": "18114870988741317",
       "media_id": "18097071893044284",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-14T14:55:44Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wood.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
+      "filename": "Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
+      "container_id": "18115175227741317",
+      "media_id": "18079834637530195",
       "error": null
     }
   ],
