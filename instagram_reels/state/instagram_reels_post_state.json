@@ -3140,7 +3140,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18115175227741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 14
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-04-14T15:34:31Z",
+      "comment_text": "If the surface heats up, slow down and lighten pressure. Are you sanding by hand or with a tool?",
+      "comment_status": "commented",
+      "comment_id": "17882438664518400",
+      "commented_ts_utc": "2026-04-14T15:34:35Z"
     }
   },
   "runs": [
@@ -4890,6 +4900,15 @@
       "result": "commented",
       "comment_id": "18064181114370427",
       "template_idx": 11
+    },
+    {
+      "ts_utc": "2026-04-14T15:34:35Z",
+      "media_id": "18079834637530195",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "17882438664518400",
+      "template_idx": 14
     }
   ]
 }
