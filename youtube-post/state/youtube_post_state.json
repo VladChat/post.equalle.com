@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-13"
+    "last_day": "2026-04-14"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1026,6 +1026,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RJZ55RL",
       "result": "success",
       "video_id": "Bn63THOZNV4"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Uneven_Spot_Wont_Blend-180_Grit_for_Blending_Wood_Surface-wood-039.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Uneven_Spot_Wont_Blend-180_Grit_for_Blending_Wood_Surface-wood-039.mp4",
+      "filename": "Uneven_Spot_Wont_Blend-180_Grit_for_Blending_Wood_Surface-wood-039.mp4",
+      "manifest": "wood.json",
+      "title": "Uneven Spot Won't Blend: 180 Grit Blending Wood Surface",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-180",
+      "result": "success",
+      "video_id": "R6oaBN8lHDs"
     }
   },
   "runs": [
@@ -1641,6 +1651,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Edges_Look_Over-Sanded-180_Grit_for_Controlled_Hand_Sanding-wood-038.mp4",
       "result": "success",
       "video_id": "Bn63THOZNV4"
+    },
+    {
+      "ts_utc": "2026-04-14T11:56:56.962118+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Uneven_Spot_Wont_Blend-180_Grit_for_Blending_Wood_Surface-wood-039.mp4",
+      "result": "success",
+      "video_id": "R6oaBN8lHDs"
     }
   ],
   "last_post": {
