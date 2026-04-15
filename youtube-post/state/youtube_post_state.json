@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-14"
+    "last_day": "2026-04-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1036,6 +1036,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-180",
       "result": "success",
       "video_id": "R6oaBN8lHDs"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Sanding_Takes_Too_Many_Passes-100to150to180_Grit_Sanding_Steps-wood-040.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Takes_Too_Many_Passes-100to150to180_Grit_Sanding_Steps-wood-040.mp4",
+      "filename": "Sanding_Takes_Too_Many_Passes-100to150to180_Grit_Sanding_Steps-wood-040.mp4",
+      "manifest": "wood.json",
+      "title": "Sanding Takes Too Many Passes: 100–150–180 Grit Sanding Steps",
+      "destination_url": "https://www.amazon.com/gp/product/B07QC47GD5",
+      "result": "success",
+      "video_id": "NSorSNtLEkI"
     }
   },
   "runs": [
@@ -1657,6 +1667,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Uneven_Spot_Wont_Blend-180_Grit_for_Blending_Wood_Surface-wood-039.mp4",
       "result": "success",
       "video_id": "R6oaBN8lHDs"
+    },
+    {
+      "ts_utc": "2026-04-15T11:56:18.819938+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Takes_Too_Many_Passes-100to150to180_Grit_Sanding_Steps-wood-040.mp4",
+      "result": "success",
+      "video_id": "NSorSNtLEkI"
     }
   ],
   "last_post": {
