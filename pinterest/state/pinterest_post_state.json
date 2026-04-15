@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-04-13"
+    "manifest_index": 2,
+    "last_day": "2026-04-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1362,6 +1362,20 @@
       "pin_id": "839428818089945295",
       "media_id": "3410668849249691392",
       "cover_image_url": "https://i.pinimg.com/1200x/e1/7e/80/e17e80564a946af193ef58297e5ef385.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_coat_still_feels_uneven-1500-2000_grit_wet_sanding_clear_coat-wet-020.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_still_feels_uneven-1500-2000_grit_wet_sanding_clear_coat-wet-020.mp4",
+      "filename": "clear_coat_still_feels_uneven-1500-2000_grit_wet_sanding_clear_coat-wet-020.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049944",
+      "destination_url": "https://www.amazon.com/gp/product/B07QB4DZRK",
+      "title": "Clear Coat Still Uneven? Wet Sand 1500 Then 2000 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-15T10:40:40+00:00",
+      "pin_id": "839428818089986227",
+      "media_id": "3416430994654930688",
+      "cover_image_url": "https://i.pinimg.com/1200x/f8/a8/59/f8a859fbc47978650563a76cd5729caf.jpg"
     }
   },
   "runs": [
@@ -2333,6 +2347,16 @@
       "result": "success",
       "pin_id": "839428818089945295",
       "media_id": "3410668849249691392",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-15T10:40:40+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_still_feels_uneven-1500-2000_grit_wet_sanding_clear_coat-wet-020.mp4",
+      "filename": "clear_coat_still_feels_uneven-1500-2000_grit_wet_sanding_clear_coat-wet-020.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818089986227",
+      "media_id": "3416430994654930688",
       "error": null
     }
   ]
