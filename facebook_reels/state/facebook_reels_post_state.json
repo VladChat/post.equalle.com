@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-04-13"
+    "manifest_index": 3,
+    "last_day": "2026-04-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1937,6 +1937,17 @@
       "comment_status": "commented",
       "comment_id": "1692127548597207_1609116776965756",
       "commented_ts_utc": "2026-04-13T15:04:52Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/metal_still_feels_corroded-80_grit_for_rust_surface_leveling-metal-019.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_still_feels_corroded-80_grit_for_rust_surface_leveling-metal-019.mp4",
+      "filename": "metal_still_feels_corroded-80_grit_for_rust_surface_leveling-metal-019.mp4",
+      "manifest": "metal.json",
+      "title": "Level a Corroded Metal Surface With 80 Grit Sandpaper",
+      "description": "Metal still feels corroded after rust removal? Use 80 grit to level the surface and remove rough oxidation texture. Then step up to a finer grit if you want a smoother finish.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-15T14:50:08Z",
+      "video_id": "1296562729093477"
     }
   },
   "runs": [
@@ -2784,6 +2795,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "1692127548597207",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-15T14:50:08Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_still_feels_corroded-80_grit_for_rust_surface_leveling-metal-019.mp4",
+      "filename": "metal_still_feels_corroded-80_grit_for_rust_surface_leveling-metal-019.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "1296562729093477",
       "error": null
     }
   ],
