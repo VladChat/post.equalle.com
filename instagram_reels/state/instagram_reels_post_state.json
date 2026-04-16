@@ -3174,7 +3174,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18115365337741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 13
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-04-16T15:15:05Z",
+      "comment_text": "On wet-sanding, sanding dust can hide defects—wipe often and re-check. Do you see it only after wiping?",
+      "comment_status": "commented",
+      "comment_id": "17933394792210934",
+      "commented_ts_utc": "2026-04-16T15:15:08Z"
     }
   },
   "runs": [
@@ -4944,6 +4954,15 @@
       "result": "commented",
       "comment_id": "17882438664518400",
       "template_idx": 14
+    },
+    {
+      "ts_utc": "2026-04-16T15:15:08Z",
+      "media_id": "18070599701344391",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_still_feels_uneven-1500-2000_grit_wet_sanding_clear_coat-wet-020.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "17933394792210934",
+      "template_idx": 13
     }
   ]
 }
