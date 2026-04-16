@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-15"
+    "last_day": "2026-04-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1046,6 +1046,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QC47GD5",
       "result": "success",
       "video_id": "NSorSNtLEkI"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Stain_Looks_Blotchy-180_Grit_for_Wood_Stain_Prep-wood-041.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Stain_Looks_Blotchy-180_Grit_for_Wood_Stain_Prep-wood-041.mp4",
+      "filename": "Stain_Looks_Blotchy-180_Grit_for_Wood_Stain_Prep-wood-041.mp4",
+      "manifest": "wood.json",
+      "title": "Stain Looks Blotchy: 180 Grit Wood Stain Prep",
+      "destination_url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "result": "success",
+      "video_id": "qf-Oua9yDHA"
     }
   },
   "runs": [
@@ -1673,6 +1683,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Takes_Too_Many_Passes-100to150to180_Grit_Sanding_Steps-wood-040.mp4",
       "result": "success",
       "video_id": "NSorSNtLEkI"
+    },
+    {
+      "ts_utc": "2026-04-16T11:58:39.118660+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Stain_Looks_Blotchy-180_Grit_for_Wood_Stain_Prep-wood-041.mp4",
+      "result": "success",
+      "video_id": "qf-Oua9yDHA"
     }
   ],
   "last_post": {
