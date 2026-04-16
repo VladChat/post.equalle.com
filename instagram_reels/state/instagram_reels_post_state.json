@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-04-14"
+    "manifest_index": 2,
+    "last_day": "2026-04-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -3151,6 +3151,30 @@
       "comment_status": "commented",
       "comment_id": "17882438664518400",
       "commented_ts_utc": "2026-04-14T15:34:35Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_coat_still_feels_uneven-1500-2000_grit_wet_sanding_clear_coat-wet-020.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_still_feels_uneven-1500-2000_grit_wet_sanding_clear_coat-wet-020.mp4",
+      "filename": "clear_coat_still_feels_uneven-1500-2000_grit_wet_sanding_clear_coat-wet-020.mp4",
+      "manifest": "wet.json",
+      "title": "Clear Coat Still Uneven? Wet Sand 1500 Then 2000 Grit",
+      "description": "Clear coat still feels uneven? Start with 1500 grit to level texture, then switch to 2000 grit to refine before polishing. Keep the surface wet, use light pressure, crosshatch passes, and wipe often to inspect under strong light. Wet or dry use. — eQualle",
+      "caption": "Clear Coat Still Uneven? Wet Sand 1500 Then 2000 Grit\n\nClear coat still feels uneven? Start with 1500 grit to level texture, then switch to 2000 grit to refine before polishing. Keep the surface wet, use light pressure, crosshatch passes, and wipe often to inspect under strong light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-16T15:04:08Z",
+      "mode": "binary",
+      "container_id": "18115365337741317",
+      "media_id": "18070599701344391",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18115365337741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18115365337741317"
+      }
     }
   },
   "runs": [
@@ -4186,6 +4210,17 @@
       "filename": "Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
       "container_id": "18115175227741317",
       "media_id": "18079834637530195",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-16T15:04:08Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wet.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_still_feels_uneven-1500-2000_grit_wet_sanding_clear_coat-wet-020.mp4",
+      "filename": "clear_coat_still_feels_uneven-1500-2000_grit_wet_sanding_clear_coat-wet-020.mp4",
+      "container_id": "18115365337741317",
+      "media_id": "18070599701344391",
       "error": null
     }
   ],
