@@ -3208,7 +3208,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18115554691741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-04-18T15:05:45Z",
+      "comment_text": "For metal work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "17875746945589842",
+      "commented_ts_utc": "2026-04-18T15:05:49Z"
     }
   },
   "runs": [
@@ -4998,6 +5008,15 @@
       "result": "commented",
       "comment_id": "17933394792210934",
       "template_idx": 13
+    },
+    {
+      "ts_utc": "2026-04-18T15:05:49Z",
+      "media_id": "17963127078069537",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_still_feels_corroded-80_grit_for_rust_surface_leveling-metal-019.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "17875746945589842",
+      "template_idx": 3
     }
   ]
 }
