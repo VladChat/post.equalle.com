@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-04-17"
+    "manifest_index": 4,
+    "last_day": "2026-04-19"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1390,6 +1390,20 @@
       "pin_id": "839428818090023971",
       "media_id": "3422222947368032256",
       "cover_image_url": "https://i.pinimg.com/1200x/07/b5/47/07b54703d543025db3dfce62bed6f08e.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_not_ready_for_finish-220_grit_for_plastic_surface_prep-plastic-020.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_not_ready_for_finish-220_grit_for_plastic_surface_prep-plastic-020.mp4",
+      "filename": "plastic_not_ready_for_finish-220_grit_for_plastic_surface_prep-plastic-020.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049964",
+      "destination_url": "https://www.amazon.com/gp/product/B07QD2RZ63",
+      "title": "Plastic Not Ready For Finish? Prep With 220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-19T10:05:07+00:00",
+      "pin_id": "839428818090060312",
+      "media_id": "3427955049208876672",
+      "cover_image_url": "https://i.pinimg.com/1200x/23/1c/9d/231c9d8c0a878b964271b65710ab448f.jpg"
     }
   },
   "runs": [
@@ -2381,6 +2395,16 @@
       "result": "success",
       "pin_id": "839428818090023971",
       "media_id": "3422222947368032256",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-19T10:05:07+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_not_ready_for_finish-220_grit_for_plastic_surface_prep-plastic-020.mp4",
+      "filename": "plastic_not_ready_for_finish-220_grit_for_plastic_surface_prep-plastic-020.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818090060312",
+      "media_id": "3427955049208876672",
       "error": null
     }
   ]
