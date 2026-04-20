@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-19"
+    "last_day": "2026-04-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1086,6 +1086,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QD2RZ63",
       "result": "success",
       "video_id": "yyf_5_EMY9o"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Stain_Highlights_Scratches-220_Grit_for_Final_Prep_Before_Stain-wood-045.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Stain_Highlights_Scratches-220_Grit_for_Final_Prep_Before_Stain-wood-045.mp4",
+      "filename": "Stain_Highlights_Scratches-220_Grit_for_Final_Prep_Before_Stain-wood-045.mp4",
+      "manifest": "wood.json",
+      "title": "Stain Highlights Scratches: 220 Grit Final Prep Before Stain",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-220",
+      "result": "success",
+      "video_id": "f_VE4dZtwQo"
     }
   },
   "runs": [
@@ -1737,6 +1747,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/End_Grain_Turns_Too_Dark-220_Grit_for_Sanding_End_Grain_Before_Stain-wood-044.mp4",
       "result": "success",
       "video_id": "yyf_5_EMY9o"
+    },
+    {
+      "ts_utc": "2026-04-20T12:04:46.094310+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Stain_Highlights_Scratches-220_Grit_for_Final_Prep_Before_Stain-wood-045.mp4",
+      "result": "success",
+      "video_id": "f_VE4dZtwQo"
     }
   ],
   "last_post": {
