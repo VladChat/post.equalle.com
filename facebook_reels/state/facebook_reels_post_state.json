@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-04-17"
+    "manifest_index": 0,
+    "last_day": "2026-04-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1976,6 +1976,17 @@
       "comment_status": "commented",
       "comment_id": "1257795879832549_767882479594617",
       "commented_ts_utc": "2026-04-17T15:24:42Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4",
+      "filename": "ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4",
+      "manifest": "drywall.json",
+      "title": "Ridges Showing After the First Coat? Feather Drywall Mud With 180 Grit",
+      "description": "If ridges show after your first coat, sand lightly with 180 grit to knock down high spots and feather the edges before applying the next coat. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-20T14:57:35Z",
+      "video_id": "4433081926981517"
     }
   },
   "runs": [
@@ -2841,6 +2852,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1257795879832549",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-20T14:57:35Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4",
+      "filename": "ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "4433081926981517",
       "error": null
     }
   ],
