@@ -1986,7 +1986,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-04-20T14:57:35Z",
-      "video_id": "4433081926981517"
+      "video_id": "4433081926981517",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 1
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-04-20T15:12:15Z",
+      "comment_text": "If the scratch pattern looks uneven, do a few crosshatch passes and re-check. Sanding wet or dry?",
+      "comment_status": "commented",
+      "comment_id": "4433081926981517_1612066023351727",
+      "commented_ts_utc": "2026-04-20T15:12:20Z"
     }
   },
   "runs": [
@@ -3638,6 +3648,15 @@
       "result": "commented",
       "comment_id": "1257795879832549_767882479594617",
       "template_idx": 9
+    },
+    {
+      "ts_utc": "2026-04-20T15:12:20Z",
+      "video_id": "4433081926981517",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "4433081926981517_1612066023351727",
+      "template_idx": 1
     }
   ]
 }
