@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-04-19"
+    "manifest_index": 0,
+    "last_day": "2026-04-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1404,6 +1404,20 @@
       "pin_id": "839428818090060312",
       "media_id": "3427955049208876672",
       "cover_image_url": "https://i.pinimg.com/1200x/23/1c/9d/231c9d8c0a878b964271b65710ab448f.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4",
+      "filename": "ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "title": "Ridges Showing After the First Coat? Feather Drywall Mud With 180 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-20T11:00:01+00:00",
+      "pin_id": "839428818090078136",
+      "media_id": "3430965298134953344",
+      "cover_image_url": "https://i.pinimg.com/1200x/50/c7/13/50c713d22b1887597490b9db23aab94b.jpg"
     }
   },
   "runs": [
@@ -2405,6 +2419,16 @@
       "result": "success",
       "pin_id": "839428818090060312",
       "media_id": "3427955049208876672",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-20T11:00:01+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4",
+      "filename": "ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818090078136",
+      "media_id": "3430965298134953344",
       "error": null
     }
   ]
