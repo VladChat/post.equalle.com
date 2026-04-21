@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-04-18"
+    "manifest_index": 4,
+    "last_day": "2026-04-21"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -3219,6 +3219,30 @@
       "comment_status": "commented",
       "comment_id": "17875746945589842",
       "commented_ts_utc": "2026-04-18T15:05:49Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/scratches_stand_out_on_plastic-220_grit_to_reduce_plastic_scratches-plastic-019.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_stand_out_on_plastic-220_grit_to_reduce_plastic_scratches-plastic-019.mp4",
+      "filename": "scratches_stand_out_on_plastic-220_grit_to_reduce_plastic_scratches-plastic-019.mp4",
+      "manifest": "plastic.json",
+      "title": "Scratches Stand Out? Use 220 Grit To Reduce Them",
+      "description": "When scratches stand out on plastic, 220 grit helps reduce their visibility by refining the surface and blending sanding lines before paint or coating. Use light, even strokes and inspect under light. Sandpaper eQualle",
+      "caption": "Scratches Stand Out? Use 220 Grit To Reduce Them\n\nWhen scratches stand out on plastic, 220 grit helps reduce their visibility by refining the surface and blending sanding lines before paint or coating. Use light, even strokes and inspect under light. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-21T14:52:29Z",
+      "mode": "binary",
+      "container_id": "18115868950741317",
+      "media_id": "18117683179668494",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18115868950741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18115868950741317"
+      }
     }
   },
   "runs": [
@@ -4276,6 +4300,17 @@
       "filename": "metal_still_feels_corroded-80_grit_for_rust_surface_leveling-metal-019.mp4",
       "container_id": "18115554691741317",
       "media_id": "17963127078069537",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-21T14:52:29Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "plastic.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_stand_out_on_plastic-220_grit_to_reduce_plastic_scratches-plastic-019.mp4",
+      "filename": "scratches_stand_out_on_plastic-220_grit_to_reduce_plastic_scratches-plastic-019.mp4",
+      "container_id": "18115868950741317",
+      "media_id": "18117683179668494",
       "error": null
     }
   ],
