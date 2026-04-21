@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-20"
+    "last_day": "2026-04-21"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1096,6 +1096,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-220",
       "result": "success",
       "video_id": "f_VE4dZtwQo"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Surface_Feels_Smooth_but_Stains_Weird-180_Grit_for_Consistent_Stain_Prep-wood-046.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Feels_Smooth_but_Stains_Weird-180_Grit_for_Consistent_Stain_Prep-wood-046.mp4",
+      "filename": "Surface_Feels_Smooth_but_Stains_Weird-180_Grit_for_Consistent_Stain_Prep-wood-046.mp4",
+      "manifest": "wood.json",
+      "title": "Surface Feels Smooth but Stains Weird: 180 Grit Consistent Stain Prep",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8DTGHP",
+      "result": "success",
+      "video_id": "dvb-V2MI_pY"
     }
   },
   "runs": [
@@ -1753,6 +1763,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Stain_Highlights_Scratches-220_Grit_for_Final_Prep_Before_Stain-wood-045.mp4",
       "result": "success",
       "video_id": "f_VE4dZtwQo"
+    },
+    {
+      "ts_utc": "2026-04-21T11:59:31.082434+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Feels_Smooth_but_Stains_Weird-180_Grit_for_Consistent_Stain_Prep-wood-046.mp4",
+      "result": "success",
+      "video_id": "dvb-V2MI_pY"
     }
   ],
   "last_post": {
