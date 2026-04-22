@@ -2007,7 +2007,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-04-22T14:53:08Z",
-      "video_id": "1564768564620832"
+      "video_id": "1564768564620832",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-04-22T15:47:13Z",
+      "comment_text": "For wood work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "1564768564620832_3368737183294422",
+      "commented_ts_utc": "2026-04-22T15:47:18Z"
     }
   },
   "runs": [
@@ -3677,6 +3687,15 @@
       "result": "commented",
       "comment_id": "4433081926981517_1612066023351727",
       "template_idx": 1
+    },
+    {
+      "ts_utc": "2026-04-22T15:47:18Z",
+      "video_id": "1564768564620832",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "1564768564620832_3368737183294422",
+      "template_idx": 3
     }
   ]
 }
