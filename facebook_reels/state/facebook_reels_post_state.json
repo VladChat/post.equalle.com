@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-04-20"
+    "manifest_index": 1,
+    "last_day": "2026-04-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1997,6 +1997,17 @@
       "comment_status": "commented",
       "comment_id": "4433081926981517_1612066023351727",
       "commented_ts_utc": "2026-04-20T15:12:20Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
+      "filename": "Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
+      "manifest": "wood.json",
+      "title": "Want a Smoother Topcoat: 400 Grit Very Light Between Coats",
+      "description": "Want a Smoother Topcoat? Use 400 grit for very light between coats. Lightly scuff sand between coats to knock down nibs and keep the next coat smooth. Use light pressure, keep the surface flat, and stop as soon as it feels even. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-22T14:53:08Z",
+      "video_id": "1564768564620832"
     }
   },
   "runs": [
@@ -2871,6 +2882,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "4433081926981517",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-22T14:53:08Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
+      "filename": "Want_a_Smoother_Topcoat-400_Grit_for_Very_Light_Between_Coats-wood-020.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "1564768564620832",
       "error": null
     }
   ],
