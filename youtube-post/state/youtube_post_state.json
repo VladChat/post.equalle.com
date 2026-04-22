@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-21"
+    "last_day": "2026-04-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1106,6 +1106,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ8DTGHP",
       "result": "success",
       "video_id": "dvb-V2MI_pY"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Stain_Shows_Sanding_Lines-180_Grit_for_Sanding_With_Grain-wood-047.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Stain_Shows_Sanding_Lines-180_Grit_for_Sanding_With_Grain-wood-047.mp4",
+      "filename": "Stain_Shows_Sanding_Lines-180_Grit_for_Sanding_With_Grain-wood-047.mp4",
+      "manifest": "wood.json",
+      "title": "Stain Shows Sanding Lines: 180 Grit Sanding With Grain",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-180",
+      "result": "success",
+      "video_id": "iX15_HF1lz8"
     }
   },
   "runs": [
@@ -1769,6 +1779,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Feels_Smooth_but_Stains_Weird-180_Grit_for_Consistent_Stain_Prep-wood-046.mp4",
       "result": "success",
       "video_id": "dvb-V2MI_pY"
+    },
+    {
+      "ts_utc": "2026-04-22T11:59:37.847439+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Stain_Shows_Sanding_Lines-180_Grit_for_Sanding_With_Grain-wood-047.mp4",
+      "result": "success",
+      "video_id": "iX15_HF1lz8"
     }
   ],
   "last_post": {
