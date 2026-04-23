@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-04-21"
+    "manifest_index": 0,
+    "last_day": "2026-04-23"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -3253,6 +3253,30 @@
       "comment_status": "commented",
       "comment_id": "18065020673342454",
       "commented_ts_utc": "2026-04-21T15:41:22Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
+      "filename": "wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
+      "manifest": "drywall.json",
+      "title": "Wall Not Ready for the Next Coat? Prep Drywall With 150 Grit",
+      "description": "Before recoating, sand lightly with 150 grit to smooth small ridges and feather edges so the next coat lays down evenly. Sandpaper eQualle",
+      "caption": "Wall Not Ready for the Next Coat? Prep Drywall With 150 Grit\n\nBefore recoating, sand lightly with 150 grit to smooth small ridges and feather edges so the next coat lays down evenly. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-23T15:20:42Z",
+      "mode": "binary",
+      "container_id": "18116073214741317",
+      "media_id": "18106831291927159",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18116073214741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18116073214741317"
+      }
     }
   },
   "runs": [
@@ -4321,6 +4345,17 @@
       "filename": "scratches_stand_out_on_plastic-220_grit_to_reduce_plastic_scratches-plastic-019.mp4",
       "container_id": "18115868950741317",
       "media_id": "18117683179668494",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-23T15:20:42Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
+      "filename": "wall_not_ready_for_next_coat-150_grit_for_drywall_prep_before_recoat-drywall-020.mp4",
+      "container_id": "18116073214741317",
+      "media_id": "18106831291927159",
       "error": null
     }
   ],
