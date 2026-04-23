@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-22"
+    "last_day": "2026-04-23"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1116,6 +1116,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-180",
       "result": "success",
       "video_id": "iX15_HF1lz8"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Color_Looks_Uneven_After_Stain-150to180_Grit_for_Better_Stain_Prep-wood-048.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Color_Looks_Uneven_After_Stain-150to180_Grit_for_Better_Stain_Prep-wood-048.mp4",
+      "filename": "Color_Looks_Uneven_After_Stain-150to180_Grit_for_Better_Stain_Prep-wood-048.mp4",
+      "manifest": "wood.json",
+      "title": "Color Looks Uneven After Stain: 150–180 Grit Better Stain Prep",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVW4J5",
+      "result": "success",
+      "video_id": "ZPICgG4goVk"
     }
   },
   "runs": [
@@ -1785,6 +1795,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Stain_Shows_Sanding_Lines-180_Grit_for_Sanding_With_Grain-wood-047.mp4",
       "result": "success",
       "video_id": "iX15_HF1lz8"
+    },
+    {
+      "ts_utc": "2026-04-23T11:58:43.725808+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Color_Looks_Uneven_After_Stain-150to180_Grit_for_Better_Stain_Prep-wood-048.mp4",
+      "result": "success",
+      "video_id": "ZPICgG4goVk"
     }
   ],
   "last_post": {
