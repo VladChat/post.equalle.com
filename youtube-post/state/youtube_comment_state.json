@@ -923,6 +923,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-04-22T12:10:51Z",
       "verify_after_ts": 1776861651.7063766
+    },
+    "ZPICgG4goVk": {
+      "comment_status": "commented_unverified",
+      "comment_id": "Ugy0ksn4aHbffdDGhjt4AaABAg",
+      "comment_text": "On plastic or resin surface, keep the sheet moving and avoid heat buildup—heat can smear and clog the abrasive. Are you sanding dry or doing a controlled wet sand?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-04-23T12:10:45Z",
+      "verify_after_ts": 1776948045.662852
     }
   },
   "runs": [
@@ -1606,6 +1614,12 @@
       "video_id": "iX15_HF1lz8",
       "result": "commented_unverified",
       "comment_id": "Ugy6YQbuytjA4TbxCT14AaABAg"
+    },
+    {
+      "ts": "2026-04-23T12:10:45Z",
+      "video_id": "ZPICgG4goVk",
+      "result": "commented_unverified",
+      "comment_id": "Ugy0ksn4aHbffdDGhjt4AaABAg"
     }
   ]
 }
