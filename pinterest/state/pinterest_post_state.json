@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-04-22"
+    "manifest_index": 2,
+    "last_day": "2026-04-24"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1432,6 +1432,20 @@
       "pin_id": "839428818090112462",
       "media_id": "3436733214901862912",
       "cover_image_url": "https://i.pinimg.com/1200x/8a/23/d8/8a23d861eef868bd0905f96bad4a1b65.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_after_first_coat-2000_grit_wet_sand_between_coats-wet-021.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_after_first_coat-2000_grit_wet_sand_between_coats-wet-021.mp4",
+      "filename": "dust_nibs_after_first_coat-2000_grit_wet_sand_between_coats-wet-021.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://equalle.com/products/2000-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "title": "Dust Nibs After First Coat? 2000 Grit Wet Sand Between Coats",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-24T10:48:33+00:00",
+      "pin_id": "839428818090147000",
+      "media_id": "3442538535633093184",
+      "cover_image_url": "https://i.pinimg.com/1200x/48/50/7d/48507ded9728af4d86281371eb427304.jpg"
     }
   },
   "runs": [
@@ -2453,6 +2467,16 @@
       "result": "success",
       "pin_id": "839428818090112462",
       "media_id": "3436733214901862912",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-24T10:48:33+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_after_first_coat-2000_grit_wet_sand_between_coats-wet-021.mp4",
+      "filename": "dust_nibs_after_first_coat-2000_grit_wet_sand_between_coats-wet-021.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818090147000",
+      "media_id": "3442538535633093184",
       "error": null
     }
   ]
