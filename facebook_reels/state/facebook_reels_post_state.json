@@ -2028,7 +2028,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-04-24T14:48:58Z",
-      "video_id": "1269489338670782"
+      "video_id": "1269489338670782",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 8
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-04-24T15:48:24Z",
+      "comment_text": "Try a few lighter passes instead of one heavy pass—less chance of gouging. Are you seeing swirl marks?",
+      "comment_status": "commented",
+      "comment_id": "1269489338670782_1263595559175410",
+      "commented_ts_utc": "2026-04-24T15:48:28Z"
     }
   },
   "runs": [
@@ -3716,6 +3726,15 @@
       "result": "commented",
       "comment_id": "1564768564620832_3368737183294422",
       "template_idx": 3
+    },
+    {
+      "ts_utc": "2026-04-24T15:48:28Z",
+      "video_id": "1269489338670782",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_still_feels_uneven-1500-2000_grit_wet_sanding_clear_coat-wet-020.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1269489338670782_1263595559175410",
+      "template_idx": 8
     }
   ]
 }
