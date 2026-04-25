@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-24"
+    "last_day": "2026-04-25"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1136,6 +1136,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-180",
       "result": "success",
       "video_id": "6wH9TMVfuvA"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Need_Smoother_Stained_Finish-220_Grit_for_Final_Stain_Prep-wood-050.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Need_Smoother_Stained_Finish-220_Grit_for_Final_Stain_Prep-wood-050.mp4",
+      "filename": "Need_Smoother_Stained_Finish-220_Grit_for_Final_Stain_Prep-wood-050.mp4",
+      "manifest": "wood.json",
+      "title": "Need Smoother Stained Finish: 220 Grit Final Stain Prep",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVX7F6",
+      "result": "success",
+      "video_id": "jaCAkG8nY2c"
     }
   },
   "runs": [
@@ -1817,6 +1827,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Stain_Wont_Take_Evenly-180_Grit_for_Prep_Before_Wood_Stain-wood-049.mp4",
       "result": "success",
       "video_id": "6wH9TMVfuvA"
+    },
+    {
+      "ts_utc": "2026-04-25T11:39:05.300416+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Need_Smoother_Stained_Finish-220_Grit_for_Final_Stain_Prep-wood-050.mp4",
+      "result": "success",
+      "video_id": "jaCAkG8nY2c"
     }
   ],
   "last_post": {
