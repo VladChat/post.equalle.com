@@ -3300,7 +3300,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18116290987741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-04-25T14:35:37Z",
+      "comment_text": "Light pressure with 80 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "18128616751585665",
+      "commented_ts_utc": "2026-04-25T14:35:40Z"
     }
   },
   "runs": [
@@ -5141,6 +5151,15 @@
       "result": "commented",
       "comment_id": "18065020673342454",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-04-25T14:35:40Z",
+      "media_id": "17949641417980357",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Paint_Still_On_the_Wood-80_Grit_for_Removing_Old_Paint-wood-021.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "18128616751585665",
+      "template_idx": 0
     }
   ]
 }
