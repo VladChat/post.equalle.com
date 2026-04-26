@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-04-24"
+    "manifest_index": 3,
+    "last_day": "2026-04-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1446,6 +1446,20 @@
       "pin_id": "839428818090147000",
       "media_id": "3442538535633093184",
       "cover_image_url": "https://i.pinimg.com/1200x/48/50/7d/48507ded9728af4d86281371eb427304.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rust_damage_still_visible-120_grit_for_smoothing_corroded_metal-metal-020.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_damage_still_visible-120_grit_for_smoothing_corroded_metal-metal-020.mp4",
+      "filename": "rust_damage_still_visible-120_grit_for_smoothing_corroded_metal-metal-020.mp4",
+      "manifest": "metal.json",
+      "board_id": "839428886736049946",
+      "destination_url": "https://www.amazon.com/gp/product/B07QD2GTY4",
+      "title": "Smooth Visible Rust Damage on Metal With 120 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-26T10:11:18+00:00",
+      "pin_id": "839428818090178739",
+      "media_id": "3448261065066095104",
+      "cover_image_url": "https://i.pinimg.com/1200x/ec/3d/f9/ec3df9a3cb59975fad3dc4a91dd259c2.jpg"
     }
   },
   "runs": [
@@ -2477,6 +2491,16 @@
       "result": "success",
       "pin_id": "839428818090147000",
       "media_id": "3442538535633093184",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-26T10:11:18+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_damage_still_visible-120_grit_for_smoothing_corroded_metal-metal-020.mp4",
+      "filename": "rust_damage_still_visible-120_grit_for_smoothing_corroded_metal-metal-020.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "pin_id": "839428818090178739",
+      "media_id": "3448261065066095104",
       "error": null
     }
   ]
