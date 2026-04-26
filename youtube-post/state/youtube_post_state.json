@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-25"
+    "last_day": "2026-04-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1146,6 +1146,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RHVX7F6",
       "result": "success",
       "video_id": "jaCAkG8nY2c"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Corners_Hard_to_Smooth-220_Grit_for_Hand_Sanding_Corners-wood-051.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Corners_Hard_to_Smooth-220_Grit_for_Hand_Sanding_Corners-wood-051.mp4",
+      "filename": "Corners_Hard_to_Smooth-220_Grit_for_Hand_Sanding_Corners-wood-051.mp4",
+      "manifest": "wood.json",
+      "title": "Corners Hard to Smooth: 220 Grit Hand Sanding Corners",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-220",
+      "result": "success",
+      "video_id": "fp_fnnWHSx8"
     }
   },
   "runs": [
@@ -1833,6 +1843,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Need_Smoother_Stained_Finish-220_Grit_for_Final_Stain_Prep-wood-050.mp4",
       "result": "success",
       "video_id": "jaCAkG8nY2c"
+    },
+    {
+      "ts_utc": "2026-04-26T11:39:32.622603+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Corners_Hard_to_Smooth-220_Grit_for_Hand_Sanding_Corners-wood-051.mp4",
+      "result": "success",
+      "video_id": "fp_fnnWHSx8"
     }
   ],
   "last_post": {
