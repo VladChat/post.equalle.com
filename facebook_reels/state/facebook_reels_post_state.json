@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-04-24"
+    "manifest_index": 3,
+    "last_day": "2026-04-27"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2039,6 +2039,17 @@
       "comment_status": "commented",
       "comment_id": "1269489338670782_1263595559175410",
       "commented_ts_utc": "2026-04-24T15:48:28Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rust_damage_still_visible-120_grit_for_smoothing_corroded_metal-metal-020.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_damage_still_visible-120_grit_for_smoothing_corroded_metal-metal-020.mp4",
+      "filename": "rust_damage_still_visible-120_grit_for_smoothing_corroded_metal-metal-020.mp4",
+      "manifest": "metal.json",
+      "title": "Smooth Visible Rust Damage on Metal With 120 Grit",
+      "description": "Rust damage still visible? Use 120 grit to smooth corroded areas and refine the surface after coarse sanding. Focus on blending the transition so the repair won’t telegraph under paint.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-27T15:16:08Z",
+      "video_id": "1515076510010874"
     }
   },
   "runs": [
@@ -2931,6 +2942,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "1269489338670782",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-27T15:16:08Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_damage_still_visible-120_grit_for_smoothing_corroded_metal-metal-020.mp4",
+      "filename": "rust_damage_still_visible-120_grit_for_smoothing_corroded_metal-metal-020.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "1515076510010874",
       "error": null
     }
   ],
