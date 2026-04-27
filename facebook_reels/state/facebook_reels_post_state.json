@@ -2049,7 +2049,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-04-27T15:16:08Z",
-      "video_id": "1515076510010874"
+      "video_id": "1515076510010874",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 19
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-04-27T16:16:26Z",
+      "comment_text": "Before the next coat, clean the surface well so dust doesn’t telegraph through. Do you tack-cloth or wipe down?",
+      "comment_status": "commented",
+      "comment_id": "1515076510010874_982622690886008",
+      "commented_ts_utc": "2026-04-27T16:16:30Z"
     }
   },
   "runs": [
@@ -3755,6 +3765,15 @@
       "result": "commented",
       "comment_id": "1269489338670782_1263595559175410",
       "template_idx": 8
+    },
+    {
+      "ts_utc": "2026-04-27T16:16:30Z",
+      "video_id": "1515076510010874",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_damage_still_visible-120_grit_for_smoothing_corroded_metal-metal-020.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "1515076510010874_982622690886008",
+      "template_idx": 19
     }
   ]
 }
