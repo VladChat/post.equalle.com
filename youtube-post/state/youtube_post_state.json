@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-26"
+    "last_day": "2026-04-27"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1156,6 +1156,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-220",
       "result": "success",
       "video_id": "fp_fnnWHSx8"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Trim_Feels_Rough_After_Cutting-180_Grit_for_Sanding_Wood_Trim-wood-052.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Trim_Feels_Rough_After_Cutting-180_Grit_for_Sanding_Wood_Trim-wood-052.mp4",
+      "filename": "Trim_Feels_Rough_After_Cutting-180_Grit_for_Sanding_Wood_Trim-wood-052.mp4",
+      "manifest": "wood.json",
+      "title": "Trim Feels Rough After Cutting: 180 Grit Sanding Wood Trim",
+      "destination_url": "https://www.amazon.com/gp/product/B07RGRN3PL",
+      "result": "success",
+      "video_id": "zOfcF0lYUA0"
     }
   },
   "runs": [
@@ -1849,6 +1859,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Corners_Hard_to_Smooth-220_Grit_for_Hand_Sanding_Corners-wood-051.mp4",
       "result": "success",
       "video_id": "fp_fnnWHSx8"
+    },
+    {
+      "ts_utc": "2026-04-27T12:20:15.794875+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Trim_Feels_Rough_After_Cutting-180_Grit_for_Sanding_Wood_Trim-wood-052.mp4",
+      "result": "success",
+      "video_id": "zOfcF0lYUA0"
     }
   ],
   "last_post": {
