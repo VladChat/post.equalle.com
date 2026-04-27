@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-04-26"
+    "manifest_index": 4,
+    "last_day": "2026-04-27"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1460,6 +1460,20 @@
       "pin_id": "839428818090178739",
       "media_id": "3448261065066095104",
       "cover_image_url": "https://i.pinimg.com/1200x/ec/3d/f9/ec3df9a3cb59975fad3dc4a91dd259c2.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_not_sticking_to_plastic-220_grit_for_plastic_paint_prep-plastic-021.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_not_sticking_to_plastic-220_grit_for_plastic_paint_prep-plastic-021.mp4",
+      "filename": "paint_not_sticking_to_plastic-220_grit_for_plastic_paint_prep-plastic-021.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
+      "title": "Paint Not Sticking? Use 220 Grit For Plastic Prep",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-27T11:20:41+00:00",
+      "pin_id": "839428818090194844",
+      "media_id": "3451301501909615680",
+      "cover_image_url": "https://i.pinimg.com/1200x/74/5c/1c/745c1c359c3114087a5b8019f26c586b.jpg"
     }
   },
   "runs": [
@@ -2501,6 +2515,16 @@
       "result": "success",
       "pin_id": "839428818090178739",
       "media_id": "3448261065066095104",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-27T11:20:41+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_not_sticking_to_plastic-220_grit_for_plastic_paint_prep-plastic-021.mp4",
+      "filename": "paint_not_sticking_to_plastic-220_grit_for_plastic_paint_prep-plastic-021.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818090194844",
+      "media_id": "3451301501909615680",
       "error": null
     }
   ]
