@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-27"
+    "last_day": "2026-04-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1166,6 +1166,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RGRN3PL",
       "result": "success",
       "video_id": "zOfcF0lYUA0"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/End_Grain_Feels_Like_Sandpaper-220_Grit_for_Sanding_End_Grain-wood-053.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/End_Grain_Feels_Like_Sandpaper-220_Grit_for_Sanding_End_Grain-wood-053.mp4",
+      "filename": "End_Grain_Feels_Like_Sandpaper-220_Grit_for_Sanding_End_Grain-wood-053.mp4",
+      "manifest": "wood.json",
+      "title": "End Grain Feels Like Sandpaper: 220 Grit Sanding End Grain",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-220",
+      "result": "success",
+      "video_id": "zCA-5PZXTME"
     }
   },
   "runs": [
@@ -1865,6 +1875,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Trim_Feels_Rough_After_Cutting-180_Grit_for_Sanding_Wood_Trim-wood-052.mp4",
       "result": "success",
       "video_id": "zOfcF0lYUA0"
+    },
+    {
+      "ts_utc": "2026-04-28T12:23:20.431018+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/End_Grain_Feels_Like_Sandpaper-220_Grit_for_Sanding_End_Grain-wood-053.mp4",
+      "result": "success",
+      "video_id": "zCA-5PZXTME"
     }
   ],
   "last_post": {
