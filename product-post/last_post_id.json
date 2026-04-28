@@ -1,15 +1,14 @@
 {
-  "post_id": "325670187920349_1406201928187956",
+  "post_id": "325670187920349_1410669564407859",
   "product": {
     "source": "amazon",
-    "url": "https://www.amazon.com/gp/product/B07RLWGZ85",
-    "grit": 800,
+    "url": "https://www.amazon.com/gp/product/B07RJZ4MZK",
+    "grit": 1000,
     "pack": 25,
-    "anchor": "800 Grit (Ultra-Fine)",
-    "grit_description": "Ultra-fine grit for pre-polish refinement on paint, clear coats, or resin. Smooths imperfections without damaging the base layer. Provides optimal control when used wet or dry before 1000 or 1200 grits.",
+    "anchor": "1000 Grit (Ultra-Fine)",
+    "grit_description": "Light polishing grit for removing swirl marks and fine scratches. Commonly used in automotive finishing, plastic restoration, and resin art. Delivers a consistent semi-gloss surface ready for final polish.",
     "contexts": [
-      "auto",
-      "finishing"
+      "polishing"
     ]
   }
 }
