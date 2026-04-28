@@ -3276,7 +3276,14 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18116073214741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "skip",
+        "template_idx": 3
+      },
+      "comment_status": "skipped",
+      "comment_skipped_ts_utc": "2026-04-28T16:16:22Z",
+      "comment_skipped_reason": "policy_10pct_skip"
     },
     "https://github.com/VladChat/video/releases/download/wood/Old_Paint_Still_On_the_Wood-80_Grit_for_Removing_Old_Paint-wood-021.mp4": {
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Paint_Still_On_the_Wood-80_Grit_for_Removing_Old_Paint-wood-021.mp4",
