@@ -971,6 +971,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-04-28T13:00:09Z",
       "verify_after_ts": 1777383009.204533
+    },
+    "N7TJUZm4d28": {
+      "comment_status": "commented_unverified",
+      "comment_id": "UgwGSi0a_UFePtodsLJ4AaABAg",
+      "comment_text": "If the paper starts loading up, wipe/rinse it and keep going—clean paper cuts more consistently. Does your surface clog fast when sanding?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-04-29T12:57:28Z",
+      "verify_after_ts": 1777469248.501636
     }
   },
   "runs": [
@@ -1690,6 +1698,12 @@
       "video_id": "zCA-5PZXTME",
       "result": "commented_unverified",
       "comment_id": "Ugyz02EoG5geDBpFttF4AaABAg"
+    },
+    {
+      "ts": "2026-04-29T12:57:28Z",
+      "video_id": "N7TJUZm4d28",
+      "result": "commented_unverified",
+      "comment_id": "UgwGSi0a_UFePtodsLJ4AaABAg"
     }
   ]
 }
