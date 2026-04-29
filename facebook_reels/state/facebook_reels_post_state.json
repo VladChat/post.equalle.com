@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-04-27"
+    "manifest_index": 4,
+    "last_day": "2026-04-29"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2060,6 +2060,17 @@
       "comment_status": "commented",
       "comment_id": "1515076510010874_982622690886008",
       "commented_ts_utc": "2026-04-27T16:16:30Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_not_ready_for_finish-220_grit_for_plastic_surface_prep-plastic-020.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_not_ready_for_finish-220_grit_for_plastic_surface_prep-plastic-020.mp4",
+      "filename": "plastic_not_ready_for_finish-220_grit_for_plastic_surface_prep-plastic-020.mp4",
+      "manifest": "plastic.json",
+      "title": "Plastic Not Ready For Finish? Prep With 220 Grit",
+      "description": "If plastic isn’t ready for the final finish, 220 grit helps create an even surface and consistent scuff for better coating adhesion. Sand gently, then wipe clean and re-check before applying finish. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-29T15:25:05Z",
+      "video_id": "26991561643802521"
     }
   },
   "runs": [
@@ -2961,6 +2972,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "1515076510010874",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-29T15:25:05Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_not_ready_for_finish-220_grit_for_plastic_surface_prep-plastic-020.mp4",
+      "filename": "plastic_not_ready_for_finish-220_grit_for_plastic_surface_prep-plastic-020.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "26991561643802521",
       "error": null
     }
   ],
