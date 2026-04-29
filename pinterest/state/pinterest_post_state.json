@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-04-27"
+    "manifest_index": 0,
+    "last_day": "2026-04-29"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1474,6 +1474,20 @@
       "pin_id": "839428818090194844",
       "media_id": "3451301501909615680",
       "cover_image_url": "https://i.pinimg.com/1200x/74/5c/1c/745c1c359c3114087a5b8019f26c586b.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/edges_visible_between_coats-180_grit_for_blending_drywall_layers-drywall-022.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_visible_between_coats-180_grit_for_blending_drywall_layers-drywall-022.mp4",
+      "filename": "edges_visible_between_coats-180_grit_for_blending_drywall_layers-drywall-022.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8DTGHP",
+      "title": "Edges Visible Between Coats? Blend Drywall Layers With 180 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-04-29T11:10:20+00:00",
+      "pin_id": "839428818090229280",
+      "media_id": "3457077884894756736",
+      "cover_image_url": "https://i.pinimg.com/1200x/8a/37/5c/8a375c241e8d71308c7777f59c431b6d.jpg"
     }
   },
   "runs": [
@@ -2525,6 +2539,16 @@
       "result": "success",
       "pin_id": "839428818090194844",
       "media_id": "3451301501909615680",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-04-29T11:10:20+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_visible_between_coats-180_grit_for_blending_drywall_layers-drywall-022.mp4",
+      "filename": "edges_visible_between_coats-180_grit_for_blending_drywall_layers-drywall-022.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818090229280",
+      "media_id": "3457077884894756736",
       "error": null
     }
   ]
