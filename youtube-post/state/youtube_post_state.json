@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-28"
+    "last_day": "2026-04-29"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1176,6 +1176,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-220",
       "result": "success",
       "video_id": "zCA-5PZXTME"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Veneer_Feels_Risky_to_Sand-220_Grit_for_Light_Veneer_Sanding-wood-054.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Veneer_Feels_Risky_to_Sand-220_Grit_for_Light_Veneer_Sanding-wood-054.mp4",
+      "filename": "Veneer_Feels_Risky_to_Sand-220_Grit_for_Light_Veneer_Sanding-wood-054.mp4",
+      "manifest": "wood.json",
+      "title": "Veneer Feels Risky to Sand: 220 Grit Light Veneer Sanding",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8DFS6T",
+      "result": "success",
+      "video_id": "N7TJUZm4d28"
     }
   },
   "runs": [
@@ -1881,6 +1891,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/End_Grain_Feels_Like_Sandpaper-220_Grit_for_Sanding_End_Grain-wood-053.mp4",
       "result": "success",
       "video_id": "zCA-5PZXTME"
+    },
+    {
+      "ts_utc": "2026-04-29T12:17:24.116088+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Veneer_Feels_Risky_to_Sand-220_Grit_for_Light_Veneer_Sanding-wood-054.mp4",
+      "result": "success",
+      "video_id": "N7TJUZm4d28"
     }
   ],
   "last_post": {
