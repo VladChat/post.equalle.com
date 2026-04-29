@@ -2070,7 +2070,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-04-29T15:25:05Z",
-      "video_id": "26991561643802521"
+      "video_id": "26991561643802521",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 8
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-04-29T16:08:49Z",
+      "comment_text": "Try a few lighter passes instead of one heavy pass—less chance of gouging. Are you seeing swirl marks?",
+      "comment_status": "commented",
+      "comment_id": "26991561643802521_26520582857551098",
+      "commented_ts_utc": "2026-04-29T16:08:57Z"
     }
   },
   "runs": [
@@ -3794,6 +3804,15 @@
       "result": "commented",
       "comment_id": "1515076510010874_982622690886008",
       "template_idx": 19
+    },
+    {
+      "ts_utc": "2026-04-29T16:08:57Z",
+      "video_id": "26991561643802521",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_not_ready_for_finish-220_grit_for_plastic_surface_prep-plastic-020.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "26991561643802521_26520582857551098",
+      "template_idx": 8
     }
   ]
 }
