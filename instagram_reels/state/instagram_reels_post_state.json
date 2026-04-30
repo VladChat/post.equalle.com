@@ -3341,7 +3341,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18116827075741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 13
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-04-30T15:25:36Z",
+      "comment_text": "On wet-sanding, sanding dust can hide defects—wipe often and re-check. Do you see it only after wiping?",
+      "comment_status": "commented",
+      "comment_id": "18371855746228112",
+      "commented_ts_utc": "2026-04-30T15:25:38Z"
     }
   },
   "runs": [
@@ -5202,6 +5212,15 @@
       "result": "commented",
       "comment_id": "18128616751585665",
       "template_idx": 0
+    },
+    {
+      "ts_utc": "2026-04-30T15:25:38Z",
+      "media_id": "18390518308080456",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_after_first_coat-2000_grit_wet_sand_between_coats-wet-021.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18371855746228112",
+      "template_idx": 13
     }
   ]
 }
