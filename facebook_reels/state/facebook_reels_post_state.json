@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-04-29"
+    "manifest_index": 0,
+    "last_day": "2026-05-01"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2081,6 +2081,17 @@
       "comment_status": "commented",
       "comment_id": "26991561643802521_26520582857551098",
       "commented_ts_utc": "2026-04-29T16:08:57Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/edges_visible_between_coats-180_grit_for_blending_drywall_layers-drywall-022.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_visible_between_coats-180_grit_for_blending_drywall_layers-drywall-022.mp4",
+      "filename": "edges_visible_between_coats-180_grit_for_blending_drywall_layers-drywall-022.mp4",
+      "manifest": "drywall.json",
+      "title": "Edges Visible Between Coats? Blend Drywall Layers With 180 Grit",
+      "description": "If edges show between coats, sand with 180 grit using light pressure to blend the transition and prep the surface before the next coat. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-05-01T14:20:18Z",
+      "video_id": "1338980891439730"
     }
   },
   "runs": [
@@ -2991,6 +3002,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "26991561643802521",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-05-01T14:20:18Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_visible_between_coats-180_grit_for_blending_drywall_layers-drywall-022.mp4",
+      "filename": "edges_visible_between_coats-180_grit_for_blending_drywall_layers-drywall-022.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1338980891439730",
       "error": null
     }
   ],
