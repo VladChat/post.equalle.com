@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-04-30"
+    "last_day": "2026-05-01"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1196,6 +1196,16 @@
       "destination_url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
       "result": "success",
       "video_id": "vpa9Gq_3e4w"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Edges_Look_Rounded_Too_Much-180_Grit_for_Controlled_Edge_Sanding-wood-056.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Edges_Look_Rounded_Too_Much-180_Grit_for_Controlled_Edge_Sanding-wood-056.mp4",
+      "filename": "Edges_Look_Rounded_Too_Much-180_Grit_for_Controlled_Edge_Sanding-wood-056.mp4",
+      "manifest": "wood.json",
+      "title": "Edges Look Rounded Too Much: 180 Grit Controlled Edge Sanding",
+      "destination_url": "https://www.amazon.com/gp/product/B07QG6R8Y1",
+      "result": "success",
+      "video_id": "R8epQBebz_I"
     }
   },
   "runs": [
@@ -1913,6 +1923,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Profiles_and_Molding_Look_Rough-180_Grit_for_Sanding_Wood_Molding-wood-055.mp4",
       "result": "success",
       "video_id": "vpa9Gq_3e4w"
+    },
+    {
+      "ts_utc": "2026-05-01T11:59:34.806264+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Edges_Look_Rounded_Too_Much-180_Grit_for_Controlled_Edge_Sanding-wood-056.mp4",
+      "result": "success",
+      "video_id": "R8epQBebz_I"
     }
   ],
   "last_post": {
