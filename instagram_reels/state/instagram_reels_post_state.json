@@ -3375,7 +3375,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18117033784741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 5
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-05-02T14:20:12Z",
+      "comment_text": "After sanding, wipe dust and check under a bright light from the side. Do the lines disappear evenly?",
+      "comment_status": "commented",
+      "comment_id": "18114545509786381",
+      "commented_ts_utc": "2026-05-02T14:20:16Z"
     }
   },
   "runs": [
@@ -5256,6 +5266,15 @@
       "result": "commented",
       "comment_id": "18371855746228112",
       "template_idx": 13
+    },
+    {
+      "ts_utc": "2026-05-02T14:20:16Z",
+      "media_id": "18086446985621565",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_damage_still_visible-120_grit_for_smoothing_corroded_metal-metal-020.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18114545509786381",
+      "template_idx": 5
     }
   ]
 }
