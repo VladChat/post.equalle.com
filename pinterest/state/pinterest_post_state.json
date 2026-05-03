@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-04-29"
+    "manifest_index": 1,
+    "last_day": "2026-05-03"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1488,6 +1488,20 @@
       "pin_id": "839428818090229280",
       "media_id": "3457077884894756736",
       "cover_image_url": "https://i.pinimg.com/1200x/8a/37/5c/8a375c241e8d71308c7777f59c431b6d.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Thick_Finish_Taking_Forever-60_Grit_for_Heavy_Finish_Removal-wood-023.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Thick_Finish_Taking_Forever-60_Grit_for_Heavy_Finish_Removal-wood-023.mp4",
+      "filename": "Thick_Finish_Taking_Forever-60_Grit_for_Heavy_Finish_Removal-wood-023.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-60-10",
+      "title": "Thick Finish Taking Forever: 60 Grit Heavy Finish Removal",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-05-03T10:17:45+00:00",
+      "pin_id": "839428818090297893",
+      "media_id": "3468570661315744320",
+      "cover_image_url": "https://i.pinimg.com/1200x/44/56/71/44567187b9a1b968a9c2e7a9075bfb29.jpg"
     }
   },
   "runs": [
@@ -2549,6 +2563,16 @@
       "result": "success",
       "pin_id": "839428818090229280",
       "media_id": "3457077884894756736",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-05-03T10:17:45+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Thick_Finish_Taking_Forever-60_Grit_for_Heavy_Finish_Removal-wood-023.mp4",
+      "filename": "Thick_Finish_Taking_Forever-60_Grit_for_Heavy_Finish_Removal-wood-023.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818090297893",
+      "media_id": "3468570661315744320",
       "error": null
     }
   ]
