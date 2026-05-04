@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-05-01"
+    "manifest_index": 1,
+    "last_day": "2026-05-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2099,6 +2099,17 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-05-01T15:03:20Z",
       "comment_skipped_reason": "policy_10pct_skip"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Old_Paint_Still_On_the_Wood-80_Grit_for_Removing_Old_Paint-wood-021.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Paint_Still_On_the_Wood-80_Grit_for_Removing_Old_Paint-wood-021.mp4",
+      "filename": "Old_Paint_Still_On_the_Wood-80_Grit_for_Removing_Old_Paint-wood-021.mp4",
+      "manifest": "wood.json",
+      "title": "Old Paint Still On the Wood: 80 Grit Removing Old Paint",
+      "description": "Old Paint Still On the Wood? Use 80 grit for removing old paint. Remove loose paint or old finish in controlled passes to avoid gouging the wood. Start with the recommended grit, vacuum dust, then step up in grit before repainting. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-05-04T15:16:52Z",
+      "video_id": "2284737892263442"
     }
   },
   "runs": [
@@ -3018,6 +3029,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "1338980891439730",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-05-04T15:16:52Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Paint_Still_On_the_Wood-80_Grit_for_Removing_Old_Paint-wood-021.mp4",
+      "filename": "Old_Paint_Still_On_the_Wood-80_Grit_for_Removing_Old_Paint-wood-021.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "2284737892263442",
       "error": null
     }
   ],
