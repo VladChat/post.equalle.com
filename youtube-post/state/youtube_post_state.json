@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-05-03"
+    "last_day": "2026-05-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1226,6 +1226,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RL3XSWS",
       "result": "success",
       "video_id": "nC7YqvJSRsQ"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Hard-to-Reach_Grooves-220_Grit_for_Sanding_Grooves_and_Details-wood-059.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Hard-to-Reach_Grooves-220_Grit_for_Sanding_Grooves_and_Details-wood-059.mp4",
+      "filename": "Hard-to-Reach_Grooves-220_Grit_for_Sanding_Grooves_and_Details-wood-059.mp4",
+      "manifest": "wood.json",
+      "title": "Hard-to-Reach Grooves: 220 Grit Sanding Grooves and Details",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-220",
+      "result": "success",
+      "video_id": "lIkJJ3TAixk"
     }
   },
   "runs": [
@@ -1961,6 +1971,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/wood/Small_Repair_Area_Wont_Blend-220_Grit_for_Blending_Spot_Repairs-wood-058.mp4",
       "result": "success",
       "video_id": "nC7YqvJSRsQ"
+    },
+    {
+      "ts_utc": "2026-05-04T12:20:50.733748+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Hard-to-Reach_Grooves-220_Grit_for_Sanding_Grooves_and_Details-wood-059.mp4",
+      "result": "success",
+      "video_id": "lIkJJ3TAixk"
     }
   ],
   "last_post": {
