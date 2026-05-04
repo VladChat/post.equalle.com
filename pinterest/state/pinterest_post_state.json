@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-05-03"
+    "manifest_index": 2,
+    "last_day": "2026-05-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1502,6 +1502,20 @@
       "pin_id": "839428818090297893",
       "media_id": "3468570661315744320",
       "cover_image_url": "https://i.pinimg.com/1200x/44/56/71/44567187b9a1b968a9c2e7a9075bfb29.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_coat_feels_gritty-2000_grit_wet_sand_before_next_coat-wet-022.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_feels_gritty-2000_grit_wet_sand_before_next_coat-wet-022.mp4",
+      "filename": "clear_coat_feels_gritty-2000_grit_wet_sand_before_next_coat-wet-022.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://www.amazon.com/gp/product/B07QD2TNNW",
+      "title": "Clear Coat Feels Gritty? 2000 Grit Wet Sand Before Next Coat",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-05-04T11:20:06+00:00",
+      "pin_id": "839428818090316258",
+      "media_id": "3471593851818032192",
+      "cover_image_url": "https://i.pinimg.com/1200x/86/00/7f/86007f39a79d534f11c2fe186c7c835c.jpg"
     }
   },
   "runs": [
@@ -2573,6 +2587,16 @@
       "result": "success",
       "pin_id": "839428818090297893",
       "media_id": "3468570661315744320",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-05-04T11:20:06+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_feels_gritty-2000_grit_wet_sand_before_next_coat-wet-022.mp4",
+      "filename": "clear_coat_feels_gritty-2000_grit_wet_sand_before_next_coat-wet-022.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818090316258",
+      "media_id": "3471593851818032192",
       "error": null
     }
   ]
