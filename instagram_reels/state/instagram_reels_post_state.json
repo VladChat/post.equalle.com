@@ -1907,7 +1907,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18110096896741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 8
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-05-05T16:07:52Z",
+      "comment_text": "Try a few lighter passes instead of one heavy pass—less chance of gouging. Are you seeing swirl marks?",
+      "comment_status": "commented",
+      "comment_id": "18161730028440720",
+      "commented_ts_utc": "2026-05-05T16:07:58Z"
     },
     "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_not_even-120_grit_for_leveling_mud_application-drywall-012.mp4": {
       "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_compound_not_even-120_grit_for_leveling_mud_application-drywall-012.mp4",
@@ -5275,6 +5285,15 @@
       "result": "commented",
       "comment_id": "18114545509786381",
       "template_idx": 5
+    },
+    {
+      "ts_utc": "2026-05-05T16:07:58Z",
+      "media_id": "17843241786695755",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_repair_looks_obvious-150_grit_for_smoothing_repair_area-drywall-011.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18161730028440720",
+      "template_idx": 8
     }
   ]
 }
