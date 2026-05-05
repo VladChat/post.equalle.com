@@ -1,14 +1,13 @@
 {
-  "post_id": "325670187920349_1412354264239389",
+  "post_id": "325670187920349_1416742487133900",
   "product": {
     "source": "amazon",
-    "url": "https://www.amazon.com/gp/product/B07RL3VGJF",
-    "grit": 1200,
+    "url": "https://www.amazon.com/gp/product/B07RFT4WDT",
+    "grit": 1500,
     "pack": 25,
-    "anchor": "1200 Grit (Ultra-Fine)",
-    "grit_description": "Mirror-smooth grit for precision polishing before final buffing. Excellent for auto clear coats, resin crafts, and metal detailing. Ensures maximum clarity and gloss when used wet or dry.",
+    "anchor": "1500 Grit (Ultra-Fine)",
+    "grit_description": "Professional ultra-fine grit for satin or semi-gloss finishing. Removes micro-scratches from clear coats and paint touch-ups. Produces flawless textures and consistent results before final polishing.",
     "contexts": [
-      "auto",
       "polishing"
     ]
   }
