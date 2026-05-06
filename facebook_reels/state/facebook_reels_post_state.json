@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-05-04"
+    "manifest_index": 2,
+    "last_day": "2026-05-06"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2120,6 +2120,17 @@
       "comment_status": "commented",
       "comment_id": "2284737892263442_3156840191370302",
       "commented_ts_utc": "2026-05-04T15:43:47Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_after_first_coat-2000_grit_wet_sand_between_coats-wet-021.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_after_first_coat-2000_grit_wet_sand_between_coats-wet-021.mp4",
+      "filename": "dust_nibs_after_first_coat-2000_grit_wet_sand_between_coats-wet-021.mp4",
+      "manifest": "wet.json",
+      "title": "Dust Nibs After First Coat? 2000 Grit Wet Sand Between Coats",
+      "description": "Dust nibs after the first coat? Wet sand with 2000 grit between coats to smooth the surface before recoating. Keep it wet, use light pressure, short even passes, wipe clean often, and check the finish under a work light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-05-06T15:33:52Z",
+      "video_id": "1186423406865152"
     }
   },
   "runs": [
@@ -3048,6 +3059,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "2284737892263442",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-05-06T15:33:52Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_after_first_coat-2000_grit_wet_sand_between_coats-wet-021.mp4",
+      "filename": "dust_nibs_after_first_coat-2000_grit_wet_sand_between_coats-wet-021.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "1186423406865152",
       "error": null
     }
   ],
