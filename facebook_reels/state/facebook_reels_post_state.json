@@ -2130,7 +2130,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-05-06T15:33:52Z",
-      "video_id": "1186423406865152"
+      "video_id": "1186423406865152",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-05-06T16:09:04Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "1186423406865152_3418345571673217",
+      "commented_ts_utc": "2026-05-06T16:09:08Z"
     }
   },
   "runs": [
@@ -3899,6 +3909,15 @@
       "result": "commented",
       "comment_id": "2284737892263442_3156840191370302",
       "template_idx": 17
+    },
+    {
+      "ts_utc": "2026-05-06T16:09:08Z",
+      "video_id": "1186423406865152",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_after_first_coat-2000_grit_wet_sand_between_coats-wet-021.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1186423406865152_3418345571673217",
+      "template_idx": 12
     }
   ]
 }
