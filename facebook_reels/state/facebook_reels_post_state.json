@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-05-06"
+    "manifest_index": 3,
+    "last_day": "2026-05-08"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2141,6 +2141,17 @@
       "comment_status": "commented",
       "comment_id": "1186423406865152_3418345571673217",
       "commented_ts_utc": "2026-05-06T16:09:08Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/old_paint_still_on_metal-80_grit_for_removing_paint_from_metal-metal-021.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_paint_still_on_metal-80_grit_for_removing_paint_from_metal-metal-021.mp4",
+      "filename": "old_paint_still_on_metal-80_grit_for_removing_paint_from_metal-metal-021.mp4",
+      "manifest": "metal.json",
+      "title": "Remove Old Paint From Metal With 80 Grit Sandpaper",
+      "description": "Old paint still on metal? Use 80 grit to strip the remaining coating and expose a clean, even surface. Feather the edges where paint meets bare metal so primer blends smoothly.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-05-08T15:01:43Z",
+      "video_id": "996086150027265"
     }
   },
   "runs": [
@@ -3078,6 +3089,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "1186423406865152",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-05-08T15:01:43Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_paint_still_on_metal-80_grit_for_removing_paint_from_metal-metal-021.mp4",
+      "filename": "old_paint_still_on_metal-80_grit_for_removing_paint_from_metal-metal-021.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "996086150027265",
       "error": null
     }
   ],
