@@ -2151,7 +2151,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-05-08T15:01:43Z",
-      "video_id": "996086150027265"
+      "video_id": "996086150027265",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 7
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-05-08T15:26:28Z",
+      "comment_text": "If you’re jumping grits, don’t skip too far—blend one step at a time. What grit did you start with?",
+      "comment_status": "commented",
+      "comment_id": "996086150027265_1287243373535673",
+      "commented_ts_utc": "2026-05-08T15:26:33Z"
     }
   },
   "runs": [
@@ -3938,6 +3948,15 @@
       "result": "commented",
       "comment_id": "1186423406865152_3418345571673217",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-05-08T15:26:33Z",
+      "video_id": "996086150027265",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_paint_still_on_metal-80_grit_for_removing_paint_from_metal-metal-021.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "996086150027265_1287243373535673",
+      "template_idx": 7
     }
   ]
 }
