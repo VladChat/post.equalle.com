@@ -3453,7 +3453,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18117744229741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 19
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-05-09T14:48:49Z",
+      "comment_text": "Before the next coat, clean the surface well so dust doesn’t telegraph through. Do you wipe down between coats?",
+      "comment_status": "commented",
+      "comment_id": "18112102276841060",
+      "commented_ts_utc": "2026-05-09T14:48:54Z"
     }
   },
   "runs": [
@@ -5383,6 +5393,15 @@
       "result": "commented",
       "comment_id": "18104221715305145",
       "template_idx": 17
+    },
+    {
+      "ts_utc": "2026-05-09T14:48:54Z",
+      "media_id": "18088870043581066",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18112102276841060",
+      "template_idx": 19
     }
   ]
 }
