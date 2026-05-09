@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-05-08"
+    "last_day": "2026-05-09"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1276,6 +1276,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-2000",
       "result": "success",
       "video_id": "6LgZ_XXZkEY"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/scratches_after_paint_job-1500_grit_wet_sand_for_paint_correction-wet-004.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_after_paint_job-1500_grit_wet_sand_for_paint_correction-wet-004.mp4",
+      "filename": "scratches_after_paint_job-1500_grit_wet_sand_for_paint_correction-wet-004.mp4",
+      "manifest": "wet.json",
+      "title": "Scratches After Paint Job? 1500 Grit Wet Sand For Correction",
+      "destination_url": "https://www.amazon.com/gp/product/B07RFT4WDT",
+      "result": "success",
+      "video_id": "roV-gUGBlF8"
     }
   },
   "runs": [
@@ -2041,6 +2051,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_nibs_in_clear_coat-2000_grit_wet_sanding_between_coats-wet-003.mp4",
       "result": "success",
       "video_id": "6LgZ_XXZkEY"
+    },
+    {
+      "ts_utc": "2026-05-09T11:51:15.124996+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_after_paint_job-1500_grit_wet_sand_for_paint_correction-wet-004.mp4",
+      "result": "success",
+      "video_id": "roV-gUGBlF8"
     }
   ],
   "last_post": {
