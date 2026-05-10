@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-05-08"
+    "manifest_index": 0,
+    "last_day": "2026-05-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1544,6 +1544,20 @@
       "pin_id": "839428818090388502",
       "media_id": "3483133396606315840",
       "cover_image_url": "https://i.pinimg.com/1200x/c2/7e/01/c27e01a879399488172eee49150da03b.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/second_coat_looks_uneven-180_grit_for_leveling_between_coats-drywall-023.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/second_coat_looks_uneven-180_grit_for_leveling_between_coats-drywall-023.mp4",
+      "filename": "second_coat_looks_uneven-180_grit_for_leveling_between_coats-drywall-023.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-180",
+      "title": "Second Coat Looks Uneven? Level Between Coats With 180 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-05-10T10:41:50+00:00",
+      "pin_id": "839428818090421578",
+      "media_id": "3488910754785490944",
+      "cover_image_url": "https://i.pinimg.com/1200x/45/f7/3c/45f73cc00d7988601b81007e27104db4.jpg"
     }
   },
   "runs": [
@@ -2645,6 +2659,16 @@
       "result": "success",
       "pin_id": "839428818090388502",
       "media_id": "3483133396606315840",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-05-10T10:41:50+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/second_coat_looks_uneven-180_grit_for_leveling_between_coats-drywall-023.mp4",
+      "filename": "second_coat_looks_uneven-180_grit_for_leveling_between_coats-drywall-023.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818090421578",
+      "media_id": "3488910754785490944",
       "error": null
     }
   ]
