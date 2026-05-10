@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-05-09"
+    "last_day": "2026-05-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1286,6 +1286,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RFT4WDT",
       "result": "success",
       "video_id": "roV-gUGBlF8"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/surface_not_ready_for_polish-2000_grit_wet_sand_before_polishing-wet-005.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_not_ready_for_polish-2000_grit_wet_sand_before_polishing-wet-005.mp4",
+      "filename": "surface_not_ready_for_polish-2000_grit_wet_sand_before_polishing-wet-005.mp4",
+      "manifest": "wet.json",
+      "title": "Not Ready To Polish? 2000 Grit Wet Sand For Clear Coat Prep",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-2000",
+      "result": "success",
+      "video_id": "9Iye0oRiinI"
     }
   },
   "runs": [
@@ -2057,6 +2067,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_after_paint_job-1500_grit_wet_sand_for_paint_correction-wet-004.mp4",
       "result": "success",
       "video_id": "roV-gUGBlF8"
+    },
+    {
+      "ts_utc": "2026-05-10T11:52:32.646615+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_not_ready_for_polish-2000_grit_wet_sand_before_polishing-wet-005.mp4",
+      "result": "success",
+      "video_id": "9Iye0oRiinI"
     }
   ],
   "last_post": {
