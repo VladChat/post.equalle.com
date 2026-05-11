@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-05-10"
+    "last_day": "2026-05-11"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1296,6 +1296,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-2000",
       "result": "success",
       "video_id": "9Iye0oRiinI"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
+      "filename": "light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
+      "manifest": "wet.json",
+      "title": "Light Orange Peel After Spray? Wet Sand 2000 To 3000 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7TX4KC",
+      "result": "success",
+      "video_id": "xMqI2duG4B0"
     }
   },
   "runs": [
@@ -2073,6 +2083,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_not_ready_for_polish-2000_grit_wet_sand_before_polishing-wet-005.mp4",
       "result": "success",
       "video_id": "9Iye0oRiinI"
+    },
+    {
+      "ts_utc": "2026-05-11T13:48:01.689256+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_orange_peel_after_spray-2000-3000_grit_wet_sanding_clear_coat-wet-006.mp4",
+      "result": "success",
+      "video_id": "xMqI2duG4B0"
     }
   ],
   "last_post": {
