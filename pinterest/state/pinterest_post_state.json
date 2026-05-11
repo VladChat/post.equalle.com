@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-05-10"
+    "manifest_index": 1,
+    "last_day": "2026-05-11"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1558,6 +1558,20 @@
       "pin_id": "839428818090421578",
       "media_id": "3488910754785490944",
       "cover_image_url": "https://i.pinimg.com/1200x/45/f7/3c/45f73cc00d7988601b81007e27104db4.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Flaking_Paint_Everywhere-80_Grit_for_Stripping_Loose_Paint-wood-024.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Flaking_Paint_Everywhere-80_Grit_for_Stripping_Loose_Paint-wood-024.mp4",
+      "filename": "Flaking_Paint_Everywhere-80_Grit_for_Stripping_Loose_Paint-wood-024.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVWCN9",
+      "title": "Flaking Paint Everywhere: 80 Grit Stripping Loose Paint",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-05-11T12:26:42+00:00",
+      "pin_id": "839428818090441271",
+      "media_id": "3492019308803618944",
+      "cover_image_url": "https://i.pinimg.com/1200x/ee/21/b1/ee21b1aa8ab73e5faffcb8c483329f25.jpg"
     }
   },
   "runs": [
@@ -2669,6 +2683,16 @@
       "result": "success",
       "pin_id": "839428818090421578",
       "media_id": "3488910754785490944",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-05-11T12:26:42+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Flaking_Paint_Everywhere-80_Grit_for_Stripping_Loose_Paint-wood-024.mp4",
+      "filename": "Flaking_Paint_Everywhere-80_Grit_for_Stripping_Loose_Paint-wood-024.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818090441271",
+      "media_id": "3492019308803618944",
       "error": null
     }
   ]
