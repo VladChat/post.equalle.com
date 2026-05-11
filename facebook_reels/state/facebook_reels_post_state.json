@@ -2172,7 +2172,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-05-11T16:10:53Z",
-      "video_id": "1229484582403481"
+      "video_id": "1229484582403481",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 15
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-05-11T16:43:49Z",
+      "comment_text": "A quick mist/wipe (for wet sanding) can show high spots fast. Are you using water or a lubricant?",
+      "comment_status": "commented",
+      "comment_id": "1229484582403481_2030180370927204",
+      "commented_ts_utc": "2026-05-11T16:43:54Z"
     }
   },
   "runs": [
@@ -3977,6 +3987,15 @@
       "result": "commented",
       "comment_id": "996086150027265_1287243373535673",
       "template_idx": 7
+    },
+    {
+      "ts_utc": "2026-05-11T16:43:54Z",
+      "video_id": "1229484582403481",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_not_sticking_to_plastic-220_grit_for_plastic_paint_prep-plastic-021.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "1229484582403481_2030180370927204",
+      "template_idx": 15
     }
   ]
 }
