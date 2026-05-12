@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-05-09"
+    "manifest_index": 1,
+    "last_day": "2026-05-12"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -3464,6 +3464,30 @@
       "comment_status": "commented",
       "comment_id": "18112102276841060",
       "commented_ts_utc": "2026-05-09T14:48:54Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Varnish_Wont_Come_Off-80_Grit_for_Removing_Old_Varnish-wood-022.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Varnish_Wont_Come_Off-80_Grit_for_Removing_Old_Varnish-wood-022.mp4",
+      "filename": "Varnish_Wont_Come_Off-80_Grit_for_Removing_Old_Varnish-wood-022.mp4",
+      "manifest": "wood.json",
+      "title": "Varnish Won't Come Off: 80 Grit Removing Old Varnish",
+      "description": "Varnish Won't Come Off? Use 80 grit for removing old varnish. Remove loose paint or old finish in controlled passes to avoid gouging the wood. Start with the recommended grit, vacuum dust, then step up in grit before repainting. Wet or dry use. — eQualle",
+      "caption": "Varnish Won't Come Off: 80 Grit Removing Old Varnish\n\nVarnish Won't Come Off? Use 80 grit for removing old varnish. Remove loose paint or old finish in controlled passes to avoid gouging the wood. Start with the recommended grit, vacuum dust, then step up in grit before repainting. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-05-12T15:44:23Z",
+      "mode": "binary",
+      "container_id": "18118071586741317",
+      "media_id": "18081781052146129",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18118071586741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18118071586741317"
+      }
     }
   },
   "runs": [
@@ -4598,6 +4622,17 @@
       "filename": "ridges_showing_after_first_coat-180_grit_for_feathering_drywall_mud-drywall-021.mp4",
       "container_id": "18117744229741317",
       "media_id": "18088870043581066",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-05-12T15:44:23Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wood.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Varnish_Wont_Come_Off-80_Grit_for_Removing_Old_Varnish-wood-022.mp4",
+      "filename": "Varnish_Wont_Come_Off-80_Grit_for_Removing_Old_Varnish-wood-022.mp4",
+      "container_id": "18118071586741317",
+      "media_id": "18081781052146129",
       "error": null
     }
   ],
