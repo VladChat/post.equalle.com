@@ -1075,6 +1075,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-05-11T14:00:18Z",
       "verify_after_ts": 1778509818.576971
+    },
+    "zZCesdubnbg": {
+      "comment_status": "commented_unverified",
+      "comment_id": "UgzxRp7i_tNxJrGrXd54AaABAg",
+      "comment_text": "Light pressure with this grit usually blends faster than pushing hard—let the Silicon Carbide abrasive do the cutting. Are you sanding wood, metal, drywall, or paint today?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-05-12T13:16:36Z",
+      "verify_after_ts": 1778593596.5716226
     }
   },
   "runs": [
@@ -1872,6 +1880,12 @@
       "video_id": "xMqI2duG4B0",
       "result": "commented_unverified",
       "comment_id": "Ugx_Ozl9jpRR8RPxcDx4AaABAg"
+    },
+    {
+      "ts": "2026-05-12T13:16:36Z",
+      "video_id": "zZCesdubnbg",
+      "result": "commented_unverified",
+      "comment_id": "UgzxRp7i_tNxJrGrXd54AaABAg"
     }
   ]
 }
