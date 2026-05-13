@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-05-11"
+    "manifest_index": 0,
+    "last_day": "2026-05-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2183,6 +2183,17 @@
       "comment_status": "commented",
       "comment_id": "1229484582403481_2030180370927204",
       "commented_ts_utc": "2026-05-11T16:43:54Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/second_coat_looks_uneven-180_grit_for_leveling_between_coats-drywall-023.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/second_coat_looks_uneven-180_grit_for_leveling_between_coats-drywall-023.mp4",
+      "filename": "second_coat_looks_uneven-180_grit_for_leveling_between_coats-drywall-023.mp4",
+      "manifest": "drywall.json",
+      "title": "Second Coat Looks Uneven? Level Between Coats With 180 Grit",
+      "description": "If the second coat dried uneven, sand lightly with 180 grit to level small highs and smooth the surface before you apply another coat. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-05-13T15:47:43Z",
+      "video_id": "2247480615784849"
     }
   },
   "runs": [
@@ -3138,6 +3149,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1229484582403481",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-05-13T15:47:43Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/second_coat_looks_uneven-180_grit_for_leveling_between_coats-drywall-023.mp4",
+      "filename": "second_coat_looks_uneven-180_grit_for_leveling_between_coats-drywall-023.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "2247480615784849",
       "error": null
     }
   ],
