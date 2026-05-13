@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-05-12"
+    "last_day": "2026-05-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1316,6 +1316,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-2000",
       "result": "success",
       "video_id": "zZCesdubnbg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4",
+      "filename": "paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4",
+      "manifest": "wet.json",
+      "title": "Paint Feels Gritty? 1500 Grit Wet Sand For Surface Leveling",
+      "destination_url": "https://www.amazon.com/gp/product/B07QB4DZRK",
+      "result": "success",
+      "video_id": "XLGHDR_Svzs"
     }
   },
   "runs": [
@@ -2105,6 +2115,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_shows_tiny_bumps-2000_grit_wet_sand_to_level_clear_coat-wet-007.mp4",
       "result": "success",
       "video_id": "zZCesdubnbg"
+    },
+    {
+      "ts_utc": "2026-05-13T13:10:47.155152+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4",
+      "result": "success",
+      "video_id": "XLGHDR_Svzs"
     }
   ],
   "last_post": {
