@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-05-11"
+    "manifest_index": 2,
+    "last_day": "2026-05-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1572,6 +1572,20 @@
       "pin_id": "839428818090441271",
       "media_id": "3492019308803618944",
       "cover_image_url": "https://i.pinimg.com/1200x/ee/21/b1/ee21b1aa8ab73e5faffcb8c483329f25.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4",
+      "filename": "tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-2000",
+      "title": "Tiny Specks In Fresh Paint? 2000 Grit Wet Sand To Remove Dust",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-05-13T11:37:51+00:00",
+      "pin_id": "839428818090476870",
+      "media_id": "3497722117457011776",
+      "cover_image_url": "https://i.pinimg.com/1200x/79/b3/5d/79b35dfd73e156e2a251abbc80635338.jpg"
     }
   },
   "runs": [
@@ -2693,6 +2707,16 @@
       "result": "success",
       "pin_id": "839428818090441271",
       "media_id": "3492019308803618944",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-05-13T11:37:51+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4",
+      "filename": "tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818090476870",
+      "media_id": "3497722117457011776",
       "error": null
     }
   ]
