@@ -3521,7 +3521,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18118267924741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-05-14T16:10:12Z",
+      "comment_text": "For wet-sanding work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "18097154858123868",
+      "commented_ts_utc": "2026-05-14T16:10:15Z"
     }
   },
   "runs": [
@@ -5491,6 +5501,15 @@
       "result": "commented",
       "comment_id": "18321677152258098",
       "template_idx": 18
+    },
+    {
+      "ts_utc": "2026-05-14T16:10:15Z",
+      "media_id": "17989481708971581",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_feels_gritty-2000_grit_wet_sand_before_next_coat-wet-022.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18097154858123868",
+      "template_idx": 3
     }
   ]
 }
