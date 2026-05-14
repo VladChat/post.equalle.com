@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-05-13"
+    "last_day": "2026-05-14"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1326,6 +1326,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QB4DZRK",
       "result": "success",
       "video_id": "XLGHDR_Svzs"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/minor_defects_in_clear_coat-2000_grit_wet_sanding_paint_defects-wet-009.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/minor_defects_in_clear_coat-2000_grit_wet_sanding_paint_defects-wet-009.mp4",
+      "filename": "minor_defects_in_clear_coat-2000_grit_wet_sanding_paint_defects-wet-009.mp4",
+      "manifest": "wet.json",
+      "title": "Minor Clear Coat Defects? 2000 Grit Wet Sand To Smooth",
+      "destination_url": "https://equalle.com/products/2000-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "result": "success",
+      "video_id": "dh0jwomP1VQ"
     }
   },
   "runs": [
@@ -2121,6 +2131,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_feels_gritty_to_touch-1500_grit_wet_sand_for_surface_leveling-wet-008.mp4",
       "result": "success",
       "video_id": "XLGHDR_Svzs"
+    },
+    {
+      "ts_utc": "2026-05-14T12:25:25.324247+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/minor_defects_in_clear_coat-2000_grit_wet_sanding_paint_defects-wet-009.mp4",
+      "result": "success",
+      "video_id": "dh0jwomP1VQ"
     }
   ],
   "last_post": {
