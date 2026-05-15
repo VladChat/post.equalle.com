@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-05-13"
+    "manifest_index": 1,
+    "last_day": "2026-05-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2204,6 +2204,17 @@
       "comment_status": "commented",
       "comment_id": "2247480615784849_1191033616386146",
       "commented_ts_utc": "2026-05-13T16:01:34Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Varnish_Wont_Come_Off-80_Grit_for_Removing_Old_Varnish-wood-022.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Varnish_Wont_Come_Off-80_Grit_for_Removing_Old_Varnish-wood-022.mp4",
+      "filename": "Varnish_Wont_Come_Off-80_Grit_for_Removing_Old_Varnish-wood-022.mp4",
+      "manifest": "wood.json",
+      "title": "Varnish Won't Come Off: 80 Grit Removing Old Varnish",
+      "description": "Varnish Won't Come Off? Use 80 grit for removing old varnish. Remove loose paint or old finish in controlled passes to avoid gouging the wood. Start with the recommended grit, vacuum dust, then step up in grit before repainting. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-05-15T15:26:21Z",
+      "video_id": "27008187818871543"
     }
   },
   "runs": [
@@ -3168,6 +3179,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "2247480615784849",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-05-15T15:26:21Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Varnish_Wont_Come_Off-80_Grit_for_Removing_Old_Varnish-wood-022.mp4",
+      "filename": "Varnish_Wont_Come_Off-80_Grit_for_Removing_Old_Varnish-wood-022.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "27008187818871543",
       "error": null
     }
   ],
