@@ -2214,7 +2214,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-05-15T15:26:21Z",
-      "video_id": "27008187818871543"
+      "video_id": "27008187818871543",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 11
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-05-15T15:45:32Z",
+      "comment_text": "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+      "comment_status": "commented",
+      "comment_id": "27008187818871543_1510423027303123",
+      "commented_ts_utc": "2026-05-15T15:45:37Z"
     }
   },
   "runs": [
@@ -4055,6 +4065,15 @@
       "result": "commented",
       "comment_id": "2247480615784849_1191033616386146",
       "template_idx": 16
+    },
+    {
+      "ts_utc": "2026-05-15T15:45:37Z",
+      "video_id": "27008187818871543",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Varnish_Wont_Come_Off-80_Grit_for_Removing_Old_Varnish-wood-022.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "27008187818871543_1510423027303123",
+      "template_idx": 11
     }
   ]
 }
