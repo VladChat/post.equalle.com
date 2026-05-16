@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-05-15"
+    "last_day": "2026-05-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1346,6 +1346,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RL3W6VT",
       "result": "success",
       "video_id": "d9Sa25GvYns"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/uneven_clear_coat_texture-2000_grit_wet_sand_to_smooth_clear_coat-wet-011.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/uneven_clear_coat_texture-2000_grit_wet_sand_to_smooth_clear_coat-wet-011.mp4",
+      "filename": "uneven_clear_coat_texture-2000_grit_wet_sand_to_smooth_clear_coat-wet-011.mp4",
+      "manifest": "wet.json",
+      "title": "Uneven Clear Coat Texture? 2000 Grit Wet Sand To Smooth",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-2000",
+      "result": "success",
+      "video_id": "MsxsdFcndqQ"
     }
   },
   "runs": [
@@ -2153,6 +2163,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/polish_isnt_cutting_it-1500_grit_wet_sand_before_polishing-wet-010.mp4",
       "result": "success",
       "video_id": "d9Sa25GvYns"
+    },
+    {
+      "ts_utc": "2026-05-16T11:51:27.090314+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/uneven_clear_coat_texture-2000_grit_wet_sand_to_smooth_clear_coat-wet-011.mp4",
+      "result": "success",
+      "video_id": "MsxsdFcndqQ"
     }
   ],
   "last_post": {
