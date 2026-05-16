@@ -3555,7 +3555,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18118474078741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-05-16T15:10:29Z",
+      "comment_text": "Light pressure with 80 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "17984014868828100",
+      "commented_ts_utc": "2026-05-16T15:10:31Z"
     }
   },
   "runs": [
@@ -5545,6 +5555,15 @@
       "result": "commented",
       "comment_id": "18097154858123868",
       "template_idx": 3
+    },
+    {
+      "ts_utc": "2026-05-16T15:10:31Z",
+      "media_id": "18042574889578994",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_paint_still_on_metal-80_grit_for_removing_paint_from_metal-metal-021.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "17984014868828100",
+      "template_idx": 0
     }
   ]
 }
