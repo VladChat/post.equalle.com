@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-05-15"
+    "manifest_index": 2,
+    "last_day": "2026-05-18"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2225,6 +2225,17 @@
       "comment_status": "commented",
       "comment_id": "27008187818871543_1510423027303123",
       "commented_ts_utc": "2026-05-15T15:45:37Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_coat_feels_gritty-2000_grit_wet_sand_before_next_coat-wet-022.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_feels_gritty-2000_grit_wet_sand_before_next_coat-wet-022.mp4",
+      "filename": "clear_coat_feels_gritty-2000_grit_wet_sand_before_next_coat-wet-022.mp4",
+      "manifest": "wet.json",
+      "title": "Clear Coat Feels Gritty? 2000 Grit Wet Sand Before Next Coat",
+      "description": "Clear coat feels gritty? Wet sand with 2000 grit before the next coat to smooth nibs and texture. Keep the surface wet, use light pressure, crosshatch passes, wipe clean often, and re-check under strong light before recoating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-05-18T16:31:47Z",
+      "video_id": "27730076399926557"
     }
   },
   "runs": [
@@ -3198,6 +3209,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "27008187818871543",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-05-18T16:31:47Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_feels_gritty-2000_grit_wet_sand_before_next_coat-wet-022.mp4",
+      "filename": "clear_coat_feels_gritty-2000_grit_wet_sand_before_next_coat-wet-022.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "27730076399926557",
       "error": null
     }
   ],
