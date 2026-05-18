@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-05-17"
+    "last_day": "2026-05-18"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1366,6 +1366,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7T3663",
       "result": "success",
       "video_id": "PUsISs1ReSw"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4",
+      "filename": "paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4",
+      "manifest": "wet.json",
+      "title": "Paint Looks Dull Before Polish? 3000 Grit Wet Sand Prep",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-3000-10-sheets",
+      "result": "success",
+      "video_id": "4NRn64p4J-g"
     }
   },
   "runs": [
@@ -2185,6 +2195,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_leveling-1500_grit_wet_sand_for_leveling_paint-wet-012.mp4",
       "result": "success",
       "video_id": "PUsISs1ReSw"
+    },
+    {
+      "ts_utc": "2026-05-18T14:29:39.858248+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4",
+      "result": "success",
+      "video_id": "4NRn64p4J-g"
     }
   ],
   "last_post": {
