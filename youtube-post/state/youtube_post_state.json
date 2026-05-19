@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-05-18"
+    "last_day": "2026-05-19"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1376,6 +1376,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-3000-10-sheets",
       "result": "success",
       "video_id": "4NRn64p4J-g"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
+      "filename": "fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
+      "manifest": "wet.json",
+      "title": "Fine Scratches In Clear Coat? Refine With 2000 Grit Wet Sand",
+      "destination_url": "https://www.amazon.com/gp/product/B07RFT53W6",
+      "result": "success",
+      "video_id": "VxKrPHkQagM"
     }
   },
   "runs": [
@@ -2201,6 +2211,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_looks_dull_before_polish-3000_grit_wet_sanding_before_polishing-wet-013.mp4",
       "result": "success",
       "video_id": "4NRn64p4J-g"
+    },
+    {
+      "ts_utc": "2026-05-19T13:55:19.755484+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/fine_scratches_in_clear_coat-2000_grit_wet_sanding_clear_coat_scratches-wet-014.mp4",
+      "result": "success",
+      "video_id": "VxKrPHkQagM"
     }
   ],
   "last_post": {
