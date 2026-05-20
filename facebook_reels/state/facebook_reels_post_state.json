@@ -2256,7 +2256,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-05-20T16:30:19Z",
-      "video_id": "979916028227093"
+      "video_id": "979916028227093",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 19
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-05-20T16:44:38Z",
+      "comment_text": "Before the next coat, clean the surface well so dust doesn’t telegraph through. Do you tack-cloth or wipe down?",
+      "comment_status": "commented",
+      "comment_id": "979916028227093_1594721748906627",
+      "commented_ts_utc": "2026-05-20T16:44:42Z"
     }
   },
   "runs": [
@@ -4133,6 +4143,15 @@
       "result": "commented",
       "comment_id": "27730076399926557_1622500988846673",
       "template_idx": 10
+    },
+    {
+      "ts_utc": "2026-05-20T16:44:42Z",
+      "video_id": "979916028227093",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_wont_sand_off_metal-60-80_grit_for_paint_removal-metal-022.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "979916028227093_1594721748906627",
+      "template_idx": 19
     }
   ]
 }
