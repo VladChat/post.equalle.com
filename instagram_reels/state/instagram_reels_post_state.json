@@ -3623,7 +3623,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18119012608741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 15
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-05-21T16:49:40Z",
+      "comment_text": "A quick mist/wipe (for wet sanding) can show high spots fast. Are you using water or a lubricant?",
+      "comment_status": "commented",
+      "comment_id": "18094351193184937",
+      "commented_ts_utc": "2026-05-21T16:49:46Z"
     }
   },
   "runs": [
@@ -5653,6 +5663,15 @@
       "result": "commented",
       "comment_id": "18110206637500293",
       "template_idx": 2
+    },
+    {
+      "ts_utc": "2026-05-21T16:49:46Z",
+      "media_id": "18124708366621500",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_visible_between_coats-180_grit_for_blending_drywall_layers-drywall-022.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18094351193184937",
+      "template_idx": 15
     }
   ]
 }
