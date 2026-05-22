@@ -2277,7 +2277,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-05-22T15:52:25Z",
-      "video_id": "1010498231468833"
+      "video_id": "1010498231468833",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 16
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-05-22T16:14:03Z",
+      "comment_text": "If scratches stand out after paint/primer, it usually means the previous grit marks weren’t fully blended. What grit are you finishing with?",
+      "comment_status": "commented",
+      "comment_id": "1010498231468833_1337170441647417",
+      "commented_ts_utc": "2026-05-22T16:14:08Z"
     }
   },
   "runs": [
@@ -4172,6 +4182,15 @@
       "result": "commented",
       "comment_id": "979916028227093_1594721748906627",
       "template_idx": 19
+    },
+    {
+      "ts_utc": "2026-05-22T16:14:08Z",
+      "video_id": "1010498231468833",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_peeling_off_plastic-220_grit_for_proper_plastic_scuffing-plastic-022.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "1010498231468833_1337170441647417",
+      "template_idx": 16
     }
   ]
 }
