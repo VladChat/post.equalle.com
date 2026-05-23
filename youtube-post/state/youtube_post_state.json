@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-05-22"
+    "last_day": "2026-05-23"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1416,6 +1416,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-2000",
       "result": "success",
       "video_id": "6cJmj7H37-Q"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_final_prep-3000_grit_wet_sand_before_final_polish-wet-018.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_final_prep-3000_grit_wet_sand_before_final_polish-wet-018.mp4",
+      "filename": "clear_coat_needs_final_prep-3000_grit_wet_sand_before_final_polish-wet-018.mp4",
+      "manifest": "wet.json",
+      "title": "Final Polish Prep? 3000 Grit Wet Sand Clear Coat Before Buffing",
+      "destination_url": "https://www.amazon.com/gp/product/B0F9VR28HR",
+      "result": "success",
+      "video_id": "e7hCI9WjJjc"
     }
   },
   "runs": [
@@ -2265,6 +2275,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/dust_specks_after_clear_coat-2000_grit_wet_sand_to_remove_dust_nibs-wet-017.mp4",
       "result": "success",
       "video_id": "6cJmj7H37-Q"
+    },
+    {
+      "ts_utc": "2026-05-23T11:59:58.974619+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_final_prep-3000_grit_wet_sand_before_final_polish-wet-018.mp4",
+      "result": "success",
+      "video_id": "e7hCI9WjJjc"
     }
   ],
   "last_post": {
