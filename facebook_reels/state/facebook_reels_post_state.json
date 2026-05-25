@@ -2298,7 +2298,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-05-25T15:59:56Z",
-      "video_id": "993033033276775"
+      "video_id": "993033033276775",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 19
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-05-25T17:01:58Z",
+      "comment_text": "Before the next coat, clean the surface well so dust doesn’t telegraph through. Do you tack-cloth or wipe down?",
+      "comment_status": "commented",
+      "comment_id": "993033033276775_1540730747562186",
+      "commented_ts_utc": "2026-05-25T17:02:02Z"
     }
   },
   "runs": [
@@ -4211,6 +4221,15 @@
       "result": "commented",
       "comment_id": "1010498231468833_1337170441647417",
       "template_idx": 16
+    },
+    {
+      "ts_utc": "2026-05-25T17:02:02Z",
+      "video_id": "993033033276775",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_not_blending_yet-180_grit_for_feather_sanding_patch-drywall-024.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "993033033276775_1540730747562186",
+      "template_idx": 19
     }
   ]
 }
