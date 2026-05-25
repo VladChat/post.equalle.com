@@ -1179,6 +1179,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-05-24T12:13:01Z",
       "verify_after_ts": 1779626581.6732461
+    },
+    "iD-CwHb_pIs": {
+      "comment_status": "commented_unverified",
+      "comment_id": "UgyWTEExLBjy-UT9j7d4AaABAg",
+      "comment_text": "For auto body sanding on surface, keep overlaps consistent and use a clean wipe between grit changes—leftover grit can cause deeper scratches. Are you sanding primer, clear coat, or a blend panel?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-05-25T14:18:02Z",
+      "verify_after_ts": 1779720482.3360791
     }
   },
   "runs": [
@@ -2054,6 +2062,12 @@
       "video_id": "eeSMqt2ibTo",
       "result": "commented_unverified",
       "comment_id": "Ugw67JcNAVF7dRsbEH54AaABAg"
+    },
+    {
+      "ts": "2026-05-25T14:18:02Z",
+      "video_id": "iD-CwHb_pIs",
+      "result": "commented_unverified",
+      "comment_id": "UgyWTEExLBjy-UT9j7d4AaABAg"
     }
   ]
 }
