@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-05-22"
+    "manifest_index": 0,
+    "last_day": "2026-05-25"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2288,6 +2288,17 @@
       "comment_status": "commented",
       "comment_id": "1010498231468833_1337170441647417",
       "commented_ts_utc": "2026-05-22T16:14:08Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_not_blending_yet-180_grit_for_feather_sanding_patch-drywall-024.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_not_blending_yet-180_grit_for_feather_sanding_patch-drywall-024.mp4",
+      "filename": "drywall_patch_not_blending_yet-180_grit_for_feather_sanding_patch-drywall-024.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Patch Not Blending Yet? Feather Sand the Patch With 180 Grit",
+      "description": "If a patch still stands out, feather sand the edges with 180 grit to blend the repair into the wall before your next coat or primer. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-05-25T15:59:56Z",
+      "video_id": "993033033276775"
     }
   },
   "runs": [
@@ -3288,6 +3299,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1010498231468833",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-05-25T15:59:56Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_not_blending_yet-180_grit_for_feather_sanding_patch-drywall-024.mp4",
+      "filename": "drywall_patch_not_blending_yet-180_grit_for_feather_sanding_patch-drywall-024.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "993033033276775",
       "error": null
     }
   ],
