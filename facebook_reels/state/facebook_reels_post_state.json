@@ -2319,7 +2319,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-05-27T16:43:55Z",
-      "video_id": "1343523127745608"
+      "video_id": "1343523127745608",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 7
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-05-27T17:38:48Z",
+      "comment_text": "If you’re jumping grits, don’t skip too far—blend one step at a time. What grit did you start with?",
+      "comment_status": "commented",
+      "comment_id": "1343523127745608_1353419560001893",
+      "commented_ts_utc": "2026-05-27T17:38:54Z"
     }
   },
   "runs": [
@@ -4250,6 +4260,15 @@
       "result": "commented",
       "comment_id": "993033033276775_1540730747562186",
       "template_idx": 19
+    },
+    {
+      "ts_utc": "2026-05-27T17:38:54Z",
+      "video_id": "1343523127745608",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Thick_Finish_Taking_Forever-60_Grit_for_Heavy_Finish_Removal-wood-023.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "1343523127745608_1353419560001893",
+      "template_idx": 7
     }
   ]
 }
