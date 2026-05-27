@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-05-25"
+    "manifest_index": 1,
+    "last_day": "2026-05-27"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2309,6 +2309,17 @@
       "comment_status": "commented",
       "comment_id": "993033033276775_1540730747562186",
       "commented_ts_utc": "2026-05-25T17:02:02Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Thick_Finish_Taking_Forever-60_Grit_for_Heavy_Finish_Removal-wood-023.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Thick_Finish_Taking_Forever-60_Grit_for_Heavy_Finish_Removal-wood-023.mp4",
+      "filename": "Thick_Finish_Taking_Forever-60_Grit_for_Heavy_Finish_Removal-wood-023.mp4",
+      "manifest": "wood.json",
+      "title": "Thick Finish Taking Forever: 60 Grit Heavy Finish Removal",
+      "description": "Thick Finish Taking Forever? Use 60 grit for heavy finish removal. Remove loose paint or old finish in controlled passes to avoid gouging the wood. Start with the recommended grit, vacuum dust, then step up in grit before repainting. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-05-27T16:43:55Z",
+      "video_id": "1343523127745608"
     }
   },
   "runs": [
@@ -3318,6 +3329,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "993033033276775",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-05-27T16:43:55Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Thick_Finish_Taking_Forever-60_Grit_for_Heavy_Finish_Removal-wood-023.mp4",
+      "filename": "Thick_Finish_Taking_Forever-60_Grit_for_Heavy_Finish_Removal-wood-023.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "1343523127745608",
       "error": null
     }
   ],
