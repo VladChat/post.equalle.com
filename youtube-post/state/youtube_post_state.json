@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-05-27"
+    "last_day": "2026-05-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1466,6 +1466,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QD2TNNW",
       "result": "success",
       "video_id": "jW0zOnmfRLQ"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4",
+      "filename": "tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4",
+      "manifest": "wet.json",
+      "title": "Tiny Specks In Fresh Paint? 2000 Grit Wet Sand To Remove Dust",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-2000",
+      "result": "success",
+      "video_id": "miR3KA7xkEA"
     }
   },
   "runs": [
@@ -2345,6 +2355,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_feels_gritty-2000_grit_wet_sand_before_next_coat-wet-022.mp4",
       "result": "success",
       "video_id": "jW0zOnmfRLQ"
+    },
+    {
+      "ts_utc": "2026-05-28T14:37:13.338071+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4",
+      "result": "success",
+      "video_id": "miR3KA7xkEA"
     }
   ],
   "last_post": {
