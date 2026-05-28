@@ -1,15 +1,14 @@
 {
-  "post_id": "325670187920349_1434927555315393",
+  "post_id": "325670187920349_1436746678466814",
   "product": {
     "source": "amazon",
-    "url": "https://www.amazon.com/gp/product/B07QD2GTY4",
-    "grit": 120,
+    "url": "https://www.amazon.com/gp/product/B07QF44CQT",
+    "grit": 150,
     "pack": 50,
-    "anchor": "120 Grit (Coarse)",
-    "grit_description": "Refines surfaces after coarse sanding by removing scratches from lower grits. Consistent performance on wood, drywall, and metal. Ideal for wet or dry finishing before applying primer or stain.",
+    "anchor": "150 Grit (Medium)",
+    "grit_description": "Balanced medium grit for surface preparation and between-coat sanding. Smooths minor imperfections in wood, paint, or primer. Works equally well for wet or dry applications in both DIY and professional projects.",
     "contexts": [
       "wood",
-      "metal",
       "drywall"
     ]
   }
