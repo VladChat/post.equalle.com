@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-05-27"
+    "manifest_index": 2,
+    "last_day": "2026-05-29"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2330,6 +2330,17 @@
       "comment_status": "commented",
       "comment_id": "1343523127745608_1353419560001893",
       "commented_ts_utc": "2026-05-27T17:38:54Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4",
+      "filename": "tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4",
+      "manifest": "wet.json",
+      "title": "Tiny Specks In Fresh Paint? 2000 Grit Wet Sand To Remove Dust",
+      "description": "Tiny specks in fresh paint? Wet sand with 2000 grit to remove dust and smooth the surface before the next coat. Keep it wet, use light pressure, short even passes, wipe clean often, and inspect under a work light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-05-29T16:52:26Z",
+      "video_id": "1788322065466829"
     }
   },
   "runs": [
@@ -3348,6 +3359,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "1343523127745608",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-05-29T16:52:26Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4",
+      "filename": "tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "1788322065466829",
       "error": null
     }
   ],
