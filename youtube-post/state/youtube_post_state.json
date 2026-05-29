@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-05-28"
+    "last_day": "2026-05-29"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1476,6 +1476,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-2000",
       "result": "success",
       "video_id": "miR3KA7xkEA"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4",
+      "filename": "surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4",
+      "manifest": "wet.json",
+      "title": "Not Smooth Between Coats? 2000 Grit Wet Sand For Coat Prep",
+      "destination_url": "https://www.amazon.com/gp/product/B07RGRPZVF",
+      "result": "success",
+      "video_id": "4waAT2JttjA"
     }
   },
   "runs": [
@@ -2361,6 +2371,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4",
       "result": "success",
       "video_id": "miR3KA7xkEA"
+    },
+    {
+      "ts_utc": "2026-05-29T14:01:32.174716+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4",
+      "result": "success",
+      "video_id": "4waAT2JttjA"
     }
   ],
   "last_post": {
