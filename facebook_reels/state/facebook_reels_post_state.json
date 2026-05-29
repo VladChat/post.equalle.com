@@ -2340,7 +2340,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-05-29T16:52:26Z",
-      "video_id": "1788322065466829"
+      "video_id": "1788322065466829",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 13
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-05-29T17:00:54Z",
+      "comment_text": "On wet-sanding, sanding dust can hide defects—wipe often and re-check. Do you see it only after wiping?",
+      "comment_status": "commented",
+      "comment_id": "1788322065466829_1320014773555244",
+      "commented_ts_utc": "2026-05-29T17:00:59Z"
     }
   },
   "runs": [
@@ -4289,6 +4299,15 @@
       "result": "commented",
       "comment_id": "1343523127745608_1353419560001893",
       "template_idx": 7
+    },
+    {
+      "ts_utc": "2026-05-29T17:00:59Z",
+      "video_id": "1788322065466829",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1788322065466829_1320014773555244",
+      "template_idx": 13
     }
   ]
 }
