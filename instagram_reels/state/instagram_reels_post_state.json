@@ -3691,7 +3691,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18119956258741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 19
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-05-30T15:29:12Z",
+      "comment_text": "Before the next coat, clean the surface well so dust doesn’t telegraph through. Do you wipe down between coats?",
+      "comment_status": "commented",
+      "comment_id": "17860375053650348",
+      "commented_ts_utc": "2026-05-30T15:29:18Z"
     }
   },
   "runs": [
@@ -5761,6 +5771,15 @@
       "result": "commented",
       "comment_id": "17879806101447964",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-05-30T15:29:18Z",
+      "media_id": "18463016602109059",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "17860375053650348",
+      "template_idx": 19
     }
   ]
 }
