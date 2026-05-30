@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-05-29"
+    "last_day": "2026-05-30"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1486,6 +1486,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RGRPZVF",
       "result": "success",
       "video_id": "4waAT2JttjA"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4",
+      "filename": "light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4",
+      "manifest": "wet.json",
+      "title": "Light Runs Starting? 2000 Grit Wet Sand To Level Before Recoat",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-2000",
+      "result": "success",
+      "video_id": "lfjgPcABakE"
     }
   },
   "runs": [
@@ -2377,6 +2387,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4",
       "result": "success",
       "video_id": "4waAT2JttjA"
+    },
+    {
+      "ts_utc": "2026-05-30T12:04:38.390165+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4",
+      "result": "success",
+      "video_id": "lfjgPcABakE"
     }
   ],
   "last_post": {
