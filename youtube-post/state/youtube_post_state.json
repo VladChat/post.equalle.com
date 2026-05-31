@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-05-30"
+    "last_day": "2026-05-31"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1496,6 +1496,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-2000",
       "result": "success",
       "video_id": "lfjgPcABakE"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/bumps_after_spraying_clear_coat-2000_grit_wet_sand_before_recoat-wet-026.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/bumps_after_spraying_clear_coat-2000_grit_wet_sand_before_recoat-wet-026.mp4",
+      "filename": "bumps_after_spraying_clear_coat-2000_grit_wet_sand_before_recoat-wet-026.mp4",
+      "manifest": "wet.json",
+      "title": "Bumps After Clear Coat? 2000 Grit Wet Sand Before Recoat",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7TX4KC",
+      "result": "success",
+      "video_id": "dqGIv3k7yN4"
     }
   },
   "runs": [
@@ -2393,6 +2403,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4",
       "result": "success",
       "video_id": "lfjgPcABakE"
+    },
+    {
+      "ts_utc": "2026-05-31T12:11:22.169431+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/bumps_after_spraying_clear_coat-2000_grit_wet_sand_before_recoat-wet-026.mp4",
+      "result": "success",
+      "video_id": "dqGIv3k7yN4"
     }
   ],
   "last_post": {
