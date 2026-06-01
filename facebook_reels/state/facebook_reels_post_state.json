@@ -2361,7 +2361,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-06-01T18:46:57Z",
-      "video_id": "2114096966655660"
+      "video_id": "2114096966655660",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 4
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-01T19:26:50Z",
+      "comment_text": "If the paper starts loading up, wipe/rinse it and keep going—clean cuts cleaner. Does it clog on your surface?",
+      "comment_status": "commented",
+      "comment_id": "2114096966655660_1688093909283699",
+      "commented_ts_utc": "2026-06-01T19:26:54Z"
     }
   },
   "runs": [
@@ -4328,6 +4338,15 @@
       "result": "commented",
       "comment_id": "1788322065466829_1320014773555244",
       "template_idx": 13
+    },
+    {
+      "ts_utc": "2026-06-01T19:26:54Z",
+      "video_id": "2114096966655660",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/multiple_paint_layers_on_metal-80_grit_for_stripping_old_paint-metal-023.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "2114096966655660_1688093909283699",
+      "template_idx": 4
     }
   ]
 }
