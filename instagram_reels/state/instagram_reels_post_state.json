@@ -3725,7 +3725,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18120296434741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 5
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-02T18:24:59Z",
+      "comment_text": "After sanding, wipe dust and check under a bright light from the side. Do the lines disappear evenly?",
+      "comment_status": "commented",
+      "comment_id": "18021076733674699",
+      "commented_ts_utc": "2026-06-02T18:25:02Z"
     }
   },
   "runs": [
@@ -5815,6 +5825,15 @@
       "result": "commented",
       "comment_id": "17860375053650348",
       "template_idx": 19
+    },
+    {
+      "ts_utc": "2026-06-02T18:25:02Z",
+      "media_id": "17867300502625325",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_wont_sand_off_metal-60-80_grit_for_paint_removal-metal-022.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18021076733674699",
+      "template_idx": 5
     }
   ]
 }
