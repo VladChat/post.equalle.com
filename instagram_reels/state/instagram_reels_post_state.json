@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-05-30"
+    "manifest_index": 3,
+    "last_day": "2026-06-02"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -3702,6 +3702,30 @@
       "comment_status": "commented",
       "comment_id": "17860375053650348",
       "commented_ts_utc": "2026-05-30T15:29:18Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/paint_wont_sand_off_metal-60-80_grit_for_paint_removal-metal-022.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_wont_sand_off_metal-60-80_grit_for_paint_removal-metal-022.mp4",
+      "filename": "paint_wont_sand_off_metal-60-80_grit_for_paint_removal-metal-022.mp4",
+      "manifest": "metal.json",
+      "title": "Paint Won’t Sand Off Metal? Start With 60–80 Grit",
+      "description": "Paint won’t sand off metal? Start with 60 grit to break the top layer, then use 80 grit to even out the surface. Keep your strokes consistent to avoid deep gouges.",
+      "caption": "Paint Won’t Sand Off Metal? Start With 60–80 Grit\n\nPaint won’t sand off metal? Start with 60 grit to break the top layer, then use 80 grit to even out the surface. Keep your strokes consistent to avoid deep gouges.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-06-02T17:46:54Z",
+      "mode": "binary",
+      "container_id": "18120296434741317",
+      "media_id": "17867300502625325",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18120296434741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18120296434741317"
+      }
     }
   },
   "runs": [
@@ -4913,6 +4937,17 @@
       "filename": "tiny_specks_in_fresh_paint-2000_grit_wet_sand_to_remove_dust-wet-023.mp4",
       "container_id": "18119956258741317",
       "media_id": "18463016602109059",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-06-02T17:46:54Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "metal.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_wont_sand_off_metal-60-80_grit_for_paint_removal-metal-022.mp4",
+      "filename": "paint_wont_sand_off_metal-60-80_grit_for_paint_removal-metal-022.mp4",
+      "container_id": "18120296434741317",
+      "media_id": "17867300502625325",
       "error": null
     }
   ],
