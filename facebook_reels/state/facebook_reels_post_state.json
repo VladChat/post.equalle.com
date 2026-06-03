@@ -2382,7 +2382,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-06-03T18:03:05Z",
-      "video_id": "1512459840676160"
+      "video_id": "1512459840676160",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 19
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-03T18:14:51Z",
+      "comment_text": "Before the next coat, clean the surface well so dust doesn’t telegraph through. Do you tack-cloth or wipe down?",
+      "comment_status": "commented",
+      "comment_id": "1512459840676160_1282291386975068",
+      "commented_ts_utc": "2026-06-03T18:14:58Z"
     }
   },
   "runs": [
@@ -4367,6 +4377,15 @@
       "result": "commented",
       "comment_id": "2114096966655660_1688093909283699",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-06-03T18:14:58Z",
+      "video_id": "1512459840676160",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_too_smooth_for_paint-180-220_grit_for_paint_adhesion-plastic-023.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "1512459840676160_1282291386975068",
+      "template_idx": 19
     }
   ]
 }
