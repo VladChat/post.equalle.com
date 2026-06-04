@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-03"
+    "last_day": "2026-06-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1536,6 +1536,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-2000",
       "result": "success",
       "video_id": "8-m7fQ5Y0m0"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/paint_not_ready_for_second_coat-2000_grit_wet_sand_before_recoating-wet-030.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_not_ready_for_second_coat-2000_grit_wet_sand_before_recoating-wet-030.mp4",
+      "filename": "paint_not_ready_for_second_coat-2000_grit_wet_sand_before_recoating-wet-030.mp4",
+      "manifest": "wet.json",
+      "title": "Not Ready For Second Coat? 2000 Grit Wet Sand Before Recoating",
+      "destination_url": "https://www.amazon.com/gp/product/B07QD2TNNW",
+      "result": "success",
+      "video_id": "a6v_7EnTFLw"
     }
   },
   "runs": [
@@ -2457,6 +2467,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4",
       "result": "success",
       "video_id": "8-m7fQ5Y0m0"
+    },
+    {
+      "ts_utc": "2026-06-04T13:57:42.152041+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_not_ready_for_second_coat-2000_grit_wet_sand_before_recoating-wet-030.mp4",
+      "result": "success",
+      "video_id": "a6v_7EnTFLw"
     }
   ],
   "last_post": {
