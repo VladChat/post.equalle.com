@@ -3759,7 +3759,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18120497692741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-04T16:49:25Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "18180802096394195",
+      "commented_ts_utc": "2026-06-04T16:49:29Z"
     }
   },
   "runs": [
@@ -5869,6 +5879,15 @@
       "result": "commented",
       "comment_id": "18021076733674699",
       "template_idx": 5
+    },
+    {
+      "ts_utc": "2026-06-04T16:49:29Z",
+      "media_id": "18131502268582327",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_peeling_off_plastic-220_grit_for_proper_plastic_scuffing-plastic-022.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "18180802096394195",
+      "template_idx": 12
     }
   ]
 }
