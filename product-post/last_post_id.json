@@ -1,14 +1,16 @@
 {
-  "post_id": "325670187920349_1441447084663440",
+  "post_id": "325670187920349_1443248144483334",
   "product": {
     "source": "amazon",
-    "url": "https://www.amazon.com/gp/product/B07QG6R8Y1",
-    "grit": 180,
+    "url": "https://www.amazon.com/gp/product/B07QD2RZ63",
+    "grit": 220,
     "pack": 50,
-    "anchor": "180 Grit (Medium)",
-    "grit_description": "Medium finishing grit that refines wood, metal, or drywall before painting. Provides even texture and cutting control. Excellent for wet or dry sanding where a uniform surface is needed.",
+    "anchor": "220 Grit (Medium)",
+    "grit_description": "Fine finishing grit for final surface preparation before painting or coating. Offers uniform cutting on wood, metal, and plastic. Leaves a smooth, paint-ready finish suitable for wet or dry sanding.",
     "contexts": [
       "wood",
+      "metal",
+      "auto",
       "drywall"
     ]
   }
