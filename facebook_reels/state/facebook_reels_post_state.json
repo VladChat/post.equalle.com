@@ -2403,7 +2403,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-06-05T16:08:10Z",
-      "video_id": "1005787091904645"
+      "video_id": "1005787091904645",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 8
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-05T16:41:29Z",
+      "comment_text": "Try a few lighter passes instead of one heavy pass—less chance of gouging. Are you seeing swirl marks?",
+      "comment_status": "commented",
+      "comment_id": "1005787091904645_1307689237623374",
+      "commented_ts_utc": "2026-06-05T16:41:34Z"
     }
   },
   "runs": [
@@ -4406,6 +4416,15 @@
       "result": "commented",
       "comment_id": "1512459840676160_1282291386975068",
       "template_idx": 19
+    },
+    {
+      "ts_utc": "2026-06-05T16:41:34Z",
+      "video_id": "1005787091904645",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1005787091904645_1307689237623374",
+      "template_idx": 8
     }
   ]
 }
