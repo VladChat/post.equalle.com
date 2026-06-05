@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-06-03"
+    "manifest_index": 0,
+    "last_day": "2026-06-05"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2393,6 +2393,17 @@
       "comment_status": "commented",
       "comment_id": "1512459840676160_1282291386975068",
       "commented_ts_utc": "2026-06-03T18:14:58Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4",
+      "filename": "mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4",
+      "manifest": "drywall.json",
+      "title": "Mud Buildup on Edges? Smooth Between Coats With 180 Grit",
+      "description": "If mud built up along edges, sand lightly with 180 grit to smooth the ridge and feather it out before the next coat goes on. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-06-05T16:08:10Z",
+      "video_id": "1005787091904645"
     }
   },
   "runs": [
@@ -3438,6 +3449,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1512459840676160",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-06-05T16:08:10Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4",
+      "filename": "mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1005787091904645",
       "error": null
     }
   ],
