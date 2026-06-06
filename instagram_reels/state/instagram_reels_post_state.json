@@ -3793,7 +3793,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18120700105741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-06T15:50:09Z",
+      "comment_text": "Light pressure with 180 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "18096416138237042",
+      "commented_ts_utc": "2026-06-06T15:50:13Z"
     }
   },
   "runs": [
@@ -5923,6 +5933,15 @@
       "result": "commented",
       "comment_id": "18180802096394195",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-06-06T15:50:13Z",
+      "media_id": "18068641376694744",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/second_coat_looks_uneven-180_grit_for_leveling_between_coats-drywall-023.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18096416138237042",
+      "template_idx": 0
     }
   ]
 }
