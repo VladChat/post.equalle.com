@@ -2424,7 +2424,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-06-08T16:52:24Z",
-      "video_id": "977804451805348"
+      "video_id": "977804451805348",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 11
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-08T17:20:59Z",
+      "comment_text": "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+      "comment_status": "commented",
+      "comment_id": "977804451805348_999886382974402",
+      "commented_ts_utc": "2026-06-08T17:21:03Z"
     }
   },
   "runs": [
@@ -4445,6 +4455,15 @@
       "result": "commented",
       "comment_id": "1005787091904645_1307689237623374",
       "template_idx": 8
+    },
+    {
+      "ts_utc": "2026-06-08T17:21:03Z",
+      "video_id": "977804451805348",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Flaking_Paint_Everywhere-80_Grit_for_Stripping_Loose_Paint-wood-024.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "977804451805348_999886382974402",
+      "template_idx": 11
     }
   ]
 }
