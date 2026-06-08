@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-07"
+    "last_day": "2026-06-08"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1576,6 +1576,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-1500",
       "result": "success",
       "video_id": "v_a80o6otbc"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4",
+      "filename": "scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4",
+      "manifest": "wet.json",
+      "title": "Scratches On Headlight Lens? 1500 Grit Wet Sand To Refine",
+      "destination_url": "https://www.amazon.com/gp/product/B07RL3W6VT",
+      "result": "success",
+      "video_id": "uCLVfqNtPag"
     }
   },
   "runs": [
@@ -2521,6 +2531,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_still_foggy-1500_grit_wet_sand_before_polishing-wet-033.mp4",
       "result": "success",
       "video_id": "v_a80o6otbc"
+    },
+    {
+      "ts_utc": "2026-06-08T14:48:29.149405+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4",
+      "result": "success",
+      "video_id": "uCLVfqNtPag"
     }
   ],
   "last_post": {
