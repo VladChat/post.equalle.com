@@ -3827,7 +3827,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18121024888741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-09T16:50:18Z",
+      "comment_text": "Light pressure with 80 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "18092571080339499",
+      "commented_ts_utc": "2026-06-09T16:50:20Z"
     }
   },
   "runs": [
@@ -5976,6 +5986,15 @@
       "manifest": "drywall.json",
       "result": "commented",
       "comment_id": "18096416138237042",
+      "template_idx": 0
+    },
+    {
+      "ts_utc": "2026-06-09T16:50:20Z",
+      "media_id": "18080504876198847",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Flaking_Paint_Everywhere-80_Grit_for_Stripping_Loose_Paint-wood-024.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "18092571080339499",
       "template_idx": 0
     }
   ]
