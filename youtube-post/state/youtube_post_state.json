@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-08"
+    "last_day": "2026-06-09"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1586,6 +1586,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RL3W6VT",
       "result": "success",
       "video_id": "uCLVfqNtPag"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/headlights_not_clearing_up-2000_grit_wet_sand_for_headlight_prep-wet-035.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_not_clearing_up-2000_grit_wet_sand_for_headlight_prep-wet-035.mp4",
+      "filename": "headlights_not_clearing_up-2000_grit_wet_sand_for_headlight_prep-wet-035.mp4",
+      "manifest": "wet.json",
+      "title": "Headlights Not Clearing Up? 2000 Grit Wet Sand For Prep",
+      "destination_url": "https://equalle.com/products/2000-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "result": "success",
+      "video_id": "lKtY8um1stA"
     }
   },
   "runs": [
@@ -2537,6 +2547,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4",
       "result": "success",
       "video_id": "uCLVfqNtPag"
+    },
+    {
+      "ts_utc": "2026-06-09T13:43:59.262659+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_not_clearing_up-2000_grit_wet_sand_for_headlight_prep-wet-035.mp4",
+      "result": "success",
+      "video_id": "lKtY8um1stA"
     }
   ],
   "last_post": {
