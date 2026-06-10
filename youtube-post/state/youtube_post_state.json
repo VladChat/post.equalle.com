@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-09"
+    "last_day": "2026-06-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1596,6 +1596,16 @@
       "destination_url": "https://equalle.com/products/2000-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
       "result": "success",
       "video_id": "lKtY8um1stA"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4",
+      "filename": "plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4",
+      "manifest": "wet.json",
+      "title": "Lens Feels Rough? Wet Sand Headlights 1000 To 2000 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8CPYJS",
+      "result": "success",
+      "video_id": "Fk9o9ZaCvVk"
     }
   },
   "runs": [
@@ -2553,6 +2563,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_not_clearing_up-2000_grit_wet_sand_for_headlight_prep-wet-035.mp4",
       "result": "success",
       "video_id": "lKtY8um1stA"
+    },
+    {
+      "ts_utc": "2026-06-10T14:22:33.780268+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4",
+      "result": "success",
+      "video_id": "Fk9o9ZaCvVk"
     }
   ],
   "last_post": {
