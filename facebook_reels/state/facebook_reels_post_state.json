@@ -2445,7 +2445,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-06-10T16:43:15Z",
-      "video_id": "847465221752863"
+      "video_id": "847465221752863",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 9
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-10T17:23:04Z",
+      "comment_text": "For corners/edges, ease up and let the abrasive do the work. Are edges the hardest part for you too?",
+      "comment_status": "commented",
+      "comment_id": "847465221752863_1482884013885957",
+      "commented_ts_utc": "2026-06-10T17:23:09Z"
     }
   },
   "runs": [
@@ -4484,6 +4494,15 @@
       "result": "commented",
       "comment_id": "977804451805348_999886382974402",
       "template_idx": 11
+    },
+    {
+      "ts_utc": "2026-06-10T17:23:09Z",
+      "video_id": "847465221752863",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "847465221752863_1482884013885957",
+      "template_idx": 9
     }
   ]
 }
