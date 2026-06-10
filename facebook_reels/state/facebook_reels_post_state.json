@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-06-08"
+    "manifest_index": 2,
+    "last_day": "2026-06-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2435,6 +2435,17 @@
       "comment_status": "commented",
       "comment_id": "977804451805348_999886382974402",
       "commented_ts_utc": "2026-06-08T17:21:03Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4",
+      "filename": "surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4",
+      "manifest": "wet.json",
+      "title": "Not Smooth Between Coats? 2000 Grit Wet Sand For Coat Prep",
+      "description": "Surface not smooth between coats? Wet sand with 2000 grit to prep for the next coat and reduce texture. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and check the scratch pattern under strong light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-06-10T16:43:15Z",
+      "video_id": "847465221752863"
     }
   },
   "runs": [
@@ -3498,6 +3509,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "977804451805348",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-06-10T16:43:15Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4",
+      "filename": "surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "847465221752863",
       "error": null
     }
   ],
