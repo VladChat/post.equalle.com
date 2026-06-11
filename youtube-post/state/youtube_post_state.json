@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-10"
+    "last_day": "2026-06-11"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1606,6 +1606,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ8CPYJS",
       "result": "success",
       "video_id": "Fk9o9ZaCvVk"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4",
+      "filename": "headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4",
+      "manifest": "wet.json",
+      "title": "Headlights Need Polish Prep? 2000 Grit Wet Sand First",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-2000",
+      "result": "success",
+      "video_id": "QVHmYILy5aE"
     }
   },
   "runs": [
@@ -2569,6 +2579,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4",
       "result": "success",
       "video_id": "Fk9o9ZaCvVk"
+    },
+    {
+      "ts_utc": "2026-06-11T14:37:24.706411+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4",
+      "result": "success",
+      "video_id": "QVHmYILy5aE"
     }
   ],
   "last_post": {
