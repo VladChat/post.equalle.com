@@ -3861,7 +3861,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18121227580741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 11
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-11T17:45:38Z",
+      "comment_text": "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+      "comment_status": "commented",
+      "comment_id": "18186456019378121",
+      "commented_ts_utc": "2026-06-11T17:45:40Z"
     }
   },
   "runs": [
@@ -6031,6 +6041,15 @@
       "result": "commented",
       "comment_id": "18092571080339499",
       "template_idx": 0
+    },
+    {
+      "ts_utc": "2026-06-11T17:45:40Z",
+      "media_id": "17966578734091352",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18186456019378121",
+      "template_idx": 11
     }
   ]
 }
