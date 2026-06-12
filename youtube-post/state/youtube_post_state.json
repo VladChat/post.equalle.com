@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-11"
+    "last_day": "2026-06-12"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1616,6 +1616,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-2000",
       "result": "success",
       "video_id": "QVHmYILy5aE"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/old_oxidation_on_headlights-800_grit_wet_sand_for_oxidation_removal-wet-038.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/old_oxidation_on_headlights-800_grit_wet_sand_for_oxidation_removal-wet-038.mp4",
+      "filename": "old_oxidation_on_headlights-800_grit_wet_sand_for_oxidation_removal-wet-038.mp4",
+      "manifest": "wet.json",
+      "title": "Old Oxidation On Headlights? 800 Grit Wet Sand Removal Step",
+      "destination_url": "https://www.amazon.com/gp/product/B07RLWGZ85",
+      "result": "success",
+      "video_id": "SghwJs0U2-U"
     }
   },
   "runs": [
@@ -2585,6 +2595,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4",
       "result": "success",
       "video_id": "QVHmYILy5aE"
+    },
+    {
+      "ts_utc": "2026-06-12T14:09:33.942220+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/old_oxidation_on_headlights-800_grit_wet_sand_for_oxidation_removal-wet-038.mp4",
+      "result": "success",
+      "video_id": "SghwJs0U2-U"
     }
   ],
   "last_post": {
