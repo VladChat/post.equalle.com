@@ -2466,7 +2466,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-06-12T16:26:35Z",
-      "video_id": "1970765783565198"
+      "video_id": "1970765783565198",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-12T17:15:20Z",
+      "comment_text": "For metal work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "1970765783565198_995874446488441",
+      "commented_ts_utc": "2026-06-12T17:15:23Z"
     }
   },
   "runs": [
@@ -4523,6 +4533,15 @@
       "result": "commented",
       "comment_id": "847465221752863_1482884013885957",
       "template_idx": 9
+    },
+    {
+      "ts_utc": "2026-06-12T17:15:23Z",
+      "video_id": "1970765783565198",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/flaking_paint_on_metal_surface-80_grit_for_removing_loose_paint-metal-024.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "1970765783565198_995874446488441",
+      "template_idx": 3
     }
   ]
 }
