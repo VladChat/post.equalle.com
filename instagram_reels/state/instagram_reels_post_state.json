@@ -3895,7 +3895,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18121425064741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 5
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-13T15:58:04Z",
+      "comment_text": "After sanding, wipe dust and check under a bright light from the side. Do the lines disappear evenly?",
+      "comment_status": "commented",
+      "comment_id": "18443190037186183",
+      "commented_ts_utc": "2026-06-13T15:58:08Z"
     }
   },
   "runs": [
@@ -6085,6 +6095,15 @@
       "result": "commented",
       "comment_id": "18186456019378121",
       "template_idx": 11
+    },
+    {
+      "ts_utc": "2026-06-13T15:58:08Z",
+      "media_id": "17943240333229130",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/multiple_paint_layers_on_metal-80_grit_for_stripping_old_paint-metal-023.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18443190037186183",
+      "template_idx": 5
     }
   ]
 }
