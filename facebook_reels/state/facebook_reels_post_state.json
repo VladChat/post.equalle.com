@@ -2487,7 +2487,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-06-15T18:00:51Z",
-      "video_id": "2248084252751313"
+      "video_id": "2248084252751313",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 17
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-15T18:34:33Z",
+      "comment_text": "Don’t chase one spot too long—blend the area wider and re-check. Are the edges still visible?",
+      "comment_status": "commented",
+      "comment_id": "2248084252751313_2487259241734277",
+      "commented_ts_utc": "2026-06-15T18:34:38Z"
     }
   },
   "runs": [
@@ -4562,6 +4572,15 @@
       "result": "commented",
       "comment_id": "1970765783565198_995874446488441",
       "template_idx": 3
+    },
+    {
+      "ts_utc": "2026-06-15T18:34:38Z",
+      "video_id": "2248084252751313",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_fish_eyes_on_plastic-220_grit_for_plastic_surface_prep-plastic-024.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "2248084252751313_2487259241734277",
+      "template_idx": 17
     }
   ]
 }
