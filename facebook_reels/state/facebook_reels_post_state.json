@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-06-12"
+    "manifest_index": 4,
+    "last_day": "2026-06-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2477,6 +2477,17 @@
       "comment_status": "commented",
       "comment_id": "1970765783565198_995874446488441",
       "commented_ts_utc": "2026-06-12T17:15:23Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_fish_eyes_on_plastic-220_grit_for_plastic_surface_prep-plastic-024.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_fish_eyes_on_plastic-220_grit_for_plastic_surface_prep-plastic-024.mp4",
+      "filename": "paint_fish_eyes_on_plastic-220_grit_for_plastic_surface_prep-plastic-024.mp4",
+      "manifest": "plastic.json",
+      "title": "Fish Eyes In Paint? Prep Plastic With 220 Grit",
+      "description": "If fish eyes show up in paint on plastic, surface prep may be uneven. 220 grit helps create a consistent scuff before priming and painting. Sand lightly, then wipe clean and re-check before coating. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-06-15T18:00:51Z",
+      "video_id": "2248084252751313"
     }
   },
   "runs": [
@@ -3558,6 +3569,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "1970765783565198",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-06-15T18:00:51Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_fish_eyes_on_plastic-220_grit_for_plastic_surface_prep-plastic-024.mp4",
+      "filename": "paint_fish_eyes_on_plastic-220_grit_for_plastic_surface_prep-plastic-024.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "2248084252751313",
       "error": null
     }
   ],
