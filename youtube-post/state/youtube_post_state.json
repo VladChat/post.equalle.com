@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-14"
+    "last_day": "2026-06-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1646,6 +1646,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0F9VR1H7L",
       "result": "success",
       "video_id": "KflBzk7WTCI"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/scratches_on_plastic_surface-1000_grit_wet_sanding_plastic-wet-041.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_on_plastic_surface-1000_grit_wet_sanding_plastic-wet-041.mp4",
+      "filename": "scratches_on_plastic_surface-1000_grit_wet_sanding_plastic-wet-041.mp4",
+      "manifest": "wet.json",
+      "title": "Scratches On Plastic? 1000 Grit Wet Sand To Start Refining",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-1000",
+      "result": "success",
+      "video_id": "mia04NOK50o"
     }
   },
   "runs": [
@@ -2633,6 +2643,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_still_dull_after_sanding-3000_grit_wet_sanding_before_polish-wet-040.mp4",
       "result": "success",
       "video_id": "KflBzk7WTCI"
+    },
+    {
+      "ts_utc": "2026-06-15T16:17:32.776698+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_on_plastic_surface-1000_grit_wet_sanding_plastic-wet-041.mp4",
+      "result": "success",
+      "video_id": "mia04NOK50o"
     }
   ],
   "last_post": {
