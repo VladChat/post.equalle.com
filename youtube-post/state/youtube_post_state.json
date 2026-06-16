@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-15"
+    "last_day": "2026-06-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1656,6 +1656,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-1000",
       "result": "success",
       "video_id": "mia04NOK50o"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/plastic_feels_rough_to_touch-1500_grit_wet_sand_for_plastic_prep-wet-042.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_feels_rough_to_touch-1500_grit_wet_sand_for_plastic_prep-wet-042.mp4",
+      "filename": "plastic_feels_rough_to_touch-1500_grit_wet_sand_for_plastic_prep-wet-042.mp4",
+      "manifest": "wet.json",
+      "title": "Plastic Feels Rough? 1500 Grit Wet Sand For Smooth Prep",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7T3663",
+      "result": "success",
+      "video_id": "kre6Ar8O6so"
     }
   },
   "runs": [
@@ -2649,6 +2659,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_on_plastic_surface-1000_grit_wet_sanding_plastic-wet-041.mp4",
       "result": "success",
       "video_id": "mia04NOK50o"
+    },
+    {
+      "ts_utc": "2026-06-16T15:54:46.501781+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_feels_rough_to_touch-1500_grit_wet_sand_for_plastic_prep-wet-042.mp4",
+      "result": "success",
+      "video_id": "kre6Ar8O6so"
     }
   ],
   "last_post": {
