@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-16"
+    "last_day": "2026-06-17"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1666,6 +1666,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7T3663",
       "result": "success",
       "video_id": "kre6Ar8O6so"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_plastic_looks_hazy-2000_grit_wet_sand_before_polishing-wet-043.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_plastic_looks_hazy-2000_grit_wet_sand_before_polishing-wet-043.mp4",
+      "filename": "clear_plastic_looks_hazy-2000_grit_wet_sand_before_polishing-wet-043.mp4",
+      "manifest": "wet.json",
+      "title": "Clear Plastic Looks Hazy? 2000 Grit Wet Sand Before Polishing",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-2000",
+      "result": "success",
+      "video_id": "F4N0pY6Jrhc"
     }
   },
   "runs": [
@@ -2665,6 +2675,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_feels_rough_to_touch-1500_grit_wet_sand_for_plastic_prep-wet-042.mp4",
       "result": "success",
       "video_id": "kre6Ar8O6so"
+    },
+    {
+      "ts_utc": "2026-06-17T14:25:35.907037+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_plastic_looks_hazy-2000_grit_wet_sand_before_polishing-wet-043.mp4",
+      "result": "success",
+      "video_id": "F4N0pY6Jrhc"
     }
   ],
   "last_post": {
