@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-06-15"
+    "manifest_index": 0,
+    "last_day": "2026-06-17"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2498,6 +2498,17 @@
       "comment_status": "commented",
       "comment_id": "2248084252751313_2487259241734277",
       "commented_ts_utc": "2026-06-15T18:34:38Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
+      "filename": "lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
+      "manifest": "drywall.json",
+      "title": "Lines Showing After a Skim Coat? Lightly Feather Sand With 220 Grit",
+      "description": "If lines show after a skim coat, use 220 grit with light pressure to feather the surface and smooth minor marks before the next coat or primer. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-06-17T16:42:52Z",
+      "video_id": "1516071540319283"
     }
   },
   "runs": [
@@ -3588,6 +3599,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "2248084252751313",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-06-17T16:42:52Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
+      "filename": "lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1516071540319283",
       "error": null
     }
   ],
