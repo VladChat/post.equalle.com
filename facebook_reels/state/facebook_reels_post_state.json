@@ -2508,7 +2508,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-06-17T16:42:52Z",
-      "video_id": "1516071540319283"
+      "video_id": "1516071540319283",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-17T16:49:29Z",
+      "comment_text": "Light pressure with 220 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "1516071540319283_989795407014885",
+      "commented_ts_utc": "2026-06-17T16:49:34Z"
     }
   },
   "runs": [
@@ -4601,6 +4611,15 @@
       "result": "commented",
       "comment_id": "2248084252751313_2487259241734277",
       "template_idx": 17
+    },
+    {
+      "ts_utc": "2026-06-17T16:49:34Z",
+      "video_id": "1516071540319283",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1516071540319283_989795407014885",
+      "template_idx": 0
     }
   ]
 }
