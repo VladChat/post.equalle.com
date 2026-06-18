@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-17"
+    "last_day": "2026-06-18"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1676,6 +1676,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-2000",
       "result": "success",
       "video_id": "F4N0pY6Jrhc"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/deep_scratches_in_plastic-800-1500_grit_wet_sand_plastic-wet-044.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/deep_scratches_in_plastic-800-1500_grit_wet_sand_plastic-wet-044.mp4",
+      "filename": "deep_scratches_in_plastic-800-1500_grit_wet_sand_plastic-wet-044.mp4",
+      "manifest": "wet.json",
+      "title": "Deep Scratches In Plastic? Wet Sand 800 Then 1500 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07QD2GX43",
+      "result": "success",
+      "video_id": "YQa2j8UoHs8"
     }
   },
   "runs": [
@@ -2681,6 +2691,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_plastic_looks_hazy-2000_grit_wet_sand_before_polishing-wet-043.mp4",
       "result": "success",
       "video_id": "F4N0pY6Jrhc"
+    },
+    {
+      "ts_utc": "2026-06-18T14:10:10.101261+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/deep_scratches_in_plastic-800-1500_grit_wet_sand_plastic-wet-044.mp4",
+      "result": "success",
+      "video_id": "YQa2j8UoHs8"
     }
   ],
   "last_post": {
