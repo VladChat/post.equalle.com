@@ -2529,7 +2529,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-06-19T16:12:39Z",
-      "video_id": "1539295027865296"
+      "video_id": "1539295027865296",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 2
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-19T17:12:03Z",
+      "comment_text": "Keep the block flat so you don’t dig grooves at the edges. Are you using a sanding block or hand-only?",
+      "comment_status": "commented",
+      "comment_id": "1539295027865296_862105976976692",
+      "commented_ts_utc": "2026-06-19T17:12:07Z"
     }
   },
   "runs": [
@@ -4640,6 +4650,15 @@
       "result": "commented",
       "comment_id": "1516071540319283_989795407014885",
       "template_idx": 0
+    },
+    {
+      "ts_utc": "2026-06-19T17:12:07Z",
+      "video_id": "1539295027865296",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Layers_of_Paint_on_Trim-80_Grit_for_Paint_Removal_on_Wood-wood-025.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "1539295027865296_862105976976692",
+      "template_idx": 2
     }
   ]
 }
