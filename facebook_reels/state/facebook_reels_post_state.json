@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-06-17"
+    "manifest_index": 1,
+    "last_day": "2026-06-19"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2519,6 +2519,17 @@
       "comment_status": "commented",
       "comment_id": "1516071540319283_989795407014885",
       "commented_ts_utc": "2026-06-17T16:49:34Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Layers_of_Paint_on_Trim-80_Grit_for_Paint_Removal_on_Wood-wood-025.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Layers_of_Paint_on_Trim-80_Grit_for_Paint_Removal_on_Wood-wood-025.mp4",
+      "filename": "Layers_of_Paint_on_Trim-80_Grit_for_Paint_Removal_on_Wood-wood-025.mp4",
+      "manifest": "wood.json",
+      "title": "Layers of Paint on Trim: 80 Grit Paint Removal on Wood",
+      "description": "Layers of Paint on Trim? Use 80 grit for paint removal on wood. Remove loose paint or old finish in controlled passes to avoid gouging the wood. Start with the recommended grit, vacuum dust, then step up in grit before repainting. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-06-19T16:12:39Z",
+      "video_id": "1539295027865296"
     }
   },
   "runs": [
@@ -3618,6 +3629,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "1516071540319283",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-06-19T16:12:39Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Layers_of_Paint_on_Trim-80_Grit_for_Paint_Removal_on_Wood-wood-025.mp4",
+      "filename": "Layers_of_Paint_on_Trim-80_Grit_for_Paint_Removal_on_Wood-wood-025.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "1539295027865296",
       "error": null
     }
   ],
