@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-19"
+    "last_day": "2026-06-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1696,6 +1696,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-2000",
       "result": "success",
       "video_id": "MyPmm3SgUlo"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/resin_surface_looks_uneven-1500_grit_wet_sanding_epoxy_resin-wet-046.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/resin_surface_looks_uneven-1500_grit_wet_sanding_epoxy_resin-wet-046.mp4",
+      "filename": "resin_surface_looks_uneven-1500_grit_wet_sanding_epoxy_resin-wet-046.mp4",
+      "manifest": "wet.json",
+      "title": "Epoxy Resin Uneven? 1500 Grit Wet Sand To Level And Refine",
+      "destination_url": "https://www.amazon.com/gp/product/B07RFT4WDT",
+      "result": "success",
+      "video_id": "9xQnzP6ftmA"
     }
   },
   "runs": [
@@ -2713,6 +2723,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_needs_polish_prep-2000_grit_wet_sanding_plastic_surface-wet-045.mp4",
       "result": "success",
       "video_id": "MyPmm3SgUlo"
+    },
+    {
+      "ts_utc": "2026-06-20T12:25:58.283705+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/resin_surface_looks_uneven-1500_grit_wet_sanding_epoxy_resin-wet-046.mp4",
+      "result": "success",
+      "video_id": "9xQnzP6ftmA"
     }
   ],
   "last_post": {
