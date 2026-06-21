@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-20"
+    "last_day": "2026-06-21"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1706,6 +1706,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RFT4WDT",
       "result": "success",
       "video_id": "9xQnzP6ftmA"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/acrylic_shows_fine_scratches-2000_grit_wet_sand_acrylic_sheet-wet-047.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/acrylic_shows_fine_scratches-2000_grit_wet_sand_acrylic_sheet-wet-047.mp4",
+      "filename": "acrylic_shows_fine_scratches-2000_grit_wet_sand_acrylic_sheet-wet-047.mp4",
+      "manifest": "wet.json",
+      "title": "Acrylic Shows Fine Scratches? 2000 Grit Wet Sand To Refine",
+      "destination_url": "https://equalle.com/products/2000-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "result": "success",
+      "video_id": "Zzwj30WT1IY"
     }
   },
   "runs": [
@@ -2729,6 +2739,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/resin_surface_looks_uneven-1500_grit_wet_sanding_epoxy_resin-wet-046.mp4",
       "result": "success",
       "video_id": "9xQnzP6ftmA"
+    },
+    {
+      "ts_utc": "2026-06-21T13:06:34.235485+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/acrylic_shows_fine_scratches-2000_grit_wet_sand_acrylic_sheet-wet-047.mp4",
+      "result": "success",
+      "video_id": "Zzwj30WT1IY"
     }
   ],
   "last_post": {
