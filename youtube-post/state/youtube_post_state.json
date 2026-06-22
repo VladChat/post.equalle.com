@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-21"
+    "last_day": "2026-06-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1716,6 +1716,16 @@
       "destination_url": "https://equalle.com/products/2000-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
       "result": "success",
       "video_id": "Zzwj30WT1IY"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/plastic_not_smooth_enough-1500-2000_grit_wet_sand_plastic-wet-048.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_not_smooth_enough-1500-2000_grit_wet_sand_plastic-wet-048.mp4",
+      "filename": "plastic_not_smooth_enough-1500-2000_grit_wet_sand_plastic-wet-048.mp4",
+      "manifest": "wet.json",
+      "title": "Plastic Not Smooth Enough? Wet Sand 1500 To 2000 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07QB4DZRK",
+      "result": "success",
+      "video_id": "IyeTNMVYneY"
     }
   },
   "runs": [
@@ -2745,6 +2755,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/acrylic_shows_fine_scratches-2000_grit_wet_sand_acrylic_sheet-wet-047.mp4",
       "result": "success",
       "video_id": "Zzwj30WT1IY"
+    },
+    {
+      "ts_utc": "2026-06-22T15:51:42.530154+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_not_smooth_enough-1500-2000_grit_wet_sand_plastic-wet-048.mp4",
+      "result": "success",
+      "video_id": "IyeTNMVYneY"
     }
   ],
   "last_post": {
