@@ -2550,7 +2550,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-06-22T17:46:35Z",
-      "video_id": "1328433332068382"
+      "video_id": "1328433332068382",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-22T18:32:20Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "1328433332068382_1684258902660778",
+      "commented_ts_utc": "2026-06-22T18:32:23Z"
     }
   },
   "runs": [
@@ -4679,6 +4689,15 @@
       "result": "commented",
       "comment_id": "1539295027865296_862105976976692",
       "template_idx": 2
+    },
+    {
+      "ts_utc": "2026-06-22T18:32:23Z",
+      "video_id": "1328433332068382",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1328433332068382_1684258902660778",
+      "template_idx": 12
     }
   ]
 }
