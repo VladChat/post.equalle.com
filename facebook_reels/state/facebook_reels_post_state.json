@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-06-19"
+    "manifest_index": 2,
+    "last_day": "2026-06-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2540,6 +2540,17 @@
       "comment_status": "commented",
       "comment_id": "1539295027865296_862105976976692",
       "commented_ts_utc": "2026-06-19T17:12:07Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4",
+      "filename": "light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4",
+      "manifest": "wet.json",
+      "title": "Light Runs Starting? 2000 Grit Wet Sand To Level Before Recoat",
+      "description": "Light runs starting to form? Wet sand with 2000 grit to level the run edges before recoating. Keep the surface wet, use light pressure, sand in short even passes, wipe often, and re-check under a work light to avoid flattening surrounding areas. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-06-22T17:46:35Z",
+      "video_id": "1328433332068382"
     }
   },
   "runs": [
@@ -3648,6 +3659,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "1539295027865296",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-06-22T17:46:35Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4",
+      "filename": "light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "1328433332068382",
       "error": null
     }
   ],
