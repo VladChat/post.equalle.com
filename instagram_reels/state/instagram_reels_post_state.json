@@ -4031,7 +4031,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18122452078741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-23T16:12:45Z",
+      "comment_text": "For wet-sanding work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "18098348476945890",
+      "commented_ts_utc": "2026-06-23T16:12:48Z"
     }
   },
   "runs": [
@@ -6301,6 +6311,15 @@
       "result": "commented",
       "comment_id": "17943791715233408",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-06-23T16:12:48Z",
+      "media_id": "18121924696776380",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18098348476945890",
+      "template_idx": 3
     }
   ]
 }
