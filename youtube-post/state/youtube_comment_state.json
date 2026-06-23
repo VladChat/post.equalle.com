@@ -1411,6 +1411,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-06-22T16:02:31Z",
       "verify_after_ts": 1782145951.4284508
+    },
+    "10s8IG53LT8": {
+      "comment_status": "commented_unverified",
+      "comment_id": "Ugy1VndhyNIGXpZnctF4AaABAg",
+      "comment_text": "For paint prep on surface, sand just until the sheen turns uniformly dull—no shiny islands left behind. Are you prepping for primer, repaint, or touch-up?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-06-23T13:47:49Z",
+      "verify_after_ts": 1782224269.4574418
     }
   },
   "runs": [
@@ -2460,6 +2468,12 @@
       "video_id": "IyeTNMVYneY",
       "result": "commented_unverified",
       "comment_id": "UgxqBr5j1alZ2TNfEyd4AaABAg"
+    },
+    {
+      "ts": "2026-06-23T13:47:49Z",
+      "video_id": "10s8IG53LT8",
+      "result": "commented_unverified",
+      "comment_id": "Ugy1VndhyNIGXpZnctF4AaABAg"
     }
   ]
 }
