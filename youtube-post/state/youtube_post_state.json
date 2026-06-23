@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-22"
+    "last_day": "2026-06-23"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1726,6 +1726,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QB4DZRK",
       "result": "success",
       "video_id": "IyeTNMVYneY"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/resin_needs_final_smoothing-3000_grit_wet_sand_before_polishing-wet-049.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/resin_needs_final_smoothing-3000_grit_wet_sand_before_polishing-wet-049.mp4",
+      "filename": "resin_needs_final_smoothing-3000_grit_wet_sand_before_polishing-wet-049.mp4",
+      "manifest": "wet.json",
+      "title": "Resin Needs Final Smoothing? 3000 Grit Wet Sand Before Polish",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-3000",
+      "result": "success",
+      "video_id": "10s8IG53LT8"
     }
   },
   "runs": [
@@ -2761,6 +2771,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_not_smooth_enough-1500-2000_grit_wet_sand_plastic-wet-048.mp4",
       "result": "success",
       "video_id": "IyeTNMVYneY"
+    },
+    {
+      "ts_utc": "2026-06-23T13:42:45.668365+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/resin_needs_final_smoothing-3000_grit_wet_sand_before_polishing-wet-049.mp4",
+      "result": "success",
+      "video_id": "10s8IG53LT8"
     }
   ],
   "last_post": {
