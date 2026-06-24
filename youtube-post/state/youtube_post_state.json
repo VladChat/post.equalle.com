@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-23"
+    "last_day": "2026-06-24"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1736,6 +1736,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-3000",
       "result": "success",
       "video_id": "10s8IG53LT8"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/plastic_surface_looks_dull-2000_grit_wet_sand_for_gloss_prep-wet-050.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_surface_looks_dull-2000_grit_wet_sand_for_gloss_prep-wet-050.mp4",
+      "filename": "plastic_surface_looks_dull-2000_grit_wet_sand_for_gloss_prep-wet-050.mp4",
+      "manifest": "wet.json",
+      "title": "Plastic Looks Dull? 2000 Grit Wet Sand For Gloss Prep",
+      "destination_url": "https://www.amazon.com/gp/product/B07RGRPZVF",
+      "result": "success",
+      "video_id": "_AOGyAaYqvM"
     }
   },
   "runs": [
@@ -2777,6 +2787,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/resin_needs_final_smoothing-3000_grit_wet_sand_before_polishing-wet-049.mp4",
       "result": "success",
       "video_id": "10s8IG53LT8"
+    },
+    {
+      "ts_utc": "2026-06-24T13:22:28.445197+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_surface_looks_dull-2000_grit_wet_sand_for_gloss_prep-wet-050.mp4",
+      "result": "success",
+      "video_id": "_AOGyAaYqvM"
     }
   ],
   "last_post": {
