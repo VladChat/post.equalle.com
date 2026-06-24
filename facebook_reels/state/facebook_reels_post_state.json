@@ -2571,7 +2571,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-06-24T15:37:04Z",
-      "video_id": "985495460778488"
+      "video_id": "985495460778488",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 6
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-24T16:01:42Z",
+      "comment_text": "Small circles help blend; straight passes help level. Are you going for a smooth finish or just prep?",
+      "comment_status": "commented",
+      "comment_id": "985495460778488_1337724345151433",
+      "commented_ts_utc": "2026-06-24T16:01:48Z"
     }
   },
   "runs": [
@@ -4718,6 +4728,15 @@
       "result": "commented",
       "comment_id": "1328433332068382_1684258902660778",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-06-24T16:01:48Z",
+      "video_id": "985495460778488",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_chipping_around_edges-120_grit_for_feathering_paint_edges-metal-025.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "985495460778488_1337724345151433",
+      "template_idx": 6
     }
   ]
 }
