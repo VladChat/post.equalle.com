@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-24"
+    "last_day": "2026-06-25"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1746,6 +1746,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RGRPZVF",
       "result": "success",
       "video_id": "_AOGyAaYqvM"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/which_grit_to_start_wet_sanding-800-1000_grit_for_wet_sanding_start-wet-051.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/which_grit_to_start_wet_sanding-800-1000_grit_for_wet_sanding_start-wet-051.mp4",
+      "filename": "which_grit_to_start_wet_sanding-800-1000_grit_for_wet_sanding_start-wet-051.mp4",
+      "manifest": "wet.json",
+      "title": "Which Grit To Start Wet Sanding? 800 vs 1000 Quick Guide",
+      "destination_url": "https://equalle.com/products/800-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "result": "success",
+      "video_id": "hdUzrA2JaBo"
     }
   },
   "runs": [
@@ -2793,6 +2803,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_surface_looks_dull-2000_grit_wet_sand_for_gloss_prep-wet-050.mp4",
       "result": "success",
       "video_id": "_AOGyAaYqvM"
+    },
+    {
+      "ts_utc": "2026-06-25T13:19:41.954689+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/which_grit_to_start_wet_sanding-800-1000_grit_for_wet_sanding_start-wet-051.mp4",
+      "result": "success",
+      "video_id": "hdUzrA2JaBo"
     }
   ],
   "last_post": {
