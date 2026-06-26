@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-06-24"
+    "manifest_index": 4,
+    "last_day": "2026-06-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2582,6 +2582,17 @@
       "comment_status": "commented",
       "comment_id": "985495460778488_1337724345151433",
       "commented_ts_utc": "2026-06-24T16:01:48Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_looks_patchy_on_plastic-220_grit_for_even_plastic_prep-plastic-025.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_looks_patchy_on_plastic-220_grit_for_even_plastic_prep-plastic-025.mp4",
+      "filename": "paint_looks_patchy_on_plastic-220_grit_for_even_plastic_prep-plastic-025.mp4",
+      "manifest": "plastic.json",
+      "title": "Patchy Paint On Plastic? Even Prep With 220 Grit",
+      "description": "If paint looks patchy on plastic, uneven prep is usually the cause. 220 grit scuff sanding helps create a uniform tooth so primer and paint lay down more evenly. Wipe clean before recoating. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-06-26T15:30:00Z",
+      "video_id": "968587819550443"
     }
   },
   "runs": [
@@ -3708,6 +3719,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "985495460778488",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-06-26T15:30:00Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_looks_patchy_on_plastic-220_grit_for_even_plastic_prep-plastic-025.mp4",
+      "filename": "paint_looks_patchy_on_plastic-220_grit_for_even_plastic_prep-plastic-025.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "968587819550443",
       "error": null
     }
   ],
