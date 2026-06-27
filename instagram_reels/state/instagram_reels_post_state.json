@@ -4099,7 +4099,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18122865286741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 18
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-27T15:42:03Z",
+      "comment_text": "If you’re getting random deep lines, the sheet may be loaded or folded. Are you using fresh paper?",
+      "comment_status": "commented",
+      "comment_id": "18091715063377106",
+      "commented_ts_utc": "2026-06-27T15:42:06Z"
     }
   },
   "runs": [
@@ -6409,6 +6419,15 @@
       "result": "commented",
       "comment_id": "17959131588149132",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-06-27T15:42:06Z",
+      "media_id": "18179031712405688",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_fish_eyes_on_plastic-220_grit_for_plastic_surface_prep-plastic-024.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "18091715063377106",
+      "template_idx": 18
     }
   ]
 }
