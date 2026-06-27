@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-26"
+    "last_day": "2026-06-27"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1766,6 +1766,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RL3W6VT",
       "result": "success",
       "video_id": "tM5IV0uH4aE"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/not_sure_which_grit_to_use-wet_sanding_grit_guide_800-3000-wet-053.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/not_sure_which_grit_to_use-wet_sanding_grit_guide_800-3000-wet-053.mp4",
+      "filename": "not_sure_which_grit_to_use-wet_sanding_grit_guide_800-3000-wet-053.mp4",
+      "manifest": "wet.json",
+      "title": "Wet Sanding Grit Guide: 800 To 3000 (When To Use Each)",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-800",
+      "result": "success",
+      "video_id": "GVjlsX_Z64Y"
     }
   },
   "runs": [
@@ -2825,6 +2835,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/wet_sanding_leaves_scratches-1500-2000_grit_wet_sanding_steps-wet-052.mp4",
       "result": "success",
       "video_id": "tM5IV0uH4aE"
+    },
+    {
+      "ts_utc": "2026-06-27T12:08:58.256090+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/not_sure_which_grit_to_use-wet_sanding_grit_guide_800-3000-wet-053.mp4",
+      "result": "success",
+      "video_id": "GVjlsX_Z64Y"
     }
   ],
   "last_post": {
