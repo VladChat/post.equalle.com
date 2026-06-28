@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-27"
+    "last_day": "2026-06-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1776,6 +1776,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-800",
       "result": "success",
       "video_id": "GVjlsX_Z64Y"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/wet_sanding_before_polishing-2000_grit_wet_sand_before_polish-wet-054.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/wet_sanding_before_polishing-2000_grit_wet_sand_before_polish-wet-054.mp4",
+      "filename": "wet_sanding_before_polishing-2000_grit_wet_sand_before_polish-wet-054.mp4",
+      "manifest": "wet.json",
+      "title": "Wet Sanding Before Polishing: Use 2000 Grit For Polish Prep",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7TX4KC",
+      "result": "success",
+      "video_id": "Dvzsd58O0lI"
     }
   },
   "runs": [
@@ -2841,6 +2851,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/not_sure_which_grit_to_use-wet_sanding_grit_guide_800-3000-wet-053.mp4",
       "result": "success",
       "video_id": "GVjlsX_Z64Y"
+    },
+    {
+      "ts_utc": "2026-06-28T12:16:40.708604+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/wet_sanding_before_polishing-2000_grit_wet_sand_before_polish-wet-054.mp4",
+      "result": "success",
+      "video_id": "Dvzsd58O0lI"
     }
   ],
   "last_post": {
