@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-28"
+    "last_day": "2026-06-29"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1786,6 +1786,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7TX4KC",
       "result": "success",
       "video_id": "Dvzsd58O0lI"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/surface_still_rough_after_wet_sanding-1500-2000_grit_for_smoother_finish-wet-055.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_still_rough_after_wet_sanding-1500-2000_grit_for_smoother_finish-wet-055.mp4",
+      "filename": "surface_still_rough_after_wet_sanding-1500-2000_grit_for_smoother_finish-wet-055.mp4",
+      "manifest": "wet.json",
+      "title": "Still Rough After Wet Sanding? Step 1500 To 2000 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-1500",
+      "result": "success",
+      "video_id": "g1ohLccELoo"
     }
   },
   "runs": [
@@ -2857,6 +2867,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/wet_sanding_before_polishing-2000_grit_wet_sand_before_polish-wet-054.mp4",
       "result": "success",
       "video_id": "Dvzsd58O0lI"
+    },
+    {
+      "ts_utc": "2026-06-29T14:50:26.279044+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_still_rough_after_wet_sanding-1500-2000_grit_for_smoother_finish-wet-055.mp4",
+      "result": "success",
+      "video_id": "g1ohLccELoo"
     }
   ],
   "last_post": {
