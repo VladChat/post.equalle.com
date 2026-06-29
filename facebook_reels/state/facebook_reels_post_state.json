@@ -2613,7 +2613,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-06-29T16:40:43Z",
-      "video_id": "1755742382448742"
+      "video_id": "1755742382448742",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 15
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-06-29T17:21:55Z",
+      "comment_text": "A quick mist/wipe (for wet sanding) can show high spots fast. Are you using water or a lubricant?",
+      "comment_status": "commented",
+      "comment_id": "1755742382448742_1546699717238720",
+      "commented_ts_utc": "2026-06-29T17:22:02Z"
     }
   },
   "runs": [
@@ -4796,6 +4806,15 @@
       "result": "commented",
       "comment_id": "968587819550443_1520458352878581",
       "template_idx": 1
+    },
+    {
+      "ts_utc": "2026-06-29T17:22:02Z",
+      "video_id": "1755742382448742",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1755742382448742_1546699717238720",
+      "template_idx": 15
     }
   ]
 }
