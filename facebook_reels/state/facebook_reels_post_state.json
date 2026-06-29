@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-06-26"
+    "manifest_index": 0,
+    "last_day": "2026-06-29"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2603,6 +2603,17 @@
       "comment_status": "commented",
       "comment_id": "968587819550443_1520458352878581",
       "commented_ts_utc": "2026-06-26T16:34:02Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
+      "filename": "raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
+      "manifest": "drywall.json",
+      "title": "Raised Areas After Drying? Knock Down High Spots With 180 Grit",
+      "description": "If you feel raised areas after the mud dries, sand lightly with 180 grit to knock down high spots and blend the surface before the next step. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-06-29T16:40:43Z",
+      "video_id": "1755742382448742"
     }
   },
   "runs": [
@@ -3738,6 +3749,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "968587819550443",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-06-29T16:40:43Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
+      "filename": "raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1755742382448742",
       "error": null
     }
   ],
