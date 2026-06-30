@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-06-29"
+    "last_day": "2026-06-30"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1796,6 +1796,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-1500",
       "result": "success",
       "video_id": "g1ohLccELoo"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/when_to_use_3000_grit_wet_sanding-3000_grit_for_final_polish_prep-wet-056.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/when_to_use_3000_grit_wet_sanding-3000_grit_for_final_polish_prep-wet-056.mp4",
+      "filename": "when_to_use_3000_grit_wet_sanding-3000_grit_for_final_polish_prep-wet-056.mp4",
+      "manifest": "wet.json",
+      "title": "When To Use 3000 Grit Wet Sanding (Final Polish Prep)",
+      "destination_url": "https://www.amazon.com/gp/product/B0FHJCF1X6",
+      "result": "success",
+      "video_id": "RnCoz7vKV4M"
     }
   },
   "runs": [
@@ -2873,6 +2883,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_still_rough_after_wet_sanding-1500-2000_grit_for_smoother_finish-wet-055.mp4",
       "result": "success",
       "video_id": "g1ohLccELoo"
+    },
+    {
+      "ts_utc": "2026-06-30T13:09:02.522105+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/when_to_use_3000_grit_wet_sanding-3000_grit_for_final_polish_prep-wet-056.mp4",
+      "result": "success",
+      "video_id": "RnCoz7vKV4M"
     }
   ],
   "last_post": {
