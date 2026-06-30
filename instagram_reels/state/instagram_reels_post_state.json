@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-06-27"
+    "manifest_index": 0,
+    "last_day": "2026-06-30"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -4110,6 +4110,30 @@
       "comment_status": "commented",
       "comment_id": "18091715063377106",
       "commented_ts_utc": "2026-06-27T15:42:06Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4",
+      "filename": "mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4",
+      "manifest": "drywall.json",
+      "title": "Mud Buildup on Edges? Smooth Between Coats With 180 Grit",
+      "description": "If mud built up along edges, sand lightly with 180 grit to smooth the ridge and feather it out before the next coat goes on. Sandpaper eQualle",
+      "caption": "Mud Buildup on Edges? Smooth Between Coats With 180 Grit\n\nIf mud built up along edges, sand lightly with 180 grit to smooth the ridge and feather it out before the next coat goes on. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-06-30T15:37:31Z",
+      "mode": "binary",
+      "container_id": "18123194434741317",
+      "media_id": "17957354139158623",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18123194434741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18123194434741317"
+      }
     }
   },
   "runs": [
@@ -5453,6 +5477,17 @@
       "filename": "paint_fish_eyes_on_plastic-220_grit_for_plastic_surface_prep-plastic-024.mp4",
       "container_id": "18122865286741317",
       "media_id": "18179031712405688",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-06-30T15:37:31Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4",
+      "filename": "mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4",
+      "container_id": "18123194434741317",
+      "media_id": "17957354139158623",
       "error": null
     }
   ],
