@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-01"
+    "last_day": "2026-07-02"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1816,6 +1816,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-800",
       "result": "success",
       "video_id": "xeaT3EpSb7U"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/too_aggressive_wet_sanding-move_up_grits_for_controlled_wet_sanding-wet-058.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/too_aggressive_wet_sanding-move_up_grits_for_controlled_wet_sanding-wet-058.mp4",
+      "filename": "too_aggressive_wet_sanding-move_up_grits_for_controlled_wet_sanding-wet-058.mp4",
+      "manifest": "wet.json",
+      "title": "Wet Sanding Too Aggressive? Move Up Grits For More Control",
+      "destination_url": "https://www.amazon.com/gp/product/B07RFT53W6",
+      "result": "success",
+      "video_id": "znmmAsjDUvk"
     }
   },
   "runs": [
@@ -2905,6 +2915,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/wet_sanding_order_confusing-800-1500-2000_grit_wet_sanding_steps-wet-057.mp4",
       "result": "success",
       "video_id": "xeaT3EpSb7U"
+    },
+    {
+      "ts_utc": "2026-07-02T12:58:30.648643+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/too_aggressive_wet_sanding-move_up_grits_for_controlled_wet_sanding-wet-058.mp4",
+      "result": "success",
+      "video_id": "znmmAsjDUvk"
     }
   ],
   "last_post": {
