@@ -1,14 +1,14 @@
 {
-  "post_id": "325670187920349_1466336985507783",
+  "post_id": "325670187920349_1468089041999244",
   "product": {
     "source": "amazon",
-    "url": "https://www.amazon.com/gp/product/B07QF2B6D7",
-    "grit": 600,
+    "url": "https://www.amazon.com/gp/product/B07QD2GX43",
+    "grit": 800,
     "pack": 50,
-    "anchor": "600 Grit (Fine)",
-    "grit_description": "High-precision finishing grit that delivers ultra-smooth surfaces. Common in primer sanding, automotive detailing, and fine metal work. Performs excellently in both wet and dry sanding.",
+    "anchor": "800 Grit (Ultra-Fine)",
+    "grit_description": "Ultra-fine grit for pre-polish refinement on paint, clear coats, or resin. Smooths imperfections without damaging the base layer. Provides optimal control when used wet or dry before 1000 or 1200 grits.",
     "contexts": [
-      "metal",
+      "auto",
       "finishing"
     ]
   }
