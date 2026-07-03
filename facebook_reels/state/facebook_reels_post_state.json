@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-07-01"
+    "manifest_index": 2,
+    "last_day": "2026-07-03"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2642,6 +2642,17 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-07-01T16:50:26Z",
       "comment_skipped_reason": "policy_10pct_skip"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/bumps_after_spraying_clear_coat-2000_grit_wet_sand_before_recoat-wet-026.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/bumps_after_spraying_clear_coat-2000_grit_wet_sand_before_recoat-wet-026.mp4",
+      "filename": "bumps_after_spraying_clear_coat-2000_grit_wet_sand_before_recoat-wet-026.mp4",
+      "manifest": "wet.json",
+      "title": "Bumps After Clear Coat? 2000 Grit Wet Sand Before Recoat",
+      "description": "Bumps after spraying clear coat? Wet sand with 2000 grit before recoating to smooth nibs and texture. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light before the next coat. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-03T15:21:12Z",
+      "video_id": "1645403256561100"
     }
   },
   "runs": [
@@ -3795,6 +3806,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "1049335204116453",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-03T15:21:12Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/bumps_after_spraying_clear_coat-2000_grit_wet_sand_before_recoat-wet-026.mp4",
+      "filename": "bumps_after_spraying_clear_coat-2000_grit_wet_sand_before_recoat-wet-026.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "1645403256561100",
       "error": null
     }
   ],
