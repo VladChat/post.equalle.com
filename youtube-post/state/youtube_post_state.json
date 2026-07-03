@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-02"
+    "last_day": "2026-07-03"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1826,6 +1826,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RFT53W6",
       "result": "success",
       "video_id": "znmmAsjDUvk"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/wet_sanding_takes_too_long-proper_grit_progression_for_wet_sanding-wet-059.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/wet_sanding_takes_too_long-proper_grit_progression_for_wet_sanding-wet-059.mp4",
+      "filename": "wet_sanding_takes_too_long-proper_grit_progression_for_wet_sanding-wet-059.mp4",
+      "manifest": "wet.json",
+      "title": "Wet Sanding Takes Too Long? Use The Right Grit Progression",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-800",
+      "result": "success",
+      "video_id": "49SZPtZMhME"
     }
   },
   "runs": [
@@ -2921,6 +2931,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/too_aggressive_wet_sanding-move_up_grits_for_controlled_wet_sanding-wet-058.mp4",
       "result": "success",
       "video_id": "znmmAsjDUvk"
+    },
+    {
+      "ts_utc": "2026-07-03T12:56:01.980812+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/wet_sanding_takes_too_long-proper_grit_progression_for_wet_sanding-wet-059.mp4",
+      "result": "success",
+      "video_id": "49SZPtZMhME"
     }
   ],
   "last_post": {
