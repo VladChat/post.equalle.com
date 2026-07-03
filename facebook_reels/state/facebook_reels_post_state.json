@@ -2652,7 +2652,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-07-03T15:21:12Z",
-      "video_id": "1645403256561100"
+      "video_id": "1645403256561100",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 4
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-07-03T15:45:35Z",
+      "comment_text": "If the paper starts loading up, wipe/rinse it and keep going—clean cuts cleaner. Does it clog on your surface?",
+      "comment_status": "commented",
+      "comment_id": "1645403256561100_970832865937493",
+      "commented_ts_utc": "2026-07-03T15:45:39Z"
     }
   },
   "runs": [
@@ -4862,6 +4872,15 @@
       "result": "commented",
       "comment_id": "1755742382448742_1546699717238720",
       "template_idx": 15
+    },
+    {
+      "ts_utc": "2026-07-03T15:45:39Z",
+      "video_id": "1645403256561100",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/bumps_after_spraying_clear_coat-2000_grit_wet_sand_before_recoat-wet-026.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1645403256561100_970832865937493",
+      "template_idx": 4
     }
   ]
 }
