@@ -1491,6 +1491,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-07-02T13:10:50Z",
       "verify_after_ts": 1782999650.606282
+    },
+    "49SZPtZMhME": {
+      "comment_status": "commented_unverified",
+      "comment_id": "UgyOtf-Mx25MBMIWnWd4AaABAg",
+      "comment_text": "If you see pigtails or swirl marks, reduce pressure and change direction—then finish with straight, consistent passes. Are you sanding by hand or with a sander?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-07-03T13:15:35Z",
+      "verify_after_ts": 1783086335.231688
     }
   },
   "runs": [
@@ -2600,6 +2608,12 @@
       "video_id": "znmmAsjDUvk",
       "result": "commented_unverified",
       "comment_id": "UgzAg_8dyEvO_qLgyRF4AaABAg"
+    },
+    {
+      "ts": "2026-07-03T13:15:35Z",
+      "video_id": "49SZPtZMhME",
+      "result": "commented_unverified",
+      "comment_id": "UgyOtf-Mx25MBMIWnWd4AaABAg"
     }
   ]
 }
