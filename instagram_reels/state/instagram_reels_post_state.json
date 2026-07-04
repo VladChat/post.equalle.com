@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-07-02"
+    "manifest_index": 2,
+    "last_day": "2026-07-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -4175,6 +4175,30 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-07-02T15:48:01Z",
       "comment_skipped_reason": "policy_10pct_skip"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/bumps_after_spraying_clear_coat-2000_grit_wet_sand_before_recoat-wet-026.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/bumps_after_spraying_clear_coat-2000_grit_wet_sand_before_recoat-wet-026.mp4",
+      "filename": "bumps_after_spraying_clear_coat-2000_grit_wet_sand_before_recoat-wet-026.mp4",
+      "manifest": "wet.json",
+      "title": "Bumps After Clear Coat? 2000 Grit Wet Sand Before Recoat",
+      "description": "Bumps after spraying clear coat? Wet sand with 2000 grit before recoating to smooth nibs and texture. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light before the next coat. Wet or dry use. — eQualle",
+      "caption": "Bumps After Clear Coat? 2000 Grit Wet Sand Before Recoat\n\nBumps after spraying clear coat? Wet sand with 2000 grit before recoating to smooth nibs and texture. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light before the next coat. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-04T14:42:52Z",
+      "mode": "binary",
+      "container_id": "18123601933741317",
+      "media_id": "18085329602173285",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18123601933741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18123601933741317"
+      }
     }
   },
   "runs": [
@@ -5540,6 +5564,17 @@
       "filename": "Glossy_Finish_Needs_Removal-100_Grit_for_Stripping_Old_Finish-wood-026.mp4",
       "container_id": "18123401131741317",
       "media_id": "18096420724980787",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-04T14:42:52Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wet.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/bumps_after_spraying_clear_coat-2000_grit_wet_sand_before_recoat-wet-026.mp4",
+      "filename": "bumps_after_spraying_clear_coat-2000_grit_wet_sand_before_recoat-wet-026.mp4",
+      "container_id": "18123601933741317",
+      "media_id": "18085329602173285",
       "error": null
     }
   ],
