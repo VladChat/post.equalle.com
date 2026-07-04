@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-03"
+    "last_day": "2026-07-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1836,6 +1836,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-800",
       "result": "success",
       "video_id": "49SZPtZMhME"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/want_better_polishing_results-2000-3000_grit_wet_sand_before_polish-wet-060.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/want_better_polishing_results-2000-3000_grit_wet_sand_before_polish-wet-060.mp4",
+      "filename": "want_better_polishing_results-2000-3000_grit_wet_sand_before_polish-wet-060.mp4",
+      "manifest": "wet.json",
+      "title": "Want Better Polishing Results? Wet Sand 2000 Then 3000 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RFT53W6",
+      "result": "success",
+      "video_id": "S2Ggj9A_ypI"
     }
   },
   "runs": [
@@ -2937,6 +2947,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/wet_sanding_takes_too_long-proper_grit_progression_for_wet_sanding-wet-059.mp4",
       "result": "success",
       "video_id": "49SZPtZMhME"
+    },
+    {
+      "ts_utc": "2026-07-04T12:06:43.405541+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/want_better_polishing_results-2000-3000_grit_wet_sand_before_polish-wet-060.mp4",
+      "result": "success",
+      "video_id": "S2Ggj9A_ypI"
     }
   ],
   "last_post": {
