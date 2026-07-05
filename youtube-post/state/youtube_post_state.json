@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-04"
+    "last_day": "2026-07-05"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1846,6 +1846,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RFT53W6",
       "result": "success",
       "video_id": "S2Ggj9A_ypI"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_on_metal-80_grit_for_removing_surface_rust-metal-001.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_on_metal-80_grit_for_removing_surface_rust-metal-001.mp4",
+      "filename": "rust_spots_showing_on_metal-80_grit_for_removing_surface_rust-metal-001.mp4",
+      "manifest": "metal.json",
+      "title": "Remove Surface Rust on Metal With 80 Grit Sandpaper",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-80-10-sheets",
+      "result": "success",
+      "video_id": "6QfyyuZWy7U"
     }
   },
   "runs": [
@@ -2953,6 +2963,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Wet/want_better_polishing_results-2000-3000_grit_wet_sand_before_polish-wet-060.mp4",
       "result": "success",
       "video_id": "S2Ggj9A_ypI"
+    },
+    {
+      "ts_utc": "2026-07-05T12:16:12.393913+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_on_metal-80_grit_for_removing_surface_rust-metal-001.mp4",
+      "result": "success",
+      "video_id": "6QfyyuZWy7U"
     }
   ],
   "last_post": {
