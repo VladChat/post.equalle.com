@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-07-03"
+    "manifest_index": 3,
+    "last_day": "2026-07-06"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2663,6 +2663,17 @@
       "comment_status": "commented",
       "comment_id": "1645403256561100_970832865937493",
       "commented_ts_utc": "2026-07-03T15:45:39Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/glossy_paint_needs_removal-120_grit_for_dulling_painted_metal-metal-026.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/glossy_paint_needs_removal-120_grit_for_dulling_painted_metal-metal-026.mp4",
+      "filename": "glossy_paint_needs_removal-120_grit_for_dulling_painted_metal-metal-026.mp4",
+      "manifest": "metal.json",
+      "title": "Dull Glossy Paint on Metal With 120 Grit Before Recoat",
+      "description": "Glossy paint needs removal or scuffing? Use 120 grit to dull the surface and improve adhesion for the next coat. Sand lightly and evenly so you don’t cut through too far.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-06T16:27:56Z",
+      "video_id": "1700900794443270"
     }
   },
   "runs": [
@@ -3825,6 +3836,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "1645403256561100",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-06T16:27:56Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/glossy_paint_needs_removal-120_grit_for_dulling_painted_metal-metal-026.mp4",
+      "filename": "glossy_paint_needs_removal-120_grit_for_dulling_painted_metal-metal-026.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "1700900794443270",
       "error": null
     }
   ],
