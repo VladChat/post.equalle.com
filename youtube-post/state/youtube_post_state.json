@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-05"
+    "last_day": "2026-07-06"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1856,6 +1856,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-80-10-sheets",
       "result": "success",
       "video_id": "6QfyyuZWy7U"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4",
+      "filename": "flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4",
+      "manifest": "metal.json",
+      "title": "Heavy Rust Removal on Metal With 60 Grit Sandpaper",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7RDBQ1",
+      "result": "success",
+      "video_id": "bm58G1HTnds"
     }
   },
   "runs": [
@@ -2969,6 +2979,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_on_metal-80_grit_for_removing_surface_rust-metal-001.mp4",
       "result": "success",
       "video_id": "6QfyyuZWy7U"
+    },
+    {
+      "ts_utc": "2026-07-06T14:25:29.714539+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4",
+      "result": "success",
+      "video_id": "bm58G1HTnds"
     }
   ],
   "last_post": {
