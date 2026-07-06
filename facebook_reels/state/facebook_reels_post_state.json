@@ -2673,7 +2673,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-07-06T16:27:56Z",
-      "video_id": "1700900794443270"
+      "video_id": "1700900794443270",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 19
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-07-06T17:18:50Z",
+      "comment_text": "Before the next coat, clean the surface well so dust doesn’t telegraph through. Do you tack-cloth or wipe down?",
+      "comment_status": "commented",
+      "comment_id": "1700900794443270_1002528096008414",
+      "commented_ts_utc": "2026-07-06T17:18:56Z"
     }
   },
   "runs": [
@@ -4901,6 +4911,15 @@
       "result": "commented",
       "comment_id": "1645403256561100_970832865937493",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-07-06T17:18:56Z",
+      "video_id": "1700900794443270",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/glossy_paint_needs_removal-120_grit_for_dulling_painted_metal-metal-026.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "1700900794443270_1002528096008414",
+      "template_idx": 19
     }
   ]
 }
