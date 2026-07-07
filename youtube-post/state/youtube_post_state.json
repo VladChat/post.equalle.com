@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-06"
+    "last_day": "2026-07-07"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1866,6 +1866,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7RDBQ1",
       "result": "success",
       "video_id": "bm58G1HTnds"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/metal_surface_covered_in_rust-80_grit_for_rust_stripping-metal-003.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_surface_covered_in_rust-80_grit_for_rust_stripping-metal-003.mp4",
+      "filename": "metal_surface_covered_in_rust-80_grit_for_rust_stripping-metal-003.mp4",
+      "manifest": "metal.json",
+      "title": "Strip Rust From a Metal Surface Using 80 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-80",
+      "result": "success",
+      "video_id": "jDX8YJoWRXw"
     }
   },
   "runs": [
@@ -2985,6 +2995,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/flaky_rust_wont_come_off-60_grit_for_heavy_rust_removal-metal-002.mp4",
       "result": "success",
       "video_id": "bm58G1HTnds"
+    },
+    {
+      "ts_utc": "2026-07-07T13:21:01.920048+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_surface_covered_in_rust-80_grit_for_rust_stripping-metal-003.mp4",
+      "result": "success",
+      "video_id": "jDX8YJoWRXw"
     }
   ],
   "last_post": {
