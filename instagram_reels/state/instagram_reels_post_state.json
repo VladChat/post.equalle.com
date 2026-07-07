@@ -4229,7 +4229,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18123922936741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 18
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-07-07T15:57:20Z",
+      "comment_text": "If you’re getting random deep lines, the sheet may be loaded or folded. Are you using fresh paper?",
+      "comment_status": "commented",
+      "comment_id": "18462741361118940",
+      "commented_ts_utc": "2026-07-07T15:57:26Z"
     }
   },
   "runs": [
@@ -6601,6 +6611,15 @@
       "result": "commented",
       "comment_id": "18077152790669422",
       "template_idx": 10
+    },
+    {
+      "ts_utc": "2026-07-07T15:57:26Z",
+      "media_id": "18082161371227537",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_chipping_around_edges-120_grit_for_feathering_paint_edges-metal-025.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18462741361118940",
+      "template_idx": 18
     }
   ]
 }
