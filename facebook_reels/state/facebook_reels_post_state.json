@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-07-06"
+    "manifest_index": 4,
+    "last_day": "2026-07-08"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2684,6 +2684,17 @@
       "comment_status": "commented",
       "comment_id": "1700900794443270_1002528096008414",
       "commented_ts_utc": "2026-07-06T17:18:56Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_shows_every_scratch-320_grit_for_final_plastic_paint_prep-plastic-026.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_shows_every_scratch-320_grit_for_final_plastic_paint_prep-plastic-026.mp4",
+      "filename": "paint_shows_every_scratch-320_grit_for_final_plastic_paint_prep-plastic-026.mp4",
+      "manifest": "plastic.json",
+      "title": "Paint Shows Every Scratch? Finish Prep With 320 Grit",
+      "description": "When paint highlights every scratch on plastic, refine the surface first. 320 grit helps reduce fine sanding lines for a cleaner final prep before primer and paint. Use light pressure and inspect under light. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-08T15:30:30Z",
+      "video_id": "1561358295401424"
     }
   },
   "runs": [
@@ -3855,6 +3866,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "1700900794443270",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-08T15:30:30Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_shows_every_scratch-320_grit_for_final_plastic_paint_prep-plastic-026.mp4",
+      "filename": "paint_shows_every_scratch-320_grit_for_final_plastic_paint_prep-plastic-026.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "1561358295401424",
       "error": null
     }
   ],
