@@ -1531,6 +1531,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-07-07T13:28:15Z",
       "verify_after_ts": 1783432695.154977
+    },
+    "8LO2NFuMhPw": {
+      "comment_status": "commented_unverified",
+      "comment_id": "UgzehiEh7YvVxbi4udl4AaABAg",
+      "comment_text": "If you’re getting random deep lines, the sheet may be loaded, folded, or contaminated—swap to a fresh 9x11 sheet and keep strokes light. Are you using fresh sheets?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-07-08T12:54:56Z",
+      "verify_after_ts": 1783517096.8043244
     }
   },
   "runs": [
@@ -2670,6 +2678,12 @@
       "video_id": "jDX8YJoWRXw",
       "result": "commented_unverified",
       "comment_id": "Ugw0nJQAP3z2Lj_O6V54AaABAg"
+    },
+    {
+      "ts": "2026-07-08T12:54:56Z",
+      "video_id": "8LO2NFuMhPw",
+      "result": "commented_unverified",
+      "comment_id": "UgzehiEh7YvVxbi4udl4AaABAg"
     }
   ]
 }
