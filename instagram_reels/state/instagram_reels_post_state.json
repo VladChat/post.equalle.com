@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-07-07"
+    "manifest_index": 4,
+    "last_day": "2026-07-09"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -4240,6 +4240,30 @@
       "comment_status": "commented",
       "comment_id": "18462741361118940",
       "commented_ts_utc": "2026-07-07T15:57:26Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_looks_patchy_on_plastic-220_grit_for_even_plastic_prep-plastic-025.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_looks_patchy_on_plastic-220_grit_for_even_plastic_prep-plastic-025.mp4",
+      "filename": "paint_looks_patchy_on_plastic-220_grit_for_even_plastic_prep-plastic-025.mp4",
+      "manifest": "plastic.json",
+      "title": "Patchy Paint On Plastic? Even Prep With 220 Grit",
+      "description": "If paint looks patchy on plastic, uneven prep is usually the cause. 220 grit scuff sanding helps create a uniform tooth so primer and paint lay down more evenly. Wipe clean before recoating. Sandpaper eQualle",
+      "caption": "Patchy Paint On Plastic? Even Prep With 220 Grit\n\nIf paint looks patchy on plastic, uneven prep is usually the cause. 220 grit scuff sanding helps create a uniform tooth so primer and paint lay down more evenly. Wipe clean before recoating. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-09T16:06:53Z",
+      "mode": "binary",
+      "container_id": "18124127788741317",
+      "media_id": "18106448977834721",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18124127788741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18124127788741317"
+      }
     }
   },
   "runs": [
@@ -5627,6 +5651,17 @@
       "filename": "paint_chipping_around_edges-120_grit_for_feathering_paint_edges-metal-025.mp4",
       "container_id": "18123922936741317",
       "media_id": "18082161371227537",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-09T16:06:53Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "plastic.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_looks_patchy_on_plastic-220_grit_for_even_plastic_prep-plastic-025.mp4",
+      "filename": "paint_looks_patchy_on_plastic-220_grit_for_even_plastic_prep-plastic-025.mp4",
+      "container_id": "18124127788741317",
+      "media_id": "18106448977834721",
       "error": null
     }
   ],
