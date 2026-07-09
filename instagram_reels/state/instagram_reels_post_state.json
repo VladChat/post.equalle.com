@@ -4263,7 +4263,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18124127788741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 4
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-07-09T16:40:33Z",
+      "comment_text": "If the paper starts loading up, wipe/rinse it and keep going—clean paper cuts cleaner. Does it clog on your surface?",
+      "comment_status": "commented",
+      "comment_id": "18110305426985209",
+      "commented_ts_utc": "2026-07-09T16:40:35Z"
     }
   },
   "runs": [
@@ -6655,6 +6665,15 @@
       "result": "commented",
       "comment_id": "18462741361118940",
       "template_idx": 18
+    },
+    {
+      "ts_utc": "2026-07-09T16:40:35Z",
+      "media_id": "18106448977834721",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_looks_patchy_on_plastic-220_grit_for_even_plastic_prep-plastic-025.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "18110305426985209",
+      "template_idx": 4
     }
   ]
 }
