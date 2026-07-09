@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-08"
+    "last_day": "2026-07-09"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1886,6 +1886,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7RP91J",
       "result": "success",
       "video_id": "8LO2NFuMhPw"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/corrosion_still_visible_after_sanding-120_grit_for_rust_cleanup-metal-005.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/corrosion_still_visible_after_sanding-120_grit_for_rust_cleanup-metal-005.mp4",
+      "filename": "corrosion_still_visible_after_sanding-120_grit_for_rust_cleanup-metal-005.mp4",
+      "manifest": "metal.json",
+      "title": "Clean Up Remaining Corrosion With 120 Grit Sandpaper",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-120-10-sheets",
+      "result": "success",
+      "video_id": "VLlsA9tDDBM"
     }
   },
   "runs": [
@@ -3017,6 +3027,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_bleeding_through_paint-80_grit_for_rust_prep_before_paint-metal-004.mp4",
       "result": "success",
       "video_id": "8LO2NFuMhPw"
+    },
+    {
+      "ts_utc": "2026-07-09T13:49:33.097062+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/corrosion_still_visible_after_sanding-120_grit_for_rust_cleanup-metal-005.mp4",
+      "result": "success",
+      "video_id": "VLlsA9tDDBM"
     }
   ],
   "last_post": {
