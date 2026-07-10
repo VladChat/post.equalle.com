@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-09"
+    "last_day": "2026-07-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1896,6 +1896,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-120-10-sheets",
       "result": "success",
       "video_id": "VLlsA9tDDBM"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rust_pits_in_the_metal-60-80_grit_for_deep_rust_removal-metal-006.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_pits_in_the_metal-60-80_grit_for_deep_rust_removal-metal-006.mp4",
+      "filename": "rust_pits_in_the_metal-60-80_grit_for_deep_rust_removal-metal-006.mp4",
+      "manifest": "metal.json",
+      "title": "Deep Rust Pits on Metal: Use 60–80 Grit to Cut In",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7R3MC1",
+      "result": "success",
+      "video_id": "I7jgqyilobc"
     }
   },
   "runs": [
@@ -3033,6 +3043,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/corrosion_still_visible_after_sanding-120_grit_for_rust_cleanup-metal-005.mp4",
       "result": "success",
       "video_id": "VLlsA9tDDBM"
+    },
+    {
+      "ts_utc": "2026-07-10T13:11:55.974422+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_pits_in_the_metal-60-80_grit_for_deep_rust_removal-metal-006.mp4",
+      "result": "success",
+      "video_id": "I7jgqyilobc"
     }
   ],
   "last_post": {
