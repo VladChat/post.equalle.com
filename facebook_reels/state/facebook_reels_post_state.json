@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-07-08"
+    "manifest_index": 0,
+    "last_day": "2026-07-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2705,6 +2705,17 @@
       "comment_status": "commented",
       "comment_id": "1561358295401424_1002147742667852",
       "commented_ts_utc": "2026-07-08T16:21:14Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4",
+      "filename": "joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4",
+      "manifest": "drywall.json",
+      "title": "Joint Lines Still Shadowing? Final Feather Prep With 220 Grit",
+      "description": "If seams still cast a shadow, use 220 grit with light pressure to feather the edges and smooth the surface before primer or paint. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-10T15:38:56Z",
+      "video_id": "1535456604926355"
     }
   },
   "runs": [
@@ -3885,6 +3896,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1561358295401424",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-10T15:38:56Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4",
+      "filename": "joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1535456604926355",
       "error": null
     }
   ],
