@@ -4297,7 +4297,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18124333291741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 1
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-07-11T15:11:37Z",
+      "comment_text": "If the scratch pattern looks uneven, do a few crosshatch passes and re-check. Sanding wet or dry?",
+      "comment_status": "commented",
+      "comment_id": "18139426441502371",
+      "commented_ts_utc": "2026-07-11T15:11:40Z"
     }
   },
   "runs": [
@@ -6709,6 +6719,15 @@
       "result": "commented",
       "comment_id": "18110305426985209",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-07-11T15:11:40Z",
+      "media_id": "18134203864597471",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18139426441502371",
+      "template_idx": 1
     }
   ]
 }
