@@ -4,15 +4,20 @@
 #   Produces the continuous refresh token that the RSS → Pinterest Pin
 #   workflow uses for publishing. The token is never printed; it is stored
 #   directly as the GitHub secret PINTEREST_REFRESH_TOKEN_EQUALLE via gh.
-# Usage:
+#
+# Usage (normally via .github/workflows/pinterest-oauth-bootstrap.yml):
 #   1) python blog-equalle/social/pinterest_oauth.py --print-url
-#      Open the printed URL in a browser, approve the consent screen, then
-#      copy the full URL of the page you land on
-#      (https://post.equalle.com/pinterest/oauth/pinterest?code=...).
-#   2) python blog-equalle/social/pinterest_oauth.py --exchange "<that full URL>"
-# Env:
-#   PINTEREST_CLIENT_ID_EQUALLE / PINTEREST_CLIENT_SECRET_EQUALLE
-#   (falls back to PINTEREST_CLIENT_ID / PINTEREST_CLIENT_SECRET)
+#      Needs ONLY PINTEREST_CLIENT_ID_EQUALLE (never the client secret).
+#      Prints the consent URL plus the generated `state` value.
+#   2) python blog-equalle/social/pinterest_oauth.py \
+#          --exchange "<full redirect URL>" [--expected-state <state>]
+#      Needs PINTEREST_CLIENT_ID_EQUALLE and PINTEREST_CLIENT_SECRET_EQUALLE.
+#
+# State handling (cross-run CSRF check, operator-mediated): --print-url
+# generates a random state and prints it; the consent redirect echoes it in
+# the URL. Passing that value back via --expected-state makes the exchange
+# fail on mismatch. If --expected-state is omitted, NO state validation
+# happens — there is no hidden persistence between the two invocations.
 # ============================================
 
 from __future__ import annotations
@@ -23,7 +28,6 @@ import os
 import secrets as _secrets
 import subprocess
 import sys
-import tempfile
 from typing import Dict
 from urllib.parse import parse_qs, urlencode, urlparse
 
@@ -42,16 +46,20 @@ PINTEREST_AUTHORIZE_URL = "https://www.pinterest.com/oauth/"
 REDIRECT_URI = "https://post.equalle.com/pinterest/oauth/pinterest"
 SECRET_NAME = "PINTEREST_REFRESH_TOKEN_EQUALLE"
 GITHUB_REPO = os.environ.get("GITHUB_REPOSITORY") or "VladChat/post.equalle.com"
-_STATE_FILE = os.path.join(tempfile.gettempdir(), "pinterest_oauth_state_equalle")
+
+
+def _client_id() -> str:
+    client_id = _env("PINTEREST_CLIENT_ID_EQUALLE") or _env("PINTEREST_CLIENT_ID")
+    if not client_id:
+        raise PinterestConfigError("Set PINTEREST_CLIENT_ID_EQUALLE first.")
+    return client_id
 
 
 def _client_credentials() -> tuple[str, str]:
-    client_id = _env("PINTEREST_CLIENT_ID_EQUALLE") or _env("PINTEREST_CLIENT_ID")
+    client_id = _client_id()
     client_secret = _env("PINTEREST_CLIENT_SECRET_EQUALLE") or _env("PINTEREST_CLIENT_SECRET")
-    if not (client_id and client_secret):
-        raise PinterestConfigError(
-            "Set PINTEREST_CLIENT_ID_EQUALLE and PINTEREST_CLIENT_SECRET_EQUALLE first."
-        )
+    if not client_secret:
+        raise PinterestConfigError("Set PINTEREST_CLIENT_SECRET_EQUALLE first.")
     return client_id, client_secret
 
 
@@ -73,9 +81,13 @@ def extract_code(redirect_url_or_code: str, expected_state: str = "") -> str:
     if "://" not in value:
         return value
     query = parse_qs(urlparse(value).query)
-    state = (query.get("state") or [""])[0]
-    if expected_state and state and state != expected_state:
-        raise PinterestConfigError("OAuth state mismatch; restart with --print-url.")
+    if expected_state:
+        state = (query.get("state") or [""])[0]
+        if state != expected_state:
+            raise PinterestConfigError(
+                "OAuth state mismatch: the redirect URL does not belong to the "
+                "authorize run that produced the expected state. Restart the flow."
+            )
     code = (query.get("code") or [""])[0]
     if not code:
         raise PinterestConfigError("No ?code= parameter found in the provided URL.")
@@ -126,23 +138,23 @@ def main() -> None:
     action = parser.add_mutually_exclusive_group(required=True)
     action.add_argument("--print-url", action="store_true", help="Print the consent URL.")
     action.add_argument("--exchange", metavar="URL_OR_CODE", help="Redirect URL or code.")
+    parser.add_argument(
+        "--expected-state",
+        default="",
+        help="State value printed by --print-url; enables cross-run state validation.",
+    )
     args = parser.parse_args()
 
     if args.print_url:
-        client_id, _ = _client_credentials()
         state = _secrets.token_urlsafe(24)
-        with open(_STATE_FILE, "w", encoding="utf-8") as fh:
-            fh.write(state)
         print("Open this URL, approve access, then copy the URL you land on:")
-        print(build_authorization_url(client_id, state))
+        print(build_authorization_url(_client_id(), state))
+        print(f"State (pass back via --expected-state to validate): {state}")
         return
 
-    expected_state = ""
-    if os.path.exists(_STATE_FILE):
-        with open(_STATE_FILE, encoding="utf-8") as fh:
-            expected_state = fh.read().strip()
-
-    code = extract_code(args.exchange, expected_state)
+    code = extract_code(args.exchange, args.expected_state)
+    if not args.expected_state:
+        print("[pin][oauth][WARN] No --expected-state provided; state NOT validated.")
     data = exchange_authorization_code(code)
 
     refresh_token = str(data.get("refresh_token") or "").strip()
@@ -153,8 +165,6 @@ def main() -> None:
         )
 
     store_refresh_token_as_secret(refresh_token)
-    if os.path.exists(_STATE_FILE):
-        os.remove(_STATE_FILE)
     print(f"[pin][oauth] Stored refresh token as GitHub secret {SECRET_NAME}.")
     print(f"[pin][oauth] Granted scopes: {data.get('scope', '(not reported)')}")
 
