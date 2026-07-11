@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-07-09"
+    "manifest_index": 0,
+    "last_day": "2026-07-11"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -4274,6 +4274,30 @@
       "comment_status": "commented",
       "comment_id": "18110305426985209",
       "commented_ts_utc": "2026-07-09T16:40:35Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
+      "filename": "lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
+      "manifest": "drywall.json",
+      "title": "Lines Showing After a Skim Coat? Lightly Feather Sand With 220 Grit",
+      "description": "If lines show after a skim coat, use 220 grit with light pressure to feather the surface and smooth minor marks before the next coat or primer. Sandpaper eQualle",
+      "caption": "Lines Showing After a Skim Coat? Lightly Feather Sand With 220 Grit\n\nIf lines show after a skim coat, use 220 grit with light pressure to feather the surface and smooth minor marks before the next coat or primer. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-11T14:25:05Z",
+      "mode": "binary",
+      "container_id": "18124333291741317",
+      "media_id": "18134203864597471",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18124333291741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18124333291741317"
+      }
     }
   },
   "runs": [
@@ -5672,6 +5696,17 @@
       "filename": "paint_looks_patchy_on_plastic-220_grit_for_even_plastic_prep-plastic-025.mp4",
       "container_id": "18124127788741317",
       "media_id": "18106448977834721",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-11T14:25:05Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
+      "filename": "lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
+      "container_id": "18124333291741317",
+      "media_id": "18134203864597471",
       "error": null
     }
   ],
