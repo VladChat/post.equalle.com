@@ -22,12 +22,12 @@ jobs:
     env:
       BLOG_RSS_URL: https://blog.equalle.com/index.xml
 
-      # Preferred: client_credentials flow (eQualle, unattended app-owner publishing)
+      # User OAuth (eQualle publishing): access token comes from the
+      # continuous refresh token; dashboard-generated static tokens are
+      # read-only and cannot create Pins.
       PINTEREST_CLIENT_ID_EQUALLE: ${{ secrets.PINTEREST_CLIENT_ID_EQUALLE }}
       PINTEREST_CLIENT_SECRET_EQUALLE: ${{ secrets.PINTEREST_CLIENT_SECRET_EQUALLE }}
-
-      # Optional fallback (legacy)
-      PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+      PINTEREST_REFRESH_TOKEN_EQUALLE: ${{ secrets.PINTEREST_REFRESH_TOKEN_EQUALLE }}
 
     steps:
       - name: Checkout repo
@@ -48,8 +48,35 @@ jobs:
           python -m pip install -r blog-equalle/requirements.txt
 
       - name: Run Pinterest poster
+        env:
+          # Pinterest rotates the continuous refresh token on each refresh;
+          # the poster writes the new value here (never logged).
+          PINTEREST_ROTATED_REFRESH_TOKEN_FILE: ${{ runner.temp }}/pinterest_rotated_refresh_token
         run: |
           python blog-equalle/main_pinterest.py
+
+      # The rotated refresh token must replace the stored secret or it will
+      # expire again. GITHUB_TOKEN cannot write repo secrets, so this uses an
+      # optional fine-grained PAT (GH_SECRETS_ADMIN_TOKEN with "Secrets: write"
+      # on this repo). Without it, the step only warns — the token value is
+      # never printed, committed, or uploaded.
+      - name: Persist rotated Pinterest refresh token
+        if: ${{ always() }}
+        env:
+          GH_TOKEN: ${{ secrets.GH_SECRETS_ADMIN_TOKEN }}
+          ROTATED_FILE: ${{ runner.temp }}/pinterest_rotated_refresh_token
+        run: |
+          if [ ! -s "$ROTATED_FILE" ]; then
+            echo "No rotated refresh token to persist."
+            exit 0
+          fi
+          if [ -n "$GH_TOKEN" ]; then
+            gh secret set PINTEREST_REFRESH_TOKEN_EQUALLE --repo "$GITHUB_REPOSITORY" < "$ROTATED_FILE"
+            echo "PINTEREST_REFRESH_TOKEN_EQUALLE updated with the rotated token."
+          else
+            echo "::warning title=Pinterest refresh token rotated::Pinterest issued a rotated refresh token but GH_SECRETS_ADMIN_TOKEN is not configured. Re-run the OAuth login helper (blog-equalle/social/pinterest_oauth.py) and update the PINTEREST_REFRESH_TOKEN_EQUALLE secret before the stored token expires. The token value was NOT logged."
+          fi
+          rm -f "$ROTATED_FILE"
 
       - name: Commit updated state.json (if changed)
         run: |
