@@ -41,7 +41,7 @@ from social.pinterest_poster import (  # noqa: E402
 PINTEREST_AUTHORIZE_URL = "https://www.pinterest.com/oauth/"
 REDIRECT_URI = "https://post.equalle.com/pinterest/oauth/pinterest"
 SECRET_NAME = "PINTEREST_REFRESH_TOKEN_EQUALLE"
-GITHUB_REPO = "VladChat/post.equalle.com"
+GITHUB_REPO = os.environ.get("GITHUB_REPOSITORY") or "VladChat/post.equalle.com"
 _STATE_FILE = os.path.join(tempfile.gettempdir(), "pinterest_oauth_state_equalle")
 
 

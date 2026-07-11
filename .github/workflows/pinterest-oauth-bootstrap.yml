@@ -1,0 +1,73 @@
+# ============================================================
+# File: .github/workflows/pinterest-oauth-bootstrap.yml
+# Purpose:
+#   One-time, manually dispatched OAuth bootstrap for eQualle Pinterest
+#   publishing. Exchanges a fresh authorization code (from the consent
+#   page redirect) for a continuous refresh token INSIDE the runner,
+#   using the existing repo secrets, and stores the refresh token
+#   directly as the PINTEREST_REFRESH_TOKEN_EQUALLE secret.
+#
+#   The client secret, exchange response, and refresh token are never
+#   printed, committed, or uploaded. GITHUB_TOKEN cannot write repo
+#   secrets, so this job requires GH_SECRETS_ADMIN_TOKEN: a fine-grained
+#   PAT scoped to this repository with only "Secrets: Read and write".
+#   The PAT is validated BEFORE the single-use code is consumed.
+#
+#   Note: the workflow_dispatch input (the redirect URL with ?code=...)
+#   is visible in run metadata. The code is single-use, expires in
+#   minutes, and is useless without the client secret.
+# ============================================================
+
+name: Pinterest OAuth Bootstrap (one-time)
+
+on:
+  workflow_dispatch:
+    inputs:
+      redirect_url:
+        description: "Full redirect URL from the consent page (contains ?code=...)"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  exchange:
+    runs-on: ubuntu-latest
+
+    env:
+      PINTEREST_CLIENT_ID_EQUALLE: ${{ secrets.PINTEREST_CLIENT_ID_EQUALLE }}
+      PINTEREST_CLIENT_SECRET_EQUALLE: ${{ secrets.PINTEREST_CLIENT_SECRET_EQUALLE }}
+      GH_TOKEN: ${{ secrets.GH_SECRETS_ADMIN_TOKEN }}
+
+    steps:
+      - name: Verify secret-update PAT before consuming the single-use code
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::GH_SECRETS_ADMIN_TOKEN is not configured. Add a fine-grained PAT (this repo only, Secrets: Read and write) as that secret, then re-run with a fresh consent code."
+            exit 1
+          fi
+          if ! gh secret list --repo "$GITHUB_REPOSITORY" > /dev/null; then
+            echo "::error::GH_SECRETS_ADMIN_TOKEN cannot access Actions secrets on $GITHUB_REPOSITORY. Check the PAT's repository access and Secrets permission."
+            exit 1
+          fi
+          echo "Secret-update PAT verified."
+
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: python -m pip install --quiet requests
+
+      - name: Exchange authorization code and store refresh token
+        env:
+          REDIRECT_URL: ${{ inputs.redirect_url }}
+        run: |
+          python blog-equalle/social/pinterest_oauth.py --exchange "$REDIRECT_URL"
