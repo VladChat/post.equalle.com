@@ -1,0 +1,125 @@
+# ============================================================
+# File: .github/workflows/pinterest-oauth-bootstrap.yml
+# Purpose:
+#   One-time, manually dispatched OAuth bootstrap for eQualle Pinterest
+#   publishing, in two explicit modes:
+#
+#   mode=authorize
+#     Needs no PAT and no client secret. Prints a fresh consent URL built
+#     from PINTEREST_CLIENT_ID_EQUALLE with redirect URI
+#     https://post.equalle.com/pinterest/oauth/pinterest and scopes
+#     boards:read,boards:write,pins:read,pins:write, plus a random state
+#     value for cross-run validation.
+#
+#   mode=exchange
+#     Takes the redirect URL (contains the single-use ?code=...) and,
+#     optionally, the state printed by the authorize run. Exchanges the
+#     code inside the runner using PINTEREST_CLIENT_ID_EQUALLE /
+#     PINTEREST_CLIENT_SECRET_EQUALLE and writes the continuous refresh
+#     token directly to the PINTEREST_REFRESH_TOKEN_EQUALLE secret.
+#     Requires GH_SECRETS_ADMIN_TOKEN (fine-grained PAT, this repo only,
+#     Secrets: Read and write), validated BEFORE the code is consumed.
+#     No secret, token, or token response is ever printed or uploaded.
+#
+#   Metadata caveat: dispatch inputs (redirect URL with the one-time code,
+#   and the non-secret state) are visible in run metadata. The code is
+#   single-use, expires in minutes, and is useless without the client
+#   secret. Never put secret values into inputs.
+# ============================================================
+
+name: Pinterest OAuth Bootstrap (one-time)
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "authorize: print consent URL; exchange: swap code for refresh token"
+        required: true
+        type: choice
+        options:
+          - authorize
+          - exchange
+      redirect_url:
+        description: "exchange only: full redirect URL from the consent page (contains ?code=...)"
+        required: false
+        type: string
+      expected_state:
+        description: "exchange only (recommended): state value printed by the authorize run"
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  authorize:
+    if: ${{ inputs.mode == 'authorize' }}
+    runs-on: ubuntu-latest
+    env:
+      PINTEREST_CLIENT_ID_EQUALLE: ${{ secrets.PINTEREST_CLIENT_ID_EQUALLE }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: python -m pip install --quiet requests
+
+      - name: Print consent URL (client ID only; no secret involved)
+        run: python blog-equalle/social/pinterest_oauth.py --print-url
+
+  exchange:
+    if: ${{ inputs.mode == 'exchange' }}
+    runs-on: ubuntu-latest
+    env:
+      PINTEREST_CLIENT_ID_EQUALLE: ${{ secrets.PINTEREST_CLIENT_ID_EQUALLE }}
+      PINTEREST_CLIENT_SECRET_EQUALLE: ${{ secrets.PINTEREST_CLIENT_SECRET_EQUALLE }}
+      GH_TOKEN: ${{ secrets.GH_SECRETS_ADMIN_TOKEN }}
+    steps:
+      - name: Verify inputs and secret-update PAT before consuming the code
+        env:
+          REDIRECT_URL: ${{ inputs.redirect_url }}
+        run: |
+          if [ -z "$REDIRECT_URL" ]; then
+            echo "::error::mode=exchange requires the redirect_url input."
+            exit 1
+          fi
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::GH_SECRETS_ADMIN_TOKEN is not configured. Add a fine-grained PAT (this repo only, Secrets: Read and write) as that secret, then re-run the full flow with a fresh code."
+            exit 1
+          fi
+          if ! gh secret list --repo "$GITHUB_REPOSITORY" > /dev/null; then
+            echo "::error::GH_SECRETS_ADMIN_TOKEN cannot access Actions secrets on $GITHUB_REPOSITORY. Check the PAT's repository access and Secrets permission."
+            exit 1
+          fi
+          echo "Inputs and secret-update PAT verified."
+
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: python -m pip install --quiet requests
+
+      - name: Exchange authorization code and store refresh token
+        env:
+          REDIRECT_URL: ${{ inputs.redirect_url }}
+          EXPECTED_STATE: ${{ inputs.expected_state }}
+        run: |
+          if [ -n "$EXPECTED_STATE" ]; then
+            python blog-equalle/social/pinterest_oauth.py --exchange "$REDIRECT_URL" --expected-state "$EXPECTED_STATE"
+          else
+            python blog-equalle/social/pinterest_oauth.py --exchange "$REDIRECT_URL"
+          fi
