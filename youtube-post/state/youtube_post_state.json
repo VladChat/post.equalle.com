@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-12"
+    "last_day": "2026-07-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1926,6 +1926,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RHVWCN9",
       "result": "success",
       "video_id": "9jQnHdQdYkI"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/surface_rust_wont_smooth_out-120_grit_for_refining_rusted_metal-metal-009.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/surface_rust_wont_smooth_out-120_grit_for_refining_rusted_metal-metal-009.mp4",
+      "filename": "surface_rust_wont_smooth_out-120_grit_for_refining_rusted_metal-metal-009.mp4",
+      "manifest": "metal.json",
+      "title": "Refine Rusted Metal That Won’t Smooth Out With 120 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-120",
+      "result": "success",
+      "video_id": "8u37lkL1mUI"
     }
   },
   "runs": [
@@ -3081,6 +3091,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rusty_metal_feels_rough-80_grit_for_smoothing_after_rust_removal-metal-008.mp4",
       "result": "success",
       "video_id": "9jQnHdQdYkI"
+    },
+    {
+      "ts_utc": "2026-07-13T13:25:54.285144+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/surface_rust_wont_smooth_out-120_grit_for_refining_rusted_metal-metal-009.mp4",
+      "result": "success",
+      "video_id": "8u37lkL1mUI"
     }
   ],
   "last_post": {
