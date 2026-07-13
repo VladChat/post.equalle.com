@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-07-10"
+    "manifest_index": 1,
+    "last_day": "2026-07-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2726,6 +2726,17 @@
       "comment_status": "commented",
       "comment_id": "1535456604926355_2473476809831459",
       "commented_ts_utc": "2026-07-10T16:39:47Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4",
+      "filename": "Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4",
+      "manifest": "wood.json",
+      "title": "Old Poly Feels Like Plastic: 80 Grit Removing Polyurethane",
+      "description": "Old Poly Feels Like Plastic? Use 80 grit for removing polyurethane. Remove loose paint or old finish in controlled passes to avoid gouging the wood. Start with the recommended grit, vacuum dust, then step up in grit before repainting. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-13T15:48:46Z",
+      "video_id": "1579756210374795"
     }
   },
   "runs": [
@@ -3915,6 +3926,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "1535456604926355",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-13T15:48:46Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4",
+      "filename": "Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "1579756210374795",
       "error": null
     }
   ],
