@@ -2736,7 +2736,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-07-13T15:48:46Z",
-      "video_id": "1579756210374795"
+      "video_id": "1579756210374795",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-07-13T16:34:04Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "1579756210374795_996829476587958",
+      "commented_ts_utc": "2026-07-13T16:34:08Z"
     }
   },
   "runs": [
@@ -5018,6 +5028,15 @@
       "result": "commented",
       "comment_id": "1535456604926355_2473476809831459",
       "template_idx": 1
+    },
+    {
+      "ts_utc": "2026-07-13T16:34:08Z",
+      "video_id": "1579756210374795",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "1579756210374795_996829476587958",
+      "template_idx": 12
     }
   ]
 }
