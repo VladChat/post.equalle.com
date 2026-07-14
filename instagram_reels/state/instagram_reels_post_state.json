@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-07-11"
+    "manifest_index": 1,
+    "last_day": "2026-07-14"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -4308,6 +4308,30 @@
       "comment_status": "commented",
       "comment_id": "18139426441502371",
       "commented_ts_utc": "2026-07-11T15:11:40Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4",
+      "filename": "Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4",
+      "manifest": "wood.json",
+      "title": "Old Poly Feels Like Plastic: 80 Grit Removing Polyurethane",
+      "description": "Old Poly Feels Like Plastic? Use 80 grit for removing polyurethane. Remove loose paint or old finish in controlled passes to avoid gouging the wood. Start with the recommended grit, vacuum dust, then step up in grit before repainting. Wet or dry use. — eQualle",
+      "caption": "Old Poly Feels Like Plastic: 80 Grit Removing Polyurethane\n\nOld Poly Feels Like Plastic? Use 80 grit for removing polyurethane. Remove loose paint or old finish in controlled passes to avoid gouging the wood. Start with the recommended grit, vacuum dust, then step up in grit before repainting. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-14T15:00:13Z",
+      "mode": "binary",
+      "container_id": "18124649803741317",
+      "media_id": "18102947174467611",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18124649803741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18124649803741317"
+      }
     }
   },
   "runs": [
@@ -5717,6 +5741,17 @@
       "filename": "lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
       "container_id": "18124333291741317",
       "media_id": "18134203864597471",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-14T15:00:13Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wood.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4",
+      "filename": "Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4",
+      "container_id": "18124649803741317",
+      "media_id": "18102947174467611",
       "error": null
     }
   ],
