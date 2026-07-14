@@ -4331,7 +4331,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18124649803741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 18
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-07-14T15:10:52Z",
+      "comment_text": "If you’re getting random deep lines, the sheet may be loaded or folded. Are you using fresh paper?",
+      "comment_status": "commented",
+      "comment_id": "18000067130972541",
+      "commented_ts_utc": "2026-07-14T15:10:57Z"
     }
   },
   "runs": [
@@ -6763,6 +6773,15 @@
       "result": "commented",
       "comment_id": "18139426441502371",
       "template_idx": 1
+    },
+    {
+      "ts_utc": "2026-07-14T15:10:57Z",
+      "media_id": "18102947174467611",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "18000067130972541",
+      "template_idx": 18
     }
   ]
 }
