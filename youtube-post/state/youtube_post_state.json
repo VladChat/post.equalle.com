@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-14"
+    "last_day": "2026-07-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1946,6 +1946,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07Q8BWSHP",
       "result": "success",
       "video_id": "T601wGC6BT4"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/heavy_corrosion_on_metal_parts-60_grit_for_aggressive_rust_removal-metal-011.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/heavy_corrosion_on_metal_parts-60_grit_for_aggressive_rust_removal-metal-011.mp4",
+      "filename": "heavy_corrosion_on_metal_parts-60_grit_for_aggressive_rust_removal-metal-011.mp4",
+      "manifest": "metal.json",
+      "title": "Aggressive Rust Removal on Metal Parts With 60 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-60-10",
+      "result": "success",
+      "video_id": "zNxhFYZtnsQ"
     }
   },
   "runs": [
@@ -3113,6 +3123,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_keeps_coming_back-80_grit_for_proper_rust_removal-metal-010.mp4",
       "result": "success",
       "video_id": "T601wGC6BT4"
+    },
+    {
+      "ts_utc": "2026-07-15T12:14:57.935161+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/heavy_corrosion_on_metal_parts-60_grit_for_aggressive_rust_removal-metal-011.mp4",
+      "result": "success",
+      "video_id": "zNxhFYZtnsQ"
     }
   ],
   "last_post": {
