@@ -2757,7 +2757,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-07-15T14:59:45Z",
-      "video_id": "1785050275994445"
+      "video_id": "1785050275994445",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 11
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-07-15T16:03:33Z",
+      "comment_text": "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+      "comment_status": "commented",
+      "comment_id": "1785050275994445_1728072248382824",
+      "commented_ts_utc": "2026-07-15T16:03:39Z"
     }
   },
   "runs": [
@@ -5057,6 +5067,15 @@
       "result": "commented",
       "comment_id": "1579756210374795_996829476587958",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-07-15T16:03:39Z",
+      "video_id": "1785050275994445",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/next_coat_looks_uneven-1500-2000_grit_wet_sand_between_coats-wet-027.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1785050275994445_1728072248382824",
+      "template_idx": 11
     }
   ]
 }
