@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-07-13"
+    "manifest_index": 0,
+    "last_day": "2026-07-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1614,6 +1614,20 @@
       "pin_id": "839428818091522724",
       "media_id": "3674648796236690752",
       "cover_image_url": "https://i.pinimg.com/1200x/9b/2c/86/9b2c86c7416f9e1f25a05462078ebf52.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_not_blending_yet-180_grit_for_feather_sanding_patch-drywall-024.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_not_blending_yet-180_grit_for_feather_sanding_patch-drywall-024.mp4",
+      "filename": "drywall_patch_not_blending_yet-180_grit_for_feather_sanding_patch-drywall-024.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049941",
+      "destination_url": "https://www.amazon.com/gp/product/B07RGRN3PL",
+      "title": "Drywall Patch Not Blending Yet? Feather Sand the Patch With 180 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-15T11:03:46+00:00",
+      "pin_id": "839428818091557023",
+      "media_id": "3680295706864402048",
+      "cover_image_url": "https://i.pinimg.com/1200x/b7/09/5b/b7095bde810daac4f151618f5a7717e0.jpg"
     }
   },
   "runs": [
@@ -2765,6 +2779,16 @@
       "result": "success",
       "pin_id": "839428818091522724",
       "media_id": "3674648796236690752",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-15T11:03:46+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_patch_not_blending_yet-180_grit_for_feather_sanding_patch-drywall-024.mp4",
+      "filename": "drywall_patch_not_blending_yet-180_grit_for_feather_sanding_patch-drywall-024.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818091557023",
+      "media_id": "3680295706864402048",
       "error": null
     }
   ]
