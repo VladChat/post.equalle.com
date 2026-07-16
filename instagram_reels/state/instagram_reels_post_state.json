@@ -4365,7 +4365,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18124864477741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 16
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-07-16T15:13:44Z",
+      "comment_text": "If scratches stand out after paint/primer, it usually means the previous grit marks weren’t fully blended. What grit are you finishing with?",
+      "comment_status": "commented",
+      "comment_id": "18083076662229736",
+      "commented_ts_utc": "2026-07-16T15:13:48Z"
     }
   },
   "runs": [
@@ -6817,6 +6827,15 @@
       "result": "commented",
       "comment_id": "18000067130972541",
       "template_idx": 18
+    },
+    {
+      "ts_utc": "2026-07-16T15:13:48Z",
+      "media_id": "18070542188445332",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/next_coat_looks_uneven-1500-2000_grit_wet_sand_between_coats-wet-027.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18083076662229736",
+      "template_idx": 16
     }
   ]
 }
