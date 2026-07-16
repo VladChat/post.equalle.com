@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-15"
+    "last_day": "2026-07-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1956,6 +1956,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-60-10",
       "result": "success",
       "video_id": "zNxhFYZtnsQ"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rust_edges_still_visible-120_grit_for_feathering_rust_areas-metal-012.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_edges_still_visible-120_grit_for_feathering_rust_areas-metal-012.mp4",
+      "filename": "rust_edges_still_visible-120_grit_for_feathering_rust_areas-metal-012.mp4",
+      "manifest": "metal.json",
+      "title": "Feather Rust Edges on Metal With 120 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7VFK4N",
+      "result": "success",
+      "video_id": "JLo5obehuDc"
     }
   },
   "runs": [
@@ -3129,6 +3139,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/heavy_corrosion_on_metal_parts-60_grit_for_aggressive_rust_removal-metal-011.mp4",
       "result": "success",
       "video_id": "zNxhFYZtnsQ"
+    },
+    {
+      "ts_utc": "2026-07-16T12:19:48.987349+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_edges_still_visible-120_grit_for_feathering_rust_areas-metal-012.mp4",
+      "result": "success",
+      "video_id": "JLo5obehuDc"
     }
   ],
   "last_post": {
