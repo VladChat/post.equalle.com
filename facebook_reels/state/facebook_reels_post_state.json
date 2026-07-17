@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-07-15"
+    "manifest_index": 3,
+    "last_day": "2026-07-17"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2768,6 +2768,17 @@
       "comment_status": "commented",
       "comment_id": "1785050275994445_1728072248382824",
       "commented_ts_utc": "2026-07-15T16:03:39Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/powder_coat_too_hard_to_remove-60-80_grit_for_coating_removal-metal-027.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/powder_coat_too_hard_to_remove-60-80_grit_for_coating_removal-metal-027.mp4",
+      "filename": "powder_coat_too_hard_to_remove-60-80_grit_for_coating_removal-metal-027.mp4",
+      "manifest": "metal.json",
+      "title": "Remove Tough Powder Coat From Metal With 60–80 Grit",
+      "description": "Powder coat too hard to remove? Start with 60 grit to cut the coating, then switch to 80 grit to level the surface. Finish with a finer grit to reduce scratches before primer.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-17T14:50:44Z",
+      "video_id": "2291049888380364"
     }
   },
   "runs": [
@@ -3975,6 +3986,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "1785050275994445",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-17T14:50:44Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/powder_coat_too_hard_to_remove-60-80_grit_for_coating_removal-metal-027.mp4",
+      "filename": "powder_coat_too_hard_to_remove-60-80_grit_for_coating_removal-metal-027.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "2291049888380364",
       "error": null
     }
   ],
