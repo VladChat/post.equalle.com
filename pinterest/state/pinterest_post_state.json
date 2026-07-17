@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-07-15"
+    "manifest_index": 1,
+    "last_day": "2026-07-17"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1628,6 +1628,20 @@
       "pin_id": "839428818091557023",
       "media_id": "3680295706864402048",
       "cover_image_url": "https://i.pinimg.com/1200x/b7/09/5b/b7095bde810daac4f151618f5a7717e0.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Layers_of_Paint_on_Trim-80_Grit_for_Paint_Removal_on_Wood-wood-025.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Layers_of_Paint_on_Trim-80_Grit_for_Paint_Removal_on_Wood-wood-025.mp4",
+      "filename": "Layers_of_Paint_on_Trim-80_Grit_for_Paint_Removal_on_Wood-wood-025.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-80",
+      "title": "Layers of Paint on Trim: 80 Grit Paint Removal on Wood",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-17T10:59:36+00:00",
+      "pin_id": "839428818091590724",
+      "media_id": "3686086084197139200",
+      "cover_image_url": "https://i.pinimg.com/1200x/41/63/1c/41631ca6ec91758da4c2c32a6c8f9d4e.jpg"
     }
   },
   "runs": [
@@ -2789,6 +2803,16 @@
       "result": "success",
       "pin_id": "839428818091557023",
       "media_id": "3680295706864402048",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-17T10:59:36+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Layers_of_Paint_on_Trim-80_Grit_for_Paint_Removal_on_Wood-wood-025.mp4",
+      "filename": "Layers_of_Paint_on_Trim-80_Grit_for_Paint_Removal_on_Wood-wood-025.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818091590724",
+      "media_id": "3686086084197139200",
       "error": null
     }
   ]
