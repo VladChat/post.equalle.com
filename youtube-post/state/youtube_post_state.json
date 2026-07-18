@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-17"
+    "last_day": "2026-07-18"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1976,6 +1976,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-120",
       "result": "success",
       "video_id": "ZvQS9CFHnf8"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rust_under_old_paint-80_grit_for_stripping_rusted_paint_areas-metal-014.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_under_old_paint-80_grit_for_stripping_rusted_paint_areas-metal-014.mp4",
+      "filename": "rust_under_old_paint-80_grit_for_stripping_rusted_paint_areas-metal-014.mp4",
+      "manifest": "metal.json",
+      "title": "Rust Under Old Paint: Strip Back With 80 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZK2LKRX",
+      "result": "success",
+      "video_id": "mXkryY1YCDE"
     }
   },
   "runs": [
@@ -3161,6 +3171,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_looks_pitted_after_rust_removal-120_grit_for_smoothing_rust_pits-metal-013.mp4",
       "result": "success",
       "video_id": "ZvQS9CFHnf8"
+    },
+    {
+      "ts_utc": "2026-07-18T11:52:37.510475+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_under_old_paint-80_grit_for_stripping_rusted_paint_areas-metal-014.mp4",
+      "result": "success",
+      "video_id": "mXkryY1YCDE"
     }
   ],
   "last_post": {
