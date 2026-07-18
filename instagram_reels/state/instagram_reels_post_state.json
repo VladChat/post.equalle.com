@@ -4399,7 +4399,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18125070790741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 11
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-07-18T15:11:55Z",
+      "comment_text": "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+      "comment_status": "commented",
+      "comment_id": "17948024304218101",
+      "commented_ts_utc": "2026-07-18T15:11:59Z"
     }
   },
   "runs": [
@@ -6871,6 +6881,15 @@
       "result": "commented",
       "comment_id": "18083076662229736",
       "template_idx": 16
+    },
+    {
+      "ts_utc": "2026-07-18T15:11:59Z",
+      "media_id": "17898410421475046",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/glossy_paint_needs_removal-120_grit_for_dulling_painted_metal-metal-026.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "17948024304218101",
+      "template_idx": 11
     }
   ]
 }
