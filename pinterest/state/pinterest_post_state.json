@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-07-17"
+    "manifest_index": 2,
+    "last_day": "2026-07-19"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1642,6 +1642,20 @@
       "pin_id": "839428818091590724",
       "media_id": "3686086084197139200",
       "cover_image_url": "https://i.pinimg.com/1200x/41/63/1c/41631ca6ec91758da4c2c32a6c8f9d4e.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4",
+      "filename": "surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://www.amazon.com/gp/product/B07RGRPZVF",
+      "title": "Not Smooth Between Coats? 2000 Grit Wet Sand For Coat Prep",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-19T10:47:39+00:00",
+      "pin_id": "839428818091623623",
+      "media_id": "3691858651910108864",
+      "cover_image_url": "https://i.pinimg.com/1200x/dd/ed/f5/ddedf5eb5503e7231dbbae41d382e4e1.jpg"
     }
   },
   "runs": [
@@ -2813,6 +2827,16 @@
       "result": "success",
       "pin_id": "839428818091590724",
       "media_id": "3686086084197139200",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-19T10:47:39+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4",
+      "filename": "surface_not_smooth_between_coats-2000_grit_wet_sand_for_coat_prep-wet-024.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818091623623",
+      "media_id": "3691858651910108864",
       "error": null
     }
   ]
