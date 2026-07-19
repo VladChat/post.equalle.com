@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-18"
+    "last_day": "2026-07-19"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1986,6 +1986,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZK2LKRX",
       "result": "success",
       "video_id": "mXkryY1YCDE"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rusty_metal_not_ready_for_paint-120_grit_for_final_rust_prep-metal-015.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rusty_metal_not_ready_for_paint-120_grit_for_final_rust_prep-metal-015.mp4",
+      "filename": "rusty_metal_not_ready_for_paint-120_grit_for_final_rust_prep-metal-015.mp4",
+      "manifest": "metal.json",
+      "title": "Final Rust Prep for Paint on Metal With 120 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-120",
+      "result": "success",
+      "video_id": "t9PXuwpDZ48"
     }
   },
   "runs": [
@@ -3177,6 +3187,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_under_old_paint-80_grit_for_stripping_rusted_paint_areas-metal-014.mp4",
       "result": "success",
       "video_id": "mXkryY1YCDE"
+    },
+    {
+      "ts_utc": "2026-07-19T11:58:15.947050+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rusty_metal_not_ready_for_paint-120_grit_for_final_rust_prep-metal-015.mp4",
+      "result": "success",
+      "video_id": "t9PXuwpDZ48"
     }
   ],
   "last_post": {
