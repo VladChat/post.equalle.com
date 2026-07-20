@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-07-19"
+    "manifest_index": 3,
+    "last_day": "2026-07-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1656,6 +1656,20 @@
       "pin_id": "839428818091623623",
       "media_id": "3691858651910108864",
       "cover_image_url": "https://i.pinimg.com/1200x/dd/ed/f5/ddedf5eb5503e7231dbbae41d382e4e1.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/multiple_paint_layers_on_metal-80_grit_for_stripping_old_paint-metal-023.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/multiple_paint_layers_on_metal-80_grit_for_stripping_old_paint-metal-023.mp4",
+      "filename": "multiple_paint_layers_on_metal-80_grit_for_stripping_old_paint-metal-023.mp4",
+      "manifest": "metal.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-80",
+      "title": "Strip Multiple Paint Layers From Metal With 80 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-20T12:00:30+00:00",
+      "pin_id": "839428818091640114",
+      "media_id": "3694904769250257472",
+      "cover_image_url": "https://i.pinimg.com/1200x/18/7c/60/187c60da321583dadfb1bbc2f41e5587.jpg"
     }
   },
   "runs": [
@@ -2837,6 +2851,16 @@
       "result": "success",
       "pin_id": "839428818091623623",
       "media_id": "3691858651910108864",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-20T12:00:30+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/multiple_paint_layers_on_metal-80_grit_for_stripping_old_paint-metal-023.mp4",
+      "filename": "multiple_paint_layers_on_metal-80_grit_for_stripping_old_paint-metal-023.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "pin_id": "839428818091640114",
+      "media_id": "3694904769250257472",
       "error": null
     }
   ]
