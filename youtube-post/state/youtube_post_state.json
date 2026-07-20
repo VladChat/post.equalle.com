@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-19"
+    "last_day": "2026-07-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1996,6 +1996,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-120",
       "result": "success",
       "video_id": "t9PXuwpDZ48"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/oxidation_on_bare_metal-80_grit_for_removing_metal_oxidation-metal-016.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/oxidation_on_bare_metal-80_grit_for_removing_metal_oxidation-metal-016.mp4",
+      "filename": "oxidation_on_bare_metal-80_grit_for_removing_metal_oxidation-metal-016.mp4",
+      "manifest": "metal.json",
+      "title": "Remove Oxidation on Bare Metal With 80 Grit Sandpaper",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7RP91J",
+      "result": "success",
+      "video_id": "KRIo5nn3eiM"
     }
   },
   "runs": [
@@ -3193,6 +3203,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rusty_metal_not_ready_for_paint-120_grit_for_final_rust_prep-metal-015.mp4",
       "result": "success",
       "video_id": "t9PXuwpDZ48"
+    },
+    {
+      "ts_utc": "2026-07-20T13:06:09.610009+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/oxidation_on_bare_metal-80_grit_for_removing_metal_oxidation-metal-016.mp4",
+      "result": "success",
+      "video_id": "KRIo5nn3eiM"
     }
   ],
   "last_post": {
