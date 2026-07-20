@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-07-17"
+    "manifest_index": 4,
+    "last_day": "2026-07-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2789,6 +2789,17 @@
       "comment_status": "commented",
       "comment_id": "2291049888380364_1588148299697408",
       "commented_ts_utc": "2026-07-17T15:53:28Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/primer_not_bonding_to_plastic-220_grit_for_primer_prep_on_plastic-plastic-027.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/primer_not_bonding_to_plastic-220_grit_for_primer_prep_on_plastic-plastic-027.mp4",
+      "filename": "primer_not_bonding_to_plastic-220_grit_for_primer_prep_on_plastic-plastic-027.mp4",
+      "manifest": "plastic.json",
+      "title": "Primer Not Bonding? Prep Plastic With 220 Grit",
+      "description": "If primer isn’t bonding to plastic, the surface may be too slick or uneven. 220 grit scuff sanding helps create a consistent tooth for primer to grab. Sand evenly, then wipe clean before priming. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-20T15:19:12Z",
+      "video_id": "1349582220021550"
     }
   },
   "runs": [
@@ -4005,6 +4016,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "2291049888380364",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-20T15:19:12Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/primer_not_bonding_to_plastic-220_grit_for_primer_prep_on_plastic-plastic-027.mp4",
+      "filename": "primer_not_bonding_to_plastic-220_grit_for_primer_prep_on_plastic-plastic-027.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "1349582220021550",
       "error": null
     }
   ],
