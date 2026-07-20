@@ -2799,7 +2799,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-07-20T15:19:12Z",
-      "video_id": "1349582220021550"
+      "video_id": "1349582220021550",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 14
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-07-20T15:26:20Z",
+      "comment_text": "If the surface heats up, slow down and lighten pressure. Are you sanding by hand or with a tool?",
+      "comment_status": "commented",
+      "comment_id": "1349582220021550_1714700799801953",
+      "commented_ts_utc": "2026-07-20T15:26:28Z"
     }
   },
   "runs": [
@@ -5135,6 +5145,15 @@
       "result": "commented",
       "comment_id": "2291049888380364_1588148299697408",
       "template_idx": 2
+    },
+    {
+      "ts_utc": "2026-07-20T15:26:28Z",
+      "video_id": "1349582220021550",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/primer_not_bonding_to_plastic-220_grit_for_primer_prep_on_plastic-plastic-027.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "1349582220021550_1714700799801953",
+      "template_idx": 14
     }
   ]
 }
