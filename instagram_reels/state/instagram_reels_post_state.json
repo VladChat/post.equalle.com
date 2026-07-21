@@ -4433,7 +4433,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18125408272741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-07-21T15:17:24Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "17983384404035055",
+      "commented_ts_utc": "2026-07-21T15:17:28Z"
     }
   },
   "runs": [
@@ -6925,6 +6935,15 @@
       "result": "commented",
       "comment_id": "17948024304218101",
       "template_idx": 11
+    },
+    {
+      "ts_utc": "2026-07-21T15:17:28Z",
+      "media_id": "18118921753862553",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_shows_every_scratch-320_grit_for_final_plastic_paint_prep-plastic-026.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "17983384404035055",
+      "template_idx": 12
     }
   ]
 }
