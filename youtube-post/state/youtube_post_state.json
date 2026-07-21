@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-20"
+    "last_day": "2026-07-21"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2006,6 +2006,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7RP91J",
       "result": "success",
       "video_id": "KRIo5nn3eiM"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4",
+      "filename": "rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4",
+      "manifest": "metal.json",
+      "title": "Remove Rust Scale on Metal With 60–80 Grit Sandpaper",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-60",
+      "result": "success",
+      "video_id": "qk3ajAe0vYE"
     }
   },
   "runs": [
@@ -3209,6 +3219,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/oxidation_on_bare_metal-80_grit_for_removing_metal_oxidation-metal-016.mp4",
       "result": "success",
       "video_id": "KRIo5nn3eiM"
+    },
+    {
+      "ts_utc": "2026-07-21T12:23:17.406402+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4",
+      "result": "success",
+      "video_id": "qk3ajAe0vYE"
     }
   ],
   "last_post": {
