@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-07-20"
+    "manifest_index": 0,
+    "last_day": "2026-07-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2810,6 +2810,17 @@
       "comment_status": "commented",
       "comment_id": "1349582220021550_1714700799801953",
       "commented_ts_utc": "2026-07-20T15:26:28Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4",
+      "filename": "wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4",
+      "manifest": "drywall.json",
+      "title": "Wall Feels Rough After Coat Two? Smooth the Surface With 180 Grit",
+      "description": "If the wall feels rough after the second coat, sand lightly with 180 grit to smooth the surface and prep it for the next coat. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-22T15:11:04Z",
+      "video_id": "1013082438230704"
     }
   },
   "runs": [
@@ -4035,6 +4046,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1349582220021550",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-22T15:11:04Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4",
+      "filename": "wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1013082438230704",
       "error": null
     }
   ],
