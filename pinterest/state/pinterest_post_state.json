@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-07-20"
+    "manifest_index": 4,
+    "last_day": "2026-07-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1670,6 +1670,20 @@
       "pin_id": "839428818091640114",
       "media_id": "3694904769250257472",
       "cover_image_url": "https://i.pinimg.com/1200x/18/7c/60/187c60da321583dadfb1bbc2f41e5587.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_fish_eyes_on_plastic-220_grit_for_plastic_surface_prep-plastic-024.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_fish_eyes_on_plastic-220_grit_for_plastic_surface_prep-plastic-024.mp4",
+      "filename": "paint_fish_eyes_on_plastic-220_grit_for_plastic_surface_prep-plastic-024.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8DFS6T",
+      "title": "Fish Eyes In Paint? Prep Plastic With 220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-22T11:23:05+00:00",
+      "pin_id": "839428818091671190",
+      "media_id": "3700627497424976896",
+      "cover_image_url": "https://i.pinimg.com/1200x/9a/ea/e0/9aeae083563999e29a7fe6f359992468.jpg"
     }
   },
   "runs": [
@@ -2861,6 +2875,16 @@
       "result": "success",
       "pin_id": "839428818091640114",
       "media_id": "3694904769250257472",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-22T11:23:05+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_fish_eyes_on_plastic-220_grit_for_plastic_surface_prep-plastic-024.mp4",
+      "filename": "paint_fish_eyes_on_plastic-220_grit_for_plastic_surface_prep-plastic-024.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818091671190",
+      "media_id": "3700627497424976896",
       "error": null
     }
   ]
