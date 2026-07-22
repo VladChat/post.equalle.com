@@ -2820,7 +2820,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-07-22T15:11:04Z",
-      "video_id": "1013082438230704"
+      "video_id": "1013082438230704",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 16
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-07-22T15:42:48Z",
+      "comment_text": "If scratches stand out after paint/primer, it usually means the previous grit marks weren’t fully blended. What grit are you finishing with?",
+      "comment_status": "commented",
+      "comment_id": "1013082438230704_1750407042632409",
+      "commented_ts_utc": "2026-07-22T15:42:53Z"
     }
   },
   "runs": [
@@ -5174,6 +5184,15 @@
       "result": "commented",
       "comment_id": "1349582220021550_1714700799801953",
       "template_idx": 14
+    },
+    {
+      "ts_utc": "2026-07-22T15:42:53Z",
+      "video_id": "1013082438230704",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1013082438230704_1750407042632409",
+      "template_idx": 16
     }
   ]
 }
