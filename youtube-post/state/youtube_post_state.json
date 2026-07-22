@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-21"
+    "last_day": "2026-07-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2016,6 +2016,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-60",
       "result": "success",
       "video_id": "qk3ajAe0vYE"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4",
+      "filename": "rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4",
+      "manifest": "metal.json",
+      "title": "Final Rust Cleanup on Metal With 120 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVV8DK",
+      "result": "success",
+      "video_id": "ZBrO3Lm6Yw0"
     }
   },
   "runs": [
@@ -3225,6 +3235,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_scale_hard_to_remove-60-80_grit_for_rust_scale_removal-metal-017.mp4",
       "result": "success",
       "video_id": "qk3ajAe0vYE"
+    },
+    {
+      "ts_utc": "2026-07-22T12:24:42.331180+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4",
+      "result": "success",
+      "video_id": "ZBrO3Lm6Yw0"
     }
   ],
   "last_post": {
