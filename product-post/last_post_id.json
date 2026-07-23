@@ -1,15 +1,15 @@
 {
-  "post_id": "325670187920349_1484449687029846",
+  "post_id": "325670187920349_1486013110206837",
   "product": {
     "source": "amazon",
-    "url": "https://www.amazon.com/gp/product/B0FHJCF1X6",
-    "grit": 3000,
-    "pack": 50,
-    "anchor": "3000 Grit (Ultra-Fine)",
-    "grit_description": "Final polishing grit that produces a mirror-like finish on paint, resin, and metal. Used by professionals for detailing and restoration. Leaves an ultra-clear, high-gloss surface after wet or dry sanding.",
+    "url": "https://www.amazon.com/gp/product/B0CZK2LKRX",
+    "grit": 80,
+    "pack": 100,
+    "anchor": "80 Grit (Coarse)",
+    "grit_description": "Durable coarse sandpaper made with Silicon Carbide for fast stock removal and surface leveling. Excellent for woodworking, metalwork, and fiberglass preparation. Works effectively for both wet and dry sanding before moving to 120 grit.",
     "contexts": [
-      "auto",
-      "polishing"
+      "wood",
+      "metal"
     ]
   }
 }
