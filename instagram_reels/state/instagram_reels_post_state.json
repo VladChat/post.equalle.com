@@ -4467,7 +4467,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18125614576741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-07-23T15:54:57Z",
+      "comment_text": "For drywall work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "18080936825681566",
+      "commented_ts_utc": "2026-07-23T15:55:00Z"
     }
   },
   "runs": [
@@ -6979,6 +6989,15 @@
       "result": "commented",
       "comment_id": "17983384404035055",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-07-23T15:55:00Z",
+      "media_id": "17923811241162533",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18080936825681566",
+      "template_idx": 3
     }
   ]
 }
