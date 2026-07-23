@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-07-21"
+    "manifest_index": 0,
+    "last_day": "2026-07-23"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -4444,6 +4444,30 @@
       "comment_status": "commented",
       "comment_id": "17983384404035055",
       "commented_ts_utc": "2026-07-21T15:17:28Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
+      "filename": "raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
+      "manifest": "drywall.json",
+      "title": "Raised Areas After Drying? Knock Down High Spots With 180 Grit",
+      "description": "If you feel raised areas after the mud dries, sand lightly with 180 grit to knock down high spots and blend the surface before the next step. Sandpaper eQualle",
+      "caption": "Raised Areas After Drying? Knock Down High Spots With 180 Grit\n\nIf you feel raised areas after the mud dries, sand lightly with 180 grit to knock down high spots and blend the surface before the next step. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-23T15:18:16Z",
+      "mode": "binary",
+      "container_id": "18125614576741317",
+      "media_id": "17923811241162533",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18125614576741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18125614576741317"
+      }
     }
   },
   "runs": [
@@ -5897,6 +5921,17 @@
       "filename": "paint_shows_every_scratch-320_grit_for_final_plastic_paint_prep-plastic-026.mp4",
       "container_id": "18125408272741317",
       "media_id": "18118921753862553",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-23T15:18:16Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
+      "filename": "raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
+      "container_id": "18125614576741317",
+      "media_id": "17923811241162533",
       "error": null
     }
   ],
