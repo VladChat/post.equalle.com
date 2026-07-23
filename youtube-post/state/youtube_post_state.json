@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-22"
+    "last_day": "2026-07-23"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2026,6 +2026,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RHVV8DK",
       "result": "success",
       "video_id": "ZBrO3Lm6Yw0"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/metal_still_feels_corroded-80_grit_for_rust_surface_leveling-metal-019.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_still_feels_corroded-80_grit_for_rust_surface_leveling-metal-019.mp4",
+      "filename": "metal_still_feels_corroded-80_grit_for_rust_surface_leveling-metal-019.mp4",
+      "manifest": "metal.json",
+      "title": "Level a Corroded Metal Surface With 80 Grit Sandpaper",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-80",
+      "result": "success",
+      "video_id": "GoUXrcyjwRE"
     }
   },
   "runs": [
@@ -3241,6 +3251,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_spots_showing_after_cleanup-120_grit_for_final_rust_cleanup-metal-018.mp4",
       "result": "success",
       "video_id": "ZBrO3Lm6Yw0"
+    },
+    {
+      "ts_utc": "2026-07-23T12:23:49.892944+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_still_feels_corroded-80_grit_for_rust_surface_leveling-metal-019.mp4",
+      "result": "success",
+      "video_id": "GoUXrcyjwRE"
     }
   ],
   "last_post": {
