@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-23"
+    "last_day": "2026-07-24"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2036,6 +2036,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-80",
       "result": "success",
       "video_id": "GoUXrcyjwRE"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/rust_damage_still_visible-120_grit_for_smoothing_corroded_metal-metal-020.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_damage_still_visible-120_grit_for_smoothing_corroded_metal-metal-020.mp4",
+      "filename": "rust_damage_still_visible-120_grit_for_smoothing_corroded_metal-metal-020.mp4",
+      "manifest": "metal.json",
+      "title": "Smooth Visible Rust Damage on Metal With 120 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07QD2GTY4",
+      "result": "success",
+      "video_id": "YYtVcNrFpJg"
     }
   },
   "runs": [
@@ -3257,6 +3267,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_still_feels_corroded-80_grit_for_rust_surface_leveling-metal-019.mp4",
       "result": "success",
       "video_id": "GoUXrcyjwRE"
+    },
+    {
+      "ts_utc": "2026-07-24T12:18:39.665636+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/rust_damage_still_visible-120_grit_for_smoothing_corroded_metal-metal-020.mp4",
+      "result": "success",
+      "video_id": "YYtVcNrFpJg"
     }
   ],
   "last_post": {
