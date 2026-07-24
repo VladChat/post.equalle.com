@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-07-22"
+    "manifest_index": 0,
+    "last_day": "2026-07-24"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1684,6 +1684,20 @@
       "pin_id": "839428818091671190",
       "media_id": "3700627497424976896",
       "cover_image_url": "https://i.pinimg.com/1200x/9a/ea/e0/9aeae083563999e29a7fe6f359992468.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4",
+      "filename": "mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-180",
+      "title": "Mud Buildup on Edges? Smooth Between Coats With 180 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-24T11:14:46+00:00",
+      "pin_id": "839428818091704897",
+      "media_id": "3706410264512201408",
+      "cover_image_url": "https://i.pinimg.com/1200x/b8/04/df/b804df78c66b97edcce8c0ac12acd6b5.jpg"
     }
   },
   "runs": [
@@ -2885,6 +2899,16 @@
       "result": "success",
       "pin_id": "839428818091671190",
       "media_id": "3700627497424976896",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-24T11:14:46+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4",
+      "filename": "mud_build-up_on_edges-180_grit_for_smoothing_between_coats-drywall-025.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818091704897",
+      "media_id": "3706410264512201408",
       "error": null
     }
   ]
