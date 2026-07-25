@@ -4501,7 +4501,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18125819155741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 9
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-07-25T14:47:00Z",
+      "comment_text": "For corners/edges, ease up and let the abrasive do the work. Are edges the hardest part for you too?",
+      "comment_status": "commented",
+      "comment_id": "17978571429113002",
+      "commented_ts_utc": "2026-07-25T14:47:03Z"
     }
   },
   "runs": [
@@ -7033,6 +7043,15 @@
       "result": "commented",
       "comment_id": "18080936825681566",
       "template_idx": 3
+    },
+    {
+      "ts_utc": "2026-07-25T14:47:03Z",
+      "media_id": "17921887272392907",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Isnt_Cutting_It-60-80_Grit_for_Fast_Finish_Removal-wood-028.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "17978571429113002",
+      "template_idx": 9
     }
   ]
 }
