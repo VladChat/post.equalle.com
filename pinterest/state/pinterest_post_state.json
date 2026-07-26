@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-07-24"
+    "manifest_index": 1,
+    "last_day": "2026-07-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1698,6 +1698,20 @@
       "pin_id": "839428818091704897",
       "media_id": "3706410264512201408",
       "cover_image_url": "https://i.pinimg.com/1200x/b8/04/df/b804df78c66b97edcce8c0ac12acd6b5.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Glossy_Finish_Needs_Removal-100_Grit_for_Stripping_Old_Finish-wood-026.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Glossy_Finish_Needs_Removal-100_Grit_for_Stripping_Old_Finish-wood-026.mp4",
+      "filename": "Glossy_Finish_Needs_Removal-100_Grit_for_Stripping_Old_Finish-wood-026.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7SX5F4",
+      "title": "Glossy Finish Needs Removal: 100 Grit Stripping Old Finish",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-26T10:55:30+00:00",
+      "pin_id": "839428818091736064",
+      "media_id": "3712169622582156672",
+      "cover_image_url": "https://i.pinimg.com/1200x/65/37/cd/6537cdaca11e8a901a9f7f1fe470282f.jpg"
     }
   },
   "runs": [
@@ -2909,6 +2923,16 @@
       "result": "success",
       "pin_id": "839428818091704897",
       "media_id": "3706410264512201408",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-26T10:55:30+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Glossy_Finish_Needs_Removal-100_Grit_for_Stripping_Old_Finish-wood-026.mp4",
+      "filename": "Glossy_Finish_Needs_Removal-100_Grit_for_Stripping_Old_Finish-wood-026.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818091736064",
+      "media_id": "3712169622582156672",
       "error": null
     }
   ]
