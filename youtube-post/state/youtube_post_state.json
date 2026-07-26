@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-25"
+    "last_day": "2026-07-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2056,6 +2056,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-80-10-sheets",
       "result": "success",
       "video_id": "x-8NxyXicBI"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/paint_wont_sand_off_metal-60-80_grit_for_paint_removal-metal-022.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_wont_sand_off_metal-60-80_grit_for_paint_removal-metal-022.mp4",
+      "filename": "paint_wont_sand_off_metal-60-80_grit_for_paint_removal-metal-022.mp4",
+      "manifest": "metal.json",
+      "title": "Paint Won’t Sand Off Metal? Start With 60–80 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7L15KV",
+      "result": "success",
+      "video_id": "y4oXWO4ginE"
     }
   },
   "runs": [
@@ -3289,6 +3299,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/old_paint_still_on_metal-80_grit_for_removing_paint_from_metal-metal-021.mp4",
       "result": "success",
       "video_id": "x-8NxyXicBI"
+    },
+    {
+      "ts_utc": "2026-07-26T12:02:56.541984+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_wont_sand_off_metal-60-80_grit_for_paint_removal-metal-022.mp4",
+      "result": "success",
+      "video_id": "y4oXWO4ginE"
     }
   ],
   "last_post": {
