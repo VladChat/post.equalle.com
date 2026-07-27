@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-07-24"
+    "manifest_index": 2,
+    "last_day": "2026-07-27"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2842,6 +2842,17 @@
       "attempts": 1,
       "last_ts_utc": "2026-07-24T15:03:35Z",
       "video_id": "4543604135861427"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/fresh_paint_shows_texture-2000_grit_wet_sand_to_smooth_paint-wet-028.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/fresh_paint_shows_texture-2000_grit_wet_sand_to_smooth_paint-wet-028.mp4",
+      "filename": "fresh_paint_shows_texture-2000_grit_wet_sand_to_smooth_paint-wet-028.mp4",
+      "manifest": "wet.json",
+      "title": "Fresh Paint Shows Texture? 2000 Grit Wet Sand To Smooth",
+      "description": "Fresh paint showing texture? Wet sand with 2000 grit to smooth the surface before the next coat or polishing. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light for remaining texture. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-27T15:49:27Z",
+      "video_id": "953835231099048"
     }
   },
   "runs": [
@@ -4085,6 +4096,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "4543604135861427",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-27T15:49:27Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/fresh_paint_shows_texture-2000_grit_wet_sand_to_smooth_paint-wet-028.mp4",
+      "filename": "fresh_paint_shows_texture-2000_grit_wet_sand_to_smooth_paint-wet-028.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "953835231099048",
       "error": null
     }
   ],
