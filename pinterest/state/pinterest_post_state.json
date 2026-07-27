@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-07-26"
+    "manifest_index": 2,
+    "last_day": "2026-07-27"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1712,6 +1712,20 @@
       "pin_id": "839428818091736064",
       "media_id": "3712169622582156672",
       "cover_image_url": "https://i.pinimg.com/1200x/65/37/cd/6537cdaca11e8a901a9f7f1fe470282f.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4",
+      "filename": "light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-2000",
+      "title": "Light Runs Starting? 2000 Grit Wet Sand To Level Before Recoat",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-27T12:39:31+00:00",
+      "pin_id": "839428818091753965",
+      "media_id": "3715277119031490368",
+      "cover_image_url": "https://i.pinimg.com/1200x/f4/92/62/f4926294b4c1c9dcf0480b0339d37f79.jpg"
     }
   },
   "runs": [
@@ -2933,6 +2947,16 @@
       "result": "success",
       "pin_id": "839428818091736064",
       "media_id": "3712169622582156672",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-27T12:39:31+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4",
+      "filename": "light_runs_starting_to_form-2000_grit_wet_sand_to_level_runs-wet-025.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818091753965",
+      "media_id": "3715277119031490368",
       "error": null
     }
   ]
