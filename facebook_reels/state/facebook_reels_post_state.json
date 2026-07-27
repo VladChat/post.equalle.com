@@ -2852,7 +2852,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-07-27T15:49:27Z",
-      "video_id": "953835231099048"
+      "video_id": "953835231099048",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 6
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-07-27T16:05:47Z",
+      "comment_text": "Small circles help blend; straight passes help level. Are you going for a smooth finish or just prep?",
+      "comment_status": "commented",
+      "comment_id": "953835231099048_2921174071564947",
+      "commented_ts_utc": "2026-07-27T16:05:52Z"
     }
   },
   "runs": [
@@ -5233,6 +5243,15 @@
       "result": "commented",
       "comment_id": "1013082438230704_1750407042632409",
       "template_idx": 16
+    },
+    {
+      "ts_utc": "2026-07-27T16:05:52Z",
+      "video_id": "953835231099048",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/fresh_paint_shows_texture-2000_grit_wet_sand_to_smooth_paint-wet-028.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "953835231099048_2921174071564947",
+      "template_idx": 6
     }
   ]
 }
