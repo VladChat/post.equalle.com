@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-07-25"
+    "manifest_index": 2,
+    "last_day": "2026-07-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -4512,6 +4512,30 @@
       "comment_status": "commented",
       "comment_id": "17978571429113002",
       "commented_ts_utc": "2026-07-25T14:47:03Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/fresh_paint_shows_texture-2000_grit_wet_sand_to_smooth_paint-wet-028.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/fresh_paint_shows_texture-2000_grit_wet_sand_to_smooth_paint-wet-028.mp4",
+      "filename": "fresh_paint_shows_texture-2000_grit_wet_sand_to_smooth_paint-wet-028.mp4",
+      "manifest": "wet.json",
+      "title": "Fresh Paint Shows Texture? 2000 Grit Wet Sand To Smooth",
+      "description": "Fresh paint showing texture? Wet sand with 2000 grit to smooth the surface before the next coat or polishing. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light for remaining texture. Wet or dry use. — eQualle",
+      "caption": "Fresh Paint Shows Texture? 2000 Grit Wet Sand To Smooth\n\nFresh paint showing texture? Wet sand with 2000 grit to smooth the surface before the next coat or polishing. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light for remaining texture. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-28T15:27:29Z",
+      "mode": "binary",
+      "container_id": "18126142849741317",
+      "media_id": "17872576353627000",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v25.0/18126142849741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18126142849741317"
+      }
     }
   },
   "runs": [
@@ -5987,6 +6011,17 @@
       "filename": "Sanding_Isnt_Cutting_It-60-80_Grit_for_Fast_Finish_Removal-wood-028.mp4",
       "container_id": "18125819155741317",
       "media_id": "17921887272392907",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-28T15:27:29Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wet.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/fresh_paint_shows_texture-2000_grit_wet_sand_to_smooth_paint-wet-028.mp4",
+      "filename": "fresh_paint_shows_texture-2000_grit_wet_sand_to_smooth_paint-wet-028.mp4",
+      "container_id": "18126142849741317",
+      "media_id": "17872576353627000",
       "error": null
     }
   ],
