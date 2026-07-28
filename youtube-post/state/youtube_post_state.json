@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-27"
+    "last_day": "2026-07-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2076,6 +2076,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-80",
       "result": "success",
       "video_id": "hWVMpQrAkDA"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/flaking_paint_on_metal_surface-80_grit_for_removing_loose_paint-metal-024.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/flaking_paint_on_metal_surface-80_grit_for_removing_loose_paint-metal-024.mp4",
+      "filename": "flaking_paint_on_metal_surface-80_grit_for_removing_loose_paint-metal-024.mp4",
+      "manifest": "metal.json",
+      "title": "Remove Loose Flaking Paint on Metal Using 80 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVWCN9",
+      "result": "success",
+      "video_id": "CnoWteM0_rs"
     }
   },
   "runs": [
@@ -3321,6 +3331,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/multiple_paint_layers_on_metal-80_grit_for_stripping_old_paint-metal-023.mp4",
       "result": "success",
       "video_id": "hWVMpQrAkDA"
+    },
+    {
+      "ts_utc": "2026-07-28T12:53:41.055210+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/flaking_paint_on_metal_surface-80_grit_for_removing_loose_paint-metal-024.mp4",
+      "result": "success",
+      "video_id": "CnoWteM0_rs"
     }
   ],
   "last_post": {
