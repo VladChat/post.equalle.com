@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-07-27"
+    "manifest_index": 3,
+    "last_day": "2026-07-29"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2863,6 +2863,17 @@
       "comment_status": "commented",
       "comment_id": "953835231099048_2921174071564947",
       "commented_ts_utc": "2026-07-27T16:05:52Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/paint_residue_still_showing-120_grit_for_cleaning_painted_metal-metal-028.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_residue_still_showing-120_grit_for_cleaning_painted_metal-metal-028.mp4",
+      "filename": "paint_residue_still_showing-120_grit_for_cleaning_painted_metal-metal-028.mp4",
+      "manifest": "metal.json",
+      "title": "Clean Paint Residue on Metal With 120 Grit Sandpaper",
+      "description": "Paint residue still showing? Use 120 grit to clean up leftover coating and smooth the scratch pattern from coarse stripping. This step helps primer apply more evenly.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-29T15:16:59Z",
+      "video_id": "1735776390995213"
     }
   },
   "runs": [
@@ -4115,6 +4126,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "953835231099048",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-29T15:16:59Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_residue_still_showing-120_grit_for_cleaning_painted_metal-metal-028.mp4",
+      "filename": "paint_residue_still_showing-120_grit_for_cleaning_painted_metal-metal-028.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "1735776390995213",
       "error": null
     }
   ],
