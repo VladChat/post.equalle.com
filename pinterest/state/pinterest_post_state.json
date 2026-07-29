@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-07-27"
+    "manifest_index": 3,
+    "last_day": "2026-07-29"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1726,6 +1726,20 @@
       "pin_id": "839428818091753965",
       "media_id": "3715277119031490368",
       "cover_image_url": "https://i.pinimg.com/1200x/f4/92/62/f4926294b4c1c9dcf0480b0339d37f79.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/flaking_paint_on_metal_surface-80_grit_for_removing_loose_paint-metal-024.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/flaking_paint_on_metal_surface-80_grit_for_removing_loose_paint-metal-024.mp4",
+      "filename": "flaking_paint_on_metal_surface-80_grit_for_removing_loose_paint-metal-024.mp4",
+      "manifest": "metal.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVWCN9",
+      "title": "Remove Loose Flaking Paint on Metal Using 80 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-29T11:37:38+00:00",
+      "pin_id": "839428818091787702",
+      "media_id": "3720949470966111296",
+      "cover_image_url": "https://i.pinimg.com/1200x/75/f6/73/75f673f93bc82b24c2e9113157af76af.jpg"
     }
   },
   "runs": [
@@ -2957,6 +2971,16 @@
       "result": "success",
       "pin_id": "839428818091753965",
       "media_id": "3715277119031490368",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-29T11:37:38+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/flaking_paint_on_metal_surface-80_grit_for_removing_loose_paint-metal-024.mp4",
+      "filename": "flaking_paint_on_metal_surface-80_grit_for_removing_loose_paint-metal-024.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "pin_id": "839428818091787702",
+      "media_id": "3720949470966111296",
       "error": null
     }
   ]
