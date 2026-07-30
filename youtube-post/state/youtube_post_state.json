@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-29"
+    "last_day": "2026-07-30"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2096,6 +2096,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-120-10-sheets",
       "result": "success",
       "video_id": "AUe_FBqHtCw"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/glossy_paint_needs_removal-120_grit_for_dulling_painted_metal-metal-026.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/glossy_paint_needs_removal-120_grit_for_dulling_painted_metal-metal-026.mp4",
+      "filename": "glossy_paint_needs_removal-120_grit_for_dulling_painted_metal-metal-026.mp4",
+      "manifest": "metal.json",
+      "title": "Dull Glossy Paint on Metal With 120 Grit Before Recoat",
+      "destination_url": "https://www.amazon.com/gp/product/B07RLSHPZV",
+      "result": "success",
+      "video_id": "7ZsZrhMlbHg"
     }
   },
   "runs": [
@@ -3353,6 +3363,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_chipping_around_edges-120_grit_for_feathering_paint_edges-metal-025.mp4",
       "result": "success",
       "video_id": "AUe_FBqHtCw"
+    },
+    {
+      "ts_utc": "2026-07-30T12:28:19.805175+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/glossy_paint_needs_removal-120_grit_for_dulling_painted_metal-metal-026.mp4",
+      "result": "success",
+      "video_id": "7ZsZrhMlbHg"
     }
   ],
   "last_post": {
