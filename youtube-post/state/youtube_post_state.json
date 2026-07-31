@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-30"
+    "last_day": "2026-07-31"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2106,6 +2106,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RLSHPZV",
       "result": "success",
       "video_id": "7ZsZrhMlbHg"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/powder_coat_too_hard_to_remove-60-80_grit_for_coating_removal-metal-027.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/powder_coat_too_hard_to_remove-60-80_grit_for_coating_removal-metal-027.mp4",
+      "filename": "powder_coat_too_hard_to_remove-60-80_grit_for_coating_removal-metal-027.mp4",
+      "manifest": "metal.json",
+      "title": "Remove Tough Powder Coat From Metal With 60–80 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-60",
+      "result": "success",
+      "video_id": "lliNpjqwc2o"
     }
   },
   "runs": [
@@ -3369,6 +3379,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/glossy_paint_needs_removal-120_grit_for_dulling_painted_metal-metal-026.mp4",
       "result": "success",
       "video_id": "7ZsZrhMlbHg"
+    },
+    {
+      "ts_utc": "2026-07-31T12:55:32.086147+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/powder_coat_too_hard_to_remove-60-80_grit_for_coating_removal-metal-027.mp4",
+      "result": "success",
+      "video_id": "lliNpjqwc2o"
     }
   ],
   "last_post": {
