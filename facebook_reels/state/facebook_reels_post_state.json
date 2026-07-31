@@ -2894,7 +2894,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-07-31T15:26:55Z",
-      "video_id": "1568343271659441"
+      "video_id": "1568343271659441",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 17
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-07-31T15:38:47Z",
+      "comment_text": "Don’t chase one spot too long—blend the area wider and re-check. Are the edges still visible?",
+      "comment_status": "commented",
+      "comment_id": "1568343271659441_2027768701175163",
+      "commented_ts_utc": "2026-07-31T15:38:52Z"
     }
   },
   "runs": [
@@ -5311,6 +5321,15 @@
       "result": "commented",
       "comment_id": "1735776390995213_2206469733466476",
       "template_idx": 10
+    },
+    {
+      "ts_utc": "2026-07-31T15:38:52Z",
+      "video_id": "1568343271659441",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_finish_looks_uneven-220_grit_for_smoothing_plastic_before_paint-plastic-028.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "1568343271659441_2027768701175163",
+      "template_idx": 17
     }
   ]
 }
