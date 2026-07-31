@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-07-29"
+    "manifest_index": 4,
+    "last_day": "2026-07-31"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2884,6 +2884,17 @@
       "comment_status": "commented",
       "comment_id": "1735776390995213_2206469733466476",
       "commented_ts_utc": "2026-07-29T15:51:28Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_finish_looks_uneven-220_grit_for_smoothing_plastic_before_paint-plastic-028.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_finish_looks_uneven-220_grit_for_smoothing_plastic_before_paint-plastic-028.mp4",
+      "filename": "paint_finish_looks_uneven-220_grit_for_smoothing_plastic_before_paint-plastic-028.mp4",
+      "manifest": "plastic.json",
+      "title": "Uneven Paint Finish? Smooth Plastic With 220 Grit",
+      "description": "If the paint finish looks uneven on plastic, refine the surface before the next coat. 220 grit helps smooth texture and create an even scuff for better paint laydown. Wipe clean and re-coat. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-07-31T15:26:55Z",
+      "video_id": "1568343271659441"
     }
   },
   "runs": [
@@ -4145,6 +4156,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "1735776390995213",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-07-31T15:26:55Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_finish_looks_uneven-220_grit_for_smoothing_plastic_before_paint-plastic-028.mp4",
+      "filename": "paint_finish_looks_uneven-220_grit_for_smoothing_plastic_before_paint-plastic-028.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "1568343271659441",
       "error": null
     }
   ],
