@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-07-31"
+    "last_day": "2026-08-01"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2116,6 +2116,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-60",
       "result": "success",
       "video_id": "lliNpjqwc2o"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/paint_residue_still_showing-120_grit_for_cleaning_painted_metal-metal-028.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_residue_still_showing-120_grit_for_cleaning_painted_metal-metal-028.mp4",
+      "filename": "paint_residue_still_showing-120_grit_for_cleaning_painted_metal-metal-028.mp4",
+      "manifest": "metal.json",
+      "title": "Clean Paint Residue on Metal With 120 Grit Sandpaper",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7VFK4N",
+      "result": "success",
+      "video_id": "W5Css40XHsU"
     }
   },
   "runs": [
@@ -3385,6 +3395,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/powder_coat_too_hard_to_remove-60-80_grit_for_coating_removal-metal-027.mp4",
       "result": "success",
       "video_id": "lliNpjqwc2o"
+    },
+    {
+      "ts_utc": "2026-08-01T12:01:37.073295+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_residue_still_showing-120_grit_for_cleaning_painted_metal-metal-028.mp4",
+      "result": "success",
+      "video_id": "W5Css40XHsU"
     }
   ],
   "last_post": {
