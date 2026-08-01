@@ -4600,7 +4600,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18126555985741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 9
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-08-01T14:57:08Z",
+      "comment_text": "For corners/edges, ease up and let the abrasive do the work. Are edges the hardest part for you too?",
+      "comment_status": "commented",
+      "comment_id": "17984332815044999",
+      "commented_ts_utc": "2026-08-01T14:57:11Z"
     }
   },
   "runs": [
@@ -7182,6 +7192,15 @@
       "manifest": "wet.json",
       "result": "commented",
       "comment_id": "18015022340879789",
+      "template_idx": 9
+    },
+    {
+      "ts_utc": "2026-08-01T14:57:11Z",
+      "media_id": "18156480883496269",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/primer_not_bonding_to_plastic-220_grit_for_primer_prep_on_plastic-plastic-027.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "17984332815044999",
       "template_idx": 9
     }
   ]
