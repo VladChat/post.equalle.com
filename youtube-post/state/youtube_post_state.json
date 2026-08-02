@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-01"
+    "last_day": "2026-08-02"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2126,6 +2126,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7VFK4N",
       "result": "success",
       "video_id": "W5Css40XHsU"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4",
+      "filename": "old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4",
+      "manifest": "metal.json",
+      "title": "Level an Uneven Painted Metal Surface With 80 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-80",
+      "result": "success",
+      "video_id": "DsPLZlAkc_I"
     }
   },
   "runs": [
@@ -3401,6 +3411,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_residue_still_showing-120_grit_for_cleaning_painted_metal-metal-028.mp4",
       "result": "success",
       "video_id": "W5Css40XHsU"
+    },
+    {
+      "ts_utc": "2026-08-02T12:02:30.380922+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4",
+      "result": "success",
+      "video_id": "DsPLZlAkc_I"
     }
   ],
   "last_post": {
