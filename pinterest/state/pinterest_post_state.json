@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-07-31"
+    "manifest_index": 0,
+    "last_day": "2026-08-02"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1754,6 +1754,20 @@
       "pin_id": "839428818091819117",
       "media_id": "3726748210062209664",
       "cover_image_url": "https://i.pinimg.com/1200x/be/84/d5/be84d55801ca3556ebf4014a494d330c.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
+      "filename": "lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8DFS6T",
+      "title": "Lines Showing After a Skim Coat? Lightly Feather Sand With 220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-02T10:53:10+00:00",
+      "pin_id": "839428818091851701",
+      "media_id": "3732458175372613824",
+      "cover_image_url": "https://i.pinimg.com/1200x/33/e0/f3/33e0f30ee56920c21bf184f2ed619f21.jpg"
     }
   },
   "runs": [
@@ -3005,6 +3019,16 @@
       "result": "success",
       "pin_id": "839428818091819117",
       "media_id": "3726748210062209664",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-02T10:53:10+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
+      "filename": "lines_showing_after_skim_coat-220_grit_for_light_feather_sanding-drywall-026.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818091851701",
+      "media_id": "3732458175372613824",
       "error": null
     }
   ]
