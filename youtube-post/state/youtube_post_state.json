@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-02"
+    "last_day": "2026-08-03"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2136,6 +2136,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-80",
       "result": "success",
       "video_id": "DsPLZlAkc_I"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/paint_peeling_after_prep-120_grit_for_proper_paint_removal-metal-030.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_peeling_after_prep-120_grit_for_proper_paint_removal-metal-030.mp4",
+      "filename": "paint_peeling_after_prep-120_grit_for_proper_paint_removal-metal-030.mp4",
+      "manifest": "metal.json",
+      "title": "Fix Paint Peeling After Prep: Re-Sand Metal With 120 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVV8DK",
+      "result": "success",
+      "video_id": "cy58S7GarJ4"
     }
   },
   "runs": [
@@ -3417,6 +3427,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4",
       "result": "success",
       "video_id": "DsPLZlAkc_I"
+    },
+    {
+      "ts_utc": "2026-08-03T13:40:42.166385+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_peeling_after_prep-120_grit_for_proper_paint_removal-metal-030.mp4",
+      "result": "success",
+      "video_id": "cy58S7GarJ4"
     }
   ],
   "last_post": {
