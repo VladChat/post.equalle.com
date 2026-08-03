@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-08-02"
+    "manifest_index": 1,
+    "last_day": "2026-08-03"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1768,6 +1768,20 @@
       "pin_id": "839428818091851701",
       "media_id": "3732458175372613824",
       "cover_image_url": "https://i.pinimg.com/1200x/33/e0/f3/33e0f30ee56920c21bf184f2ed619f21.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4",
+      "filename": "Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-80",
+      "title": "Old Poly Feels Like Plastic: 80 Grit Removing Polyurethane",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-03T12:38:09+00:00",
+      "pin_id": "839428818091868058",
+      "media_id": "3735569709291161408",
+      "cover_image_url": "https://i.pinimg.com/1200x/24/1e/83/241e83b2c6f1a17efb2ed692d53c4e00.jpg"
     }
   },
   "runs": [
@@ -3029,6 +3043,16 @@
       "result": "success",
       "pin_id": "839428818091851701",
       "media_id": "3732458175372613824",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-03T12:38:09+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4",
+      "filename": "Old_Poly_Feels_Like_Plastic-80_Grit_for_Removing_Polyurethane-wood-027.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818091868058",
+      "media_id": "3735569709291161408",
       "error": null
     }
   ]
