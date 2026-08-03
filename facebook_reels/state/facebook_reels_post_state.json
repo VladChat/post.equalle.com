@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-07-31"
+    "manifest_index": 0,
+    "last_day": "2026-08-03"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2905,6 +2905,17 @@
       "comment_status": "commented",
       "comment_id": "1568343271659441_2027768701175163",
       "commented_ts_utc": "2026-07-31T15:38:52Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4",
+      "filename": "patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4",
+      "manifest": "drywall.json",
+      "title": "Patch Edges Catch the Light? Blend Drywall Edges With 220 Grit",
+      "description": "If patch edges catch the light, sand with 220 grit using light pressure to blend the edge and smooth the transition before primer. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-03T15:50:10Z",
+      "video_id": "1593323158831366"
     }
   },
   "runs": [
@@ -4175,6 +4186,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1568343271659441",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-03T15:50:10Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4",
+      "filename": "patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1593323158831366",
       "error": null
     }
   ],
