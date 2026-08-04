@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-08-01"
+    "manifest_index": 0,
+    "last_day": "2026-08-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -4611,6 +4611,30 @@
       "comment_status": "commented",
       "comment_id": "17984332815044999",
       "commented_ts_utc": "2026-08-01T14:57:11Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4",
+      "filename": "joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4",
+      "manifest": "drywall.json",
+      "title": "Joint Lines Still Shadowing? Final Feather Prep With 220 Grit",
+      "description": "If seams still cast a shadow, use 220 grit with light pressure to feather the edges and smooth the surface before primer or paint. Sandpaper eQualle",
+      "caption": "Joint Lines Still Shadowing? Final Feather Prep With 220 Grit\n\nIf seams still cast a shadow, use 220 grit with light pressure to feather the edges and smooth the surface before primer or paint. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-04T15:30:30Z",
+      "mode": "binary",
+      "container_id": "18126876073741317",
+      "media_id": "18105124337127420",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v26.0/18126876073741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18126876073741317"
+      }
     }
   },
   "runs": [
@@ -6119,6 +6143,17 @@
       "filename": "primer_not_bonding_to_plastic-220_grit_for_primer_prep_on_plastic-plastic-027.mp4",
       "container_id": "18126555985741317",
       "media_id": "18156480883496269",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-04T15:30:30Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4",
+      "filename": "joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4",
+      "container_id": "18126876073741317",
+      "media_id": "18105124337127420",
       "error": null
     }
   ],
