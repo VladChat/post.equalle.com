@@ -4634,7 +4634,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18126876073741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-08-04T16:24:55Z",
+      "comment_text": "Light pressure with 220 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "17948515419032882",
+      "commented_ts_utc": "2026-08-04T16:24:57Z"
     }
   },
   "runs": [
@@ -7237,6 +7247,15 @@
       "result": "commented",
       "comment_id": "17984332815044999",
       "template_idx": 9
+    },
+    {
+      "ts_utc": "2026-08-04T16:24:57Z",
+      "media_id": "18105124337127420",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "17948515419032882",
+      "template_idx": 0
     }
   ]
 }
