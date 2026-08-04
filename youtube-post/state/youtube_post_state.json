@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-03"
+    "last_day": "2026-08-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2146,6 +2146,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RHVV8DK",
       "result": "success",
       "video_id": "cy58S7GarJ4"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/clear_coat_still_on_metal-120_grit_for_removing_clear_coat-metal-031.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/clear_coat_still_on_metal-120_grit_for_removing_clear_coat-metal-031.mp4",
+      "filename": "clear_coat_still_on_metal-120_grit_for_removing_clear_coat-metal-031.mp4",
+      "manifest": "metal.json",
+      "title": "Remove Clear Coat From Metal With 120 Grit Sandpaper",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-120",
+      "result": "success",
+      "video_id": "OtiUMc19iVs"
     }
   },
   "runs": [
@@ -3433,6 +3443,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_peeling_after_prep-120_grit_for_proper_paint_removal-metal-030.mp4",
       "result": "success",
       "video_id": "cy58S7GarJ4"
+    },
+    {
+      "ts_utc": "2026-08-04T13:02:10.121554+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/clear_coat_still_on_metal-120_grit_for_removing_clear_coat-metal-031.mp4",
+      "result": "success",
+      "video_id": "OtiUMc19iVs"
     }
   ],
   "last_post": {
