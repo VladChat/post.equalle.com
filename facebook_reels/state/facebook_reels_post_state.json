@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-08-03"
+    "manifest_index": 1,
+    "last_day": "2026-08-05"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2926,6 +2926,17 @@
       "comment_status": "commented",
       "comment_id": "1593323158831366_1403377098319500",
       "commented_ts_utc": "2026-08-03T16:43:06Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Paint_Edges_Keep_Chipping-80_Grit_for_Feathering_Paint_Edges-wood-029.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Edges_Keep_Chipping-80_Grit_for_Feathering_Paint_Edges-wood-029.mp4",
+      "filename": "Paint_Edges_Keep_Chipping-80_Grit_for_Feathering_Paint_Edges-wood-029.mp4",
+      "manifest": "wood.json",
+      "title": "Paint Edges Keep Chipping: 80 Grit Feathering Paint Edges",
+      "description": "Paint Edges Keep Chipping? Use 80 grit for feathering paint edges. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-05T15:24:00Z",
+      "video_id": "1808141593518275"
     }
   },
   "runs": [
@@ -4205,6 +4216,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "1593323158831366",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-05T15:24:00Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Edges_Keep_Chipping-80_Grit_for_Feathering_Paint_Edges-wood-029.mp4",
+      "filename": "Paint_Edges_Keep_Chipping-80_Grit_for_Feathering_Paint_Edges-wood-029.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "1808141593518275",
       "error": null
     }
   ],
