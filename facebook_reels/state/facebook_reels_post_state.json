@@ -2936,7 +2936,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-08-05T15:24:00Z",
-      "video_id": "1808141593518275"
+      "video_id": "1808141593518275",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 10
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-08-05T16:21:11Z",
+      "comment_text": "Quick check: if it still feels scratchy, you may need one grit lower for a short blend. Want a simple grit ladder?",
+      "comment_status": "commented",
+      "comment_id": "1808141593518275_2712230779172567",
+      "commented_ts_utc": "2026-08-05T16:21:18Z"
     }
   },
   "runs": [
@@ -5389,6 +5399,15 @@
       "result": "commented",
       "comment_id": "1593323158831366_1403377098319500",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-08-05T16:21:18Z",
+      "video_id": "1808141593518275",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Paint_Edges_Keep_Chipping-80_Grit_for_Feathering_Paint_Edges-wood-029.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "1808141593518275_2712230779172567",
+      "template_idx": 10
     }
   ]
 }
