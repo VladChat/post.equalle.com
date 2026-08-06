@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-05"
+    "last_day": "2026-08-06"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2166,6 +2166,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07Q8BWSHP",
       "result": "success",
       "video_id": "T0ODf8dgtv0"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/paint_lines_showing_through_finish-120_grit_for_smoothing_paint_edges-metal-033.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_lines_showing_through_finish-120_grit_for_smoothing_paint_edges-metal-033.mp4",
+      "filename": "paint_lines_showing_through_finish-120_grit_for_smoothing_paint_edges-metal-033.mp4",
+      "manifest": "metal.json",
+      "title": "Smooth Paint Edge Lines on Metal With 120 Grit Before Recoat",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-120",
+      "result": "success",
+      "video_id": "DXImCZcJpyY"
     }
   },
   "runs": [
@@ -3465,6 +3475,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_build-up_on_metal_parts-80_grit_for_heavy_paint_removal-metal-032.mp4",
       "result": "success",
       "video_id": "T0ODf8dgtv0"
+    },
+    {
+      "ts_utc": "2026-08-06T12:56:17.125398+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_lines_showing_through_finish-120_grit_for_smoothing_paint_edges-metal-033.mp4",
+      "result": "success",
+      "video_id": "DXImCZcJpyY"
     }
   ],
   "last_post": {
