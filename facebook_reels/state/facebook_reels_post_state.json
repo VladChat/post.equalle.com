@@ -2957,7 +2957,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-08-07T14:16:53Z",
-      "video_id": "1535674868302880"
+      "video_id": "1535674868302880",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 17
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-08-07T14:53:26Z",
+      "comment_text": "Don’t chase one spot too long—blend the area wider and re-check. Are the edges still visible?",
+      "comment_status": "commented",
+      "comment_id": "1535674868302880_1002568782404767",
+      "commented_ts_utc": "2026-08-07T14:53:30Z"
     }
   },
   "runs": [
@@ -5428,6 +5438,15 @@
       "result": "commented",
       "comment_id": "1808141593518275_2712230779172567",
       "template_idx": 10
+    },
+    {
+      "ts_utc": "2026-08-07T14:53:30Z",
+      "video_id": "1535674868302880",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1535674868302880_1002568782404767",
+      "template_idx": 17
     }
   ]
 }
