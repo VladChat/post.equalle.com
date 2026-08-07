@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-08-05"
+    "manifest_index": 2,
+    "last_day": "2026-08-07"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2947,6 +2947,17 @@
       "comment_status": "commented",
       "comment_id": "1808141593518275_2712230779172567",
       "commented_ts_utc": "2026-08-05T16:21:18Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4",
+      "filename": "clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4",
+      "manifest": "wet.json",
+      "title": "Light Leveling Needed? 2000 Grit Wet Sand Between Clear Coat Layers",
+      "description": "Clear coat needs light leveling between layers? Wet sand with 2000 grit to smooth texture before the next coat. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under a work light for uniform dullness. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-07T14:16:53Z",
+      "video_id": "1535674868302880"
     }
   },
   "runs": [
@@ -4235,6 +4246,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "1808141593518275",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-07T14:16:53Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4",
+      "filename": "clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "1535674868302880",
       "error": null
     }
   ],
