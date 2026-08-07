@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-06"
+    "last_day": "2026-08-07"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2176,6 +2176,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-120",
       "result": "success",
       "video_id": "DXImCZcJpyY"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/coating_not_fully_removed-80-120_grit_for_paint_cleanup-metal-034.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/coating_not_fully_removed-80-120_grit_for_paint_cleanup-metal-034.mp4",
+      "filename": "coating_not_fully_removed-80-120_grit_for_paint_cleanup-metal-034.mp4",
+      "manifest": "metal.json",
+      "title": "Coating Not Fully Removed? Use 80–120 Grit for Metal Paint Cleanup",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZK2LKRX",
+      "result": "success",
+      "video_id": "Opnf8whOhC0"
     }
   },
   "runs": [
@@ -3481,6 +3491,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_lines_showing_through_finish-120_grit_for_smoothing_paint_edges-metal-033.mp4",
       "result": "success",
       "video_id": "DXImCZcJpyY"
+    },
+    {
+      "ts_utc": "2026-08-07T11:45:06.401854+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/coating_not_fully_removed-80-120_grit_for_paint_cleanup-metal-034.mp4",
+      "result": "success",
+      "video_id": "Opnf8whOhC0"
     }
   ],
   "last_post": {
