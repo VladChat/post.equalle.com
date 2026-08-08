@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-08-06"
+    "manifest_index": 2,
+    "last_day": "2026-08-08"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -4676,6 +4676,30 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-08-06T15:56:30Z",
       "comment_skipped_reason": "policy_10pct_skip"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4",
+      "filename": "clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4",
+      "manifest": "wet.json",
+      "title": "Light Leveling Needed? 2000 Grit Wet Sand Between Clear Coat Layers",
+      "description": "Clear coat needs light leveling between layers? Wet sand with 2000 grit to smooth texture before the next coat. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under a work light for uniform dullness. Wet or dry use. — eQualle",
+      "caption": "Light Leveling Needed? 2000 Grit Wet Sand Between Clear Coat Layers\n\nClear coat needs light leveling between layers? Wet sand with 2000 grit to smooth texture before the next coat. Keep it wet, use light pressure, crosshatch passes, wipe clean often, and inspect under a work light for uniform dullness. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-08T13:50:50Z",
+      "mode": "binary",
+      "container_id": "18127283122741317",
+      "media_id": "18130023037634472",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v26.0/18127283122741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18127283122741317"
+      }
     }
   },
   "runs": [
@@ -6206,6 +6230,17 @@
       "filename": "Paint_Edges_Keep_Chipping-80_Grit_for_Feathering_Paint_Edges-wood-029.mp4",
       "container_id": "18127097563741317",
       "media_id": "18099416798621432",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-08T13:50:50Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wet.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4",
+      "filename": "clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4",
+      "container_id": "18127283122741317",
+      "media_id": "18130023037634472",
       "error": null
     }
   ],
