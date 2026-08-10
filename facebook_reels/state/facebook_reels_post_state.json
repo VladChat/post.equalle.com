@@ -2978,7 +2978,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-08-10T14:23:08Z",
-      "video_id": "1819034669472763"
+      "video_id": "1819034669472763",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 9
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-08-10T15:12:48Z",
+      "comment_text": "For corners/edges, ease up and let the abrasive do the work. Are edges the hardest part for you too?",
+      "comment_status": "commented",
+      "comment_id": "1819034669472763_1417753140219964",
+      "commented_ts_utc": "2026-08-10T15:12:55Z"
     }
   },
   "runs": [
@@ -5467,6 +5477,15 @@
       "result": "commented",
       "comment_id": "1535674868302880_1002568782404767",
       "template_idx": 17
+    },
+    {
+      "ts_utc": "2026-08-10T15:12:55Z",
+      "video_id": "1819034669472763",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "1819034669472763_1417753140219964",
+      "template_idx": 9
     }
   ]
 }
