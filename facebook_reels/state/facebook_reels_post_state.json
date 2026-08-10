@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-08-07"
+    "manifest_index": 3,
+    "last_day": "2026-08-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2968,6 +2968,17 @@
       "comment_status": "commented",
       "comment_id": "1535674868302880_1002568782404767",
       "commented_ts_utc": "2026-08-07T14:53:30Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4",
+      "filename": "old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4",
+      "manifest": "metal.json",
+      "title": "Level an Uneven Painted Metal Surface With 80 Grit",
+      "description": "Old paint causing an uneven surface? Use 80 grit to level ridges and knock down high areas before recoating. Sand evenly and feather edges to avoid visible transitions.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-10T14:23:08Z",
+      "video_id": "1819034669472763"
     }
   },
   "runs": [
@@ -4265,6 +4276,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "1535674868302880",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-10T14:23:08Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4",
+      "filename": "old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "1819034669472763",
       "error": null
     }
   ],
