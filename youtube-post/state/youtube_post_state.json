@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-09"
+    "last_day": "2026-08-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2206,6 +2206,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QD2GTY4",
       "result": "success",
       "video_id": "OHkFhoLE9jo"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4",
+      "filename": "weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4",
+      "manifest": "metal.json",
+      "title": "Smooth a Rough Weld Area on Metal With 120 Grit Sandpaper",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-120-10-sheets",
+      "result": "success",
+      "video_id": "zdFGdHowytY"
     }
   },
   "runs": [
@@ -3529,6 +3539,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_surface_not_ready_for_paint-120_grit_for_metal_paint_prep-metal-036.mp4",
       "result": "success",
       "video_id": "OHkFhoLE9jo"
+    },
+    {
+      "ts_utc": "2026-08-10T11:46:38.241463+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4",
+      "result": "success",
+      "video_id": "zdFGdHowytY"
     }
   ],
   "last_post": {
