@@ -1800,6 +1800,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-08-10T12:02:52Z",
       "verify_after_ts": 1786365172.3166504
+    },
+    "b30Yclf_y7c": {
+      "comment_status": "commented_unverified",
+      "comment_id": "UgxK1zCYdgR_SJfYM-J4AaABAg",
+      "comment_text": "Quick check: if it still feels scratchy after this, drop one grit lower for a short blend, then return to this to refine. Want a simple grit ladder for your project?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-08-11T12:00:51Z",
+      "verify_after_ts": 1786451451.4274027
     }
   },
   "runs": [
@@ -3137,6 +3145,12 @@
       "video_id": "zdFGdHowytY",
       "result": "commented_unverified",
       "comment_id": "UgzN3ybtlLFt4Tgq7Jp4AaABAg"
+    },
+    {
+      "ts": "2026-08-11T12:00:51Z",
+      "video_id": "b30Yclf_y7c",
+      "result": "commented_unverified",
+      "comment_id": "UgxK1zCYdgR_SJfYM-J4AaABAg"
     }
   ]
 }
