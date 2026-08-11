@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-10"
+    "last_day": "2026-08-11"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2216,6 +2216,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-120-10-sheets",
       "result": "success",
       "video_id": "zdFGdHowytY"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/metal_feels_uneven_after_grinding-150_grit_for_leveling_metal_surface-metal-038.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_feels_uneven_after_grinding-150_grit_for_leveling_metal_surface-metal-038.mp4",
+      "filename": "metal_feels_uneven_after_grinding-150_grit_for_leveling_metal_surface-metal-038.mp4",
+      "manifest": "metal.json",
+      "title": "Level Metal After Grinding With 150 Grit Sandpaper",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7T4FFL",
+      "result": "success",
+      "video_id": "b30Yclf_y7c"
     }
   },
   "runs": [
@@ -3545,6 +3555,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4",
       "result": "success",
       "video_id": "zdFGdHowytY"
+    },
+    {
+      "ts_utc": "2026-08-11T11:42:36.707990+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_feels_uneven_after_grinding-150_grit_for_leveling_metal_surface-metal-038.mp4",
+      "result": "success",
+      "video_id": "b30Yclf_y7c"
     }
   ],
   "last_post": {
