@@ -4730,7 +4730,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18127601842741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 16
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-08-11T14:58:58Z",
+      "comment_text": "If scratches stand out after paint/primer, it usually means the previous grit marks weren’t fully blended. What grit are you finishing with?",
+      "comment_status": "commented",
+      "comment_id": "18104577401162822",
+      "commented_ts_utc": "2026-08-11T14:59:02Z"
     }
   },
   "runs": [
@@ -7375,6 +7385,15 @@
       "result": "commented",
       "comment_id": "17948515419032882",
       "template_idx": 0
+    },
+    {
+      "ts_utc": "2026-08-11T14:59:02Z",
+      "media_id": "18017824586914075",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_residue_still_showing-120_grit_for_cleaning_painted_metal-metal-028.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18104577401162822",
+      "template_idx": 16
     }
   ]
 }
