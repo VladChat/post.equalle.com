@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-08-10"
+    "manifest_index": 0,
+    "last_day": "2026-08-12"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1824,6 +1824,20 @@
       "pin_id": "839428818091987881",
       "media_id": "3755622920657281984",
       "cover_image_url": "https://i.pinimg.com/1200x/c8/7c/b1/c87cb1ce5d73cdb741806975ec767a59.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
+      "filename": "raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049941",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-180",
+      "title": "Raised Areas After Drying? Knock Down High Spots With 180 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-12T10:30:26+00:00",
+      "pin_id": "839428818092020078",
+      "media_id": "3761403006709553152",
+      "cover_image_url": "https://i.pinimg.com/1200x/8d/72/56/8d7256eac7ed433552e04cb3c23b18ff.jpg"
     }
   },
   "runs": [
@@ -3125,6 +3139,16 @@
       "result": "success",
       "pin_id": "839428818091987881",
       "media_id": "3755622920657281984",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-12T10:30:26+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
+      "filename": "raised_areas_after_drying-180_grit_for_knocking_down_high_spots-drywall-027.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818092020078",
+      "media_id": "3761403006709553152",
       "error": null
     }
   ]
