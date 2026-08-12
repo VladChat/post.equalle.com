@@ -2999,7 +2999,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-08-12T14:23:37Z",
-      "video_id": "2196313894486015"
+      "video_id": "2196313894486015",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 18
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-08-12T14:33:49Z",
+      "comment_text": "If you’re getting pigtails or random deep lines, the paper may be loaded or folded. Are you using fresh sheets?",
+      "comment_status": "commented",
+      "comment_id": "2196313894486015_1035649622440502",
+      "commented_ts_utc": "2026-08-12T14:33:54Z"
     }
   },
   "runs": [
@@ -5506,6 +5516,15 @@
       "result": "commented",
       "comment_id": "1819034669472763_1417753140219964",
       "template_idx": 9
+    },
+    {
+      "ts_utc": "2026-08-12T14:33:54Z",
+      "video_id": "2196313894486015",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_scratches_showing_through-320_grit_for_plastic_scratch_refinement-plastic-029.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "2196313894486015_1035649622440502",
+      "template_idx": 18
     }
   ]
 }
