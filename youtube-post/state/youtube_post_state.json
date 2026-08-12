@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-11"
+    "last_day": "2026-08-12"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2226,6 +2226,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7T4FFL",
       "result": "success",
       "video_id": "b30Yclf_y7c"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/paint_not_sticking_to_metal-180_grit_for_proper_metal_prep-metal-039.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_not_sticking_to_metal-180_grit_for_proper_metal_prep-metal-039.mp4",
+      "filename": "paint_not_sticking_to_metal-180_grit_for_proper_metal_prep-metal-039.mp4",
+      "manifest": "metal.json",
+      "title": "Paint Not Sticking to Metal? Scuff Prep With 180 Grit",
+      "destination_url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "result": "success",
+      "video_id": "lyK-vs7ozb0"
     }
   },
   "runs": [
@@ -3561,6 +3571,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_feels_uneven_after_grinding-150_grit_for_leveling_metal_surface-metal-038.mp4",
       "result": "success",
       "video_id": "b30Yclf_y7c"
+    },
+    {
+      "ts_utc": "2026-08-12T11:45:15.955868+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_not_sticking_to_metal-180_grit_for_proper_metal_prep-metal-039.mp4",
+      "result": "success",
+      "video_id": "lyK-vs7ozb0"
     }
   ],
   "last_post": {
