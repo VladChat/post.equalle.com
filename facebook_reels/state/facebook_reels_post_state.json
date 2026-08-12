@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-08-10"
+    "manifest_index": 4,
+    "last_day": "2026-08-12"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2989,6 +2989,17 @@
       "comment_status": "commented",
       "comment_id": "1819034669472763_1417753140219964",
       "commented_ts_utc": "2026-08-10T15:12:55Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_scratches_showing_through-320_grit_for_plastic_scratch_refinement-plastic-029.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_scratches_showing_through-320_grit_for_plastic_scratch_refinement-plastic-029.mp4",
+      "filename": "paint_scratches_showing_through-320_grit_for_plastic_scratch_refinement-plastic-029.mp4",
+      "manifest": "plastic.json",
+      "title": "Scratches Showing Through Paint? Refine With 320 Grit",
+      "description": "If scratches are showing through paint on plastic, the surface needs finer refinement. 320 grit helps reduce scratch depth and even out sanding lines before priming and repainting. Wipe clean to inspect. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-12T14:23:37Z",
+      "video_id": "2196313894486015"
     }
   },
   "runs": [
@@ -4295,6 +4306,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "1819034669472763",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-12T14:23:37Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_scratches_showing_through-320_grit_for_plastic_scratch_refinement-plastic-029.mp4",
+      "filename": "paint_scratches_showing_through-320_grit_for_plastic_scratch_refinement-plastic-029.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "2196313894486015",
       "error": null
     }
   ],
