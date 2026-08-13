@@ -4764,7 +4764,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18127803229741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 10
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-08-13T15:19:21Z",
+      "comment_text": "Quick check: if it still feels scratchy, you may need one grit lower for a short blend. Want a simple grit ladder?",
+      "comment_status": "commented",
+      "comment_id": "17945175225054400",
+      "commented_ts_utc": "2026-08-13T15:19:25Z"
     }
   },
   "runs": [
@@ -7429,6 +7439,15 @@
       "result": "commented",
       "comment_id": "18104577401162822",
       "template_idx": 16
+    },
+    {
+      "ts_utc": "2026-08-13T15:19:25Z",
+      "media_id": "18111662516287774",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_finish_looks_uneven-220_grit_for_smoothing_plastic_before_paint-plastic-028.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "17945175225054400",
+      "template_idx": 10
     }
   ]
 }
