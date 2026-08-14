@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-08-12"
+    "manifest_index": 0,
+    "last_day": "2026-08-14"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3010,6 +3010,17 @@
       "comment_status": "commented",
       "comment_id": "2196313894486015_1035649622440502",
       "commented_ts_utc": "2026-08-12T14:33:54Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4",
+      "filename": "between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4",
+      "manifest": "drywall.json",
+      "title": "Between-Coat Texture Too Heavy? Refine Drywall Surface With 180 Grit",
+      "description": "If texture feels too heavy between coats, sand lightly with 180 grit to refine high spots and smooth the surface before recoating. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-14T14:19:00Z",
+      "video_id": "2883842198640310"
     }
   },
   "runs": [
@@ -4325,6 +4336,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "2196313894486015",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-14T14:19:00Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4",
+      "filename": "between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "2883842198640310",
       "error": null
     }
   ],
