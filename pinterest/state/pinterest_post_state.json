@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-08-12"
+    "manifest_index": 1,
+    "last_day": "2026-08-14"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1838,6 +1838,20 @@
       "pin_id": "839428818092020078",
       "media_id": "3761403006709553152",
       "cover_image_url": "https://i.pinimg.com/1200x/8d/72/56/8d7256eac7ed433552e04cb3c23b18ff.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Sanding_Isnt_Cutting_It-60-80_Grit_for_Fast_Finish_Removal-wood-028.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Isnt_Cutting_It-60-80_Grit_for_Fast_Finish_Removal-wood-028.mp4",
+      "filename": "Sanding_Isnt_Cutting_It-60-80_Grit_for_Fast_Finish_Removal-wood-028.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7RDBQ1",
+      "title": "Sanding Isn't Cutting It: 60-80 Grit Fast Finish Removal",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-14T10:26:49+00:00",
+      "pin_id": "839428818092052825",
+      "media_id": "3767195643127315648",
+      "cover_image_url": "https://i.pinimg.com/1200x/e8/b6/8c/e8b68c9f707350232d4a41cfa2a120da.jpg"
     }
   },
   "runs": [
@@ -3149,6 +3163,16 @@
       "result": "success",
       "pin_id": "839428818092020078",
       "media_id": "3761403006709553152",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-14T10:26:49+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Isnt_Cutting_It-60-80_Grit_for_Fast_Finish_Removal-wood-028.mp4",
+      "filename": "Sanding_Isnt_Cutting_It-60-80_Grit_for_Fast_Finish_Removal-wood-028.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818092052825",
+      "media_id": "3767195643127315648",
       "error": null
     }
   ]
