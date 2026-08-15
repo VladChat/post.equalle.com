@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-08-13"
+    "manifest_index": 0,
+    "last_day": "2026-08-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -4775,6 +4775,30 @@
       "comment_status": "commented",
       "comment_id": "17945175225054400",
       "commented_ts_utc": "2026-08-13T15:19:25Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4",
+      "filename": "wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4",
+      "manifest": "drywall.json",
+      "title": "Wall Feels Rough After Coat Two? Smooth the Surface With 180 Grit",
+      "description": "If the wall feels rough after the second coat, sand lightly with 180 grit to smooth the surface and prep it for the next coat. Sandpaper eQualle",
+      "caption": "Wall Feels Rough After Coat Two? Smooth the Surface With 180 Grit\n\nIf the wall feels rough after the second coat, sand lightly with 180 grit to smooth the surface and prep it for the next coat. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-15T13:36:42Z",
+      "mode": "binary",
+      "container_id": "18128029018741317",
+      "media_id": "18124691897480658",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v26.0/18128029018741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18128029018741317"
+      }
     }
   },
   "runs": [
@@ -6338,6 +6362,17 @@
       "filename": "paint_finish_looks_uneven-220_grit_for_smoothing_plastic_before_paint-plastic-028.mp4",
       "container_id": "18127803229741317",
       "media_id": "18111662516287774",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-15T13:36:42Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4",
+      "filename": "wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4",
+      "container_id": "18128029018741317",
+      "media_id": "18124691897480658",
       "error": null
     }
   ],
