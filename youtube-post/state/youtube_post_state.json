@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-14"
+    "last_day": "2026-08-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2256,6 +2256,16 @@
       "destination_url": "https://equalle.com/products/150-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
       "result": "success",
       "video_id": "mEXlgW0jjYQ"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/metal_needs_scuffing_before_primer-180_grit_for_metal_primer_prep-metal-042.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_needs_scuffing_before_primer-180_grit_for_metal_primer_prep-metal-042.mp4",
+      "filename": "metal_needs_scuffing_before_primer-180_grit_for_metal_primer_prep-metal-042.mp4",
+      "manifest": "metal.json",
+      "title": "Scuff Metal Before Primer With 180 Grit for Better Adhesion",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8DTGHP",
+      "result": "success",
+      "video_id": "SDd6QXQo11s"
     }
   },
   "runs": [
@@ -3609,6 +3619,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/bare_metal_feels_too_rough-150_grit_for_smoothing_bare_metal-metal-041.mp4",
       "result": "success",
       "video_id": "mEXlgW0jjYQ"
+    },
+    {
+      "ts_utc": "2026-08-15T11:19:50.615932+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_needs_scuffing_before_primer-180_grit_for_metal_primer_prep-metal-042.mp4",
+      "result": "success",
+      "video_id": "SDd6QXQo11s"
     }
   ],
   "last_post": {
