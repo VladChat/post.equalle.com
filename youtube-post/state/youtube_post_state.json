@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-15"
+    "last_day": "2026-08-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2266,6 +2266,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ8DTGHP",
       "result": "success",
       "video_id": "SDd6QXQo11s"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/surface_too_smooth_after_cleanup-150-180_grit_for_controlled_scuffing-metal-043.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/surface_too_smooth_after_cleanup-150-180_grit_for_controlled_scuffing-metal-043.mp4",
+      "filename": "surface_too_smooth_after_cleanup-150-180_grit_for_controlled_scuffing-metal-043.mp4",
+      "manifest": "metal.json",
+      "title": "Surface Too Smooth After Cleanup? Use 150–180 Grit for Controlled Scuffing",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-150",
+      "result": "success",
+      "video_id": "d-H-pBLvVok"
     }
   },
   "runs": [
@@ -3625,6 +3635,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_needs_scuffing_before_primer-180_grit_for_metal_primer_prep-metal-042.mp4",
       "result": "success",
       "video_id": "SDd6QXQo11s"
+    },
+    {
+      "ts_utc": "2026-08-16T11:20:04.200994+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/surface_too_smooth_after_cleanup-150-180_grit_for_controlled_scuffing-metal-043.mp4",
+      "result": "success",
+      "video_id": "d-H-pBLvVok"
     }
   ],
   "last_post": {
