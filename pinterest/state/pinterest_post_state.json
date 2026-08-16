@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-08-14"
+    "manifest_index": 2,
+    "last_day": "2026-08-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1852,6 +1852,20 @@
       "pin_id": "839428818092052825",
       "media_id": "3767195643127315648",
       "cover_image_url": "https://i.pinimg.com/1200x/e8/b6/8c/e8b68c9f707350232d4a41cfa2a120da.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/next_coat_looks_uneven-1500-2000_grit_wet_sand_between_coats-wet-027.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/next_coat_looks_uneven-1500-2000_grit_wet_sand_between_coats-wet-027.mp4",
+      "filename": "next_coat_looks_uneven-1500-2000_grit_wet_sand_between_coats-wet-027.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://equalle.com/products/1500-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "title": "Next Coat Looks Uneven? Wet Sand 1500 To 2000 Grit Between Coats",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-16T09:46:53+00:00",
+      "pin_id": "839428818092084160",
+      "media_id": "3772912352511238656",
+      "cover_image_url": "https://i.pinimg.com/1200x/73/2a/bd/732abd9d71ed583b389385f8dc2b8824.jpg"
     }
   },
   "runs": [
@@ -3173,6 +3187,16 @@
       "result": "success",
       "pin_id": "839428818092052825",
       "media_id": "3767195643127315648",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-16T09:46:53+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/next_coat_looks_uneven-1500-2000_grit_wet_sand_between_coats-wet-027.mp4",
+      "filename": "next_coat_looks_uneven-1500-2000_grit_wet_sand_between_coats-wet-027.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818092084160",
+      "media_id": "3772912352511238656",
       "error": null
     }
   ]
