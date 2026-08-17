@@ -3041,7 +3041,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-08-17T13:49:06Z",
-      "video_id": "1021199527584488"
+      "video_id": "1021199527584488",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-08-17T14:33:32Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "1021199527584488_1871603297148550",
+      "commented_ts_utc": "2026-08-17T14:33:40Z"
     }
   },
   "runs": [
@@ -5583,6 +5593,15 @@
       "manifest": "drywall.json",
       "result": "commented",
       "comment_id": "2883842198640310_1586111366194999",
+      "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-08-17T14:33:40Z",
+      "video_id": "1021199527584488",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Need_to_Refinish_Fast-100_Grit_for_Removing_Old_Clear_Coat-wood-030.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "1021199527584488_1871603297148550",
       "template_idx": 12
     }
   ]
