@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-16"
+    "last_day": "2026-08-17"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2276,6 +2276,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-150",
       "result": "success",
       "video_id": "d-H-pBLvVok"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/metal_looks_patchy_before_paint-180_grit_for_even_metal_prep-metal-044.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_looks_patchy_before_paint-180_grit_for_even_metal_prep-metal-044.mp4",
+      "filename": "metal_looks_patchy_before_paint-180_grit_for_even_metal_prep-metal-044.mp4",
+      "manifest": "metal.json",
+      "title": "Even Out Patchy Metal Before Paint With 180 Grit Sandpaper",
+      "destination_url": "https://www.amazon.com/gp/product/B07RGRN3PL",
+      "result": "success",
+      "video_id": "cciZ7XIV3m0"
     }
   },
   "runs": [
@@ -3641,6 +3651,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/surface_too_smooth_after_cleanup-150-180_grit_for_controlled_scuffing-metal-043.mp4",
       "result": "success",
       "video_id": "d-H-pBLvVok"
+    },
+    {
+      "ts_utc": "2026-08-17T11:25:35.754170+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_looks_patchy_before_paint-180_grit_for_even_metal_prep-metal-044.mp4",
+      "result": "success",
+      "video_id": "cciZ7XIV3m0"
     }
   ],
   "last_post": {
