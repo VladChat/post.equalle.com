@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-08-14"
+    "manifest_index": 1,
+    "last_day": "2026-08-17"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3031,6 +3031,17 @@
       "comment_status": "commented",
       "comment_id": "2883842198640310_1586111366194999",
       "commented_ts_utc": "2026-08-14T14:29:21Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Need_to_Refinish_Fast-100_Grit_for_Removing_Old_Clear_Coat-wood-030.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Need_to_Refinish_Fast-100_Grit_for_Removing_Old_Clear_Coat-wood-030.mp4",
+      "filename": "Need_to_Refinish_Fast-100_Grit_for_Removing_Old_Clear_Coat-wood-030.mp4",
+      "manifest": "wood.json",
+      "title": "Need to Refinish Fast: 100 Grit Removing Old Clear Coat",
+      "description": "Need to Refinish Fast? Use 100 grit for removing old clear coat. Remove loose paint or old finish in controlled passes to avoid gouging the wood. Start with the recommended grit, vacuum dust, then step up in grit before repainting. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-17T13:49:06Z",
+      "video_id": "1021199527584488"
     }
   },
   "runs": [
@@ -4355,6 +4366,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "2883842198640310",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-17T13:49:06Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Need_to_Refinish_Fast-100_Grit_for_Removing_Old_Clear_Coat-wood-030.mp4",
+      "filename": "Need_to_Refinish_Fast-100_Grit_for_Removing_Old_Clear_Coat-wood-030.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "1021199527584488",
       "error": null
     }
   ],
