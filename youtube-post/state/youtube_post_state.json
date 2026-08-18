@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-17"
+    "last_day": "2026-08-18"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2286,6 +2286,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RGRN3PL",
       "result": "success",
       "video_id": "cciZ7XIV3m0"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/weld_area_not_blending_in-150-180_grit_for_blending_welded_areas-metal-045.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_area_not_blending_in-150-180_grit_for_blending_welded_areas-metal-045.mp4",
+      "filename": "weld_area_not_blending_in-150-180_grit_for_blending_welded_areas-metal-045.mp4",
+      "manifest": "metal.json",
+      "title": "Blend a Weld Area That Won’t Match: Use 150–180 Grit on Metal",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-150",
+      "result": "success",
+      "video_id": "kBH0H8Bn7so"
     }
   },
   "runs": [
@@ -3657,6 +3667,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_looks_patchy_before_paint-180_grit_for_even_metal_prep-metal-044.mp4",
       "result": "success",
       "video_id": "cciZ7XIV3m0"
+    },
+    {
+      "ts_utc": "2026-08-18T11:25:00.115041+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_area_not_blending_in-150-180_grit_for_blending_welded_areas-metal-045.mp4",
+      "result": "success",
+      "video_id": "kBH0H8Bn7so"
     }
   ],
   "last_post": {
