@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-08-17"
+    "manifest_index": 4,
+    "last_day": "2026-08-19"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1880,6 +1880,20 @@
       "pin_id": "839428818092102035",
       "media_id": "3775840392876918656",
       "cover_image_url": "https://i.pinimg.com/1200x/cf/41/fe/cf41fe2cbd153f7f3389b47f8bc71706.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/primer_not_bonding_to_plastic-220_grit_for_primer_prep_on_plastic-plastic-027.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/primer_not_bonding_to_plastic-220_grit_for_primer_prep_on_plastic-plastic-027.mp4",
+      "filename": "primer_not_bonding_to_plastic-220_grit_for_primer_prep_on_plastic-plastic-027.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-220",
+      "title": "Primer Not Bonding? Prep Plastic With 220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-19T09:53:05+00:00",
+      "pin_id": "839428818092136083",
+      "media_id": "3781622012671978048",
+      "cover_image_url": "https://i.pinimg.com/1200x/7b/d0/5a/7bd05ad1e4617b053adf1eab7ccb00a0.jpg"
     }
   },
   "runs": [
@@ -3221,6 +3235,16 @@
       "result": "success",
       "pin_id": "839428818092102035",
       "media_id": "3775840392876918656",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-19T09:53:05+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/primer_not_bonding_to_plastic-220_grit_for_primer_prep_on_plastic-plastic-027.mp4",
+      "filename": "primer_not_bonding_to_plastic-220_grit_for_primer_prep_on_plastic-plastic-027.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818092136083",
+      "media_id": "3781622012671978048",
       "error": null
     }
   ]
