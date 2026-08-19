@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-18"
+    "last_day": "2026-08-19"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2296,6 +2296,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-150",
       "result": "success",
       "video_id": "kBH0H8Bn7so"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/metal_feels_sharp_around_edges-150_grit_for_softening_metal_edges-metal-046.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_feels_sharp_around_edges-150_grit_for_softening_metal_edges-metal-046.mp4",
+      "filename": "metal_feels_sharp_around_edges-150_grit_for_softening_metal_edges-metal-046.mp4",
+      "manifest": "metal.json",
+      "title": "Soften Sharp Metal Edges Safely With 150 Grit Sandpaper",
+      "destination_url": "https://www.amazon.com/gp/product/B07QF44CQT",
+      "result": "success",
+      "video_id": "QagJkowGbbU"
     }
   },
   "runs": [
@@ -3673,6 +3683,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_area_not_blending_in-150-180_grit_for_blending_welded_areas-metal-045.mp4",
       "result": "success",
       "video_id": "kBH0H8Bn7so"
+    },
+    {
+      "ts_utc": "2026-08-19T11:24:34.829837+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_feels_sharp_around_edges-150_grit_for_softening_metal_edges-metal-046.mp4",
+      "result": "success",
+      "video_id": "QagJkowGbbU"
     }
   ],
   "last_post": {
