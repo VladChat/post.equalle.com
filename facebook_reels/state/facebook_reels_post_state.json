@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-08-17"
+    "manifest_index": 2,
+    "last_day": "2026-08-19"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3052,6 +3052,17 @@
       "comment_status": "commented",
       "comment_id": "1021199527584488_1871603297148550",
       "commented_ts_utc": "2026-08-17T14:33:40Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/paint_not_ready_for_second_coat-2000_grit_wet_sand_before_recoating-wet-030.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_not_ready_for_second_coat-2000_grit_wet_sand_before_recoating-wet-030.mp4",
+      "filename": "paint_not_ready_for_second_coat-2000_grit_wet_sand_before_recoating-wet-030.mp4",
+      "manifest": "wet.json",
+      "title": "Not Ready For Second Coat? 2000 Grit Wet Sand Before Recoating",
+      "description": "Paint not ready for a second coat? Wet sand with 2000 grit to smooth texture and improve coat prep. Keep the surface wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light before recoating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-19T13:52:43Z",
+      "video_id": "1973549260002401"
     }
   },
   "runs": [
@@ -4385,6 +4396,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "1021199527584488",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-19T13:52:43Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_not_ready_for_second_coat-2000_grit_wet_sand_before_recoating-wet-030.mp4",
+      "filename": "paint_not_ready_for_second_coat-2000_grit_wet_sand_before_recoating-wet-030.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "1973549260002401",
       "error": null
     }
   ],
