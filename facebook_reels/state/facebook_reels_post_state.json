@@ -3062,7 +3062,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-08-19T13:52:43Z",
-      "video_id": "1973549260002401"
+      "video_id": "1973549260002401",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 2
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-08-19T14:33:04Z",
+      "comment_text": "Keep the block flat so you don’t dig grooves at the edges. Are you using a sanding block or hand-only?",
+      "comment_status": "commented",
+      "comment_id": "1973549260002401_1646331167053184",
+      "commented_ts_utc": "2026-08-19T14:33:08Z"
     }
   },
   "runs": [
@@ -5623,6 +5633,15 @@
       "result": "commented",
       "comment_id": "1021199527584488_1871603297148550",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-08-19T14:33:08Z",
+      "video_id": "1973549260002401",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_not_ready_for_second_coat-2000_grit_wet_sand_before_recoating-wet-030.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1973549260002401_1646331167053184",
+      "template_idx": 2
     }
   ]
 }
