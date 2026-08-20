@@ -4866,7 +4866,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18128563213741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-08-20T14:51:58Z",
+      "comment_text": "For wet-sanding work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "18108276644329708",
+      "commented_ts_utc": "2026-08-20T14:52:01Z"
     }
   },
   "runs": [
@@ -7591,6 +7601,15 @@
       "result": "commented",
       "comment_id": "18130803760636968",
       "template_idx": 1
+    },
+    {
+      "ts_utc": "2026-08-20T14:52:01Z",
+      "media_id": "18175338154437912",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_not_ready_for_second_coat-2000_grit_wet_sand_before_recoating-wet-030.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18108276644329708",
+      "template_idx": 3
     }
   ]
 }
