@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-08-18"
+    "manifest_index": 2,
+    "last_day": "2026-08-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -4843,6 +4843,30 @@
       "comment_status": "commented",
       "comment_id": "18130803760636968",
       "commented_ts_utc": "2026-08-18T13:59:45Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/paint_not_ready_for_second_coat-2000_grit_wet_sand_before_recoating-wet-030.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_not_ready_for_second_coat-2000_grit_wet_sand_before_recoating-wet-030.mp4",
+      "filename": "paint_not_ready_for_second_coat-2000_grit_wet_sand_before_recoating-wet-030.mp4",
+      "manifest": "wet.json",
+      "title": "Not Ready For Second Coat? 2000 Grit Wet Sand Before Recoating",
+      "description": "Paint not ready for a second coat? Wet sand with 2000 grit to smooth texture and improve coat prep. Keep the surface wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light before recoating. Wet or dry use. — eQualle",
+      "caption": "Not Ready For Second Coat? 2000 Grit Wet Sand Before Recoating\n\nPaint not ready for a second coat? Wet sand with 2000 grit to smooth texture and improve coat prep. Keep the surface wet, use light pressure, crosshatch passes, wipe clean often, and inspect under strong light before recoating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-20T13:51:50Z",
+      "mode": "binary",
+      "container_id": "18128563213741317",
+      "media_id": "18175338154437912",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v26.0/18128563213741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18128563213741317"
+      }
     }
   },
   "runs": [
@@ -6428,6 +6452,17 @@
       "filename": "Need_to_Refinish_Fast-100_Grit_for_Removing_Old_Clear_Coat-wood-030.mp4",
       "container_id": "18128355520741317",
       "media_id": "18117955501941177",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-20T13:51:50Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wet.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/paint_not_ready_for_second_coat-2000_grit_wet_sand_before_recoating-wet-030.mp4",
+      "filename": "paint_not_ready_for_second_coat-2000_grit_wet_sand_before_recoating-wet-030.mp4",
+      "container_id": "18128563213741317",
+      "media_id": "18175338154437912",
       "error": null
     }
   ],
