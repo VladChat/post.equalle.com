@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-08-19"
+    "manifest_index": 0,
+    "last_day": "2026-08-21"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1894,6 +1894,20 @@
       "pin_id": "839428818092136083",
       "media_id": "3781622012671978048",
       "cover_image_url": "https://i.pinimg.com/1200x/7b/d0/5a/7bd05ad1e4617b053adf1eab7ccb00a0.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4",
+      "filename": "joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049941",
+      "destination_url": "https://www.amazon.com/gp/product/B07RL3XSWS",
+      "title": "Joint Lines Still Shadowing? Final Feather Prep With 220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-21T09:55:47+00:00",
+      "pin_id": "839428818092167471",
+      "media_id": "3787424340380248192",
+      "cover_image_url": "https://i.pinimg.com/1200x/79/d2/47/79d24725b911b12a4cc221b536f4626d.jpg"
     }
   },
   "runs": [
@@ -3245,6 +3259,16 @@
       "result": "success",
       "pin_id": "839428818092136083",
       "media_id": "3781622012671978048",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-21T09:55:47+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4",
+      "filename": "joint_lines_still_shadowing-220_grit_for_final_feather_prep-drywall-028.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818092167471",
+      "media_id": "3787424340380248192",
       "error": null
     }
   ]
