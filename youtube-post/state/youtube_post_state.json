@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-20"
+    "last_day": "2026-08-21"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2316,6 +2316,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-120",
       "result": "success",
       "video_id": "wuh-BAGTm04"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/sharp_metal_edges_after_cutting-150_grit_for_softening_metal_edges-metal-048.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/sharp_metal_edges_after_cutting-150_grit_for_softening_metal_edges-metal-048.mp4",
+      "filename": "sharp_metal_edges_after_cutting-150_grit_for_softening_metal_edges-metal-048.mp4",
+      "manifest": "metal.json",
+      "title": "Smooth Sharp Cut Metal Edges With 150 Grit (Quick Deburr)",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVW4J5",
+      "result": "success",
+      "video_id": "wxENe6W2e-c"
     }
   },
   "runs": [
@@ -3705,6 +3715,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/surface_not_clean_enough_for_welding-120_grit_for_pre-weld_prep-metal-047.mp4",
       "result": "success",
       "video_id": "wuh-BAGTm04"
+    },
+    {
+      "ts_utc": "2026-08-21T11:25:38.018026+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/sharp_metal_edges_after_cutting-150_grit_for_softening_metal_edges-metal-048.mp4",
+      "result": "success",
+      "video_id": "wxENe6W2e-c"
     }
   ],
   "last_post": {
