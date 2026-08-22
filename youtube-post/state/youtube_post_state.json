@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-21"
+    "last_day": "2026-08-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2326,6 +2326,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RHVW4J5",
       "result": "success",
       "video_id": "wxENe6W2e-c"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/weld_beads_standing_too_high-120_grit_for_leveling_weld_beads-metal-049.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_beads_standing_too_high-120_grit_for_leveling_weld_beads-metal-049.mp4",
+      "filename": "weld_beads_standing_too_high-120_grit_for_leveling_weld_beads-metal-049.mp4",
+      "manifest": "metal.json",
+      "title": "Level High Weld Beads on Metal With 120 Grit Sandpaper",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-120",
+      "result": "success",
+      "video_id": "NXrtaWLh2Gk"
     }
   },
   "runs": [
@@ -3721,6 +3731,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/sharp_metal_edges_after_cutting-150_grit_for_softening_metal_edges-metal-048.mp4",
       "result": "success",
       "video_id": "wxENe6W2e-c"
+    },
+    {
+      "ts_utc": "2026-08-22T11:20:10.188444+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_beads_standing_too_high-120_grit_for_leveling_weld_beads-metal-049.mp4",
+      "result": "success",
+      "video_id": "NXrtaWLh2Gk"
     }
   ],
   "last_post": {
