@@ -4900,7 +4900,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18128762113741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-08-22T14:42:44Z",
+      "comment_text": "For metal work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "17882174913491810",
+      "commented_ts_utc": "2026-08-22T14:42:47Z"
     }
   },
   "runs": [
@@ -7644,6 +7654,15 @@
       "manifest": "wet.json",
       "result": "commented",
       "comment_id": "18108276644329708",
+      "template_idx": 3
+    },
+    {
+      "ts_utc": "2026-08-22T14:42:47Z",
+      "media_id": "18077781941702606",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "17882174913491810",
       "template_idx": 3
     }
   ]
