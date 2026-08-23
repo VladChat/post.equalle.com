@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-22"
+    "last_day": "2026-08-23"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2336,6 +2336,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-120",
       "result": "success",
       "video_id": "NXrtaWLh2Gk"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/metal_corners_hard_to_smooth-150_grit_for_sanding_metal_corners-metal-050.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_corners_hard_to_smooth-150_grit_for_sanding_metal_corners-metal-050.mp4",
+      "filename": "metal_corners_hard_to_smooth-150_grit_for_sanding_metal_corners-metal-050.mp4",
+      "manifest": "metal.json",
+      "title": "Sand Metal Corners Cleanly With 150 Grit for Smoother Edges",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7T4FFL",
+      "result": "success",
+      "video_id": "9ot68BtzZ5I"
     }
   },
   "runs": [
@@ -3737,6 +3747,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_beads_standing_too_high-120_grit_for_leveling_weld_beads-metal-049.mp4",
       "result": "success",
       "video_id": "NXrtaWLh2Gk"
+    },
+    {
+      "ts_utc": "2026-08-23T11:20:20.034466+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_corners_hard_to_smooth-150_grit_for_sanding_metal_corners-metal-050.mp4",
+      "result": "success",
+      "video_id": "9ot68BtzZ5I"
     }
   ],
   "last_post": {
