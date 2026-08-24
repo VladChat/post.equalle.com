@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-08-21"
+    "manifest_index": 4,
+    "last_day": "2026-08-24"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3094,6 +3094,17 @@
       "comment_status": "commented",
       "comment_id": "3269737929887744_1059410773508890",
       "commented_ts_utc": "2026-08-21T15:02:04Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_runs_stand_out_more-320_grit_for_light_plastic_scuff_sand-plastic-030.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_runs_stand_out_more-320_grit_for_light_plastic_scuff_sand-plastic-030.mp4",
+      "filename": "paint_runs_stand_out_more-320_grit_for_light_plastic_scuff_sand-plastic-030.mp4",
+      "manifest": "plastic.json",
+      "title": "Paint Runs Stand Out? Lightly Scuff Plastic With 320 Grit",
+      "description": "When paint runs stand out on plastic, a light scuff helps the next coat level better. 320 grit is a fine option for gentle scuff sanding without deep scratches. Wipe clean before recoating. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-24T13:58:04Z",
+      "video_id": "1176755325020791"
     }
   },
   "runs": [
@@ -4445,6 +4456,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "3269737929887744",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-24T13:58:04Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_runs_stand_out_more-320_grit_for_light_plastic_scuff_sand-plastic-030.mp4",
+      "filename": "paint_runs_stand_out_more-320_grit_for_light_plastic_scuff_sand-plastic-030.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "1176755325020791",
       "error": null
     }
   ],
