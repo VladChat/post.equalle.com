@@ -3104,7 +3104,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-08-24T13:58:04Z",
-      "video_id": "1176755325020791"
+      "video_id": "1176755325020791",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 11
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-08-24T14:27:40Z",
+      "comment_text": "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+      "comment_status": "commented",
+      "comment_id": "1176755325020791_1087852777230162",
+      "commented_ts_utc": "2026-08-24T14:27:47Z"
     }
   },
   "runs": [
@@ -5701,6 +5711,15 @@
       "result": "commented",
       "comment_id": "3269737929887744_1059410773508890",
       "template_idx": 9
+    },
+    {
+      "ts_utc": "2026-08-24T14:27:47Z",
+      "video_id": "1176755325020791",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_runs_stand_out_more-320_grit_for_light_plastic_scuff_sand-plastic-030.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "1176755325020791_1087852777230162",
+      "template_idx": 11
     }
   ]
 }
