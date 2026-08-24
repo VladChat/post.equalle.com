@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-08-23"
+    "manifest_index": 2,
+    "last_day": "2026-08-24"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1922,6 +1922,20 @@
       "pin_id": "839428818092199637",
       "media_id": "3793207255610749440",
       "cover_image_url": "https://i.pinimg.com/1200x/a5/10/ca/a510cab3c0fd4619bea3c3990c39873f.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/fresh_paint_shows_texture-2000_grit_wet_sand_to_smooth_paint-wet-028.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/fresh_paint_shows_texture-2000_grit_wet_sand_to_smooth_paint-wet-028.mp4",
+      "filename": "fresh_paint_shows_texture-2000_grit_wet_sand_to_smooth_paint-wet-028.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://www.amazon.com/gp/product/B07RFT53W6",
+      "title": "Fresh Paint Shows Texture? 2000 Grit Wet Sand To Smooth",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-24T10:07:57+00:00",
+      "pin_id": "839428818092217277",
+      "media_id": "3796147169817634432",
+      "cover_image_url": "https://i.pinimg.com/1200x/d4/09/06/d40906c03c0ba7699c1609c011c36b47.jpg"
     }
   },
   "runs": [
@@ -3293,6 +3307,16 @@
       "result": "success",
       "pin_id": "839428818092199637",
       "media_id": "3793207255610749440",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-24T10:07:57+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/fresh_paint_shows_texture-2000_grit_wet_sand_to_smooth_paint-wet-028.mp4",
+      "filename": "fresh_paint_shows_texture-2000_grit_wet_sand_to_smooth_paint-wet-028.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818092217277",
+      "media_id": "3796147169817634432",
       "error": null
     }
   ]
