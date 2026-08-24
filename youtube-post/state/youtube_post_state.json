@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-23"
+    "last_day": "2026-08-24"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2346,6 +2346,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7T4FFL",
       "result": "success",
       "video_id": "9ot68BtzZ5I"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/weld_area_looks_uneven-150_grit_for_blending_welded_metal-metal-051.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_area_looks_uneven-150_grit_for_blending_welded_metal-metal-051.mp4",
+      "filename": "weld_area_looks_uneven-150_grit_for_blending_welded_metal-metal-051.mp4",
+      "manifest": "metal.json",
+      "title": "Blend an Uneven Weld Area on Metal With 150 Grit Sandpaper",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-150",
+      "result": "success",
+      "video_id": "jCF8DFFR9dY"
     }
   },
   "runs": [
@@ -3753,6 +3763,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_corners_hard_to_smooth-150_grit_for_sanding_metal_corners-metal-050.mp4",
       "result": "success",
       "video_id": "9ot68BtzZ5I"
+    },
+    {
+      "ts_utc": "2026-08-24T11:28:29.768248+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_area_looks_uneven-150_grit_for_blending_welded_metal-metal-051.mp4",
+      "result": "success",
+      "video_id": "jCF8DFFR9dY"
     }
   ],
   "last_post": {
