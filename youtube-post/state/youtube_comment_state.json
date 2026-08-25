@@ -1912,6 +1912,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-08-24T11:47:38Z",
       "verify_after_ts": 1787573858.7787316
+    },
+    "dM4j3-sin0Y": {
+      "comment_status": "commented_unverified",
+      "comment_id": "UgwvbcsyZyx3UVqtZuF4AaABAg",
+      "comment_text": "Don’t chase one spot too long—blend the area wider and re-check so you don’t create a low spot. Are the edges still visible on your surface?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-08-25T11:47:53Z",
+      "verify_after_ts": 1787660273.374583
     }
   },
   "runs": [
@@ -3333,6 +3341,12 @@
       "video_id": "jCF8DFFR9dY",
       "result": "commented_unverified",
       "comment_id": "UgxVABfrKLmj9ebw6jp4AaABAg"
+    },
+    {
+      "ts": "2026-08-25T11:47:53Z",
+      "video_id": "dM4j3-sin0Y",
+      "result": "commented_unverified",
+      "comment_id": "UgwvbcsyZyx3UVqtZuF4AaABAg"
     }
   ]
 }
