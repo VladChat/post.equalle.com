@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-24"
+    "last_day": "2026-08-25"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2356,6 +2356,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-150",
       "result": "success",
       "video_id": "jCF8DFFR9dY"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/edges_catching_on_hands-150_grit_for_edge_cleanup_on_metal-metal-052.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/edges_catching_on_hands-150_grit_for_edge_cleanup_on_metal-metal-052.mp4",
+      "filename": "edges_catching_on_hands-150_grit_for_edge_cleanup_on_metal-metal-052.mp4",
+      "manifest": "metal.json",
+      "title": "Edges Catching on Hands? Clean Up Metal Edges With 150 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RJZ3C39",
+      "result": "success",
+      "video_id": "dM4j3-sin0Y"
     }
   },
   "runs": [
@@ -3769,6 +3779,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_area_looks_uneven-150_grit_for_blending_welded_metal-metal-051.mp4",
       "result": "success",
       "video_id": "jCF8DFFR9dY"
+    },
+    {
+      "ts_utc": "2026-08-25T11:27:12.839241+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/edges_catching_on_hands-150_grit_for_edge_cleanup_on_metal-metal-052.mp4",
+      "result": "success",
+      "video_id": "dM4j3-sin0Y"
     }
   ],
   "last_post": {
