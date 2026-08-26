@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-08-24"
+    "manifest_index": 0,
+    "last_day": "2026-08-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3115,6 +3115,17 @@
       "comment_status": "commented",
       "comment_id": "1176755325020791_1087852777230162",
       "commented_ts_utc": "2026-08-24T14:27:47Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4",
+      "filename": "drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4",
+      "manifest": "drywall.json",
+      "title": "Looks Flat but Feels Rough? Light Sand Between Coats With 220 Grit",
+      "description": "If the surface looks flat but feels rough, do a light pass with 220 grit to smooth the feel and prep for the next coat. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-26T14:00:41Z",
+      "video_id": "1620918309669671"
     }
   },
   "runs": [
@@ -4475,6 +4486,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1176755325020791",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-26T14:00:41Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4",
+      "filename": "drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1620918309669671",
       "error": null
     }
   ],
