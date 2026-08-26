@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-08-24"
+    "manifest_index": 3,
+    "last_day": "2026-08-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1936,6 +1936,20 @@
       "pin_id": "839428818092217277",
       "media_id": "3796147169817634432",
       "cover_image_url": "https://i.pinimg.com/1200x/d4/09/06/d40906c03c0ba7699c1609c011c36b47.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/powder_coat_too_hard_to_remove-60-80_grit_for_coating_removal-metal-027.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/powder_coat_too_hard_to_remove-60-80_grit_for_coating_removal-metal-027.mp4",
+      "filename": "powder_coat_too_hard_to_remove-60-80_grit_for_coating_removal-metal-027.mp4",
+      "manifest": "metal.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-60",
+      "title": "Remove Tough Powder Coat From Metal With 60–80 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-26T10:03:42+00:00",
+      "pin_id": "839428818092253419",
+      "media_id": "3801931643381305472",
+      "cover_image_url": "https://i.pinimg.com/1200x/d5/d0/6a/d5d06a9430c055c41faf109453ed8be7.jpg"
     }
   },
   "runs": [
@@ -3317,6 +3331,16 @@
       "result": "success",
       "pin_id": "839428818092217277",
       "media_id": "3796147169817634432",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-26T10:03:42+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/powder_coat_too_hard_to_remove-60-80_grit_for_coating_removal-metal-027.mp4",
+      "filename": "powder_coat_too_hard_to_remove-60-80_grit_for_coating_removal-metal-027.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "pin_id": "839428818092253419",
+      "media_id": "3801931643381305472",
       "error": null
     }
   ]
