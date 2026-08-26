@@ -3125,7 +3125,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-08-26T14:00:41Z",
-      "video_id": "1620918309669671"
+      "video_id": "1620918309669671",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 15
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-08-26T14:41:08Z",
+      "comment_text": "A quick mist/wipe (for wet sanding) can show high spots fast. Are you using water or a lubricant?",
+      "comment_status": "commented",
+      "comment_id": "1620918309669671_1385714279572337",
+      "commented_ts_utc": "2026-08-26T14:41:13Z"
     }
   },
   "runs": [
@@ -5740,6 +5750,15 @@
       "result": "commented",
       "comment_id": "1176755325020791_1087852777230162",
       "template_idx": 11
+    },
+    {
+      "ts_utc": "2026-08-26T14:41:13Z",
+      "video_id": "1620918309669671",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1620918309669671_1385714279572337",
+      "template_idx": 15
     }
   ]
 }
