@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-25"
+    "last_day": "2026-08-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2366,6 +2366,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RJZ3C39",
       "result": "success",
       "video_id": "dM4j3-sin0Y"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/metal_details_feel_too_rough-180_grit_for_detail_metal_sanding-metal-053.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_details_feel_too_rough-180_grit_for_detail_metal_sanding-metal-053.mp4",
+      "filename": "metal_details_feel_too_rough-180_grit_for_detail_metal_sanding-metal-053.mp4",
+      "manifest": "metal.json",
+      "title": "Detail Sanding on Metal: Use 180 Grit to Smooth Rough Spots",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-180",
+      "result": "success",
+      "video_id": "kJKnmYBDuJ8"
     }
   },
   "runs": [
@@ -3785,6 +3795,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/edges_catching_on_hands-150_grit_for_edge_cleanup_on_metal-metal-052.mp4",
       "result": "success",
       "video_id": "dM4j3-sin0Y"
+    },
+    {
+      "ts_utc": "2026-08-26T11:29:46.935706+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_details_feel_too_rough-180_grit_for_detail_metal_sanding-metal-053.mp4",
+      "result": "success",
+      "video_id": "kJKnmYBDuJ8"
     }
   ],
   "last_post": {
