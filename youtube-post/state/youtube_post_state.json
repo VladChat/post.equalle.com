@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-26"
+    "last_day": "2026-08-27"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2376,6 +2376,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-180",
       "result": "success",
       "video_id": "kJKnmYBDuJ8"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/small_metal_parts_hard_to_prep-150_grit_for_hand_sanding_metal_parts-metal-054.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/small_metal_parts_hard_to_prep-150_grit_for_hand_sanding_metal_parts-metal-054.mp4",
+      "filename": "small_metal_parts_hard_to_prep-150_grit_for_hand_sanding_metal_parts-metal-054.mp4",
+      "manifest": "metal.json",
+      "title": "Hand Sand Small Metal Parts With 150 Grit for Better Surface Prep",
+      "destination_url": "https://www.amazon.com/gp/product/B07QF44CQT",
+      "result": "success",
+      "video_id": "Idq8f9bvzyc"
     }
   },
   "runs": [
@@ -3801,6 +3811,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_details_feel_too_rough-180_grit_for_detail_metal_sanding-metal-053.mp4",
       "result": "success",
       "video_id": "kJKnmYBDuJ8"
+    },
+    {
+      "ts_utc": "2026-08-27T20:54:51.036567+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/small_metal_parts_hard_to_prep-150_grit_for_hand_sanding_metal_parts-metal-054.mp4",
+      "result": "success",
+      "video_id": "Idq8f9bvzyc"
     }
   ],
   "last_post": {
