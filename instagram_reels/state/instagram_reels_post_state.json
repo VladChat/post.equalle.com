@@ -4968,7 +4968,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18129305689741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 11
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-08-27T23:12:01Z",
+      "comment_text": "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+      "comment_status": "commented",
+      "comment_id": "18104905706160679",
+      "commented_ts_utc": "2026-08-27T23:12:04Z"
     }
   },
   "runs": [
@@ -7753,6 +7763,15 @@
       "result": "commented",
       "comment_id": "17864969112660185",
       "template_idx": 5
+    },
+    {
+      "ts_utc": "2026-08-27T23:12:04Z",
+      "media_id": "18108630533142638",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18104905706160679",
+      "template_idx": 11
     }
   ]
 }
