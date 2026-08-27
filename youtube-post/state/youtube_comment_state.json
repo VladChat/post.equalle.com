@@ -1928,6 +1928,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-08-26T11:49:18Z",
       "verify_after_ts": 1787746758.8002443
+    },
+    "Idq8f9bvzyc": {
+      "comment_status": "commented_unverified",
+      "comment_id": "UgzTPiRzFpmZP59BOEZ4AaABAg",
+      "comment_text": "Between coats of paint or clear coat on surface, use a light touch and stop as soon as the surface feels even—over-sanding can cut through edges. Which coat are you on?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-08-27T21:03:25Z",
+      "verify_after_ts": 1787866405.0177104
     }
   },
   "runs": [
@@ -3361,6 +3369,12 @@
       "video_id": "kJKnmYBDuJ8",
       "result": "commented_unverified",
       "comment_id": "UgymUnlHHMH89rQ-S6J4AaABAg"
+    },
+    {
+      "ts": "2026-08-27T21:03:25Z",
+      "video_id": "Idq8f9bvzyc",
+      "result": "commented_unverified",
+      "comment_id": "UgzTPiRzFpmZP59BOEZ4AaABAg"
     }
   ]
 }
