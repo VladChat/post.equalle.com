@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-08-25"
+    "manifest_index": 0,
+    "last_day": "2026-08-27"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -4945,6 +4945,30 @@
       "comment_status": "commented",
       "comment_id": "17864969112660185",
       "commented_ts_utc": "2026-08-25T14:37:13Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4",
+      "filename": "patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4",
+      "manifest": "drywall.json",
+      "title": "Patch Edges Catch the Light? Blend Drywall Edges With 220 Grit",
+      "description": "If patch edges catch the light, sand with 220 grit using light pressure to blend the edge and smooth the transition before primer. Sandpaper eQualle",
+      "caption": "Patch Edges Catch the Light? Blend Drywall Edges With 220 Grit\n\nIf patch edges catch the light, sand with 220 grit using light pressure to blend the edge and smooth the transition before primer. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-27T22:55:31Z",
+      "mode": "binary",
+      "container_id": "18129305689741317",
+      "media_id": "18108630533142638",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v26.0/18129305689741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18129305689741317"
+      }
     }
   },
   "runs": [
@@ -6563,6 +6587,17 @@
       "filename": "paint_scratches_showing_through-320_grit_for_plastic_scratch_refinement-plastic-029.mp4",
       "container_id": "18129074761741317",
       "media_id": "18089227067299054",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-27T22:55:31Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4",
+      "filename": "patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4",
+      "container_id": "18129305689741317",
+      "media_id": "18108630533142638",
       "error": null
     }
   ],
