@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-27"
+    "last_day": "2026-08-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2386,6 +2386,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QF44CQT",
       "result": "success",
       "video_id": "Idq8f9bvzyc"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/weld_transitions_too_visible-180_grit_for_smoothing_weld_transitions-metal-055.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_transitions_too_visible-180_grit_for_smoothing_weld_transitions-metal-055.mp4",
+      "filename": "weld_transitions_too_visible-180_grit_for_smoothing_weld_transitions-metal-055.mp4",
+      "manifest": "metal.json",
+      "title": "Make Weld Transitions Less Visible Using 180 Grit on Metal",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-180",
+      "result": "success",
+      "video_id": "S6NZ27XXujg"
     }
   },
   "runs": [
@@ -3817,6 +3827,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/small_metal_parts_hard_to_prep-150_grit_for_hand_sanding_metal_parts-metal-054.mp4",
       "result": "success",
       "video_id": "Idq8f9bvzyc"
+    },
+    {
+      "ts_utc": "2026-08-28T21:19:22.900626+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_transitions_too_visible-180_grit_for_smoothing_weld_transitions-metal-055.mp4",
+      "result": "success",
+      "video_id": "S6NZ27XXujg"
     }
   ],
   "last_post": {
