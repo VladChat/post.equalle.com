@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-08-26"
+    "manifest_index": 1,
+    "last_day": "2026-08-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3136,6 +3136,17 @@
       "comment_status": "commented",
       "comment_id": "1620918309669671_1385714279572337",
       "commented_ts_utc": "2026-08-26T14:41:13Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4",
+      "filename": "Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4",
+      "manifest": "wood.json",
+      "title": "Scratches Still Showing: 150 Grit Removing Scratches",
+      "description": "Scratches Still Showing? Use 150 grit for removing scratches. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-28T23:00:10Z",
+      "video_id": "815489431621055"
     }
   },
   "runs": [
@@ -4505,6 +4516,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "1620918309669671",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-28T23:00:10Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4",
+      "filename": "Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "815489431621055",
       "error": null
     }
   ],
