@@ -3146,7 +3146,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-08-28T23:00:10Z",
-      "video_id": "815489431621055"
+      "video_id": "815489431621055",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 17
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-08-28T23:43:14Z",
+      "comment_text": "Don’t chase one spot too long—blend the area wider and re-check. Are the edges still visible?",
+      "comment_status": "commented",
+      "comment_id": "815489431621055_1028266830001982",
+      "commented_ts_utc": "2026-08-28T23:43:18Z"
     }
   },
   "runs": [
@@ -5779,6 +5789,15 @@
       "result": "commented",
       "comment_id": "1620918309669671_1385714279572337",
       "template_idx": 15
+    },
+    {
+      "ts_utc": "2026-08-28T23:43:18Z",
+      "video_id": "815489431621055",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "815489431621055_1028266830001982",
+      "template_idx": 17
     }
   ]
 }
