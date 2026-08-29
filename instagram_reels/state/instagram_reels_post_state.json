@@ -5002,7 +5002,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18129504040741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 9
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-08-29T17:12:39Z",
+      "comment_text": "For corners/edges, ease up and let the abrasive do the work. Are edges the hardest part for you too?",
+      "comment_status": "commented",
+      "comment_id": "18076609562379226",
+      "commented_ts_utc": "2026-08-29T17:12:43Z"
     }
   },
   "runs": [
@@ -7807,6 +7817,15 @@
       "result": "commented",
       "comment_id": "18104905706160679",
       "template_idx": 11
+    },
+    {
+      "ts_utc": "2026-08-29T17:12:43Z",
+      "media_id": "18176090626427855",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "18076609562379226",
+      "template_idx": 9
     }
   ]
 }
