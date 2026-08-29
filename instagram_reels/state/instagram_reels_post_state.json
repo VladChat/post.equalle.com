@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-08-27"
+    "manifest_index": 1,
+    "last_day": "2026-08-29"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -4979,6 +4979,30 @@
       "comment_status": "commented",
       "comment_id": "18104905706160679",
       "commented_ts_utc": "2026-08-27T23:12:04Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4",
+      "filename": "Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4",
+      "manifest": "wood.json",
+      "title": "Scratches Still Showing: 150 Grit Removing Scratches",
+      "description": "Scratches Still Showing? Use 150 grit for removing scratches. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "caption": "Scratches Still Showing: 150 Grit Removing Scratches\n\nScratches Still Showing? Use 150 grit for removing scratches. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-29T17:04:16Z",
+      "mode": "binary",
+      "container_id": "18129504040741317",
+      "media_id": "18176090626427855",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v26.0/18129504040741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18129504040741317"
+      }
     }
   },
   "runs": [
@@ -6608,6 +6632,17 @@
       "filename": "patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4",
       "container_id": "18129305689741317",
       "media_id": "18108630533142638",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-29T17:04:16Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wood.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4",
+      "filename": "Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4",
+      "container_id": "18129504040741317",
+      "media_id": "18176090626427855",
       "error": null
     }
   ],
