@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-28"
+    "last_day": "2026-08-29"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2396,6 +2396,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-180",
       "result": "success",
       "video_id": "S6NZ27XXujg"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/metal_edges_show_scratches-180_grit_for_edge_scratch_refinement-metal-056.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_edges_show_scratches-180_grit_for_edge_scratch_refinement-metal-056.mp4",
+      "filename": "metal_edges_show_scratches-180_grit_for_edge_scratch_refinement-metal-056.mp4",
+      "manifest": "metal.json",
+      "title": "Refine Scratches on Metal Edges With 180 Grit Sandpaper",
+      "destination_url": "https://www.amazon.com/gp/product/B07QG6R8Y1",
+      "result": "success",
+      "video_id": "HKA6GJpHteU"
     }
   },
   "runs": [
@@ -3833,6 +3843,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_transitions_too_visible-180_grit_for_smoothing_weld_transitions-metal-055.mp4",
       "result": "success",
       "video_id": "S6NZ27XXujg"
+    },
+    {
+      "ts_utc": "2026-08-29T15:30:34.634109+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_edges_show_scratches-180_grit_for_edge_scratch_refinement-metal-056.mp4",
+      "result": "success",
+      "video_id": "HKA6GJpHteU"
     }
   ],
   "last_post": {
