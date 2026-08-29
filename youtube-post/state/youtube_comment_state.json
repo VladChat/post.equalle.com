@@ -1944,6 +1944,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-08-28T21:26:54Z",
       "verify_after_ts": 1787954214.3759317
+    },
+    "HKA6GJpHteU": {
+      "comment_status": "commented_unverified",
+      "comment_id": "UgwC8KN-oQ8u4IYJ0fp4AaABAg",
+      "comment_text": "Keep the sanding block flat so you don’t dig grooves at the edges—especially on corners and seams. Are you using a block, a pad, or hand-only?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-08-29T15:40:02Z",
+      "verify_after_ts": 1788019802.23472
     }
   },
   "runs": [
@@ -3389,6 +3397,12 @@
       "video_id": "S6NZ27XXujg",
       "result": "commented_unverified",
       "comment_id": "UgzQIuRQNrNOr7lk-ct4AaABAg"
+    },
+    {
+      "ts": "2026-08-29T15:40:02Z",
+      "video_id": "HKA6GJpHteU",
+      "result": "commented_unverified",
+      "comment_id": "UgwC8KN-oQ8u4IYJ0fp4AaABAg"
     }
   ]
 }
