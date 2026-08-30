@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-08-28"
+    "manifest_index": 0,
+    "last_day": "2026-08-30"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1964,6 +1964,20 @@
       "pin_id": "839428818092294183",
       "media_id": "3809051582398728704",
       "cover_image_url": "https://i.pinimg.com/1200x/a2/df/cd/a2dfcd37e055591bb056cbffeef4d946.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4",
+      "filename": "wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "title": "Wall Feels Rough After Coat Two? Smooth the Surface With 180 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-30T14:27:38+00:00",
+      "pin_id": "839428818092322278",
+      "media_id": "3814064804088519104",
+      "cover_image_url": "https://i.pinimg.com/1200x/4f/2f/e9/4f2fe9d85e3f68c5c222095515156f38.jpg"
     }
   },
   "runs": [
@@ -3365,6 +3379,16 @@
       "result": "success",
       "pin_id": "839428818092294183",
       "media_id": "3809051582398728704",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-30T14:27:38+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4",
+      "filename": "wall_feels_rough_after_coat_two-180_grit_for_surface_smoothing-drywall-029.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818092322278",
+      "media_id": "3814064804088519104",
       "error": null
     }
   ]
