@@ -3167,7 +3167,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-08-31T19:29:19Z",
-      "video_id": "1050050491185801"
+      "video_id": "1050050491185801",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 5
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-08-31T20:03:58Z",
+      "comment_text": "After sanding, wipe dust and check under a bright light from the side. Do the lines disappear evenly?",
+      "comment_status": "commented",
+      "comment_id": "1050050491185801_1637327544473640",
+      "commented_ts_utc": "2026-08-31T20:04:01Z"
     }
   },
   "runs": [
@@ -5818,6 +5828,15 @@
       "result": "commented",
       "comment_id": "815489431621055_1028266830001982",
       "template_idx": 17
+    },
+    {
+      "ts_utc": "2026-08-31T20:04:01Z",
+      "video_id": "1050050491185801",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_look_cloudy-1000_grit_wet_sanding_headlights-wet-031.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1050050491185801_1637327544473640",
+      "template_idx": 5
     }
   ]
 }
