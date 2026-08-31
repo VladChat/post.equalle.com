@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-08-30"
+    "manifest_index": 1,
+    "last_day": "2026-08-31"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1978,6 +1978,20 @@
       "pin_id": "839428818092322278",
       "media_id": "3814064804088519104",
       "cover_image_url": "https://i.pinimg.com/1200x/4f/2f/e9/4f2fe9d85e3f68c5c222095515156f38.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Need_to_Refinish_Fast-100_Grit_for_Removing_Old_Clear_Coat-wood-030.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Need_to_Refinish_Fast-100_Grit_for_Removing_Old_Clear_Coat-wood-030.mp4",
+      "filename": "Need_to_Refinish_Fast-100_Grit_for_Removing_Old_Clear_Coat-wood-030.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://www.amazon.com/gp/product/B07RFT4SN8",
+      "title": "Need to Refinish Fast: 100 Grit Removing Old Clear Coat",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-31T17:08:08+00:00",
+      "pin_id": "839428818092343809",
+      "media_id": "3817285822497454720",
+      "cover_image_url": "https://i.pinimg.com/1200x/7d/d0/bf/7dd0bf9946ba037b4cac5183795481a7.jpg"
     }
   },
   "runs": [
@@ -3389,6 +3403,16 @@
       "result": "success",
       "pin_id": "839428818092322278",
       "media_id": "3814064804088519104",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-31T17:08:08+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Need_to_Refinish_Fast-100_Grit_for_Removing_Old_Clear_Coat-wood-030.mp4",
+      "filename": "Need_to_Refinish_Fast-100_Grit_for_Removing_Old_Clear_Coat-wood-030.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818092343809",
+      "media_id": "3817285822497454720",
       "error": null
     }
   ]
