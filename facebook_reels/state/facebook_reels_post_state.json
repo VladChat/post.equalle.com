@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-08-28"
+    "manifest_index": 2,
+    "last_day": "2026-08-31"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3157,6 +3157,17 @@
       "comment_status": "commented",
       "comment_id": "815489431621055_1028266830001982",
       "commented_ts_utc": "2026-08-28T23:43:18Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/headlights_look_cloudy-1000_grit_wet_sanding_headlights-wet-031.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_look_cloudy-1000_grit_wet_sanding_headlights-wet-031.mp4",
+      "filename": "headlights_look_cloudy-1000_grit_wet_sanding_headlights-wet-031.mp4",
+      "manifest": "wet.json",
+      "title": "Cloudy Headlights? Start With 1000 Grit Wet Sanding",
+      "description": "Headlights look cloudy? Start wet sanding with 1000 grit to cut oxidation and surface haze. Keep the lens wet, use light pressure, sand in even passes, wipe often, and move to finer grits before polishing for clarity. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-08-31T19:29:19Z",
+      "video_id": "1050050491185801"
     }
   },
   "runs": [
@@ -4535,6 +4546,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "815489431621055",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-08-31T19:29:19Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_look_cloudy-1000_grit_wet_sanding_headlights-wet-031.mp4",
+      "filename": "headlights_look_cloudy-1000_grit_wet_sanding_headlights-wet-031.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "1050050491185801",
       "error": null
     }
   ],
