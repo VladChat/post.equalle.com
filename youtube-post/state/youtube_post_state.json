@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-08-31"
+    "last_day": "2026-09-01"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2426,6 +2426,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RJZ55RL",
       "result": "success",
       "video_id": "B0eJercXzKg"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/final_touch_needed_on_metal-220_grit_for_final_metal_prep-metal-059.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/final_touch_needed_on_metal-220_grit_for_final_metal_prep-metal-059.mp4",
+      "filename": "final_touch_needed_on_metal-220_grit_for_final_metal_prep-metal-059.mp4",
+      "manifest": "metal.json",
+      "title": "Final Metal Prep Before Paint: Use 220 Grit for the Last Pass",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
+      "result": "success",
+      "video_id": "k_QgqT8Y8Us"
     }
   },
   "runs": [
@@ -3881,6 +3891,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/corners_look_over-sanded-180_grit_for_controlled_metal_sanding-metal-058.mp4",
       "result": "success",
       "video_id": "B0eJercXzKg"
+    },
+    {
+      "ts_utc": "2026-09-01T15:23:33.073207+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/final_touch_needed_on_metal-220_grit_for_final_metal_prep-metal-059.mp4",
+      "result": "success",
+      "video_id": "k_QgqT8Y8Us"
     }
   ],
   "last_post": {
