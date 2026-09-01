@@ -5036,7 +5036,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18129838714741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 11
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-01T18:02:59Z",
+      "comment_text": "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+      "comment_status": "commented",
+      "comment_id": "18618896950063875",
+      "commented_ts_utc": "2026-09-01T18:03:03Z"
     }
   },
   "runs": [
@@ -7861,6 +7871,15 @@
       "result": "commented",
       "comment_id": "18076609562379226",
       "template_idx": 9
+    },
+    {
+      "ts_utc": "2026-09-01T18:03:03Z",
+      "media_id": "17879824821624754",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_look_cloudy-1000_grit_wet_sanding_headlights-wet-031.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18618896950063875",
+      "template_idx": 11
     }
   ]
 }
