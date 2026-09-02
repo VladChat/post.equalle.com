@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-08-31"
+    "manifest_index": 3,
+    "last_day": "2026-09-02"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3178,6 +3178,17 @@
       "comment_status": "commented",
       "comment_id": "1050050491185801_1637327544473640",
       "commented_ts_utc": "2026-08-31T20:04:01Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/clear_coat_still_on_metal-120_grit_for_removing_clear_coat-metal-031.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/clear_coat_still_on_metal-120_grit_for_removing_clear_coat-metal-031.mp4",
+      "filename": "clear_coat_still_on_metal-120_grit_for_removing_clear_coat-metal-031.mp4",
+      "manifest": "metal.json",
+      "title": "Remove Clear Coat From Metal With 120 Grit Sandpaper",
+      "description": "Clear coat still on metal? Use 120 grit to cut through the remaining clear coat and level the surface. Sand in consistent passes, then wipe clean so you can spot any shiny areas you missed.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-02T17:07:22Z",
+      "video_id": "1036656059192696"
     }
   },
   "runs": [
@@ -4565,6 +4576,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "1050050491185801",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-02T17:07:22Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/clear_coat_still_on_metal-120_grit_for_removing_clear_coat-metal-031.mp4",
+      "filename": "clear_coat_still_on_metal-120_grit_for_removing_clear_coat-metal-031.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "1036656059192696",
       "error": null
     }
   ],
