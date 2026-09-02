@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-08-31"
+    "manifest_index": 2,
+    "last_day": "2026-09-02"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -1992,6 +1992,20 @@
       "pin_id": "839428818092343809",
       "media_id": "3817285822497454720",
       "cover_image_url": "https://i.pinimg.com/1200x/7d/d0/bf/7dd0bf9946ba037b4cac5183795481a7.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4",
+      "filename": "clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-2000",
+      "title": "Light Leveling Needed? 2000 Grit Wet Sand Between Clear Coat Layers",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-02T13:44:49+00:00",
+      "pin_id": "839428818092374305",
+      "media_id": "3822674759268425984",
+      "cover_image_url": "https://i.pinimg.com/1200x/46/a2/b4/46a2b465c227b9df6f7111a40c731232.jpg"
     }
   },
   "runs": [
@@ -3413,6 +3427,16 @@
       "result": "success",
       "pin_id": "839428818092343809",
       "media_id": "3817285822497454720",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-02T13:44:49+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4",
+      "filename": "clear_coat_needs_light_leveling-2000_grit_wet_sand_between_layers-wet-029.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818092374305",
+      "media_id": "3822674759268425984",
       "error": null
     }
   ]
