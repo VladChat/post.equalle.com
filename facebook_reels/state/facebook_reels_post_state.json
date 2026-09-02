@@ -3188,7 +3188,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-09-02T17:07:22Z",
-      "video_id": "1036656059192696"
+      "video_id": "1036656059192696",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 17
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-02T17:20:47Z",
+      "comment_text": "Don’t chase one spot too long—blend the area wider and re-check. Are the edges still visible?",
+      "comment_status": "commented",
+      "comment_id": "1036656059192696_1553771179832255",
+      "commented_ts_utc": "2026-09-02T17:20:50Z"
     }
   },
   "runs": [
@@ -5857,6 +5867,15 @@
       "result": "commented",
       "comment_id": "1050050491185801_1637327544473640",
       "template_idx": 5
+    },
+    {
+      "ts_utc": "2026-09-02T17:20:50Z",
+      "video_id": "1036656059192696",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/clear_coat_still_on_metal-120_grit_for_removing_clear_coat-metal-031.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "1036656059192696_1553771179832255",
+      "template_idx": 17
     }
   ]
 }
