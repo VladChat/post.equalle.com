@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-09-01"
+    "manifest_index": 3,
+    "last_day": "2026-09-03"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -5047,6 +5047,30 @@
       "comment_status": "commented",
       "comment_id": "18618896950063875",
       "commented_ts_utc": "2026-09-01T18:03:03Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/paint_peeling_after_prep-120_grit_for_proper_paint_removal-metal-030.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_peeling_after_prep-120_grit_for_proper_paint_removal-metal-030.mp4",
+      "filename": "paint_peeling_after_prep-120_grit_for_proper_paint_removal-metal-030.mp4",
+      "manifest": "metal.json",
+      "title": "Fix Paint Peeling After Prep: Re-Sand Metal With 120 Grit",
+      "description": "Paint peeling after prep usually means the surface wasn’t clean or smooth enough. Use 120 grit to remove weak paint, feather the edges, and refine the surface before primer.",
+      "caption": "Fix Paint Peeling After Prep: Re-Sand Metal With 120 Grit\n\nPaint peeling after prep usually means the surface wasn’t clean or smooth enough. Use 120 grit to remove weak paint, feather the edges, and refine the surface before primer.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-03T17:00:46Z",
+      "mode": "binary",
+      "container_id": "18130031728741317",
+      "media_id": "17966556375139351",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v26.0/18130031728741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18130031728741317"
+      }
     }
   },
   "runs": [
@@ -6698,6 +6722,17 @@
       "filename": "headlights_look_cloudy-1000_grit_wet_sanding_headlights-wet-031.mp4",
       "container_id": "18129838714741317",
       "media_id": "17879824821624754",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-03T17:00:46Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "metal.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_peeling_after_prep-120_grit_for_proper_paint_removal-metal-030.mp4",
+      "filename": "paint_peeling_after_prep-120_grit_for_proper_paint_removal-metal-030.mp4",
+      "container_id": "18130031728741317",
+      "media_id": "17966556375139351",
       "error": null
     }
   ],
