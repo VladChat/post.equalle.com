@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-09-02"
+    "last_day": "2026-09-03"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2446,6 +2446,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ8DTGHP",
       "result": "success",
       "video_id": "_5pSMnj-gE0"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/rough_marks_on_plastic_surface-220_grit_for_smoothing_plastic-plastic-005.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/rough_marks_on_plastic_surface-220_grit_for_smoothing_plastic-plastic-005.mp4",
+      "filename": "rough_marks_on_plastic_surface-220_grit_for_smoothing_plastic-plastic-005.mp4",
+      "manifest": "plastic.json",
+      "title": "Rough Marks On Plastic? Smooth Them With 220 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-220",
+      "result": "success",
+      "video_id": "0y__9Z1ger8"
     }
   },
   "runs": [
@@ -3913,6 +3923,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_details_not_ready_for_paint-180-220_grit_for_final_detail_prep-metal-060.mp4",
       "result": "success",
       "video_id": "_5pSMnj-gE0"
+    },
+    {
+      "ts_utc": "2026-09-03T14:53:01.909461+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/rough_marks_on_plastic_surface-220_grit_for_smoothing_plastic-plastic-005.mp4",
+      "result": "success",
+      "video_id": "0y__9Z1ger8"
     }
   ],
   "last_post": {
