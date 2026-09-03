@@ -1984,6 +1984,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-09-02T15:08:13Z",
       "verify_after_ts": 1788363493.9642293
+    },
+    "0y__9Z1ger8": {
+      "comment_status": "commented_unverified",
+      "comment_id": "Ugxtqr4uZ4yrG1IT12R4AaABAg",
+      "comment_text": "If you’re unsure which grit to grab next, match it to the goal: shape, level, smooth, or polish—each step should remove the last step’s scratches. What result do you want: faster removal or a finer finish?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-09-03T15:02:06Z",
+      "verify_after_ts": 1788449526.7089539
     }
   },
   "runs": [
@@ -3459,6 +3467,12 @@
       "video_id": "_5pSMnj-gE0",
       "result": "commented_unverified",
       "comment_id": "UgwBm27dKElxYoFv1rd4AaABAg"
+    },
+    {
+      "ts": "2026-09-03T15:02:06Z",
+      "video_id": "0y__9Z1ger8",
+      "result": "commented_unverified",
+      "comment_id": "Ugxtqr4uZ4yrG1IT12R4AaABAg"
     }
   ]
 }
