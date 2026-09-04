@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-09-03"
+    "last_day": "2026-09-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2456,6 +2456,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-220",
       "result": "success",
       "video_id": "0y__9Z1ger8"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_has_factory_texture-180_grit_for_plastic_surface_prep-plastic-006.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_has_factory_texture-180_grit_for_plastic_surface_prep-plastic-006.mp4",
+      "filename": "plastic_has_factory_texture-180_grit_for_plastic_surface_prep-plastic-006.mp4",
+      "manifest": "plastic.json",
+      "title": "Factory Texture On Plastic? Use 180 Grit For Prep",
+      "destination_url": "https://www.amazon.com/gp/product/B07QG6R8Y1",
+      "result": "success",
+      "video_id": "w8v-Oqb4FHg"
     }
   },
   "runs": [
@@ -3929,6 +3939,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/rough_marks_on_plastic_surface-220_grit_for_smoothing_plastic-plastic-005.mp4",
       "result": "success",
       "video_id": "0y__9Z1ger8"
+    },
+    {
+      "ts_utc": "2026-09-04T14:50:12.259328+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_has_factory_texture-180_grit_for_plastic_surface_prep-plastic-006.mp4",
+      "result": "success",
+      "video_id": "w8v-Oqb4FHg"
     }
   ],
   "last_post": {
