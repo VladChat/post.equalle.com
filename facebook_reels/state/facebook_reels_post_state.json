@@ -3209,7 +3209,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-09-04T16:49:52Z",
-      "video_id": "2081972076044390"
+      "video_id": "2081972076044390",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 6
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-04T17:06:22Z",
+      "comment_text": "Small circles help blend; straight passes help level. Are you going for a smooth finish or just prep?",
+      "comment_status": "commented",
+      "comment_id": "2081972076044390_1565501401546484",
+      "commented_ts_utc": "2026-09-04T17:06:26Z"
     }
   },
   "runs": [
@@ -5896,6 +5906,15 @@
       "result": "commented",
       "comment_id": "1036656059192696_1553771179832255",
       "template_idx": 17
+    },
+    {
+      "ts_utc": "2026-09-04T17:06:26Z",
+      "video_id": "2081972076044390",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_wont_grip_plastic_surface-180-220_grit_for_plastic_paint_prep-plastic-031.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "2081972076044390_1565501401546484",
+      "template_idx": 6
     }
   ]
 }
