@@ -5104,7 +5104,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18130240309741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 5
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-05T16:18:27Z",
+      "comment_text": "After sanding, wipe dust and check under a bright light from the side. Do the lines disappear evenly?",
+      "comment_status": "commented",
+      "comment_id": "17957801966997930",
+      "commented_ts_utc": "2026-09-05T16:18:29Z"
     }
   },
   "runs": [
@@ -7969,6 +7979,15 @@
       "result": "commented",
       "comment_id": "18113546102471481",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-09-05T16:18:29Z",
+      "media_id": "17983743920884301",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_runs_stand_out_more-320_grit_for_light_plastic_scuff_sand-plastic-030.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "17957801966997930",
+      "template_idx": 5
     }
   ]
 }
