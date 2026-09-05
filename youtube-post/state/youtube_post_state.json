@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-09-04"
+    "last_day": "2026-09-05"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2466,6 +2466,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QG6R8Y1",
       "result": "success",
       "video_id": "w8v-Oqb4FHg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_wavy_to_touch-180_grit_to_flatten_plastic_surface-plastic-007.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_wavy_to_touch-180_grit_to_flatten_plastic_surface-plastic-007.mp4",
+      "filename": "plastic_feels_wavy_to_touch-180_grit_to_flatten_plastic_surface-plastic-007.mp4",
+      "manifest": "plastic.json",
+      "title": "Plastic Feels Wavy? Flatten The Surface With 180 Grit",
+      "destination_url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "result": "success",
+      "video_id": "brSKsUwCJwk"
     }
   },
   "runs": [
@@ -3945,6 +3955,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_has_factory_texture-180_grit_for_plastic_surface_prep-plastic-006.mp4",
       "result": "success",
       "video_id": "w8v-Oqb4FHg"
+    },
+    {
+      "ts_utc": "2026-09-05T13:41:03.438109+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_wavy_to_touch-180_grit_to_flatten_plastic_surface-plastic-007.mp4",
+      "result": "success",
+      "video_id": "brSKsUwCJwk"
     }
   ],
   "last_post": {
