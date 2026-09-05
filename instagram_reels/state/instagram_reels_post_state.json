@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-09-03"
+    "manifest_index": 4,
+    "last_day": "2026-09-05"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -5081,6 +5081,30 @@
       "comment_status": "commented",
       "comment_id": "18113546102471481",
       "commented_ts_utc": "2026-09-03T17:30:44Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_runs_stand_out_more-320_grit_for_light_plastic_scuff_sand-plastic-030.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_runs_stand_out_more-320_grit_for_light_plastic_scuff_sand-plastic-030.mp4",
+      "filename": "paint_runs_stand_out_more-320_grit_for_light_plastic_scuff_sand-plastic-030.mp4",
+      "manifest": "plastic.json",
+      "title": "Paint Runs Stand Out? Lightly Scuff Plastic With 320 Grit",
+      "description": "When paint runs stand out on plastic, a light scuff helps the next coat level better. 320 grit is a fine option for gentle scuff sanding without deep scratches. Wipe clean before recoating. Sandpaper eQualle",
+      "caption": "Paint Runs Stand Out? Lightly Scuff Plastic With 320 Grit\n\nWhen paint runs stand out on plastic, a light scuff helps the next coat level better. 320 grit is a fine option for gentle scuff sanding without deep scratches. Wipe clean before recoating. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-05T15:56:07Z",
+      "mode": "binary",
+      "container_id": "18130240309741317",
+      "media_id": "17983743920884301",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v26.0/18130240309741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18130240309741317"
+      }
     }
   },
   "runs": [
@@ -6743,6 +6767,17 @@
       "filename": "paint_peeling_after_prep-120_grit_for_proper_paint_removal-metal-030.mp4",
       "container_id": "18130031728741317",
       "media_id": "17966556375139351",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-05T15:56:07Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "plastic.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_runs_stand_out_more-320_grit_for_light_plastic_scuff_sand-plastic-030.mp4",
+      "filename": "paint_runs_stand_out_more-320_grit_for_light_plastic_scuff_sand-plastic-030.mp4",
+      "container_id": "18130240309741317",
+      "media_id": "17983743920884301",
       "error": null
     }
   ],
