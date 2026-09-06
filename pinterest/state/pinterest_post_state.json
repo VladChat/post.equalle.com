@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-09-04"
+    "manifest_index": 4,
+    "last_day": "2026-09-06"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2020,6 +2020,20 @@
       "pin_id": "839428818092405821",
       "media_id": "3828456441875162112",
       "cover_image_url": "https://i.pinimg.com/1200x/dc/6b/5a/dc6b5a5f5a2a9cbdeec09b239312be0b.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_scratches_showing_through-320_grit_for_plastic_scratch_refinement-plastic-029.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_scratches_showing_through-320_grit_for_plastic_scratch_refinement-plastic-029.mp4",
+      "filename": "paint_scratches_showing_through-320_grit_for_plastic_scratch_refinement-plastic-029.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://equalle.com/products/sandpaper-10-sheets-grit-320",
+      "title": "Scratches Showing Through Paint? Refine With 320 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-06T12:55:59+00:00",
+      "pin_id": "839428818092437083",
+      "media_id": "3834174353043439552",
+      "cover_image_url": "https://i.pinimg.com/1200x/06/71/22/06712207dbba8f3f993ed2130d7ecdc1.jpg"
     }
   },
   "runs": [
@@ -3461,6 +3475,16 @@
       "result": "success",
       "pin_id": "839428818092405821",
       "media_id": "3828456441875162112",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-06T12:55:59+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_scratches_showing_through-320_grit_for_plastic_scratch_refinement-plastic-029.mp4",
+      "filename": "paint_scratches_showing_through-320_grit_for_plastic_scratch_refinement-plastic-029.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818092437083",
+      "media_id": "3834174353043439552",
       "error": null
     }
   ]
