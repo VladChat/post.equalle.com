@@ -2008,6 +2008,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-09-05T13:53:52Z",
       "verify_after_ts": 1788618232.8103673
+    },
+    "Y98eYl4_xlE": {
+      "comment_status": "commented_unverified",
+      "comment_id": "UgxPxyaxjIxk0MCHUKd4AaABAg",
+      "comment_text": "If you’re jumping grits, don’t skip too far—blend one step at a time so previous scratches don’t telegraph through primer or paint. What grit did you start with?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-09-06T14:14:04Z",
+      "verify_after_ts": 1788705844.3704703
     }
   },
   "runs": [
@@ -3501,6 +3509,12 @@
       "video_id": "brSKsUwCJwk",
       "result": "commented_unverified",
       "comment_id": "UgyR0FVSYApEVOPA71J4AaABAg"
+    },
+    {
+      "ts": "2026-09-06T14:14:04Z",
+      "video_id": "Y98eYl4_xlE",
+      "result": "commented_unverified",
+      "comment_id": "UgxPxyaxjIxk0MCHUKd4AaABAg"
     }
   ]
 }
