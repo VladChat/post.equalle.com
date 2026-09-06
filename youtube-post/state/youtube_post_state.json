@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-09-05"
+    "last_day": "2026-09-06"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2476,6 +2476,16 @@
       "destination_url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
       "result": "success",
       "video_id": "brSKsUwCJwk"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/scratches_too_deep_on_plastic-150-220_grit_plastic_sanding_steps-plastic-008.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_too_deep_on_plastic-150-220_grit_plastic_sanding_steps-plastic-008.mp4",
+      "filename": "scratches_too_deep_on_plastic-150-220_grit_plastic_sanding_steps-plastic-008.mp4",
+      "manifest": "plastic.json",
+      "title": "Deep Plastic Scratches? Step From 150 To 220 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7T4FFL",
+      "result": "success",
+      "video_id": "Y98eYl4_xlE"
     }
   },
   "runs": [
@@ -3961,6 +3971,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_feels_wavy_to_touch-180_grit_to_flatten_plastic_surface-plastic-007.mp4",
       "result": "success",
       "video_id": "brSKsUwCJwk"
+    },
+    {
+      "ts_utc": "2026-09-06T13:58:14.531528+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_too_deep_on_plastic-150-220_grit_plastic_sanding_steps-plastic-008.mp4",
+      "result": "success",
+      "video_id": "Y98eYl4_xlE"
     }
   ],
   "last_post": {
