@@ -3230,7 +3230,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-09-07T18:13:49Z",
-      "video_id": "1441412201176000"
+      "video_id": "1441412201176000",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 1
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-07T18:21:33Z",
+      "comment_text": "If the scratch pattern looks uneven, do a few crosshatch passes and re-check. Sanding wet or dry?",
+      "comment_status": "commented",
+      "comment_id": "1441412201176000_1395286568617066",
+      "commented_ts_utc": "2026-09-07T18:21:36Z"
     }
   },
   "runs": [
@@ -5935,6 +5945,15 @@
       "result": "commented",
       "comment_id": "2081972076044390_1565501401546484",
       "template_idx": 6
+    },
+    {
+      "ts_utc": "2026-09-07T18:21:36Z",
+      "video_id": "1441412201176000",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1441412201176000_1395286568617066",
+      "template_idx": 1
     }
   ]
 }
