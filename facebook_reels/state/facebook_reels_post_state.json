@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-09-04"
+    "manifest_index": 0,
+    "last_day": "2026-09-07"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3220,6 +3220,17 @@
       "comment_status": "commented",
       "comment_id": "2081972076044390_1565501401546484",
       "commented_ts_utc": "2026-09-04T17:06:26Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
+      "filename": "edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
+      "manifest": "drywall.json",
+      "title": "Edges Still Too Sharp? Controlled Feathering With 180–220 Grit",
+      "description": "If edges still feel sharp, start with 180 grit to knock them down, then switch to 220 grit to feather smoothly and blend the transition. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-07T18:13:49Z",
+      "video_id": "1441412201176000"
     }
   },
   "runs": [
@@ -4625,6 +4636,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "2081972076044390",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-07T18:13:49Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
+      "filename": "edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1441412201176000",
       "error": null
     }
   ],
