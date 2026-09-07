@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-09-06"
+    "manifest_index": 0,
+    "last_day": "2026-09-07"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2034,6 +2034,20 @@
       "pin_id": "839428818092437083",
       "media_id": "3834174353043439552",
       "cover_image_url": "https://i.pinimg.com/1200x/06/71/22/06712207dbba8f3f993ed2130d7ecdc1.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4",
+      "filename": "patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049941",
+      "destination_url": "https://www.amazon.com/gp/product/B07QD2RZ63",
+      "title": "Patch Edges Catch the Light? Blend Drywall Edges With 220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-07T15:06:44+00:00",
+      "pin_id": "839428818092454268",
+      "media_id": "3837336721524102080",
+      "cover_image_url": "https://i.pinimg.com/1200x/39/ce/cd/39cecd5e0d824638a1225a033340d8c4.jpg"
     }
   },
   "runs": [
@@ -3485,6 +3499,16 @@
       "result": "success",
       "pin_id": "839428818092437083",
       "media_id": "3834174353043439552",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-07T15:06:44+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4",
+      "filename": "patch_edges_catch_the_light-220_grit_for_blending_drywall_edges-drywall-030.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818092454268",
+      "media_id": "3837336721524102080",
       "error": null
     }
   ]
