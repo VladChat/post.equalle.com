@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-09-05"
+    "manifest_index": 0,
+    "last_day": "2026-09-08"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -5115,6 +5115,30 @@
       "comment_status": "commented",
       "comment_id": "17957801966997930",
       "commented_ts_utc": "2026-09-05T16:18:29Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4",
+      "filename": "between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4",
+      "manifest": "drywall.json",
+      "title": "Between-Coat Texture Too Heavy? Refine Drywall Surface With 180 Grit",
+      "description": "If texture feels too heavy between coats, sand lightly with 180 grit to refine high spots and smooth the surface before recoating. Sandpaper eQualle",
+      "caption": "Between-Coat Texture Too Heavy? Refine Drywall Surface With 180 Grit\n\nIf texture feels too heavy between coats, sand lightly with 180 grit to refine high spots and smooth the surface before recoating. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-08T17:13:10Z",
+      "mode": "binary",
+      "container_id": "18130553335741317",
+      "media_id": "18037299596832965",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v26.0/18130553335741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "status_code": "FINISHED",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "id": "18130553335741317"
+      }
     }
   },
   "runs": [
@@ -6788,6 +6812,17 @@
       "filename": "paint_runs_stand_out_more-320_grit_for_light_plastic_scuff_sand-plastic-030.mp4",
       "container_id": "18130240309741317",
       "media_id": "17983743920884301",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-08T17:13:10Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4",
+      "filename": "between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4",
+      "container_id": "18130553335741317",
+      "media_id": "18037299596832965",
       "error": null
     }
   ],
