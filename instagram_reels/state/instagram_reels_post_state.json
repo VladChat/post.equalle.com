@@ -5138,7 +5138,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18130553335741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-08T17:16:34Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "18008877356990158",
+      "commented_ts_utc": "2026-09-08T17:16:38Z"
     }
   },
   "runs": [
@@ -8023,6 +8033,15 @@
       "result": "commented",
       "comment_id": "17957801966997930",
       "template_idx": 5
+    },
+    {
+      "ts_utc": "2026-09-08T17:16:38Z",
+      "media_id": "18037299596832965",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18008877356990158",
+      "template_idx": 12
     }
   ]
 }
