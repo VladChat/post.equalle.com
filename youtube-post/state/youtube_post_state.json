@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-09-07"
+    "last_day": "2026-09-08"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2496,6 +2496,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-220",
       "result": "success",
       "video_id": "5Fo5oyX_N3Y"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_surface_not_uniform-180_grit_for_even_plastic_prep-plastic-010.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_surface_not_uniform-180_grit_for_even_plastic_prep-plastic-010.mp4",
+      "filename": "plastic_surface_not_uniform-180_grit_for_even_plastic_prep-plastic-010.mp4",
+      "manifest": "plastic.json",
+      "title": "Plastic Not Uniform? Even It Out With 180 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RJZ55RL",
+      "result": "success",
+      "video_id": "xSoa028n0x4"
     }
   },
   "runs": [
@@ -3993,6 +4003,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_needs_scuffing-220_grit_for_plastic_scuff_sanding-plastic-009.mp4",
       "result": "success",
       "video_id": "5Fo5oyX_N3Y"
+    },
+    {
+      "ts_utc": "2026-09-08T14:55:57.303887+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_surface_not_uniform-180_grit_for_even_plastic_prep-plastic-010.mp4",
+      "result": "success",
+      "video_id": "xSoa028n0x4"
     }
   ],
   "last_post": {
