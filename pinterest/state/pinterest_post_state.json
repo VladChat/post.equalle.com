@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-09-07"
+    "manifest_index": 1,
+    "last_day": "2026-09-09"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2048,6 +2048,20 @@
       "pin_id": "839428818092454268",
       "media_id": "3837336721524102080",
       "cover_image_url": "https://i.pinimg.com/1200x/39/ce/cd/39cecd5e0d824638a1225a033340d8c4.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4",
+      "filename": "Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://equalle.com/products/150-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "title": "Scratches Still Showing: 150 Grit Removing Scratches",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-09T13:47:40+00:00",
+      "pin_id": "839428818092486127",
+      "media_id": "3842974120878905088",
+      "cover_image_url": "https://i.pinimg.com/1200x/04/38/98/043898f9822b71dc2a417aa8e9dac4f1.jpg"
     }
   },
   "runs": [
@@ -3509,6 +3523,16 @@
       "result": "success",
       "pin_id": "839428818092454268",
       "media_id": "3837336721524102080",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-09T13:47:40+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4",
+      "filename": "Scratches_Still_Showing-150_Grit_for_Removing_Scratches-wood-031.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818092486127",
+      "media_id": "3842974120878905088",
       "error": null
     }
   ]
