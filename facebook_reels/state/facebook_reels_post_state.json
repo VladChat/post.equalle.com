@@ -3269,7 +3269,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-09-11T17:00:37Z",
-      "video_id": "2627399294373979"
+      "video_id": "2627399294373979",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 7
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-11T17:51:30Z",
+      "comment_text": "If you’re jumping grits, don’t skip too far—blend one step at a time. What grit did you start with?",
+      "comment_status": "commented",
+      "comment_id": "2627399294373979_1580458367096936",
+      "commented_ts_utc": "2026-09-11T17:51:35Z"
     }
   },
   "runs": [
@@ -6001,6 +6011,15 @@
       "result": "commented",
       "comment_id": "1441412201176000_1395286568617066",
       "template_idx": 1
+    },
+    {
+      "ts_utc": "2026-09-11T17:51:35Z",
+      "video_id": "2627399294373979",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/yellow_haze_on_headlights-800-1500_grit_wet_sand_headlights-wet-032.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "2627399294373979_1580458367096936",
+      "template_idx": 7
     }
   ]
 }
