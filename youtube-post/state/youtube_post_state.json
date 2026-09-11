@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-09-10"
+    "last_day": "2026-09-11"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2526,6 +2526,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ8DFS6T",
       "result": "success",
       "video_id": "kQz3QTHQfVo"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_looks_dull_and_rough-220_grit_for_plastic_refinement-plastic-013.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_looks_dull_and_rough-220_grit_for_plastic_refinement-plastic-013.mp4",
+      "filename": "plastic_looks_dull_and_rough-220_grit_for_plastic_refinement-plastic-013.mp4",
+      "manifest": "plastic.json",
+      "title": "Plastic Looks Dull And Rough? Refine With 220 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
+      "result": "success",
+      "video_id": "-77n5enUN90"
     }
   },
   "runs": [
@@ -4041,6 +4051,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/uneven_plastic_after_repair-220_grit_for_blending_plastic_surface-plastic-012.mp4",
       "result": "success",
       "video_id": "kQz3QTHQfVo"
+    },
+    {
+      "ts_utc": "2026-09-11T14:51:17.323383+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_looks_dull_and_rough-220_grit_for_plastic_refinement-plastic-013.mp4",
+      "result": "success",
+      "video_id": "-77n5enUN90"
     }
   ],
   "last_post": {
