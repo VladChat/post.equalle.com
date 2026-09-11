@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-09-09"
+    "manifest_index": 2,
+    "last_day": "2026-09-11"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3259,6 +3259,17 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-09-09T18:09:09Z",
       "comment_skipped_reason": "policy_10pct_skip"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/yellow_haze_on_headlights-800-1500_grit_wet_sand_headlights-wet-032.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/yellow_haze_on_headlights-800-1500_grit_wet_sand_headlights-wet-032.mp4",
+      "filename": "yellow_haze_on_headlights-800-1500_grit_wet_sand_headlights-wet-032.mp4",
+      "manifest": "wet.json",
+      "title": "Yellow Haze On Headlights? Wet Sand 800 To 1500 Grit",
+      "description": "Yellow haze on headlights? Wet sand with 800 grit to remove oxidation, then move to 1500 grit to refine before polishing. Keep the lens wet, use light pressure, sand in even passes, and wipe often to check clarity. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-11T17:00:37Z",
+      "video_id": "2627399294373979"
     }
   },
   "runs": [
@@ -4682,6 +4693,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "1825061118863009",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-11T17:00:37Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/yellow_haze_on_headlights-800-1500_grit_wet_sand_headlights-wet-032.mp4",
+      "filename": "yellow_haze_on_headlights-800-1500_grit_wet_sand_headlights-wet-032.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "2627399294373979",
       "error": null
     }
   ],
