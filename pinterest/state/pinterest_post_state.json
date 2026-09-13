@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-09-11"
+    "manifest_index": 3,
+    "last_day": "2026-09-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2076,6 +2076,20 @@
       "pin_id": "839428818092518549",
       "media_id": "3848756561950473472",
       "cover_image_url": "https://i.pinimg.com/1200x/90/2b/b2/902bb28a084cc3a1839203d8b6399fdc.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4",
+      "filename": "old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4",
+      "manifest": "metal.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-80",
+      "title": "Level an Uneven Painted Metal Surface With 80 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-13T13:50:56+00:00",
+      "pin_id": "839428818092550999",
+      "media_id": "3854578348009719232",
+      "cover_image_url": "https://i.pinimg.com/1200x/25/77/71/2577710c7c74e7cfe08eac58e2fad118.jpg"
     }
   },
   "runs": [
@@ -3557,6 +3571,16 @@
       "result": "success",
       "pin_id": "839428818092518549",
       "media_id": "3848756561950473472",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-13T13:50:56+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4",
+      "filename": "old_paint_causing_uneven_surface-80_grit_for_paint_surface_leveling-metal-029.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "pin_id": "839428818092550999",
+      "media_id": "3854578348009719232",
       "error": null
     }
   ]
