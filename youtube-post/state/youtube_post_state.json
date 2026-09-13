@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-09-12"
+    "last_day": "2026-09-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2546,6 +2546,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RL3XSWS",
       "result": "success",
       "video_id": "x1IR4e4alnc"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_still_feels_grainy-220_grit_for_final_plastic_prep-plastic-015.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_still_feels_grainy-220_grit_for_final_plastic_prep-plastic-015.mp4",
+      "filename": "plastic_still_feels_grainy-220_grit_for_final_plastic_prep-plastic-015.mp4",
+      "manifest": "plastic.json",
+      "title": "Plastic Still Feels Grainy? Finish Prep With 220 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-220",
+      "result": "success",
+      "video_id": "O8FJnfe62GU"
     }
   },
   "runs": [
@@ -4073,6 +4083,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/marks_left_from_coarse_grit-220_grit_for_plastic_scratch_refinement-plastic-014.mp4",
       "result": "success",
       "video_id": "x1IR4e4alnc"
+    },
+    {
+      "ts_utc": "2026-09-13T14:48:57.212334+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_still_feels_grainy-220_grit_for_final_plastic_prep-plastic-015.mp4",
+      "result": "success",
+      "video_id": "O8FJnfe62GU"
     }
   ],
   "last_post": {
