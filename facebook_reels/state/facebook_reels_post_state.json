@@ -3290,7 +3290,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-09-14T18:33:30Z",
-      "video_id": "1597586851776656"
+      "video_id": "1597586851776656",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 10
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-14T19:03:20Z",
+      "comment_text": "Quick check: if it still feels scratchy, you may need one grit lower for a short blend. Want a simple grit ladder?",
+      "comment_status": "commented",
+      "comment_id": "1597586851776656_961688566210728",
+      "commented_ts_utc": "2026-09-14T19:03:23Z"
     }
   },
   "runs": [
@@ -6040,6 +6050,15 @@
       "result": "commented",
       "comment_id": "2627399294373979_1580458367096936",
       "template_idx": 7
+    },
+    {
+      "ts_utc": "2026-09-14T19:03:23Z",
+      "video_id": "1597586851776656",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_build-up_on_metal_parts-80_grit_for_heavy_paint_removal-metal-032.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "1597586851776656_961688566210728",
+      "template_idx": 10
     }
   ]
 }
