@@ -5237,7 +5237,17 @@
         "status_code": "FINISHED",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "id": "18131267995741317"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 6
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-15T18:20:45Z",
+      "comment_text": "Small circles help blend; straight passes help level. Are you going for a smooth finish or just prep?",
+      "comment_status": "commented",
+      "comment_id": "18223291729332239",
+      "commented_ts_utc": "2026-09-15T18:20:50Z"
     }
   },
   "runs": [
@@ -8173,6 +8183,15 @@
       "result": "commented",
       "comment_id": "17961505809191899",
       "template_idx": 8
+    },
+    {
+      "ts_utc": "2026-09-15T18:20:50Z",
+      "media_id": "18009703910977425",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/clear_coat_still_on_metal-120_grit_for_removing_clear_coat-metal-031.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18223291729332239",
+      "template_idx": 6
     }
   ]
 }
