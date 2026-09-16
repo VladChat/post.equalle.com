@@ -3311,7 +3311,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-09-16T17:36:13Z",
-      "video_id": "1541046801107660"
+      "video_id": "1541046801107660",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-16T18:13:18Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "1541046801107660_28293872083606326",
+      "commented_ts_utc": "2026-09-16T18:13:27Z"
     }
   },
   "runs": [
@@ -6079,6 +6089,15 @@
       "result": "commented",
       "comment_id": "1597586851776656_961688566210728",
       "template_idx": 10
+    },
+    {
+      "ts_utc": "2026-09-16T18:13:27Z",
+      "video_id": "1541046801107660",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_gloss_causing_paint_failure-220_grit_to_dull_plastic_surface-plastic-032.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "1541046801107660_28293872083606326",
+      "template_idx": 12
     }
   ]
 }
