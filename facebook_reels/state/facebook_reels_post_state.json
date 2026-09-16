@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-09-14"
+    "manifest_index": 4,
+    "last_day": "2026-09-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3301,6 +3301,17 @@
       "comment_status": "commented",
       "comment_id": "1597586851776656_961688566210728",
       "commented_ts_utc": "2026-09-14T19:03:23Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_gloss_causing_paint_failure-220_grit_to_dull_plastic_surface-plastic-032.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_gloss_causing_paint_failure-220_grit_to_dull_plastic_surface-plastic-032.mp4",
+      "filename": "plastic_gloss_causing_paint_failure-220_grit_to_dull_plastic_surface-plastic-032.mp4",
+      "manifest": "plastic.json",
+      "title": "Plastic Gloss Causing Paint Failure? Dull With 220 Grit",
+      "description": "A glossy plastic surface can cause paint failure because it’s too slick. 220 grit scuff sanding helps dull the gloss and create a consistent tooth for primer and paint. Wipe clean before coating. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-16T17:36:13Z",
+      "video_id": "1541046801107660"
     }
   },
   "runs": [
@@ -4742,6 +4753,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "1597586851776656",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-16T17:36:13Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_gloss_causing_paint_failure-220_grit_to_dull_plastic_surface-plastic-032.mp4",
+      "filename": "plastic_gloss_causing_paint_failure-220_grit_to_dull_plastic_surface-plastic-032.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "1541046801107660",
       "error": null
     }
   ],
