@@ -3332,7 +3332,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-09-18T17:03:44Z",
-      "video_id": "3587691418064297"
+      "video_id": "3587691418064297",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 10
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-18T18:04:20Z",
+      "comment_text": "Quick check: if it still feels scratchy, you may need one grit lower for a short blend. Want a simple grit ladder?",
+      "comment_status": "commented",
+      "comment_id": "3587691418064297_2148179065765810",
+      "commented_ts_utc": "2026-09-18T18:04:24Z"
     }
   },
   "runs": [
@@ -6118,6 +6128,15 @@
       "result": "commented",
       "comment_id": "1541046801107660_28293872083606326",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-09-18T18:04:24Z",
+      "video_id": "3587691418064297",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "3587691418064297_2148179065765810",
+      "template_idx": 10
     }
   ]
 }
