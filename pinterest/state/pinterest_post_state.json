@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-09-14"
+    "manifest_index": 0,
+    "last_day": "2026-09-18"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2104,6 +2104,20 @@
       "pin_id": "839428818092569309",
       "media_id": "3857730191339831360",
       "cover_image_url": "https://i.pinimg.com/1200x/97/4c/06/974c06bd921f0556802b69527e9051c5.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4",
+      "filename": "between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-180",
+      "title": "Between-Coat Texture Too Heavy? Refine Drywall Surface With 180 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-18T13:39:08+00:00",
+      "pin_id": "839428818092631086",
+      "media_id": "3869052285926140096",
+      "cover_image_url": "https://i.pinimg.com/1200x/68/d4/4e/68d44e2e6906003533c8cc228c4ddcf5.jpg"
     }
   },
   "runs": [
@@ -3605,6 +3619,16 @@
       "result": "success",
       "pin_id": "839428818092569309",
       "media_id": "3857730191339831360",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-18T13:39:08+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4",
+      "filename": "between-coat_texture_too_heavy-180_grit_for_refining_drywall_surface-drywall-031.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818092631086",
+      "media_id": "3869052285926140096",
       "error": null
     }
   ]
