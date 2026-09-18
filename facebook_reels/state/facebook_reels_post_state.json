@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-09-16"
+    "manifest_index": 0,
+    "last_day": "2026-09-18"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3322,6 +3322,17 @@
       "comment_status": "commented",
       "comment_id": "1541046801107660_28293872083606326",
       "commented_ts_utc": "2026-09-16T18:13:27Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4",
+      "filename": "wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4",
+      "manifest": "drywall.json",
+      "title": "Wall Not Smooth Before Paint? Final Between-Coat Prep With 220 Grit",
+      "description": "If the wall still isn’t smooth, make a light pass with 220 grit to refine the surface before the final coat, primer, or paint. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-18T17:03:44Z",
+      "video_id": "3587691418064297"
     }
   },
   "runs": [
@@ -4772,6 +4783,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1541046801107660",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-18T17:03:44Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4",
+      "filename": "wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "3587691418064297",
       "error": null
     }
   ],
