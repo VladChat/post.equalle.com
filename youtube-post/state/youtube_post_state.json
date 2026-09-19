@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-09-18"
+    "last_day": "2026-09-19"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2606,6 +2606,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QD2RZ63",
       "result": "success",
       "video_id": "19bOubiCtuM"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_not_sticking_to_plastic-220_grit_for_plastic_paint_prep-plastic-021.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_not_sticking_to_plastic-220_grit_for_plastic_paint_prep-plastic-021.mp4",
+      "filename": "paint_not_sticking_to_plastic-220_grit_for_plastic_paint_prep-plastic-021.mp4",
+      "manifest": "plastic.json",
+      "title": "Paint Not Sticking? Use 220 Grit For Plastic Prep",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
+      "result": "success",
+      "video_id": "sfx19h0nHZg"
     }
   },
   "runs": [
@@ -4169,6 +4179,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_not_ready_for_finish-220_grit_for_plastic_surface_prep-plastic-020.mp4",
       "result": "success",
       "video_id": "19bOubiCtuM"
+    },
+    {
+      "ts_utc": "2026-09-19T14:11:46.310645+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_not_sticking_to_plastic-220_grit_for_plastic_paint_prep-plastic-021.mp4",
+      "result": "success",
+      "video_id": "sfx19h0nHZg"
     }
   ],
   "last_post": {
