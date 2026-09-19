@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-09-17"
+    "manifest_index": 0,
+    "last_day": "2026-09-19"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -5282,6 +5282,30 @@
       "comment_status": "commented",
       "comment_id": "17968256754154995",
       "commented_ts_utc": "2026-09-17T18:06:54Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4",
+      "filename": "drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4",
+      "manifest": "drywall.json",
+      "title": "Looks Flat but Feels Rough? Light Sand Between Coats With 220 Grit",
+      "description": "If the surface looks flat but feels rough, do a light pass with 220 grit to smooth the feel and prep for the next coat. Sandpaper eQualle",
+      "caption": "Looks Flat but Feels Rough? Light Sand Between Coats With 220 Grit\n\nIf the surface looks flat but feels rough, do a light pass with 220 grit to smooth the feel and prep for the next coat. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-19T16:21:53Z",
+      "mode": "binary",
+      "container_id": "18131666056741317",
+      "media_id": "18121800121709596",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v26.0/18131666056741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "id": "18131666056741317",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "status_code": "FINISHED"
+      }
     }
   },
   "runs": [
@@ -7010,6 +7034,17 @@
       "filename": "paint_wont_grip_plastic_surface-180-220_grit_for_plastic_paint_prep-plastic-031.mp4",
       "container_id": "18131463478741317",
       "media_id": "18009243773969126",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-19T16:21:53Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4",
+      "filename": "drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4",
+      "container_id": "18131666056741317",
+      "media_id": "18121800121709596",
       "error": null
     }
   ],
