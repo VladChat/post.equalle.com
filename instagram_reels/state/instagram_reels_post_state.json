@@ -5305,7 +5305,17 @@
         "id": "18131666056741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 18
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-19T17:25:04Z",
+      "comment_text": "If you’re getting random deep lines, the sheet may be loaded or folded. Are you using fresh paper?",
+      "comment_status": "commented",
+      "comment_id": "18110605760104826",
+      "commented_ts_utc": "2026-09-19T17:25:06Z"
     }
   },
   "runs": [
@@ -8281,6 +8291,15 @@
       "result": "commented",
       "comment_id": "17968256754154995",
       "template_idx": 2
+    },
+    {
+      "ts_utc": "2026-09-19T17:25:06Z",
+      "media_id": "18121800121709596",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18110605760104826",
+      "template_idx": 18
     }
   ]
 }
