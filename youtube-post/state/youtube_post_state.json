@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-09-19"
+    "last_day": "2026-09-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2616,6 +2616,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
       "result": "success",
       "video_id": "sfx19h0nHZg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_peeling_off_plastic-220_grit_for_proper_plastic_scuffing-plastic-022.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_peeling_off_plastic-220_grit_for_proper_plastic_scuffing-plastic-022.mp4",
+      "filename": "paint_peeling_off_plastic-220_grit_for_proper_plastic_scuffing-plastic-022.mp4",
+      "manifest": "plastic.json",
+      "title": "Paint Peeling Off Plastic? Scuff Properly With 220 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVX7F6",
+      "result": "success",
+      "video_id": "z9ROPYLtvis"
     }
   },
   "runs": [
@@ -4185,6 +4195,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_not_sticking_to_plastic-220_grit_for_plastic_paint_prep-plastic-021.mp4",
       "result": "success",
       "video_id": "sfx19h0nHZg"
+    },
+    {
+      "ts_utc": "2026-09-20T14:32:44.888032+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_peeling_off_plastic-220_grit_for_proper_plastic_scuffing-plastic-022.mp4",
+      "result": "success",
+      "video_id": "z9ROPYLtvis"
     }
   ],
   "last_post": {
