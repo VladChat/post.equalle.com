@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-09-18"
+    "manifest_index": 1,
+    "last_day": "2026-09-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2118,6 +2118,20 @@
       "pin_id": "839428818092631086",
       "media_id": "3869052285926140096",
       "cover_image_url": "https://i.pinimg.com/1200x/68/d4/4e/68d44e2e6906003533c8cc228c4ddcf5.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Tool_Marks_Wont_Disappear-150_Grit_for_Removing_Tool_Marks-wood-032.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Tool_Marks_Wont_Disappear-150_Grit_for_Removing_Tool_Marks-wood-032.mp4",
+      "filename": "Tool_Marks_Wont_Disappear-150_Grit_for_Removing_Tool_Marks-wood-032.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://www.amazon.com/gp/product/B07RJZ3C39",
+      "title": "Tool Marks Won't Disappear: 150 Grit Removing Tool Marks",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-20T13:37:07+00:00",
+      "pin_id": "839428818092661230",
+      "media_id": "3874845211315679808",
+      "cover_image_url": "https://i.pinimg.com/1200x/09/58/b1/0958b1b970ed6a903a9c6ddddeec0763.jpg"
     }
   },
   "runs": [
@@ -3629,6 +3643,16 @@
       "result": "success",
       "pin_id": "839428818092631086",
       "media_id": "3869052285926140096",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-20T13:37:07+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Tool_Marks_Wont_Disappear-150_Grit_for_Removing_Tool_Marks-wood-032.mp4",
+      "filename": "Tool_Marks_Wont_Disappear-150_Grit_for_Removing_Tool_Marks-wood-032.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818092661230",
+      "media_id": "3874845211315679808",
       "error": null
     }
   ]
