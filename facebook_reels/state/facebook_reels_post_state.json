@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-09-18"
+    "manifest_index": 1,
+    "last_day": "2026-09-21"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3343,6 +3343,17 @@
       "comment_status": "commented",
       "comment_id": "3587691418064297_2148179065765810",
       "commented_ts_utc": "2026-09-18T18:04:24Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4",
+      "filename": "Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4",
+      "manifest": "wood.json",
+      "title": "Sanding Lines Look Random: 180 Grit Even Sanding Pattern",
+      "description": "Sanding Lines Look Random? Use 180 grit for even sanding pattern. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-21T18:37:48Z",
+      "video_id": "1778827136593760"
     }
   },
   "runs": [
@@ -4802,6 +4813,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "3587691418064297",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-21T18:37:48Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4",
+      "filename": "Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "1778827136593760",
       "error": null
     }
   ],
