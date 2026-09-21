@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-09-20"
+    "manifest_index": 2,
+    "last_day": "2026-09-21"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2132,6 +2132,20 @@
       "pin_id": "839428818092661230",
       "media_id": "3874845211315679808",
       "cover_image_url": "https://i.pinimg.com/1200x/09/58/b1/0958b1b970ed6a903a9c6ddddeec0763.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/headlights_look_cloudy-1000_grit_wet_sanding_headlights-wet-031.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_look_cloudy-1000_grit_wet_sanding_headlights-wet-031.mp4",
+      "filename": "headlights_look_cloudy-1000_grit_wet_sanding_headlights-wet-031.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049945",
+      "destination_url": "https://equalle.com/products/1000-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "title": "Cloudy Headlights? Start With 1000 Grit Wet Sanding",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-21T15:56:54+00:00",
+      "pin_id": "839428818092681149",
+      "media_id": "3878025654764921920",
+      "cover_image_url": "https://i.pinimg.com/1200x/a3/7e/a4/a37ea40435d15e4597c73e63f03d37c7.jpg"
     }
   },
   "runs": [
@@ -3653,6 +3667,16 @@
       "result": "success",
       "pin_id": "839428818092661230",
       "media_id": "3874845211315679808",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-21T15:56:54+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_look_cloudy-1000_grit_wet_sanding_headlights-wet-031.mp4",
+      "filename": "headlights_look_cloudy-1000_grit_wet_sanding_headlights-wet-031.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818092681149",
+      "media_id": "3878025654764921920",
       "error": null
     }
   ]
