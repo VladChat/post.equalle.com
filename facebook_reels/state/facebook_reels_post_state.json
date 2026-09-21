@@ -3353,7 +3353,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-09-21T18:37:48Z",
-      "video_id": "1778827136593760"
+      "video_id": "1778827136593760",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-21T18:56:17Z",
+      "comment_text": "For wood work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "1778827136593760_4650953638556781",
+      "commented_ts_utc": "2026-09-21T18:56:20Z"
     }
   },
   "runs": [
@@ -6157,6 +6167,15 @@
       "result": "commented",
       "comment_id": "3587691418064297_2148179065765810",
       "template_idx": 10
+    },
+    {
+      "ts_utc": "2026-09-21T18:56:20Z",
+      "video_id": "1778827136593760",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "1778827136593760_4650953638556781",
+      "template_idx": 3
     }
   ]
 }
