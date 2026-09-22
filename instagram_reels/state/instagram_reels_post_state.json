@@ -5339,7 +5339,17 @@
         "id": "18131965525741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 8
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-22T18:20:41Z",
+      "comment_text": "Try a few lighter passes instead of one heavy pass—less chance of gouging. Are you seeing swirl marks?",
+      "comment_status": "commented",
+      "comment_id": "18632516575013779",
+      "commented_ts_utc": "2026-09-22T18:20:56Z"
     }
   },
   "runs": [
@@ -8335,6 +8345,15 @@
       "result": "commented",
       "comment_id": "18110605760104826",
       "template_idx": 18
+    },
+    {
+      "ts_utc": "2026-09-22T18:20:56Z",
+      "media_id": "18017429339929799",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "18632516575013779",
+      "template_idx": 8
     }
   ]
 }
