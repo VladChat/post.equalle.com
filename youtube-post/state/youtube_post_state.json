@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-09-21"
+    "last_day": "2026-09-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2636,6 +2636,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-180",
       "result": "success",
       "video_id": "hU9t3Y83Rsg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_fish_eyes_on_plastic-220_grit_for_plastic_surface_prep-plastic-024.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_fish_eyes_on_plastic-220_grit_for_plastic_surface_prep-plastic-024.mp4",
+      "filename": "paint_fish_eyes_on_plastic-220_grit_for_plastic_surface_prep-plastic-024.mp4",
+      "manifest": "plastic.json",
+      "title": "Fish Eyes In Paint? Prep Plastic With 220 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8DFS6T",
+      "result": "success",
+      "video_id": "7wZpBGNWw0I"
     }
   },
   "runs": [
@@ -4217,6 +4227,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_too_smooth_for_paint-180-220_grit_for_paint_adhesion-plastic-023.mp4",
       "result": "success",
       "video_id": "hU9t3Y83Rsg"
+    },
+    {
+      "ts_utc": "2026-09-22T15:26:05.512034+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_fish_eyes_on_plastic-220_grit_for_plastic_surface_prep-plastic-024.mp4",
+      "result": "success",
+      "video_id": "7wZpBGNWw0I"
     }
   ],
   "last_post": {
