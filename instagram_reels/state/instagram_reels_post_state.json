@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-09-19"
+    "manifest_index": 1,
+    "last_day": "2026-09-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -5316,6 +5316,30 @@
       "comment_status": "commented",
       "comment_id": "18110605760104826",
       "commented_ts_utc": "2026-09-19T17:25:06Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4",
+      "filename": "Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4",
+      "manifest": "wood.json",
+      "title": "Sanding Lines Look Random: 180 Grit Even Sanding Pattern",
+      "description": "Sanding Lines Look Random? Use 180 grit for even sanding pattern. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "caption": "Sanding Lines Look Random: 180 Grit Even Sanding Pattern\n\nSanding Lines Look Random? Use 180 grit for even sanding pattern. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-22T17:36:34Z",
+      "mode": "binary",
+      "container_id": "18131965525741317",
+      "media_id": "18017429339929799",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v26.0/18131965525741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "id": "18131965525741317",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "status_code": "FINISHED"
+      }
     }
   },
   "runs": [
@@ -7055,6 +7079,17 @@
       "filename": "drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4",
       "container_id": "18131666056741317",
       "media_id": "18121800121709596",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-22T17:36:34Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wood.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4",
+      "filename": "Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4",
+      "container_id": "18131965525741317",
+      "media_id": "18017429339929799",
       "error": null
     }
   ],
