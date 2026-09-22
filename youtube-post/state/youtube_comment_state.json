@@ -2136,6 +2136,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-09-21T17:06:26Z",
       "verify_after_ts": 1790012186.234715
+    },
+    "7wZpBGNWw0I": {
+      "comment_status": "commented_unverified",
+      "comment_id": "Ugw4DqQxkR9FutN34uJ4AaABAg",
+      "comment_text": "If the surface feels smooth but still looks cloudy, your scratches may be too coarse—step up one grit and re-check under strong light. What finish are you aiming for on surface?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-09-22T15:32:19Z",
+      "verify_after_ts": 1790092939.042823
     }
   },
   "runs": [
@@ -3725,6 +3733,12 @@
       "video_id": "hU9t3Y83Rsg",
       "result": "commented_unverified",
       "comment_id": "UgxPLYrSQU9SLvBokYh4AaABAg"
+    },
+    {
+      "ts": "2026-09-22T15:32:19Z",
+      "video_id": "7wZpBGNWw0I",
+      "result": "commented_unverified",
+      "comment_id": "Ugw4DqQxkR9FutN34uJ4AaABAg"
     }
   ]
 }
