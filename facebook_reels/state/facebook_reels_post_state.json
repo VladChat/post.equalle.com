@@ -3374,7 +3374,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-09-23T17:49:55Z",
-      "video_id": "1347985054074304"
+      "video_id": "1347985054074304",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 6
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-23T17:55:44Z",
+      "comment_text": "Small circles help blend; straight passes help level. Are you going for a smooth finish or just prep?",
+      "comment_status": "commented",
+      "comment_id": "1347985054074304_1389403306140669",
+      "commented_ts_utc": "2026-09-23T17:55:48Z"
     }
   },
   "runs": [
@@ -6196,6 +6206,15 @@
       "result": "commented",
       "comment_id": "1778827136593760_4650953638556781",
       "template_idx": 3
+    },
+    {
+      "ts_utc": "2026-09-23T17:55:48Z",
+      "video_id": "1347985054074304",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_still_foggy-1500_grit_wet_sand_before_polishing-wet-033.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1347985054074304_1389403306140669",
+      "template_idx": 6
     }
   ]
 }
