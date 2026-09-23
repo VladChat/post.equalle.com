@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-09-21"
+    "manifest_index": 2,
+    "last_day": "2026-09-23"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3364,6 +3364,17 @@
       "comment_status": "commented",
       "comment_id": "1778827136593760_4650953638556781",
       "commented_ts_utc": "2026-09-21T18:56:20Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/headlights_still_foggy-1500_grit_wet_sand_before_polishing-wet-033.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_still_foggy-1500_grit_wet_sand_before_polishing-wet-033.mp4",
+      "filename": "headlights_still_foggy-1500_grit_wet_sand_before_polishing-wet-033.mp4",
+      "manifest": "wet.json",
+      "title": "Headlights Still Foggy? 1500 Grit Wet Sand Before Polishing",
+      "description": "Headlights still foggy after sanding? Wet sand with 1500 grit to refine haze before polishing. Keep the lens wet, use light pressure, sand in even passes, wipe often, and inspect under good light before moving to finer steps. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-23T17:49:55Z",
+      "video_id": "1347985054074304"
     }
   },
   "runs": [
@@ -4832,6 +4843,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "1778827136593760",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-23T17:49:55Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_still_foggy-1500_grit_wet_sand_before_polishing-wet-033.mp4",
+      "filename": "headlights_still_foggy-1500_grit_wet_sand_before_polishing-wet-033.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "1347985054074304",
       "error": null
     }
   ],
