@@ -5373,7 +5373,17 @@
         "id": "18132162007741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 14
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-24T18:51:27Z",
+      "comment_text": "If the surface heats up, slow down and lighten pressure. Are you sanding by hand or with a tool?",
+      "comment_status": "commented",
+      "comment_id": "17981119712898751",
+      "commented_ts_utc": "2026-09-24T18:51:30Z"
     }
   },
   "runs": [
@@ -8389,6 +8399,15 @@
       "result": "commented",
       "comment_id": "18632516575013779",
       "template_idx": 8
+    },
+    {
+      "ts_utc": "2026-09-24T18:51:30Z",
+      "media_id": "17931997764144052",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_still_foggy-1500_grit_wet_sand_before_polishing-wet-033.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "17981119712898751",
+      "template_idx": 14
     }
   ]
 }
