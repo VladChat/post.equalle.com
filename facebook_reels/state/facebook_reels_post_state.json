@@ -3395,7 +3395,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-09-25T17:55:37Z",
-      "video_id": "4609684015845122"
+      "video_id": "4609684015845122",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 6
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-25T18:42:25Z",
+      "comment_text": "Small circles help blend; straight passes help level. Are you going for a smooth finish or just prep?",
+      "comment_status": "commented",
+      "comment_id": "4609684015845122_836998876140620",
+      "commented_ts_utc": "2026-09-25T18:42:28Z"
     }
   },
   "runs": [
@@ -6234,6 +6244,15 @@
       "manifest": "wet.json",
       "result": "commented",
       "comment_id": "1347985054074304_1389403306140669",
+      "template_idx": 6
+    },
+    {
+      "ts_utc": "2026-09-25T18:42:28Z",
+      "video_id": "4609684015845122",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_lines_showing_through_finish-120_grit_for_smoothing_paint_edges-metal-033.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "4609684015845122_836998876140620",
       "template_idx": 6
     }
   ]
