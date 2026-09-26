@@ -5407,7 +5407,17 @@
         "id": "18132373357741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 18
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-26T17:27:34Z",
+      "comment_text": "If you’re getting random deep lines, the sheet may be loaded or folded. Are you using fresh paper?",
+      "comment_status": "commented",
+      "comment_id": "17932826655143209",
+      "commented_ts_utc": "2026-09-26T17:27:38Z"
     }
   },
   "runs": [
@@ -8443,6 +8453,15 @@
       "result": "commented",
       "comment_id": "17981119712898751",
       "template_idx": 14
+    },
+    {
+      "ts_utc": "2026-09-26T17:27:38Z",
+      "media_id": "17931981909401841",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_build-up_on_metal_parts-80_grit_for_heavy_paint_removal-metal-032.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "17932826655143209",
+      "template_idx": 18
     }
   ]
 }
