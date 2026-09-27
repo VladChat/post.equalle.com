@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-09-23"
+    "manifest_index": 4,
+    "last_day": "2026-09-27"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2160,6 +2160,20 @@
       "pin_id": "839428818092713042",
       "media_id": "3883622443626438208",
       "cover_image_url": "https://i.pinimg.com/1200x/18/75/58/18755830cbd58c7d9594b7fe38b45c90.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_wont_grip_plastic_surface-180-220_grit_for_plastic_paint_prep-plastic-031.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_wont_grip_plastic_surface-180-220_grit_for_plastic_paint_prep-plastic-031.mp4",
+      "filename": "paint_wont_grip_plastic_surface-180-220_grit_for_plastic_paint_prep-plastic-031.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-180",
+      "title": "Paint Won’t Grip Plastic? Use 180 Then 220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-27T14:44:15+00:00",
+      "pin_id": "839428818092777359",
+      "media_id": "3895275295222334336",
+      "cover_image_url": "https://i.pinimg.com/1200x/52/67/fd/5267fd6081e62742d516476ee43d0770.jpg"
     }
   },
   "runs": [
@@ -3701,6 +3715,16 @@
       "result": "success",
       "pin_id": "839428818092713042",
       "media_id": "3883622443626438208",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-27T14:44:15+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_wont_grip_plastic_surface-180-220_grit_for_plastic_paint_prep-plastic-031.mp4",
+      "filename": "paint_wont_grip_plastic_surface-180-220_grit_for_plastic_paint_prep-plastic-031.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818092777359",
+      "media_id": "3895275295222334336",
       "error": null
     }
   ]
