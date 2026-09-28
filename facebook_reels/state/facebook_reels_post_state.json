@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-09-25"
+    "manifest_index": 4,
+    "last_day": "2026-09-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3406,6 +3406,17 @@
       "comment_status": "commented",
       "comment_id": "4609684015845122_836998876140620",
       "commented_ts_utc": "2026-09-25T18:42:28Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_not_laying_flat-220_grit_for_level_plastic_prep-plastic-033.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_not_laying_flat-220_grit_for_level_plastic_prep-plastic-033.mp4",
+      "filename": "paint_not_laying_flat-220_grit_for_level_plastic_prep-plastic-033.mp4",
+      "manifest": "plastic.json",
+      "title": "Paint Not Laying Flat? Level Prep With 220 Grit",
+      "description": "If paint isn’t laying flat on plastic, surface prep may be uneven. 220 grit helps level minor texture and create a uniform scuff so paint can lay down smoother. Wipe clean and recoat. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-28T20:05:52Z",
+      "video_id": "1401340012113553"
     }
   },
   "runs": [
@@ -4892,6 +4903,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "4609684015845122",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-28T20:05:52Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_not_laying_flat-220_grit_for_level_plastic_prep-plastic-033.mp4",
+      "filename": "paint_not_laying_flat-220_grit_for_level_plastic_prep-plastic-033.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "1401340012113553",
       "error": null
     }
   ],
