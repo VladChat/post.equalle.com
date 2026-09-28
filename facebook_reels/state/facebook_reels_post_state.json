@@ -3416,7 +3416,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-09-28T20:05:52Z",
-      "video_id": "1401340012113553"
+      "video_id": "1401340012113553",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 19
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-28T20:48:59Z",
+      "comment_text": "Before the next coat, clean the surface well so dust doesn’t telegraph through. Do you tack-cloth or wipe down?",
+      "comment_status": "commented",
+      "comment_id": "1401340012113553_1051370637931412",
+      "commented_ts_utc": "2026-09-28T20:49:04Z"
     }
   },
   "runs": [
@@ -6274,6 +6284,15 @@
       "result": "commented",
       "comment_id": "4609684015845122_836998876140620",
       "template_idx": 6
+    },
+    {
+      "ts_utc": "2026-09-28T20:49:04Z",
+      "video_id": "1401340012113553",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_not_laying_flat-220_grit_for_level_plastic_prep-plastic-033.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "1401340012113553_1051370637931412",
+      "template_idx": 19
     }
   ]
 }
