@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-09-27"
+    "manifest_index": 0,
+    "last_day": "2026-09-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2174,6 +2174,20 @@
       "pin_id": "839428818092777359",
       "media_id": "3895275295222334336",
       "cover_image_url": "https://i.pinimg.com/1200x/52/67/fd/5267fd6081e62742d516476ee43d0770.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4",
+      "filename": "drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049948",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVX7F6",
+      "title": "Looks Flat but Feels Rough? Light Sand Between Coats With 220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-28T17:43:29+00:00",
+      "pin_id": "839428818092796089",
+      "media_id": "3898533242529633152",
+      "cover_image_url": "https://i.pinimg.com/1200x/2f/f8/f1/2ff8f12a6b2b536472f20bbeeb2e12b7.jpg"
     }
   },
   "runs": [
@@ -3725,6 +3739,16 @@
       "result": "success",
       "pin_id": "839428818092777359",
       "media_id": "3895275295222334336",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-28T17:43:29+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4",
+      "filename": "drywall_looks_flat_but_feels_rough-220_grit_for_light_sanding_between_coats-drywall-032.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818092796089",
+      "media_id": "3898533242529633152",
       "error": null
     }
   ]
