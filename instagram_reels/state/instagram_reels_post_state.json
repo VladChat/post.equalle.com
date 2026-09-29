@@ -5441,7 +5441,17 @@
         "id": "18132678412741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 17
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-29T19:15:45Z",
+      "comment_text": "Don’t chase one spot too long—blend the area wider and re-check. Are the edges still visible?",
+      "comment_status": "commented",
+      "comment_id": "18101313488132198",
+      "commented_ts_utc": "2026-09-29T19:15:50Z"
     }
   },
   "runs": [
@@ -8497,6 +8507,15 @@
       "result": "commented",
       "comment_id": "17932826655143209",
       "template_idx": 18
+    },
+    {
+      "ts_utc": "2026-09-29T19:15:50Z",
+      "media_id": "17947724919084569",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_gloss_causing_paint_failure-220_grit_to_dull_plastic_surface-plastic-032.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "18101313488132198",
+      "template_idx": 17
     }
   ]
 }
