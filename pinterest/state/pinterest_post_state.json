@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-09-28"
+    "manifest_index": 1,
+    "last_day": "2026-09-30"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2188,6 +2188,20 @@
       "pin_id": "839428818092796089",
       "media_id": "3898533242529633152",
       "cover_image_url": "https://i.pinimg.com/1200x/2f/f8/f1/2ff8f12a6b2b536472f20bbeeb2e12b7.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4",
+      "filename": "Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-180",
+      "title": "Sanding Lines Look Random: 180 Grit Even Sanding Pattern",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-30T15:59:05+00:00",
+      "pin_id": "839428818092829123",
+      "media_id": "3904120969412805312",
+      "cover_image_url": "https://i.pinimg.com/1200x/b2/62/7f/b2627f6665e71fd2d639ede6cc09e393.jpg"
     }
   },
   "runs": [
@@ -3749,6 +3763,16 @@
       "result": "success",
       "pin_id": "839428818092796089",
       "media_id": "3898533242529633152",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-30T15:59:05+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4",
+      "filename": "Sanding_Lines_Look_Random-180_Grit_for_Even_Sanding_Pattern-wood-033.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818092829123",
+      "media_id": "3904120969412805312",
       "error": null
     }
   ]
