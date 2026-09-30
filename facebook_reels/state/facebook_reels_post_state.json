@@ -3437,7 +3437,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-09-30T18:25:13Z",
-      "video_id": "1832899471398798"
+      "video_id": "1832899471398798",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 19
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-09-30T19:02:00Z",
+      "comment_text": "Before the next coat, clean the surface well so dust doesn’t telegraph through. Do you tack-cloth or wipe down?",
+      "comment_status": "commented",
+      "comment_id": "1832899471398798_2119660392312787",
+      "commented_ts_utc": "2026-09-30T19:02:04Z"
     }
   },
   "runs": [
@@ -6312,6 +6322,15 @@
       "manifest": "plastic.json",
       "result": "commented",
       "comment_id": "1401340012113553_1051370637931412",
+      "template_idx": 19
+    },
+    {
+      "ts_utc": "2026-09-30T19:02:04Z",
+      "video_id": "1832899471398798",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1832899471398798_2119660392312787",
       "template_idx": 19
     }
   ]
