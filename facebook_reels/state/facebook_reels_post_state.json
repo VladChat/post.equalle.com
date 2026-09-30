@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-09-28"
+    "manifest_index": 0,
+    "last_day": "2026-09-30"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3427,6 +3427,17 @@
       "comment_status": "commented",
       "comment_id": "1401340012113553_1051370637931412",
       "commented_ts_utc": "2026-09-28T20:49:04Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
+      "filename": "feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
+      "manifest": "drywall.json",
+      "title": "Feathering Not Wide Enough? Expand the Feather Area With 180 Grit",
+      "description": "If the blend zone is too narrow, sand outward with 180 grit using light pressure to widen the feather and smooth the transition into the wall. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-09-30T18:25:13Z",
+      "video_id": "1832899471398798"
     }
   },
   "runs": [
@@ -4922,6 +4933,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1401340012113553",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-09-30T18:25:13Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
+      "filename": "feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1832899471398798",
       "error": null
     }
   ],
