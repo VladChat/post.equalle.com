@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-09-30"
+    "last_day": "2026-10-01"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2726,6 +2726,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QD2RZ63",
       "result": "success",
       "video_id": "aSoGLINie6M"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_not_laying_flat-220_grit_for_level_plastic_prep-plastic-033.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_not_laying_flat-220_grit_for_level_plastic_prep-plastic-033.mp4",
+      "filename": "paint_not_laying_flat-220_grit_for_level_plastic_prep-plastic-033.mp4",
+      "manifest": "plastic.json",
+      "title": "Paint Not Laying Flat? Level Prep With 220 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-220",
+      "result": "success",
+      "video_id": "eRmsQFmEtuk"
     }
   },
   "runs": [
@@ -4361,6 +4371,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_gloss_causing_paint_failure-220_grit_to_dull_plastic_surface-plastic-032.mp4",
       "result": "success",
       "video_id": "aSoGLINie6M"
+    },
+    {
+      "ts_utc": "2026-10-01T17:16:49.237669+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_not_laying_flat-220_grit_for_level_plastic_prep-plastic-033.mp4",
+      "result": "success",
+      "video_id": "eRmsQFmEtuk"
     }
   ],
   "last_post": {
