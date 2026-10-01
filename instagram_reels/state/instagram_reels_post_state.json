@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-09-29"
+    "manifest_index": 0,
+    "last_day": "2026-10-01"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -5452,6 +5452,30 @@
       "comment_status": "commented",
       "comment_id": "18101313488132198",
       "commented_ts_utc": "2026-09-29T19:15:50Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
+      "filename": "edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
+      "manifest": "drywall.json",
+      "title": "Edges Still Too Sharp? Controlled Feathering With 180–220 Grit",
+      "description": "If edges still feel sharp, start with 180 grit to knock them down, then switch to 220 grit to feather smoothly and blend the transition. Sandpaper eQualle",
+      "caption": "Edges Still Too Sharp? Controlled Feathering With 180–220 Grit\n\nIf edges still feel sharp, start with 180 grit to knock them down, then switch to 220 grit to feather smoothly and blend the transition. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-01T18:48:16Z",
+      "mode": "binary",
+      "container_id": "18132871786741317",
+      "media_id": "17921628924433688",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v26.0/18132871786741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "id": "18132871786741317",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "status_code": "FINISHED"
+      }
     }
   },
   "runs": [
@@ -7235,6 +7259,17 @@
       "filename": "plastic_gloss_causing_paint_failure-220_grit_to_dull_plastic_surface-plastic-032.mp4",
       "container_id": "18132678412741317",
       "media_id": "17947724919084569",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-01T18:48:16Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
+      "filename": "edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
+      "container_id": "18132871786741317",
+      "media_id": "17921628924433688",
       "error": null
     }
   ],
