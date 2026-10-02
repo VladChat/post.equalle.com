@@ -3458,7 +3458,14 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-10-02T18:21:42Z",
-      "video_id": "29684314017824319"
+      "video_id": "29684314017824319",
+      "comment_plan": {
+        "decision": "skip",
+        "template_idx": 13
+      },
+      "comment_status": "skipped",
+      "comment_skipped_ts_utc": "2026-10-02T19:04:38Z",
+      "comment_skipped_reason": "policy_10pct_skip"
     }
   },
   "runs": [
