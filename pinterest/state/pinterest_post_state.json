@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-09-30"
+    "manifest_index": 2,
+    "last_day": "2026-10-02"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2202,6 +2202,20 @@
       "pin_id": "839428818092829123",
       "media_id": "3904120969412805312",
       "cover_image_url": "https://i.pinimg.com/1200x/b2/62/7f/b2627f6665e71fd2d639ede6cc09e393.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/yellow_haze_on_headlights-800-1500_grit_wet_sand_headlights-wet-032.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/yellow_haze_on_headlights-800-1500_grit_wet_sand_headlights-wet-032.mp4",
+      "filename": "yellow_haze_on_headlights-800-1500_grit_wet_sand_headlights-wet-032.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049945",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7TL27F",
+      "title": "Yellow Haze On Headlights? Wet Sand 800 To 1500 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-02T15:52:43+00:00",
+      "pin_id": "839428818092861454",
+      "media_id": "3909907627169608576",
+      "cover_image_url": "https://i.pinimg.com/1200x/1e/a5/14/1ea514bfd348450b1662f75ab49b5380.jpg"
     }
   },
   "runs": [
@@ -3773,6 +3787,16 @@
       "result": "success",
       "pin_id": "839428818092829123",
       "media_id": "3904120969412805312",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-02T15:52:43+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/yellow_haze_on_headlights-800-1500_grit_wet_sand_headlights-wet-032.mp4",
+      "filename": "yellow_haze_on_headlights-800-1500_grit_wet_sand_headlights-wet-032.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818092861454",
+      "media_id": "3909907627169608576",
       "error": null
     }
   ]
