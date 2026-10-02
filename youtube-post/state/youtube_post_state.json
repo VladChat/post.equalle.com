@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-01"
+    "last_day": "2026-10-02"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2736,6 +2736,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-220",
       "result": "success",
       "video_id": "eRmsQFmEtuk"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/primer_feels_too_smooth-320_grit_for_scuffing_plastic_primer-plastic-034.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/primer_feels_too_smooth-320_grit_for_scuffing_plastic_primer-plastic-034.mp4",
+      "filename": "primer_feels_too_smooth-320_grit_for_scuffing_plastic_primer-plastic-034.mp4",
+      "manifest": "plastic.json",
+      "title": "Primer Feels Too Smooth? Scuff Plastic Primer With 320 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RFT5KT4",
+      "result": "success",
+      "video_id": "qa5gZM7j1Z4"
     }
   },
   "runs": [
@@ -4377,6 +4387,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_not_laying_flat-220_grit_for_level_plastic_prep-plastic-033.mp4",
       "result": "success",
       "video_id": "eRmsQFmEtuk"
+    },
+    {
+      "ts_utc": "2026-10-02T16:31:00.825115+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/primer_feels_too_smooth-320_grit_for_scuffing_plastic_primer-plastic-034.mp4",
+      "result": "success",
+      "video_id": "qa5gZM7j1Z4"
     }
   ],
   "last_post": {
