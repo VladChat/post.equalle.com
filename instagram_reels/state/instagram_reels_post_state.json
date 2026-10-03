@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-10-01"
+    "manifest_index": 1,
+    "last_day": "2026-10-03"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -5486,6 +5486,30 @@
       "comment_status": "commented",
       "comment_id": "18076772744410258",
       "commented_ts_utc": "2026-10-01T19:20:37Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Dents_Sanded_Around-120_Grit_for_Leveling_Small_High_Spots-wood-034.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Dents_Sanded_Around-120_Grit_for_Leveling_Small_High_Spots-wood-034.mp4",
+      "filename": "Dents_Sanded_Around-120_Grit_for_Leveling_Small_High_Spots-wood-034.mp4",
+      "manifest": "wood.json",
+      "title": "Dents Sanded Around: 120 Grit Leveling Small High Spots",
+      "description": "Dents Sanded Around? Use 120 grit for leveling small high spots. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "caption": "Dents Sanded Around: 120 Grit Leveling Small High Spots\n\nDents Sanded Around? Use 120 grit for leveling small high spots. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-03T17:10:30Z",
+      "mode": "binary",
+      "container_id": "18133073590741317",
+      "media_id": "18157684642508624",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v26.0/18133073590741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "id": "18133073590741317",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "status_code": "FINISHED"
+      }
     }
   },
   "runs": [
@@ -7280,6 +7304,17 @@
       "filename": "edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
       "container_id": "18132871786741317",
       "media_id": "17921628924433688",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-03T17:10:30Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wood.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Dents_Sanded_Around-120_Grit_for_Leveling_Small_High_Spots-wood-034.mp4",
+      "filename": "Dents_Sanded_Around-120_Grit_for_Leveling_Small_High_Spots-wood-034.mp4",
+      "container_id": "18133073590741317",
+      "media_id": "18157684642508624",
       "error": null
     }
   ],
