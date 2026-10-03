@@ -5509,7 +5509,17 @@
         "id": "18133073590741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 17
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-03T17:50:13Z",
+      "comment_text": "Don’t chase one spot too long—blend the area wider and re-check. Are the edges still visible?",
+      "comment_status": "commented",
+      "comment_id": "18085723250306935",
+      "commented_ts_utc": "2026-10-03T17:50:16Z"
     }
   },
   "runs": [
@@ -8605,6 +8615,15 @@
       "result": "commented",
       "comment_id": "18076772744410258",
       "template_idx": 11
+    },
+    {
+      "ts_utc": "2026-10-03T17:50:16Z",
+      "media_id": "18157684642508624",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Dents_Sanded_Around-120_Grit_for_Leveling_Small_High_Spots-wood-034.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "18085723250306935",
+      "template_idx": 17
     }
   ]
 }
