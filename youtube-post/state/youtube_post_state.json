@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-02"
+    "last_day": "2026-10-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2746,6 +2746,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RFT5KT4",
       "result": "success",
       "video_id": "qa5gZM7j1Z4"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_flaking_on_plastic_edges-220_grit_for_edge_prep_on_plastic-plastic-035.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_flaking_on_plastic_edges-220_grit_for_edge_prep_on_plastic-plastic-035.mp4",
+      "filename": "paint_flaking_on_plastic_edges-220_grit_for_edge_prep_on_plastic-plastic-035.mp4",
+      "manifest": "plastic.json",
+      "title": "Paint Flaking On Edges? Prep Plastic Edges With 220 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
+      "result": "success",
+      "video_id": "HF8HzHF4pV0"
     }
   },
   "runs": [
@@ -4393,6 +4403,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/primer_feels_too_smooth-320_grit_for_scuffing_plastic_primer-plastic-034.mp4",
       "result": "success",
       "video_id": "qa5gZM7j1Z4"
+    },
+    {
+      "ts_utc": "2026-10-04T15:40:59.510851+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_flaking_on_plastic_edges-220_grit_for_edge_prep_on_plastic-plastic-035.mp4",
+      "result": "success",
+      "video_id": "HF8HzHF4pV0"
     }
   ],
   "last_post": {
