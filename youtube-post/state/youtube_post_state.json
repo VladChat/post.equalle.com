@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-05"
+    "last_day": "2026-10-06"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2766,6 +2766,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RHVX7F6",
       "result": "success",
       "video_id": "NycpuGkB9Ks"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/fine_scratches_wont_disappear-320_grit_for_plastic_scratch_refinement-plastic-037.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/fine_scratches_wont_disappear-320_grit_for_plastic_scratch_refinement-plastic-037.mp4",
+      "filename": "fine_scratches_wont_disappear-320_grit_for_plastic_scratch_refinement-plastic-037.mp4",
+      "manifest": "plastic.json",
+      "title": "Fine Scratches Won’t Disappear? Refine With 320 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-320",
+      "result": "success",
+      "video_id": "o0jG6JmcWvY"
     }
   },
   "runs": [
@@ -4425,6 +4435,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_visible_on_plastic-220_grit_for_removing_plastic_scratches-plastic-036.mp4",
       "result": "success",
       "video_id": "NycpuGkB9Ks"
+    },
+    {
+      "ts_utc": "2026-10-06T17:03:14.469019+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/fine_scratches_wont_disappear-320_grit_for_plastic_scratch_refinement-plastic-037.mp4",
+      "result": "success",
+      "video_id": "o0jG6JmcWvY"
     }
   ],
   "last_post": {
