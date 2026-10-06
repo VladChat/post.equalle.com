@@ -5543,7 +5543,17 @@
         "id": "18133385530741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-06T19:37:24Z",
+      "comment_text": "Light pressure with 1500 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "18106939628627530",
+      "commented_ts_utc": "2026-10-06T19:37:26Z"
     }
   },
   "runs": [
@@ -8659,6 +8669,15 @@
       "result": "commented",
       "comment_id": "18085723250306935",
       "template_idx": 17
+    },
+    {
+      "ts_utc": "2026-10-06T19:37:26Z",
+      "media_id": "17879299086548709",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18106939628627530",
+      "template_idx": 0
     }
   ]
 }
