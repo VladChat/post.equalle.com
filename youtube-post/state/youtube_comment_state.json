@@ -2241,6 +2241,14 @@
       "comment_attempts": 1,
       "commented_ts": "2026-10-06T17:16:25Z",
       "verify_after_ts": 1791308785.846665
+    },
+    "tEoTbIr66r4": {
+      "comment_status": "commented_unverified",
+      "comment_id": "UgzqgtN8yi_SFcdsQTl4AaABAg",
+      "comment_text": "If you’re trying to level a bump, mark the area lightly with pencil and sand until the marks fade evenly—great for spotting highs and lows. Want the pencil-check method for surface?",
+      "comment_attempts": 1,
+      "commented_ts": "2026-10-07T17:51:08Z",
+      "verify_after_ts": 1791397268.7761168
     }
   },
   "runs": [
@@ -3908,6 +3916,12 @@
       "video_id": "o0jG6JmcWvY",
       "result": "commented_unverified",
       "comment_id": "UgybcRTY_N0G_0aJ-cV4AaABAg"
+    },
+    {
+      "ts": "2026-10-07T17:51:08Z",
+      "video_id": "tEoTbIr66r4",
+      "result": "commented_unverified",
+      "comment_id": "UgzqgtN8yi_SFcdsQTl4AaABAg"
     }
   ]
 }
