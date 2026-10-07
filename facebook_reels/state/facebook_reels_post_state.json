@@ -3483,7 +3483,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-10-07T19:18:35Z",
-      "video_id": "1420790592791478"
+      "video_id": "1420790592791478",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 13
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-07T19:30:20Z",
+      "comment_text": "On wet-sanding, sanding dust can hide defects—wipe often and re-check. Do you see it only after wiping?",
+      "comment_status": "commented",
+      "comment_id": "1420790592791478_1076599798502258",
+      "commented_ts_utc": "2026-10-07T19:30:23Z"
     }
   },
   "runs": [
@@ -6386,6 +6396,15 @@
       "result": "commented",
       "comment_id": "1832899471398798_2119660392312787",
       "template_idx": 19
+    },
+    {
+      "ts_utc": "2026-10-07T19:30:23Z",
+      "video_id": "1420790592791478",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1420790592791478_1076599798502258",
+      "template_idx": 13
     }
   ]
 }
