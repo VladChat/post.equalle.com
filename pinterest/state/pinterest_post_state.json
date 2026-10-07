@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-10-04"
+    "manifest_index": 4,
+    "last_day": "2026-10-07"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2230,6 +2230,20 @@
       "pin_id": "839428818092891454",
       "media_id": "3915579462162898944",
       "cover_image_url": "https://i.pinimg.com/1200x/4b/d1/f7/4bd1f7dfd58fdbc1b48eb3edca8c8306.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_gloss_causing_paint_failure-220_grit_to_dull_plastic_surface-plastic-032.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_gloss_causing_paint_failure-220_grit_to_dull_plastic_surface-plastic-032.mp4",
+      "filename": "plastic_gloss_causing_paint_failure-220_grit_to_dull_plastic_surface-plastic-032.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://www.amazon.com/gp/product/B07QD2RZ63",
+      "title": "Plastic Gloss Causing Paint Failure? Dull With 220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-07T16:37:08+00:00",
+      "pin_id": "839428818092945321",
+      "media_id": "3924493591321920704",
+      "cover_image_url": "https://i.pinimg.com/1200x/b9/17/5f/b9175f5d3568a0255bb95082fbda5b74.jpg"
     }
   },
   "runs": [
@@ -3821,6 +3835,16 @@
       "result": "success",
       "pin_id": "839428818092891454",
       "media_id": "3915579462162898944",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-07T16:37:08+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_gloss_causing_paint_failure-220_grit_to_dull_plastic_surface-plastic-032.mp4",
+      "filename": "plastic_gloss_causing_paint_failure-220_grit_to_dull_plastic_surface-plastic-032.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818092945321",
+      "media_id": "3924493591321920704",
       "error": null
     }
   ]
