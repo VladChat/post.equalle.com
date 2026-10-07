@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-10-02"
+    "manifest_index": 2,
+    "last_day": "2026-10-07"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3473,6 +3473,17 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-10-02T19:04:38Z",
       "comment_skipped_reason": "policy_10pct_skip"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4",
+      "filename": "scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4",
+      "manifest": "wet.json",
+      "title": "Scratches On Headlight Lens? 1500 Grit Wet Sand To Refine",
+      "description": "Scratches on a headlight lens? Wet sand with 1500 grit to reduce scratch visibility before polishing. Keep the lens wet, use light pressure, sand in even passes, and wipe often to check the scratch pattern under good light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-07T19:18:35Z",
+      "video_id": "1420790592791478"
     }
   },
   "runs": [
@@ -4986,6 +4997,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "29684314017824319",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-07T19:18:35Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4",
+      "filename": "scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "1420790592791478",
       "error": null
     }
   ],
