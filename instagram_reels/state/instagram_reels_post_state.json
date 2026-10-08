@@ -5577,7 +5577,17 @@
         "id": "18133579447741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 14
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-08T19:45:41Z",
+      "comment_text": "If the surface heats up, slow down and lighten pressure. Are you sanding by hand or with a tool?",
+      "comment_status": "commented",
+      "comment_id": "18101321381536128",
+      "commented_ts_utc": "2026-10-08T19:45:43Z"
     }
   },
   "runs": [
@@ -8713,6 +8723,15 @@
       "result": "commented",
       "comment_id": "18106939628627530",
       "template_idx": 0
+    },
+    {
+      "ts_utc": "2026-10-08T19:45:43Z",
+      "media_id": "18080200193413994",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_lines_showing_through_finish-120_grit_for_smoothing_paint_edges-metal-033.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18101321381536128",
+      "template_idx": 14
     }
   ]
 }
