@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-07"
+    "last_day": "2026-10-08"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2786,6 +2786,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RGRN3PL",
       "result": "success",
       "video_id": "tEoTbIr66r4"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/sanding_marks_still_showing-320_grit_to_refine_plastic_surface-plastic-039.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/sanding_marks_still_showing-320_grit_to_refine_plastic_surface-plastic-039.mp4",
+      "filename": "sanding_marks_still_showing-320_grit_to_refine_plastic_surface-plastic-039.mp4",
+      "manifest": "plastic.json",
+      "title": "Sanding Marks Still Showing? Refine Plastic With 320 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-320",
+      "result": "success",
+      "video_id": "WFda_wfv-AA"
     }
   },
   "runs": [
@@ -4457,6 +4467,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/deep_scratches_in_plastic-180-220_grit_for_scratch_reduction-plastic-038.mp4",
       "result": "success",
       "video_id": "tEoTbIr66r4"
+    },
+    {
+      "ts_utc": "2026-10-08T17:45:15.749115+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/sanding_marks_still_showing-320_grit_to_refine_plastic_surface-plastic-039.mp4",
+      "result": "success",
+      "video_id": "WFda_wfv-AA"
     }
   ],
   "last_post": {
