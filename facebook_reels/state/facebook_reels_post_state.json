@@ -3504,7 +3504,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-10-09T18:46:03Z",
-      "video_id": "4381864992126367"
+      "video_id": "4381864992126367",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-09T19:42:48Z",
+      "comment_text": "Light pressure with 80–120 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "4381864992126367_2108192020572657",
+      "commented_ts_utc": "2026-10-09T19:42:53Z"
     }
   },
   "runs": [
@@ -6425,6 +6435,15 @@
       "result": "commented",
       "comment_id": "1420790592791478_1076599798502258",
       "template_idx": 13
+    },
+    {
+      "ts_utc": "2026-10-09T19:42:53Z",
+      "video_id": "4381864992126367",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/coating_not_fully_removed-80-120_grit_for_paint_cleanup-metal-034.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "4381864992126367_2108192020572657",
+      "template_idx": 0
     }
   ]
 }
