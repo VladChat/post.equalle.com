@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-10-07"
+    "manifest_index": 3,
+    "last_day": "2026-10-09"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3494,6 +3494,17 @@
       "comment_status": "commented",
       "comment_id": "1420790592791478_1076599798502258",
       "commented_ts_utc": "2026-10-07T19:30:23Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/coating_not_fully_removed-80-120_grit_for_paint_cleanup-metal-034.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/coating_not_fully_removed-80-120_grit_for_paint_cleanup-metal-034.mp4",
+      "filename": "coating_not_fully_removed-80-120_grit_for_paint_cleanup-metal-034.mp4",
+      "manifest": "metal.json",
+      "title": "Coating Not Fully Removed? Use 80–120 Grit for Metal Paint Cleanup",
+      "description": "Coating not fully removed after stripping? Use 80 grit to clear stubborn spots, then switch to 120 grit to smooth and blend the surface. Wipe clean to check for remaining sheen.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-09T18:46:03Z",
+      "video_id": "4381864992126367"
     }
   },
   "runs": [
@@ -5016,6 +5027,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "1420790592791478",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-09T18:46:03Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/coating_not_fully_removed-80-120_grit_for_paint_cleanup-metal-034.mp4",
+      "filename": "coating_not_fully_removed-80-120_grit_for_paint_cleanup-metal-034.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "4381864992126367",
       "error": null
     }
   ],
