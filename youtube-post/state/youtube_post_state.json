@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-08"
+    "last_day": "2026-10-09"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2796,6 +2796,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-320",
       "result": "success",
       "video_id": "WFda_wfv-AA"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_looks_scuffed_after_sanding-320_grit_for_smoother_plastic_finish-plastic-040.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_looks_scuffed_after_sanding-320_grit_for_smoother_plastic_finish-plastic-040.mp4",
+      "filename": "plastic_looks_scuffed_after_sanding-320_grit_for_smoother_plastic_finish-plastic-040.mp4",
+      "manifest": "plastic.json",
+      "title": "Plastic Looks Scuffed? Smooth Finish With 320 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7SLBB4",
+      "result": "success",
+      "video_id": "89nVRbfAmZQ"
     }
   },
   "runs": [
@@ -4473,6 +4483,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/sanding_marks_still_showing-320_grit_to_refine_plastic_surface-plastic-039.mp4",
       "result": "success",
       "video_id": "WFda_wfv-AA"
+    },
+    {
+      "ts_utc": "2026-10-09T17:21:16.249070+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_looks_scuffed_after_sanding-320_grit_for_smoother_plastic_finish-plastic-040.mp4",
+      "result": "success",
+      "video_id": "89nVRbfAmZQ"
     }
   ],
   "last_post": {
