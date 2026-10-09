@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-10-07"
+    "manifest_index": 0,
+    "last_day": "2026-10-09"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2244,6 +2244,20 @@
       "pin_id": "839428818092945321",
       "media_id": "3924493591321920704",
       "cover_image_url": "https://i.pinimg.com/1200x/b9/17/5f/b9175f5d3568a0255bb95082fbda5b74.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
+      "filename": "edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049959",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-180",
+      "title": "Edges Still Too Sharp? Controlled Feathering With 180–220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-09T16:19:36+00:00",
+      "pin_id": "839428818092976501",
+      "media_id": "3930254277444067648",
+      "cover_image_url": "https://i.pinimg.com/1200x/aa/da/c5/aadac5d7e17aa21f8651d0e9e9fced4c.jpg"
     }
   },
   "runs": [
@@ -3845,6 +3859,16 @@
       "result": "success",
       "pin_id": "839428818092945321",
       "media_id": "3924493591321920704",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-09T16:19:36+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
+      "filename": "edges_still_too_sharp-180-220_grit_for_controlled_feathering-drywall-033.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818092976501",
+      "media_id": "3930254277444067648",
       "error": null
     }
   ]
