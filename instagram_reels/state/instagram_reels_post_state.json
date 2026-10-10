@@ -5611,7 +5611,17 @@
         "id": "18133770244741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-10T18:32:37Z",
+      "comment_text": "For plastic work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "18180088078439230",
+      "commented_ts_utc": "2026-10-10T18:32:40Z"
     }
   },
   "runs": [
@@ -8767,6 +8777,15 @@
       "result": "commented",
       "comment_id": "18101321381536128",
       "template_idx": 14
+    },
+    {
+      "ts_utc": "2026-10-10T18:32:40Z",
+      "media_id": "18566513578078425",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_not_laying_flat-220_grit_for_level_plastic_prep-plastic-033.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "18180088078439230",
+      "template_idx": 3
     }
   ]
 }
