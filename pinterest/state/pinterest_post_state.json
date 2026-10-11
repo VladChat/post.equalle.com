@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-10-09"
+    "manifest_index": 1,
+    "last_day": "2026-10-11"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2258,6 +2258,20 @@
       "pin_id": "839428818092976501",
       "media_id": "3930254277444067648",
       "cover_image_url": "https://i.pinimg.com/1200x/aa/da/c5/aadac5d7e17aa21f8651d0e9e9fced4c.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Dents_Sanded_Around-120_Grit_for_Leveling_Small_High_Spots-wood-034.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Dents_Sanded_Around-120_Grit_for_Leveling_Small_High_Spots-wood-034.mp4",
+      "filename": "Dents_Sanded_Around-120_Grit_for_Leveling_Small_High_Spots-wood-034.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVV8DK",
+      "title": "Dents Sanded Around: 120 Grit Leveling Small High Spots",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-11T15:49:06+00:00",
+      "pin_id": "839428818093007652",
+      "media_id": "3935989895587590464",
+      "cover_image_url": "https://i.pinimg.com/1200x/0e/27/b6/0e27b67ef6862b891cc6fa396f110538.jpg"
     }
   },
   "runs": [
@@ -3869,6 +3883,16 @@
       "result": "success",
       "pin_id": "839428818092976501",
       "media_id": "3930254277444067648",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-11T15:49:06+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Dents_Sanded_Around-120_Grit_for_Leveling_Small_High_Spots-wood-034.mp4",
+      "filename": "Dents_Sanded_Around-120_Grit_for_Leveling_Small_High_Spots-wood-034.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818093007652",
+      "media_id": "3935989895587590464",
       "error": null
     }
   ]
