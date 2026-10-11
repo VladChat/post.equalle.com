@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-10"
+    "last_day": "2026-10-11"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2816,6 +2816,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-320",
       "result": "success",
       "video_id": "SYIBcSgcMQE"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_surface_looks_swirled-320-400_grit_for_plastic_scratch_cleanup-plastic-042.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_surface_looks_swirled-320-400_grit_for_plastic_scratch_cleanup-plastic-042.mp4",
+      "filename": "plastic_surface_looks_swirled-320-400_grit_for_plastic_scratch_cleanup-plastic-042.mp4",
+      "manifest": "plastic.json",
+      "title": "Swirl Marks On Plastic? Step 320 To 400 For Cleanup",
+      "destination_url": "https://www.amazon.com/gp/product/B07RJZ42DT",
+      "result": "success",
+      "video_id": "cD9_6Z0WUvk"
     }
   },
   "runs": [
@@ -4505,6 +4515,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_stand_out_under_light-320_grit_for_plastic_surface_refinement-plastic-041.mp4",
       "result": "success",
       "video_id": "SYIBcSgcMQE"
+    },
+    {
+      "ts_utc": "2026-10-11T16:34:00.852293+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_surface_looks_swirled-320-400_grit_for_plastic_scratch_cleanup-plastic-042.mp4",
+      "result": "success",
+      "video_id": "cD9_6Z0WUvk"
     }
   ],
   "last_post": {
