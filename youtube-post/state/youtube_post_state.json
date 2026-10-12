@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-11"
+    "last_day": "2026-10-12"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2826,6 +2826,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RJZ42DT",
       "result": "success",
       "video_id": "cD9_6Z0WUvk"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/scratches_too_sharp_on_plastic-220_grit_to_soften_plastic_scratches-plastic-043.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_too_sharp_on_plastic-220_grit_to_soften_plastic_scratches-plastic-043.mp4",
+      "filename": "scratches_too_sharp_on_plastic-220_grit_to_soften_plastic_scratches-plastic-043.mp4",
+      "manifest": "plastic.json",
+      "title": "Scratches Too Sharp? Soften Plastic Scratches With 220 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-220",
+      "result": "success",
+      "video_id": "z-4zrJvHOhc"
     }
   },
   "runs": [
@@ -4521,6 +4531,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_surface_looks_swirled-320-400_grit_for_plastic_scratch_cleanup-plastic-042.mp4",
       "result": "success",
       "video_id": "cD9_6Z0WUvk"
+    },
+    {
+      "ts_utc": "2026-10-12T20:08:22.535825+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_too_sharp_on_plastic-220_grit_to_soften_plastic_scratches-plastic-043.mp4",
+      "result": "success",
+      "video_id": "z-4zrJvHOhc"
     }
   ],
   "last_post": {
