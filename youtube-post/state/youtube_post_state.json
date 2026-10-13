@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-12"
+    "last_day": "2026-10-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2836,6 +2836,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-220",
       "result": "success",
       "video_id": "z-4zrJvHOhc"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_still_looks_scratched-320_grit_before_polishing_plastic-plastic-044.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_still_looks_scratched-320_grit_before_polishing_plastic-plastic-044.mp4",
+      "filename": "plastic_still_looks_scratched-320_grit_before_polishing_plastic-plastic-044.mp4",
+      "manifest": "plastic.json",
+      "title": "Still Looks Scratched? Use 320 Grit Before Polishing Plastic",
+      "destination_url": "https://www.amazon.com/gp/product/B07QD1PR32",
+      "result": "success",
+      "video_id": "R_gNmhFRaeQ"
     }
   },
   "runs": [
@@ -4537,6 +4547,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_too_sharp_on_plastic-220_grit_to_soften_plastic_scratches-plastic-043.mp4",
       "result": "success",
       "video_id": "z-4zrJvHOhc"
+    },
+    {
+      "ts_utc": "2026-10-13T17:58:05.058672+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_still_looks_scratched-320_grit_before_polishing_plastic-plastic-044.mp4",
+      "result": "success",
+      "video_id": "R_gNmhFRaeQ"
     }
   ],
   "last_post": {
