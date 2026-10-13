@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-10-10"
+    "manifest_index": 0,
+    "last_day": "2026-10-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -5622,6 +5622,30 @@
       "comment_status": "commented",
       "comment_id": "18180088078439230",
       "commented_ts_utc": "2026-10-10T18:32:40Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4",
+      "filename": "wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4",
+      "manifest": "drywall.json",
+      "title": "Wall Not Smooth Before Paint? Final Between-Coat Prep With 220 Grit",
+      "description": "If the wall still isn’t smooth, make a light pass with 220 grit to refine the surface before the final coat, primer, or paint. Sandpaper eQualle",
+      "caption": "Wall Not Smooth Before Paint? Final Between-Coat Prep With 220 Grit\n\nIf the wall still isn’t smooth, make a light pass with 220 grit to refine the surface before the final coat, primer, or paint. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-13T19:49:56Z",
+      "mode": "binary",
+      "container_id": "18134097751741317",
+      "media_id": "17998493430032387",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v26.0/18134097751741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "id": "18134097751741317",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "status_code": "FINISHED"
+      }
     }
   },
   "runs": [
@@ -7460,6 +7484,17 @@
       "filename": "paint_not_laying_flat-220_grit_for_level_plastic_prep-plastic-033.mp4",
       "container_id": "18133770244741317",
       "media_id": "18566513578078425",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-13T19:49:56Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4",
+      "filename": "wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4",
+      "container_id": "18134097751741317",
+      "media_id": "17998493430032387",
       "error": null
     }
   ],
