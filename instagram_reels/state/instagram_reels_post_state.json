@@ -5645,7 +5645,17 @@
         "id": "18134097751741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 9
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-13T20:48:55Z",
+      "comment_text": "For corners/edges, ease up and let the abrasive do the work. Are edges the hardest part for you too?",
+      "comment_status": "commented",
+      "comment_id": "18076307735745884",
+      "commented_ts_utc": "2026-10-13T20:48:58Z"
     }
   },
   "runs": [
@@ -8821,6 +8831,15 @@
       "result": "commented",
       "comment_id": "18180088078439230",
       "template_idx": 3
+    },
+    {
+      "ts_utc": "2026-10-13T20:48:58Z",
+      "media_id": "17998493430032387",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18076307735745884",
+      "template_idx": 9
     }
   ]
 }
