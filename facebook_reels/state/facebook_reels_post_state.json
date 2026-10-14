@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-10-12"
+    "manifest_index": 0,
+    "last_day": "2026-10-14"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3533,6 +3533,17 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-10-12T22:44:24Z",
       "comment_skipped_reason": "policy_10pct_skip"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4",
+      "filename": "high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4",
+      "manifest": "drywall.json",
+      "title": "High Spots Showing on the Wall? Knock Down Drywall High Spots With 120 Grit",
+      "description": "If you see high spots, sand lightly with 120 grit to knock them down and level the surface before you feather or recoat. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-14T17:57:43Z",
+      "video_id": "1659370039182637"
     }
   },
   "runs": [
@@ -5073,6 +5084,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1809832553669178",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-14T17:57:43Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4",
+      "filename": "high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1659370039182637",
       "error": null
     }
   ],
