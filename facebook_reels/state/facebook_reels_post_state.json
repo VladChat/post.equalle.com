@@ -3543,7 +3543,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-10-14T17:57:43Z",
-      "video_id": "1659370039182637"
+      "video_id": "1659370039182637",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 14
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-14T18:32:10Z",
+      "comment_text": "If the surface heats up, slow down and lighten pressure. Are you sanding by hand or with a tool?",
+      "comment_status": "commented",
+      "comment_id": "1659370039182637_1110308138365291",
+      "commented_ts_utc": "2026-10-14T18:32:16Z"
     }
   },
   "runs": [
@@ -6491,6 +6501,15 @@
       "result": "commented",
       "comment_id": "4381864992126367_2108192020572657",
       "template_idx": 0
+    },
+    {
+      "ts_utc": "2026-10-14T18:32:16Z",
+      "video_id": "1659370039182637",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1659370039182637_1110308138365291",
+      "template_idx": 14
     }
   ]
 }
