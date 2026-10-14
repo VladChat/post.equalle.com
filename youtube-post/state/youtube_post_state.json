@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-13"
+    "last_day": "2026-10-14"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2846,6 +2846,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QD1PR32",
       "result": "success",
       "video_id": "R_gNmhFRaeQ"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/uneven_scratch_depth_on_plastic-220-320_grit_for_scratch_blending-plastic-045.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/uneven_scratch_depth_on_plastic-220-320_grit_for_scratch_blending-plastic-045.mp4",
+      "filename": "uneven_scratch_depth_on_plastic-220-320_grit_for_scratch_blending-plastic-045.mp4",
+      "manifest": "plastic.json",
+      "title": "Uneven Scratch Depth? Blend Plastic With 220 Then 320 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-220",
+      "result": "success",
+      "video_id": "7zY1igz4agg"
     }
   },
   "runs": [
@@ -4553,6 +4563,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_still_looks_scratched-320_grit_before_polishing_plastic-plastic-044.mp4",
       "result": "success",
       "video_id": "R_gNmhFRaeQ"
+    },
+    {
+      "ts_utc": "2026-10-14T15:42:44.505442+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/uneven_scratch_depth_on_plastic-220-320_grit_for_scratch_blending-plastic-045.mp4",
+      "result": "success",
+      "video_id": "7zY1igz4agg"
     }
   ],
   "last_post": {
