@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-10-13"
+    "manifest_index": 1,
+    "last_day": "2026-10-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -5656,6 +5656,30 @@
       "comment_status": "commented",
       "comment_id": "18076307735745884",
       "commented_ts_utc": "2026-10-13T20:48:58Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4",
+      "filename": "Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4",
+      "manifest": "wood.json",
+      "title": "Surface Looks Wavy: 120 Grit Flattening Wood Surface",
+      "description": "Surface Looks Wavy? Use 120 grit for flattening wood surface. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "caption": "Surface Looks Wavy: 120 Grit Flattening Wood Surface\n\nSurface Looks Wavy? Use 120 grit for flattening wood surface. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-15T17:43:16Z",
+      "mode": "binary",
+      "container_id": "18134282029741317",
+      "media_id": "17972113176175112",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v26.0/18134282029741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "id": "18134282029741317",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "status_code": "FINISHED"
+      }
     }
   },
   "runs": [
@@ -7505,6 +7529,17 @@
       "filename": "wall_not_smooth_before_paint-220_grit_for_final_between-coat_prep-drywall-034.mp4",
       "container_id": "18134097751741317",
       "media_id": "17998493430032387",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-15T17:43:16Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wood.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4",
+      "filename": "Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4",
+      "container_id": "18134282029741317",
+      "media_id": "17972113176175112",
       "error": null
     }
   ],
