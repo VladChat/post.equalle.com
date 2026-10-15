@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-14"
+    "last_day": "2026-10-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2856,6 +2856,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-220",
       "result": "success",
       "video_id": "7zY1igz4agg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_scratches_showing_after_prep-320_grit_for_final_scratch_prep-plastic-046.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_scratches_showing_after_prep-320_grit_for_final_scratch_prep-plastic-046.mp4",
+      "filename": "plastic_scratches_showing_after_prep-320_grit_for_final_scratch_prep-plastic-046.mp4",
+      "manifest": "plastic.json",
+      "title": "Scratches Showing After Prep? Finish With 320 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RFT5KT4",
+      "result": "success",
+      "video_id": "DAKjfppJ9TU"
     }
   },
   "runs": [
@@ -4569,6 +4579,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/uneven_scratch_depth_on_plastic-220-320_grit_for_scratch_blending-plastic-045.mp4",
       "result": "success",
       "video_id": "7zY1igz4agg"
+    },
+    {
+      "ts_utc": "2026-10-15T15:30:07.215566+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_scratches_showing_after_prep-320_grit_for_final_scratch_prep-plastic-046.mp4",
+      "result": "success",
+      "video_id": "DAKjfppJ9TU"
     }
   ],
   "last_post": {
