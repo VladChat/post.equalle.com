@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-15"
+    "last_day": "2026-10-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2866,6 +2866,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RFT5KT4",
       "result": "success",
       "video_id": "DAKjfppJ9TU"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/surface_marks_wont_blend_out-220-320_grit_for_plastic_scratch_repair-plastic-047.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/surface_marks_wont_blend_out-220-320_grit_for_plastic_scratch_repair-plastic-047.mp4",
+      "filename": "surface_marks_wont_blend_out-220-320_grit_for_plastic_scratch_repair-plastic-047.mp4",
+      "manifest": "plastic.json",
+      "title": "Marks Won’t Blend Out? Repair Plastic With 220 To 320 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-220",
+      "result": "success",
+      "video_id": "8YRRDgWJ_JA"
     }
   },
   "runs": [
@@ -4585,6 +4595,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_scratches_showing_after_prep-320_grit_for_final_scratch_prep-plastic-046.mp4",
       "result": "success",
       "video_id": "DAKjfppJ9TU"
+    },
+    {
+      "ts_utc": "2026-10-16T15:15:09.258416+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/surface_marks_wont_blend_out-220-320_grit_for_plastic_scratch_repair-plastic-047.mp4",
+      "result": "success",
+      "video_id": "8YRRDgWJ_JA"
     }
   ],
   "last_post": {
