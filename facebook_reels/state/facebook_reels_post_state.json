@@ -3564,7 +3564,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-10-16T17:21:16Z",
-      "video_id": "2685078328669803"
+      "video_id": "2685078328669803",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 14
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-16T18:02:52Z",
+      "comment_text": "If the surface heats up, slow down and lighten pressure. Are you sanding by hand or with a tool?",
+      "comment_status": "commented",
+      "comment_id": "2685078328669803_1093263473328160",
+      "commented_ts_utc": "2026-10-16T18:02:58Z"
     }
   },
   "runs": [
@@ -6529,6 +6539,15 @@
       "manifest": "drywall.json",
       "result": "commented",
       "comment_id": "1659370039182637_1110308138365291",
+      "template_idx": 14
+    },
+    {
+      "ts_utc": "2026-10-16T18:02:58Z",
+      "video_id": "2685078328669803",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "2685078328669803_1093263473328160",
       "template_idx": 14
     }
   ]
