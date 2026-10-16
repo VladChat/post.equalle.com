@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-10-14"
+    "manifest_index": 1,
+    "last_day": "2026-10-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3554,6 +3554,17 @@
       "comment_status": "commented",
       "comment_id": "1659370039182637_1110308138365291",
       "commented_ts_utc": "2026-10-14T18:32:16Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4",
+      "filename": "Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4",
+      "manifest": "wood.json",
+      "title": "Surface Looks Wavy: 120 Grit Flattening Wood Surface",
+      "description": "Surface Looks Wavy? Use 120 grit for flattening wood surface. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-16T17:21:16Z",
+      "video_id": "2685078328669803"
     }
   },
   "runs": [
@@ -5103,6 +5114,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "1659370039182637",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-16T17:21:16Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4",
+      "filename": "Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "2685078328669803",
       "error": null
     }
   ],
