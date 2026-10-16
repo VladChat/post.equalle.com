@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-10-14"
+    "manifest_index": 4,
+    "last_day": "2026-10-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2300,6 +2300,20 @@
       "pin_id": "839428818093059134",
       "media_id": "3944537700677663488",
       "cover_image_url": "https://i.pinimg.com/1200x/15/84/4a/15844a40a24fe52445d6f9c640f3cfc9.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_not_laying_flat-220_grit_for_level_plastic_prep-plastic-033.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_not_laying_flat-220_grit_for_level_plastic_prep-plastic-033.mp4",
+      "filename": "paint_not_laying_flat-220_grit_for_level_plastic_prep-plastic-033.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-220",
+      "title": "Paint Not Laying Flat? Level Prep With 220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-16T14:02:30+00:00",
+      "pin_id": "839428818093089741",
+      "media_id": "3950271000176343296",
+      "cover_image_url": "https://i.pinimg.com/1200x/e3/e0/23/e3e02353bdaa7e66abbcaf6d7d77aff4.jpg"
     }
   },
   "runs": [
@@ -3941,6 +3955,16 @@
       "result": "success",
       "pin_id": "839428818093059134",
       "media_id": "3944537700677663488",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-16T14:02:30+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_not_laying_flat-220_grit_for_level_plastic_prep-plastic-033.mp4",
+      "filename": "paint_not_laying_flat-220_grit_for_level_plastic_prep-plastic-033.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818093089741",
+      "media_id": "3950271000176343296",
       "error": null
     }
   ]
