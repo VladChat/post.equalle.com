@@ -5713,7 +5713,17 @@
         "id": "18134471638741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-17T16:47:04Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "18097193774416222",
+      "commented_ts_utc": "2026-10-17T16:47:07Z"
     }
   },
   "runs": [
@@ -8929,6 +8939,15 @@
       "result": "commented",
       "comment_id": "18090970343197238",
       "template_idx": 14
+    },
+    {
+      "ts_utc": "2026-10-17T16:47:07Z",
+      "media_id": "18230022346336581",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_not_clearing_up-2000_grit_wet_sand_for_headlight_prep-wet-035.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18097193774416222",
+      "template_idx": 12
     }
   ]
 }
