@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-16"
+    "last_day": "2026-10-17"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2876,6 +2876,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-220",
       "result": "success",
       "video_id": "8YRRDgWJ_JA"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_edges_feel_sharp-220_grit_for_plastic_edge_smoothing-plastic-048.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_edges_feel_sharp-220_grit_for_plastic_edge_smoothing-plastic-048.mp4",
+      "filename": "plastic_edges_feel_sharp-220_grit_for_plastic_edge_smoothing-plastic-048.mp4",
+      "manifest": "plastic.json",
+      "title": "Sharp Plastic Edges? Smooth Them With 220 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8DFS6T",
+      "result": "success",
+      "video_id": "QfCwQFZ2p0s"
     }
   },
   "runs": [
@@ -4601,6 +4611,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/surface_marks_wont_blend_out-220-320_grit_for_plastic_scratch_repair-plastic-047.mp4",
       "result": "success",
       "video_id": "8YRRDgWJ_JA"
+    },
+    {
+      "ts_utc": "2026-10-17T14:04:18.650633+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_edges_feel_sharp-220_grit_for_plastic_edge_smoothing-plastic-048.mp4",
+      "result": "success",
+      "video_id": "QfCwQFZ2p0s"
     }
   ],
   "last_post": {
