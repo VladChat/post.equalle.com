@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-17"
+    "last_day": "2026-10-18"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2886,6 +2886,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ8DFS6T",
       "result": "success",
       "video_id": "QfCwQFZ2p0s"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/corners_hard_to_sand_on_plastic-220_grit_for_hand_sanding_plastic_corners-plastic-049.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/corners_hard_to_sand_on_plastic-220_grit_for_hand_sanding_plastic_corners-plastic-049.mp4",
+      "filename": "corners_hard_to_sand_on_plastic-220_grit_for_hand_sanding_plastic_corners-plastic-049.mp4",
+      "manifest": "plastic.json",
+      "title": "Hard-To-Sand Corners? Use 220 Grit For Plastic Corners",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
+      "result": "success",
+      "video_id": "U5-KkU9xWSE"
     }
   },
   "runs": [
@@ -4617,6 +4627,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_edges_feel_sharp-220_grit_for_plastic_edge_smoothing-plastic-048.mp4",
       "result": "success",
       "video_id": "QfCwQFZ2p0s"
+    },
+    {
+      "ts_utc": "2026-10-18T14:19:28.577756+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/corners_hard_to_sand_on_plastic-220_grit_for_hand_sanding_plastic_corners-plastic-049.mp4",
+      "result": "success",
+      "video_id": "U5-KkU9xWSE"
     }
   ],
   "last_post": {
