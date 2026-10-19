@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-18"
+    "last_day": "2026-10-19"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2896,6 +2896,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
       "result": "success",
       "video_id": "U5-KkU9xWSE"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_edges_melting_while_sanding-320_grit_for_controlled_plastic_sanding-plastic-050.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_edges_melting_while_sanding-320_grit_for_controlled_plastic_sanding-plastic-050.mp4",
+      "filename": "plastic_edges_melting_while_sanding-320_grit_for_controlled_plastic_sanding-plastic-050.mp4",
+      "manifest": "plastic.json",
+      "title": "Edges Melting While Sanding? Use 320 Grit With Light Pressure",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7SLBB4",
+      "result": "success",
+      "video_id": "ifnMe7O0zzM"
     }
   },
   "runs": [
@@ -4633,6 +4643,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/corners_hard_to_sand_on_plastic-220_grit_for_hand_sanding_plastic_corners-plastic-049.mp4",
       "result": "success",
       "video_id": "U5-KkU9xWSE"
+    },
+    {
+      "ts_utc": "2026-10-19T17:20:40.696915+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_edges_melting_while_sanding-320_grit_for_controlled_plastic_sanding-plastic-050.mp4",
+      "result": "success",
+      "video_id": "ifnMe7O0zzM"
     }
   ],
   "last_post": {
