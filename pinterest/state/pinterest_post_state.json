@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-10-18"
+    "manifest_index": 1,
+    "last_day": "2026-10-19"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2328,6 +2328,20 @@
       "pin_id": "839428818093120280",
       "media_id": "3955989970690514688",
       "cover_image_url": "https://i.pinimg.com/1200x/59/75/a9/5975a979cc4bf62009e9a3b28d34ddd2.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4",
+      "filename": "Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-120",
+      "title": "Surface Looks Wavy: 120 Grit Flattening Wood Surface",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-19T16:32:26+00:00",
+      "pin_id": "839428818093139278",
+      "media_id": "3959270992040721088",
+      "cover_image_url": "https://i.pinimg.com/1200x/86/d7/44/86d74479ccbf588d44baf5466f009893.jpg"
     }
   },
   "runs": [
@@ -3989,6 +4003,16 @@
       "result": "success",
       "pin_id": "839428818093120280",
       "media_id": "3955989970690514688",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-19T16:32:26+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4",
+      "filename": "Surface_Looks_Wavy-120_Grit_for_Flattening_Wood_Surface-wood-035.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818093139278",
+      "media_id": "3959270992040721088",
       "error": null
     }
   ]
