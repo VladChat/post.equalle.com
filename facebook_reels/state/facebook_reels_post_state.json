@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-10-16"
+    "manifest_index": 2,
+    "last_day": "2026-10-19"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3575,6 +3575,17 @@
       "comment_status": "commented",
       "comment_id": "2685078328669803_1093263473328160",
       "commented_ts_utc": "2026-10-16T18:02:58Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/headlights_not_clearing_up-2000_grit_wet_sand_for_headlight_prep-wet-035.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_not_clearing_up-2000_grit_wet_sand_for_headlight_prep-wet-035.mp4",
+      "filename": "headlights_not_clearing_up-2000_grit_wet_sand_for_headlight_prep-wet-035.mp4",
+      "manifest": "wet.json",
+      "title": "Headlights Not Clearing Up? 2000 Grit Wet Sand For Prep",
+      "description": "Headlights not clearing up? Wet sand with 2000 grit to refine the surface before polishing for clarity. Keep the lens wet, use light pressure, sand in even passes, wipe often, and check under strong light for remaining haze. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-19T19:15:22Z",
+      "video_id": "1503003284995334"
     }
   },
   "runs": [
@@ -5133,6 +5144,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "2685078328669803",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-19T19:15:22Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_not_clearing_up-2000_grit_wet_sand_for_headlight_prep-wet-035.mp4",
+      "filename": "headlights_not_clearing_up-2000_grit_wet_sand_for_headlight_prep-wet-035.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "1503003284995334",
       "error": null
     }
   ],
