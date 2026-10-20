@@ -5747,7 +5747,17 @@
         "id": "18134796790741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-20T18:01:37Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "18075194804743866",
+      "commented_ts_utc": "2026-10-20T18:01:44Z"
     }
   },
   "runs": [
@@ -8982,6 +8992,15 @@
       "manifest": "wet.json",
       "result": "commented",
       "comment_id": "18097193774416222",
+      "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-10-20T18:01:44Z",
+      "media_id": "18169112485467773",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/coating_not_fully_removed-80-120_grit_for_paint_cleanup-metal-034.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18075194804743866",
       "template_idx": 12
     }
   ]
