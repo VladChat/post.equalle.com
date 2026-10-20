@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-19"
+    "last_day": "2026-10-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2906,6 +2906,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B0CZ7SLBB4",
       "result": "success",
       "video_id": "ifnMe7O0zzM"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/detail_areas_look_uneven-220_grit_for_plastic_detail_sanding-plastic-051.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/detail_areas_look_uneven-220_grit_for_plastic_detail_sanding-plastic-051.mp4",
+      "filename": "detail_areas_look_uneven-220_grit_for_plastic_detail_sanding-plastic-051.mp4",
+      "manifest": "plastic.json",
+      "title": "Detail Areas Uneven? Use 220 Grit For Plastic Detail Sanding",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-220",
+      "result": "success",
+      "video_id": "ZUIlgOw5TuA"
     }
   },
   "runs": [
@@ -4649,6 +4659,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_edges_melting_while_sanding-320_grit_for_controlled_plastic_sanding-plastic-050.mp4",
       "result": "success",
       "video_id": "ifnMe7O0zzM"
+    },
+    {
+      "ts_utc": "2026-10-20T15:33:36.279682+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/detail_areas_look_uneven-220_grit_for_plastic_detail_sanding-plastic-051.mp4",
+      "result": "success",
+      "video_id": "ZUIlgOw5TuA"
     }
   ],
   "last_post": {
