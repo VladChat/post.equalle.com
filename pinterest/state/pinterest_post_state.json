@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-10-19"
+    "manifest_index": 2,
+    "last_day": "2026-10-21"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2342,6 +2342,20 @@
       "pin_id": "839428818093139278",
       "media_id": "3959270992040721088",
       "cover_image_url": "https://i.pinimg.com/1200x/86/d7/44/86d74479ccbf588d44baf5466f009893.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4",
+      "filename": "scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049945",
+      "destination_url": "https://www.amazon.com/gp/product/B07RL3W6VT",
+      "title": "Scratches On Headlight Lens? 1500 Grit Wet Sand To Refine",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-21T14:32:43+00:00",
+      "pin_id": "839428818093172483",
+      "media_id": "3964828316092055936",
+      "cover_image_url": "https://i.pinimg.com/1200x/13/36/ba/1336ba7390982ef27dd55610cb7baf47.jpg"
     }
   },
   "runs": [
@@ -4013,6 +4027,16 @@
       "result": "success",
       "pin_id": "839428818093139278",
       "media_id": "3959270992040721088",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-21T14:32:43+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4",
+      "filename": "scratches_on_headlight_lens-1500_grit_wet_sanding_headlight_scratches-wet-034.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818093172483",
+      "media_id": "3964828316092055936",
       "error": null
     }
   ]
