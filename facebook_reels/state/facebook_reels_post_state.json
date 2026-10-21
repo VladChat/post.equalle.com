@@ -3603,7 +3603,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-10-21T17:59:08Z",
-      "video_id": "3585568604943390"
+      "video_id": "3585568604943390",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 11
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-21T18:45:54Z",
+      "comment_text": "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+      "comment_status": "commented",
+      "comment_id": "3585568604943390_1425274423044783",
+      "commented_ts_utc": "2026-10-21T18:46:00Z"
     }
   },
   "runs": [
@@ -6596,6 +6606,15 @@
       "result": "commented",
       "comment_id": "2685078328669803_1093263473328160",
       "template_idx": 14
+    },
+    {
+      "ts_utc": "2026-10-21T18:46:00Z",
+      "video_id": "3585568604943390",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_not_clean_after_paint_removal-120_grit_for_final_paint_prep-metal-035.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "3585568604943390_1425274423044783",
+      "template_idx": 11
     }
   ]
 }
