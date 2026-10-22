@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-21"
+    "last_day": "2026-10-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2926,6 +2926,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RJZ42DT",
       "result": "success",
       "video_id": "OqBVgZx8OZ8"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/tight_spots_hard_to_smooth-220_grit_for_plastic_detail_work-plastic-053.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/tight_spots_hard_to_smooth-220_grit_for_plastic_detail_work-plastic-053.mp4",
+      "filename": "tight_spots_hard_to_smooth-220_grit_for_plastic_detail_work-plastic-053.mp4",
+      "manifest": "plastic.json",
+      "title": "Tight Spots Hard To Smooth? Use 220 Grit For Detail Work",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-220",
+      "result": "success",
+      "video_id": "u1WFkbcqqEg"
     }
   },
   "runs": [
@@ -4681,6 +4691,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_edges_look_over-sanded-320_grit_for_refining_plastic_edges-plastic-052.mp4",
       "result": "success",
       "video_id": "OqBVgZx8OZ8"
+    },
+    {
+      "ts_utc": "2026-10-22T15:47:35.536090+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/tight_spots_hard_to_smooth-220_grit_for_plastic_detail_work-plastic-053.mp4",
+      "result": "success",
+      "video_id": "u1WFkbcqqEg"
     }
   ],
   "last_post": {
