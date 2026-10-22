@@ -5781,7 +5781,17 @@
         "id": "18135000025741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 16
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-22T18:16:27Z",
+      "comment_text": "If scratches stand out after paint/primer, it usually means the previous grit marks weren’t fully blended. What grit are you finishing with?",
+      "comment_status": "commented",
+      "comment_id": "17924426490443679",
+      "commented_ts_utc": "2026-10-22T18:16:33Z"
     }
   },
   "runs": [
@@ -9037,6 +9047,15 @@
       "result": "commented",
       "comment_id": "18075194804743866",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-10-22T18:16:33Z",
+      "media_id": "18147228361577629",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/primer_feels_too_smooth-320_grit_for_scuffing_plastic_primer-plastic-034.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "17924426490443679",
+      "template_idx": 16
     }
   ]
 }
