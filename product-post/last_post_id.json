@@ -1,15 +1,12 @@
 {
-  "post_id": "325670187920349_1569398908534923",
+  "post_id": "325670187920349_1571394898335324",
   "product": {
     "source": "equalle",
-    "url": "https://equalle.com/products/sandpaper-9-x-11-grit-80-10-sheets",
-    "grit": 80,
+    "url": "https://equalle.com/products/sandpaper-9-x-11-grit-100-10-sheets",
+    "grit": 100,
     "pack": 10,
-    "anchor": "80 Grit (Coarse)",
-    "grit_description": "Durable coarse abrasive that evens out irregular surfaces and clears old coatings. Ideal for early sanding stages in woodworking, fiberglass, or metal preparation.",
-    "contexts": [
-      "wood",
-      "metal"
-    ]
+    "anchor": "100 Grit (Coarse)",
+    "grit_description": "Balanced coarse grit combining power and control\u2014perfect for blending rough sanding marks before progressing to finer grades like 150 or 180.",
+    "contexts": []
   }
 }
