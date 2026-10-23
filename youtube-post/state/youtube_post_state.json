@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-22"
+    "last_day": "2026-10-23"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2936,6 +2936,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-220",
       "result": "success",
       "video_id": "u1WFkbcqqEg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_trim_feels_rough-220_grit_for_sanding_plastic_trim-plastic-054.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_trim_feels_rough-220_grit_for_sanding_plastic_trim-plastic-054.mp4",
+      "filename": "plastic_trim_feels_rough-220_grit_for_sanding_plastic_trim-plastic-054.mp4",
+      "manifest": "plastic.json",
+      "title": "Plastic Trim Feels Rough? Sand Trim With 220 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RL3XSWS",
+      "result": "success",
+      "video_id": "02lj9Rq_z7Q"
     }
   },
   "runs": [
@@ -4697,6 +4707,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/tight_spots_hard_to_smooth-220_grit_for_plastic_detail_work-plastic-053.mp4",
       "result": "success",
       "video_id": "u1WFkbcqqEg"
+    },
+    {
+      "ts_utc": "2026-10-23T15:38:36.048320+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_trim_feels_rough-220_grit_for_sanding_plastic_trim-plastic-054.mp4",
+      "result": "success",
+      "video_id": "02lj9Rq_z7Q"
     }
   ],
   "last_post": {
