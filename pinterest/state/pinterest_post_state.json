@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-10-21"
+    "manifest_index": 3,
+    "last_day": "2026-10-23"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2356,6 +2356,20 @@
       "pin_id": "839428818093172483",
       "media_id": "3964828316092055936",
       "cover_image_url": "https://i.pinimg.com/1200x/13/36/ba/1336ba7390982ef27dd55610cb7baf47.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/paint_lines_showing_through_finish-120_grit_for_smoothing_paint_edges-metal-033.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_lines_showing_through_finish-120_grit_for_smoothing_paint_edges-metal-033.mp4",
+      "filename": "paint_lines_showing_through_finish-120_grit_for_smoothing_paint_edges-metal-033.mp4",
+      "manifest": "metal.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-120",
+      "title": "Smooth Paint Edge Lines on Metal With 120 Grit Before Recoat",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-23T14:18:20+00:00",
+      "pin_id": "839428818093209252",
+      "media_id": "3970597318881702848",
+      "cover_image_url": "https://i.pinimg.com/1200x/76/44/65/7644655602131741b7b9438df27814c3.jpg"
     }
   },
   "runs": [
@@ -4037,6 +4051,16 @@
       "result": "success",
       "pin_id": "839428818093172483",
       "media_id": "3964828316092055936",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-23T14:18:20+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/paint_lines_showing_through_finish-120_grit_for_smoothing_paint_edges-metal-033.mp4",
+      "filename": "paint_lines_showing_through_finish-120_grit_for_smoothing_paint_edges-metal-033.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "pin_id": "839428818093209252",
+      "media_id": "3970597318881702848",
       "error": null
     }
   ]
