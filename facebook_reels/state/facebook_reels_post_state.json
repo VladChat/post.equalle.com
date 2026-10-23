@@ -3624,7 +3624,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-10-23T17:50:43Z",
-      "video_id": "1386519416895622"
+      "video_id": "1386519416895622",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 19
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-23T18:14:03Z",
+      "comment_text": "Before the next coat, clean the surface well so dust doesn’t telegraph through. Do you tack-cloth or wipe down?",
+      "comment_status": "commented",
+      "comment_id": "1386519416895622_1739377583821611",
+      "commented_ts_utc": "2026-10-23T18:14:09Z"
     }
   },
   "runs": [
@@ -6635,6 +6645,15 @@
       "result": "commented",
       "comment_id": "3585568604943390_1425274423044783",
       "template_idx": 11
+    },
+    {
+      "ts_utc": "2026-10-23T18:14:09Z",
+      "video_id": "1386519416895622",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_flaking_on_plastic_edges-220_grit_for_edge_prep_on_plastic-plastic-035.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "1386519416895622_1739377583821611",
+      "template_idx": 19
     }
   ]
 }
