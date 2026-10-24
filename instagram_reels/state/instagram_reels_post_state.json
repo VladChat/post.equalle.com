@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-10-22"
+    "manifest_index": 0,
+    "last_day": "2026-10-24"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -5792,6 +5792,30 @@
       "comment_status": "commented",
       "comment_id": "17924426490443679",
       "commented_ts_utc": "2026-10-22T18:16:33Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
+      "filename": "feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
+      "manifest": "drywall.json",
+      "title": "Feathering Not Wide Enough? Expand the Feather Area With 180 Grit",
+      "description": "If the blend zone is too narrow, sand outward with 180 grit using light pressure to widen the feather and smooth the transition into the wall. Sandpaper eQualle",
+      "caption": "Feathering Not Wide Enough? Expand the Feather Area With 180 Grit\n\nIf the blend zone is too narrow, sand outward with 180 grit using light pressure to widen the feather and smooth the transition into the wall. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-24T16:31:44Z",
+      "mode": "binary",
+      "container_id": "18135212860741317",
+      "media_id": "18110588618259268",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v26.0/18135212860741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "id": "18135212860741317",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "status_code": "FINISHED"
+      }
     }
   },
   "runs": [
@@ -7685,6 +7709,17 @@
       "filename": "primer_feels_too_smooth-320_grit_for_scuffing_plastic_primer-plastic-034.mp4",
       "container_id": "18135000025741317",
       "media_id": "18147228361577629",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-24T16:31:44Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
+      "filename": "feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
+      "container_id": "18135212860741317",
+      "media_id": "18110588618259268",
       "error": null
     }
   ],
