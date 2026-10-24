@@ -5815,7 +5815,17 @@
         "id": "18135212860741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 10
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-24T16:36:34Z",
+      "comment_text": "Quick check: if it still feels scratchy, you may need one grit lower for a short blend. Want a simple grit ladder?",
+      "comment_status": "commented",
+      "comment_id": "17988080711877999",
+      "commented_ts_utc": "2026-10-24T16:36:42Z"
     }
   },
   "runs": [
@@ -9091,6 +9101,15 @@
       "result": "commented",
       "comment_id": "17924426490443679",
       "template_idx": 16
+    },
+    {
+      "ts_utc": "2026-10-24T16:36:42Z",
+      "media_id": "18110588618259268",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "17988080711877999",
+      "template_idx": 10
     }
   ]
 }
