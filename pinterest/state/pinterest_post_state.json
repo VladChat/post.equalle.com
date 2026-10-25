@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-10-23"
+    "manifest_index": 4,
+    "last_day": "2026-10-25"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2370,6 +2370,20 @@
       "pin_id": "839428818093209252",
       "media_id": "3970597318881702848",
       "cover_image_url": "https://i.pinimg.com/1200x/76/44/65/7644655602131741b7b9438df27814c3.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/primer_feels_too_smooth-320_grit_for_scuffing_plastic_primer-plastic-034.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/primer_feels_too_smooth-320_grit_for_scuffing_plastic_primer-plastic-034.mp4",
+      "filename": "primer_feels_too_smooth-320_grit_for_scuffing_plastic_primer-plastic-034.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://www.amazon.com/gp/product/B07RFT5KT4",
+      "title": "Primer Feels Too Smooth? Scuff Plastic Primer With 320 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-25T09:29:46+00:00",
+      "pin_id": "839428818093241275",
+      "media_id": "3975815359407760192",
+      "cover_image_url": "https://i.pinimg.com/1200x/91/bc/fe/91bcfeb277d2c5d52c9fd6c73d3f1ea7.jpg"
     }
   },
   "runs": [
@@ -4061,6 +4075,16 @@
       "result": "success",
       "pin_id": "839428818093209252",
       "media_id": "3970597318881702848",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-25T09:29:46+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/primer_feels_too_smooth-320_grit_for_scuffing_plastic_primer-plastic-034.mp4",
+      "filename": "primer_feels_too_smooth-320_grit_for_scuffing_plastic_primer-plastic-034.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818093241275",
+      "media_id": "3975815359407760192",
       "error": null
     }
   ]
