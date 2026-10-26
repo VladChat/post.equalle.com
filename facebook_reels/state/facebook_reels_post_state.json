@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-10-23"
+    "manifest_index": 0,
+    "last_day": "2026-10-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3635,6 +3635,17 @@
       "comment_status": "commented",
       "comment_id": "1386519416895622_1739377583821611",
       "commented_ts_utc": "2026-10-23T18:14:09Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_looks_wavy-150_grit_for_flattening_wall_surface-drywall-037.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_looks_wavy-150_grit_for_flattening_wall_surface-drywall-037.mp4",
+      "filename": "drywall_surface_looks_wavy-150_grit_for_flattening_wall_surface-drywall-037.mp4",
+      "manifest": "drywall.json",
+      "title": "Drywall Surface Looks Wavy? Flatten the Wall Surface With 150 Grit",
+      "description": "If the wall looks wavy, sand lightly with 150 grit to level minor highs and blend transitions before final prep. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-26T14:46:30Z",
+      "video_id": "1117272104379023"
     }
   },
   "runs": [
@@ -5220,6 +5231,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1386519416895622",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-26T14:46:30Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_looks_wavy-150_grit_for_flattening_wall_surface-drywall-037.mp4",
+      "filename": "drywall_surface_looks_wavy-150_grit_for_flattening_wall_surface-drywall-037.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "1117272104379023",
       "error": null
     }
   ],
