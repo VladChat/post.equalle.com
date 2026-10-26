@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-10-25"
+    "manifest_index": 0,
+    "last_day": "2026-10-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2384,6 +2384,20 @@
       "pin_id": "839428818093241275",
       "media_id": "3975815359407760192",
       "cover_image_url": "https://i.pinimg.com/1200x/91/bc/fe/91bcfeb277d2c5d52c9fd6c73d3f1ea7.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
+      "filename": "feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049941",
+      "destination_url": "https://equalle.com/products/sandpaper-100-sheets-grit-180",
+      "title": "Feathering Not Wide Enough? Expand the Feather Area With 180 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-26T09:45:57+00:00",
+      "pin_id": "839428818093259026",
+      "media_id": "3978746479468507584",
+      "cover_image_url": "https://i.pinimg.com/1200x/df/c0/e4/dfc0e44b2d05068945758153d43ebf5d.jpg"
     }
   },
   "runs": [
@@ -4085,6 +4099,16 @@
       "result": "success",
       "pin_id": "839428818093241275",
       "media_id": "3975815359407760192",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-26T09:45:57+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
+      "filename": "feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818093259026",
+      "media_id": "3978746479468507584",
       "error": null
     }
   ]
