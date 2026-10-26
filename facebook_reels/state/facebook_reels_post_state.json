@@ -3645,7 +3645,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-10-26T14:46:30Z",
-      "video_id": "1117272104379023"
+      "video_id": "1117272104379023",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 19
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-26T15:25:20Z",
+      "comment_text": "Before the next coat, clean the surface well so dust doesn’t telegraph through. Do you tack-cloth or wipe down?",
+      "comment_status": "commented",
+      "comment_id": "1117272104379023_1140753291760011",
+      "commented_ts_utc": "2026-10-26T15:25:25Z"
     }
   },
   "runs": [
@@ -6673,6 +6683,15 @@
       "manifest": "plastic.json",
       "result": "commented",
       "comment_id": "1386519416895622_1739377583821611",
+      "template_idx": 19
+    },
+    {
+      "ts_utc": "2026-10-26T15:25:25Z",
+      "video_id": "1117272104379023",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_looks_wavy-150_grit_for_flattening_wall_surface-drywall-037.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "1117272104379023_1140753291760011",
       "template_idx": 19
     }
   ]
