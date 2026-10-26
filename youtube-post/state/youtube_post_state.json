@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-25"
+    "last_day": "2026-10-26"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2966,6 +2966,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07QD1PR32",
       "result": "success",
       "video_id": "RCeLas5jDLQ"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_details_not_blending_in-220-320_grit_for_plastic_blending-plastic-057.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_details_not_blending_in-220-320_grit_for_plastic_blending-plastic-057.mp4",
+      "filename": "plastic_details_not_blending_in-220-320_grit_for_plastic_blending-plastic-057.mp4",
+      "manifest": "plastic.json",
+      "title": "Details Not Blending In? Use 220 Then 320 Grit On Plastic",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
+      "result": "success",
+      "video_id": "W8lZub13FXY"
     }
   },
   "runs": [
@@ -4745,6 +4755,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/edges_show_scratches_after_prep-320_grit_for_plastic_edge_refinement-plastic-056.mp4",
       "result": "success",
       "video_id": "RCeLas5jDLQ"
+    },
+    {
+      "ts_utc": "2026-10-26T11:12:43.045082+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_details_not_blending_in-220-320_grit_for_plastic_blending-plastic-057.mp4",
+      "result": "success",
+      "video_id": "W8lZub13FXY"
     }
   ],
   "last_post": {
