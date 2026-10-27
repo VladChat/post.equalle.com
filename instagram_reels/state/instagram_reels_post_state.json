@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-10-24"
+    "manifest_index": 1,
+    "last_day": "2026-10-27"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -5826,6 +5826,30 @@
       "comment_status": "commented",
       "comment_id": "17988080711877999",
       "commented_ts_utc": "2026-10-24T16:36:42Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Swirl_Marks_in_the_Wood-180to220_Grit_for_Finish_Sanding_Wood-wood-036.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Swirl_Marks_in_the_Wood-180to220_Grit_for_Finish_Sanding_Wood-wood-036.mp4",
+      "filename": "Swirl_Marks_in_the_Wood-180to220_Grit_for_Finish_Sanding_Wood-wood-036.mp4",
+      "manifest": "wood.json",
+      "title": "Swirl Marks in the Wood: 180–220 Grit Finish Sanding Wood",
+      "description": "Swirl Marks in the Wood? Use 180–220 grit for finish sanding wood. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "caption": "Swirl Marks in the Wood: 180–220 Grit Finish Sanding Wood\n\nSwirl Marks in the Wood? Use 180–220 grit for finish sanding wood. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-27T13:25:58Z",
+      "mode": "binary",
+      "container_id": "18135614041741317",
+      "media_id": "17911650420560539",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v26.0/18135614041741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "id": "18135614041741317",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "status_code": "FINISHED"
+      }
     }
   },
   "runs": [
@@ -7730,6 +7754,17 @@
       "filename": "feathering_not_wide_enough-180_grit_for_expanding_feather_area-drywall-035.mp4",
       "container_id": "18135212860741317",
       "media_id": "18110588618259268",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-27T13:25:58Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wood.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Swirl_Marks_in_the_Wood-180to220_Grit_for_Finish_Sanding_Wood-wood-036.mp4",
+      "filename": "Swirl_Marks_in_the_Wood-180to220_Grit_for_Finish_Sanding_Wood-wood-036.mp4",
+      "container_id": "18135614041741317",
+      "media_id": "17911650420560539",
       "error": null
     }
   ],
