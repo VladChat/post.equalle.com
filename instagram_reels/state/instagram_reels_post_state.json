@@ -5849,7 +5849,17 @@
         "id": "18135614041741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 8
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-27T13:55:43Z",
+      "comment_text": "Try a few lighter passes instead of one heavy pass—less chance of gouging. Are you seeing swirl marks?",
+      "comment_status": "commented",
+      "comment_id": "18082811678429464",
+      "commented_ts_utc": "2026-10-27T13:55:47Z"
     }
   },
   "runs": [
@@ -9145,6 +9155,15 @@
       "result": "commented",
       "comment_id": "17988080711877999",
       "template_idx": 10
+    },
+    {
+      "ts_utc": "2026-10-27T13:55:47Z",
+      "media_id": "17911650420560539",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Swirl_Marks_in_the_Wood-180to220_Grit_for_Finish_Sanding_Wood-wood-036.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "18082811678429464",
+      "template_idx": 8
     }
   ]
 }
