@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-26"
+    "last_day": "2026-10-27"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2976,6 +2976,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
       "result": "success",
       "video_id": "W8lZub13FXY"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/corners_look_too_aggressive-320_grit_for_light_plastic_sanding-plastic-058.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/corners_look_too_aggressive-320_grit_for_light_plastic_sanding-plastic-058.mp4",
+      "filename": "corners_look_too_aggressive-320_grit_for_light_plastic_sanding-plastic-058.mp4",
+      "manifest": "plastic.json",
+      "title": "Corners Look Too Aggressive? Lightly Sand With 320 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B07RFT5KT4",
+      "result": "success",
+      "video_id": "9a7Vx6K-II0"
     }
   },
   "runs": [
@@ -4761,6 +4771,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_details_not_blending_in-220-320_grit_for_plastic_blending-plastic-057.mp4",
       "result": "success",
       "video_id": "W8lZub13FXY"
+    },
+    {
+      "ts_utc": "2026-10-27T11:12:08.650496+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/corners_look_too_aggressive-320_grit_for_light_plastic_sanding-plastic-058.mp4",
+      "result": "success",
+      "video_id": "9a7Vx6K-II0"
     }
   ],
   "last_post": {
