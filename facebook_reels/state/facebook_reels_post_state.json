@@ -3666,7 +3666,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-10-28T13:15:59Z",
-      "video_id": "4481437148833989"
+      "video_id": "4481437148833989",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 18
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-28T14:02:01Z",
+      "comment_text": "If you’re getting pigtails or random deep lines, the paper may be loaded or folded. Are you using fresh sheets?",
+      "comment_status": "commented",
+      "comment_id": "4481437148833989_2233250924202749",
+      "commented_ts_utc": "2026-10-28T14:02:06Z"
     }
   },
   "runs": [
@@ -6713,6 +6723,15 @@
       "result": "commented",
       "comment_id": "1117272104379023_1140753291760011",
       "template_idx": 19
+    },
+    {
+      "ts_utc": "2026-10-28T14:02:06Z",
+      "video_id": "4481437148833989",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Swirl_Marks_in_the_Wood-180to220_Grit_for_Finish_Sanding_Wood-wood-036.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "4481437148833989_2233250924202749",
+      "template_idx": 18
     }
   ]
 }
