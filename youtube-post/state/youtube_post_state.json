@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-27"
+    "last_day": "2026-10-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2986,6 +2986,16 @@
       "destination_url": "https://www.amazon.com/gp/product/B07RFT5KT4",
       "result": "success",
       "video_id": "9a7Vx6K-II0"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/plastic_edges_need_final_touch-320_grit_for_final_edge_prep-plastic-059.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_edges_need_final_touch-320_grit_for_final_edge_prep-plastic-059.mp4",
+      "filename": "plastic_edges_need_final_touch-320_grit_for_final_edge_prep-plastic-059.mp4",
+      "manifest": "plastic.json",
+      "title": "Edges Need A Final Touch? Finish Plastic Edge Prep With 320 Grit",
+      "destination_url": "https://equalle.com/products/sandpaper-10-sheets-grit-320",
+      "result": "success",
+      "video_id": "7dVzfKmkrRE"
     }
   },
   "runs": [
@@ -4777,6 +4787,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/corners_look_too_aggressive-320_grit_for_light_plastic_sanding-plastic-058.mp4",
       "result": "success",
       "video_id": "9a7Vx6K-II0"
+    },
+    {
+      "ts_utc": "2026-10-28T11:08:45.171950+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_edges_need_final_touch-320_grit_for_final_edge_prep-plastic-059.mp4",
+      "result": "success",
+      "video_id": "7dVzfKmkrRE"
     }
   ],
   "last_post": {
