@@ -5883,7 +5883,17 @@
         "id": "18135882817741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 4
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-29T14:10:07Z",
+      "comment_text": "If the paper starts loading up, wipe/rinse it and keep going—clean paper cuts cleaner. Does it clog on your surface?",
+      "comment_status": "commented",
+      "comment_id": "18086230391329826",
+      "commented_ts_utc": "2026-10-29T14:10:09Z"
     }
   },
   "runs": [
@@ -9199,6 +9209,15 @@
       "result": "commented",
       "comment_id": "18082811678429464",
       "template_idx": 8
+    },
+    {
+      "ts_utc": "2026-10-29T14:10:09Z",
+      "media_id": "18132199630691018",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "18086230391329826",
+      "template_idx": 4
     }
   ]
 }
