@@ -2,7 +2,7 @@
   "version": 1,
   "rotation": {
     "manifest_index": 0,
-    "last_day": "2026-10-28"
+    "last_day": "2026-10-29"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2996,6 +2996,16 @@
       "destination_url": "https://equalle.com/products/sandpaper-10-sheets-grit-320",
       "result": "success",
       "video_id": "7dVzfKmkrRE"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/detail_sanding_leaving_marks-320_grit_for_plastic_surface_cleanup-plastic-060.mp4": {
+      "attempts": 1,
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/detail_sanding_leaving_marks-320_grit_for_plastic_surface_cleanup-plastic-060.mp4",
+      "filename": "detail_sanding_leaving_marks-320_grit_for_plastic_surface_cleanup-plastic-060.mp4",
+      "manifest": "plastic.json",
+      "title": "Detail Sanding Leaving Marks? Clean Up Plastic With 320 Grit",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ7SLBB4",
+      "result": "success",
+      "video_id": "W92-Z_ywMRY"
     }
   },
   "runs": [
@@ -4793,6 +4803,12 @@
       "video_url": "https://github.com/VladChat/video/releases/download/Plastic/plastic_edges_need_final_touch-320_grit_for_final_edge_prep-plastic-059.mp4",
       "result": "success",
       "video_id": "7dVzfKmkrRE"
+    },
+    {
+      "ts_utc": "2026-10-29T11:08:17.655244+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/detail_sanding_leaving_marks-320_grit_for_plastic_surface_cleanup-plastic-060.mp4",
+      "result": "success",
+      "video_id": "W92-Z_ywMRY"
     }
   ],
   "last_post": {
