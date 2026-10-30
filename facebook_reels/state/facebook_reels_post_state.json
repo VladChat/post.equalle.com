@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-10-28"
+    "manifest_index": 2,
+    "last_day": "2026-10-30"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3677,6 +3677,17 @@
       "comment_status": "commented",
       "comment_id": "4481437148833989_2233250924202749",
       "commented_ts_utc": "2026-10-28T14:02:06Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4",
+      "filename": "plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4",
+      "manifest": "wet.json",
+      "title": "Lens Feels Rough? Wet Sand Headlights 1000 To 2000 Grit",
+      "description": "Plastic lens feels rough? Wet sand headlights with 1000 grit to cut oxidation, then move to 2000 grit to refine before polishing. Keep the lens wet, use light pressure, sand in even passes, and wipe often to check progress. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-30T13:16:11Z",
+      "video_id": "1017367898059041"
     }
   },
   "runs": [
@@ -5280,6 +5291,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "4481437148833989",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-30T13:16:11Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4",
+      "filename": "plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "1017367898059041",
       "error": null
     }
   ],
