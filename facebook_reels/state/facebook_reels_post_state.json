@@ -3687,7 +3687,14 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-10-30T13:16:11Z",
-      "video_id": "1017367898059041"
+      "video_id": "1017367898059041",
+      "comment_plan": {
+        "decision": "skip",
+        "template_idx": 10
+      },
+      "comment_status": "skipped",
+      "comment_skipped_ts_utc": "2026-10-30T14:02:53Z",
+      "comment_skipped_reason": "policy_10pct_skip"
     }
   },
   "runs": [
