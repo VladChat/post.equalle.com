@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-10-26"
+    "manifest_index": 1,
+    "last_day": "2026-10-30"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2398,6 +2398,20 @@
       "pin_id": "839428818093259026",
       "media_id": "3978746479468507584",
       "cover_image_url": "https://i.pinimg.com/1200x/df/c0/e4/dfc0e44b2d05068945758153d43ebf5d.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Swirl_Marks_in_the_Wood-180to220_Grit_for_Finish_Sanding_Wood-wood-036.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Swirl_Marks_in_the_Wood-180to220_Grit_for_Finish_Sanding_Wood-wood-036.mp4",
+      "filename": "Swirl_Marks_in_the_Wood-180to220_Grit_for_Finish_Sanding_Wood-wood-036.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://www.amazon.com/gp/product/B07QG6R8Y1",
+      "title": "Swirl Marks in the Wood: 180–220 Grit Finish Sanding Wood",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-30T09:25:29+00:00",
+      "pin_id": "839428818093328230",
+      "media_id": "3990303946484003776",
+      "cover_image_url": "https://i.pinimg.com/1200x/da/82/9c/da829c9ed49f579ac1ca8c714936fd31.jpg"
     }
   },
   "runs": [
@@ -4109,6 +4123,16 @@
       "result": "success",
       "pin_id": "839428818093259026",
       "media_id": "3978746479468507584",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-30T09:25:29+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Swirl_Marks_in_the_Wood-180to220_Grit_for_Finish_Sanding_Wood-wood-036.mp4",
+      "filename": "Swirl_Marks_in_the_Wood-180to220_Grit_for_Finish_Sanding_Wood-wood-036.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818093328230",
+      "media_id": "3990303946484003776",
       "error": null
     }
   ]
