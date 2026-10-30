@@ -2419,12 +2419,13 @@
       "verify_after_ts": 1793188484.2443707
     },
     "W92-Z_ywMRY": {
-      "comment_status": "commented_unverified",
+      "comment_status": "commented",
       "comment_id": "UgwIQKF0FvUhwhtTDPt4AaABAg",
       "comment_text": "Don’t chase one spot too long—blend the area wider and re-check so you don’t create a low spot. Are the edges still visible on your surface?",
       "comment_attempts": 1,
       "commented_ts": "2026-10-29T11:24:20Z",
-      "verify_after_ts": 1793274860.418954
+      "verify_after_ts": 1793274860.418954,
+      "comment_verified_ts": "2026-10-30T11:23:43Z"
     }
   },
   "runs": [
