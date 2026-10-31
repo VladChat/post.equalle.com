@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-10-29"
+    "manifest_index": 3,
+    "last_day": "2026-10-31"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -5894,6 +5894,30 @@
       "comment_status": "commented",
       "comment_id": "18086230391329826",
       "commented_ts_utc": "2026-10-29T14:10:09Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/metal_not_clean_after_paint_removal-120_grit_for_final_paint_prep-metal-035.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_not_clean_after_paint_removal-120_grit_for_final_paint_prep-metal-035.mp4",
+      "filename": "metal_not_clean_after_paint_removal-120_grit_for_final_paint_prep-metal-035.mp4",
+      "manifest": "metal.json",
+      "title": "Final Paint Prep on Metal: Clean Up With 120 Grit Sandpaper",
+      "description": "Metal not clean after paint removal? Use 120 grit to remove leftover coating haze and even out the scratch pattern. This creates a more uniform surface before primer.",
+      "caption": "Final Paint Prep on Metal: Clean Up With 120 Grit Sandpaper\n\nMetal not clean after paint removal? Use 120 grit to remove leftover coating haze and even out the scratch pattern. This creates a more uniform surface before primer.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-10-31T13:11:24Z",
+      "mode": "binary",
+      "container_id": "18136099360741317",
+      "media_id": "17954572233292731",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v26.0/18136099360741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "id": "18136099360741317",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "status_code": "FINISHED"
+      }
     }
   },
   "runs": [
@@ -7820,6 +7844,17 @@
       "filename": "plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4",
       "container_id": "18135882817741317",
       "media_id": "18132199630691018",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-10-31T13:11:24Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "metal.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_not_clean_after_paint_removal-120_grit_for_final_paint_prep-metal-035.mp4",
+      "filename": "metal_not_clean_after_paint_removal-120_grit_for_final_paint_prep-metal-035.mp4",
+      "container_id": "18136099360741317",
+      "media_id": "17954572233292731",
       "error": null
     }
   ],
