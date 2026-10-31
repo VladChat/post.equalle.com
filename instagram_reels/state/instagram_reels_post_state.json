@@ -5917,7 +5917,17 @@
         "id": "18136099360741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 8
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-10-31T13:46:15Z",
+      "comment_text": "Try a few lighter passes instead of one heavy pass—less chance of gouging. Are you seeing swirl marks?",
+      "comment_status": "commented",
+      "comment_id": "17982823460911999",
+      "commented_ts_utc": "2026-10-31T13:46:18Z"
     }
   },
   "runs": [
@@ -9253,6 +9263,15 @@
       "result": "commented",
       "comment_id": "18086230391329826",
       "template_idx": 4
+    },
+    {
+      "ts_utc": "2026-10-31T13:46:18Z",
+      "media_id": "17954572233292731",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_not_clean_after_paint_removal-120_grit_for_final_paint_prep-metal-035.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "17982823460911999",
+      "template_idx": 8
     }
   ]
 }
