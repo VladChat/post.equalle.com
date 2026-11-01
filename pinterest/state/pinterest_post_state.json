@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-10-30"
+    "manifest_index": 2,
+    "last_day": "2026-11-01"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2412,6 +2412,20 @@
       "pin_id": "839428818093328230",
       "media_id": "3990303946484003776",
       "cover_image_url": "https://i.pinimg.com/1200x/da/82/9c/da829c9ed49f579ac1ca8c714936fd31.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/headlights_not_clearing_up-2000_grit_wet_sand_for_headlight_prep-wet-035.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_not_clearing_up-2000_grit_wet_sand_for_headlight_prep-wet-035.mp4",
+      "filename": "headlights_not_clearing_up-2000_grit_wet_sand_for_headlight_prep-wet-035.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049945",
+      "destination_url": "https://equalle.com/products/2000-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+      "title": "Headlights Not Clearing Up? 2000 Grit Wet Sand For Prep",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-01T09:25:53+00:00",
+      "pin_id": "839428818093358656",
+      "media_id": "3996094872767598720",
+      "cover_image_url": "https://i.pinimg.com/1200x/20/aa/13/20aa13efe218618335c4c3ca0cbd7ba6.jpg"
     }
   },
   "runs": [
@@ -4133,6 +4147,16 @@
       "result": "success",
       "pin_id": "839428818093328230",
       "media_id": "3990303946484003776",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-01T09:25:53+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_not_clearing_up-2000_grit_wet_sand_for_headlight_prep-wet-035.mp4",
+      "filename": "headlights_not_clearing_up-2000_grit_wet_sand_for_headlight_prep-wet-035.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818093358656",
+      "media_id": "3996094872767598720",
       "error": null
     }
   ]
