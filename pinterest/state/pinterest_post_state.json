@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-11-01"
+    "manifest_index": 3,
+    "last_day": "2026-11-02"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2426,6 +2426,20 @@
       "pin_id": "839428818093358656",
       "media_id": "3996094872767598720",
       "cover_image_url": "https://i.pinimg.com/1200x/20/aa/13/20aa13efe218618335c4c3ca0cbd7ba6.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/coating_not_fully_removed-80-120_grit_for_paint_cleanup-metal-034.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/coating_not_fully_removed-80-120_grit_for_paint_cleanup-metal-034.mp4",
+      "filename": "coating_not_fully_removed-80-120_grit_for_paint_cleanup-metal-034.mp4",
+      "manifest": "metal.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZK2LKRX",
+      "title": "Coating Not Fully Removed? Use 80–120 Grit for Metal Paint Cleanup",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-02T19:35:57+00:00",
+      "pin_id": "839428818093381908",
+      "media_id": "4000227675487380288",
+      "cover_image_url": "https://i.pinimg.com/1200x/69/0b/c5/690bc500087ee2cd5705856d35a8526d.jpg"
     }
   },
   "runs": [
@@ -4157,6 +4171,16 @@
       "result": "success",
       "pin_id": "839428818093358656",
       "media_id": "3996094872767598720",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-02T19:35:57+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/coating_not_fully_removed-80-120_grit_for_paint_cleanup-metal-034.mp4",
+      "filename": "coating_not_fully_removed-80-120_grit_for_paint_cleanup-metal-034.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "pin_id": "839428818093381908",
+      "media_id": "4000227675487380288",
       "error": null
     }
   ]
