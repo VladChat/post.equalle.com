@@ -5951,7 +5951,17 @@
         "id": "18136420474741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 8
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-11-03T13:23:09Z",
+      "comment_text": "Try a few lighter passes instead of one heavy pass—less chance of gouging. Are you seeing swirl marks?",
+      "comment_status": "commented",
+      "comment_id": "18186493816422127",
+      "commented_ts_utc": "2026-11-03T13:23:13Z"
     }
   },
   "runs": [
@@ -9306,6 +9316,15 @@
       "manifest": "metal.json",
       "result": "commented",
       "comment_id": "17982823460911999",
+      "template_idx": 8
+    },
+    {
+      "ts_utc": "2026-11-03T13:23:13Z",
+      "media_id": "18098033384667452",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_flaking_on_plastic_edges-220_grit_for_edge_prep_on_plastic-plastic-035.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "18186493816422127",
       "template_idx": 8
     }
   ]
