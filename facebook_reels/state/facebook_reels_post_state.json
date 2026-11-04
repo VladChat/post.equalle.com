@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-10-30"
+    "manifest_index": 3,
+    "last_day": "2026-11-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3695,6 +3695,17 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-10-30T14:02:53Z",
       "comment_skipped_reason": "policy_10pct_skip"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/metal_surface_not_ready_for_paint-120_grit_for_metal_paint_prep-metal-036.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_surface_not_ready_for_paint-120_grit_for_metal_paint_prep-metal-036.mp4",
+      "filename": "metal_surface_not_ready_for_paint-120_grit_for_metal_paint_prep-metal-036.mp4",
+      "manifest": "metal.json",
+      "title": "Metal Surface Not Ready for Paint? Prep With 120 Grit",
+      "description": "Metal surface not ready for paint often needs a more even scratch pattern. Use 120 grit to smooth the surface and remove minor imperfections. Clean dust before priming.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-04T20:23:42Z",
+      "video_id": "2167192467228212"
     }
   },
   "runs": [
@@ -5307,6 +5318,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "1017367898059041",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-04T20:23:42Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_surface_not_ready_for_paint-120_grit_for_metal_paint_prep-metal-036.mp4",
+      "filename": "metal_surface_not_ready_for_paint-120_grit_for_metal_paint_prep-metal-036.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "2167192467228212",
       "error": null
     }
   ],
