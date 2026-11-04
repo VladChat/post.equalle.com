@@ -3705,7 +3705,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-11-04T20:23:42Z",
-      "video_id": "2167192467228212"
+      "video_id": "2167192467228212",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 1
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-11-04T21:20:34Z",
+      "comment_text": "If the scratch pattern looks uneven, do a few crosshatch passes and re-check. Sanding wet or dry?",
+      "comment_status": "commented",
+      "comment_id": "2167192467228212_1597410601689428",
+      "commented_ts_utc": "2026-11-04T21:20:40Z"
     }
   },
   "runs": [
@@ -6779,6 +6789,15 @@
       "result": "commented",
       "comment_id": "4481437148833989_2233250924202749",
       "template_idx": 18
+    },
+    {
+      "ts_utc": "2026-11-04T21:20:40Z",
+      "video_id": "2167192467228212",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_surface_not_ready_for_paint-120_grit_for_metal_paint_prep-metal-036.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "2167192467228212_1597410601689428",
+      "template_idx": 1
     }
   ]
 }
