@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-11-02"
+    "manifest_index": 4,
+    "last_day": "2026-11-04"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2440,6 +2440,20 @@
       "pin_id": "839428818093381908",
       "media_id": "4000227675487380288",
       "cover_image_url": "https://i.pinimg.com/1200x/69/0b/c5/690bc500087ee2cd5705856d35a8526d.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/paint_flaking_on_plastic_edges-220_grit_for_edge_prep_on_plastic-plastic-035.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_flaking_on_plastic_edges-220_grit_for_edge_prep_on_plastic-plastic-035.mp4",
+      "filename": "paint_flaking_on_plastic_edges-220_grit_for_edge_prep_on_plastic-plastic-035.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049947",
+      "destination_url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
+      "title": "Paint Flaking On Edges? Prep Plastic Edges With 220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-04T17:21:18+00:00",
+      "pin_id": "839428818093417010",
+      "media_id": "4005755191458037888",
+      "cover_image_url": "https://i.pinimg.com/1200x/18/10/84/1810843e43fbc0f0253fa3195a5a6b6d.jpg"
     }
   },
   "runs": [
@@ -4181,6 +4195,16 @@
       "result": "success",
       "pin_id": "839428818093381908",
       "media_id": "4000227675487380288",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-04T17:21:18+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/paint_flaking_on_plastic_edges-220_grit_for_edge_prep_on_plastic-plastic-035.mp4",
+      "filename": "paint_flaking_on_plastic_edges-220_grit_for_edge_prep_on_plastic-plastic-035.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818093417010",
+      "media_id": "4005755191458037888",
       "error": null
     }
   ]
