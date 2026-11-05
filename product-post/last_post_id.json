@@ -1,14 +1,16 @@
 {
-  "post_id": "325670187920349_1584755106999303",
+  "post_id": "325670187920349_1586849790123168",
   "product": {
     "source": "equalle",
-    "url": "https://equalle.com/products/180-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
-    "grit": 180,
+    "url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
+    "grit": 220,
     "pack": 10,
-    "anchor": "180 Grit (Medium)",
-    "grit_description": "Reliable grit for producing a uniform texture on wood, metal, or filler layers\u2014often used before varnishing or applying topcoats.",
+    "anchor": "220 Grit (Medium)",
+    "grit_description": "Refined medium-fine abrasive for final surface leveling on primed or sealed materials. Great for smooth touch-ups before finishing.",
     "contexts": [
       "wood",
+      "metal",
+      "auto",
       "drywall"
     ]
   }
