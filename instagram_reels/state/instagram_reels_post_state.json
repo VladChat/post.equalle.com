@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-11-03"
+    "manifest_index": 0,
+    "last_day": "2026-11-05"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -5962,6 +5962,30 @@
       "comment_status": "commented",
       "comment_id": "18186493816422127",
       "commented_ts_utc": "2026-11-03T13:23:13Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4",
+      "filename": "high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4",
+      "manifest": "drywall.json",
+      "title": "High Spots Showing on the Wall? Knock Down Drywall High Spots With 120 Grit",
+      "description": "If you see high spots, sand lightly with 120 grit to knock them down and level the surface before you feather or recoat. Sandpaper eQualle",
+      "caption": "High Spots Showing on the Wall? Knock Down Drywall High Spots With 120 Grit\n\nIf you see high spots, sand lightly with 120 grit to knock them down and level the surface before you feather or recoat. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-05T20:34:26Z",
+      "mode": "binary",
+      "container_id": "18136653739741317",
+      "media_id": "17922741843448939",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v27.0/18136653739741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "id": "18136653739741317",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "status_code": "FINISHED"
+      }
     }
   },
   "runs": [
@@ -7910,6 +7934,17 @@
       "filename": "paint_flaking_on_plastic_edges-220_grit_for_edge_prep_on_plastic-plastic-035.mp4",
       "container_id": "18136420474741317",
       "media_id": "18098033384667452",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-05T20:34:26Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4",
+      "filename": "high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4",
+      "container_id": "18136653739741317",
+      "media_id": "17922741843448939",
       "error": null
     }
   ],
