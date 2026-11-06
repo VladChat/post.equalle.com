@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-11-04"
+    "manifest_index": 4,
+    "last_day": "2026-11-06"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3716,6 +3716,17 @@
       "comment_status": "commented",
       "comment_id": "2167192467228212_1597410601689428",
       "commented_ts_utc": "2026-11-04T21:20:40Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/scratches_visible_on_plastic-220_grit_for_removing_plastic_scratches-plastic-036.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_visible_on_plastic-220_grit_for_removing_plastic_scratches-plastic-036.mp4",
+      "filename": "scratches_visible_on_plastic-220_grit_for_removing_plastic_scratches-plastic-036.mp4",
+      "manifest": "plastic.json",
+      "title": "Scratches Visible On Plastic? Reduce Them With 220 Grit",
+      "description": "When scratches are visible on plastic, 220 grit helps refine the scratch pattern and blend sanding lines before paint, clear coat, or epoxy. Use even strokes and check under light between passes. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-06T19:55:53Z",
+      "video_id": "1532029862099280"
     }
   },
   "runs": [
@@ -5337,6 +5348,15 @@
       "manifest": "metal.json",
       "result": "success",
       "video_id": "2167192467228212",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-06T19:55:53Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_visible_on_plastic-220_grit_for_removing_plastic_scratches-plastic-036.mp4",
+      "filename": "scratches_visible_on_plastic-220_grit_for_removing_plastic_scratches-plastic-036.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "video_id": "1532029862099280",
       "error": null
     }
   ],
