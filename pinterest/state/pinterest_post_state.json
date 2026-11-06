@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-11-04"
+    "manifest_index": 0,
+    "last_day": "2026-11-06"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2454,6 +2454,20 @@
       "pin_id": "839428818093417010",
       "media_id": "4005755191458037888",
       "cover_image_url": "https://i.pinimg.com/1200x/18/10/84/1810843e43fbc0f0253fa3195a5a6b6d.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4",
+      "filename": "high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049941",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVV8DK",
+      "title": "High Spots Showing on the Wall? Knock Down Drywall High Spots With 120 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-06T16:50:03+00:00",
+      "pin_id": "839428818093452368",
+      "media_id": "4011491004149682240",
+      "cover_image_url": "https://i.pinimg.com/1200x/85/cb/b3/85cbb3acf3c4970558a9ed8cbd90f718.jpg"
     }
   },
   "runs": [
@@ -4205,6 +4219,16 @@
       "result": "success",
       "pin_id": "839428818093417010",
       "media_id": "4005755191458037888",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-06T16:50:03+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4",
+      "filename": "high_spots_showing_on_wall-120_grit_for_knocking_down_drywall_high_spots-drywall-036.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818093452368",
+      "media_id": "4011491004149682240",
       "error": null
     }
   ]
