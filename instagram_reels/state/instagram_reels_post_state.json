@@ -6019,7 +6019,17 @@
         "id": "18136844938741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-11-07T18:55:04Z",
+      "comment_text": "For wood work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "17987956272089991",
+      "commented_ts_utc": "2026-11-07T18:55:07Z"
     }
   },
   "runs": [
@@ -9415,6 +9425,15 @@
       "result": "commented",
       "comment_id": "17976470678943049",
       "template_idx": 10
+    },
+    {
+      "ts_utc": "2026-11-07T18:55:07Z",
+      "media_id": "18101713142421733",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Deep_Scratches_After_Coarse_Grit-150to180_Grit_for_Scratch_Refinement-wood-037.mp4",
+      "manifest": "wood.json",
+      "result": "commented",
+      "comment_id": "17987956272089991",
+      "template_idx": 3
     }
   ]
 }
