@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-11-06"
+    "manifest_index": 1,
+    "last_day": "2026-11-08"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2468,6 +2468,20 @@
       "pin_id": "839428818093452368",
       "media_id": "4011491004149682240",
       "cover_image_url": "https://i.pinimg.com/1200x/85/cb/b3/85cbb3acf3c4970558a9ed8cbd90f718.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Deep_Scratches_After_Coarse_Grit-150to180_Grit_for_Scratch_Refinement-wood-037.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Deep_Scratches_After_Coarse_Grit-150to180_Grit_for_Scratch_Refinement-wood-037.mp4",
+      "filename": "Deep_Scratches_After_Coarse_Grit-150to180_Grit_for_Scratch_Refinement-wood-037.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-150",
+      "title": "Deep Scratches After Coarse Grit: 150–180 Grit Scratch Refinement",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-08T16:03:44+00:00",
+      "pin_id": "839428818093486625",
+      "media_id": "4017196462093695744",
+      "cover_image_url": "https://i.pinimg.com/1200x/10/f4/f3/10f4f352801952653d837e0343c58d5a.jpg"
     }
   },
   "runs": [
@@ -4229,6 +4243,16 @@
       "result": "success",
       "pin_id": "839428818093452368",
       "media_id": "4011491004149682240",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-08T16:03:44+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Deep_Scratches_After_Coarse_Grit-150to180_Grit_for_Scratch_Refinement-wood-037.mp4",
+      "filename": "Deep_Scratches_After_Coarse_Grit-150to180_Grit_for_Scratch_Refinement-wood-037.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818093486625",
+      "media_id": "4017196462093695744",
       "error": null
     }
   ]
