@@ -2339,12 +2339,13 @@
       "verify_after_ts": 1792336153.8958955
     },
     "ifnMe7O0zzM": {
-      "comment_status": "commented_unverified",
+      "comment_status": "commented",
       "comment_id": "UgyqJQeqkEdZm50jAf14AaABAg",
       "comment_text": "For metal sanding on surface, wipe the surface often to clear swarf—built-up dust can scratch deeper than your target grit. Are you removing rust or refining a finish?",
       "comment_attempts": 1,
       "commented_ts": "2026-10-19T17:33:49Z",
-      "verify_after_ts": 1792433029.8096707
+      "verify_after_ts": 1792433029.8096707,
+      "comment_verified_ts": "2026-11-09T21:29:00Z"
     },
     "ZUIlgOw5TuA": {
       "comment_status": "commented",
