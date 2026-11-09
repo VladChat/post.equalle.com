@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-11-08"
+    "manifest_index": 2,
+    "last_day": "2026-11-09"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2482,6 +2482,20 @@
       "pin_id": "839428818093486625",
       "media_id": "4017196462093695744",
       "cover_image_url": "https://i.pinimg.com/1200x/10/f4/f3/10f4f352801952653d837e0343c58d5a.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4",
+      "filename": "plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049945",
+      "destination_url": "https://www.amazon.com/gp/product/B0CZ8CPYJS",
+      "title": "Lens Feels Rough? Wet Sand Headlights 1000 To 2000 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-09T19:55:35+00:00",
+      "pin_id": "839428818093507804",
+      "media_id": "4020560818458534592",
+      "cover_image_url": "https://i.pinimg.com/1200x/42/77/3e/42773e9152da66b8c7d4eb41ae7f53ca.jpg"
     }
   },
   "runs": [
@@ -4253,6 +4267,16 @@
       "result": "success",
       "pin_id": "839428818093486625",
       "media_id": "4017196462093695744",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-09T19:55:35+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4",
+      "filename": "plastic_lens_feels_rough-1000-2000_grit_wet_sand_headlights-wet-036.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818093507804",
+      "media_id": "4020560818458534592",
       "error": null
     }
   ]
