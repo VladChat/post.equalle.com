@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-11-07"
+    "manifest_index": 2,
+    "last_day": "2026-11-10"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -6030,6 +6030,30 @@
       "comment_status": "commented",
       "comment_id": "17987956272089991",
       "commented_ts_utc": "2026-11-07T18:55:07Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4",
+      "filename": "headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4",
+      "manifest": "wet.json",
+      "title": "Headlights Need Polish Prep? 2000 Grit Wet Sand First",
+      "description": "Headlights need prep before polishing? Wet sand with 2000 grit to refine haze and sanding lines for a clearer polish result. Keep the lens wet, use light pressure, sand in even passes, wipe often, and inspect under good light. Wet or dry use. — eQualle",
+      "caption": "Headlights Need Polish Prep? 2000 Grit Wet Sand First\n\nHeadlights need prep before polishing? Wet sand with 2000 grit to refine haze and sanding lines for a clearer polish result. Keep the lens wet, use light pressure, sand in even passes, wipe often, and inspect under good light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-10T20:24:29Z",
+      "mode": "binary",
+      "container_id": "18137180395741317",
+      "media_id": "18125785238300051",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v27.0/18137180395741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "id": "18137180395741317",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "status_code": "FINISHED"
+      }
     }
   },
   "runs": [
@@ -8000,6 +8024,17 @@
       "filename": "Deep_Scratches_After_Coarse_Grit-150to180_Grit_for_Scratch_Refinement-wood-037.mp4",
       "container_id": "18136844938741317",
       "media_id": "18101713142421733",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-10T20:24:29Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "wet.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4",
+      "filename": "headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4",
+      "container_id": "18137180395741317",
+      "media_id": "18125785238300051",
       "error": null
     }
   ],
