@@ -1,17 +1,14 @@
 {
-  "post_id": "325670187920349_1586849790123168",
+  "post_id": "325670187920349_1592916216183192",
   "product": {
     "source": "equalle",
-    "url": "https://equalle.com/products/sandpaper-9-x-11-grit-220-10-sheets",
-    "grit": 220,
+    "url": "https://equalle.com/products/240-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+    "grit": 240,
     "pack": 10,
-    "anchor": "220 Grit (Medium)",
-    "grit_description": "Refined medium-fine abrasive for final surface leveling on primed or sealed materials. Great for smooth touch-ups before finishing.",
+    "anchor": "240 Grit (Medium)",
+    "grit_description": "Smooth-cut abrasive for soft blending, de-nibbing, and light surface preparation before polishing or coating.",
     "contexts": [
-      "wood",
-      "metal",
-      "auto",
-      "drywall"
+      "finishing"
     ]
   }
 }
