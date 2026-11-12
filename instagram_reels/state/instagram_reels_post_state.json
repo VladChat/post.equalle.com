@@ -6087,7 +6087,17 @@
         "id": "18137392996741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 5
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-11-12T21:19:49Z",
+      "comment_text": "After sanding, wipe dust and check under a bright light from the side. Do the lines disappear evenly?",
+      "comment_status": "commented",
+      "comment_id": "18133409668840400",
+      "commented_ts_utc": "2026-11-12T21:19:50Z"
     }
   },
   "runs": [
@@ -9523,6 +9533,15 @@
       "result": "commented",
       "comment_id": "18106617422010457",
       "template_idx": 13
+    },
+    {
+      "ts_utc": "2026-11-12T21:19:50Z",
+      "media_id": "18029494406702814",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_surface_not_ready_for_paint-120_grit_for_metal_paint_prep-metal-036.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18133409668840400",
+      "template_idx": 5
     }
   ]
 }
