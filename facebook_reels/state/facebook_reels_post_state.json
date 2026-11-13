@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-11-11"
+    "manifest_index": 2,
+    "last_day": "2026-11-13"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3779,6 +3779,17 @@
       "comment_status": "commented",
       "comment_id": "1828524081694715_1149021184544410",
       "commented_ts_utc": "2026-11-11T20:38:21Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4",
+      "filename": "headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4",
+      "manifest": "wet.json",
+      "title": "Headlights Need Polish Prep? 2000 Grit Wet Sand First",
+      "description": "Headlights need prep before polishing? Wet sand with 2000 grit to refine haze and sanding lines for a clearer polish result. Keep the lens wet, use light pressure, sand in even passes, wipe often, and inspect under good light. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-13T20:27:06Z",
+      "video_id": "1719178399871906"
     }
   },
   "runs": [
@@ -5427,6 +5438,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "1828524081694715",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-13T20:27:06Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4",
+      "filename": "headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "1719178399871906",
       "error": null
     }
   ],
