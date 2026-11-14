@@ -2299,12 +2299,13 @@
       "verify_after_ts": 1791917544.7049613
     },
     "7zY1igz4agg": {
-      "comment_status": "commented_unverified",
+      "comment_status": "commented",
       "comment_id": "UgxZ6npz8PRPK-lP_W54AaABAg",
       "comment_text": "If the surface feels smooth but still looks cloudy, your scratches may be too coarse—step up one grit and re-check under strong light. What finish are you aiming for on surface?",
       "comment_attempts": 1,
       "commented_ts": "2026-10-14T15:50:51Z",
-      "verify_after_ts": 1791994851.32775
+      "verify_after_ts": 1791994851.32775,
+      "comment_verified_ts": "2026-11-14T17:12:23Z"
     },
     "DAKjfppJ9TU": {
       "comment_status": "commented",
