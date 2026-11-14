@@ -6121,7 +6121,17 @@
         "id": "18137611750741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 3
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-11-14T19:16:02Z",
+      "comment_text": "For plastic work, feather the edges first, then refine the center. What part is giving you trouble?",
+      "comment_status": "commented",
+      "comment_id": "17936896428145924",
+      "commented_ts_utc": "2026-11-14T19:16:04Z"
     }
   },
   "runs": [
@@ -9577,6 +9587,15 @@
       "result": "commented",
       "comment_id": "18133409668840400",
       "template_idx": 5
+    },
+    {
+      "ts_utc": "2026-11-14T19:16:04Z",
+      "media_id": "18201985774378862",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_visible_on_plastic-220_grit_for_removing_plastic_scratches-plastic-036.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "17936896428145924",
+      "template_idx": 3
     }
   ]
 }
