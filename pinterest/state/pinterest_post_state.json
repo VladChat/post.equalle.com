@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-11-11"
+    "manifest_index": 4,
+    "last_day": "2026-11-15"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2510,6 +2510,20 @@
       "pin_id": "839428818093538970",
       "media_id": "4026038914656872896",
       "cover_image_url": "https://i.pinimg.com/1200x/54/78/6b/54786b158249b5f4e93814ab76a9328a.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/scratches_visible_on_plastic-220_grit_for_removing_plastic_scratches-plastic-036.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_visible_on_plastic-220_grit_for_removing_plastic_scratches-plastic-036.mp4",
+      "filename": "scratches_visible_on_plastic-220_grit_for_removing_plastic_scratches-plastic-036.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049964",
+      "destination_url": "https://www.amazon.com/gp/product/B07RHVX7F6",
+      "title": "Scratches Visible On Plastic? Reduce Them With 220 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-15T16:26:15+00:00",
+      "pin_id": "839428818093603515",
+      "media_id": "4037536707466156416",
+      "cover_image_url": "https://i.pinimg.com/1200x/78/d9/f6/78d9f695d2e57c13fe6f682b436e8a05.jpg"
     }
   },
   "runs": [
@@ -4301,6 +4315,16 @@
       "result": "success",
       "pin_id": "839428818093538970",
       "media_id": "4026038914656872896",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-15T16:26:15+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/scratches_visible_on_plastic-220_grit_for_removing_plastic_scratches-plastic-036.mp4",
+      "filename": "scratches_visible_on_plastic-220_grit_for_removing_plastic_scratches-plastic-036.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818093603515",
+      "media_id": "4037536707466156416",
       "error": null
     }
   ]
