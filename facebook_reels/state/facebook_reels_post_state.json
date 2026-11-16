@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-11-13"
+    "manifest_index": 3,
+    "last_day": "2026-11-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3800,6 +3800,17 @@
       "comment_status": "commented",
       "comment_id": "1719178399871906_1169957692273065",
       "commented_ts_utc": "2026-11-13T21:31:02Z"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4",
+      "filename": "weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4",
+      "manifest": "metal.json",
+      "title": "Smooth a Rough Weld Area on Metal With 120 Grit Sandpaper",
+      "description": "Weld area feels too rough? Use 120 grit to smooth welded metal and blend the transition into the surrounding surface. Keep the sanding block flat to avoid digging into edges.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-16T22:51:00Z",
+      "video_id": "1675220633966807"
     }
   },
   "runs": [
@@ -5457,6 +5468,15 @@
       "manifest": "wet.json",
       "result": "success",
       "video_id": "1719178399871906",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-16T22:51:00Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4",
+      "filename": "weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4",
+      "manifest": "metal.json",
+      "result": "success",
+      "video_id": "1675220633966807",
       "error": null
     }
   ],
