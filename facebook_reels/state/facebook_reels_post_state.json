@@ -3810,7 +3810,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-11-16T22:51:00Z",
-      "video_id": "1675220633966807"
+      "video_id": "1675220633966807",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 6
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-11-16T22:58:48Z",
+      "comment_text": "Small circles help blend; straight passes help level. Are you going for a smooth finish or just prep?",
+      "comment_status": "commented",
+      "comment_id": "1675220633966807_1129641036342217",
+      "commented_ts_utc": "2026-11-16T22:58:54Z"
     }
   },
   "runs": [
@@ -6974,6 +6984,15 @@
       "result": "commented",
       "comment_id": "1719178399871906_1169957692273065",
       "template_idx": 2
+    },
+    {
+      "ts_utc": "2026-11-16T22:58:54Z",
+      "video_id": "1675220633966807",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "1675220633966807_1129641036342217",
+      "template_idx": 6
     }
   ]
 }
