@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-11-15"
+    "manifest_index": 0,
+    "last_day": "2026-11-16"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2524,6 +2524,20 @@
       "pin_id": "839428818093603515",
       "media_id": "4037536707466156416",
       "cover_image_url": "https://i.pinimg.com/1200x/78/d9/f6/78d9f695d2e57c13fe6f682b436e8a05.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_looks_wavy-150_grit_for_flattening_wall_surface-drywall-037.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_looks_wavy-150_grit_for_flattening_wall_surface-drywall-037.mp4",
+      "filename": "drywall_surface_looks_wavy-150_grit_for_flattening_wall_surface-drywall-037.mp4",
+      "manifest": "drywall.json",
+      "board_id": "839428886736049941",
+      "destination_url": "https://equalle.com/products/sandpaper-50-sheets-grit-150",
+      "title": "Drywall Surface Looks Wavy? Flatten the Wall Surface With 150 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-16T19:43:17+00:00",
+      "pin_id": "839428818093625766",
+      "media_id": "4040828829995561088",
+      "cover_image_url": "https://i.pinimg.com/1200x/64/ea/33/64ea3301db11949f28450c96435ba1a7.jpg"
     }
   },
   "runs": [
@@ -4325,6 +4339,16 @@
       "result": "success",
       "pin_id": "839428818093603515",
       "media_id": "4037536707466156416",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-16T19:43:17+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_looks_wavy-150_grit_for_flattening_wall_surface-drywall-037.mp4",
+      "filename": "drywall_surface_looks_wavy-150_grit_for_flattening_wall_surface-drywall-037.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "pin_id": "839428818093625766",
+      "media_id": "4040828829995561088",
       "error": null
     }
   ]
