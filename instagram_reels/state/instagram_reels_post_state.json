@@ -6155,7 +6155,17 @@
         "id": "18137956933741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 1
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-11-17T22:41:31Z",
+      "comment_text": "If the scratch pattern looks uneven, do a few crosshatch passes and re-check. Sanding wet or dry?",
+      "comment_status": "commented",
+      "comment_id": "18122344171958866",
+      "commented_ts_utc": "2026-11-17T22:41:34Z"
     }
   },
   "runs": [
@@ -9631,6 +9641,15 @@
       "result": "commented",
       "comment_id": "17936896428145924",
       "template_idx": 3
+    },
+    {
+      "ts_utc": "2026-11-17T22:41:34Z",
+      "media_id": "17942498376391600",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/drywall_surface_looks_wavy-150_grit_for_flattening_wall_surface-drywall-037.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "18122344171958866",
+      "template_idx": 1
     }
   ]
 }
