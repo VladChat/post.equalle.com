@@ -3831,7 +3831,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-11-18T21:21:02Z",
-      "video_id": "1523695126485979"
+      "video_id": "1523695126485979",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 9
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-11-18T21:40:07Z",
+      "comment_text": "For corners/edges, ease up and let the abrasive do the work. Are edges the hardest part for you too?",
+      "comment_status": "commented",
+      "comment_id": "1523695126485979_1159734796580877",
+      "commented_ts_utc": "2026-11-18T21:40:12Z"
     }
   },
   "runs": [
@@ -7013,6 +7023,15 @@
       "result": "commented",
       "comment_id": "1675220633966807_1129641036342217",
       "template_idx": 6
+    },
+    {
+      "ts_utc": "2026-11-18T21:40:12Z",
+      "video_id": "1523695126485979",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/fine_scratches_wont_disappear-320_grit_for_plastic_scratch_refinement-plastic-037.mp4",
+      "manifest": "plastic.json",
+      "result": "commented",
+      "comment_id": "1523695126485979_1159734796580877",
+      "template_idx": 9
     }
   ]
 }
