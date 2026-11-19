@@ -1,15 +1,12 @@
 {
-  "post_id": "325670187920349_1601075072033973",
+  "post_id": "325670187920349_1603299841811496",
   "product": {
     "source": "equalle",
-    "url": "https://equalle.com/products/sandpaper-10-sheets-grit-320",
-    "grit": 320,
+    "url": "https://equalle.com/products/360-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
+    "grit": 360,
     "pack": 10,
-    "anchor": "320 Grit (Fine)",
-    "grit_description": "Precision finishing grit that enhances clarity between paint or lacquer coats, ensuring a flawless final layer.",
-    "contexts": [
-      "wood",
-      "finishing"
-    ]
+    "anchor": "360 Grit (Fine)",
+    "grit_description": "Ultra-controlled abrasive for gentle refinement and removing faint imperfections before clear coating or buffing.",
+    "contexts": []
   }
 }
