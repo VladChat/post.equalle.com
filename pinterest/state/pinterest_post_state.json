@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-11-16"
+    "manifest_index": 1,
+    "last_day": "2026-11-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2538,6 +2538,20 @@
       "pin_id": "839428818093625766",
       "media_id": "4040828829995561088",
       "cover_image_url": "https://i.pinimg.com/1200x/64/ea/33/64ea3301db11949f28450c96435ba1a7.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Edges_Look_Over-Sanded-180_Grit_for_Controlled_Hand_Sanding-wood-038.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Edges_Look_Over-Sanded-180_Grit_for_Controlled_Hand_Sanding-wood-038.mp4",
+      "filename": "Edges_Look_Over-Sanded-180_Grit_for_Controlled_Hand_Sanding-wood-038.mp4",
+      "manifest": "wood.json",
+      "board_id": "839428886736046036",
+      "destination_url": "https://www.amazon.com/gp/product/B07RJZ55RL",
+      "title": "Edges Look Over-Sanded: 180 Grit Controlled Hand Sanding",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-20T17:52:41+00:00",
+      "pin_id": "839428818093685817",
+      "media_id": "4052206233461618624",
+      "cover_image_url": "https://i.pinimg.com/1200x/75/5c/ee/755cee24be0151cbcbaf947c3f9d567a.jpg"
     }
   },
   "runs": [
@@ -4349,6 +4363,16 @@
       "result": "success",
       "pin_id": "839428818093625766",
       "media_id": "4040828829995561088",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-20T17:52:41+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Edges_Look_Over-Sanded-180_Grit_for_Controlled_Hand_Sanding-wood-038.mp4",
+      "filename": "Edges_Look_Over-Sanded-180_Grit_for_Controlled_Hand_Sanding-wood-038.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "pin_id": "839428818093685817",
+      "media_id": "4052206233461618624",
       "error": null
     }
   ]
