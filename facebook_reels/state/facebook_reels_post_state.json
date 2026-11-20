@@ -3852,7 +3852,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-11-20T21:01:06Z",
-      "video_id": "4097252270583416"
+      "video_id": "4097252270583416",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 12
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-11-20T21:33:28Z",
+      "comment_text": "If you’re between coats, a gentle scuff is enough—don’t cut through. What coating are you using?",
+      "comment_status": "commented",
+      "comment_id": "4097252270583416_1651885809805336",
+      "commented_ts_utc": "2026-11-20T21:33:33Z"
     }
   },
   "runs": [
@@ -7052,6 +7062,15 @@
       "result": "commented",
       "comment_id": "1523695126485979_1159734796580877",
       "template_idx": 9
+    },
+    {
+      "ts_utc": "2026-11-20T21:33:33Z",
+      "video_id": "4097252270583416",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/scratches_visible_on_drywall-150_grit_for_smoothing_wall_scratches-drywall-039.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "4097252270583416_1651885809805336",
+      "template_idx": 12
     }
   ]
 }
