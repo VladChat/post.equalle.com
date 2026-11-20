@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-11-18"
+    "manifest_index": 0,
+    "last_day": "2026-11-20"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3842,6 +3842,17 @@
       "comment_status": "commented",
       "comment_id": "1523695126485979_1159734796580877",
       "commented_ts_utc": "2026-11-18T21:40:12Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/scratches_visible_on_drywall-150_grit_for_smoothing_wall_scratches-drywall-039.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/scratches_visible_on_drywall-150_grit_for_smoothing_wall_scratches-drywall-039.mp4",
+      "filename": "scratches_visible_on_drywall-150_grit_for_smoothing_wall_scratches-drywall-039.mp4",
+      "manifest": "drywall.json",
+      "title": "Scratches Visible on Drywall? Smooth Wall Scratches With 150 Grit",
+      "description": "If scratches show on the wall, sand lightly with 150 grit to smooth the area and blend edges before primer or paint. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-20T21:01:06Z",
+      "video_id": "4097252270583416"
     }
   },
   "runs": [
@@ -5517,6 +5528,15 @@
       "manifest": "plastic.json",
       "result": "success",
       "video_id": "1523695126485979",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-20T21:01:06Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/scratches_visible_on_drywall-150_grit_for_smoothing_wall_scratches-drywall-039.mp4",
+      "filename": "scratches_visible_on_drywall-150_grit_for_smoothing_wall_scratches-drywall-039.mp4",
+      "manifest": "drywall.json",
+      "result": "success",
+      "video_id": "4097252270583416",
       "error": null
     }
   ],
