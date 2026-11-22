@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-11-20"
+    "manifest_index": 2,
+    "last_day": "2026-11-22"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2552,6 +2552,20 @@
       "pin_id": "839428818093685817",
       "media_id": "4052206233461618624",
       "cover_image_url": "https://i.pinimg.com/1200x/75/5c/ee/755cee24be0151cbcbaf947c3f9d567a.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4",
+      "filename": "headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4",
+      "manifest": "wet.json",
+      "board_id": "839428886736049945",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-2000",
+      "title": "Headlights Need Polish Prep? 2000 Grit Wet Sand First",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-22T17:15:30+00:00",
+      "pin_id": "839428818093716230",
+      "media_id": "4057926331907421056",
+      "cover_image_url": "https://i.pinimg.com/1200x/ba/3e/4e/ba3e4e26815279a7b6a381e17d131b93.jpg"
     }
   },
   "runs": [
@@ -4373,6 +4387,16 @@
       "result": "success",
       "pin_id": "839428818093685817",
       "media_id": "4052206233461618624",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-22T17:15:30+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4",
+      "filename": "headlights_need_polish_prep-2000_grit_wet_sand_before_polishing-wet-037.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "pin_id": "839428818093716230",
+      "media_id": "4057926331907421056",
       "error": null
     }
   ]
