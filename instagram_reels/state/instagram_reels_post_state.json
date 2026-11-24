@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 2,
-    "last_day": "2026-11-21"
+    "manifest_index": 3,
+    "last_day": "2026-11-24"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -6228,6 +6228,30 @@
       "comment_status": "skipped",
       "comment_skipped_ts_utc": "2026-11-21T20:52:47Z",
       "comment_skipped_reason": "policy_10pct_skip"
+    },
+    "https://github.com/VladChat/video/releases/download/metal/weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4",
+      "filename": "weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4",
+      "manifest": "metal.json",
+      "title": "Smooth a Rough Weld Area on Metal With 120 Grit Sandpaper",
+      "description": "Weld area feels too rough? Use 120 grit to smooth welded metal and blend the transition into the surrounding surface. Keep the sanding block flat to avoid digging into edges.",
+      "caption": "Smooth a Rough Weld Area on Metal With 120 Grit Sandpaper\n\nWeld area feels too rough? Use 120 grit to smooth welded metal and blend the transition into the surrounding surface. Keep the sanding block flat to avoid digging into edges.",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-24T22:58:39Z",
+      "mode": "binary",
+      "container_id": "18138549637741317",
+      "media_id": "17981316729141995",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v27.0/18138549637741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "id": "18138549637741317",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "status_code": "FINISHED"
+      }
     }
   },
   "runs": [
@@ -8264,6 +8288,17 @@
       "filename": "old_oxidation_on_headlights-800_grit_wet_sand_for_oxidation_removal-wet-038.mp4",
       "container_id": "18138280657741317",
       "media_id": "18115771394128700",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-24T22:58:39Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "metal.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4",
+      "filename": "weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4",
+      "container_id": "18138549637741317",
+      "media_id": "17981316729141995",
       "error": null
     }
   ],
