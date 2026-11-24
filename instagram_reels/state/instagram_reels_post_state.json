@@ -6251,7 +6251,17 @@
         "id": "18138549637741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 11
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-11-24T23:46:33Z",
+      "comment_text": "Keep strokes consistent and overlap your passes. Are you sanding with the grain (wood) or crosshatch (other)?",
+      "comment_status": "commented",
+      "comment_id": "18095871473202517",
+      "commented_ts_utc": "2026-11-24T23:46:35Z"
     }
   },
   "runs": [
@@ -9769,6 +9779,15 @@
       "result": "commented",
       "comment_id": "18122344171958866",
       "template_idx": 1
+    },
+    {
+      "ts_utc": "2026-11-24T23:46:35Z",
+      "media_id": "17981316729141995",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/weld_area_feels_too_rough-120_grit_for_smoothing_welded_metal-metal-037.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "18095871473202517",
+      "template_idx": 11
     }
   ]
 }
