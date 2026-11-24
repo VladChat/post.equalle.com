@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 0,
-    "last_day": "2026-11-20"
+    "manifest_index": 1,
+    "last_day": "2026-11-24"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3863,6 +3863,17 @@
       "comment_status": "commented",
       "comment_id": "4097252270583416_1651885809805336",
       "commented_ts_utc": "2026-11-20T21:33:33Z"
+    },
+    "https://github.com/VladChat/video/releases/download/wood/Edges_Look_Over-Sanded-180_Grit_for_Controlled_Hand_Sanding-wood-038.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Edges_Look_Over-Sanded-180_Grit_for_Controlled_Hand_Sanding-wood-038.mp4",
+      "filename": "Edges_Look_Over-Sanded-180_Grit_for_Controlled_Hand_Sanding-wood-038.mp4",
+      "manifest": "wood.json",
+      "title": "Edges Look Over-Sanded: 180 Grit Controlled Hand Sanding",
+      "description": "Edges Look Over-Sanded? Use 180 grit for controlled hand sanding. Fix common wood prep issues before paint or primer so the finish lays down smooth. Sand with the grain, check your scratch pattern in good light, and clean dust before coating. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-24T00:44:54Z",
+      "video_id": "1658130072122221"
     }
   },
   "runs": [
@@ -5547,6 +5558,15 @@
       "manifest": "drywall.json",
       "result": "success",
       "video_id": "4097252270583416",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-24T00:44:54Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/wood/Edges_Look_Over-Sanded-180_Grit_for_Controlled_Hand_Sanding-wood-038.mp4",
+      "filename": "Edges_Look_Over-Sanded-180_Grit_for_Controlled_Hand_Sanding-wood-038.mp4",
+      "manifest": "wood.json",
+      "result": "success",
+      "video_id": "1658130072122221",
       "error": null
     }
   ],
