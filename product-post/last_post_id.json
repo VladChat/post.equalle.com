@@ -1,12 +1,16 @@
 {
-  "post_id": "325670187920349_1603299841811496",
+  "post_id": "325670187920349_1609183767889770",
   "product": {
     "source": "equalle",
-    "url": "https://equalle.com/products/360-grit-sandpaper-sheets-10-pack-9x11-in-wet-or-dry-use",
-    "grit": 360,
+    "url": "https://equalle.com/products/sandpaper-grit-400-10-sheets",
+    "grit": 400,
     "pack": 10,
-    "anchor": "360 Grit (Fine)",
-    "grit_description": "Ultra-controlled abrasive for gentle refinement and removing faint imperfections before clear coating or buffing.",
-    "contexts": []
+    "anchor": "400 Grit (Fine)",
+    "grit_description": "Fine-cut abrasive delivering consistent, silky-smooth surfaces\u2014used for pre-polish finishing and intermediate layers.",
+    "contexts": [
+      "metal",
+      "auto",
+      "finishing"
+    ]
   }
 }
