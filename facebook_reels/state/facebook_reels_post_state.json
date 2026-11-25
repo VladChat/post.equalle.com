@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 1,
-    "last_day": "2026-11-24"
+    "manifest_index": 2,
+    "last_day": "2026-11-25"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -3884,6 +3884,17 @@
       "comment_status": "commented",
       "comment_id": "1658130072122221_1755883563215263",
       "commented_ts_utc": "2026-11-24T01:12:56Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Wet/old_oxidation_on_headlights-800_grit_wet_sand_for_oxidation_removal-wet-038.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/old_oxidation_on_headlights-800_grit_wet_sand_for_oxidation_removal-wet-038.mp4",
+      "filename": "old_oxidation_on_headlights-800_grit_wet_sand_for_oxidation_removal-wet-038.mp4",
+      "manifest": "wet.json",
+      "title": "Old Oxidation On Headlights? 800 Grit Wet Sand Removal Step",
+      "description": "Old oxidation on headlights? Wet sand with 800 grit to remove the damaged layer, then step up to finer grits before polishing. Keep the lens wet, use light pressure, sand in even passes, and wipe often to check progress. Wet or dry use. — eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-25T13:14:58Z",
+      "video_id": "1186181313836692"
     }
   },
   "runs": [
@@ -5577,6 +5588,15 @@
       "manifest": "wood.json",
       "result": "success",
       "video_id": "1658130072122221",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-25T13:14:58Z",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/old_oxidation_on_headlights-800_grit_wet_sand_for_oxidation_removal-wet-038.mp4",
+      "filename": "old_oxidation_on_headlights-800_grit_wet_sand_for_oxidation_removal-wet-038.mp4",
+      "manifest": "wet.json",
+      "result": "success",
+      "video_id": "1186181313836692",
       "error": null
     }
   ],
