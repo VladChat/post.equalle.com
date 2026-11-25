@@ -3894,7 +3894,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-11-25T13:14:58Z",
-      "video_id": "1186181313836692"
+      "video_id": "1186181313836692",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 0
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-11-25T13:57:19Z",
+      "comment_text": "Light pressure with 800 grit usually blends faster than pushing hard. What are you sanding today?",
+      "comment_status": "commented",
+      "comment_id": "1186181313836692_3041482059534134",
+      "commented_ts_utc": "2026-11-25T13:57:24Z"
     }
   },
   "runs": [
@@ -7130,6 +7140,15 @@
       "result": "commented",
       "comment_id": "1658130072122221_1755883563215263",
       "template_idx": 12
+    },
+    {
+      "ts_utc": "2026-11-25T13:57:24Z",
+      "video_id": "1186181313836692",
+      "video_url": "https://github.com/VladChat/video/releases/download/Wet/old_oxidation_on_headlights-800_grit_wet_sand_for_oxidation_removal-wet-038.mp4",
+      "manifest": "wet.json",
+      "result": "commented",
+      "comment_id": "1186181313836692_3041482059534134",
+      "template_idx": 0
     }
   ]
 }
