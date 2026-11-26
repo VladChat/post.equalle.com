@@ -2210,12 +2210,13 @@
       "verify_after_ts": 1790788854.7942932
     },
     "eRmsQFmEtuk": {
-      "comment_status": "commented_unverified",
+      "comment_status": "commented",
       "comment_id": "Ugx35TJESZJA59o8qLt4AaABAg",
       "comment_text": "After sanding, wipe dust and check under a bright light from the side to reveal remaining lines and waves. Do the marks disappear evenly across the whole area?",
       "comment_attempts": 1,
       "commented_ts": "2026-10-01T17:24:36Z",
-      "verify_after_ts": 1790877276.2613297
+      "verify_after_ts": 1790877276.2613297,
+      "comment_verified_ts": "2026-11-26T11:23:46Z"
     },
     "qa5gZM7j1Z4": {
       "comment_status": "commented",
