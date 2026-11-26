@@ -1,16 +1,12 @@
 {
-  "post_id": "325670187920349_1609183767889770",
+  "post_id": "325670187920349_1611433857664761",
   "product": {
     "source": "equalle",
-    "url": "https://equalle.com/products/sandpaper-grit-400-10-sheets",
-    "grit": 400,
+    "url": "https://equalle.com/products/sandpaper-9-x-11-grit-500-10-sheets",
+    "grit": 500,
     "pack": 10,
-    "anchor": "400 Grit (Fine)",
-    "grit_description": "Fine-cut abrasive delivering consistent, silky-smooth surfaces\u2014used for pre-polish finishing and intermediate layers.",
-    "contexts": [
-      "metal",
-      "auto",
-      "finishing"
-    ]
+    "anchor": "500 Grit (Fine)",
+    "grit_description": "Soft-action abrasive for micro-smoothing metal, resin, or primer coatings where precision and uniformity are key.",
+    "contexts": []
   }
 }
