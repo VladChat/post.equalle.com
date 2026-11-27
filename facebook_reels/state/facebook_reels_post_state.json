@@ -3915,7 +3915,17 @@
       "result": "success",
       "attempts": 1,
       "last_ts_utc": "2026-11-27T13:14:03Z",
-      "video_id": "1334287452133262"
+      "video_id": "1334287452133262",
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 9
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-11-27T13:39:04Z",
+      "comment_text": "For corners/edges, ease up and let the abrasive do the work. Are edges the hardest part for you too?",
+      "comment_status": "commented",
+      "comment_id": "1334287452133262_1593645755782728",
+      "commented_ts_utc": "2026-11-27T13:39:10Z"
     }
   },
   "runs": [
@@ -7169,6 +7179,15 @@
       "result": "commented",
       "comment_id": "1186181313836692_3041482059534134",
       "template_idx": 0
+    },
+    {
+      "ts_utc": "2026-11-27T13:39:10Z",
+      "video_id": "1334287452133262",
+      "video_url": "https://github.com/VladChat/video/releases/download/metal/metal_feels_uneven_after_grinding-150_grit_for_leveling_metal_surface-metal-038.mp4",
+      "manifest": "metal.json",
+      "result": "commented",
+      "comment_id": "1334287452133262_1593645755782728",
+      "template_idx": 9
     }
   ]
 }
