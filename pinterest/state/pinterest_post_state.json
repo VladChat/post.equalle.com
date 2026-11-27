@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 3,
-    "last_day": "2026-11-25"
+    "manifest_index": 4,
+    "last_day": "2026-11-27"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/Drywall/drywall_seams_still_showing-120_grit_for_sanding_joint_compound-drywall-001.mp4": {
@@ -2580,6 +2580,20 @@
       "pin_id": "839428818093762751",
       "media_id": "4065678678956716928",
       "cover_image_url": "https://i.pinimg.com/1200x/4d/a4/31/4da43137c9521ba3c87fdd5d4127d2b0.jpg"
+    },
+    "https://github.com/VladChat/video/releases/download/Plastic/fine_scratches_wont_disappear-320_grit_for_plastic_scratch_refinement-plastic-037.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/fine_scratches_wont_disappear-320_grit_for_plastic_scratch_refinement-plastic-037.mp4",
+      "filename": "fine_scratches_wont_disappear-320_grit_for_plastic_scratch_refinement-plastic-037.mp4",
+      "manifest": "plastic.json",
+      "board_id": "839428886736049964",
+      "destination_url": "https://equalle.com/products/sandpaper-25-sheets-grit-320",
+      "title": "Fine Scratches Won’t Disappear? Refine With 320 Grit",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-27T09:26:22+00:00",
+      "pin_id": "839428818093794258",
+      "media_id": "4071476763070734464",
+      "cover_image_url": "https://i.pinimg.com/1200x/1f/90/cc/1f90cca7079cf0af09da17b81178d2dc.jpg"
     }
   },
   "runs": [
@@ -4421,6 +4435,16 @@
       "result": "success",
       "pin_id": "839428818093762751",
       "media_id": "4065678678956716928",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-27T09:26:22+00:00",
+      "video_url": "https://github.com/VladChat/video/releases/download/Plastic/fine_scratches_wont_disappear-320_grit_for_plastic_scratch_refinement-plastic-037.mp4",
+      "filename": "fine_scratches_wont_disappear-320_grit_for_plastic_scratch_refinement-plastic-037.mp4",
+      "manifest": "plastic.json",
+      "result": "success",
+      "pin_id": "839428818093794258",
+      "media_id": "4071476763070734464",
       "error": null
     }
   ]
