@@ -6319,7 +6319,17 @@
         "id": "18138843820741317",
         "status": "Finished: Media has been uploaded and it is ready to be published.",
         "status_code": "FINISHED"
-      }
+      },
+      "comment_plan": {
+        "decision": "comment",
+        "template_idx": 19
+      },
+      "comment_attempts": 1,
+      "comment_last_try_ts_utc": "2026-11-28T14:03:02Z",
+      "comment_text": "Before the next coat, clean the surface well so dust doesn’t telegraph through. Do you wipe down between coats?",
+      "comment_status": "commented",
+      "comment_id": "17917155324575018",
+      "commented_ts_utc": "2026-11-28T14:03:04Z"
     }
   },
   "runs": [
@@ -9877,6 +9887,15 @@
       "result": "commented",
       "comment_id": "18080557946742563",
       "template_idx": 5
+    },
+    {
+      "ts_utc": "2026-11-28T14:03:04Z",
+      "media_id": "17947030659388393",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/tool_marks_left_in_drywall_mud-120_grit_for_removing_tool_marks-drywall-038.mp4",
+      "manifest": "drywall.json",
+      "result": "commented",
+      "comment_id": "17917155324575018",
+      "template_idx": 19
     }
   ]
 }
