@@ -1,8 +1,8 @@
 {
   "version": 1,
   "rotation": {
-    "manifest_index": 4,
-    "last_day": "2026-11-26"
+    "manifest_index": 0,
+    "last_day": "2026-11-28"
   },
   "items": {
     "https://github.com/VladChat/video/releases/download/wood/Paint_Peeling_on_Wood-180_Grit_for_Wood_Paint_Prep-wood-001.mp4": {
@@ -6296,6 +6296,30 @@
       "comment_status": "commented",
       "comment_id": "18080557946742563",
       "commented_ts_utc": "2026-11-26T13:38:58Z"
+    },
+    "https://github.com/VladChat/video/releases/download/Drywall/tool_marks_left_in_drywall_mud-120_grit_for_removing_tool_marks-drywall-038.mp4": {
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/tool_marks_left_in_drywall_mud-120_grit_for_removing_tool_marks-drywall-038.mp4",
+      "filename": "tool_marks_left_in_drywall_mud-120_grit_for_removing_tool_marks-drywall-038.mp4",
+      "manifest": "drywall.json",
+      "title": "Tool Marks Left in Drywall Mud? Remove Tool Marks With 120 Grit",
+      "description": "If knife lines are left in the mud, sand lightly with 120 grit to knock them down and smooth the surface before the next coat. Sandpaper eQualle",
+      "caption": "Tool Marks Left in Drywall Mud? Remove Tool Marks With 120 Grit\n\nIf knife lines are left in the mud, sand lightly with 120 grit to knock them down and smooth the surface before the next coat. Sandpaper eQualle",
+      "result": "success",
+      "attempts": 1,
+      "last_ts_utc": "2026-11-28T13:11:27Z",
+      "mode": "binary",
+      "container_id": "18138843820741317",
+      "media_id": "17947030659388393",
+      "upload_url_used": "https://rupload.facebook.com/ig-api-upload/v27.0/18138843820741317",
+      "upload_resp": {
+        "success": true,
+        "message": "Upload Successful."
+      },
+      "container_status_last": {
+        "id": "18138843820741317",
+        "status": "Finished: Media has been uploaded and it is ready to be published.",
+        "status_code": "FINISHED"
+      }
     }
   },
   "runs": [
@@ -8354,6 +8378,17 @@
       "filename": "fine_scratches_wont_disappear-320_grit_for_plastic_scratch_refinement-plastic-037.mp4",
       "container_id": "18138679012741317",
       "media_id": "17930724297433624",
+      "error": null
+    },
+    {
+      "ts_utc": "2026-11-28T13:11:27Z",
+      "result": "success",
+      "mode": "binary",
+      "manifest": "drywall.json",
+      "video_url": "https://github.com/VladChat/video/releases/download/Drywall/tool_marks_left_in_drywall_mud-120_grit_for_removing_tool_marks-drywall-038.mp4",
+      "filename": "tool_marks_left_in_drywall_mud-120_grit_for_removing_tool_marks-drywall-038.mp4",
+      "container_id": "18138843820741317",
+      "media_id": "17947030659388393",
       "error": null
     }
   ],
